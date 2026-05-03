@@ -1,0 +1,21 @@
+# Node deps (sharp lib for optimize-images.js)
+node_modules/
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Original PNG sources — heavy backups, only WebP versions are served.
+# Re-add a PNG manually if you need to re-run optimize-images.js.
+assets/work/*.png

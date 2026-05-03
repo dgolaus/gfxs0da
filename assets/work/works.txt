@@ -1,0 +1,61 @@
+═══════════════════════════════════════════════════════════════
+  PORTFOLIO — preenche um bloco pra cada arte
+  Ordem dos blocos = ordem que aparece no site
+═══════════════════════════════════════════════════════════════
+
+INSTRUÇÕES RÁPIDAS:
+  1. Joga as imagens nessa pasta (assets/work/)
+  2. Pra cada arte, copia um bloco abaixo e preenche
+  3. "file" = nome exato do arquivo (com extensão)
+  4. "type" = thumbnail | icon | visual
+  5. "size" = wide (card grande, ocupa 2x) ou normal (deixa em branco se normal)
+  6. Campos opcionais podem ficar vazios — só apaga se não usar
+
+───────────────────────────────────────────────────────────────
+
+=== 01 ===
+file: apoc-thumb.png
+title: Survive the Apocalypse
+type: thumbnail
+subtitle: Survival, Horror · 87.9M+ visits
+size:
+
+=== 02 ===
+file:     aura-easter.png
+title:    Aura Ascension — Easter Update
+type:     thumbnail 
+subtitle: Simulator · 78.8M+ visits
+size:     
+
+=== 03 ===
+file:     parkour-thumb.png
+title:    Parkour for Brainrots — Launch
+type:     thumbnail
+subtitle: Parkour · 45.7M+ visits
+size:
+
+=== 04 ===
+file: prospecting-thumb.png
+title: Prospecting
+type: thumbnail
+subtitle: Simulator · 224.9M+ visits
+size:
+
+=== 05 ===
+file:     gag2-thumb.png
+title:    Grow a Garden 2
+type:     thumbnail
+subtitle: Simulator · Unreleased
+size:     
+
+=== 06 ===
+file: fishing-thumb.png
+title: My Fishing Brainrots
+type: thumbnail 
+subtitle: Tycoon-Style Simulation · 215.3M+
+size: 
+
+───────────────────────────────────────────────────────────────
+  Pode adicionar mais blocos (=== 08 ===, === 09 === ...)
+  ou apagar os que sobrarem.
+═══════════════════════════════════════════════════════════════

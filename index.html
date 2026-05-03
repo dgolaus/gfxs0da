@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="@gfxs0da — Roblox thumbnail design engineered for click-through. GFX Artist at Rubicon Games and Cube Graphics. Visuals contributed to projects totaling ~2B+ visits." />
+  <meta name="theme-color" content="#0B0B0D" />
+  <meta property="og:title" content="gfxs0da — Roblox Thumbnail Design" />
+  <meta property="og:description" content="More than art. Your next high CTR. Thumbnails, icons and rescales engineered to convert." />
+  <meta property="og:image" content="assets/pfp.png" />
+  <title>s0da</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="alternate icon" href="assets/pfp.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- SVG filters — glass distortion (Chrome/Edge support url() in backdrop-filter) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <filter id="glass-distort" x="0%" y="0%" width="100%" height="100%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.014 0.018" numOctaves="2" seed="3" result="noise"/>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="14" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </defs>
+  </svg>
+
+  <!-- Ambient background — floating glow particles -->
+  <div class="ambient" aria-hidden="true">
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+    <span class="particle"></span>
+  </div>
+
+  <!-- Mouse-tracked glow -->
+  <div class="mouse-glow" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="s0da home">
+      <span class="brand-dot" aria-hidden="true"></span>
+      <span>s0da</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#trust">Trust</a>
+      <a href="#pricing">Pricing</a>
+      <a href="tos.html">TOS</a>
+    </nav>
+    <a class="btn btn-ghost btn-sm" href="https://discord.gg/s0da" target="_blank" rel="noopener">
+      Commission <span aria-hidden="true">→</span>
+    </a>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <!-- Background — 5 horizontal rows of thumbs, alternating directions, tilted.
+           Each row uses all 13 unique thumbs in a different shuffled order. -->
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-bg-tilt">
+          <div class="bg-row">
+            <div class="bg-row-track">
+              <img src="assets/work/apoc-thumb.webp" alt="" loading="eager" />
+              <img src="assets/work/prospecting-thumb-2.webp" alt="" loading="eager" />
+              <img src="assets/work/fishing-thumb.webp" alt="" loading="eager" />
+              <img src="assets/work/apoc-thumb-3.webp" alt="" loading="eager" />
+              <img src="assets/work/parkour-thumb-2.webp" alt="" loading="eager" />
+              <img src="assets/work/gag2-thumb.webp" alt="" loading="eager" />
+              <img src="assets/work/aura-easter.webp" alt="" loading="eager" />
+              <img src="assets/work/prospecting-thumb-3.webp" alt="" loading="eager" />
+              <img src="assets/work/apoc-thumb-4.webp" alt="" loading="eager" />
+              <img src="assets/work/parkour-thumb.webp" alt="" loading="eager" />
+              <img src="assets/work/prospecting-thumb.webp" alt="" loading="eager" />
+              <img src="assets/work/apoc-thumb-2.webp" alt="" loading="eager" />
+              <img src="assets/work/prospecting-thumb-4.webp" alt="" loading="eager" />
+              <img src="assets/work/apoc-thumb.webp" alt="" />
+              <img src="assets/work/prospecting-thumb-2.webp" alt="" />
+              <img src="assets/work/fishing-thumb.webp" alt="" />
+              <img src="assets/work/apoc-thumb-3.webp" alt="" />
+              <img src="assets/work/parkour-thumb-2.webp" alt="" />
+              <img src="assets/work/gag2-thumb.webp" alt="" />
+              <img src="assets/work/aura-easter.webp" alt="" />
+              <img src="assets/work/prospecting-thumb-3.webp" alt="" />
+              <img src="assets/work/apoc-thumb-4.webp" alt="" />
+              <img src="assets/work/parkour-thumb.webp" alt="" />
+              <img src="assets/work/prospecting-thumb.webp" alt="" />
+              <img src="assets/work/apoc-thumb-2.webp" alt="" />
+              <img src="assets/work/prospecting-thumb-4.webp" alt="" />
+            </div>
+          </div>
+          <div class="bg-row reverse">
+            <div class="bg-row-track">
+              <img src="assets/work/parkour-thumb-2.webp" alt="" loading="eager" />
+              <img src="assets/work/prospecting-thumb-4.webp" alt="" loading="eager" />
+              <img src="assets/work/gag2-thumb.webp" alt="" loading="eager" />
+              <img src="assets/work/prospecting-thumb-2.webp" alt="" loading="eager" />
+              <img src="assets/work/apoc-thumb-2.webp" alt="" loading="eager" />
+              <img src="assets/work/parkour-thumb.webp" alt="" loading="eager" />
+              <img src="assets/work/fishing-thumb.webp" alt="" loading="eager" />
+              <img src="assets/work/prospecting-thumb-3.webp" alt="" loading="eager" />
+              <img src="assets/work/aura-easter.webp" alt="" loading="eager" />
+              <img src="assets/work/apoc-thumb-4.webp" alt="" loading="eager" />
+              <img src="assets/work/prospecting-thumb.webp" alt="" loading="eager" />
+              <img src="assets/work/apoc-thumb.webp" alt="" loading="eager" />
+              <img src="assets/work/apoc-thumb-3.webp" alt="" loading="eager" />
+              <img src="assets/work/parkour-thumb-2.webp" alt="" />
+              <img src="assets/work/prospecting-thumb-4.webp" alt="" />
+              <img src="assets/work/gag2-thumb.webp" alt="" />
+              <img src="assets/work/prospecting-thumb-2.webp" alt="" />
+              <img src="assets/work/apoc-thumb-2.webp" alt="" />
+              <img src="assets/work/parkour-thumb.webp" alt="" />
+              <img src="assets/work/fishing-thumb.webp" alt="" />
+              <img src="assets/work/prospecting-thumb-3.webp" alt="" />
+              <img src="assets/work/aura-easter.webp" alt="" />
+              <img src="assets/work/apoc-thumb-4.webp" alt="" />
+              <img src="assets/work/prospecting-thumb.webp" alt="" />
+              <img src="assets/work/apoc-thumb.webp" alt="" />
+              <img src="assets/work/apoc-thumb-3.webp" alt="" />
+            </div>
+          </div>
+          <div class="bg-row">
+            <div class="bg-row-track">
+              <img src="assets/work/prospecting-thumb.webp" alt="" loading="eager" />
+              <img src="assets/work/gag2-thumb.webp" alt="" loading="eager" />
+              <img src="assets/work/fishing-thumb.webp" alt="" loading="eager" />
+              <img src="assets/work/parkour-thumb-2.webp" alt="" loading="eager" />
+              <img src="assets/work/apoc-thumb-3.webp" alt="" loading="eager" />
+              <img src="assets/work/aura-easter.webp" alt="" loading="eager" />
+              <img src="assets/work/prospecting-thumb-4.webp" alt="" loading="eager" />
+              <img src="assets/work/apoc-thumb-2.webp" alt="" loading="eager" />
+              <img src="assets/work/parkour-thumb.webp" alt="" loading="eager" />
+              <img src="assets/work/apoc-thumb.webp" alt="" loading="eager" />
+              <img src="assets/work/prospecting-thumb-3.webp" alt="" loading="eager" />
+              <img src="assets/work/apoc-thumb-4.webp" alt="" loading="eager" />
+              <img src="assets/work/prospecting-thumb-2.webp" alt="" loading="eager" />
+              <img src="assets/work/prospecting-thumb.webp" alt="" />
+              <img src="assets/work/gag2-thumb.webp" alt="" />
+              <img src="assets/work/fishing-thumb.webp" alt="" />
+              <img src="assets/work/parkour-thumb-2.webp" alt="" />
+              <img src="assets/work/apoc-thumb-3.webp" alt="" />
+              <img src="assets/work/aura-easter.webp" alt="" />
+              <img src="assets/work/prospecting-thumb-4.webp" alt="" />
+              <img src="assets/work/apoc-thumb-2.webp" alt="" />
+              <img src="assets/work/parkour-thumb.webp" alt="" />
+              <img src="assets/work/apoc-thumb.webp" alt="" />
+              <img src="assets/work/prospecting-thumb-3.webp" alt="" />
+              <img src="assets/work/apoc-thumb-4.webp" alt="" />
+              <img src="assets/work/prospecting-thumb-2.webp" alt="" />
+            </div>
+          </div>
+          <div class="bg-row reverse">
+            <div class="bg-row-track">
+              <img src="assets/work/aura-easter.webp" alt="" loading="eager" />
+              <img src="assets/work/apoc-thumb-4.webp" alt="" loading="eager" />
+              <img src="assets/work/prospecting-thumb-3.webp" alt="" loading="eager" />
+              <img src="assets/work/parkour-thumb.webp" alt="" loading="eager" />
+              <img src="assets/work/gag2-thumb.webp" alt="" loading="eager" />
+              <img src="assets/work/apoc-thumb.webp" alt="" loading="eager" />
+              <img src="assets/work/prospecting-thumb-2.webp" alt="" loading="eager" />
+              <img src="assets/work/fishing-thumb.webp" alt="" loading="eager" />
+              <img src="assets/work/parkour-thumb-2.webp" alt="" loading="eager" />
+              <img src="assets/work/apoc-thumb-3.webp" alt="" loading="eager" />
+              <img src="assets/work/prospecting-thumb-4.webp" alt="" loading="eager" />
+              <img src="assets/work/apoc-thumb-2.webp" alt="" loading="eager" />
+              <img src="assets/work/prospecting-thumb.webp" alt="" loading="eager" />
+              <img src="assets/work/aura-easter.webp" alt="" />
+              <img src="assets/work/apoc-thumb-4.webp" alt="" />
+              <img src="assets/work/prospecting-thumb-3.webp" alt="" />
+              <img src="assets/work/parkour-thumb.webp" alt="" />
+              <img src="assets/work/gag2-thumb.webp" alt="" />
+              <img src="assets/work/apoc-thumb.webp" alt="" />
+              <img src="assets/work/prospecting-thumb-2.webp" alt="" />
+              <img src="assets/work/fishing-thumb.webp" alt="" />
+              <img src="assets/work/parkour-thumb-2.webp" alt="" />
+              <img src="assets/work/apoc-thumb-3.webp" alt="" />
+              <img src="assets/work/prospecting-thumb-4.webp" alt="" />
+              <img src="assets/work/apoc-thumb-2.webp" alt="" />
+              <img src="assets/work/prospecting-thumb.webp" alt="" />
+            </div>
+          </div>
+          <div class="bg-row">
+            <div class="bg-row-track">
+              <img src="assets/work/fishing-thumb.webp" alt="" loading="eager" />
+              <img src="assets/work/apoc-thumb-2.webp" alt="" loading="eager" />
+              <img src="assets/work/prospecting-thumb-4.webp" alt="" loading="eager" />
+              <img src="assets/work/aura-easter.webp" alt="" loading="eager" />
+              <img src="assets/work/apoc-thumb.webp" alt="" loading="eager" />
+              <img src="assets/work/parkour-thumb.webp" alt="" loading="eager" />
+              <img src="assets/work/prospecting-thumb-3.webp" alt="" loading="eager" />
+              <img src="assets/work/gag2-thumb.webp" alt="" loading="eager" />
+              <img src="assets/work/apoc-thumb-4.webp" alt="" loading="eager" />
+              <img src="assets/work/prospecting-thumb.webp" alt="" loading="eager" />
+              <img src="assets/work/parkour-thumb-2.webp" alt="" loading="eager" />
+              <img src="assets/work/apoc-thumb-3.webp" alt="" loading="eager" />
+              <img src="assets/work/prospecting-thumb-2.webp" alt="" loading="eager" />
+              <img src="assets/work/fishing-thumb.webp" alt="" />
+              <img src="assets/work/apoc-thumb-2.webp" alt="" />
+              <img src="assets/work/prospecting-thumb-4.webp" alt="" />
+              <img src="assets/work/aura-easter.webp" alt="" />
+              <img src="assets/work/apoc-thumb.webp" alt="" />
+              <img src="assets/work/parkour-thumb.webp" alt="" />
+              <img src="assets/work/prospecting-thumb-3.webp" alt="" />
+              <img src="assets/work/gag2-thumb.webp" alt="" />
+              <img src="assets/work/apoc-thumb-4.webp" alt="" />
+              <img src="assets/work/prospecting-thumb.webp" alt="" />
+              <img src="assets/work/parkour-thumb-2.webp" alt="" />
+              <img src="assets/work/apoc-thumb-3.webp" alt="" />
+              <img src="assets/work/prospecting-thumb-2.webp" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="hero-bg-overlay"></div>
+      </div>
+
+      <div class="container hero-inner">
+        <span class="hero-badge">
+          <span class="dot pulse" aria-hidden="true"></span>
+          Commissions Open
+        </span>
+
+        <h1 class="hero-title">
+          2 billion clicks.<br />
+          <span class="accent">Yours</span> next.
+        </h1>
+
+        <p class="hero-sub">
+          Thumbnails, icons and rescales built for clarity, presentation and
+          click-through. <strong>GFX Artist at Rubicon Games and Cube
+          Graphics</strong>, with visuals contributed to Roblox projects
+          totaling <strong>~2B+ visits</strong>.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-lg" href="https://discord.gg/s0da" target="_blank" rel="noopener">
+            Open a Ticket <span aria-hidden="true">→</span>
+          </a>
+          <a class="btn btn-ghost btn-lg" href="#work">View Work</a>
+        </div>
+
+        <!-- Single glass strip with internal stats — distorts thumbs behind it.
+             Counters animate on page load (~600ms after stats strip fades in). -->
+        <div class="hero-stats-strip">
+          <div class="hs-item">
+            <strong class="counter" data-value="2.3" data-decimals="1" data-suffix="B+">0</strong>
+            <span>Visits Influenced</span>
+          </div>
+          <span class="hs-divider"></span>
+          <div class="hs-item">
+            <strong class="counter" data-value="200" data-suffix="+">0</strong>
+            <span>Commissions Delivered</span>
+          </div>
+          <span class="hs-divider"></span>
+          <div class="hs-item">
+            <strong class="counter" data-value="5" data-suffix="y">0</strong>
+            <span>Designing Since 2020</span>
+          </div>
+          <span class="hs-divider"></span>
+          <div class="hs-item">
+            <strong class="counter" data-value="2">0</strong>
+            <span>Active Studios</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>SCROLL</span>
+        <span class="scroll-line"></span>
+      </div>
+    </section>
+
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="m-pair"><span class="m-text">Thumbnails</span><span class="m-sep">/</span></span>
+        <span class="m-pair"><span class="m-text">Icons</span><span class="m-sep">/</span></span>
+        <span class="m-pair"><span class="m-text">Rescales</span><span class="m-sep">/</span></span>
+        <span class="m-pair"><span class="m-text">Promo Stills</span><span class="m-sep">/</span></span>
+        <span class="m-pair"><span class="m-text">Update Posts</span><span class="m-sep">/</span></span>
+        <span class="m-pair"><span class="m-text">Thumbnails</span><span class="m-sep">/</span></span>
+        <span class="m-pair"><span class="m-text">Icons</span><span class="m-sep">/</span></span>
+        <span class="m-pair"><span class="m-text">Rescales</span><span class="m-sep">/</span></span>
+        <span class="m-pair"><span class="m-text">Promo Stills</span><span class="m-sep">/</span></span>
+        <span class="m-pair"><span class="m-text">Update Posts</span><span class="m-sep">/</span></span>
+      </div>
+    </div>
+
+    <section class="work" id="work">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="dash"></span>Selected Work</p>
+          <h2>The portfolio.</h2>
+          <p class="section-sub">
+            A curated selection of recent thumbnails shipped for live Roblox
+            titles — millions of visits combined. Click any tile to view full size.
+          </p>
+        </header>
+
+        <div class="grid">
+          <!-- Row 1: cards with multiple variants -->
+          <article class="card has-variants reveal" role="button" tabindex="0"
+                   data-variants="apoc-thumb.webp,apoc-thumb-2.webp,apoc-thumb-3.webp,apoc-thumb-4.webp"
+                   aria-label="View Survive the Apocalypse — 4 thumbnails">
+            <div class="card-img">
+              <img src="assets/work/apoc-thumb.webp" alt="Survive the Apocalypse — Roblox thumbnail" loading="lazy" />
+            </div>
+            <button class="card-arrow card-arrow-prev" type="button" aria-label="Previous variant">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18L9 12L15 6"/></svg>
+            </button>
+            <button class="card-arrow card-arrow-next" type="button" aria-label="Next variant">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6L15 12L9 18"/></svg>
+            </button>
+            <span class="card-count" aria-hidden="true">1 / 4</span>
+            <div class="card-meta">
+              <h3>Survive the Apocalypse</h3>
+              <p class="card-sub">Survival, Horror · 87.9M+ visits</p>
+            </div>
+            <span class="card-corner" aria-hidden="true">01</span>
+          </article>
+
+          <article class="card has-variants reveal" role="button" tabindex="0" style="--d:.05s"
+                   data-variants="prospecting-thumb.webp,prospecting-thumb-2.webp,prospecting-thumb-3.webp,prospecting-thumb-4.webp"
+                   aria-label="View Prospecting — 4 thumbnails">
+            <div class="card-img">
+              <img src="assets/work/prospecting-thumb.webp" alt="Prospecting — Roblox thumbnail" loading="lazy" />
+            </div>
+            <button class="card-arrow card-arrow-prev" type="button" aria-label="Previous variant">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18L9 12L15 6"/></svg>
+            </button>
+            <button class="card-arrow card-arrow-next" type="button" aria-label="Next variant">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6L15 12L9 18"/></svg>
+            </button>
+            <span class="card-count" aria-hidden="true">1 / 4</span>
+            <div class="card-meta">
+              <h3>Prospecting!</h3>
+              <p class="card-sub">Simulator · 224.9M+ visits</p>
+            </div>
+            <span class="card-corner" aria-hidden="true">02</span>
+          </article>
+
+          <article class="card has-variants reveal" role="button" tabindex="0" style="--d:.10s"
+                   data-variants="parkour-thumb.webp,parkour-thumb-2.webp"
+                   aria-label="View Parkour for Brainrots — 2 thumbnails">
+            <div class="card-img">
+              <img src="assets/work/parkour-thumb.webp" alt="Parkour for Brainrots — Roblox thumbnail" loading="lazy" />
+            </div>
+            <button class="card-arrow card-arrow-prev" type="button" aria-label="Previous variant">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18L9 12L15 6"/></svg>
+            </button>
+            <button class="card-arrow card-arrow-next" type="button" aria-label="Next variant">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6L15 12L9 18"/></svg>
+            </button>
+            <span class="card-count" aria-hidden="true">1 / 2</span>
+            <div class="card-meta">
+              <h3>Parkour for Brainrots</h3>
+              <p class="card-sub">Parkour · 45.7M+ visits</p>
+            </div>
+            <span class="card-corner" aria-hidden="true">03</span>
+          </article>
+
+          <!-- Row 2: solo cards (single thumbnail each) -->
+          <article class="card reveal" role="button" tabindex="0" aria-label="View Aura Ascension Easter Update thumbnail full size">
+            <div class="card-img">
+              <img src="assets/work/aura-easter.webp" alt="Aura Ascension Easter Update — Roblox thumbnail" loading="lazy" />
+            </div>
+            <div class="card-meta">
+              <h3>Aura Ascension — Easter Update</h3>
+              <p class="card-sub">Simulator · 78.8M+ visits</p>
+            </div>
+            <span class="card-corner" aria-hidden="true">04</span>
+          </article>
+
+          <article class="card card-feature reveal" role="button" tabindex="0" style="--d:.05s" aria-label="View Grow a Garden 2 thumbnail full size">
+            <div class="card-img">
+              <img src="assets/work/gag2-thumb.webp" alt="Grow a Garden 2 — Roblox thumbnail" loading="lazy" />
+            </div>
+            <div class="card-meta">
+              <span class="tag tag-accent">Unreleased</span>
+              <h3>Grow a Garden 2</h3>
+              <p class="card-sub">Simulator · Coming soon</p>
+            </div>
+            <span class="card-corner" aria-hidden="true">05</span>
+          </article>
+
+          <article class="card reveal" role="button" tabindex="0" style="--d:.10s" aria-label="View My Fishing Brainrots thumbnail full size">
+            <div class="card-img">
+              <img src="assets/work/fishing-thumb.webp" alt="My Fishing Brainrots — Roblox thumbnail" loading="lazy" />
+            </div>
+            <div class="card-meta">
+              <h3>My Fishing Brainrots</h3>
+              <p class="card-sub">Tycoon-Sim · 215.3M+ visits</p>
+            </div>
+            <span class="card-corner" aria-hidden="true">06</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-head reveal">
+          <p class="eyebrow"><span class="dash"></span>About</p>
+          <h2>Designing<br />the click<br />since 2020.</h2>
+        </div>
+
+        <div class="about-body reveal" style="--d:.08s">
+          <p class="lede">
+            I'm <strong>@gfxs0da</strong> — a Roblox thumbnail designer with
+            visuals contributed to projects totaling roughly
+            <strong>2B+ visits</strong> across the platform.
+          </p>
+          <p>
+            I focus on thumbnails, icons and rescales where every frame
+            earns its place — clarity first, presentation second, performance
+            always. The work is restrained so the games can shout.
+          </p>
+          <p>
+            Every commission is handled with professionalism, clear
+            communication and attention to detail. Explore the work, read the
+            client feedback below, and open a ticket when you're ready.
+          </p>
+
+          <ul class="capabilities">
+            <li>Thumbnails</li>
+            <li>Icons</li>
+            <li>Rescales</li>
+          </ul>
+
+          <div class="studios">
+            <p class="studios-label">Currently working at</p>
+            <div class="studios-list">
+              <a class="studio-chip" href="https://rubiconstudios.io/" target="_blank" rel="noopener">
+                <span>Rubicon Games</span>
+                <span class="ext" aria-hidden="true">↗</span>
+              </a>
+              <a class="studio-chip" href="https://cubethumbs.com" target="_blank" rel="noopener">
+                <span>Cube Graphics</span>
+                <span class="ext" aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process" id="process">
+      <div class="container process-grid">
+        <div class="process-text reveal">
+          <p class="eyebrow"><span class="dash"></span>How it works</p>
+          <h2>One ticket.<br /><span class="accent-soft">Zero friction.</span></h2>
+          <p class="lede">
+            Every commission flows through a single Discord ticket — brief,
+            scope, deliverables and pricing all confirmed before any pixel
+            is pushed.
+          </p>
+          <ul class="process-steps">
+            <li>
+              <span class="step-num">01</span>
+              <div>
+                <strong>Open a ticket</strong>
+                <span>Join the Discord, click the ticket button.</span>
+              </div>
+            </li>
+            <li>
+              <span class="step-num">02</span>
+              <div>
+                <strong>Send the brief</strong>
+                <span>Game type, vibe, references, deadline.</span>
+              </div>
+            </li>
+            <li>
+              <span class="step-num">03</span>
+              <div>
+                <strong>Confirm scope</strong>
+                <span>Pricing and timeline locked before any work starts.</span>
+              </div>
+            </li>
+            <li>
+              <span class="step-num">04</span>
+              <div>
+                <strong>Receive &amp; ship</strong>
+                <span>Draft → revisions → final files in under 48h.</span>
+              </div>
+            </li>
+          </ul>
+          <a class="btn btn-primary" href="https://discord.gg/s0da" target="_blank" rel="noopener">
+            Open a Ticket <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="chat-mock reveal" style="--d:.1s">
+          <div class="chat-card" id="chat-card">
+            <div class="chat-glow" aria-hidden="true"></div>
+            <div class="chat-header">
+              <div class="chat-channel">
+                <span class="chat-hash">#</span>ticket-3047
+              </div>
+              <div class="chat-status">
+                <span class="dot pulse" aria-hidden="true"></span>
+                Open
+              </div>
+            </div>
+            <!-- Messages populated dynamically by script.js (animated playback) -->
+            <div class="chat-messages" id="chat-messages"></div>
+
+            <div class="chat-footer">
+              <p class="chat-typing" id="chat-typing" aria-hidden="true">
+                <span class="typing-dots"><span></span><span></span><span></span></span>
+                <span><strong class="typing-name"></strong> is typing...</span>
+              </p>
+              <div class="chat-input" tabindex="-1">
+                <button class="chat-input-plus" type="button" tabindex="-1" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+                </button>
+                <span class="chat-input-placeholder">Message <strong>#ticket-3047</strong></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust" id="trust">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="dash"></span>Numbers &amp; Feedback</p>
+          <h2>Trusted on live titles.</h2>
+        </header>
+
+        <div class="trust-stats reveal" id="trust-stats">
+          <div class="trust-stat">
+            <strong class="counter" data-value="2" data-decimals="1" data-suffix="B+">0</strong>
+            <span>Combined visits</span>
+          </div>
+          <div class="trust-stat">
+            <strong class="counter" data-value="200" data-suffix="+">0</strong>
+            <span>Commissions shipped</span>
+          </div>
+          <div class="trust-stat">
+            <strong class="counter" data-value="48" data-prefix="~" data-suffix="h">0</strong>
+            <span>Average turnaround</span>
+          </div>
+          <div class="trust-stat trust-stat-stars">
+            <div class="stars" id="trust-stars">
+              <span class="star" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 1.5l3.09 7.42L23 9.27l-5.91 5.21L18.18 23 12 19.27 5.82 23l1.09-8.52L1 9.27l7.91-.35z"/></svg>
+              </span>
+              <span class="star" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 1.5l3.09 7.42L23 9.27l-5.91 5.21L18.18 23 12 19.27 5.82 23l1.09-8.52L1 9.27l7.91-.35z"/></svg>
+              </span>
+              <span class="star" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 1.5l3.09 7.42L23 9.27l-5.91 5.21L18.18 23 12 19.27 5.82 23l1.09-8.52L1 9.27l7.91-.35z"/></svg>
+              </span>
+              <span class="star" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 1.5l3.09 7.42L23 9.27l-5.91 5.21L18.18 23 12 19.27 5.82 23l1.09-8.52L1 9.27l7.91-.35z"/></svg>
+              </span>
+              <span class="star" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 1.5l3.09 7.42L23 9.27l-5.91 5.21L18.18 23 12 19.27 5.82 23l1.09-8.52L1 9.27l7.91-.35z"/></svg>
+              </span>
+            </div>
+            <span>Repeat-client rate</span>
+          </div>
+        </div>
+
+        <div class="testimonials">
+          <figure class="quote reveal">
+            <span class="quote-mark" aria-hidden="true">"</span>
+            <blockquote>
+              Amazing to work with — a walking W. Communication is sharp,
+              turnaround is fast, and the thumbnails land on the first try
+              every single time.
+            </blockquote>
+            <figcaption>
+              <span class="who">Tony <span class="handle">@CoderTony</span></span>
+              <span class="dim">Game Programmer · Fish It · Pet Sim 99 · PSGO</span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote reveal" style="--d:.08s">
+            <span class="quote-mark" aria-hidden="true">"</span>
+            <blockquote>
+              Great thumbnails, very quick. The briefs come back exactly how
+              I imagined, and the final work consistently performs once we
+              ship it.
+            </blockquote>
+            <figcaption>
+              <span class="who">Kalak <span class="handle">@notkalak</span></span>
+              <span class="dim">Producer · Top CCU Games · Shrink Hide &amp; Seek</span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote reveal" style="--d:.16s">
+            <span class="quote-mark" aria-hidden="true">"</span>
+            <blockquote>
+              Super clean work and a great person to talk to in general.
+              Received multiple designs very fast, and the quality was very
+              good across all of them. Highly recommend!
+            </blockquote>
+            <figcaption>
+              <span class="who">Farhan <span class="handle">@avtixe</span></span>
+              <span class="dim">Founder &amp; CEO · BlockTurns · Aura Ascension</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="dash"></span>Pricing</p>
+          <h2>Clear, upfront.</h2>
+          <p class="section-sub">
+            No hidden fees, no surprises. Final scope is confirmed in the
+            ticket before any work begins.
+          </p>
+        </header>
+
+        <div class="pricing-grid">
+          <article class="price-card reveal">
+            <span class="price-badge">Most ordered</span>
+            <p class="price-tag">Standard</p>
+            <h3 class="price-title">Thumbnail</h3>
+            <p class="price-amount">
+              <strong>35,000</strong>
+              <span>Robux</span>
+            </p>
+            <p class="price-alt">$105 USD</p>
+            <ul class="price-features">
+              <li>Custom composition &amp; concept</li>
+              <li>1920×1080 + source files</li>
+              <li>Revisions included</li>
+            </ul>
+            <a class="price-cta" href="https://discord.gg/s0da" target="_blank" rel="noopener">
+              Order <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="price-card reveal" style="--d:.06s">
+            <p class="price-tag">Standard</p>
+            <h3 class="price-title">Icon <span class="price-title-sub">(new)</span></h3>
+            <p class="price-amount">
+              <strong>17,500</strong>
+              <span>Robux</span>
+            </p>
+            <p class="price-alt">$52 USD · half a thumbnail</p>
+            <ul class="price-features">
+              <li>Custom concept from scratch</li>
+              <li>1024×1024 + source files</li>
+              <li>Revisions included</li>
+            </ul>
+            <a class="price-cta" href="https://discord.gg/s0da" target="_blank" rel="noopener">
+              Order <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="price-card price-card-feature reveal" style="--d:.12s">
+            <p class="price-tag">Add-on</p>
+            <h3 class="price-title">Priority Slot</h3>
+            <p class="price-amount">
+              <strong>+50%</strong>
+            </p>
+            <p class="price-alt">on standard rate</p>
+            <ul class="price-features">
+              <li>Skip the queue</li>
+              <li>Fast-track delivery</li>
+              <li>Direct slot reservation</li>
+            </ul>
+            <a class="price-cta" href="https://discord.gg/s0da" target="_blank" rel="noopener">
+              Reserve <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="price-card reveal" style="--d:.18s">
+            <p class="price-tag">Resize</p>
+            <h3 class="price-title">Rescale</h3>
+            <p class="price-amount">
+              <strong>5,000</strong>
+              <span>Robux</span>
+            </p>
+            <p class="price-alt">per image</p>
+            <ul class="price-features">
+              <li>Existing artwork</li>
+              <li>Multi-format export</li>
+              <li>Same-day turnaround</li>
+            </ul>
+            <a class="price-cta" href="https://discord.gg/s0da" target="_blank" rel="noopener">
+              Request <span aria-hidden="true">→</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+      <div class="container">
+        <div class="cta-card reveal">
+          <span class="cta-noise" aria-hidden="true"></span>
+          <p class="eyebrow"><span class="dot pulse"></span>Commissions open</p>
+          <h2 class="cta-title">
+            Ready to upgrade<br />your game's first second?
+          </h2>
+          <p class="cta-sub">
+            Open a ticket on Discord. Brief, timeline and pricing are
+            confirmed before any work begins — no surprises.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary btn-lg" href="https://discord.gg/s0da" target="_blank" rel="noopener">
+              Open a Commission Ticket <span aria-hidden="true">→</span>
+            </a>
+            <a class="btn btn-ghost btn-lg" href="#work">See Work First</a>
+          </div>
+          <p class="cta-tiny">Replies typically within 12 hours</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <a class="brand small" href="#top">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>s0da</span>
+      </a>
+      <p class="muted">© 2026 — Roblox thumbnail design</p>
+      <nav class="social" aria-label="Social">
+        <a href="tos.html">Terms</a>
+        <a href="https://discord.gg/s0da" target="_blank" rel="noopener">Discord</a>
+        <a href="https://x.com/gfxs0da" target="_blank" rel="noopener">Twitter</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Lightbox modal for full-size thumbnail viewing -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project preview" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close preview">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+    <button class="lightbox-nav lightbox-nav-prev" type="button" aria-label="Previous variant">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18L9 12L15 6"/></svg>
+    </button>
+    <button class="lightbox-nav lightbox-nav-next" type="button" aria-label="Next variant">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6L15 12L9 18"/></svg>
+    </button>
+    <div class="lightbox-stage">
+      <img class="lightbox-img" alt="" />
+      <div class="lightbox-meta">
+        <h3 class="lightbox-title"></h3>
+        <p class="lightbox-sub"></p>
+        <p class="lightbox-counter" aria-live="polite"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
