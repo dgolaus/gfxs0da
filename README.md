@@ -1,100 +1,98 @@
-<div align="center">
-
 # s0da
 
-**Roblox thumbnail design portfolio.**
-Premium dark / deep red. Built from scratch, no frameworks.
+> meu portfolio de design de thumbnails roblox · 2.3b+ visitas influenciadas
 
-[**Live**](https://dgolaus.github.io/s0da-portfolio/) · [**Terms**](https://dgolaus.github.io/s0da-portfolio/tos.html) · [**Discord**](https://discord.gg/s0da) · [**Twitter**](https://x.com/gfxs0da)
+![preview](assets/preview.gif)
 
-</div>
+<p>
+  <a href="https://dgolaus.github.io/s0da-portfolio/"><img src="assets/readme/card-live.svg" alt="live" width="420" /></a>
+  <a href="https://dgolaus.github.io/s0da-portfolio/tos.html"><img src="assets/readme/card-tos.svg" alt="tos" width="420" /></a>
+  <a href="https://discord.gg/s0da"><img src="assets/readme/card-discord.svg" alt="discord" width="420" /></a>
+</p>
 
 ---
 
-Portfolio site for [@gfxs0da](https://x.com/gfxs0da) — Roblox thumbnail designer
-with **2.3B+ visits** influenced. GFX Artist at
-[Rubicon Games](https://rubiconstudios.io/) and
-[Cube Graphics](https://cubethumbs.com).
+## sobre
 
-## Stack
+site pessoal de portfolio. atualmente artista 3d na [rubicon games](https://rubiconstudios.io/) e staff na [cube graphics](https://cubethumbs.com). designer de thumbnails roblox desde 2020, com mais de 2 bilhões de visitas influenciadas e 200+ commissions entregues. esse repo é o single-page portfolio + uma subpágina pra termos de serviço, ambos estáticos puros, sem backend, sem framework.
 
-| Layer | Tech |
-|---|---|
-| Markup | HTML5 |
-| Styles | CSS (custom properties, `:has()`, backdrop-filter, SVG filters) |
-| Behavior | Vanilla JS — zero dependencies in the browser |
-| Images | WebP optimized via [`sharp`](https://sharp.pixelplumbing.com/) (Node) |
-| Type | Inter Tight · Inter · JetBrains Mono |
-| Hosting | GitHub Pages |
+## seções
 
-## Features
+— **hero** — 5 fileiras de thumbs scrollando em direções alternadas com perspective tilt. textos entram com fade + redução de blur em cascata. headline "2 billion clicks. yours next." com gradient vermelho. stats em strip de vidro com distorção svg, contador animado no load (2.3b+ subindo do zero).
 
-- **Cinematic hero** — 5 rows of thumbs scrolling in alternating directions with perspective tilt; staggered fade-in with blur reduction; 3 glass stat cards with `backdrop-filter` SVG distortion
-- **Work grid** — multi-variant cards with hover carousel arrows + count badge; click any tile for full lightbox with prev/next + keyboard nav
-- **Trust section** — counter-up animation (`2.3B+`, `200+`, `~48h`) + 5 stars that pop in sequence with red glow
-- **Process / Discord mock** — animated 9-message ticket conversation with typing indicators, 3D cursor tilt + radial glow on the chat card
-- **Pricing** — 4 tiers with hover focus (others blur+darken)
-- **Smooth scroll** — lerp-based momentum, frame-rate independent
-- **TOS subpage** — sticky table of contents with scroll spy; deep-linkable section anchors
-- **Responsive** down to mobile; respects `prefers-reduced-motion`
+— **work** — grid 16:9 de 6 cards. 3 deles (apoc, prospecting, parkour) têm carrossel multi-variante embutido — hover mostra setas + badge "1/4". click abre lightbox em fullscreen com navegação por teclado (← → esc).
 
-## Structure
+— **about** — bio em 2 colunas com heading sticky à esquerda. lista de capabilities + chips dos estúdios atuais.
+
+— **process** — explicação do meu fluxo de commission via discord ticket + mock interativo do chat. 9 mensagens animadas com indicador "is typing" entre elas, badges client/staff, avatar com minha pfp. card tem tilt 3d que segue o cursor + glow vermelho radial acompanhando o mouse.
+
+— **trust** — 4 counters fazem count-up animado quando entram na viewport (2.3b+, 200+, ~48h, 5★). estrelas pipocam em sequência com flash de glow vermelho. abaixo, 3 testimonials reais de clientes meus.
+
+— **pricing** — 4 tiers (thumbnail 35k robux / icon novo 17.5k / priority +50% / rescale 5k). hover destaca um card e aplica blur+brightness baixa nos outros.
+
+— **cta** — call final com 3 botões: open ticket / see work first / read terms first.
+
+## extras
+
+— smooth scroll com inércia tipo manteiga (lerp 0.10)
+— ambient particles + mouse glow globais
+— film grain svg overlay sutil
+— marquee horizontal entre hero e work
+— lightbox com backdrop blur e teclado
+— subpágina de tos com toc sticky e scroll spy, 15 seções deep-linkáveis (`tos.html#refunds`, etc)
+— responsive até mobile, respeita `prefers-reduced-motion`
+
+## tech
+
+html5 · css puro (custom properties, `:has()`, `backdrop-filter`, svg filters) · js vanilla · webp via [sharp](https://sharp.pixelplumbing.com/) · fontes inter tight · inter · jetbrains mono · host github pages
+
+## estrutura
 
 ```
 .
-├── index.html            ← portfolio
-├── tos.html              ← terms of service
-├── styles.css            ← all styling (~1700 lines, scoped sections)
-├── script.js             ← all interactions (smooth scroll, lightbox, chat, tilt, …)
-├── optimize-images.js    ← run after dropping new thumbs into assets/work/
-├── package.json
+├── index.html             ← portfolio
+├── tos.html               ← termos de serviço
+├── styles.css             ← todo o estilo
+├── script.js              ← interações
+├── optimize-images.js     ← converte pngs/jpgs novos em webp
+├── record-hero.js         ← grava o gif animado do hero pra preview.gif
 └── assets/
-    ├── favicon.svg       ← minimalist red ring
+    ├── favicon.svg
     ├── pfp.png
+    ├── preview.gif        ← gif animado do hero pro readme
+    ├── readme/            ← cards animados svg
     └── work/
-        ├── *.webp        ← served by the site
-        └── works.txt     ← thumb metadata reference
+        ├── *.webp         ← thumbs servidas
+        └── works.txt
 ```
 
-## Local development
-
-Any static file server works. Open `index.html` directly in a browser too.
+## rodando local
 
 ```bash
-# python
 python -m http.server 8000
-
-# node
+# ou
 npx serve
 ```
 
-## Adding new thumbnails
+## adicionando thumbs novas
 
-1. Drop PNG / JPG files into `assets/work/`
-2. Run the optimizer (first time: `npm install`):
+1. dropa png/jpg em `assets/work/`
+2. roda o otimizador (na primeira vez: `npm install`):
    ```bash
    node optimize-images.js
    ```
-   Outputs `.webp` at quality 85, max 1920px on the long edge.
-3. Reference the new `.webp` filename in `index.html` (work grid + hero bg)
+3. referencia o `.webp` novo no `index.html`
 
-## Deploy
+## deploy
 
-`main` is the deploy branch — push and GitHub Pages rebuilds automatically (~30–60s).
+push pra `main` → github pages re-deploya em ~30-60s.
 
 ```bash
 git add .
-git commit -m "your message"
+git commit -m "msg"
 git push
 ```
 
-## License
+## licença
 
-**All rights reserved.** The source is visible because static sites are
-inherently public to any browser, but the design, code, and visuals are
-property of @gfxs0da. Not licensed for reuse, redistribution, or as a
-template for derivative portfolios.
-
----
-
-<sub>Designed and built with [Claude Code](https://claude.com/claude-code).</sub>
+todos os direitos reservados. o código é visível porque sites estáticos são naturalmente públicos pro browser, mas o design, código e visuais são meus. não autorizado pra reuso, redistribuição ou como template pra portfolios derivados.

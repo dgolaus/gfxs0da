@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 130" width="420" height="130">
+  <defs>
+    <linearGradient id="dcG" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6B0808">
+        <animate attributeName="stop-color"
+                 values="#6B0808;#B11212;#6B0808;#3A0404;#6B0808"
+                 dur="5s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#0B0B0D">
+        <animate attributeName="stop-color"
+                 values="#0B0B0D;#220606;#0B0B0D;#170303;#0B0B0D"
+                 dur="5s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+    <radialGradient id="dcGlow" cx="50%" cy="80%" r="60%">
+      <stop offset="0%" stop-color="rgba(255,60,60,0.35)" />
+      <stop offset="100%" stop-color="rgba(255,60,60,0)" />
+    </radialGradient>
+  </defs>
+  <rect width="420" height="130" rx="14" fill="url(#dcG)" />
+  <rect width="420" height="130" rx="14" fill="url(#dcGlow)" />
+  <rect x="0.5" y="0.5" width="419" height="129" rx="13.5" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1" />
+  <text x="32" y="42" fill="rgba(255,255,255,0.85)" font-family="ui-monospace, monospace" font-size="11" letter-spacing="2">CONTATO</text>
+  <text x="32" y="84" fill="#fff" font-family="Inter Tight, system-ui, sans-serif" font-size="32" font-weight="700" letter-spacing="-1">discord</text>
+  <text x="32" y="108" fill="rgba(255,255,255,0.65)" font-family="Inter, system-ui, sans-serif" font-size="13">abra um ticket</text>
+  <text x="384" y="78" fill="#fff" font-family="Inter Tight, system-ui, sans-serif" font-size="32" font-weight="700">→</text>
+</svg>

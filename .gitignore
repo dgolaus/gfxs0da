@@ -9,6 +9,7 @@ desktop.ini
 # Editor/IDE
 .vscode/
 .idea/
+.claude/
 *.swp
 *~
 
@@ -19,3 +20,7 @@ npm-debug.log*
 # Original PNG sources — heavy backups, only WebP versions are served.
 # Re-add a PNG manually if you need to re-run optimize-images.js.
 assets/work/*.png
+
+# Local-only files
+message.txt
+screenshot.js

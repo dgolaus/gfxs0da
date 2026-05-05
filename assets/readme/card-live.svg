@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 130" width="420" height="130">
+  <defs>
+    <linearGradient id="liveG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B11212">
+        <animate attributeName="stop-color"
+                 values="#B11212;#7A0808;#B11212;#FF3838;#B11212"
+                 dur="6s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#0B0B0D">
+        <animate attributeName="stop-color"
+                 values="#0B0B0D;#1F0808;#0B0B0D;#1A0404;#0B0B0D"
+                 dur="6s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+    <radialGradient id="liveGlow" cx="20%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="rgba(255,80,80,0.4)" />
+      <stop offset="100%" stop-color="rgba(255,80,80,0)" />
+    </radialGradient>
+  </defs>
+  <rect width="420" height="130" rx="14" fill="url(#liveG)" />
+  <rect width="420" height="130" rx="14" fill="url(#liveGlow)" />
+  <rect x="0.5" y="0.5" width="419" height="129" rx="13.5" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1" />
+  <circle cx="32" cy="36" r="5" fill="#fff">
+    <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <text x="46" y="42" fill="rgba(255,255,255,0.85)" font-family="ui-monospace, monospace" font-size="11" letter-spacing="2">LIVE</text>
+  <text x="32" y="84" fill="#fff" font-family="Inter Tight, system-ui, sans-serif" font-size="32" font-weight="700" letter-spacing="-1">portfolio</text>
+  <text x="32" y="108" fill="rgba(255,255,255,0.65)" font-family="Inter, system-ui, sans-serif" font-size="13">visite o site no ar</text>
+  <text x="384" y="78" fill="#fff" font-family="Inter Tight, system-ui, sans-serif" font-size="32" font-weight="700">→</text>
+</svg>
