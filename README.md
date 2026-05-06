@@ -14,7 +14,7 @@
 
 ## sobre
 
-site pessoal de portfolio. atualmente artista 3d na [rubicon games](https://rubiconstudios.io/) e staff na [cube graphics](https://cubethumbs.com). designer de thumbnails roblox desde 2020, com mais de 2 bilhões de visitas influenciadas e 200+ commissions entregues. esse repo é o single-page portfolio + uma subpágina pra termos de serviço, ambos estáticos puros, sem backend, sem framework.
+site pessoal de portfolio. atualmente artista 3d na [rubicon games](https://rubiconstudios.io/). designer de thumbnails roblox desde 2020, com mais de 2 bilhões de visitas influenciadas e 200+ commissions entregues. esse repo é o single-page portfolio + uma subpágina pra termos de serviço, ambos estáticos puros, sem backend, sem framework.
 
 ## seções
 
