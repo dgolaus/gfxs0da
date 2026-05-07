@@ -633,3 +633,71 @@ function animateCounter(el, duration = 2400) {
 
   window.addEventListener('resize', () => { target = clamp(target); });
 })();
+
+/* Custom scrollbar rail — position, glow on scroll, drag-to-scroll -------- */
+(() => {
+  const rail = document.querySelector('.rail');
+  const thumb = document.querySelector('.rail__thumb');
+  if (!rail || !thumb) return;
+
+  const html = document.documentElement;
+  const MIN_THUMB = 48; // smallest thumb height in px
+  let scrollTimer = null;
+  const STOP_MS = 260;
+
+  function update() {
+    const docH = html.scrollHeight;
+    const winH = window.innerHeight;
+    if (docH <= winH + 1) {
+      rail.style.display = 'none';
+      return;
+    }
+    rail.style.display = '';
+    const trackH = winH;
+    const ratio = winH / docH;
+    const thumbH = Math.max(MIN_THUMB, Math.round(ratio * trackH));
+    const maxScroll = docH - winH;
+    const top = (window.scrollY / maxScroll) * (trackH - thumbH);
+    thumb.style.height = thumbH + 'px';
+    thumb.style.transform = `translate(-50%, ${top}px)`;
+  }
+
+  // Mark scrolling for the glow effect
+  window.addEventListener('scroll', () => {
+    html.classList.add('is-scrolling');
+    if (scrollTimer) clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(() => html.classList.remove('is-scrolling'), STOP_MS);
+    update();
+  }, { passive: true });
+  window.addEventListener('resize', update);
+
+  // Drag-to-scroll on the thumb
+  let dragging = false;
+  let dragStartY = 0;
+  let dragStartScroll = 0;
+  thumb.addEventListener('mousedown', (e) => {
+    dragging = true;
+    dragStartY = e.clientY;
+    dragStartScroll = window.scrollY;
+    document.body.style.userSelect = 'none';
+    e.preventDefault();
+  });
+  window.addEventListener('mousemove', (e) => {
+    if (!dragging) return;
+    const docH = html.scrollHeight;
+    const winH = window.innerHeight;
+    const thumbH = thumb.offsetHeight;
+    const trackH = winH - thumbH;
+    if (trackH <= 0) return;
+    const scrollRatio = (docH - winH) / trackH;
+    const dy = e.clientY - dragStartY;
+    window.scrollTo(0, dragStartScroll + dy * scrollRatio);
+  });
+  window.addEventListener('mouseup', () => {
+    if (!dragging) return;
+    dragging = false;
+    document.body.style.userSelect = '';
+  });
+
+  update();
+})();
