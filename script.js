@@ -561,6 +561,45 @@ function animateCounter(el, duration = 2400) {
   tick();
 })();
 
+/* 6b. Roblox visits — live update from assets/visits.json ----------------- */
+/* JSON is regenerated hourly by the GitHub Action at
+   .github/workflows/update-visits.yml. Page falls back gracefully to the
+   hardcoded HTML values if fetch fails (offline, JSON missing, etc).      */
+(() => {
+  const cards = document.querySelectorAll('.card[data-game]');
+  if (!cards.length) return;
+
+  function fmt(n) {
+    if (n >= 1e9) return strip(n / 1e9) + 'B+';
+    if (n >= 1e6) return strip(n / 1e6) + 'M+';
+    if (n >= 1e3) return strip(n / 1e3) + 'K+';
+    return String(n);
+  }
+  function strip(v) {
+    const s = v.toFixed(1);
+    return s.endsWith('.0') ? s.slice(0, -2) : s;
+  }
+
+  fetch('assets/visits.json', { cache: 'no-cache' })
+    .then((r) => (r.ok ? r.json() : null))
+    .then((data) => {
+      if (!data || !data.games) return;
+      cards.forEach((card) => {
+        const key = card.dataset.game;
+        const game = data.games[key];
+        if (!game || typeof game.visits !== 'number') return;
+        const sub = card.querySelector('.card-sub');
+        if (!sub) return;
+        // Replace just the "<num><K|M|B>+ visits" portion, keep the genre prefix
+        sub.textContent = sub.textContent.replace(
+          /[\d.]+\s*[KMB]\+\s*visits/i,
+          `${fmt(game.visits)} visits`
+        );
+      });
+    })
+    .catch(() => { /* silent — keeps hardcoded fallback values */ });
+})();
+
 /* 7. Smooth scroll — implementação simples e direta ---------------------- */
 /* Lerp puro com EASE 0.16. Sem dt, sem cap, sem complicação.
    Importante: CSS NÃO deve ter `scroll-behavior: smooth` (causa lag).
