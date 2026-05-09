@@ -5,8 +5,8 @@
 ![preview](assets/preview.gif)
 
 <p>
-  <a href="https://dgolaus.github.io/s0da-portfolio/"><img src="assets/readme/card-live.svg" alt="live" width="420" /></a>
-  <a href="https://dgolaus.github.io/s0da-portfolio/tos.html"><img src="assets/readme/card-tos.svg" alt="tos" width="420" /></a>
+  <a href="https://gfxs0da.com/"><img src="assets/readme/card-live.svg" alt="live" width="420" /></a>
+  <a href="https://gfxs0da.com/tos.html"><img src="assets/readme/card-tos.svg" alt="tos" width="420" /></a>
   <a href="https://discord.gg/s0da"><img src="assets/readme/card-discord.svg" alt="discord" width="420" /></a>
 </p>
 
