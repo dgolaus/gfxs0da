@@ -302,51 +302,53 @@ function animateCounter(el, duration = 2400) {
   if (!messagesEl || !typingEl) return;
   const typingNameEl = typingEl.querySelector('.typing-name');
 
+  // Dialog uses .html (innerHTML) so we can render <strong> + multi-line via \n.
+  // All content is hardcoded — no XSS surface.
   const dialog = [
     {
       user: 'client', name: '@client', badge: 'Member', badgeClass: 'member',
       letter: 'C', color: '#5865F2', time: '14:23',
-      text: 'yo bro! need a thumb for my new game, u down?',
+      html: 'yo bro, got a new game dropping soon. need a thumbnail, you available?',
     },
     {
       user: 'gfxs0da', name: '@gfxs0da', badge: 'Staff', badgeClass: 'staff',
-      time: '14:25',
-      text: "sup bro! let's do it\nsend refs + brief, ideas, anything that helps",
+      time: '14:24',
+      html: 'for sure 🔥 send me the game link, references, and any ideas you have in mind.',
     },
     {
       user: 'client', name: '@client', badge: 'Member', badgeClass: 'member',
-      letter: 'C', color: '#5865F2', time: '14:31',
-      text: 'just sent, lmk what u can cook there',
+      letter: 'C', color: '#5865F2', time: '14:30',
+      html: 'just sent everything over. curious to see what you come up with.',
     },
     {
       user: 'gfxs0da', name: '@gfxs0da', badge: 'Staff', badgeClass: 'staff',
-      time: '14:33',
-      text: 'bet 🔥 locking in now, 2 directions by tonight',
+      time: '14:32',
+      html: "perfect. I'll put together 2 initial concepts so you can choose the direction you like best.",
     },
     {
       user: 'client', name: '@client', badge: 'Member', badgeClass: 'member',
-      letter: 'C', color: '#5865F2', time: '14:35',
-      text: 'ur the goat 🙏 no rush',
+      letter: 'C', color: '#5865F2', time: '14:33',
+      html: 'sounds good bro 🙏',
     },
     {
       user: 'gfxs0da', name: '@gfxs0da', badge: 'Staff', badgeClass: 'staff',
-      time: '18:47',
-      text: 'done. v1 darker/cinematic, v2 loud/explosive\nwhich one u feeling?',
+      time: '17:48',
+      html: 'the first pass is ready.\n\n• <strong>Concept 1:</strong> darker, more cinematic look\n• <strong>Concept 2:</strong> brighter, more explosive and action-focused\n\nwhich one are you feeling more?',
     },
     {
       user: 'client', name: '@client', badge: 'Member', badgeClass: 'member',
-      letter: 'C', color: '#5865F2', time: '18:52',
-      text: 'v2, that muzzle flash is insane 🤌',
+      letter: 'C', color: '#5865F2', time: '17:53',
+      html: 'definitely concept 2. the effects go crazy 🤯',
     },
     {
       user: 'gfxs0da', name: '@gfxs0da', badge: 'Staff', badgeClass: 'staff',
-      time: '19:01',
-      text: 'said n done, finalizing now',
+      time: '18:01',
+      html: 'w choice. polishing the final details and exporting now.',
     },
     {
       user: 'gfxs0da', name: '@gfxs0da', badge: 'Staff', badgeClass: 'staff',
-      time: '19:34',
-      text: 'delivered ✅ ticket closing',
+      time: '18:34',
+      html: 'final thumbnail delivered ✅\nappreciate the trust, excited to see the game launch.',
     },
   ];
 
@@ -365,7 +367,8 @@ function animateCounter(el, duration = 2400) {
         </div>
         <p class="chat-text"></p>
       </div>`;
-    el.querySelector('.chat-text').textContent = msg.text;
+    // innerHTML: respects \n via CSS white-space: pre-line, allows <strong>, etc.
+    el.querySelector('.chat-text').innerHTML = msg.html;
     return el;
   }
 
