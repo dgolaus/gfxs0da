@@ -1278,8 +1278,10 @@ section + section {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  /* Reserves space for all 9 messages — card stays same height as msgs animate in */
-  min-height: 460px;
+  /* Reserves space for the FULL 9-message conversation — measured at 609px,
+     20px buffer for font-rendering variance. Card stays same height from
+     start so it doesn't grow during playback. */
+  min-height: 620px;
 }
 .chat-msg {
   display: flex;
