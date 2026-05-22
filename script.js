@@ -17,10 +17,13 @@ const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const isTouch = matchMedia('(hover: none)').matches;
 
 /* 1. Nav scroll state ----------------------------------------------------- */
+/* Only runs if a nav exists (TOS page still has one — homepage no longer does) */
 const nav = document.getElementById('nav');
-const setNavState = () => nav.classList.toggle('scrolled', window.scrollY > 24);
-setNavState();
-window.addEventListener('scroll', setNavState, { passive: true });
+if (nav) {
+  const setNavState = () => nav.classList.toggle('scrolled', window.scrollY > 24);
+  setNavState();
+  window.addEventListener('scroll', setNavState, { passive: true });
+}
 
 /* 2. Reveal on scroll ----------------------------------------------------- */
 const revealObserver = new IntersectionObserver(
@@ -75,19 +78,23 @@ if (!isTouch) {
 
     const variants = variantsAttr.split(',').map((v) => v.trim());
     const img = card.querySelector('.card-img img');
+    const sourceAvif = card.querySelector('.card-img source[type="image/avif"]');
     const counter = card.querySelector('.card-count');
     const prevBtn = card.querySelector('.card-arrow-prev');
     const nextBtn = card.querySelector('.card-arrow-next');
     let idx = 0;
 
-    // Preload todas as variantes assim que o card entra na viewport
+    // Helper: WebP filename → AVIF filename
+    const toAvif = (webp) => webp.replace(/\.webp$/, '.avif');
+
+    // Preload todas as variantes (AVIF + WebP) quando o card entra na viewport
     const preloadIO = new IntersectionObserver(
       (entries, obs) => {
         for (const entry of entries) {
           if (!entry.isIntersecting) continue;
           variants.forEach((v) => {
-            const im = new Image();
-            im.src = `assets/work/${v}`;
+            new Image().src = `assets/work/${v}`;
+            new Image().src = `assets/work/${toAvif(v)}`;
           });
           obs.unobserve(entry.target);
         }
@@ -98,7 +105,9 @@ if (!isTouch) {
 
     function setVariant(newIdx) {
       idx = (newIdx + variants.length) % variants.length;
-      img.src = `assets/work/${variants[idx]}`;
+      const webp = variants[idx];
+      if (sourceAvif) sourceAvif.srcset = `assets/work/${toAvif(webp)}`;
+      img.src = `assets/work/${webp}`;
       if (counter) counter.textContent = `${idx + 1} / ${variants.length}`;
       card.dataset.currentIdx = String(idx);
     }
@@ -118,7 +127,7 @@ if (!isTouch) {
   });
 })();
 
-/* 4b. Lightbox modal — com suporte a variantes e navegação --------------- */
+/* 4b. Lightbox modal — variantes, zoom/pan, fullscreen, hash linking ---- */
 (() => {
   const lightbox = document.getElementById('lightbox');
   if (!lightbox) return;
@@ -135,10 +144,30 @@ if (!isTouch) {
   let currentIdx = 0;
   let currentTitle = '';
   let currentSub = '';
+  let currentSlug = '';
   let lastFocused = null;
+
+  // Zoom + pan state
+  let zoomed = false;
+  let panX = 0, panY = 0;
+  let dragStart = null;
+
+  function applyTransform() {
+    lightboxImg.style.transform = zoomed
+      ? `scale(2) translate(${panX}px, ${panY}px)`
+      : '';
+  }
+  function resetZoom() {
+    zoomed = false;
+    panX = 0;
+    panY = 0;
+    lightboxImg.classList.remove('is-zoomed');
+    applyTransform();
+  }
 
   function showVariant(idx) {
     if (currentVariants.length === 0) return;
+    resetZoom();
     currentIdx = (idx + currentVariants.length) % currentVariants.length;
     lightboxImg.src = `assets/work/${currentVariants[currentIdx]}`;
     lightboxImg.alt = currentVariants.length > 1
@@ -156,13 +185,22 @@ if (!isTouch) {
       prevBtn.classList.add('is-hidden');
       nextBtn.classList.add('is-hidden');
     }
+
+    // Update URL hash so the variant is deep-linkable.
+    if (currentSlug) {
+      const newHash = currentVariants.length > 1
+        ? `#work-${currentSlug}-${currentIdx + 1}`
+        : `#work-${currentSlug}`;
+      history.replaceState(null, '', newHash);
+    }
   }
 
-  function open(variants, startIdx, title, sub) {
+  function open(variants, startIdx, title, sub, slug) {
     lastFocused = document.activeElement;
     currentVariants = variants;
     currentTitle = title;
     currentSub = sub;
+    currentSlug = slug || '';
     showVariant(startIdx);
 
     lightbox.setAttribute('aria-hidden', 'false');
@@ -174,34 +212,40 @@ if (!isTouch) {
   function close() {
     lightbox.classList.remove('is-open');
     lightbox.setAttribute('aria-hidden', 'true');
+    resetZoom();
+    // Exit fullscreen if active
+    if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
+    // Clear hash from URL
+    if (location.hash.startsWith('#work-')) {
+      history.replaceState(null, '', location.pathname + location.search);
+    }
     setTimeout(() => {
       document.body.style.overflow = '';
       if (lastFocused) lastFocused.focus();
     }, 400);
   }
 
-  document.querySelectorAll('.card').forEach((card) => {
-    const trigger = () => {
-      // Se card tem variantes, abre na variante atual; senão, single image
-      const variantsAttr = card.dataset.variants;
-      const variants = variantsAttr
-        ? variantsAttr.split(',').map((v) => v.trim())
-        : [card.querySelector('.card-img img')?.src.split('/').pop() || ''];
-      const startIdx = parseInt(card.dataset.currentIdx || '0', 10);
-      const title = card.querySelector('h3')?.textContent || '';
-      const sub = card.querySelector('.card-sub')?.textContent || '';
-      open(variants, startIdx, title, sub);
-    };
+  function triggerFromCard(card) {
+    const variantsAttr = card.dataset.variants;
+    const variants = variantsAttr
+      ? variantsAttr.split(',').map((v) => v.trim())
+      : [card.querySelector('.card-img img')?.src.split('/').pop() || ''];
+    const startIdx = parseInt(card.dataset.currentIdx || '0', 10);
+    const title = card.querySelector('h3')?.textContent || '';
+    const sub = card.querySelector('.card-sub')?.textContent || '';
+    const slug = card.dataset.game || '';
+    open(variants, startIdx, title, sub, slug);
+  }
 
+  document.querySelectorAll('.card').forEach((card) => {
     card.addEventListener('click', (e) => {
-      // Não abre lightbox se clicou numa setinha do carrossel
       if (e.target.closest && e.target.closest('.card-arrow')) return;
-      trigger();
+      triggerFromCard(card);
     });
     card.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
-        trigger();
+        triggerFromCard(card);
       }
     });
   });
@@ -214,11 +258,68 @@ if (!isTouch) {
     if (e.target === lightbox) close();
   });
 
+  // Zoom on click of image
+  lightboxImg.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (!zoomed) {
+      zoomed = true;
+      panX = 0; panY = 0;
+      lightboxImg.classList.add('is-zoomed');
+      applyTransform();
+    } else {
+      resetZoom();
+    }
+  });
+
+  // Pan via pointer drag when zoomed
+  lightboxImg.addEventListener('pointerdown', (e) => {
+    if (!zoomed) return;
+    e.preventDefault();
+    dragStart = { x: e.clientX, y: e.clientY, panX, panY };
+    lightboxImg.setPointerCapture(e.pointerId);
+    lightboxImg.classList.add('is-dragging');
+  });
+  lightboxImg.addEventListener('pointermove', (e) => {
+    if (!dragStart) return;
+    panX = dragStart.panX + (e.clientX - dragStart.x) / 2;
+    panY = dragStart.panY + (e.clientY - dragStart.y) / 2;
+    applyTransform();
+  });
+  function endDrag() {
+    if (!dragStart) return;
+    dragStart = null;
+    lightboxImg.classList.remove('is-dragging');
+  }
+  lightboxImg.addEventListener('pointerup', endDrag);
+  lightboxImg.addEventListener('pointercancel', endDrag);
+
   document.addEventListener('keydown', (e) => {
     if (!lightbox.classList.contains('is-open')) return;
     if (e.key === 'Escape')     close();
-    if (e.key === 'ArrowLeft'  && currentVariants.length > 1) showVariant(currentIdx - 1);
-    if (e.key === 'ArrowRight' && currentVariants.length > 1) showVariant(currentIdx + 1);
+    else if (e.key === 'ArrowLeft'  && currentVariants.length > 1) showVariant(currentIdx - 1);
+    else if (e.key === 'ArrowRight' && currentVariants.length > 1) showVariant(currentIdx + 1);
+    else if (e.key === 'f' || e.key === 'F') {
+      e.preventDefault();
+      if (document.fullscreenElement) document.exitFullscreen();
+      else lightbox.requestFullscreen().catch(() => {});
+    }
+  });
+
+  // Deep-link on load — if URL has #work-<slug>[-<n>], open lightbox.
+  function openFromHash() {
+    const m = location.hash.match(/^#work-([a-z0-9-]+)(?:-(\d+))?$/i);
+    if (!m) return;
+    const [, slug, idxStr] = m;
+    const card = document.querySelector(`.card[data-game="${slug}"]`);
+    if (!card) return;
+    const targetIdx = idxStr ? parseInt(idxStr, 10) - 1 : 0;
+    card.dataset.currentIdx = String(targetIdx);
+    triggerFromCard(card);
+  }
+  window.addEventListener('load', openFromHash);
+  window.addEventListener('hashchange', () => {
+    if (!location.hash.startsWith('#work-')) return;
+    openFromHash();
   });
 })();
 
@@ -530,40 +631,6 @@ function animateCounter(el, duration = 2400) {
   if (items[0]) items[0].classList.add('is-active');
 })();
 
-/* 6. Mouse-tracked glow --------------------------------------------------- */
-(() => {
-  const glow = document.querySelector('.mouse-glow');
-  if (!glow || isTouch || reducedMotion) return;
-
-  let mx = window.innerWidth / 2;
-  let my = window.innerHeight / 2;
-  let gx = mx;
-  let gy = my;
-  let active = false;
-
-  document.addEventListener('mousemove', (e) => {
-    mx = e.clientX;
-    my = e.clientY;
-    if (!active) {
-      glow.classList.add('active');
-      active = true;
-    }
-  });
-  document.addEventListener('mouseleave', () => {
-    glow.classList.remove('active');
-    active = false;
-  });
-
-  const tick = () => {
-    gx += (mx - gx) * 0.12;
-    gy += (my - gy) * 0.12;
-    glow.style.left = `${gx}px`;
-    glow.style.top = `${gy}px`;
-    requestAnimationFrame(tick);
-  };
-  tick();
-})();
-
 /* 6b. Roblox visits — live update from assets/visits.json ----------------- */
 /* JSON is regenerated hourly by the GitHub Action at
    .github/workflows/update-visits.yml. Page falls back gracefully to the
@@ -601,6 +668,111 @@ function animateCounter(el, duration = 2400) {
       });
     })
     .catch(() => { /* silent — keeps hardcoded fallback values */ });
+})();
+
+/* 6c. Scroll-driven gradient — Rockstar VI style ------------------------- */
+/* Each accent text gets its own radial gradient whose center tracks the
+   viewport vertical middle (50vh). As the element scrolls through the
+   viewport, the bright spot appears to "pass through" the text.
+
+   Per-element formula: circleY = 50vh - element's_top_in_vh
+   → when element is at viewport top:    circle is 50vh below element top (dimmer)
+   → when element is at viewport middle: circle is right at element top   (brightest)
+   → when element is at viewport bottom: circle is 50vh above element top (dimmer)
+
+   No transparent stop — last color is deep red so off-screen elements stay
+   visible (no invisible text) even before they pass through bright spot.
+   rAF loop instead of scroll events (scrollTo doesn't reliably fire them).*/
+(() => {
+  const els = document.querySelectorAll(
+    '.hero-title .accent, .process-text h2 .accent-soft, .trust-stat strong'
+  );
+  if (!els.length) return;
+
+  // Smoothed circleY per element — lerps toward the scroll-based target.
+  // Higher LERP = faster catchup (1 = no lag). 0.10 gives a soft delay
+  // where the gradient visibly follows the scroll instead of locking to it.
+  const LERP = 0.10;
+  const smoothed = new WeakMap();
+
+  function update() {
+    const vh = window.innerHeight;
+    if (vh === 0) return;
+    for (const el of els) {
+      const rect = el.getBoundingClientRect();
+      const elTopVh = (rect.top / vh) * 100;
+      const targetY = 50 - elTopVh;
+
+      // Init on first frame at the target (no startup snap), then lerp
+      let prevY = smoothed.get(el);
+      if (prevY === undefined) prevY = targetY;
+      const nextY = prevY + (targetY - prevY) * LERP;
+      smoothed.set(el, nextY);
+
+      // "Yours" is huge — needs a tighter salmon zone so letters don't look yellow.
+      // Other accents keep wider scale for smoother fade.
+      const isHero = el.classList.contains('accent') &&
+                     el.closest('.hero-title') !== null;
+      const tight = isHero;
+      el.style.backgroundImage =
+        `radial-gradient(circle at 50% ${nextY.toFixed(2)}vh,` +
+        ` #ff8b6b 0vh,` +
+        ` #ff1727 ${tight ? 12 : 30}vh,` +
+        ` #6B0808 ${tight ? 50 : 80}vh,` +
+        ` #1F0202 ${tight ? 120 : 160}vh)`;
+    }
+  }
+
+  function loop() {
+    update();
+    requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+})();
+
+/* 6d. Section scroll fade-out ------------------------------------------- */
+/* As the user scrolls past the Portfolio section, sections below it fade
+   out as they LEAVE THE TOP of the viewport.
+
+   Trigger metric: rect.bottom (not rect.top). The fade only kicks in
+   once the section's BOTTOM enters the top 30% of viewport — meaning
+   most of the section's content is already off-screen. This prevents
+   the "still-looking-at-it-but-it's-blurred" bug that --rect.top would
+   cause for tall sections (e.g. Pricing with the Calculator at the
+   bottom: with the old formula the calc was already faded while still
+   centered in view).
+
+   Hero + Portfolio are excluded (stay crisp as anchors).
+   rAF loop only WRITES a CSS variable — no layout thrash.            */
+(() => {
+  const ids = ['about', 'process', 'trust', 'pricing', 'contact'];
+  const sections = ids
+    .map((id) => document.getElementById(id))
+    .filter((el) => el !== null);
+  if (sections.length === 0) return;
+
+  for (const s of sections) s.classList.add('scroll-fade');
+
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  function update() {
+    const vh = window.innerHeight;
+    // Fade window: section's bottom traveling from 30% of vh → 0 maps to leave 0→1
+    const fadeStart = vh * 0.30;
+    for (const s of sections) {
+      const rect = s.getBoundingClientRect();
+      let leave = 0;
+      if (rect.bottom < fadeStart) {
+        leave = Math.min(1, Math.max(0, (fadeStart - rect.bottom) / fadeStart));
+      }
+      s.style.setProperty('--leave', leave.toFixed(3));
+    }
+  }
+  function loop() {
+    update();
+    requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
 })();
 
 /* 7. Smooth scroll — implementação simples e direta ---------------------- */
@@ -743,3 +915,4 @@ function animateCounter(el, duration = 2400) {
 
   update();
 })();
+

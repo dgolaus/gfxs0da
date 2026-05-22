@@ -46,8 +46,26 @@ async function main() {
       .webp({ quality: QUALITY, effort: 6 })
       .toFile(outPath);
 
+    // Also output AVIF — ~15-25% smaller than WebP at equivalent quality.
+    // Used in <picture> tags as primary source with WebP fallback.
+    const avifPath = path.join(SRC_DIR, `${baseName}.avif`);
+    let pipelineAvif = sharp(srcPath);
+    if (needsResize) {
+      pipelineAvif = pipelineAvif.resize({
+        width: MAX_DIM,
+        height: MAX_DIM,
+        fit: 'inside',
+        withoutEnlargement: true,
+      });
+    }
+    await pipelineAvif
+      .avif({ quality: 65, effort: 6 })
+      .toFile(avifPath);
+
     const outStat = await fs.stat(outPath);
+    const avifStat = await fs.stat(avifPath);
     const outSize = outStat.size;
+    const avifSize = avifStat.size;
     totalAfter += outSize;
 
     const reduction = (((srcSize - outSize) / srcSize) * 100).toFixed(1);
@@ -57,7 +75,7 @@ async function main() {
       : ` (${meta.width}x${meta.height})`;
 
     console.log(
-      `  ${file.padEnd(28)} ${fmt(srcSize).padStart(8)} → ${fmt(outSize).padStart(8)}  -${reduction}%${dim}`
+      `  ${file.padEnd(28)} ${fmt(srcSize).padStart(8)} → webp ${fmt(outSize).padStart(8)} · avif ${fmt(avifSize).padStart(8)}${dim}`
     );
   }
 
