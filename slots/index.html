@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Live commission slot availability for s0da — Roblox thumbnail design. See open slots and estimated turnaround." />
+  <meta name="theme-color" content="#fc1f25" />
+  <meta name="robots" content="noindex" />
+  <link rel="canonical" href="https://gfxs0da.com/slots/" />
+  <title>Slots — s0da</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="alternate icon" href="/assets/pfp.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <!-- Cloudflare Web Analytics — privacy-friendly, no cookies, ~1KB defer -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "c6b7dfb2fbc14a008e7624d4a8618006"}'></script>
+</head>
+<body class="bg-red slots-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="/" aria-label="s0da home">
+      <span class="brand-dot" aria-hidden="true"></span>
+      <span>s0da</span>
+    </a>
+    <a class="nav-back" href="/">
+      <span aria-hidden="true">←</span> Back to portfolio
+    </a>
+  </header>
+
+  <main id="main" class="slots-main">
+    <div class="container slots-container">
+
+      <!-- Single dashboard card containing: header, 2-column main
+           (visual tiles on the left, counter+status on the right),
+           inline stats row, and footer with CTA + secondary link. -->
+      <section class="slots-card reveal" id="slots-card" data-state="loading">
+        <header class="slots-card-head">
+          <p class="eyebrow"><span class="dash"></span>Commission Status</p>
+          <span class="slots-updated-tag">
+            <span class="slots-updated-label">Updated</span>
+            <strong id="slots-updated">—</strong>
+          </span>
+        </header>
+
+        <div class="slots-card-main">
+          <!-- Visual tiles — 1 per slot. Filled = busy, empty = available.
+               JS rebuilds these on data load. -->
+          <ol class="slots-tiles" id="slots-tiles" aria-label="Slot availability">
+            <li class="slots-tile" data-tile="loading">
+              <span class="slots-tile-glyph" aria-hidden="true"></span>
+              <span class="slots-tile-meta">
+                <span class="slots-tile-num">01</span>
+                <span class="slots-tile-state">—</span>
+              </span>
+            </li>
+            <li class="slots-tile" data-tile="loading">
+              <span class="slots-tile-glyph" aria-hidden="true"></span>
+              <span class="slots-tile-meta">
+                <span class="slots-tile-num">02</span>
+                <span class="slots-tile-state">—</span>
+              </span>
+            </li>
+            <li class="slots-tile" data-tile="loading">
+              <span class="slots-tile-glyph" aria-hidden="true"></span>
+              <span class="slots-tile-meta">
+                <span class="slots-tile-num">03</span>
+                <span class="slots-tile-state">—</span>
+              </span>
+            </li>
+          </ol>
+
+          <div class="slots-summary">
+            <p class="slots-counter" aria-live="polite">
+              <strong class="slots-open" id="slots-open">—</strong>
+              <span class="slots-of">of</span>
+              <strong class="slots-total" id="slots-total">—</strong>
+            </p>
+            <p class="slots-counter-label">slots open</p>
+            <p class="slots-status">
+              <span class="slots-status-dot" aria-hidden="true"></span>
+              <span class="slots-status-text" id="slots-status-text">Loading…</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Inline stats row — ETA + Avg reply, integrated into the card -->
+        <div class="slots-stats-inline">
+          <div class="slots-stat-inline">
+            <span class="slots-stat-label">Estimated turnaround</span>
+            <strong class="slots-stat-value" id="slots-eta">—</strong>
+          </div>
+          <div class="slots-stat-inline">
+            <span class="slots-stat-label">Average reply</span>
+            <strong class="slots-stat-value">&lt; 12h</strong>
+          </div>
+          <div class="slots-stat-inline">
+            <span class="slots-stat-label">Revisions</span>
+            <strong class="slots-stat-value">Included</strong>
+          </div>
+        </div>
+
+        <footer class="slots-card-foot">
+          <a class="btn btn-primary btn-lg slots-cta" id="slots-cta" href="https://discord.gg/s0da" target="_blank" rel="noopener">
+            Open a Ticket <span aria-hidden="true">→</span>
+          </a>
+          <a class="slots-secondary" href="#priority">
+            Need it sooner? <span aria-hidden="true">↓</span>
+          </a>
+        </footer>
+      </section>
+
+      <!-- Priority Slot upsell — sole secondary section. Reinforces the
+           upgrade path for users who hit "queue full" or just want speed. -->
+      <section class="slots-priority reveal" id="priority" style="--d:.12s">
+        <div class="slots-priority-text">
+          <p class="eyebrow"><span class="dash"></span>Add-on</p>
+          <h2>Need a locked-in delivery window?</h2>
+          <p>
+            The <strong>Priority Slot</strong> add-on jumps the queue and
+            fast-tracks your commission, regardless of how many slots are
+            taken. Standard rate <strong>+50%</strong>.
+          </p>
+          <a class="btn btn-ghost" href="/#pricing">See pricing <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="slots-priority-badge" aria-hidden="true">
+          <span class="slots-priority-num">+50%</span>
+          <span class="slots-priority-label">Priority Slot</span>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <a class="brand small" href="/">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>s0da</span>
+      </a>
+      <p class="muted">© 2026 — Roblox thumbnail design</p>
+      <nav class="social" aria-label="Social">
+        <a href="/tos/">Terms</a>
+        <a href="https://discord.gg/s0da" target="_blank" rel="noopener">Discord</a>
+        <a href="https://x.com/gfxs0da" target="_blank" rel="noopener">Twitter</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    /* Slots page — single dashboard card, fetched from /assets/slots.json.
+       JS responsibilities:
+         1. Render tiles based on open vs total (first N tiles are open,
+            rest are busy). Each tile shows a glyph + slot number + state.
+         2. Update counter open/total values + status text + state class
+            (available | full | error | loading) on the card.
+         3. Render ETA + last-updated from JSON fields.
+         4. Trigger .reveal entry on intersection.
+         5. Apply Rockstar-style scroll-driven gradient on the counter
+            numbers (LERP-smoothed, same as the main site).            */
+    (() => {
+      const card     = document.getElementById('slots-card');
+      const openEl   = document.getElementById('slots-open');
+      const totalEl  = document.getElementById('slots-total');
+      const statusEl = document.getElementById('slots-status-text');
+      const etaEl    = document.getElementById('slots-eta');
+      const updEl    = document.getElementById('slots-updated');
+      const ctaEl    = document.getElementById('slots-cta');
+      const tilesEl  = document.getElementById('slots-tiles');
+
+      function animateNum(el, to, duration = 900) {
+        const start = performance.now();
+        const easeOut = (t) => 1 - Math.pow(1 - t, 3);
+        const tick = (now) => {
+          const t = Math.min(1, (now - start) / duration);
+          const v = Math.round(easeOut(t) * to);
+          el.textContent = String(v);
+          if (t < 1) requestAnimationFrame(tick);
+          else el.textContent = String(to);
+        };
+        requestAnimationFrame(tick);
+      }
+
+      function fmtDate(iso) {
+        if (!iso) return '—';
+        try {
+          const d = new Date(iso + 'T00:00:00Z');
+          return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+        } catch (_) { return iso; }
+      }
+
+      function renderTiles(open, total) {
+        // First `open` tiles are AVAILABLE; the rest are BUSY.
+        tilesEl.innerHTML = '';
+        for (let i = 1; i <= total; i++) {
+          const isOpen = i <= open;
+          const li = document.createElement('li');
+          li.className = 'slots-tile';
+          li.dataset.tile = isOpen ? 'open' : 'busy';
+          li.innerHTML = `
+            <span class="slots-tile-glyph" aria-hidden="true"></span>
+            <span class="slots-tile-meta">
+              <span class="slots-tile-num">${String(i).padStart(2, '0')}</span>
+              <span class="slots-tile-state">${isOpen ? 'Available' : 'In progress'}</span>
+            </span>
+          `;
+          tilesEl.appendChild(li);
+        }
+      }
+
+      fetch('/assets/slots.json', { cache: 'no-cache' })
+        .then((r) => r.ok ? r.json() : null)
+        .then((data) => {
+          if (!data || typeof data.open !== 'number') throw new Error('bad data');
+          const { open, total, etaHoursMin, etaHoursMax, updatedAt } = data;
+          totalEl.textContent = String(total);
+          animateNum(openEl, open);
+
+          if (open === 0) {
+            card.dataset.state = 'full';
+            statusEl.textContent = 'Queue full — waitlist mode';
+            ctaEl.innerHTML = 'Join the Waitlist <span aria-hidden="true">→</span>';
+          } else {
+            card.dataset.state = 'available';
+            statusEl.textContent = open === 1 ? 'One slot left — order now' : 'Available — you can order';
+          }
+
+          etaEl.textContent = (etaHoursMin && etaHoursMax)
+            ? `~${etaHoursMin}–${etaHoursMax}h`
+            : '~24–48h';
+          updEl.textContent = fmtDate(updatedAt);
+          renderTiles(open, total);
+        })
+        .catch(() => {
+          card.dataset.state = 'error';
+          statusEl.textContent = 'Could not load — try Discord directly';
+          openEl.textContent = '?';
+          totalEl.textContent = '?';
+          etaEl.textContent = '~24–48h';
+          updEl.textContent = '—';
+        });
+
+      // Reveal entry (same as main site)
+      const io = new IntersectionObserver((entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-in');
+            io.unobserve(entry.target);
+          }
+        }
+      }, { threshold: 0.15 });
+      document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+
+      // Rockstar-VI scroll-driven gradient on the big counter number only.
+      // .slots-total stays in solid color (no gradient, no clip-to-text)
+      // so it reads as a quiet reference number, not a second "feature".
+      const gradientEls = document.querySelectorAll('.slots-open');
+      const LERP = 0.10;
+      const smoothed = new WeakMap();
+      function updateGradients() {
+        const vh = window.innerHeight;
+        if (vh === 0) return;
+        for (const el of gradientEls) {
+          const rect = el.getBoundingClientRect();
+          const elTopVh = (rect.top / vh) * 100;
+          const targetY = 50 - elTopVh;
+          let prevY = smoothed.get(el);
+          if (prevY === undefined) prevY = targetY;
+          const nextY = prevY + (targetY - prevY) * LERP;
+          smoothed.set(el, nextY);
+          el.style.backgroundImage =
+            `radial-gradient(circle at 50% ${nextY.toFixed(2)}vh,` +
+            ` #ff8b6b 0vh,` +
+            ` #ff1727 20vh,` +
+            ` #6B0808 60vh,` +
+            ` #1F0202 140vh)`;
+        }
+      }
+      function gradLoop() {
+        updateGradients();
+        requestAnimationFrame(gradLoop);
+      }
+      requestAnimationFrame(gradLoop);
+    })();
+  </script>
+</body>
+</html>

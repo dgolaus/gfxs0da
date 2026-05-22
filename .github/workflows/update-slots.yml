@@ -1,0 +1,45 @@
+name: Update slots from Discord
+
+on:
+  schedule:
+    # Every 10 minutes — keeps the /slots/ page in sync with the Discord
+    # channel name without hammering the API. Cron is minimum 5 min on
+    # GitHub Actions; 10 min is a comfortable balance.
+    - cron: '*/10 * * * *'
+  workflow_dispatch: # allow manual run from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch slot count from Discord channel name
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCORD_SLOTS_CHANNEL_ID: ${{ secrets.DISCORD_SLOTS_CHANNEL_ID }}
+        run: node scripts/fetch-slots.js
+
+      - name: Commit if slots changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Drop updatedAt from diff check — only commit if actual open/total
+          # values change. Otherwise the daily timestamp tick would spam
+          # commits even when the slot count hasn't moved.
+          if git diff --quiet -I '"updatedAt"' assets/slots.json; then
+            echo "No slot changes — skipping commit."
+            exit 0
+          fi
+
+          git add assets/slots.json
+          git commit -m "chore: sync slots from Discord [skip ci]"
+          git push

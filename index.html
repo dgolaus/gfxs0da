@@ -27,17 +27,74 @@
   <link rel="stylesheet" href="styles.css" />
   <!-- Cloudflare Web Analytics — privacy-friendly, no cookies, ~1KB defer -->
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "c6b7dfb2fbc14a008e7624d4a8618006"}'></script>
+  <!-- Schema.org structured data for SEO + rich results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://gfxs0da.com/#person",
+        "name": "s0da",
+        "alternateName": "gfxs0da",
+        "jobTitle": "Roblox Thumbnail Designer",
+        "description": "Designer of thumbnails, icons and rescales for Roblox games. Visuals contributed to projects totaling 2.3B+ visits.",
+        "url": "https://gfxs0da.com",
+        "image": "https://gfxs0da.com/assets/og.webp",
+        "sameAs": [
+          "https://x.com/gfxs0da",
+          "https://discord.gg/s0da"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Rubicon Games",
+          "url": "https://rubiconstudios.io/"
+        },
+        "knowsAbout": ["Roblox thumbnail design", "Game graphics", "App icons", "Marketing visuals"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://gfxs0da.com/#website",
+        "url": "https://gfxs0da.com",
+        "name": "S0DA — Roblox Thumbnail Designer",
+        "description": "More than art. Your next high CTR. Thumbnails, icons and rescales engineered to convert.",
+        "author": { "@id": "https://gfxs0da.com/#person" },
+        "publisher": { "@id": "https://gfxs0da.com/#person" }
+      },
+      {
+        "@type": "Service",
+        "name": "Roblox Thumbnail Design Commission",
+        "provider": { "@id": "https://gfxs0da.com/#person" },
+        "areaServed": "Worldwide",
+        "serviceType": "Graphic design for Roblox games",
+        "offers": [
+          { "@type": "Offer", "name": "Thumbnail", "price": "105", "priceCurrency": "USD" },
+          { "@type": "Offer", "name": "Icon (new)", "price": "52", "priceCurrency": "USD" },
+          { "@type": "Offer", "name": "Rescale", "price": "15", "priceCurrency": "USD" }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
-<body>
+<body class="bg-red">
+  <!-- bg-red toggles the red-saturated background variant.
+       Remove the class to revert to the original (desaturated) bg. -->
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- SVG filters — glass distortion (Chrome/Edge support url() in backdrop-filter) -->
+  <!-- SVG filters + gradients (glass distortion, animated star fill) -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <defs>
       <filter id="glass-distort" x="0%" y="0%" width="100%" height="100%">
         <feTurbulence type="fractalNoise" baseFrequency="0.014 0.018" numOctaves="2" seed="3" result="noise"/>
         <feDisplacementMap in="SourceGraphic" in2="noise" scale="14" xChannelSelector="R" yChannelSelector="G"/>
       </filter>
+      <!-- Static gradient for stars — saturated red top → deep red bottom.
+           Uses the same palette as the scroll-driven text accents. -->
+      <linearGradient id="starGrad" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%"   stop-color="#ff1727" />
+        <stop offset="100%" stop-color="#5A0808" />
+      </linearGradient>
     </defs>
   </svg>
 
@@ -52,9 +109,6 @@
     <span class="particle"></span>
     <span class="particle"></span>
   </div>
-
-  <!-- Mouse-tracked glow -->
-  <div class="mouse-glow" aria-hidden="true"></div>
 
   <header class="nav" id="nav">
     <a class="brand" href="#top" aria-label="s0da home">
@@ -317,7 +371,10 @@
                    data-game="apocalypse"
                    aria-label="View Survive the Apocalypse — 4 thumbnails">
             <div class="card-img">
-              <img src="assets/work/apoc-thumb.webp" alt="Survive the Apocalypse — Roblox thumbnail" loading="lazy" />
+              <picture>
+                <source srcset="assets/work/apoc-thumb.avif" type="image/avif" />
+                <img src="assets/work/apoc-thumb.webp" alt="Survive the Apocalypse — Roblox thumbnail" loading="lazy" />
+              </picture>
             </div>
             <button class="card-arrow card-arrow-prev" type="button" aria-label="Previous variant">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18L9 12L15 6"/></svg>
@@ -330,7 +387,6 @@
               <h3>Survive the Apocalypse</h3>
               <p class="card-sub">Survival, Horror · 87.9M+ visits</p>
             </div>
-            <span class="card-corner" aria-hidden="true">01</span>
           </article>
 
           <article class="card has-variants reveal" role="button" tabindex="0" style="--d:.05s"
@@ -338,7 +394,10 @@
                    data-game="prospecting"
                    aria-label="View Prospecting — 4 thumbnails">
             <div class="card-img">
-              <img src="assets/work/prospecting-thumb.webp" alt="Prospecting — Roblox thumbnail" loading="lazy" />
+              <picture>
+                <source srcset="assets/work/prospecting-thumb.avif" type="image/avif" />
+                <img src="assets/work/prospecting-thumb.webp" alt="Prospecting — Roblox thumbnail" loading="lazy" />
+              </picture>
             </div>
             <button class="card-arrow card-arrow-prev" type="button" aria-label="Previous variant">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18L9 12L15 6"/></svg>
@@ -351,7 +410,6 @@
               <h3>Prospecting!</h3>
               <p class="card-sub">Simulator · 224.9M+ visits</p>
             </div>
-            <span class="card-corner" aria-hidden="true">02</span>
           </article>
 
           <article class="card has-variants reveal" role="button" tabindex="0" style="--d:.10s"
@@ -359,7 +417,10 @@
                    data-game="parkour"
                    aria-label="View Parkour for Brainrots — 2 thumbnails">
             <div class="card-img">
-              <img src="assets/work/parkour-thumb.webp" alt="Parkour for Brainrots — Roblox thumbnail" loading="lazy" />
+              <picture>
+                <source srcset="assets/work/parkour-thumb.avif" type="image/avif" />
+                <img src="assets/work/parkour-thumb.webp" alt="Parkour for Brainrots — Roblox thumbnail" loading="lazy" />
+              </picture>
             </div>
             <button class="card-arrow card-arrow-prev" type="button" aria-label="Previous variant">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18L9 12L15 6"/></svg>
@@ -372,42 +433,47 @@
               <h3>Parkour for Brainrots</h3>
               <p class="card-sub">Parkour · 45.7M+ visits</p>
             </div>
-            <span class="card-corner" aria-hidden="true">03</span>
           </article>
 
           <!-- Row 2: solo cards (single thumbnail each) -->
           <article class="card reveal" role="button" tabindex="0" data-game="aura" aria-label="View Aura Ascension Easter Update thumbnail full size">
             <div class="card-img">
-              <img src="assets/work/aura-easter.webp" alt="Aura Ascension Easter Update — Roblox thumbnail" loading="lazy" />
+              <picture>
+                <source srcset="assets/work/aura-easter.avif" type="image/avif" />
+                <img src="assets/work/aura-easter.webp" alt="Aura Ascension Easter Update — Roblox thumbnail" loading="lazy" />
+              </picture>
             </div>
             <div class="card-meta">
               <h3>Aura Ascension — Easter Update</h3>
               <p class="card-sub">Simulator · 78.8M+ visits</p>
             </div>
-            <span class="card-corner" aria-hidden="true">04</span>
           </article>
 
           <article class="card card-feature reveal" role="button" tabindex="0" style="--d:.05s" aria-label="View Grow a Garden 2 thumbnail full size">
             <div class="card-img">
-              <img src="assets/work/gag2-thumb.webp" alt="Grow a Garden 2 — Roblox thumbnail" loading="lazy" />
+              <picture>
+                <source srcset="assets/work/gag2-thumb.avif" type="image/avif" />
+                <img src="assets/work/gag2-thumb.webp" alt="Grow a Garden 2 — Roblox thumbnail" loading="lazy" />
+              </picture>
             </div>
             <div class="card-meta">
               <span class="tag tag-accent">Unreleased</span>
               <h3>Grow a Garden 2</h3>
               <p class="card-sub">Simulator · Coming soon</p>
             </div>
-            <span class="card-corner" aria-hidden="true">05</span>
           </article>
 
           <article class="card reveal" role="button" tabindex="0" style="--d:.10s" data-game="fishing" aria-label="View My Fishing Brainrots thumbnail full size">
             <div class="card-img">
-              <img src="assets/work/fishing-thumb.webp" alt="My Fishing Brainrots — Roblox thumbnail" loading="lazy" />
+              <picture>
+                <source srcset="assets/work/fishing-thumb.avif" type="image/avif" />
+                <img src="assets/work/fishing-thumb.webp" alt="My Fishing Brainrots — Roblox thumbnail" loading="lazy" />
+              </picture>
             </div>
             <div class="card-meta">
               <h3>My Fishing Brainrots</h3>
               <p class="card-sub">Tycoon-Sim · 215.3M+ visits</p>
             </div>
-            <span class="card-corner" aria-hidden="true">06</span>
           </article>
         </div>
       </div>
@@ -496,9 +562,12 @@
               </div>
             </li>
           </ul>
-          <a class="btn btn-primary" href="https://discord.gg/s0da" target="_blank" rel="noopener">
-            Open a Ticket <span aria-hidden="true">→</span>
-          </a>
+          <div class="process-cta">
+            <a class="btn btn-primary" href="https://discord.gg/s0da" target="_blank" rel="noopener">
+              Open a Ticket <span aria-hidden="true">→</span>
+            </a>
+            <a class="btn btn-ghost" href="/slots/">Check Slots</a>
+          </div>
         </div>
 
         <div class="chat-mock reveal" style="--d:.1s">
@@ -585,7 +654,7 @@
             </blockquote>
             <figcaption>
               <span class="who">Tony <span class="handle">@CoderTony</span></span>
-              <span class="dim">Game Programmer · Fish It · Pet Sim 99 · PSGO</span>
+              <span class="dim">Game Programmer @ BIG Games</span>
             </figcaption>
           </figure>
 
@@ -598,20 +667,20 @@
             </blockquote>
             <figcaption>
               <span class="who">Kalak <span class="handle">@notkalak</span></span>
-              <span class="dim">Producer · Top CCU Games · Shrink Hide &amp; Seek</span>
+              <span class="dim">Game Producer @ Top CCU Games</span>
             </figcaption>
           </figure>
 
           <figure class="quote reveal" style="--d:.16s">
             <span class="quote-mark" aria-hidden="true">"</span>
             <blockquote>
-              Super clean work and a great person to talk to in general.
-              Received multiple designs very fast, and the quality was very
-              good across all of them. Highly recommend!
+              Super fast and super easy to work with, loved the
+              thumbnail! Quick turnaround and the final piece nailed
+              exactly what we had in mind.
             </blockquote>
             <figcaption>
-              <span class="who">Farhan <span class="handle">@avtixe</span></span>
-              <span class="dim">Founder &amp; CEO · BlockTurns · Aura Ascension</span>
+              <span class="who">Filtered <span class="handle">@FilteredScripts</span></span>
+              <span class="dim">Game Developer @ BitLoop</span>
             </figcaption>
           </figure>
         </div>
@@ -702,6 +771,7 @@
             </a>
           </article>
         </div>
+
       </div>
     </section>
 
@@ -721,7 +791,6 @@
             <a class="btn btn-primary btn-lg" href="https://discord.gg/s0da" target="_blank" rel="noopener">
               Open a Commission Ticket <span aria-hidden="true">→</span>
             </a>
-            <a class="btn btn-ghost btn-lg" href="#work">See Work First</a>
             <a class="btn btn-ghost btn-lg" href="/tos/">Read Terms First</a>
           </div>
           <p class="cta-tiny">Replies typically within 12 hours</p>

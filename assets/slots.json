@@ -1,0 +1,8 @@
+{
+  "open": 2,
+  "total": 3,
+  "etaHoursMin": 24,
+  "etaHoursMax": 48,
+  "updatedAt": "2026-05-16",
+  "note": "Update this file (commit + push) when slots fill or open. The site + /slots page auto-update on next page load. etaHoursMin/Max controls the 'Estimated turnaround' text on the slots page."
+}
