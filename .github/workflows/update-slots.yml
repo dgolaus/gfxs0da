@@ -42,4 +42,9 @@ jobs:
 
           git add assets/slots.json
           git commit -m "chore: sync slots from Discord [skip ci]"
+
+          # Race-condition guard: another workflow (or a manual push) may
+          # have landed a commit on main between our checkout and now.
+          # Rebase + push handles that gracefully without the 128 error.
+          git pull --rebase --autostash
           git push
