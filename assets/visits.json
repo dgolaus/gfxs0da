@@ -1,45 +1,45 @@
 {
-  "updatedAt": "2026-06-07T14:05:19.755Z",
+  "updatedAt": "2026-06-07T16:21:27.280Z",
   "games": {
     "apocalypse": {
       "placeId": "90148635862803",
       "universeId": 9098570654,
       "name": "[UPD💎] 🧟 Survive the Apocalypse",
-      "visits": 155037884,
-      "playing": 31175,
-      "favorites": 241208
+      "visits": 155198774,
+      "playing": 29958,
+      "favorites": 241419
     },
     "prospecting": {
       "placeId": "129827112113663",
       "universeId": 7629331599,
       "name": "Prospecting! 💎",
-      "visits": 236005626,
-      "playing": 5894,
-      "favorites": 407321
+      "visits": 236034975,
+      "playing": 5985,
+      "favorites": 407384
     },
     "parkour": {
       "placeId": "75034791252172",
       "universeId": 9871986464,
       "name": "[UPD] Parkour For Brainrots!",
-      "visits": 49749760,
-      "playing": 665,
-      "favorites": 68463
+      "visits": 49760011,
+      "playing": 503,
+      "favorites": 68480
     },
     "aura": {
       "placeId": "77393318863643",
       "universeId": 9674224595,
       "name": "Aura Ascension",
-      "visits": 92177205,
-      "playing": 458,
-      "favorites": 3358343
+      "visits": 92186264,
+      "playing": 496,
+      "favorites": 3358511
     },
     "fishing": {
       "placeId": "113489516847696",
       "universeId": 8916375040,
       "name": "My Fishing Brainrots",
-      "visits": 218708696,
-      "playing": 690,
-      "favorites": 91450
+      "visits": 218716398,
+      "playing": 616,
+      "favorites": 91460
     }
   }
 }
