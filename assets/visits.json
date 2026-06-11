@@ -1,45 +1,55 @@
 {
-  "updatedAt": "2026-06-11T00:20:52.750Z",
+  "updatedAt": "2026-06-10T18:02:07.921Z",
   "games": {
     "apocalypse": {
       "placeId": "90148635862803",
       "universeId": 9098570654,
       "name": "[UPD💎] 🧟 Survive the Apocalypse",
-      "visits": 158798348,
-      "playing": 13583,
-      "favorites": 246240
+      "visits": 158583772,
+      "playing": 15952,
+      "favorites": 245857,
+      "creatorName": "Rubicon South",
+      "creatorVerified": true
     },
     "prospecting": {
       "placeId": "129827112113663",
       "universeId": 7629331599,
       "name": "Prospecting! 💎",
-      "visits": 236886465,
-      "playing": 4516,
-      "favorites": 409047
+      "visits": 236822958,
+      "playing": 5015,
+      "favorites": 408871,
+      "creatorName": "Prospecting!",
+      "creatorVerified": true
     },
     "parkour": {
       "placeId": "75034791252172",
       "universeId": 9871986464,
       "name": "[UPD] Parkour For Brainrots!",
-      "visits": 50026928,
-      "playing": 452,
-      "favorites": 68807
+      "visits": 50001860,
+      "playing": 534,
+      "favorites": 68770,
+      "creatorName": "Fly To 8 Figs",
+      "creatorVerified": false
     },
-    "aura": {
-      "placeId": "77393318863643",
-      "universeId": 9674224595,
-      "name": "Aura Ascension",
-      "visits": 92366967,
-      "playing": 229,
-      "favorites": 3361381
+    "restaurant": {
+      "placeId": "77843161404023",
+      "universeId": 9970645639,
+      "name": "Run a Restaurant!",
+      "visits": 23526525,
+      "playing": 20910,
+      "favorites": 232746,
+      "creatorName": "Burnt Toast Labs!",
+      "creatorVerified": true
     },
-    "fishing": {
-      "placeId": "113489516847696",
-      "universeId": 8916375040,
-      "name": "My Fishing Brainrots",
-      "visits": 218908668,
-      "playing": 440,
-      "favorites": 91646
+    "burgerz": {
+      "placeId": "99817148924004",
+      "universeId": 7498898979,
+      "name": "Burgerz🍔",
+      "visits": 49945795,
+      "playing": 1892,
+      "favorites": 155269,
+      "creatorName": "2 Player Games!",
+      "creatorVerified": true
     }
   }
 }

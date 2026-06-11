@@ -996,6 +996,11 @@ section + section {
     0 2px 12px rgba(0, 0, 0, 0.85),
     0 0 4px rgba(0, 0, 0, 0.65);
 }
+.verified-badge {
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
 .card-sub {
   margin: 8px 0 0;
   display: inline-flex;
@@ -1165,8 +1170,8 @@ section + section {
 .studio-chip {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  padding: 12px 20px;
+  gap: 10px;
+  padding: 12px 20px 12px 16px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 999px;
@@ -1189,6 +1194,14 @@ section + section {
   transition: transform var(--t-fast) var(--ease);
 }
 .studio-chip:hover .ext { transform: translate(2px, -2px); }
+.studio-logo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  flex-shrink: 0;
+}
+.studio-logo[src*="rubicon"] { width: 30px; height: 30px; }
 
 /* ============================================================
    PROCESS — Discord ticket explainer + glass chat mock
@@ -2043,8 +2056,22 @@ footer { padding: 36px 0 56px; border-top: 1px solid var(--line); }
   letter-spacing: -0.015em;
   color: var(--text);
 }
+.lightbox-creator {
+  margin: 6px 0 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--t-display);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  color: rgba(255, 255, 255, 0.88);
+}
+.lightbox-creator:empty,
+.lightbox-creator .lightbox-creator-name:empty { display: none; }
+.lightbox-creator .verified-badge { width: 15px; height: 15px; }
 .lightbox-sub {
-  margin: 4px 0 0;
+  margin: 6px 0 0;
   font-family: var(--t-mono);
   font-size: 11px;
   text-transform: uppercase;
