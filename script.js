@@ -134,6 +134,8 @@ if (!isTouch) {
 
   const lightboxImg     = lightbox.querySelector('.lightbox-img');
   const lightboxTitle   = lightbox.querySelector('.lightbox-title');
+  const lightboxCreator     = lightbox.querySelector('.lightbox-creator');
+  const lightboxCreatorName = lightbox.querySelector('.lightbox-creator-name');
   const lightboxSub     = lightbox.querySelector('.lightbox-sub');
   const lightboxCounter = lightbox.querySelector('.lightbox-counter');
   const closeBtn        = lightbox.querySelector('.lightbox-close');
@@ -144,6 +146,8 @@ if (!isTouch) {
   let currentIdx = 0;
   let currentTitle = '';
   let currentSub = '';
+  let currentCreator = '';
+  let currentCreatorVerified = false;
   let currentSlug = '';
   let lastFocused = null;
 
@@ -176,6 +180,24 @@ if (!isTouch) {
     lightboxTitle.textContent = currentTitle;
     lightboxSub.textContent = currentSub;
 
+    if (currentCreator) {
+      lightboxCreatorName.textContent = 'By ' + currentCreator;
+      lightboxCreator.style.display = '';
+      const existingBadge = lightboxCreator.querySelector('.verified-badge');
+      if (currentCreatorVerified && !existingBadge) {
+        const img = document.createElement('img');
+        img.className = 'verified-badge';
+        img.src = 'assets/roblox-verified.svg';
+        img.alt = 'Verified by Roblox';
+        lightboxCreator.appendChild(img);
+      } else if (!currentCreatorVerified && existingBadge) {
+        existingBadge.remove();
+      }
+    } else {
+      lightboxCreatorName.textContent = '';
+      lightboxCreator.style.display = 'none';
+    }
+
     if (currentVariants.length > 1) {
       lightboxCounter.textContent = `${currentIdx + 1} of ${currentVariants.length}`;
       prevBtn.classList.remove('is-hidden');
@@ -195,11 +217,13 @@ if (!isTouch) {
     }
   }
 
-  function open(variants, startIdx, title, sub, slug) {
+  function open(variants, startIdx, title, sub, slug, creator, creatorVerified) {
     lastFocused = document.activeElement;
     currentVariants = variants;
     currentTitle = title;
     currentSub = sub;
+    currentCreator = creator || '';
+    currentCreatorVerified = !!creatorVerified;
     currentSlug = slug || '';
     showVariant(startIdx);
 
@@ -234,7 +258,9 @@ if (!isTouch) {
     const title = card.querySelector('h3')?.textContent || '';
     const sub = card.querySelector('.card-sub')?.textContent || '';
     const slug = card.dataset.game || '';
-    open(variants, startIdx, title, sub, slug);
+    const creator = card.dataset.creatorName || '';
+    const creatorVerified = card.dataset.creatorVerified === 'true';
+    open(variants, startIdx, title, sub, slug, creator, creatorVerified);
   }
 
   document.querySelectorAll('.card').forEach((card) => {
@@ -657,14 +683,22 @@ function animateCounter(el, duration = 2400) {
       cards.forEach((card) => {
         const key = card.dataset.game;
         const game = data.games[key];
-        if (!game || typeof game.visits !== 'number') return;
-        const sub = card.querySelector('.card-sub');
-        if (!sub) return;
-        // Replace just the "<num><K|M|B>+ visits" portion, keep the genre prefix
-        sub.textContent = sub.textContent.replace(
-          /[\d.]+\s*[KMB]\+\s*visits/i,
-          `${fmt(game.visits)} visits`
-        );
+        if (!game) return;
+
+        if (typeof game.visits === 'number') {
+          const sub = card.querySelector('.card-sub');
+          if (sub) {
+            sub.textContent = sub.textContent.replace(
+              /[\d.]+\s*[KMB]\+\s*visits/i,
+              `${fmt(game.visits)} visits`
+            );
+          }
+        }
+
+        if (game.creatorName) {
+          card.dataset.creatorName = game.creatorName;
+          card.dataset.creatorVerified = game.creatorVerified ? 'true' : 'false';
+        }
       });
     })
     .catch(() => { /* silent — keeps hardcoded fallback values */ });
