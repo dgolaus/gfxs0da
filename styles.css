@@ -316,12 +316,13 @@ button { font: inherit; color: inherit; }
   font-size: 16px;
 }
 .brand.small { font-size: 15px; }
-.brand-dot {
-  width: 9px; height: 9px;
-  border-radius: 50%;
-  background: var(--red);
-  box-shadow: 0 0 10px var(--red-glow), 0 0 24px rgba(177, 18, 18, 0.18);
+.brand-logo {
+  height: 22px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 0 8px rgba(177, 18, 18, 0.35));
 }
+.brand.small .brand-logo { height: 19px; }
 
 .nav-links { display: flex; gap: 32px; }
 .nav-links a {
