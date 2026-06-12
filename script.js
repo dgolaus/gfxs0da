@@ -950,3 +950,40 @@ function animateCounter(el, duration = 2400) {
   update();
 })();
 
+
+/* Nav pill morph driver — sets --nav-pill / --nav-bar-vis / --nav-pill-vis
+   per scroll position; pairs with the NAV PILL MORPH block in styles.css.
+   Bar stays present until the pill is already covering, so there is never
+   a frame where the centre is uncovered:
+     bar-vis  = clamp(1 - p * 1.5)        gone by p ≈ 0.67
+     pill-vis = clamp((p - 0.30) / 0.50)  full by p ≈ 0.80
+   Overlap 0.30–0.67 → smooth handoff, no gap. */
+(() => {
+  const root = document.documentElement;
+  const nav  = document.getElementById('nav');
+  const END  = 360;
+
+  let ticking = false;
+  const clamp = (v) => Math.max(0, Math.min(1, v));
+  const easeInOut = (t) =>
+    t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+
+  function update() {
+    const p    = easeInOut(clamp(window.scrollY / END));
+    const bar  = clamp(1 - p * 1.5);
+    const pill = clamp((p - 0.30) / 0.50);
+
+    root.style.setProperty('--nav-pill', p.toFixed(3));
+    root.style.setProperty('--nav-bar-vis', bar.toFixed(3));
+    root.style.setProperty('--nav-pill-vis', pill.toFixed(3));
+    if (nav) nav.classList.toggle('is-pill', p > 0.85);
+
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) { ticking = true; requestAnimationFrame(update); }
+  }, { passive: true });
+
+  update();
+})();

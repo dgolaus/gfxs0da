@@ -2962,3 +2962,184 @@ body.slots-page .nav {
 }
 .btn:focus-visible { outline-offset: 4px; }
 .card:focus-visible { outline-offset: 4px; }
+
+/* ====================================================================
+   NAV PILL MORPH — scroll-driven bar→pill (driver in script.js).
+   The glass for BOTH the bar and the pill lives on a ::before pseudo
+   element using the SAME recipe as the original nav, so they read as
+   one material. Crossfaded with opacity (no backdrop-filter value
+   animation, no double-saturation).
+
+   --nav-bar-vis  (1→0)  bar ::before opacity
+   --nav-pill-vis (0→1)  pill ::before opacity
+   --nav-pill     (0→1)  brand/CTA slide-out + padding
+   ==================================================================== */
+
+:root {
+  --nav-pill: 0;
+  --nav-bar-vis: 1;
+  --nav-pill-vis: 0;
+}
+
+/* .nav itself carries NO backdrop-filter now, so the pill's filter
+   captures the real page (not a pre-filtered, double-saturated one). */
+.nav {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border-bottom-color: transparent !important;
+  padding-top: calc(16px - var(--nav-pill) * 6px) !important;
+  padding-bottom: calc(16px - var(--nav-pill) * 6px) !important;
+}
+
+/* Bar glass — exact original nav recipe, faded by opacity */
+.nav::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(11, 11, 13, 0.82);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  opacity: var(--nav-bar-vis);
+  pointer-events: none;
+}
+
+/* Brand fades + slides left */
+.nav > .brand {
+  opacity: calc(1 - var(--nav-pill));
+  transform: translateX(calc(var(--nav-pill) * -24px));
+}
+/* CTA fades + slides right */
+.nav > .btn {
+  opacity: calc(1 - var(--nav-pill));
+  transform: translateX(calc(var(--nav-pill) * 24px));
+}
+.nav.is-pill > .brand,
+.nav.is-pill > .btn { pointer-events: none; }
+
+/* Pill — links container holds its glass on ::before, same recipe,
+   faded by opacity. isolation keeps the -1 layer self-contained. */
+.nav-links {
+  position: relative;
+  isolation: isolate;
+  border-radius: 999px;
+  padding:
+    calc(var(--nav-pill-vis) * 11px)
+    calc(var(--nav-pill-vis) * 24px);
+}
+.nav-links::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: rgba(11, 11, 13, 0.82);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 10px 28px -10px rgba(0, 0, 0, 0.45);
+  opacity: var(--nav-pill-vis);
+  pointer-events: none;
+}
+
+   TESTIMONIALS FLOAT — TEST
+   Gentle, calm up/down drift on each quote card before interaction.
+   Uses the individual `translate` property (NOT `transform`) so it
+   COMPOSES with the existing transform-based reveal + hover instead
+   of overriding them. Each card has its own duration + negative delay
+   so they drift out of sync (organic, not a synchronized bob).
+   Float pauses while any quote is hovered so the lift/blur interaction
+   stays clean.
+   ================================================================= */
+
+@keyframes quoteFloatA {
+  0%, 100% { translate: 0 0; }
+  50%      { translate: 0 -9px; }
+}
+@keyframes quoteFloatB {
+  0%, 100% { translate: 0 0; }
+  50%      { translate: 0 -7px; }
+}
+@keyframes quoteFloatC {
+  0%, 100% { translate: 0 0; }
+  50%      { translate: 0 -8px; }
+}
+
+.testimonials .quote {
+  animation: quoteFloatA 6.5s ease-in-out infinite;
+  will-change: translate;
+}
+.testimonials .quote:nth-child(2) {
+  animation-name: quoteFloatB;
+  animation-duration: 7.8s;
+  animation-delay: -2.6s;
+}
+.testimonials .quote:nth-child(3) {
+  animation-name: quoteFloatC;
+  animation-duration: 7.1s;
+  animation-delay: -4.3s;
+}
+
+/* Settle the whole group when the user interacts with any card */
+.testimonials:has(.quote:hover) .quote {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .testimonials .quote { animation: none; }
+}
+
+   PRICING FLOAT — TEST
+   Same calm drift as the testimonials, applied to the 4 price cards.
+   `translate` (not `transform`) so it composes with the existing
+   reveal + hover-lift + blur-siblings interactions. 4 distinct
+   durations/delays keep them out of sync. Pauses on hover.
+   ================================================================= */
+
+@keyframes priceFloatA {
+  0%, 100% { translate: 0 0; }
+  50%      { translate: 0 -8px; }
+}
+@keyframes priceFloatB {
+  0%, 100% { translate: 0 0; }
+  50%      { translate: 0 -6px; }
+}
+@keyframes priceFloatC {
+  0%, 100% { translate: 0 0; }
+  50%      { translate: 0 -7px; }
+}
+@keyframes priceFloatD {
+  0%, 100% { translate: 0 0; }
+  50%      { translate: 0 -6.5px; }
+}
+
+.pricing-grid .price-card {
+  animation: priceFloatA 7.0s ease-in-out infinite;
+  will-change: translate;
+}
+.pricing-grid .price-card:nth-child(2) {
+  animation-name: priceFloatB;
+  animation-duration: 8.2s;
+  animation-delay: -2.1s;
+}
+.pricing-grid .price-card:nth-child(3) {
+  animation-name: priceFloatC;
+  animation-duration: 7.6s;
+  animation-delay: -4.0s;
+}
+.pricing-grid .price-card:nth-child(4) {
+  animation-name: priceFloatD;
+  animation-duration: 8.6s;
+  animation-delay: -5.7s;
+}
+
+/* Settle the whole row when the user interacts with any card */
+.pricing-grid:has(.price-card:hover) .price-card {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pricing-grid .price-card { animation: none; }
+}
