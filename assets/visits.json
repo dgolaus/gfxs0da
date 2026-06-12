@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-06-12T16:25:23.199Z",
+  "updatedAt": "2026-06-12T19:09:39.535Z",
   "games": {
     "apocalypse": {
       "placeId": "90148635862803",
       "universeId": 9098570654,
       "name": "[⌛] 🧟 Survive the Apocalypse",
-      "visits": 160699878,
-      "playing": 23429,
-      "favorites": 248601,
+      "visits": 160820575,
+      "playing": 16535,
+      "favorites": 248778,
       "creatorName": "Rubicon South",
       "creatorVerified": true
     },
@@ -15,9 +15,9 @@
       "placeId": "129827112113663",
       "universeId": 7629331599,
       "name": "[⌛] Prospecting! 💎",
-      "visits": 237351032,
-      "playing": 6078,
-      "favorites": 410059,
+      "visits": 237386705,
+      "playing": 5728,
+      "favorites": 410128,
       "creatorName": "Prospecting!",
       "creatorVerified": true
     },
@@ -25,9 +25,9 @@
       "placeId": "75034791252172",
       "universeId": 9871986464,
       "name": "[UPD] Parkour For Brainrots!",
-      "visits": 50196032,
-      "playing": 561,
-      "favorites": 69002,
+      "visits": 50209219,
+      "playing": 480,
+      "favorites": 69015,
       "creatorName": "Fly To 8 Figs",
       "creatorVerified": false
     },
@@ -35,9 +35,9 @@
       "placeId": "77843161404023",
       "universeId": 9970645639,
       "name": "Run a Restaurant!",
-      "visits": 25988911,
-      "playing": 25422,
-      "favorites": 253337,
+      "visits": 26163376,
+      "playing": 21146,
+      "favorites": 254893,
       "creatorName": "Burnt Toast Labs!",
       "creatorVerified": true
     },
@@ -45,9 +45,9 @@
       "placeId": "99817148924004",
       "universeId": 7498898979,
       "name": "Burgerz🍔",
-      "visits": 50186091,
-      "playing": 1882,
-      "favorites": 156050,
+      "visits": 50205233,
+      "playing": 1868,
+      "favorites": 156111,
       "creatorName": "2 Player Games!",
       "creatorVerified": true
     }
