@@ -17,6 +17,7 @@ const GAMES = [
   { key: 'parkour',     placeId: '75034791252172'  }, // Parkour for Brainrots
   { key: 'restaurant',  placeId: '77843161404023'  }, // Run a Restaurant
   { key: 'burgerz',     placeId: '99817148924004'  }, // Burgerz
+  { key: 'gag2',        placeId: '97598239454123'  }, // Grow a Garden 2
 ];
 
 async function getUniverseId(placeId) {
