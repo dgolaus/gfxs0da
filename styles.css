@@ -2775,6 +2775,12 @@ body.slots-page .nav {
 .slots-card[data-state="error"] .slots-status-dot::after {
   display: none;
 }
+.slots-card[data-state="closed"] .slots-status-dot {
+  background: var(--text-dim);
+  box-shadow: none;
+  animation: none;
+}
+.slots-card[data-state="closed"] .slots-status-dot::after { display: none; }
 
 /* Inline stats row — 3 columns at the bottom of the card, separated by
    thin vertical dividers. Holds ETA, average reply, revisions policy. */
@@ -2825,7 +2831,8 @@ body.slots-page .nav {
   padding-top: 8px;
   flex-wrap: wrap;
 }
-.slots-card[data-state="full"] .slots-cta {
+.slots-card[data-state="full"] .slots-cta,
+.slots-card[data-state="closed"] .slots-cta {
   opacity: 0.85;
   filter: saturate(0.6);
 }
@@ -3143,4 +3150,13 @@ body.slots-page .nav {
 
 @media (prefers-reduced-motion: reduce) {
   .pricing-grid .price-card { animation: none; }
+}
+
+/* Commission-closed badge state (hero + CTA eyebrow). Toggled by the
+   commission-status script in script.js when slots.json reports closed:true.
+   Mutes the live red pulse dot to a quiet grey. */
+.is-comms-closed .dot {
+  background: var(--text-dim);
+  box-shadow: none;
+  animation: none;
 }

@@ -809,78 +809,8 @@ function animateCounter(el, duration = 2400) {
   requestAnimationFrame(loop);
 })();
 
-/* 7. Smooth scroll — implementação simples e direta ---------------------- */
-/* Lerp puro com EASE 0.16. Sem dt, sem cap, sem complicação.
-   Importante: CSS NÃO deve ter `scroll-behavior: smooth` (causa lag).
-   Auto-desliga em touch / prefers-reduced-motion.                          */
-(() => {
-  'use strict';
-
-  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  if (matchMedia('(hover: none)').matches) return;
-
-  let target  = window.scrollY;
-  let current = window.scrollY;
-  let raf = null;
-
-  /* EASE 0.10 = mais manteiga, mais inércia. Sweet spot:
-     - 0.16 = muito rápido
-     - 0.075 (com dt-aware antigo) = travado
-     - 0.10 = buttery sem laggy */
-  const EASE = 0.10;
-  const NAV_OFFSET = 80;
-
-  const maxScroll = () =>
-    Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
-  const clamp = (v) => Math.max(0, Math.min(v, maxScroll()));
-
-  function loop() {
-    current += (target - current) * EASE;
-    if (Math.abs(target - current) < 0.5) {
-      current = target;
-      window.scrollTo(0, current);
-      raf = null;
-      return;
-    }
-    window.scrollTo(0, current);
-    raf = requestAnimationFrame(loop);
-  }
-
-  function start() {
-    if (raf == null) raf = requestAnimationFrame(loop);
-  }
-
-  // Wheel
-  window.addEventListener('wheel', (e) => {
-    if (e.ctrlKey) return;
-    if (e.target.closest && e.target.closest('.lightbox.is-open')) return;
-    e.preventDefault();
-    target = clamp(target + e.deltaY);
-    start();
-  }, { passive: false });
-
-  // Anchor links
-  document.addEventListener('click', (e) => {
-    const link = e.target.closest && e.target.closest('a[href^="#"]');
-    if (!link) return;
-    const href = link.getAttribute('href');
-    if (!href || href === '#') return;
-    const dest = document.getElementById(href.slice(1));
-    if (!dest) return;
-    e.preventDefault();
-    target = clamp(dest.getBoundingClientRect().top + window.scrollY - NAV_OFFSET);
-    start();
-  });
-
-  // Sync on external scroll (scrollbar, keyboard, find)
-  window.addEventListener('scroll', () => {
-    if (raf != null) return;
-    const drift = Math.abs(window.scrollY - current);
-    if (drift > 4) target = current = window.scrollY;
-  }, { passive: true });
-
-  window.addEventListener('resize', () => { target = clamp(target); });
-})();
+/* 7. Smooth scroll — moved to shared smooth-scroll.js (loaded on both the
+   homepage and /slots/). Keep CSS free of `scroll-behavior: smooth`. */
 
 /* Custom scrollbar rail — position, glow on scroll, drag-to-scroll -------- */
 (() => {
@@ -986,4 +916,29 @@ function animateCounter(el, duration = 2400) {
   }, { passive: true });
 
   update();
+})();
+
+/* Commission status — flip the hero + CTA "Commissions Open" badges to
+   "closed" when assets/slots.json reports closed:true. Discord-driven: the
+   slots channel name controls slots.json (see scripts/fetch-slots.js). Open
+   (or any fetch failure) keeps the hardcoded "open" default. */
+(() => {
+  const badges = document.querySelectorAll('[data-comms-badge]');
+  const ctas = document.querySelectorAll('[data-comms-cta]');
+  if (!badges.length && !ctas.length) return;
+  fetch('assets/slots.json', { cache: 'no-cache' })
+    .then((r) => (r.ok ? r.json() : null))
+    .then((data) => {
+      if (!data || !data.closed) return;
+      badges.forEach((b) => {
+        b.classList.add('is-comms-closed');
+        const label = b.querySelector('.comms-label');
+        if (label) label.textContent = 'Commissions closed';
+      });
+      ctas.forEach((c) => {
+        const label = c.querySelector('.cta-label');
+        if (label) label.textContent = 'Join the Waitlist';
+      });
+    })
+    .catch(() => { /* keep default "open" on failure */ });
 })();

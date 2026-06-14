@@ -65,6 +65,13 @@ async function fetchChannelName() {
 // (which expects `open` = "slots available") doesn't have to change.
 const SLOTS_REGEX = /slots[^\d]*(\d+)[^\d]+(\d+)/i;
 
+// A channel name containing the word "closed" (any casing, e.g.
+// "🔒 Commissions Closed", "Slots: CLOSED") means commissions are not being
+// accepted at all — a distinct state from "queue full" (0 open but still
+// taking waitlist). Checked BEFORE number parsing so a closed channel with
+// no "N/N" doesn't throw.
+const CLOSED_REGEX = /closed/i;
+
 function parseSlots(name) {
   const m = name.match(SLOTS_REGEX);
   if (!m) throw new Error(`Could not parse "Slots: N/N" from channel name: "${name}"`);
@@ -81,10 +88,7 @@ async function main() {
   const name = await fetchChannelName();
   console.log(`Channel name: "${name}"`);
 
-  const { open, total, filled } = parseSlots(name);
-  console.log(`Parsed: ${filled}/${total} filled → ${open} open`);
-
-  // Preserve etaHoursMin/etaHoursMax/note from the existing file — those are
+  // Preserve etaHoursMin/etaHoursMax from the existing file — those are
   // human-editable, not driven by Discord.
   let existing = {};
   try {
@@ -92,14 +96,25 @@ async function main() {
   } catch (_) { /* first run / file missing — fine */ }
 
   const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
-  const out = {
-    open,
-    total,
+  const base = {
     etaHoursMin: existing.etaHoursMin ?? 24,
     etaHoursMax: existing.etaHoursMax ?? 48,
     updatedAt:   today,
-    note:        'Auto-updated from Discord channel name by .github/workflows/update-slots.yml. Edit etaHoursMin/etaHoursMax manually here when needed.',
+    note:        'Auto-updated from Discord channel name by .github/workflows/update-slots.yml. Rename the channel to include "closed" to close commissions; use "Slots: N/N" to reopen. Edit etaHoursMin/etaHoursMax manually here when needed.',
   };
+
+  let out;
+  if (CLOSED_REGEX.test(name)) {
+    // Commissions closed — keep the last known total so the page can still
+    // show "0 of 3" but flagged closed.
+    const total = existing.total ?? 3;
+    console.log(`Channel marked CLOSED → commissions closed (total ${total})`);
+    out = { closed: true, open: 0, total, ...base };
+  } else {
+    const { open, total, filled } = parseSlots(name);
+    console.log(`Parsed: ${filled}/${total} filled → ${open} open`);
+    out = { closed: false, open, total, ...base };
+  }
 
   fs.writeFileSync(OUT_PATH, JSON.stringify(out, null, 2) + '\n', 'utf8');
   console.log(`Wrote ${OUT_PATH}`);

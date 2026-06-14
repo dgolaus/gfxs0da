@@ -149,6 +149,7 @@
     </div>
   </footer>
 
+  <script src="/smooth-scroll.js"></script>
   <script>
     /* Slots page — single dashboard card, fetched from /assets/slots.json.
        JS responsibilities:
@@ -218,7 +219,11 @@
           totalEl.textContent = String(total);
           animateNum(openEl, open);
 
-          if (open === 0) {
+          if (data.closed) {
+            card.dataset.state = 'closed';
+            statusEl.textContent = 'Commissions closed';
+            ctaEl.innerHTML = 'Join the Waitlist <span aria-hidden="true">→</span>';
+          } else if (open === 0) {
             card.dataset.state = 'full';
             statusEl.textContent = 'Queue full — waitlist mode';
             ctaEl.innerHTML = 'Join the Waitlist <span aria-hidden="true">→</span>';
