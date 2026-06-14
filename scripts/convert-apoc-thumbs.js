@@ -10,25 +10,17 @@ const path = require('path');
 const WORK = path.join(__dirname, '..', 'assets', 'work');
 
 const jobs = [
-  { src: 'apoc-thumb-blood.webp', dest: 'apoc-thumb-4' },
+  { src: 'Killioz_Zombie_177.png', dest: 'apoc-thumb-2' },
+  { src: 'Killioz_Zombie_178.png', dest: 'apoc-thumb-3' },
 ];
 
 (async () => {
   for (const { src, dest } of jobs) {
     const srcPath = path.join(WORK, src);
     const buf = await fs.readFile(srcPath);
-    const ext = path.extname(src).slice(1).toLowerCase();
 
-    if (ext === 'png') {
-      await fs.writeFile(path.join(WORK, dest + '.png'), buf);
-    } else {
-      await sharp(buf).png().toFile(path.join(WORK, dest + '.png'));
-    }
-    if (ext === 'webp') {
-      await fs.writeFile(path.join(WORK, dest + '.webp'), buf);
-    } else {
-      await sharp(buf).webp({ quality: 85 }).toFile(path.join(WORK, dest + '.webp'));
-    }
+    await fs.writeFile(path.join(WORK, dest + '.png'), buf);
+    await sharp(buf).webp({ quality: 85 }).toFile(path.join(WORK, dest + '.webp'));
     await sharp(buf).avif({ quality: 55, effort: 6 }).toFile(path.join(WORK, dest + '.avif'));
 
     const sizes = await Promise.all(['png', 'webp', 'avif'].map(async ext => {
