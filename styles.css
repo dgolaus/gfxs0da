@@ -3052,7 +3052,8 @@ body.slots-page .nav {
   pointer-events: none;
 }
 
-   TESTIMONIALS FLOAT — TEST
+/* ====================================================================
+   TESTIMONIALS FLOAT
    Gentle, calm up/down drift on each quote card before interaction.
    Uses the individual `translate` property (NOT `transform`) so it
    COMPOSES with the existing transform-based reveal + hover instead
@@ -3099,7 +3100,8 @@ body.slots-page .nav {
   .testimonials .quote { animation: none; }
 }
 
-   PRICING FLOAT — TEST
+/* ====================================================================
+   PRICING FLOAT
    Same calm drift as the testimonials, applied to the 4 price cards.
    `translate` (not `transform`) so it composes with the existing
    reveal + hover-lift + blur-siblings interactions. 4 distinct
