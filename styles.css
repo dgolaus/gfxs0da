@@ -447,6 +447,12 @@ button { font: inherit; color: inherit; }
   inset: 0;
   z-index: 0;
   overflow: hidden;
+  /* Purely decorative (aria-hidden) — must not be selectable, draggable,
+     or clickable. pointer-events:none stops the collage thumbs from being
+     drag-selected; user-select:none covers keyboard/select-all. */
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
 }
 .hero-bg-tilt {
   position: absolute;
@@ -678,13 +684,10 @@ body.bg-red .hero-bg-overlay {
 .hero-stats-strip {
   display: inline-flex;
   align-items: stretch;
-  background: rgba(19, 19, 23, 0.32);
+  background: rgba(16, 16, 20, 0.62);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 18px;
   padding: 4px;
-  /* Glass distortion (Chrome/Edge); fallback strong frosted blur for others */
-  backdrop-filter: blur(10px) saturate(200%) url(#glass-distort);
-  -webkit-backdrop-filter: blur(14px) saturate(200%);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.10),
     inset 0 -1px 0 rgba(0, 0, 0, 0.30),
