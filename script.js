@@ -802,11 +802,35 @@ function animateCounter(el, duration = 2400) {
       s.style.setProperty('--leave', leave.toFixed(3));
     }
   }
+  // Idle-gated rAF: run while the page is scrolling, sleep when it's still.
+  // The fade only depends on scroll position, so skipping idle frames is
+  // free perf (no getBoundingClientRect thrash while you're just reading).
+  let rafId = null;
+  let lastY = -1;
   function loop() {
     update();
-    requestAnimationFrame(loop);
+    if (window.scrollY !== lastY) {
+      lastY = window.scrollY;
+      rafId = requestAnimationFrame(loop);
+    } else {
+      rafId = null;
+    }
   }
-  requestAnimationFrame(loop);
+  function kick() { if (rafId == null) { lastY = -1; rafId = requestAnimationFrame(loop); } }
+  update();
+  window.addEventListener('scroll', kick, { passive: true });
+  window.addEventListener('resize', kick, { passive: true });
+})();
+
+/* 6e. Pause the hero collage animation while the hero is off-screen -------- */
+(() => {
+  const heroBg = document.querySelector('.hero-bg');
+  const hero = document.querySelector('.hero');
+  if (!heroBg || !hero) return;
+  new IntersectionObserver(
+    ([entry]) => heroBg.classList.toggle('is-paused', !entry.isIntersecting),
+    { threshold: 0 }
+  ).observe(hero);
 })();
 
 /* 7. Smooth scroll — moved to shared smooth-scroll.js (loaded on both the

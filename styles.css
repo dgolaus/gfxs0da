@@ -512,6 +512,9 @@ button { font: inherit; color: inherit; }
   border-radius: 6px;
   flex-shrink: 0;
 }
+/* Pause the collage scroll while the hero is off-screen (set by script.js).
+   No point compositing 130 thumbs you can't see. */
+.hero-bg.is-paused .bg-row-track { animation-play-state: paused; }
 
 @keyframes bgScroll {
   from { transform: translate3d(0, 0, 0); }
