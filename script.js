@@ -78,23 +78,18 @@ if (!isTouch) {
 
     const variants = variantsAttr.split(',').map((v) => v.trim());
     const img = card.querySelector('.card-img img');
-    const sourceAvif = card.querySelector('.card-img source[type="image/avif"]');
     const counter = card.querySelector('.card-count');
     const prevBtn = card.querySelector('.card-arrow-prev');
     const nextBtn = card.querySelector('.card-arrow-next');
     let idx = 0;
 
-    // Helper: WebP filename → AVIF filename
-    const toAvif = (webp) => webp.replace(/\.webp$/, '.avif');
-
-    // Preload todas as variantes (AVIF + WebP) quando o card entra na viewport
+    // Preload as variantes (WebP) quando o card entra na viewport
     const preloadIO = new IntersectionObserver(
       (entries, obs) => {
         for (const entry of entries) {
           if (!entry.isIntersecting) continue;
           variants.forEach((v) => {
             new Image().src = `assets/work/${v}`;
-            new Image().src = `assets/work/${toAvif(v)}`;
           });
           obs.unobserve(entry.target);
         }
@@ -106,7 +101,6 @@ if (!isTouch) {
     function setVariant(newIdx) {
       idx = (newIdx + variants.length) % variants.length;
       const webp = variants[idx];
-      if (sourceAvif) sourceAvif.srcset = `assets/work/${toAvif(webp)}`;
       img.src = `assets/work/${webp}`;
       if (counter) counter.textContent = `${idx + 1} / ${variants.length}`;
       card.dataset.currentIdx = String(idx);
