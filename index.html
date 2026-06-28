@@ -26,6 +26,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <script>try{if(sessionStorage.getItem('s0da-booted'))document.documentElement.classList.add('no-boot')}catch(e){}</script>
+  <link rel="stylesheet" href="/boot.css" />
+  <script defer src="/boot.js"></script>
+  <script defer src="/console-egg.js"></script>
   <!-- Cloudflare Web Analytics — privacy-friendly, no cookies, ~1KB defer -->
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "c6b7dfb2fbc14a008e7624d4a8618006"}'></script>
   <!-- Schema.org structured data for SEO + rich results -->
@@ -89,6 +93,13 @@
   <!-- bg-red toggles the red-saturated background variant.
        Remove the class to revert to the original (desaturated) bg. -->
   <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Loading splash -->
+  <div id="boot" aria-hidden="true">
+    <div class="boot-inner">
+      <img class="boot-logo" src="/assets/favicon-192.png" alt="" />
+    </div>
+  </div>
 
   <!-- SVG filters + gradients (glass distortion, animated star fill) -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">

@@ -376,11 +376,19 @@ function animateCounter(el, duration = 2400) {
 (() => {
   const heroCounters = document.querySelectorAll('.hero-stats-strip .counter');
   if (!heroCounters.length) return;
-  // Stats strip animation has 0.6s delay — start counters slightly after it begins
-  const wait = reducedMotion ? 0 : 700;
-  setTimeout(() => {
-    heroCounters.forEach((c) => animateCounter(c, 2400));
-  }, wait);
+  const go = () => heroCounters.forEach((c) => animateCounter(c, 2400));
+  if (reducedMotion) { go(); return; }
+  // If the loading splash is present, hold the count-up until it starts
+  // leaving (body.ready) so the hero comes alive as the splash clears.
+  // Without a splash, keep the original ~700ms-after-load timing.
+  const boot = document.getElementById('boot');
+  if (!boot) { setTimeout(go, 700); return; }
+  const run = () => setTimeout(go, 180);
+  if (document.body.classList.contains('ready')) { run(); return; }
+  const obs = new MutationObserver(() => {
+    if (document.body.classList.contains('ready')) { obs.disconnect(); run(); }
+  });
+  obs.observe(document.body, { attributes: true, attributeFilter: ['class'] });
 })();
 
 /* 5b. Trust section — count-up + star sequence --------------------------- */

@@ -1,0 +1,129 @@
+/* =================================================================
+   LOADING SPLASH — neon s0da mark on a living, s0da-themed backdrop.
+   Layers: deep red vignette base + a slowly drifting red aurora + a faint
+   technical grid (masked to fade at the edges) + a focused glow behind the
+   mark. Ported from the Umbra loader, restyled + enriched for s0da.
+   Shared across all pages. CSS failsafe hides it after 6s if JS never runs.
+   ================================================================= */
+#boot {
+  --neon: 252, 31, 37;          /* s0da red — rgb channels for the glow */
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background:
+    /* focused red glow behind the mark */
+    radial-gradient(ellipse 44% 40% at 50% 47%, rgba(177, 18, 18, 0.30) 0%, transparent 60%),
+    /* deep red-tinted vignette base */
+    radial-gradient(ellipse 130% 110% at 50% 48%, #0d0608 0%, #050203 55%, #010101 100%);
+  animation: bootFailsafe 0.4s ease 6s forwards;  /* never trap the user if JS stalls */
+}
+
+/* Layer 1 — drifting red aurora (the living energy). Only `transform`
+   animates, so the blur is rasterized once and just moved = GPU-cheap. */
+#boot::before {
+  content: '';
+  position: absolute;
+  inset: -25%;
+  z-index: 0;
+  background:
+    radial-gradient(circle 38vw at 24% 30%, rgba(177, 18, 18, 0.18), transparent 55%),
+    radial-gradient(circle 34vw at 78% 72%, rgba(120, 10, 14, 0.14), transparent 55%),
+    radial-gradient(circle 26vw at 62% 24%, rgba(230, 32, 38, 0.09), transparent 50%);
+  filter: blur(26px);
+  animation: bootAurora 9s ease-in-out infinite alternate;
+}
+@keyframes bootAurora {
+  0%   { transform: translate3d(-2.5%, -1.5%, 0) scale(1); }
+  100% { transform: translate3d(2.5%,  2%,   0) scale(1.1); }
+}
+
+/* Layer 2 — faint technical grid, masked to fade toward the edges */
+#boot::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 70, 70, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 70, 70, 0.035) 1px, transparent 1px);
+  background-size: 46px 46px;
+  -webkit-mask-image: radial-gradient(ellipse 68% 60% at 50% 48%, #000 0%, transparent 76%);
+          mask-image: radial-gradient(ellipse 68% 60% at 50% 48%, #000 0%, transparent 76%);
+}
+
+#boot .boot-inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+}
+#boot .boot-logo {
+  width: 92px;
+  height: 92px;
+  filter:
+    drop-shadow(0 0 14px rgba(var(--neon), 0.6))
+    drop-shadow(0 0 46px rgba(var(--neon), 0.3));
+  animation: neonOn 1.4s ease-out both, logoFloat 2.8s ease-in-out 1.4s infinite;
+}
+
+/* neon "sign powering on" flicker, then it settles */
+@keyframes neonOn {
+  0%   { opacity: 0; }
+  6%   { opacity: 0.85; }
+  9%   { opacity: 0.2; }
+  13%  { opacity: 1; }
+  16%  { opacity: 0.45; }
+  19%  { opacity: 1; }
+  24%  { opacity: 0.7; }
+  27%  { opacity: 1; }
+  100% { opacity: 1; }
+}
+@keyframes logoFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+@keyframes bootFailsafe { to { opacity: 0; visibility: hidden; } }
+
+/* JS adds .ready when load is done → fade the splash out */
+body.ready #boot {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.55s ease;
+}
+body.ready #boot .boot-inner {
+  transform: scale(1.12);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #boot .boot-logo { animation: none; opacity: 1; }
+  #boot::before { animation: none; }
+}
+
+/* Skip the splash entirely on sessions where it has already been shown
+   (html.no-boot is set before paint by the inline head snippet). */
+html.no-boot #boot { display: none !important; }
+
+/* ----- Freeze the page behind the splash (first view of a session only) -----
+   Pause EVERY animation except the splash itself, so the site sits at its
+   first frame and only comes alive the moment the splash starts leaving
+   (body.ready). Gated on html:not(.no-boot) so repeat pages render normally.
+   The #boot rules out-specify the universal pause so the splash keeps
+   animating. */
+html:not(.no-boot) body:not(.ready) *,
+html:not(.no-boot) body:not(.ready) *::before,
+html:not(.no-boot) body:not(.ready) *::after {
+  animation-play-state: paused !important;
+}
+body:not(.ready) #boot,
+body:not(.ready) #boot::before,
+body:not(.ready) #boot::after,
+body:not(.ready) #boot *,
+body:not(.ready) #boot *::before,
+body:not(.ready) #boot *::after {
+  animation-play-state: running !important;
+}
