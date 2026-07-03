@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-07-02T23:05:34.970Z",
+  "updatedAt": "2026-07-03T02:52:46.891Z",
   "games": {
     "apocalypse": {
       "placeId": "90148635862803",
       "universeId": 9098570654,
       "name": "🧟 Survive the Apocalypse",
-      "visits": 187064462,
-      "playing": 13422,
-      "favorites": 288575,
+      "visits": 187215197,
+      "playing": 16782,
+      "favorites": 288867,
       "creatorName": "Rubicon South",
       "creatorVerified": true
     },
@@ -15,9 +15,9 @@
       "placeId": "129827112113663",
       "universeId": 7629331599,
       "name": "[🌞EVENT] Prospecting! 💎",
-      "visits": 244141824,
-      "playing": 4834,
-      "favorites": 424733,
+      "visits": 244187968,
+      "playing": 5193,
+      "favorites": 424836,
       "creatorName": "Prospecting!",
       "creatorVerified": true
     },
@@ -25,9 +25,9 @@
       "placeId": "75034791252172",
       "universeId": 9871986464,
       "name": "[UPD] Parkour For Brainrots!",
-      "visits": 51525824,
-      "playing": 180,
-      "favorites": 70702,
+      "visits": 51531412,
+      "playing": 235,
+      "favorites": 70707,
       "creatorName": "Fly To 8 Figs",
       "creatorVerified": false
     },
@@ -35,9 +35,9 @@
       "placeId": "77843161404023",
       "universeId": 9970645639,
       "name": "Run a Restaurant!",
-      "visits": 0,
-      "playing": 13223,
-      "favorites": 0,
+      "visits": 54668977,
+      "playing": 15165,
+      "favorites": 446455,
       "creatorName": "Burnt Toast Labs!",
       "creatorVerified": true
     },
@@ -45,9 +45,9 @@
       "placeId": "99817148924004",
       "universeId": 7498898979,
       "name": "Burgerz🍔",
-      "visits": 56456912,
-      "playing": 2678,
-      "favorites": 176085,
+      "visits": 56498403,
+      "playing": 2570,
+      "favorites": 176197,
       "creatorName": "2 Player Games!",
       "creatorVerified": true
     },
@@ -55,9 +55,9 @@
       "placeId": "97598239454123",
       "universeId": 10200395747,
       "name": "Grow a Garden 2",
-      "visits": 930298759,
-      "playing": 502532,
-      "favorites": 565155,
+      "visits": 934223093,
+      "playing": 464610,
+      "favorites": 566040,
       "creatorName": "Strawberreh Squad",
       "creatorVerified": true
     }
