@@ -127,3 +127,20 @@ body:not(.ready) #boot *::before,
 body:not(.ready) #boot *::after {
   animation-play-state: running !important;
 }
+
+/* =====================================================================
+   BOOT SWITCH — the splash is currently OFF.
+
+   To bring the loading splash BACK: delete (or comment out) everything
+   between the SWITCH-START and SWITCH-END lines. Nothing else needs to
+   change — boot.js detects this automatically.
+   ===================================================================== */
+/* SWITCH-START */
+#boot { display: none !important; }
+/* the page-freeze above must not run while the splash is off */
+html:not(.no-boot) body:not(.ready) *,
+html:not(.no-boot) body:not(.ready) *::before,
+html:not(.no-boot) body:not(.ready) *::after {
+  animation-play-state: running !important;
+}
+/* SWITCH-END */

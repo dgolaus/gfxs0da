@@ -5,6 +5,15 @@
    before paint so there is no flash). setTimeout (not rAF) so it fires in a
    backgrounded tab; the CSS failsafe hides it anyway if this never runs. */
 (function () {
+  // BOOT SWITCH: if the splash is disabled in boot.css (the SWITCH block
+  // sets #boot to display:none), skip everything and run the page
+  // immediately. Re-enabling the splash there re-enables all of this.
+  var bootEl = document.getElementById('boot');
+  if (!bootEl || getComputedStyle(bootEl).display === 'none') {
+    document.body.classList.add('ready');
+    return;
+  }
+
   var KEY = 's0da-booted';
   var seen = false;
   try { seen = !!sessionStorage.getItem(KEY); } catch (e) {}
