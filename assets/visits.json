@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-07-23T15:54:53.198Z",
+  "updatedAt": "2026-07-23T17:21:45.848Z",
   "games": {
     "apocalypse": {
       "placeId": "90148635862803",
       "universeId": 9098570654,
       "name": "🧟 Survive the Apocalypse",
-      "visits": 206552251,
-      "playing": 15122,
-      "favorites": 322014,
+      "visits": 206605040,
+      "playing": 14508,
+      "favorites": 322104,
       "creatorName": "Rubicon South",
       "creatorVerified": true
     },
@@ -15,9 +15,9 @@
       "placeId": "129827112113663",
       "universeId": 7629331599,
       "name": "[UPD] Prospecting! 💎",
-      "visits": 249387638,
-      "playing": 4254,
-      "favorites": 435156,
+      "visits": 249400134,
+      "playing": 3979,
+      "favorites": 435185,
       "creatorName": "Prospecting!",
       "creatorVerified": true
     },
@@ -25,9 +25,9 @@
       "placeId": "75034791252172",
       "universeId": 9871986464,
       "name": "[UPD] Parkour For Brainrots!",
-      "visits": 52689025,
-      "playing": 304,
-      "favorites": 72252,
+      "visits": 52692045,
+      "playing": 302,
+      "favorites": 72257,
       "creatorName": "Fly To 8 Figs",
       "creatorVerified": false
     },
@@ -35,9 +35,9 @@
       "placeId": "77843161404023",
       "universeId": 9970645639,
       "name": "Run a Restaurant!",
-      "visits": 72722974,
-      "playing": 12858,
-      "favorites": 533838,
+      "visits": 72771847,
+      "playing": 12229,
+      "favorites": 534115,
       "creatorName": "Burnt Toast Labs!",
       "creatorVerified": true
     },
@@ -45,9 +45,9 @@
       "placeId": "99817148924004",
       "universeId": 7498898979,
       "name": "Burgerz🍔",
-      "visits": 62187823,
-      "playing": 3751,
-      "favorites": 192844,
+      "visits": 62213818,
+      "playing": 3730,
+      "favorites": 192898,
       "creatorName": "2 Player Games!",
       "creatorVerified": true
     },
@@ -55,9 +55,9 @@
       "placeId": "97598239454123",
       "universeId": 10200395747,
       "name": "Grow a Garden 2",
-      "visits": 1376404844,
-      "playing": 519046,
-      "favorites": 623138,
+      "visits": 1377267287,
+      "playing": 517069,
+      "favorites": 623283,
       "creatorName": "Strawberreh Squad",
       "creatorVerified": true
     }
