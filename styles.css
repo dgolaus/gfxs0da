@@ -3168,3 +3168,69 @@ body.slots-page .nav {
   box-shadow: none;
   animation: none;
 }
+
+
+/* ====================================================================
+   PORTFOLIO — grade assimétrica (única alteração mantida)
+   O primeiro trabalho ocupa duas colunas e duas fileiras; os dois
+   seguintes empilham ao lado e os três últimos fecham a base.
+   Preenchimento exato, mesma leitura, thumb principal maior.
+   ==================================================================== */
+.grid .card:first-child {
+  grid-column: span 2;
+  grid-row: span 2;
+  aspect-ratio: auto;
+}
+.grid .card:first-child .card-meta { left: 28px; right: 28px; bottom: 26px; }
+.grid .card:first-child .card-meta h3 { font-size: 26px; }
+
+@media (max-width: 1000px) {
+  /* Em 2 colunas o card volta a uma fileira, então precisa de proporção
+     própria: .card-img é absoluto e não dá altura em fluxo — sem
+     aspect-ratio a trilha colapsaria na espessura da borda. */
+  .grid .card:first-child {
+    grid-row: span 1;
+    aspect-ratio: 16 / 9;
+  }
+  .grid .card:first-child .card-meta { left: 22px; right: 22px; bottom: 20px; }
+  .grid .card:first-child .card-meta h3 { font-size: 21px; }
+}
+@media (max-width: 700px) {
+  .grid .card:first-child {
+    grid-column: span 1;
+    grid-row: span 1;
+    aspect-ratio: 16 / 9;
+  }
+  .grid .card:first-child .card-meta { left: 22px; right: 22px; bottom: 20px; }
+  .grid .card:first-child .card-meta h3 { font-size: 19px; }
+}
+
+
+/* ====================================================================
+   LINHA DIVISÓRIA — substitui a faixa rolante entre hero e portfolio
+   Uma régua fina que se desenha da esquerda quando entra na tela.
+   ==================================================================== */
+.section-rule {
+  position: relative;
+  z-index: 4;
+  height: 1px;
+  overflow: hidden;
+}
+.section-rule span {
+  display: block;
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    var(--line-strong) 14%,
+    rgba(177, 18, 18, 0.55) 50%,
+    var(--line-strong) 86%,
+    transparent 100%);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 1.2s var(--ease-out) 0.1s;
+}
+.section-rule.is-in span { transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .section-rule span { transform: none; transition: none; }
+}

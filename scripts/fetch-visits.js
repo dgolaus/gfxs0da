@@ -16,7 +16,7 @@ const GAMES = [
   { key: 'prospecting', placeId: '129827112113663' }, // Prospecting
   { key: 'parkour',     placeId: '75034791252172'  }, // Parkour for Brainrots
   { key: 'restaurant',  placeId: '77843161404023'  }, // Run a Restaurant
-  { key: 'burgerz',     placeId: '99817148924004'  }, // Burgerz
+  { key: 'divaz',       placeId: '88323040672117'  }, // Divaz
   { key: 'gag2',        placeId: '97598239454123'  }, // Grow a Garden 2
 ];
 

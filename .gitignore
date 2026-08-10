@@ -1,4 +1,4 @@
-# Node deps (sharp lib for optimize-images.js)
+﻿# Node deps (sharp lib for optimize-images.js)
 node_modules/
 
 # OS junk
@@ -17,7 +17,7 @@ desktop.ini
 *.log
 npm-debug.log*
 
-# Original PNG sources — heavy backups, only WebP versions are served.
+# Original PNG sources â€” heavy backups, only WebP versions are served.
 # Re-add a PNG manually if you need to re-run optimize-images.js.
 assets/work/*.png
 
@@ -25,3 +25,10 @@ assets/work/*.png
 message.txt
 screenshot.js
 assets/og.png
+
+
+# Fontes pesados de video/animacao (mantidos so localmente)
+logo_SODA/
+logo_SODA loop/
+gfxs0da.zip
+assets/brand/*.mp4
