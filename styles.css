@@ -3406,11 +3406,12 @@ html.is-hidden .slots-status-dot::after { animation-play-state: paused !importan
 /* 8. Cards do portfólio ----------------------------------------------- */
 .card-img img {
   transition: filter var(--t-med) var(--ease),
-              opacity 0.22s var(--ease-out),
               transform 0.34s var(--ease-out);
 }
-/* troca de variante — crossfade curto em vez de corte seco */
-.card.is-swapping .card-img img { opacity: 0; transform: scale(1.045); }
+/* A troca de variante NÃO apaga a imagem. Antes ela ia a opacity 0, e como
+   o fundo do card é escuro isso lia como um flash preto entre as thumbs.
+   Agora o script decodifica a próxima antes de trocar, então o corte é
+   direto e sem quadro vazio. */
 
 /* passagem de luz diagonal ao entrar o hover */
 .card-img::before {
@@ -3579,8 +3580,10 @@ body.bg-red::before {
 .nav-back:active,
 .slots-secondary:active { opacity: 0.65; transition-duration: 0.08s; }
 .lightbox-close:active { scale: 0.92; transition-duration: 0.09s; }
-.lightbox-img { transition: transform 0.4s var(--ease-out), opacity 0.28s var(--ease-out); }
-.lightbox-img.is-swapping { opacity: 0; }
+.lightbox-img { transition: transform 0.4s var(--ease-out); }
+/* Sem estado "apagado" na troca de variante: o script decodifica a próxima
+   antes de trocar o src, então a imagem atual fica no lugar até a nova estar
+   pronta. Apagar aqui deixava o fundo escuro à mostra em tela cheia. */
 
 /* 15. Segurança extra: nada disso roda com movimento reduzido --------- */
 @media (prefers-reduced-motion: reduce) {

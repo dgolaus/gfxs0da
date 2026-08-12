@@ -98,41 +98,32 @@ if (!isTouch) {
     );
     preloadIO.observe(card);
 
-    // Troca de variante com crossfade curto (sem corte seco). A imagem nova
-    // é decodificada antes do swap para não piscar meio carregada.
-    let swapTimer = null;
+    // Troca de variante: decodifica a próxima e só então troca o src, num
+    // corte direto. A imagem nunca é apagada no meio do caminho — apagá-la
+    // deixava o fundo escuro do card à mostra e lia como um flash preto.
+    // As variantes já vêm pré-carregadas pelo observer acima, então o
+    // decode costuma resolver no mesmo frame do clique.
     function setVariant(newIdx) {
       idx = (newIdx + variants.length) % variants.length;
       const url = `assets/work/${variants[idx]}`;
       const label = `${idx + 1} / ${variants.length}`;
       card.dataset.currentIdx = String(idx);
 
-      if (reducedMotion) {
-        if (counter) counter.textContent = label;
-        img.src = url;
-        return;
-      }
-
-      card.classList.add('is-swapping');
-      const next = new Image();
-      next.src = url;
       let settled = false;
-      // O contador vira no MESMO frame em que a nova imagem entra — antes
-      // ele pulava assim que a seta era clicada, adiantando-se à thumb.
       const settle = () => {
         if (settled) return;
         settled = true;
         img.src = url;
         if (counter) counter.textContent = label;
-        setTimeout(() => card.classList.remove('is-swapping'), 30);
       };
-      clearTimeout(swapTimer);
+
+      const next = new Image();
+      next.src = url;
       const ready = next.decode ? next.decode().catch(() => {}) : Promise.resolve();
-      const minOut = new Promise((r) => { swapTimer = setTimeout(r, 170); });
       // Trava de segurança: se o decode não resolver (aba em segundo plano,
-      // rede lenta), a troca acontece mesmo assim — o card nunca fica apagado.
+      // rede lenta), a troca acontece mesmo assim.
       const guard = new Promise((r) => setTimeout(r, 700));
-      Promise.race([Promise.all([ready, minOut]), guard]).then(settle);
+      Promise.race([ready, guard]).then(settle);
     }
 
     if (prevBtn) {
@@ -192,14 +183,32 @@ if (!isTouch) {
     applyTransform();
   }
 
+  // Cada troca ganha um número. Se o usuário passar rápido pelas setas, um
+  // decode lento que termine atrasado não sobrescreve a imagem mais nova.
+  let swapToken = 0;
+
   function showVariant(idx) {
     if (currentVariants.length === 0) return;
     resetZoom();
     currentIdx = (idx + currentVariants.length) % currentVariants.length;
-    lightboxImg.src = `assets/work/${currentVariants[currentIdx]}`;
-    lightboxImg.alt = currentVariants.length > 1
+    const url = `assets/work/${currentVariants[currentIdx]}`;
+    const alt = currentVariants.length > 1
       ? `${currentTitle} — variant ${currentIdx + 1} of ${currentVariants.length}`
       : currentTitle;
+
+    // Decodifica antes de trocar o src. Trocando direto, o navegador esvazia
+    // a imagem enquanto a nova carrega, e em tela cheia isso aparece como um
+    // flash preto. Aqui a imagem atual fica até a próxima estar pronta.
+    const meu = ++swapToken;
+    const next = new Image();
+    next.src = url;
+    const ready = next.decode ? next.decode().catch(() => {}) : Promise.resolve();
+    const guard = new Promise((r) => setTimeout(r, 900));
+    Promise.race([ready, guard]).then(() => {
+      if (meu !== swapToken) return;   // já tem uma troca mais nova
+      lightboxImg.src = url;
+      lightboxImg.alt = alt;
+    });
     lightboxTitle.textContent = currentTitle;
     lightboxSub.textContent = currentSub;
 
