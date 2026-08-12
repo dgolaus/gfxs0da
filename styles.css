@@ -1049,18 +1049,16 @@ section + section {
   padding: 5px 10px;
   border-radius: 999px;
   text-transform: uppercase;
-  /* Aparece só no hover pra não poluir o card */
+  /* Aparece só no hover pra não poluir o card. Mesma mecânica da legenda:
+     desce de cima com translate + opacity, na mesma curva e duração. */
   opacity: 0;
-  transform: translateY(-4px);
-  transition: opacity var(--t-med) var(--ease), transform var(--t-med) var(--ease);
+  transition: opacity 0.42s var(--ease-out), translate 0.5s var(--ease-out);
 }
-.card:hover .card-count {
-  opacity: 1;
-  transform: translateY(0);
-}
+.card:not(:hover) .card-count { translate: 0 -10px; }
+.card:hover .card-count { opacity: 1; translate: 0 0; transition-delay: 0.09s; }
 /* Touch: sempre visível (sem hover) */
 @media (hover: none) {
-  .card-count { opacity: 1; transform: none; }
+  .card-count { opacity: 1; translate: none; }
 }
 
 .card-arrow {
@@ -1116,7 +1114,8 @@ section + section {
   font-family: var(--t-display);
   font-size: clamp(40px, 6vw, 80px);
   letter-spacing: -0.035em;
-  line-height: 0.95;
+  /* folga para a perna do G não encostar no L de "click" */
+  line-height: 1.04;
   font-weight: 700;
   margin: 0;
 }
@@ -1632,7 +1631,7 @@ section + section {
 .trust-stat-stars { gap: 18px; }
 .stars {
   display: flex;
-  gap: 8px;
+  gap: 10px;
   align-items: center;
 }
 .star {
@@ -1640,8 +1639,8 @@ section + section {
   align-items: center;
   justify-content: center;
   /* SVG-based stars — exact size, no Unicode shrinkage */
-  width:  clamp(56px, 6.5vw, 88px);
-  height: clamp(56px, 6.5vw, 88px);
+  width:  clamp(40px, 4.4vw, 58px);
+  height: clamp(40px, 4.4vw, 58px);
   color: var(--text-dim);
   opacity: 0.25;
   transform: scale(0.65);
@@ -1661,7 +1660,15 @@ section + section {
 /* When lit, switch fill to the animated SVG gradient (#starGrad in <defs>).
    Gradient continuously shifts red hues — flowing metallic effect. */
 .star.lit svg { fill: url(#starGrad); }
-.star.lit { opacity: 1; transform: scale(1); color: var(--red); }
+.star.lit {
+  opacity: 1;
+  transform: scale(1);
+  /* o stroke do SVG usa currentColor — vermelho profundo desenha a aresta
+     sem clarear a estrela, separando-a do fundo */
+  color: #7a0d0d;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.55))
+          drop-shadow(0 0 14px rgba(201, 21, 21, 0.28));
+}
 .star.flash {
   filter:
     drop-shadow(0 0 8px var(--red))
@@ -3234,3 +3241,359 @@ body.slots-page .nav {
 @media (prefers-reduced-motion: reduce) {
   .section-rule span { transform: none; transition: none; }
 }
+
+
+/* ====================================================================
+   MOTION LAYER — 2026-08-10
+   Camada de movimento adicionada SOBRE o design existente.
+   Regras: nada dirigido por scroll, só transform/opacity (+ filter
+   pontual), tudo pausa com a aba oculta (html.is-hidden) e o bloco
+   global de prefers-reduced-motion no topo do arquivo já zera tudo
+   que está aqui. As propriedades individuais `translate`/`scale`/
+   `rotate` são usadas de propósito quando o elemento já tem um
+   `transform` próprio — assim compõem em vez de sobrescrever.
+   ==================================================================== */
+
+/* 0. Pausa das animações CONTÍNUAS quando a página não está visível.
+   Lista explícita (e não `*`) de propósito: um curinga também congelaria
+   as animações de ENTRADA, e uma aba aberta em segundo plano voltaria
+   com o hero ainda invisível.                                          */
+html.is-hidden::before,
+html.is-hidden body.bg-red::before,
+html.is-hidden .particle,
+html.is-hidden .bg-row-track,
+html.is-hidden .hero-bg-tilt,
+html.is-hidden .hero-badge::after,
+html.is-hidden .price-badge::after,
+html.is-hidden .dot.pulse,
+html.is-hidden .scroll-line,
+html.is-hidden .typing-dots > span,
+html.is-hidden .testimonials .quote,
+html.is-hidden .pricing-grid .price-card,
+html.is-hidden .cta-card .btn-primary,
+html.is-hidden .stars.is-lit .star,
+html.is-hidden .slots-tile-glyph::after,
+html.is-hidden .slots-status-dot::after { animation-play-state: paused !important; }
+
+/* 1. Entrada da navegação no load ------------------------------------
+   `backwards` (não `both`) para que, ao terminar, o brand e o CTA
+   voltem a obedecer o morph bar→pill baseado em --nav-pill.           */
+@keyframes navIn {
+  from { opacity: 0; translate: 0 -12px; filter: blur(4px); }
+  to   { opacity: 1; translate: 0 0;     filter: blur(0); }
+}
+.nav > .brand      { animation: navIn 0.75s var(--ease-out) 0.06s backwards; }
+.nav-links a       { animation: navIn 0.7s  var(--ease-out) backwards; }
+.nav-links a:nth-child(1) { animation-delay: 0.14s; }
+.nav-links a:nth-child(2) { animation-delay: 0.20s; }
+.nav-links a:nth-child(3) { animation-delay: 0.26s; }
+.nav-links a:nth-child(4) { animation-delay: 0.32s; }
+.nav-links a:nth-child(5) { animation-delay: 0.38s; }
+.nav > .btn        { animation: navIn 0.75s var(--ease-out) 0.42s backwards; }
+.nav-back          { animation: navIn 0.75s var(--ease-out) 0.20s backwards; }
+
+/* 2. Brand + links da nav -------------------------------------------- */
+.brand-logo {
+  transition: transform 0.5s var(--ease), filter 0.5s var(--ease);
+}
+.brand:hover .brand-logo {
+  transform: rotate(-7deg) scale(1.09);
+  filter: drop-shadow(0 0 14px rgba(201, 21, 21, 0.60));
+}
+.brand:active .brand-logo { transform: rotate(-3deg) scale(0.93); transition-duration: 0.09s; }
+.brand span { transition: text-shadow 0.4s var(--ease); }
+.brand:hover span { text-shadow: 0 0 18px rgba(177, 18, 18, 0.55); }
+
+.nav-links a {
+  transition: color var(--t-fast) var(--ease), translate 0.28s var(--ease);
+}
+.nav-links a:hover { translate: 0 -1px; }
+.nav-links a:active { translate: 0 1px; color: var(--red); transition-duration: 0.08s; }
+.nav-links a::after { box-shadow: 0 0 0 rgba(177, 18, 18, 0); transition: right var(--t-med) var(--ease), box-shadow var(--t-med) var(--ease); }
+.nav-links a:hover::after { box-shadow: 0 0 10px rgba(201, 21, 21, 0.75); }
+
+/* 3. Botões — brilho de passagem no hover + resposta ao clique -------- */
+.btn { position: relative; overflow: hidden; isolation: isolate; }
+.btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(105deg,
+    transparent 38%, rgba(255, 255, 255, 0.18) 50%, transparent 62%);
+  translate: -130% 0;
+  opacity: 0;
+}
+.btn:hover::after { animation: btnSheen 0.9s var(--ease-out); }
+@keyframes btnSheen {
+  0%   { translate: -130% 0; opacity: 0; }
+  18%  { opacity: 1; }
+  100% { translate: 130% 0;  opacity: 0; }
+}
+.btn:active {
+  transform: translateY(1px) scale(0.975);
+  transition-duration: 0.08s;
+}
+.btn-primary:active {
+  box-shadow:
+    inset 0 2px 6px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 4px 14px -8px rgba(177, 18, 18, 0.55),
+    0 0 0 1px rgba(177, 18, 18, 0.40);
+}
+.btn-ghost:active { background: rgba(139, 0, 0, 0.28); }
+
+/* 4. Foco mais expressivo (teclado) ----------------------------------- */
+@keyframes focusPop { from { outline-offset: 9px; } }
+:focus-visible { animation: focusPop 0.32s var(--ease-out); }
+
+/* 5. CTA primário — presença calma, sem chamar atenção demais --------- */
+@keyframes ctaBreathe {
+  0%, 100% {
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.10),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.30),
+      0 8px 24px -10px rgba(177, 18, 18, 0.45),
+      0 0 0 1px rgba(177, 18, 18, 0.30);
+  }
+  50% {
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.12),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.30),
+      0 14px 34px -10px rgba(177, 18, 18, 0.62),
+      0 0 0 1px rgba(201, 21, 21, 0.42);
+  }
+}
+.cta-card .btn-primary { animation: ctaBreathe 6s ease-in-out infinite; }
+.cta-card .btn-primary:hover,
+.cta-card .btn-primary:focus-visible { animation: none; }
+
+/* 6. Colagem do hero — respiração contínua muito lenta ---------------- */
+@keyframes collageBreathe {
+  0%, 100% { scale: 1;     translate: 0 0; }
+  50%      { scale: 1.028; translate: 0 -0.7%; }
+}
+.hero-bg-tilt {
+  animation: collageBreathe 30s ease-in-out infinite;
+  will-change: transform, scale;
+}
+/* mesma pausa que já existe para as trilhas quando o hero sai da tela */
+.hero-bg.is-paused .hero-bg-tilt { animation-play-state: paused; }
+/* deslocamento do paralaxe de ponteiro (definido em script.js).
+   A margem negativa dá folga para o deslocamento de até ±14px sem abrir
+   uma fresta entre a colagem e a borda do hero (que já tem overflow:hidden). */
+.hero-bg { inset: -18px; will-change: translate; }
+
+/* 7. Badge de status do hero — brilho que atravessa de tempos em tempos */
+.hero-badge { position: relative; overflow: hidden; }
+.hero-badge::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(100deg,
+    transparent 42%, rgba(255, 255, 255, 0.12) 50%, transparent 58%);
+  translate: -150% 0;
+  animation: badgeShimmer 9s var(--ease-out) 3s infinite;
+}
+@keyframes badgeShimmer {
+  0%        { translate: -150% 0; }
+  16%, 100% { translate:  150% 0; }
+}
+
+/* 8. Cards do portfólio ----------------------------------------------- */
+.card-img img {
+  transition: filter var(--t-med) var(--ease),
+              opacity 0.22s var(--ease-out),
+              transform 0.34s var(--ease-out);
+}
+/* troca de variante — crossfade curto em vez de corte seco */
+.card.is-swapping .card-img img { opacity: 0; transform: scale(1.045); }
+
+/* passagem de luz diagonal ao entrar o hover */
+.card-img::before {
+  content: '';
+  position: absolute;
+  inset: -40%;
+  z-index: 2;
+  pointer-events: none;
+  background: linear-gradient(105deg,
+    transparent 43%, rgba(255, 255, 255, 0.11) 50%, transparent 57%);
+  translate: -70% 0;
+  opacity: 0;
+}
+.card:hover .card-img::before { animation: cardSheen 1.15s var(--ease-out) 0.05s; }
+@keyframes cardSheen {
+  0%   { translate: -70% 0; opacity: 0; }
+  20%  { opacity: 1; }
+  100% { translate:  70% 0; opacity: 0; }
+}
+
+/* legenda entra em dois tempos: título e depois a pílula de dados */
+.card-meta h3,
+.card-meta .card-sub {
+  transition: opacity 0.42s var(--ease-out), translate 0.5s var(--ease-out);
+}
+.card:not(:hover) .card-meta h3      { translate: 0 6px; }
+.card:not(:hover) .card-meta .card-sub { translate: 0 12px; opacity: 0; }
+.card:hover .card-meta .card-sub     { transition-delay: 0.09s; }
+
+.card:active { transform: scale(1.005); transition-duration: 0.09s; }
+.card:focus-visible { transform: scale(1.015); }
+
+
+/* setas mais responsivas */
+.card-arrow {
+  transition:
+    opacity 0.28s var(--ease-out),
+    background 0.18s var(--ease),
+    border-color 0.18s var(--ease),
+    transform 0.3s var(--ease),
+    scale 0.18s var(--ease),
+    box-shadow 0.25s var(--ease);
+}
+.card-arrow:hover { scale: 1.12; box-shadow: 0 10px 24px -8px rgba(201, 21, 21, 0.65); }
+.card-arrow:active,
+.card:hover .card-arrow:active {
+  transform: translate(0, -50%);
+  scale: 0.9;
+  transition-duration: 0.08s;
+}
+.card-arrow svg { transition: translate 0.25s var(--ease); }
+.card-arrow-prev:hover svg { translate: -1px 0; }
+.card-arrow-next:hover svg { translate:  1px 0; }
+
+/* 9. Chips, capacidades e selos --------------------------------------- */
+.capabilities li {
+  transition: border-color var(--t-fast) var(--ease),
+              color var(--t-fast) var(--ease),
+              background var(--t-fast) var(--ease),
+              translate 0.3s var(--ease);
+}
+.capabilities li:hover { translate: 0 -2px; background: rgba(177, 18, 18, 0.07); }
+
+.studio-logo { transition: transform 0.45s var(--ease); }
+.studio-chip:hover .studio-logo { transform: scale(1.12) rotate(-7deg); }
+.studio-chip:active { transform: translateY(0) scale(0.975); transition-duration: 0.09s; }
+
+.price-badge { overflow: hidden; }
+.price-badge::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(100deg,
+    transparent 40%, rgba(255, 255, 255, 0.16) 50%, transparent 60%);
+  translate: -160% 0;
+  animation: badgeShimmer 11s var(--ease-out) 5s infinite;
+}
+
+/* ponto de status verde do ticket pulsa em verde (e não em vermelho) */
+.chat-status .dot.pulse { animation: pulseGreen 2.4s var(--ease) infinite; }
+@keyframes pulseGreen {
+  0%, 100% { box-shadow: 0 0 8px #57F287, 0 0 0 0 rgba(87, 242, 135, 0.45); }
+  70%      { box-shadow: 0 0 8px #57F287, 0 0 0 9px rgba(87, 242, 135, 0); }
+}
+
+/* 10. Números e estrelas ---------------------------------------------- */
+.counter.is-done { animation: counterSettle 0.6s var(--ease-out); }
+@keyframes counterSettle {
+  0%   { scale: 1;     }
+  28%  { scale: 1.045; }
+  100% { scale: 1;     }
+}
+.star.lit { animation: starRise 0.8s var(--ease-out) both; }
+@keyframes starRise {
+  0%   { rotate: -14deg; translate: 0 7px; }
+  55%  { rotate: 4deg;   translate: 0 -3px; }
+  100% { rotate: 0deg;   translate: 0 0; }
+}
+/* depois que as cinco acendem, uma flutuação mínima e dessincronizada */
+.stars.is-lit .star { animation: starFloat 5.4s ease-in-out infinite; }
+.stars.is-lit .star:nth-child(2) { animation-duration: 6.1s; animation-delay: 0.16s; }
+.stars.is-lit .star:nth-child(3) { animation-duration: 5.7s; animation-delay: 0.32s; }
+.stars.is-lit .star:nth-child(4) { animation-duration: 6.4s; animation-delay: 0.48s; }
+.stars.is-lit .star:nth-child(5) { animation-duration: 5.9s; animation-delay: 0.64s; }
+@keyframes starFloat {
+  0%, 100% { translate: 0 0;    }
+  50%      { translate: 0 -4px; }
+}
+
+/* 11. Luz que segue o cursor em cards de preço e depoimentos ---------- */
+.price-card, .quote { --mx: 50%; --my: 50%; }
+/* .quote não é contexto de empilhamento em repouso — sem isto o brilho
+   z-index:-1 abaixo cairia atrás do próprio fundo do card. */
+.quote { isolation: isolate; }
+.price-card::after,
+.quote::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  pointer-events: none;
+  background: radial-gradient(340px circle at var(--mx) var(--my),
+              rgba(177, 18, 18, 0.16), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.35s var(--ease-out);
+}
+.price-card:hover::after,
+.quote:hover::after { opacity: 1; }
+.price-cta:active { opacity: 0.7; transition-duration: 0.08s; }
+.price-cta:active span { transform: translateX(6px); }
+
+/* 12. Conversa do Discord --------------------------------------------- */
+.chat-msg {
+  transform: translateY(10px) scale(0.985);
+  filter: blur(3px);
+  margin-inline: -8px;
+  padding-inline: 8px;
+  border-radius: 6px;
+  transition: opacity 0.42s var(--ease-out),
+              transform 0.42s var(--ease-out),
+              filter 0.42s var(--ease-out);
+}
+.chat-msg.is-in { transform: none; filter: blur(0); }
+
+.chat-typing { transform: translateY(5px); transition: opacity 0.25s var(--ease), transform 0.3s var(--ease-out); }
+.chat-typing.is-active { transform: none; }
+@keyframes typingBounce {
+  0%, 60%, 100% { opacity: 0.28; translate: 0 0;    scale: 0.9;  }
+  30%           { opacity: 1;    translate: 0 -4px; scale: 1.08; }
+}
+
+/* 13. Fundo menos estático — respiração do brilho ambiente ------------ */
+@keyframes ambientBreathe {
+  0%, 100% { opacity: 0.86; scale: 1;     }
+  50%      { opacity: 1;    scale: 1.045; }
+}
+body.bg-red::before {
+  animation: ambientBreathe 32s ease-in-out infinite;
+  will-change: opacity, transform;
+}
+
+/* 14. Detalhes de clique em links secundários ------------------------- */
+.social a:active,
+.nav-back:active,
+.slots-secondary:active { opacity: 0.65; transition-duration: 0.08s; }
+.lightbox-close:active { scale: 0.92; transition-duration: 0.09s; }
+.lightbox-img { transition: transform 0.4s var(--ease-out), opacity 0.28s var(--ease-out); }
+.lightbox-img.is-swapping { opacity: 0; }
+
+/* 15. Segurança extra: nada disso roda com movimento reduzido --------- */
+@media (prefers-reduced-motion: reduce) {
+  .hero-bg-tilt,
+  .hero-badge::after,
+  .price-badge::after,
+  .cta-card .btn-primary,
+  .stars.is-lit .star,
+  .star.lit,
+  body.bg-red::before { animation: none !important; }
+  .card-meta h3,
+  .card:not(:hover) .card-meta .card-sub,
+  .card:not(:hover) .card-count { translate: none; }
+  .chat-msg { filter: none; transform: none; }
+}
+

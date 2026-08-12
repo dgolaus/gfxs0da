@@ -98,12 +98,41 @@ if (!isTouch) {
     );
     preloadIO.observe(card);
 
+    // Troca de variante com crossfade curto (sem corte seco). A imagem nova
+    // é decodificada antes do swap para não piscar meio carregada.
+    let swapTimer = null;
     function setVariant(newIdx) {
       idx = (newIdx + variants.length) % variants.length;
-      const webp = variants[idx];
-      img.src = `assets/work/${webp}`;
-      if (counter) counter.textContent = `${idx + 1} / ${variants.length}`;
+      const url = `assets/work/${variants[idx]}`;
+      const label = `${idx + 1} / ${variants.length}`;
       card.dataset.currentIdx = String(idx);
+
+      if (reducedMotion) {
+        if (counter) counter.textContent = label;
+        img.src = url;
+        return;
+      }
+
+      card.classList.add('is-swapping');
+      const next = new Image();
+      next.src = url;
+      let settled = false;
+      // O contador vira no MESMO frame em que a nova imagem entra — antes
+      // ele pulava assim que a seta era clicada, adiantando-se à thumb.
+      const settle = () => {
+        if (settled) return;
+        settled = true;
+        img.src = url;
+        if (counter) counter.textContent = label;
+        setTimeout(() => card.classList.remove('is-swapping'), 30);
+      };
+      clearTimeout(swapTimer);
+      const ready = next.decode ? next.decode().catch(() => {}) : Promise.resolve();
+      const minOut = new Promise((r) => { swapTimer = setTimeout(r, 170); });
+      // Trava de segurança: se o decode não resolver (aba em segundo plano,
+      // rede lenta), a troca acontece mesmo assim — o card nunca fica apagado.
+      const guard = new Promise((r) => setTimeout(r, 700));
+      Promise.race([Promise.all([ready, minOut]), guard]).then(settle);
     }
 
     if (prevBtn) {
@@ -361,7 +390,13 @@ function animateCounter(el, duration = 2400) {
     const eased = 1 - Math.pow(1 - t, 3);
     const current = (eased * target).toFixed(decimals);
     el.textContent = `${prefix}${current}${suffix}`;
-    if (t < 1) requestAnimationFrame(tick);
+    if (t < 1) {
+      requestAnimationFrame(tick);
+    } else {
+      // Pequeno assentamento no fim da contagem (CSS: .counter.is-done)
+      el.classList.add('is-done');
+      setTimeout(() => el.classList.remove('is-done'), 700);
+    }
   };
   requestAnimationFrame(tick);
 }
@@ -370,7 +405,9 @@ function animateCounter(el, duration = 2400) {
 (() => {
   const heroCounters = document.querySelectorAll('.hero-stats-strip .counter');
   if (!heroCounters.length) return;
-  const go = () => heroCounters.forEach((c) => animateCounter(c, 2400));
+  // Leve escalonamento entre as três colunas — leitura mais natural
+  const go = () =>
+    heroCounters.forEach((c, i) => setTimeout(() => animateCounter(c, 2400), i * 110));
   if (reducedMotion) { go(); return; }
   // If the loading splash is present, hold the count-up until it starts
   // leaving (body.ready) so the hero comes alive as the splash clears.
@@ -391,8 +428,10 @@ function animateCounter(el, duration = 2400) {
   if (!trustStats) return;
 
   function animateStars(stars) {
+    const group = stars[0] && stars[0].parentElement;
     if (reducedMotion) {
       stars.forEach((s) => s.classList.add('lit'));
+      if (group) group.classList.add('is-lit');
       return;
     }
     /* Atrasado pra sequência começar DEPOIS dos números aparecerem.
@@ -402,6 +441,10 @@ function animateCounter(el, duration = 2400) {
       setTimeout(() => {
         star.classList.add('lit', 'flash');
         setTimeout(() => star.classList.remove('flash'), 900);
+        // Depois da última, o grupo passa para a flutuação contínua mínima
+        if (i === stars.length - 1 && group) {
+          setTimeout(() => group.classList.add('is-lit'), 900);
+        }
       }, 1000 + i * 340);
     });
   }
@@ -411,7 +454,7 @@ function animateCounter(el, duration = 2400) {
       for (const entry of entries) {
         if (!entry.isIntersecting) continue;
         const counters = entry.target.querySelectorAll('.counter');
-        counters.forEach((c) => animateCounter(c));
+        counters.forEach((c, i) => setTimeout(() => animateCounter(c), i * 110));
         const stars = entry.target.querySelectorAll('.star');
         animateStars(stars);
         trustObserver.unobserve(entry.target);
@@ -514,6 +557,10 @@ function animateCounter(el, duration = 2400) {
     requestAnimationFrame(() => el.classList.add('is-in'));
   }
 
+  // Cadência do "digitando": proporcional ao tamanho da mensagem, com teto.
+  const plain = (html) => html.replace(/<[^>]+>/g, '');
+  const typingTime = (msg) => Math.min(1250, 380 + plain(msg.html).length * 11);
+
   async function playOnce() {
     messagesEl.innerHTML = '';
     hideTyping();
@@ -525,12 +572,13 @@ function animateCounter(el, duration = 2400) {
       // (first msg = client opening the ticket, instant)
       if (i > 0) {
         showTyping(msg.name);
-        await wait(550);
+        await wait(typingTime(msg));
         hideTyping();
-        await wait(80);
+        await wait(90);
       }
       addMessage(msg);
-      await wait(200);
+      // Respiro depois de cada mensagem — maior nas longas
+      await wait(180 + Math.min(320, plain(msg.html).length * 1.6));
     }
     // Done — stays in final state, no loop
   }
@@ -967,4 +1015,70 @@ function animateCounter(el, duration = 2400) {
       });
     })
     .catch(() => { /* keep default "open" on failure */ });
+})();
+
+
+/* ====================================================================
+   MOTION LAYER — comportamentos de ponteiro/visibilidade (2026-08-10)
+   Nada aqui depende de scroll. Tudo respeita prefers-reduced-motion e
+   é desligado em telas de toque quando depende de cursor.
+   ==================================================================== */
+
+/* M1. Pausa global das animações contínuas quando a aba não está visível.
+   O CSS (html.is-hidden) pausa keyframes; os rAF abaixo já param sozinhos
+   porque o navegador não agenda frames em aba oculta.                  */
+(() => {
+  const root = document.documentElement;
+  const sync = () => root.classList.toggle('is-hidden', document.hidden);
+  document.addEventListener('visibilitychange', sync);
+  sync();
+})();
+
+/* M2. Colagem do hero — paralaxe mínimo seguindo o cursor (±14px).
+   Composta com a respiração em CSS: aqui só a propriedade translate do
+   .hero-bg, lá o scale/translate do .hero-bg-tilt.                     */
+(() => {
+  if (reducedMotion || isTouch) return;
+  const hero = document.querySelector('.hero');
+  const bg   = document.querySelector('.hero-bg');
+  if (!hero || !bg) return;
+
+  let tx = 0, ty = 0, cx = 0, cy = 0, raf = null;
+
+  function loop() {
+    cx += (tx - cx) * 0.07;
+    cy += (ty - cy) * 0.07;
+    bg.style.translate = `${cx.toFixed(2)}px ${cy.toFixed(2)}px`;
+    if (Math.abs(tx - cx) > 0.05 || Math.abs(ty - cy) > 0.05) {
+      raf = requestAnimationFrame(loop);
+    } else {
+      raf = null;
+    }
+  }
+  const kick = () => { if (raf == null) raf = requestAnimationFrame(loop); };
+
+  hero.addEventListener('pointermove', (e) => {
+    if (e.pointerType === 'touch') return;
+    const r = hero.getBoundingClientRect();
+    tx = ((e.clientX - r.left) / r.width  - 0.5) * -14;
+    ty = ((e.clientY - r.top)  / r.height - 0.5) * -8;
+    kick();
+  }, { passive: true });
+
+  hero.addEventListener('pointerleave', () => { tx = 0; ty = 0; kick(); });
+})();
+
+/* M4. Luz que segue o cursor nos cards de preço e depoimentos — mesma
+   ideia já usada nos cards do portfólio (--mx/--my), sem duplicar o
+   listener daqueles.                                                    */
+(() => {
+  if (isTouch) return;
+  const els = document.querySelectorAll('.price-card, .quote');
+  els.forEach((el) => {
+    el.addEventListener('pointermove', (e) => {
+      const r = el.getBoundingClientRect();
+      el.style.setProperty('--mx', `${((e.clientX - r.left) / r.width) * 100}%`);
+      el.style.setProperty('--my', `${((e.clientY - r.top) / r.height) * 100}%`);
+    }, { passive: true });
+  });
 })();
