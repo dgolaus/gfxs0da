@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-08-18T10:26:16.465Z",
+  "updatedAt": "2026-08-18T11:23:40.423Z",
   "games": {
     "apocalypse": {
       "placeId": "90148635862803",
       "universeId": 9098570654,
       "name": "[👾EVENT] 🧟 Survive the Apocalypse",
-      "visits": 234541120,
-      "playing": 21821,
-      "favorites": 385335,
+      "visits": 234595975,
+      "playing": 20923,
+      "favorites": 385399,
       "creatorName": "Rubicon South",
       "creatorVerified": true
     },
@@ -15,9 +15,9 @@
       "placeId": "129827112113663",
       "universeId": 7629331599,
       "name": "Prospecting! 💎",
-      "visits": 255161640,
-      "playing": 4221,
-      "favorites": 447525,
+      "visits": 255171163,
+      "playing": 4525,
+      "favorites": 447535,
       "creatorName": "Prospecting!",
       "creatorVerified": true
     },
@@ -25,8 +25,8 @@
       "placeId": "75034791252172",
       "universeId": 9871986464,
       "name": "[UPD] Parkour For Brainrots!",
-      "visits": 53860054,
-      "playing": 286,
+      "visits": 53862196,
+      "playing": 318,
       "favorites": 73911,
       "creatorName": "Fly To 8 Figs",
       "creatorVerified": false
@@ -35,9 +35,9 @@
       "placeId": "77843161404023",
       "universeId": 9970645639,
       "name": "Run a Restaurant!",
-      "visits": 95728597,
-      "playing": 12096,
-      "favorites": 651870,
+      "visits": 95760892,
+      "playing": 12580,
+      "favorites": 651985,
       "creatorName": "Burnt Toast Labs!",
       "creatorVerified": true
     },
@@ -45,9 +45,9 @@
       "placeId": "88323040672117",
       "universeId": 7528417535,
       "name": "Divaz 💄",
-      "visits": 46464586,
-      "playing": 2738,
-      "favorites": 1425089,
+      "visits": 46478094,
+      "playing": 2922,
+      "favorites": 1425189,
       "creatorName": "Divas World!",
       "creatorVerified": false
     },
@@ -55,9 +55,9 @@
       "placeId": "97598239454123",
       "universeId": 10200395747,
       "name": "Grow a Garden 2",
-      "visits": 1628966133,
-      "playing": 194533,
-      "favorites": 655890,
+      "visits": 1629152949,
+      "playing": 194173,
+      "favorites": 655925,
       "creatorName": "Strawberreh Squad",
       "creatorVerified": true
     }
