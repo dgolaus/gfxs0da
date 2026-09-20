@@ -1592,8 +1592,8 @@ section + section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
-  padding: 0 0 56px;
-  border-bottom: 1px solid var(--line);
+  padding: 0 0 20px;
+  border-bottom: 0;
   margin-bottom: 56px;
   align-items: end;
 }
@@ -3600,3 +3600,1017 @@ body.bg-red::before {
   .chat-msg { filter: none; transform: none; }
 }
 
+   HERO INTRO — zoom-out desfocado + fade (adaptado do snippet)
+   O bloco inteiro da hero (.hero-inner) começa ampliado, desfocado e
+   transparente, e assenta no lugar. Implementado como @keyframes, não
+   como transition: roda sozinho, sem depender de nenhum JS.
+   Sincronia com o splash vem do mesmo mecanismo que o boot.css já usa
+   para congelar a página — html:not(.no-boot) body:not(.ready) pausa
+   a animação enquanto o splash está na tela. Se o splash está
+   desligado, ou boot.js falhar, a animação roda normalmente.
+   ==================================================================== */
+.hero-inner {
+  transform-origin: 50% 45%;
+  animation: heroBlockIn 1.6s cubic-bezier(0.16, 1, 0.3, 1) 0.12s both;
+}
+@keyframes heroBlockIn {
+  from { opacity: 0; transform: scale(1.06); filter: blur(14px); }
+  60%  { opacity: 1; }
+  to   { opacity: 1; transform: none;        filter: blur(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-inner { animation: none; }
+}
+
+
+/* ====================================================================
+   LENIS — regras recomendadas pelo próprio Lenis
+   ==================================================================== */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+
+/* ====================================================================
+   TESTIMONIALS — cabeçalho com avatar, nome e handle; Discord no canto
+   Porta a estrutura do componente (avatar 50px → nome/handle → texto →
+   ícone social no canto superior direito) para o vocabulário do site.
+   Avatares são placeholders com a inicial até chegarem as fotos.
+   ==================================================================== */
+.quote { padding: 22px 22px 20px; }
+.quote .quote-mark { display: none; }
+
+.quote-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-right: 36px; /* espaço para o ícone do Discord */
+}
+.quote-avatar {
+  flex: 0 0 auto;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 30% 25%, rgba(255, 255, 255, 0.08), transparent 60%),
+    linear-gradient(160deg, #2a1416, #14090a);
+  border: 1px solid rgba(177, 18, 18, 0.35);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+.quote-avatar::after {
+  content: attr(data-initial);
+  font-family: var(--t-display);
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: -0.02em;
+  color: #fc1f25;
+}
+.quote-id {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.quote-id .who {
+  font-family: var(--t-display);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+.quote-id .handle {
+  font-family: var(--t-mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  margin: 0;
+  font-weight: 500;
+}
+.quote-social {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  border-radius: 8px;
+  transition: opacity 0.25s var(--ease), transform 0.25s var(--ease), background 0.25s var(--ease);
+}
+.quote-social img {
+  width: 18px;
+  height: 18px;
+  display: block;
+  /* a logo é ciano; vira branca para casar com o resto dos ícones */
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+.quote-social:hover img { opacity: 1; }
+.quote-social:hover { background: rgba(255, 255, 255, 0.06); transform: translateY(-1px); }
+.quote-social:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+
+.quote blockquote {
+  margin: 18px 0 0;
+  min-height: 0;
+}
+.quote figcaption.dim {
+  display: block;
+  margin-top: 16px;
+  font-family: var(--t-mono);
+  font-size: 11px;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+.quote-social svg { width: 18px; height: 18px; }
+
+@media (max-width: 700px) {
+  .quote { padding: 20px 18px 18px; }
+  .quote-social { top: 16px; right: 16px; }
+}
+
+/* Float dos cartões 4–6 (o bloco original só cobria três). */
+.testimonials .quote:nth-child(4) { animation-name: quoteFloatB; animation-duration: 7.4s; animation-delay: -1.8s; }
+.testimonials .quote:nth-child(5) { animation-name: quoteFloatC; animation-duration: 6.9s; animation-delay: -3.4s; }
+.testimonials .quote:nth-child(6) { animation-name: quoteFloatA; animation-duration: 7.6s; animation-delay: -0.9s; }
+
+/* ====================================================================
+   TESTIMONIALS — três colunas rolando (receita da Cube Graphics)
+   Mesma mecânica do site da Cube: flex de 3 colunas, max-height +
+   overflow:hidden + contain:paint, máscara vertical 18%/82%, cada
+   coluna com os itens duplicados e translateY(0 → -50%) linear infinito
+   em durações diferentes (30s / 36s / 27s), pausa no hover e
+   animation:none em reduced-motion. Só a pele é do gfxs0da: cores,
+   fontes, cabeçalho de cartão e ícone de origem no canto.
+   ==================================================================== */
+.tcols {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  max-height: 640px;
+  overflow: hidden;
+  contain: paint;
+  padding: 0;
+  margin: 0;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 18%, #000 82%, transparent 100%);
+          mask-image: linear-gradient(180deg, transparent 0%, #000 18%, #000 82%, transparent 100%);
+}
+.tcol {
+  flex: 1;
+  min-width: 0;
+  max-width: 360px;
+}
+.tcol-track {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 20px;
+  will-change: transform;
+  backface-visibility: hidden;
+  animation: tcolUp var(--dur, 30s) linear infinite;
+}
+.tcol[data-col="1"] .tcol-track { --dur: 30s; }
+.tcol[data-col="2"] .tcol-track { --dur: 36s; animation-name: tcolDown; }
+.tcol[data-col="3"] .tcol-track { --dur: 27s; }
+@keyframes tcolUp   { from { transform: translateY(0); }    to { transform: translateY(-50%); } }
+@keyframes tcolDown { from { transform: translateY(-50%); } to { transform: translateY(0); } }
+.tcol-track:hover { animation-play-state: paused; }
+.tcols.is-paused .tcol-track { animation-play-state: paused; }
+
+/* Cartão — herda .quote; sem filete, sem flutuar, sem lift no hover */
+.tcols .quote {
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 22px 22px 20px;
+  animation: none;
+  translate: none;
+  cursor: default;
+}
+.tcols .quote-head { gap: 12px; padding-right: 32px; }
+.tcols .quote-avatar { width: 40px; height: 40px; }
+.tcols .quote-avatar::after { font-size: 15px; }
+.tcols .quote-id .who { font-size: 14.5px; }
+.tcols .quote-id .handle { font-size: 12px; }
+.tcols .quote-social { top: 16px; right: 16px; width: 28px; height: 28px; }
+.tcols .quote-social svg, .tcols .quote-social img { width: 16px; height: 16px; }
+.tcols .quote blockquote { margin: 16px 0 0; font-size: 15px; line-height: 1.55; }
+.tcols .quote figcaption.dim { margin-top: 14px; padding-top: 12px; font-size: 10.5px; }
+.tcols:has(.quote:hover) .quote:not(:hover) { filter: none; opacity: 1; transform: none; }
+.tcols .quote:hover { transform: none; }
+
+@media (max-width: 1000px) { .tcol[data-col="3"] { display: none; } }
+@media (max-width: 620px)  { .tcol[data-col="2"] { display: none; } .tcols { max-height: 520px; } }
+@media (prefers-reduced-motion: reduce) {
+  .tcol-track { animation: none !important; }
+}
+
+/* Avatar com foto: preenche o círculo, esconde a inicial */
+.quote-avatar { overflow: hidden; }
+.quote-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+.quote-avatar.has-img::after { display: none; }
+
+/* ====================================================================
+   GRADIENTE ANIMADO — luz vagando DENTRO das letras
+   Duas camadas do mesmo texto empilhadas:
+     .accent-text  — o gradiente base que segue o scroll (script.js 6c)
+     .accent-orbs  — mesmo texto, com 4 manchas radiais nas cores do
+                     próprio gradiente (#FF6B6B / #fc1f25 / #6B0808)
+                     movendo-se por background-position, recortadas às
+                     letras via background-clip:text. Nada vaza.
+   ==================================================================== */
+.hero-title .accent,
+.process-text h2 .accent-soft {
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-image: none !important;
+  /* o padding do original ficava aqui; as duas camadas filhas precisam
+     ocupar a MESMA caixa, então o pai não tem padding e a folga para
+     descendentes/glow vai para as camadas por igual */
+  padding: 0 !important;
+}
+.accent .accent-text,
+.accent-soft .accent-text,
+.accent-orbs {
+  display: inline-block;
+  padding: 0 0.05em 0.1em 0;
+  box-sizing: border-box;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.accent .accent-text,
+.accent-soft .accent-text {
+  position: relative;
+  z-index: 1;
+  background-image: radial-gradient(circle at 50% -30vh, #FF6B6B 0px, #fc1f25 50vh, #6B0808 90vh, #1F0202 150vh);
+}
+.accent-orbs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  background-repeat: no-repeat;
+  background-image:
+    radial-gradient(closest-side, rgba(255, 107, 107, 0.95), transparent),
+    radial-gradient(closest-side, rgba(252, 31, 37, 0.9),  transparent),
+    radial-gradient(closest-side, rgba(255, 139, 107, 0.8), transparent),
+    radial-gradient(closest-side, rgba(107, 8, 8, 0.9),    transparent);
+  background-size: 55% 120%, 45% 110%, 40% 100%, 60% 130%;
+  background-position: 0% 0%, 100% 100%, 100% 0%, 0% 100%;
+  animation: accentOrbs 6s ease-in-out infinite alternate;
+  will-change: background-position;
+}
+@keyframes accentOrbs {
+  0%   { background-position: 0% 0%,     100% 100%, 100% 0%,   0% 100%; }
+  25%  { background-position: 60% 40%,   30% 80%,   70% 60%,   20% 30%; }
+  50%  { background-position: 100% 100%, 0% 0%,     20% 100%,  80% 0%; }
+  75%  { background-position: 30% 70%,   70% 20%,   0% 40%,    100% 60%; }
+  100% { background-position: 0% 100%,   100% 0%,   50% 50%,   50% 50%; }
+}
+@media (prefers-reduced-motion: reduce) { .accent-orbs { animation: none; } }
+
+/* ====================================================================
+   SHINY BUTTON — borda cônica girando + brilho interno (do componente)
+   Aplicado como classe extra nos botões da nav e da hero, mantendo a
+   forma/tamanho existentes. Paleta do site: fundo escuro, texto claro,
+   realce vermelho. Registered properties permitem animar o ângulo do
+   conic-gradient; navegadores sem @property mostram o botão estático.
+   ==================================================================== */
+@property --gradient-angle        { syntax: '<angle>';      initial-value: 0deg;  inherits: false; }
+@property --gradient-angle-offset { syntax: '<angle>';      initial-value: 0deg;  inherits: false; }
+@property --gradient-percent      { syntax: '<percentage>'; initial-value: 5%;    inherits: false; }
+@property --gradient-shine        { syntax: '<color>';      initial-value: #ffffff; inherits: false; }
+
+.btn-shiny {
+  --shiny-bg: #0B0B0D;
+  --shiny-bg-subtle: #1a1416;
+  --shiny-fg: var(--text);
+  --shiny-highlight: #B11212;
+  --shiny-highlight-subtle: #ff6b6b;
+  --shiny-duration: 3s;
+  --shiny-shadow: 2px;
+  --shiny-transition: 800ms cubic-bezier(0.25, 1, 0.5, 1);
+
+  isolation: isolate;
+  position: relative;
+  overflow: hidden;
+  outline-offset: 4px;
+  color: var(--shiny-fg);
+  border: 1px solid transparent;
+  background:
+    linear-gradient(var(--shiny-bg), var(--shiny-bg)) padding-box,
+    conic-gradient(
+      from calc(var(--gradient-angle) - var(--gradient-angle-offset)),
+      transparent,
+      var(--shiny-highlight) var(--gradient-percent),
+      var(--gradient-shine) calc(var(--gradient-percent) * 2),
+      var(--shiny-highlight) calc(var(--gradient-percent) * 3),
+      transparent calc(var(--gradient-percent) * 4)
+    ) border-box;
+  box-shadow: inset 0 0 0 1px var(--shiny-bg-subtle);
+  transition: var(--shiny-transition);
+  transition-property: --gradient-angle-offset, --gradient-percent, --gradient-shine, transform;
+}
+/* O primário mantém o vermelho como fundo, com a borda girando por cima */
+.btn-shiny.btn-primary {
+  --shiny-bg: #8B0A0A;
+  --shiny-bg-subtle: #B11212;
+  --shiny-highlight: #ff6b6b;
+  --shiny-highlight-subtle: #ffb3a7;
+  color: #fff;
+  background:
+    linear-gradient(180deg, #B11212 0%, #7A0808 100%) padding-box,
+    conic-gradient(
+      from calc(var(--gradient-angle) - var(--gradient-angle-offset)),
+      transparent,
+      var(--shiny-highlight) var(--gradient-percent),
+      var(--gradient-shine) calc(var(--gradient-percent) * 2),
+      var(--shiny-highlight) calc(var(--gradient-percent) * 3),
+      transparent calc(var(--gradient-percent) * 4)
+    ) border-box;
+}
+.btn-shiny.btn-primary:hover {
+  background:
+    linear-gradient(180deg, #C91515 0%, #8B0000 100%) padding-box,
+    conic-gradient(
+      from calc(var(--gradient-angle) - var(--gradient-angle-offset)),
+      transparent,
+      var(--shiny-highlight) var(--gradient-percent),
+      var(--gradient-shine) calc(var(--gradient-percent) * 2),
+      var(--shiny-highlight) calc(var(--gradient-percent) * 3),
+      transparent calc(var(--gradient-percent) * 4)
+    ) border-box;
+}
+.btn-shiny.btn-ghost { backdrop-filter: none; -webkit-backdrop-filter: none; }
+.btn-shiny.btn-ghost:hover { background-color: transparent; }
+
+.btn-shiny::before,
+.btn-shiny::after,
+.btn-shiny .shiny-inner::before {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  inset-inline-start: 50%;
+  inset-block-start: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+}
+.btn-shiny:active { translate: 0 1px; transform: none; }
+
+/* Padrão de pontos do componente removido: sobre o vermelho lia como um
+   retângulo esbranquiçado. O ::before fica sem pintura. */
+.btn-shiny::before { content: none; }
+/* Brilho interno girando — só no botão escuro (nav). Sobre o vermelho do
+   primário ele aparecia como uma mancha clara no meio do botão. */
+.btn-shiny.btn-primary::after { content: none; }
+.btn-shiny::after {
+  --shiny-anim: shinyShimmer linear infinite;
+  width: 100%;
+  aspect-ratio: 1;
+  background: linear-gradient(-50deg, transparent, var(--shiny-highlight), transparent);
+  -webkit-mask-image: radial-gradient(circle at bottom, transparent 40%, #000);
+          mask-image: radial-gradient(circle at bottom, transparent 40%, #000);
+  opacity: 0.35;
+}
+.btn-shiny .shiny-inner {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn-shiny .shiny-inner::before {
+  --size: calc(100% + 1rem);
+  width: var(--size);
+  height: var(--size);
+  box-shadow: inset 0 -1ex 2rem 4px var(--shiny-highlight);
+  opacity: 0;
+  transition: opacity var(--shiny-transition);
+  animation: shinyBreathe calc(var(--shiny-duration) * 1.5) linear infinite;
+}
+
+/* Animação: a borda gira sempre; no hover o feixe abre e clareia.
+   (O componente usava duas animações somadas com animation-composition,
+   uma delas pausada — em alguns navegadores a soma zerava e travava o
+   ângulo. Uma animação só, sem composição, resolve.) */
+.btn-shiny { animation: shinyAngle var(--shiny-duration) linear infinite; }
+.btn-shiny::after { animation: shinyShimmer calc(var(--shiny-duration) * 2) linear infinite; }
+.btn-shiny:is(:hover, :focus-visible) {
+  --gradient-percent: 20%;
+  --gradient-angle-offset: 95deg;
+  --gradient-shine: var(--shiny-highlight-subtle);
+  transform: translateY(-1px);
+}
+.btn-shiny:is(:hover, :focus-visible) .shiny-inner::before { opacity: 1; }
+.btn-shiny.btn-primary .shiny-inner::before { content: none; }
+
+@keyframes shinyAngle   { to { --gradient-angle: 360deg; } }
+@keyframes shinyShimmer { to { rotate: 360deg; } }
+@keyframes shinyBreathe { from, to { scale: 1; } 50% { scale: 1.2; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-shiny, .btn-shiny::before, .btn-shiny::after, .btn-shiny .shiny-inner::before { animation: none !important; }
+}
+
+/* ====================================================================
+   NAV INTRO — a barra entra junto com a hero
+   Mesma linguagem do heroBlockIn (blur + fade), mas descendo de cima,
+   e o conteúdo interno (marca, links, botão) entra em cascata logo
+   depois. Usa a propriedade individual `translate` e `filter` — não
+   toca em `transform`, que o nav pill morph já governa. Pausa com o
+   splash pelo mesmo mecanismo do boot.css.
+   ==================================================================== */
+.nav {
+  animation: navIn 1.1s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both;
+}
+@keyframes navIn {
+  from { opacity: 0; translate: 0 -14px; filter: blur(10px); }
+  to   { opacity: 1; translate: 0 0;     filter: blur(0); }
+}
+.nav .brand,
+.nav .nav-links > a,
+.nav > .btn {
+  animation: navItemIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: calc(0.32s + var(--ni, 0) * 0.06s);
+}
+.nav .brand           { --ni: 0; }
+.nav .nav-links > a:nth-child(1) { --ni: 1; }
+.nav .nav-links > a:nth-child(2) { --ni: 2; }
+.nav .nav-links > a:nth-child(3) { --ni: 3; }
+.nav .nav-links > a:nth-child(4) { --ni: 4; }
+.nav .nav-links > a:nth-child(5) { --ni: 5; }
+.nav .nav-links > a:nth-child(6) { --ni: 6; }
+.nav > .btn           { --ni: 6; }
+@keyframes navItemIn {
+  from { opacity: 0; translate: 0 -6px; filter: blur(6px); }
+  to   { opacity: 1; translate: 0 0;    filter: blur(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nav, .nav .brand, .nav .nav-links > a, .nav > .btn { animation: none; }
+}
+
+/* ====================================================================
+   FUNDO GLOBAL — padrão escuro elegante (do componente, na paleta)
+   Substitui a grade 72px do body por: base radial (cinza-carvão no
+   canto superior esquerdo → preto), cinco feixes inclinados a 45°
+   em vermelho (no lugar do ciano), textura de pontos fina e um realce
+   radial suave. Tudo fixo atrás da página, em z -1. A hero não muda:
+   ela tem fundo próprio (colagem + overlay) que cobre esta camada.
+   ==================================================================== */
+body {
+  /* transparente: .site-bg (z -1) fica ENTRE o html (#0B0B0D) e o body.
+     Com o body opaco a camada nunca aparecia. */
+  background-color: transparent;
+  background-image: none;
+}
+/* body::after é o grão de ruído do site (z 200) — fica. */
+
+.site-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+  /* mais preto: a base é o próprio --bg, com um leve carvão só no canto */
+  background: #070708;
+}
+/* Feixes inclinados — vermelho, atravessando a tela devagar */
+.site-bg > i {
+  position: absolute;
+  top: -30%;
+  bottom: -30%;
+  left: -25%;
+  right: -25%;
+  opacity: 0.12;
+  background: linear-gradient(180deg, #ff1727 0%, rgba(255, 23, 39, 0.3) 45%, rgba(255, 23, 39, 0) 100%);
+  transform: skewX(45deg);
+  animation: siteBeams 26s ease-in-out infinite alternate;
+  will-change: transform, opacity;
+}
+.site-bg > i:nth-child(1) { animation-duration: 26s; animation-delay: 0s;   -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 20%, transparent 36%, #000 55%, rgba(0,0,0,.13) 67%, #000 78%, transparent 97%); mask-image: linear-gradient(90deg, transparent 0%, #000 20%, transparent 36%, #000 55%, rgba(0,0,0,.13) 67%, #000 78%, transparent 97%); }
+.site-bg > i:nth-child(2) { animation-duration: 31s; animation-delay: -7s;  -webkit-mask-image: linear-gradient(90deg, transparent 11%, #000 25%, rgba(0,0,0,.55) 41%, rgba(0,0,0,.13) 67%, #000 78%, transparent 97%); mask-image: linear-gradient(90deg, transparent 11%, #000 25%, rgba(0,0,0,.55) 41%, rgba(0,0,0,.13) 67%, #000 78%, transparent 97%); }
+.site-bg > i:nth-child(3) { animation-duration: 23s; animation-delay: -13s; -webkit-mask-image: linear-gradient(90deg, transparent 9%, #000 20%, rgba(0,0,0,.55) 28%, rgba(0,0,0,.424) 40%, #000 48%, rgba(0,0,0,.267) 54%, rgba(0,0,0,.13) 78%, #000 88%, transparent 97%); mask-image: linear-gradient(90deg, transparent 9%, #000 20%, rgba(0,0,0,.55) 28%, rgba(0,0,0,.424) 40%, #000 48%, rgba(0,0,0,.267) 54%, rgba(0,0,0,.13) 78%, #000 88%, transparent 97%); }
+.site-bg > i:nth-child(4) { animation-duration: 29s; animation-delay: -4s;  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 17%, rgba(0,0,0,.55) 26%, #000 35%, transparent 47%, rgba(0,0,0,.13) 69%, #000 79%, transparent 97%); mask-image: linear-gradient(90deg, transparent 0%, #000 17%, rgba(0,0,0,.55) 26%, #000 35%, transparent 47%, rgba(0,0,0,.13) 69%, #000 79%, transparent 97%); }
+.site-bg > i:nth-child(5) { animation-duration: 34s; animation-delay: -19s; -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 20%, rgba(0,0,0,.55) 27%, #000 42%, transparent 48%, rgba(0,0,0,.13) 67%, #000 74%, #000 82%, rgba(0,0,0,.47) 88%, transparent 97%); mask-image: linear-gradient(90deg, transparent 0%, #000 20%, rgba(0,0,0,.55) 27%, #000 42%, transparent 48%, rgba(0,0,0,.13) 67%, #000 74%, #000 82%, rgba(0,0,0,.47) 88%, transparent 97%); }
+@keyframes siteBeams {
+  0%   { transform: skewX(45deg) translateX(-6%); opacity: 0.08; }
+  50%  { opacity: 0.15; }
+  100% { transform: skewX(45deg) translateX(6%);  opacity: 0.10; }
+}
+
+/* textura de pontos */
+.site-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.09;
+  background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.5) 1px, transparent 0);
+  background-size: 20px 20px;
+}
+/* vinhetas: bordas mais pretas, centro respira devagar */
+.site-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 55% 40% at 50% 0%, rgba(177, 18, 18, 0.07), transparent 70%),
+    radial-gradient(ellipse 110% 85% at 50% 50%, transparent 30%, rgba(0, 0, 0, 0.7) 70%, rgba(0, 0, 0, 0.95) 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, transparent 20%, transparent 80%, rgba(0, 0, 0, 0.6) 100%),
+    linear-gradient(90deg,  rgba(0, 0, 0, 0.6) 0%, transparent 18%, transparent 82%, rgba(0, 0, 0, 0.6) 100%);
+  animation: siteVignette 18s ease-in-out infinite alternate;
+}
+@keyframes siteVignette {
+  from { opacity: 0.9;  transform: scale(1); }
+  to   { opacity: 1;    transform: scale(1.04); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-bg > i, .site-bg::after { animation: none; }
+}
+
+/* A hero cobre o fundo com a própria colagem — garante base opaca */
+.hero { background: var(--bg); }
+
+/* ====================================================================
+   HERO — laterais, topo e base em preto (casa com o fundo novo)
+   Os overlays originais usam var(--bg) (#0B0B0D, cinza-chumbo) nas
+   bordas. O fundo global agora é #070708, então as bordas da hero
+   liam como faixas cinzas. Aqui elas passam a fechar no mesmo preto.
+   ==================================================================== */
+.hero { background: #070708; }
+.hero-bg-overlay,
+body.bg-red .hero-bg-overlay {
+  background:
+    radial-gradient(900px 700px at 50% 30%, rgba(177, 18, 18, 0.45), transparent 65%),
+    radial-gradient(700px 500px at 50% 90%, rgba(120, 8, 8, 0.30), transparent 60%),
+    linear-gradient(90deg,
+      #070708 0%,
+      rgba(7, 7, 8, 0.97) 8%,
+      rgba(7, 7, 8, 0.55) 22%,
+      rgba(7, 7, 8, 0.40) 50%,
+      rgba(7, 7, 8, 0.55) 78%,
+      rgba(7, 7, 8, 0.97) 92%,
+      #070708 100%),
+    linear-gradient(180deg,
+      rgba(7, 7, 8, 0.75) 0%,
+      transparent 22%,
+      transparent 70%,
+      #070708 100%);
+}
+/* O bloom vermelho fixo do body (body.bg-red::before) ficava por cima do
+   fundo novo em toda a página e cinzava o preto. O .site-bg já carrega
+   o vermelho nos feixes — este sai. */
+body.bg-red::before { content: none; }
+
+/* ====================================================================
+   CINEMATIC FOOTER — cortina revelada pelo fim do conteúdo
+   Port do CinematicFooter (sem GSAP, sem botões magnéticos).
+   O <main> fica por cima com fundo e z-index; o footer é sticky no
+   bottom, então parece fixo atrás e vai sendo revelado conforme o
+   conteúdo termina. Sticky (não fixed) para funcionar com o Lenis.
+   Parallax do texto gigante e do conteúdo central: driver em script.js
+   (uma progressão 0→1 em --fp, sem listeners extras além do scroll).
+   ==================================================================== */
+main {
+  position: relative;
+  z-index: 2;
+}
+/* Cortina: só a borda inferior do conteúdo, sem fundo — o bg animado
+   do site continua visível através do main. O footer fica atrás. */
+.cfooter-clip::before {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; top: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  z-index: 5;
+  pointer-events: none;
+}
+/* O wrapper tem a altura do footer e clipa tudo ao próprio box:
+   o footer sticky dentro dele só aparece quando o wrapper entra na
+   tela — "cortina" sem fundo no main, sem vazamento pra cima. */
+.cfooter-clip {
+  position: relative;
+  height: 100svh;
+  min-height: 640px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  z-index: 1;
+}
+.cfooter {
+  position: sticky;
+  bottom: 0;
+  height: 100svh;
+  min-height: 640px;
+  overflow: hidden;
+  background: #070708;
+  color: var(--text);
+  --fp: 0;
+}
+.cfooter-inner {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  isolation: isolate;
+}
+.cfooter-aurora {
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 80vw; height: 60vh;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 50%,
+    rgba(177, 18, 18, 0.22) 0%,
+    rgba(120, 8, 8, 0.12) 40%,
+    transparent 70%);
+  filter: blur(80px);
+  animation: cfBreathe 8s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: 0;
+}
+@keyframes cfBreathe {
+  from { transform: scale(1);   opacity: 0.6; }
+  to   { transform: scale(1.1); opacity: 1; }
+}
+.cfooter-grid {
+  position: absolute; inset: 0; z-index: 0;
+  background-size: 60px 60px;
+  background-image:
+    linear-gradient(to right,  rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 30%, #000 70%, transparent);
+          mask-image: linear-gradient(to bottom, transparent, #000 30%, #000 70%, transparent);
+  pointer-events: none;
+}
+.cfooter-giant {
+  position: absolute;
+  left: 50%;
+  bottom: -5vh;
+  z-index: 0;
+  font-family: var(--t-display);
+  font-size: 30vw;
+  line-height: 0.75;
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  white-space: nowrap;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.06);
+  background: linear-gradient(180deg, rgba(177, 18, 18, 0.28) 0%, rgba(255, 255, 255, 0.06) 45%, transparent 75%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  pointer-events: none;
+  user-select: none;
+  /* parallax: y 10vh→0, scale .8→1, opacity 0→1 */
+  transform:
+    translateX(-50%)
+    translateY(calc((1 - var(--fp)) * 10vh))
+    scale(calc(0.8 + var(--fp) * 0.2));
+  opacity: var(--fp);
+  will-change: transform, opacity;
+}
+.cfooter-marquee {
+  position: absolute;
+  top: 64px; left: -5%;
+  width: 110%;
+  z-index: 1;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(7, 7, 8, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 16px 0;
+  transform: rotate(-2deg) scale(1.1);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+}
+.cfooter-marquee-track {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  gap: 48px;
+  padding: 0 24px;
+  font-family: var(--t-mono);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  animation: cfMarquee 40s linear infinite;
+}
+.fm-sep { color: rgba(177, 18, 18, 0.7); font-size: 11px; }
+@keyframes cfMarquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+.cfooter-center {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  padding: 110px var(--pad) 0;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  transform: translateY(calc((1 - var(--fp)) * 50px));
+  opacity: var(--fp);
+  will-change: transform, opacity;
+}
+.cfooter-title {
+  margin: 0 0 48px;
+  font-family: var(--t-display);
+  font-size: clamp(48px, 8vw, 112px);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 0.95;
+  text-align: center;
+  background: linear-gradient(180deg, #fff 0%, rgba(234, 234, 234, 0.4) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.12));
+}
+.cfooter-links { display: flex; flex-direction: column; align-items: center; gap: 24px; width: 100%; }
+.cfooter-primary, .cfooter-secondary { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; width: 100%; }
+.cfooter-secondary { gap: 12px 24px; margin-top: 8px; }
+
+.fpill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-family: var(--t-display);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 10px 30px -10px rgba(0, 0, 0, 0.5),
+    inset 0 1px 1px rgba(255, 255, 255, 0.10),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: all 0.4s var(--ease-out);
+}
+.fpill:hover {
+  color: var(--text);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+  border-color: rgba(177, 18, 18, 0.45);
+  box-shadow:
+    0 20px 40px -10px rgba(0, 0, 0, 0.7),
+    inset 0 1px 1px rgba(255, 255, 255, 0.20);
+  transform: translateY(-2px);
+}
+.fpill-lg { padding: 20px 40px; font-size: 15px; font-weight: 700; color: var(--text); }
+.fpill svg { width: 22px; height: 22px; color: var(--text-muted); transition: color 0.3s var(--ease); }
+.fpill:hover svg { color: var(--text); }
+.fpill-static { cursor: default; margin: 0; gap: 8px; font-family: var(--t-mono); font-size: 10.5px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; }
+.fpill-static:hover { transform: none; border-color: rgba(255, 255, 255, 0.08); }
+.fpill-static strong { color: var(--text); font-family: var(--t-display); font-size: 13px; letter-spacing: 0; margin-left: 4px; }
+.fheart {
+  color: #fc1f25;
+  font-size: 14px;
+  animation: cfHeart 2s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+}
+@keyframes cfHeart {
+  0%, 100% { transform: scale(1);   filter: drop-shadow(0 0 5px rgba(252, 31, 37, 0.5)); }
+  15%, 45% { transform: scale(1.2); filter: drop-shadow(0 0 10px rgba(252, 31, 37, 0.8)); }
+  30%      { transform: scale(1); }
+}
+.fpill-icon { width: 48px; height: 48px; padding: 0; justify-content: center; }
+.fpill-icon svg { width: 20px; height: 20px; transition: transform 0.3s var(--ease), color 0.3s var(--ease); }
+.fpill-icon:hover svg { transform: translateY(-4px); }
+
+.cfooter-bar {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 0 clamp(24px, 4vw, 48px) 32px;
+  flex-wrap: wrap;
+}
+.cfooter-copy {
+  margin: 0;
+  font-family: var(--t-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+@media (max-width: 760px) {
+  .cfooter-clip { height: auto; min-height: 0; clip-path: none; }
+  .cfooter { position: relative; min-height: 0; height: auto; padding-top: 140px; }
+  .cfooter-inner { min-height: 100svh; }
+  .cfooter-marquee { top: 32px; }
+  .cfooter-center { padding-top: 20px; }
+  .cfooter-title { margin-bottom: 32px; }
+  .fpill-lg { padding: 16px 28px; font-size: 14px; }
+  .cfooter-bar { flex-direction: column; justify-content: center; padding-bottom: 28px; }
+  .cfooter-copy { order: 2; }
+  .fpill-static { order: 1; }
+  .fpill-icon { order: 3; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cfooter { --fp: 1; }
+  .cfooter-aurora, .cfooter-marquee-track, .fheart { animation: none; }
+  .cfooter-giant, .cfooter-center { transition: none; }
+}
+
+/* footer herda o CTA */
+.cfooter-eyebrow { justify-content: center; margin-bottom: 22px; }
+.cfooter-title { font-size: clamp(40px, 6.4vw, 92px); margin-bottom: 44px; }
+.fpill-primary {
+  color: #fff;
+  background: linear-gradient(145deg, rgba(201, 21, 21, 0.9), rgba(139, 0, 0, 0.9));
+  border-color: rgba(252, 31, 37, 0.45);
+  box-shadow: 0 16px 40px -12px rgba(177, 18, 18, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.25);
+}
+.fpill-primary svg { color: rgba(255, 255, 255, 0.85); }
+.fpill-primary:hover {
+  background: linear-gradient(145deg, rgba(220, 28, 28, 0.95), rgba(150, 4, 4, 0.95));
+  border-color: rgba(252, 31, 37, 0.7);
+  box-shadow: 0 24px 50px -12px rgba(177, 18, 18, 0.75), inset 0 1px 1px rgba(255, 255, 255, 0.3);
+}
+
+/* ====================================================================
+   TESTIMONIAL SOURCES — Rubicon logo + tooltips nos ícones de origem
+   ==================================================================== */
+.quote.quote-rubicon { border-color: rgba(177, 18, 18, 0.32); }
+.tcols .quote-social-rubicon img,
+.quote-social-rubicon img {
+  width: 22px; height: 22px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);   /* logo branca */
+  display: block;
+}
+.quote-social[data-tip] { overflow: visible; }
+.quote-social[data-tip]::after {
+  content: attr(data-tip);
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: max-content;
+  max-width: 230px;
+  padding: 8px 11px;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  background: #0b0b0d;
+  color: var(--text);
+  font-family: var(--t-body);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  line-height: 1.4;
+  text-align: left;
+  white-space: normal;
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 0.2s var(--ease), transform 0.2s var(--ease);
+  pointer-events: none;
+  z-index: 20;
+}
+.quote-social[data-tip]:hover::after,
+.quote-social[data-tip]:focus-visible::after { opacity: 1; transform: none; }
+.quote { overflow: visible; }
+
+/* Testimonial columns — seamless loop fix
+   O keyframe usa translateY(-50%). Com flex gap, a metade inferior não
+   tem gap após o último card, então a 2ª metade começa 18px antes e o
+   loop salta. Trocamos gap por margin-bottom em cada card: cada metade
+   passa a ter altura idêntica e o -50% cai exatamente na costura. */
+.tcol-track { gap: 0 !important; padding-bottom: 0 !important; }
+.tcol-track > .quote { margin-bottom: 20px; }
+
+/* Footer marquee — seamless loop: gap vira margin-right (cada metade = mesma largura) */
+.cfooter-marquee-track { gap: 0 !important; padding: 0 !important; }
+.cfooter-marquee-track > .fm-item, .cfooter-marquee-track > .fm-sep { margin-right: 48px; }
+
+/* Testimonials subhead */
+.tsub { display: flex; align-items: center; gap: 18px; margin: 0 0 26px; }
+.tsub .eyebrow { margin: 0; flex: none; }
+.tsub::after { content: ''; flex: 1; height: 1px; background: currentColor; opacity: 0.5; }
+.tsub { color: var(--text-muted); }
+.tsub-title {
+  margin: 0;
+  flex: none;
+  font-family: var(--t-display);
+  font-size: clamp(24px, 2.6vw, 34px);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1;
+  color: var(--text);
+}
+
+/* Trust stats — números soltos (estilo referência), sem card */
+.trust-stats { gap: 24px 32px; padding-bottom: 28px; }
+.trust-stat { align-items: flex-start; text-align: left; gap: 8px; }
+.trust-stat strong { font-size: clamp(34px, 3.4vw, 44px); }
+.trust-stat > span:last-child { font-family: var(--t-body); font-size: 14px; text-transform: none; letter-spacing: 0; color: var(--text-dim); }
+.trust-stat-stars .stars { justify-content: flex-start; }
+@media (max-width: 760px) { .trust-stats { grid-template-columns: repeat(2, 1fr); } }
+
+/* Trust — números maiores; estrelas: paleta do gradiente refinada
+   (o #starGrad original no HTML é reaproveitado; as cores ficam no CSS via
+   stop-color com variáveis não é possível, então redefinimos os stops no
+   próprio SVG abaixo via script.js). Apagadas: contorno fino em vez de
+   cinza sólido. Acesas: gradiente + brilho. */
+.trust-stat strong { font-size: clamp(44px, 4.6vw, 64px); line-height: 1; }
+.trust-stat-stars .stars { gap: 6px; }
+.trust-stat-stars .star { width: clamp(40px, 3.8vw, 54px); height: clamp(40px, 3.8vw, 54px); opacity: 1; transform: scale(0.82); color: transparent; }
+.trust-stat-stars .star svg { fill: rgba(255, 255, 255, 0.05); stroke: rgba(255, 255, 255, 0.16); stroke-width: 0.8; overflow: visible; transition: fill 0.5s var(--ease-out), stroke 0.5s var(--ease-out); }
+.trust-stat-stars .star.lit { transform: scale(1); }
+.trust-stat-stars .star.lit svg { fill: url(#starGrad); stroke: rgba(255, 255, 255, 0.22); filter: drop-shadow(0 3px 8px rgba(177, 18, 18, 0.45)); }
+.trust-stat-stars .star.flash { transform: scale(1.14); }
+
+/* Trust numbers — paleta alinhada às estrelas (sem tom alaranjado) */
+.trust-stat strong,
+.trust-stat strong.counter {
+  background-image: linear-gradient(180deg, #ffb0b2 0%, #ff4a50 38%, #e3151d 62%, #8f070d 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  filter: drop-shadow(0 6px 22px rgba(227, 21, 29, 0.28));
+}
+/* Estrelas — sem stroke; leve highlight interno via segundo gradiente e sombra mais limpa */
+.trust-stat-stars .star svg { stroke: none; fill: rgba(255, 255, 255, 0.06); }
+.trust-stat-stars .star.lit svg {
+  stroke: none;
+  fill: url(#starGrad);
+  filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.18)) drop-shadow(0 4px 10px rgba(177, 18, 18, 0.45));
+}
+
+/* Pricing — card em destaque (Thumbnail) com gradiente vermelho → preto */
+.price-card.price-card-feature {
+  background:
+    radial-gradient(120% 90% at 0% 0%, rgba(177, 18, 18, 0.22) 0%, rgba(120, 8, 8, 0.10) 40%, transparent 70%),
+    linear-gradient(160deg, #120608 0%, #0b0b0d 60%);
+  border-color: rgba(252, 31, 37, 0.22);
+}
+
+/* Pricing — ícone Robux em vermelho (máscara sobre o PNG dourado) */
+.price-cur { display: inline-flex; align-items: center; gap: 6px; }
+.robux {
+  display: inline-block;
+  width: 1.5em; height: 1.5em;
+  background: currentColor;
+  color: #fc1f25;
+  -webkit-mask: url(assets/robux.png) center / contain no-repeat;
+          mask: url(assets/robux.png) center / contain no-repeat;
+  vertical-align: -0.1em;
+}
+
+/* About — sem as pills de capabilities; texto maior preenche a coluna */
+.about-body { display: flex; flex-direction: column; justify-content: center; gap: 18px; }
+.about-body .lede { font-size: clamp(19px, 1.7vw, 23px); line-height: 1.5; margin: 0; }
+.about-body p:not(.lede) { font-size: clamp(16px, 1.25vw, 18px); line-height: 1.65; margin: 0; }
+.about-body .studios { margin-top: 14px; }
+.about-body .studios-list { margin-top: 14px; }
+
+
+/* ====================================================================
+   MODO LEVE (html.lite) — 2026-09-20
+   Ligado por script quando a máquina não segura o hero: checagem
+   estática (poucos núcleos / pouca memória) ou sonda de FPS logo após
+   o load. Desliga só o que custa por frame; layout e conteúdo ficam
+   iguais. Medido em CPU 4x + rasterização por software:
+     borda girando do botão  ~8 FPS   feixes do fundo  ~3 FPS
+     orbs nas letras         ~3 FPS   blur+tilt+breathe da colagem ~14 FPS
+   ==================================================================== */
+html.lite .btn-shiny,
+html.lite .btn-shiny::before,
+html.lite .btn-shiny::after,
+html.lite .btn-shiny .shiny-inner::before { animation: none !important; }
+html.lite .site-bg > i,
+html.lite .site-bg::after { animation: none !important; }
+html.lite .accent-orbs { display: none !important; }
+html.lite .hero-bg-tilt { animation: none !important; transform: none !important; }
+html.lite body.bg-red::before { animation: none !important; }
+/* colagem: sem blur (convolução em 130 imgs por frame) e sem 3D */
+html.lite .bg-row-track img { filter: brightness(0.45) saturate(0.85); }

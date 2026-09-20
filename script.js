@@ -778,7 +778,7 @@ function animateCounter(el, duration = 2400) {
    rAF loop instead of scroll events (scrollTo doesn't reliably fire them).*/
 (() => {
   const els = document.querySelectorAll(
-    '.hero-title .accent, .process-text h2 .accent-soft, .trust-stat strong'
+    '.hero-title .accent, .process-text h2 .accent-soft'
   );
   if (!els.length) return;
 
@@ -807,12 +807,16 @@ function animateCounter(el, duration = 2400) {
       const isHero = el.classList.contains('accent') &&
                      el.closest('.hero-title') !== null;
       const tight = isHero;
-      el.style.backgroundImage =
+      const grad =
         `radial-gradient(circle at 50% ${nextY.toFixed(2)}vh,` +
         ` #ff8b6b 0vh,` +
         ` #ff1727 ${tight ? 12 : 30}vh,` +
         ` #6B0808 ${tight ? 50 : 80}vh,` +
         ` #1F0202 ${tight ? 120 : 160}vh)`;
+      el.style.backgroundImage = grad;
+      // O texto vive num filho .accent-text (o pai é a janela das orbs)
+      const t = el.querySelector(':scope > .accent-text');
+      if (t) t.style.backgroundImage = grad;
     }
   }
 
@@ -1090,4 +1094,104 @@ function animateCounter(el, duration = 2400) {
       el.style.setProperty('--my', `${((e.clientY - r.top) / r.height) * 100}%`);
     }, { passive: true });
   });
+})();
+
+/* Testimonials columns — pause off-screen (same pattern as the hero collage). */
+(() => {
+  const m = document.getElementById('testimonials');
+  if (!m) return;
+  new IntersectionObserver(
+    ([e]) => m.classList.toggle('is-paused', !e.isIntersecting),
+    { threshold: 0 }
+  ).observe(m);
+})();
+
+/* Cinematic footer — reveal progress (0→1) written to --fp --------------- */
+(() => {
+  const footer = document.querySelector('.cfooter');
+  if (!footer) return;
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) { footer.style.setProperty('--fp', '1'); return; }
+  const main = document.querySelector('main');
+  let raf = null;
+  function update() {
+    raf = null;
+    const vh = window.innerHeight;
+    const mb = main.getBoundingClientRect().bottom; // fundo do conteúdo em viewport
+    // 0 quando o fim do main entra a 85% da tela; 1 no fim real do scroll
+    // (o footer é sticky, então o main nunca sai da tela — mb mínimo = vh - footerHeight)
+    const start = vh * 0.85;
+    const end = Math.max(0, vh - footer.offsetHeight);
+    const p = Math.min(1, Math.max(0, (start - mb) / Math.max(1, start - end)));
+    footer.style.setProperty('--fp', p.toFixed(3));
+  }
+  const kick = () => { if (raf == null) raf = requestAnimationFrame(update); };
+  window.addEventListener('scroll', kick, { passive: true });
+  window.addEventListener('resize', kick, { passive: true });
+  kick();
+})();
+
+/* Testimonial columns — fill short columns so the loop never shows a gap.
+   translateY(-50%) precisa que a metade do track seja >= altura do
+   container. Colunas com poucos cards (ex.: 3) ficam mais curtas que
+   640px e mostram vazio até a cópia chegar. Aqui, cada coluna é
+   preenchida repetindo o conjunto original (com aria-hidden) até que a
+   metade cubra o container, mantendo duas metades idênticas. */
+(() => {
+  const cols = document.querySelectorAll('.tcols .tcol');
+  if (!cols.length) return;
+  const wrap = document.querySelector('.tcols');
+  const target = (wrap ? wrap.getBoundingClientRect().height : 640) || 640;
+  cols.forEach((col) => {
+    const track = col.querySelector('.tcol-track');
+    if (!track) return;
+    const originals = Array.from(track.querySelectorAll('.quote:not([aria-hidden])'));
+    if (!originals.length) return;
+    // Remove duplicados atuais e reconstrói
+    track.querySelectorAll('.quote[aria-hidden]').forEach((q) => q.remove());
+    const setHeight = () => track.getBoundingClientRect().height;
+    let half = setHeight();
+    let reps = 1;
+    while (half < target + 40 && reps < 6) { // garante folga
+      originals.forEach((q) => { const c = q.cloneNode(true); c.setAttribute('aria-hidden', 'true'); track.appendChild(c); });
+      reps++;
+      half = setHeight();
+    }
+    // Segunda metade = cópia exata da primeira
+    Array.from(track.children).forEach((q) => { const c = q.cloneNode(true); c.setAttribute('aria-hidden', 'true'); track.appendChild(c); });
+  });
+})();
+
+/* Modo leve — sonda de FPS (2026-09-20) ------------------------------
+   Complementa a checagem estática do <head>. Mede ~1.2s de frames logo
+   após o load, com o hero na tela e tudo animando. Se a mediana passar
+   de 24ms por frame (< ~42 FPS), liga html.lite e grava a decisão, para
+   que as próximas visitas já abram leves sem passar pela sonda.
+   Não roda se já estiver leve, com reduced-motion, ou com a aba oculta
+   (o navegador não agenda frames e a medição sairia falsa).         */
+(() => {
+  const root = document.documentElement;
+  if (root.classList.contains('lite')) return;
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (document.hidden) return;
+
+  const LIMITE_MS = 24, DURACAO = 1200, MIN_FRAMES = 20;
+  const start = () => {
+    const dt = [];
+    let last = performance.now();
+    const fim = last + DURACAO;
+    (function tick(now) {
+      dt.push(now - last); last = now;
+      if (now < fim) { requestAnimationFrame(tick); return; }
+      if (document.hidden || dt.length < MIN_FRAMES) return;
+      dt.sort((a, b) => a - b);
+      const mediana = dt[Math.floor(dt.length / 2)];
+      if (mediana > LIMITE_MS) {
+        root.classList.add('lite');
+        try { localStorage.setItem('s0da-lite', '1'); } catch (e) {}
+      }
+    })(last);
+  };
+  // espera o load + 600ms: passa a rajada inicial de decode/layout
+  if (document.readyState === 'complete') setTimeout(start, 600);
+  else window.addEventListener('load', () => setTimeout(start, 600), { once: true });
 })();

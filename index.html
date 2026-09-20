@@ -25,6 +25,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  <!-- Modo leve: aplica html.lite antes do primeiro paint em máquina fraca
+       conhecida (poucos núcleos / pouca memória) ou já marcada pela sonda de
+       FPS do script.js. Ver o bloco MODO LEVE no fim do styles.css. -->
+  <script>
+    (function () {
+      try {
+        var n = navigator, lite = false;
+        if (localStorage.getItem('s0da-lite') === '1') lite = true;
+        else if ((n.hardwareConcurrency && n.hardwareConcurrency <= 4) ||
+                 (n.deviceMemory && n.deviceMemory <= 4)) lite = true;
+        if (lite) document.documentElement.classList.add('lite');
+      } catch (e) {}
+    })();
+  </script>
   <link rel="stylesheet" href="styles.css" />
   <script>try{if(sessionStorage.getItem('s0da-booted'))document.documentElement.classList.add('no-boot')}catch(e){}</script>
   <link rel="stylesheet" href="boot.css" />
@@ -55,6 +69,11 @@
             "@type": "Organization",
             "name": "Rubicon Games",
             "url": "https://rubiconstudios.io/"
+          },
+          {
+            "@type": "Organization",
+            "name": "Cube Graphics",
+            "url": "https://cubegraphics.org"
           }
         ],
         "knowsAbout": ["Roblox thumbnail design", "Game graphics", "App icons", "Marketing visuals"]
@@ -85,6 +104,7 @@
   </script>
 </head>
 <body class="bg-red">
+  <div class="site-bg" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
   <!-- bg-red toggles the red-saturated background variant.
        Remove the class to revert to the original (desaturated) bg. -->
   <a class="skip-link" href="#main">Skip to content</a>
@@ -313,7 +333,7 @@
 
         <h1 class="hero-title">
           2 billion clicks.<br />
-          <span class="accent">Yours</span> next.
+          <span class="accent"><span class="accent-text">Yours</span><span class="accent-orbs" aria-hidden="true">Yours</span></span> next.
         </h1>
 
         <p class="hero-sub">
@@ -322,8 +342,8 @@
         </p>
 
         <div class="hero-cta">
-          <a class="btn btn-primary btn-lg" href="https://discord.gg/s0da" target="_blank" rel="noopener" data-comms-cta>
-            <span class="cta-label">Open a Ticket</span> <span aria-hidden="true">→</span>
+          <a class="btn btn-primary btn-lg btn-shiny" href="https://discord.gg/s0da" target="_blank" rel="noopener" data-comms-cta>
+            <span class="shiny-inner"><span class="cta-label">Open a Ticket</span> <span aria-hidden="true">→</span></span>
           </a>
           <a class="btn btn-ghost btn-lg" href="#work">View Work</a>
         </div>
@@ -508,27 +528,9 @@
         </div>
 
         <div class="about-body reveal" style="--d:.08s">
-          <p class="lede">
-            I'm <strong>@gfxs0da</strong> — a Roblox thumbnail designer with
-            visuals contributed to projects totaling roughly
-            <strong>2B+ visits</strong> across the platform.
-          </p>
-          <p>
-            I focus on thumbnails, icons and rescales where every frame
-            earns its place — clarity first, presentation second, performance
-            always. The work is restrained so the games can shout.
-          </p>
-          <p>
-            Every commission is handled with professionalism, clear
-            communication and attention to detail. Explore the work, read the
-            client feedback below, and open a ticket when you're ready.
-          </p>
-
-          <ul class="capabilities">
-            <li>Thumbnails</li>
-            <li>Icons</li>
-            <li>Rescales</li>
-          </ul>
+          <p class="lede">I'm <strong>S0DA</strong> (@gfxs0da), a Brazilian Roblox thumbnail designer with visuals on projects totaling roughly <strong>2B+ visits</strong> across the platform.</p>
+          <p>I make thumbnails, icons and rescales built to get clicks. Each one starts with a concept, gets rendered in Studio and finished in Photoshop, with revisions included until it's right.</p>
+          <p>Check the work below, read what clients had to say, and open a ticket when you're ready.</p>
 
           <div class="studios">
             <p class="studios-label">Currently working at</p>
@@ -536,6 +538,11 @@
               <a class="studio-chip" href="https://rubiconstudios.io/" target="_blank" rel="noopener">
                 <img class="studio-logo" src="assets/studios/rubicon.png" alt="" aria-hidden="true" width="20" height="20" />
                 <span>Rubicon Games</span>
+                <span class="ext" aria-hidden="true">↗</span>
+              </a>
+              <a class="studio-chip" href="https://cubegraphics.org" target="_blank" rel="noopener">
+                <img class="studio-logo" src="assets/studios/cube.png" alt="" aria-hidden="true" width="20" height="20" />
+                <span>Cube Graphics</span>
                 <span class="ext" aria-hidden="true">↗</span>
               </a>
             </div>
@@ -548,7 +555,7 @@
       <div class="container process-grid">
         <div class="process-text reveal">
           <p class="eyebrow"><span class="dash"></span>How it works</p>
-          <h2>One ticket.<br /><span class="accent-soft">Zero friction.</span></h2>
+          <h2>One ticket.<br /><span class="accent-soft"><span class="accent-text">Zero friction.</span><span class="accent-orbs" aria-hidden="true">Zero friction.</span></span></h2>
           <p class="lede">
             Every commission flows through a single Discord ticket — brief,
             scope, deliverables and pricing all confirmed before any pixel
@@ -629,22 +636,26 @@
         <header class="section-head reveal">
           <p class="eyebrow"><span class="dash"></span>Numbers &amp; Feedback</p>
           <h2>Trusted on live titles.</h2>
+          <p class="section-sub">
+            Thumbnails that hold the front page — measured in visits,
+            turnaround and clients who come back for the next one.
+          </p>
         </header>
 
         <div class="trust-stats reveal" id="trust-stats">
-          <div class="trust-stat">
+          <div class="trust-stat" style="--d:0.00s">
             <strong class="counter" data-value="2" data-decimals="1" data-suffix="B+">0</strong>
             <span>Combined visits</span>
           </div>
-          <div class="trust-stat">
+          <div class="trust-stat" style="--d:0.08s">
             <strong class="counter" data-value="200" data-suffix="+">0</strong>
             <span>Commissions shipped</span>
           </div>
-          <div class="trust-stat">
+          <div class="trust-stat" style="--d:0.16s">
             <strong class="counter" data-value="48" data-prefix="~" data-suffix="h">0</strong>
             <span>Average turnaround</span>
           </div>
-          <div class="trust-stat trust-stat-stars">
+          <div class="trust-stat trust-stat-stars" style="--d:0.24s">
             <div class="stars" id="trust-stars">
               <span class="star" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><path d="M12.00 1.25L14.95 8.29L22.56 8.92L16.77 13.90L18.52 21.33L12.00 17.37L5.48 21.33L7.23 13.90L1.44 8.92L9.05 8.29Z" stroke-linejoin="round" stroke-width="0.9" stroke="currentColor" /></svg>
@@ -666,45 +677,289 @@
           </div>
         </div>
 
-        <div class="testimonials">
-          <figure class="quote reveal">
-            <span class="quote-mark" aria-hidden="true">"</span>
-            <blockquote>
-              Amazing to work with — a walking W. Communication is sharp,
-              turnaround is fast, and the thumbnails land on the first try
-              every single time.
-            </blockquote>
-            <figcaption>
-              <span class="who">Tony <span class="handle">@CoderTony</span></span>
-              <span class="dim">Game Programmer @ BIG Games</span>
-            </figcaption>
-          </figure>
+<div class="tsub reveal"><p class="eyebrow"><span class="dash"></span>In their words</p></div>
 
-          <figure class="quote reveal" style="--d:.08s">
-            <span class="quote-mark" aria-hidden="true">"</span>
-            <blockquote>
-              Great thumbnails, very quick. The briefs come back exactly how
-              I imagined, and the final work consistently performs once we
-              ship it.
-            </blockquote>
-            <figcaption>
-              <span class="who">Kalak <span class="handle">@notkalak</span></span>
-              <span class="dim">Game Producer @ Top CCU Games</span>
-            </figcaption>
-          </figure>
-
-          <figure class="quote reveal" style="--d:.16s">
-            <span class="quote-mark" aria-hidden="true">"</span>
-            <blockquote>
-              Super fast and super easy to work with, loved the
-              thumbnail! Quick turnaround and the final piece nailed
-              exactly what we had in mind.
-            </blockquote>
-            <figcaption>
-              <span class="who">Filtered <span class="handle">@FilteredScripts</span></span>
-              <span class="dim">Game Developer @ BitLoop</span>
-            </figcaption>
-          </figure>
+        <div class="testimonials tcols reveal" id="testimonials">
+          <div class="tcol" data-col="1">
+            <div class="tcol-track">
+            <figure class="quote">
+              <div class="quote-head">
+                <span class="quote-avatar has-img" aria-hidden="true" data-initial="T"><img src="assets/pfps/tony.webp" alt="" width="40" height="40" loading="lazy" decoding="async" /></span>
+                <div class="quote-id">
+                  <span class="who">Tony</span>
+                  <span class="handle">@CoderTony</span>
+                </div>
+                <a class="quote-social" href="https://discord.gg/s0da" target="_blank" rel="noopener" aria-label="Open on Discord" data-tip="Testimonial from Discord — via DM or the artist's official server"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.74 19.74 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg></a>
+              </div>
+              <blockquote>Amazing to work with, a walking W</blockquote>
+              <figcaption class="dim">Game Programmer @ BIG Games</figcaption>
+            </figure>
+            <figure class="quote">
+              <div class="quote-head">
+                <span class="quote-avatar has-img" aria-hidden="true" data-initial="F"><img src="assets/pfps/fresh.webp" alt="" width="40" height="40" loading="lazy" decoding="async" /></span>
+                <div class="quote-id">
+                  <span class="who">fresh</span>
+                  <span class="handle">@freshdev.</span>
+                </div>
+                <a class="quote-social quote-social-cube" href="https://cubegraphics.org" target="_blank" rel="noopener" aria-label="Via Cube Graphics" data-tip="Thumbnail made through Cube Graphics — the client's feedback about s0da's work there"><img src="assets/studios/cube.png" alt="" aria-hidden="true" width="18" height="18" loading="lazy" decoding="async" /></a>
+              </div>
+              <blockquote>Did really good quality and quick work! 10/10, and was able to come up with some nice ideas too! ✨ 👍</blockquote>
+            </figure>
+            <figure class="quote">
+              <div class="quote-head">
+                <span class="quote-avatar has-img" aria-hidden="true" data-initial="J"><img src="assets/pfps/jezza.webp" alt="" width="40" height="40" loading="lazy" decoding="async" /></span>
+                <div class="quote-id">
+                  <span class="who">Jezza</span>
+                  <span class="handle">@__jezza</span>
+                </div>
+                <a class="quote-social" href="https://discord.gg/s0da" target="_blank" rel="noopener" aria-label="Open on Discord" data-tip="Testimonial from Discord — via DM or the artist's official server"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.74 19.74 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg></a>
+              </div>
+              <blockquote>amazing work, super fast and clean</blockquote>
+            </figure>
+            <figure class="quote">
+              <div class="quote-head">
+                <span class="quote-avatar has-img" aria-hidden="true" data-initial="G"><img src="assets/pfps/george.webp" alt="" width="40" height="40" loading="lazy" decoding="async" /></span>
+                <div class="quote-id">
+                  <span class="who">George</span>
+                  <span class="handle">@geoo_</span>
+                </div>
+                <a class="quote-social" href="https://discord.gg/s0da" target="_blank" rel="noopener" aria-label="Open on Discord" data-tip="Testimonial from Discord — via DM or the artist's official server"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.74 19.74 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg></a>
+              </div>
+              <blockquote>Insanely fast, incredible quality, no corners cut. Brought the vision we had onto the screen with no problems! 🫡</blockquote>
+              <figcaption class="dim">CTO @ RockWood</figcaption>
+            </figure>
+            <figure class="quote" aria-hidden="true">
+              <div class="quote-head">
+                <span class="quote-avatar has-img" aria-hidden="true" data-initial="T"><img src="assets/pfps/tony.webp" alt="" width="40" height="40" loading="lazy" decoding="async" /></span>
+                <div class="quote-id">
+                  <span class="who">Tony</span>
+                  <span class="handle">@CoderTony</span>
+                </div>
+                <a class="quote-social" href="https://discord.gg/s0da" target="_blank" rel="noopener" aria-label="Open on Discord" data-tip="Testimonial from Discord — via DM or the artist's official server"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.74 19.74 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg></a>
+              </div>
+              <blockquote>Amazing to work with, a walking W</blockquote>
+              <figcaption class="dim">Game Programmer @ BIG Games</figcaption>
+            </figure>
+            <figure class="quote" aria-hidden="true">
+              <div class="quote-head">
+                <span class="quote-avatar has-img" aria-hidden="true" data-initial="F"><img src="assets/pfps/fresh.webp" alt="" width="40" height="40" loading="lazy" decoding="async" /></span>
+                <div class="quote-id">
+                  <span class="who">fresh</span>
+                  <span class="handle">@freshdev.</span>
+                </div>
+                <a class="quote-social quote-social-cube" href="https://cubegraphics.org" target="_blank" rel="noopener" aria-label="Via Cube Graphics" data-tip="Thumbnail made through Cube Graphics — the client's feedback about s0da's work there"><img src="assets/studios/cube.png" alt="" aria-hidden="true" width="18" height="18" loading="lazy" decoding="async" /></a>
+              </div>
+              <blockquote>Did really good quality and quick work! 10/10, and was able to come up with some nice ideas too! ✨ 👍</blockquote>
+            </figure>
+            <figure class="quote" aria-hidden="true">
+              <div class="quote-head">
+                <span class="quote-avatar has-img" aria-hidden="true" data-initial="J"><img src="assets/pfps/jezza.webp" alt="" width="40" height="40" loading="lazy" decoding="async" /></span>
+                <div class="quote-id">
+                  <span class="who">Jezza</span>
+                  <span class="handle">@__jezza</span>
+                </div>
+                <a class="quote-social" href="https://discord.gg/s0da" target="_blank" rel="noopener" aria-label="Open on Discord" data-tip="Testimonial from Discord — via DM or the artist's official server"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.74 19.74 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg></a>
+              </div>
+              <blockquote>amazing work, super fast and clean</blockquote>
+            </figure>
+            </div>
+          </div>
+          <div class="tcol" data-col="2">
+            <div class="tcol-track">
+            <figure class="quote">
+              <div class="quote-head">
+                <span class="quote-avatar has-img" aria-hidden="true" data-initial="K"><img src="assets/pfps/kalak.webp" alt="" width="40" height="40" loading="lazy" decoding="async" /></span>
+                <div class="quote-id">
+                  <span class="who">Kalak</span>
+                  <span class="handle">@notkalak</span>
+                </div>
+                <a class="quote-social" href="https://discord.gg/s0da" target="_blank" rel="noopener" aria-label="Open on Discord" data-tip="Testimonial from Discord — via DM or the artist's official server"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.74 19.74 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg></a>
+              </div>
+              <blockquote>Great thumbnails, very quick. The briefs come back exactly how I imagined, and the final work consistently performs once we ship it.</blockquote>
+              <figcaption class="dim">Game Producer @ Top CCU Games</figcaption>
+            </figure>
+            <figure class="quote quote-rubicon">
+              <div class="quote-head">
+                <span class="quote-avatar has-img" aria-hidden="true" data-initial="K"><img src="assets/pfps/killioz.webp" alt="" width="40" height="40" loading="lazy" decoding="async" /></span>
+                <div class="quote-id">
+                  <span class="who">killiozz</span>
+                  <span class="handle">@killioz</span>
+                </div>
+                <a class="quote-social quote-social-rubicon" href="https://rubiconstudios.io/" target="_blank" rel="noopener" aria-label="Testimonial from Rubicon Studios" data-tip="Testimonial from Rubicon Studios"><img src="assets/studios/rubicon.png" alt="" aria-hidden="true" width="22" height="22" loading="lazy" decoding="async" /></a>
+              </div>
+              <blockquote>Soda is easily the most talented designer I have worked with, great concepts and high quality work.</blockquote>
+              <figcaption class="dim">Founder @ Rubicon Studios</figcaption>
+            </figure>
+            <figure class="quote">
+              <div class="quote-head">
+                <span class="quote-avatar has-img" aria-hidden="true" data-initial="A"><img src="assets/pfps/alexander.webp" alt="" width="40" height="40" loading="lazy" decoding="async" /></span>
+                <div class="quote-id">
+                  <span class="who">Alexander</span>
+                  <span class="handle">@alexandxr.es</span>
+                </div>
+                <a class="quote-social" href="https://discord.gg/s0da" target="_blank" rel="noopener" aria-label="Open on Discord" data-tip="Testimonial from Discord — via DM or the artist's official server"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.74 19.74 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg></a>
+              </div>
+              <blockquote>very happy with the work he did, very clean looking and raised my qtpr</blockquote>
+            </figure>
+            <figure class="quote">
+              <div class="quote-head">
+                <span class="quote-avatar has-img" aria-hidden="true" data-initial="D"><img src="assets/pfps/devvanish.webp" alt="" width="40" height="40" loading="lazy" decoding="async" /></span>
+                <div class="quote-id">
+                  <span class="who">DevVanish</span>
+                  <span class="handle">@devvanish</span>
+                </div>
+                <a class="quote-social" href="https://discord.gg/s0da" target="_blank" rel="noopener" aria-label="Open on Discord" data-tip="Testimonial from Discord — via DM or the artist's official server"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.74 19.74 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg></a>
+              </div>
+              <blockquote>this guy is nothing short of the king of the favelas when it comes to QPTR 🔥</blockquote>
+            </figure>
+            <figure class="quote">
+              <div class="quote-head">
+                <span class="quote-avatar has-img" aria-hidden="true" data-initial="F"><img src="assets/pfps/farhan.webp" alt="" width="40" height="40" loading="lazy" decoding="async" /></span>
+                <div class="quote-id">
+                  <span class="who">Farhan</span>
+                  <span class="handle">@avtixe</span>
+                </div>
+                <a class="quote-social" href="https://discord.gg/s0da" target="_blank" rel="noopener" aria-label="Open on Discord" data-tip="Testimonial from Discord — via DM or the artist's official server"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.74 19.74 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg></a>
+              </div>
+              <blockquote>Super clean work and great person to talk to in general. Received multiple designs very fast and the quality were very good! Highly recommend! 🙂</blockquote>
+              <figcaption class="dim">CEO @ Blockturns</figcaption>
+            </figure>
+            <figure class="quote" aria-hidden="true">
+              <div class="quote-head">
+                <span class="quote-avatar has-img" aria-hidden="true" data-initial="K"><img src="assets/pfps/kalak.webp" alt="" width="40" height="40" loading="lazy" decoding="async" /></span>
+                <div class="quote-id">
+                  <span class="who">Kalak</span>
+                  <span class="handle">@notkalak</span>
+                </div>
+                <a class="quote-social" href="https://discord.gg/s0da" target="_blank" rel="noopener" aria-label="Open on Discord" data-tip="Testimonial from Discord — via DM or the artist's official server"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.74 19.74 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg></a>
+              </div>
+              <blockquote>Great thumbnails, very quick. The briefs come back exactly how I imagined, and the final work consistently performs once we ship it.</blockquote>
+              <figcaption class="dim">Game Producer @ Top CCU Games</figcaption>
+            </figure>
+            <figure class="quote quote-rubicon" aria-hidden="true">
+              <div class="quote-head">
+                <span class="quote-avatar has-img" aria-hidden="true" data-initial="K"><img src="assets/pfps/killioz.webp" alt="" width="40" height="40" loading="lazy" decoding="async" /></span>
+                <div class="quote-id">
+                  <span class="who">killiozz</span>
+                  <span class="handle">@killioz</span>
+                </div>
+                <a class="quote-social quote-social-rubicon" href="https://rubiconstudios.io/" target="_blank" rel="noopener" aria-label="Testimonial from Rubicon Studios" data-tip="Testimonial from Rubicon Studios"><img src="assets/studios/rubicon.png" alt="" aria-hidden="true" width="22" height="22" loading="lazy" decoding="async" /></a>
+              </div>
+              <blockquote>Soda is easily the most talented designer I have worked with, great concepts and high quality work.</blockquote>
+              <figcaption class="dim">Founder @ Rubicon Studios</figcaption>
+            </figure>
+            <figure class="quote" aria-hidden="true">
+              <div class="quote-head">
+                <span class="quote-avatar has-img" aria-hidden="true" data-initial="A"><img src="assets/pfps/alexander.webp" alt="" width="40" height="40" loading="lazy" decoding="async" /></span>
+                <div class="quote-id">
+                  <span class="who">Alexander</span>
+                  <span class="handle">@alexandxr.es</span>
+                </div>
+                <a class="quote-social" href="https://discord.gg/s0da" target="_blank" rel="noopener" aria-label="Open on Discord" data-tip="Testimonial from Discord — via DM or the artist's official server"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.74 19.74 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg></a>
+              </div>
+              <blockquote>very happy with the work he did, very clean looking and raised my qtpr</blockquote>
+            </figure>
+            <figure class="quote" aria-hidden="true">
+              <div class="quote-head">
+                <span class="quote-avatar has-img" aria-hidden="true" data-initial="D"><img src="assets/pfps/devvanish.webp" alt="" width="40" height="40" loading="lazy" decoding="async" /></span>
+                <div class="quote-id">
+                  <span class="who">DevVanish</span>
+                  <span class="handle">@devvanish</span>
+                </div>
+                <a class="quote-social" href="https://discord.gg/s0da" target="_blank" rel="noopener" aria-label="Open on Discord" data-tip="Testimonial from Discord — via DM or the artist's official server"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.74 19.74 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg></a>
+              </div>
+              <blockquote>this guy is nothing short of the king of the favelas when it comes to QPTR 🔥</blockquote>
+            </figure>
+            </div>
+          </div>
+          <div class="tcol" data-col="3">
+            <div class="tcol-track">
+            <figure class="quote">
+              <div class="quote-head">
+                <span class="quote-avatar has-img" aria-hidden="true" data-initial="F"><img src="assets/pfps/filtered.webp" alt="" width="40" height="40" loading="lazy" decoding="async" /></span>
+                <div class="quote-id">
+                  <span class="who">Filtered</span>
+                  <span class="handle">@.filtered</span>
+                </div>
+                <a class="quote-social" href="https://discord.gg/s0da" target="_blank" rel="noopener" aria-label="Open on Discord" data-tip="Testimonial from Discord — via DM or the artist's official server"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.74 19.74 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg></a>
+              </div>
+              <blockquote>super fast and super easy to work with, loved the thumbnail!</blockquote>
+              <figcaption class="dim">Game Developer @ BitLoop</figcaption>
+            </figure>
+            <figure class="quote">
+              <div class="quote-head">
+                <span class="quote-avatar has-img" aria-hidden="true" data-initial="S"><img src="assets/pfps/sam.webp" alt="" width="40" height="40" loading="lazy" decoding="async" /></span>
+                <div class="quote-id">
+                  <span class="who">sam</span>
+                  <span class="handle">@fl.0</span>
+                </div>
+                <a class="quote-social quote-social-cube" href="https://cubegraphics.org" target="_blank" rel="noopener" aria-label="Via Cube Graphics" data-tip="Thumbnail made through Cube Graphics — the client's feedback about s0da's work there"><img src="assets/studios/cube.png" alt="" aria-hidden="true" width="18" height="18" loading="lazy" decoding="async" /></a>
+              </div>
+              <blockquote>super quick and high quality, made adjustments very quickly and gave very fair prices, will definitely hire again!</blockquote>
+              <figcaption class="dim">Founder @ duel.studio</figcaption>
+            </figure>
+            <figure class="quote">
+              <div class="quote-head">
+                <span class="quote-avatar has-img" aria-hidden="true" data-initial="F"><img src="assets/pfps/fond.webp" alt="" width="40" height="40" loading="lazy" decoding="async" /></span>
+                <div class="quote-id">
+                  <span class="who">Fond</span>
+                  <span class="handle">@fondatix</span>
+                </div>
+                <a class="quote-social" href="https://discord.gg/s0da" target="_blank" rel="noopener" aria-label="Open on Discord" data-tip="Testimonial from Discord — via DM or the artist's official server"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.74 19.74 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg></a>
+              </div>
+              <blockquote>solid work</blockquote>
+              <figcaption class="dim">CEO @ Simple Bricks</figcaption>
+            </figure>
+            <figure class="quote">
+              <div class="quote-head">
+                <span class="quote-avatar has-img" aria-hidden="true" data-initial="A"><img src="assets/pfps/alex.webp" alt="" width="40" height="40" loading="lazy" decoding="async" /></span>
+                <div class="quote-id">
+                  <span class="who">Alex</span>
+                  <span class="handle">@a.br</span>
+                </div>
+                <a class="quote-social" href="https://discord.gg/s0da" target="_blank" rel="noopener" aria-label="Open on Discord" data-tip="Testimonial from Discord — via DM or the artist's official server"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.74 19.74 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg></a>
+              </div>
+              <blockquote>10/10 💪 Super easy to work with, got a high quality set of thumbnails and icons done in great time 😄</blockquote>
+              <figcaption class="dim">Game Developer @ RockWood</figcaption>
+            </figure>
+            <figure class="quote" aria-hidden="true">
+              <div class="quote-head">
+                <span class="quote-avatar has-img" aria-hidden="true" data-initial="F"><img src="assets/pfps/filtered.webp" alt="" width="40" height="40" loading="lazy" decoding="async" /></span>
+                <div class="quote-id">
+                  <span class="who">Filtered</span>
+                  <span class="handle">@.filtered</span>
+                </div>
+                <a class="quote-social" href="https://discord.gg/s0da" target="_blank" rel="noopener" aria-label="Open on Discord" data-tip="Testimonial from Discord — via DM or the artist's official server"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.74 19.74 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg></a>
+              </div>
+              <blockquote>super fast and super easy to work with, loved the thumbnail!</blockquote>
+              <figcaption class="dim">Game Developer @ BitLoop</figcaption>
+            </figure>
+            <figure class="quote" aria-hidden="true">
+              <div class="quote-head">
+                <span class="quote-avatar has-img" aria-hidden="true" data-initial="S"><img src="assets/pfps/sam.webp" alt="" width="40" height="40" loading="lazy" decoding="async" /></span>
+                <div class="quote-id">
+                  <span class="who">sam</span>
+                  <span class="handle">@fl.0</span>
+                </div>
+                <a class="quote-social quote-social-cube" href="https://cubegraphics.org" target="_blank" rel="noopener" aria-label="Via Cube Graphics" data-tip="Thumbnail made through Cube Graphics — the client's feedback about s0da's work there"><img src="assets/studios/cube.png" alt="" aria-hidden="true" width="18" height="18" loading="lazy" decoding="async" /></a>
+              </div>
+              <blockquote>super quick and high quality, made adjustments very quickly and gave very fair prices, will definitely hire again!</blockquote>
+              <figcaption class="dim">Founder @ duel.studio</figcaption>
+            </figure>
+            <figure class="quote" aria-hidden="true">
+              <div class="quote-head">
+                <span class="quote-avatar has-img" aria-hidden="true" data-initial="F"><img src="assets/pfps/fond.webp" alt="" width="40" height="40" loading="lazy" decoding="async" /></span>
+                <div class="quote-id">
+                  <span class="who">Fond</span>
+                  <span class="handle">@fondatix</span>
+                </div>
+                <a class="quote-social" href="https://discord.gg/s0da" target="_blank" rel="noopener" aria-label="Open on Discord" data-tip="Testimonial from Discord — via DM or the artist's official server"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.74 19.74 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg></a>
+              </div>
+              <blockquote>solid work</blockquote>
+              <figcaption class="dim">CEO @ Simple Bricks</figcaption>
+            </figure>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -727,12 +982,12 @@
             <h3 class="price-title">Thumbnail</h3>
             <p class="price-amount">
               <strong>35,000</strong>
-              <span>Robux</span>
+              <span class="price-cur" aria-label="Robux"><i class="robux" aria-hidden="true"></i></span>
             </p>
             <p class="price-alt">Or $130 USD</p>
             <ul class="price-features">
               <li>Custom composition &amp; concept</li>
-              <li>1920×1080 + source files</li>
+              <li>1920×1080 final export</li>
               <li>Revisions included</li>
             </ul>
             <a class="price-cta" href="https://discord.gg/s0da" target="_blank" rel="noopener">
@@ -745,12 +1000,12 @@
             <h3 class="price-title">Icon <span class="price-title-sub">(new)</span></h3>
             <p class="price-amount">
               <strong>17,500</strong>
-              <span>Robux</span>
+              <span class="price-cur" aria-label="Robux"><i class="robux" aria-hidden="true"></i></span>
             </p>
-            <p class="price-alt">Or $65 USD · half a thumbnail</p>
+            <p class="price-alt">Or $65 USD</p>
             <ul class="price-features">
               <li>Custom concept from scratch</li>
-              <li>1024×1024 + source files</li>
+              <li>1024×1024 final export</li>
               <li>Revisions included</li>
             </ul>
             <a class="price-cta" href="https://discord.gg/s0da" target="_blank" rel="noopener">
@@ -763,7 +1018,7 @@
             <h3 class="price-title">Rescale</h3>
             <p class="price-amount">
               <strong>5,000</strong>
-              <span>Robux</span>
+              <span class="price-cur" aria-label="Robux"><i class="robux" aria-hidden="true"></i></span>
             </p>
             <p class="price-alt">Or $15 USD · per image</p>
             <ul class="price-features">
@@ -797,44 +1052,43 @@
       </div>
     </section>
 
-    <section class="cta-section" id="contact">
-      <div class="container">
-        <div class="cta-card reveal">
-          <span class="cta-noise" aria-hidden="true"></span>
-          <p class="eyebrow" data-comms-badge><span class="dot pulse"></span><span class="comms-label">Commissions open</span></p>
-          <h2 class="cta-title">
-            Ready to upgrade<br />your game's first second?
-          </h2>
-          <p class="cta-sub">
-            Open a ticket on Discord. Brief, timeline and pricing are
-            confirmed before any work begins — no surprises.
-          </p>
-          <div class="cta-row">
-            <a class="btn btn-primary btn-lg" href="https://discord.gg/s0da" target="_blank" rel="noopener" data-comms-cta>
-              <span class="cta-label">Open a Commission Ticket</span> <span aria-hidden="true">→</span>
-            </a>
-            <a class="btn btn-ghost btn-lg" href="/tos/">Read Terms First</a>
-          </div>
-          <p class="cta-tiny">Replies typically within 12 hours</p>
-        </div>
-      </div>
-    </section>
   </main>
 
-  <footer>
-    <div class="container footer-row">
-      <a class="brand small" href="#top">
-        <img class="brand-logo" src="assets/s0da-mark.webp" alt="" aria-hidden="true" width="21" height="22" />
-        <span>s0da</span>
-      </a>
-      <p class="muted">© 2026 — Roblox thumbnail design</p>
-      <nav class="social" aria-label="Social">
-        <a href="/tos/">Terms</a>
-        <a href="https://discord.gg/s0da" target="_blank" rel="noopener">Discord</a>
-        <a href="https://x.com/gfxs0da" target="_blank" rel="noopener">Twitter</a>
-      </nav>
+  <div class="cfooter-clip" id="contact">
+  <footer class="cfooter">
+    <div class="cfooter-inner">
+      <div class="cfooter-aurora" aria-hidden="true"></div>
+      <div class="cfooter-grid" aria-hidden="true"></div>
+
+      <div class="cfooter-marquee" aria-hidden="true">
+        <div class="cfooter-marquee-track"><span class="fm-item">Thumbnails</span><span class="fm-sep" aria-hidden="true">✦</span><span class="fm-item">Icons</span><span class="fm-sep" aria-hidden="true">✦</span><span class="fm-item">Rescales</span><span class="fm-sep" aria-hidden="true">✦</span><span class="fm-item">2B+ visits</span><span class="fm-sep" aria-hidden="true">✦</span><span class="fm-item">Under 48h</span><span class="fm-sep" aria-hidden="true">✦</span><span class="fm-item">Thumbnails</span><span class="fm-sep" aria-hidden="true">✦</span><span class="fm-item">Icons</span><span class="fm-sep" aria-hidden="true">✦</span><span class="fm-item">Rescales</span><span class="fm-sep" aria-hidden="true">✦</span><span class="fm-item">2B+ visits</span><span class="fm-sep" aria-hidden="true">✦</span><span class="fm-item">Under 48h</span><span class="fm-sep" aria-hidden="true">✦</span></div>
+      </div>
+
+      <div class="cfooter-center" id="cfooter-center">
+        <p class="eyebrow cfooter-eyebrow" data-comms-badge><span class="dot pulse"></span><span class="comms-label">Commissions open</span></p>
+        <h2 class="cfooter-title">Ready to upgrade<br />your game's first second?</h2>
+        <div class="cfooter-links">
+          <div class="cfooter-primary">
+            <a class="fpill fpill-lg fpill-primary" href="https://discord.gg/s0da" target="_blank" rel="noopener" data-comms-cta>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.74 19.74 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+              Open a Ticket
+            </a>
+            <a class="fpill fpill-lg" href="https://x.com/gfxs0da" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              Follow on X
+            </a>
+          </div>
+          <div class="cfooter-secondary">
+            <a class="fpill" href="/slots/">Slots</a>
+            <a class="fpill" href="/tos/">Terms of Service</a>
+            <a class="fpill" href="#work">Portfolio</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </footer>
+  </div>
 
   <!-- Lightbox modal for full-size thumbnail viewing -->
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project preview" aria-hidden="true">
