@@ -4766,3 +4766,15 @@ html.lite .bg-row-track img { filter: brightness(0.45) saturate(0.85); }
   /* no mobile o "Take me home" (primário) vai primeiro, como no componente */
   .nf-actions .btn-primary { order: -1; }
 }
+
+/* /slots/: mesma entrada da hero (zoom-out desfocado + fade) no card,
+   pra página não aparecer de uma vez. Reusa o heroBlockIn. A classe
+   .reveal.is-in continua no HTML só pra garantir opacidade final 1
+   sem depender do observer, que não roda nessa página. */
+.slots-card[data-state="paused"] {
+  transform-origin: 50% 40%;
+  animation: heroBlockIn 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .slots-card[data-state="paused"] { animation: none; }
+}
