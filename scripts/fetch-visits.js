@@ -14,7 +14,7 @@ const path = require('path');
 const GAMES = [
   { key: 'apocalypse',  placeId: '90148635862803'  }, // Survive the Apocalypse
   { key: 'prospecting', placeId: '129827112113663' }, // Prospecting
-  { key: 'parkour',     placeId: '75034791252172'  }, // Parkour for Brainrots
+  { key: 'rideapet',    placeId: '124216119978534' }, // Ride A Pet
   { key: 'restaurant',  placeId: '77843161404023'  }, // Run a Restaurant
   { key: 'divaz',       placeId: '88323040672117'  }, // Divaz
   { key: 'gag2',        placeId: '97598239454123'  }, // Grow a Garden 2

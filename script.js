@@ -483,60 +483,83 @@ function animateCounter(el, duration = 2400) {
   if (!messagesEl || !typingEl) return;
   const typingNameEl = typingEl.querySelector('.typing-name');
 
-  // Dialog uses .html (innerHTML) so we can render <strong> + multi-line via \n.
-  // All content is hardcoded — no XSS surface.
+  // Cada entrada é uma mensagem. { divider } desenha a linha de data do
+  // Discord; `cont` é continuação (mesmo autor, sem avatar/cabeçalho);
+  // `attachments` aceita embed (link), file e image, renderizados abaixo
+  // do texto como no Discord. Todo o conteúdo é fixo — sem superfície de XSS.
+  const CLIENT = { user: 'client', name: '@client', badge: 'Member', badgeClass: 'member', letter: 'C', color: '#5865F2' };
+  const S0DA   = { user: 'gfxs0da', name: '@gfxs0da', badge: 'Staff', badgeClass: 'staff' };
   const dialog = [
-    {
-      user: 'client', name: '@client', badge: 'Member', badgeClass: 'member',
-      letter: 'C', color: '#5865F2', time: '14:23',
-      html: 'yo bro, got a new game dropping soon. need a thumbnail, you available?',
-    },
-    {
-      user: 'gfxs0da', name: '@gfxs0da', badge: 'Staff', badgeClass: 'staff',
-      time: '14:24',
-      html: 'for sure 🔥 send me the game link, references, and any ideas you have in mind.',
-    },
-    {
-      user: 'client', name: '@client', badge: 'Member', badgeClass: 'member',
-      letter: 'C', color: '#5865F2', time: '14:30',
-      html: 'just sent everything over. curious to see what you come up with.',
-    },
-    {
-      user: 'gfxs0da', name: '@gfxs0da', badge: 'Staff', badgeClass: 'staff',
-      time: '14:32',
-      html: "perfect. I'll put together 2 initial concepts so you can choose the direction you like best.",
-    },
-    {
-      user: 'client', name: '@client', badge: 'Member', badgeClass: 'member',
-      letter: 'C', color: '#5865F2', time: '14:33',
-      html: 'sounds good bro 🙏',
-    },
-    {
-      user: 'gfxs0da', name: '@gfxs0da', badge: 'Staff', badgeClass: 'staff',
-      time: '17:48',
-      html: 'the first pass is ready.\n\n• <strong>Concept 1:</strong> darker, more cinematic look\n• <strong>Concept 2:</strong> brighter, more explosive and action-focused\n\nwhich one are you feeling more?',
-    },
-    {
-      user: 'client', name: '@client', badge: 'Member', badgeClass: 'member',
-      letter: 'C', color: '#5865F2', time: '17:53',
-      html: 'definitely concept 2. the effects go crazy 🤯',
-    },
-    {
-      user: 'gfxs0da', name: '@gfxs0da', badge: 'Staff', badgeClass: 'staff',
-      time: '18:01',
-      html: 'w choice. polishing the final details and exporting now.',
-    },
-    {
-      user: 'gfxs0da', name: '@gfxs0da', badge: 'Staff', badgeClass: 'staff',
-      time: '18:34',
-      html: 'final thumbnail delivered ✅\nappreciate the trust, excited to see the game launch.',
-    },
+    { ...CLIENT, time: '14:23',
+      html: 'yo bro, need a new thumb for burgerz. u available?' },
+    { ...S0DA, time: '14:24',
+      html: 'yea for sure 🔥 send me the game link, the models and any ideas if u got any' },
+    { ...CLIENT, time: '14:30',
+      html: 'here u go, models are in the zip',
+      attachments: [
+        { type: 'embed', site: 'Roblox', title: 'Burgerz', desc: 'Flip, stack and serve. Play Burgerz on Roblox.', url: 'https://www.roblox.com/games/' },
+        { type: 'file', name: 'burgerz_models.rbxm', size: '2.4 MB' },
+      ] },
+    { ...S0DA, time: '14:32',
+      html: "got it. 1 thumb, <strong>$130 / 35k</strong>. i'll send a few concepts first" },
+    { ...CLIENT, time: '14:33',
+      html: 'sounds good bro 🙏' },
+    { divider: 'Tomorrow' },
+    { ...S0DA, day: 'Tomorrow', time: '11:48',
+      html: 'concepts\n\n<strong>1.</strong> first person pov of a bacon squeezing ketchup on the burger, burgerman buried in it\n<strong>2.</strong> first person pov of a bacon cooking the burgerman in a frying pan, fire underneath and a spatula',
+      attachments: [
+        { type: 'image', src: 'assets/chat/sketch-ketchup.webp', alt: 'Sketch: ketchup concept', w: 480, h: 271 },
+        { type: 'image', src: 'assets/chat/sketch-pan.webp', alt: 'Sketch: frying pan concept', w: 480, h: 271 },
+      ] },
+    { ...S0DA, day: 'Tomorrow', time: '11:48', cont: true,
+      html: 'which one?' },
+    { ...CLIENT, day: 'Tomorrow', time: '11:53',
+      html: 'the ketchup one for sure, burgerman drowning goes crazy 🤯' },
+    { ...S0DA, day: 'Tomorrow', time: '12:01',
+      html: 'bet, final later today' },
+    { ...S0DA, day: 'Tomorrow', time: '18:34',
+      html: 'final ✅',
+      attachments: [
+        { type: 'image', src: 'assets/chat/burgerz-final.webp', alt: 'Final Burgerz thumbnail', w: 720, h: 405, big: true },
+      ] },
+    { ...CLIENT, day: 'Tomorrow', time: '18:40',
+      html: 'this is clean bro, ty 🔥' },
   ];
 
-  function createMsg(msg) {
+  function renderAttachment(att) {
+    if (att.type === 'embed') {
+      return `<a class="chat-embed" href="${att.url}" target="_blank" rel="noopener" tabindex="-1">
+        <span class="chat-embed-site">${att.site}</span>
+        <span class="chat-embed-title">${att.title}</span>
+        <span class="chat-embed-desc">${att.desc}</span>
+      </a>`;
+    }
+    if (att.type === 'file') {
+      return `<span class="chat-file">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+        <span class="chat-file-meta"><span class="chat-file-name">${att.name}</span><span class="chat-file-size">${att.size}</span></span>
+      </span>`;
+    }
+    if (att.type === 'image') {
+      return `<img class="chat-img${att.big ? ' chat-img-big' : ''}" src="${att.src}" alt="${att.alt}" width="${att.w}" height="${att.h}" loading="lazy" decoding="async" />`;
+    }
+    return '';
+  }
+
+  function createDivider(label) {
     const el = document.createElement('div');
-    el.className = 'chat-msg';
+    el.className = 'chat-divider';
+    el.innerHTML = `<span>${label}</span>`;
+    return el;
+  }
+
+  function createMsg(msg) {
+    if (msg.divider) return createDivider(msg.divider);
+    const el = document.createElement('div');
+    el.className = 'chat-msg' + (msg.cont ? ' chat-msg-cont' : '');
     const isS0da = msg.user === 'gfxs0da';
+    const atts = (msg.attachments || []).map(renderAttachment).join('');
+    const imgs = (msg.attachments || []).filter((x) => x.type === 'image').length;
     el.innerHTML = `
       <div class="chat-avatar${isS0da ? ' chat-avatar-s0da' : ''}"
            ${msg.letter ? `data-letter="${msg.letter}"` : ''}
@@ -544,9 +567,10 @@ function animateCounter(el, duration = 2400) {
       <div class="chat-body">
         <div class="chat-meta">
           <span class="chat-name">${msg.name}<span class="chat-badge chat-badge-${msg.badgeClass}">${msg.badge}</span></span>
-          <span class="chat-time">Today at ${msg.time}</span>
+          <span class="chat-time">${msg.day || 'Today'} at ${msg.time}</span>
         </div>
         <p class="chat-text"></p>
+        ${atts ? `<div class="chat-atts${imgs > 1 ? ' chat-atts-row' : ''}">${atts}</div>` : ''}
       </div>`;
     // innerHTML: respects \n via CSS white-space: pre-line, allows <strong>, etc.
     el.querySelector('.chat-text').innerHTML = msg.html;
@@ -566,34 +590,77 @@ function animateCounter(el, duration = 2400) {
     requestAnimationFrame(() => el.classList.add('is-in'));
   }
 
-  // Cadência do "digitando": proporcional ao tamanho da mensagem, com teto.
-  const plain = (html) => html.replace(/<[^>]+>/g, '');
-  const typingTime = (msg) => Math.min(1250, 380 + plain(msg.html).length * 11);
+  // Cadência: quem responde primeiro lê a mensagem anterior, depois digita
+  // num ritmo proporcional ao tamanho (com teto). Anexos demoram mais
+  // ("subindo" o arquivo). Tudo em ms.
+  const plain = (html) => (html || '').replace(/<[^>]+>/g, '');
+  const readTime   = (prev) => prev && prev.html ? Math.min(500, 150 + plain(prev.html).length * 3) : 0;
+  const typingTime = (msg)  => Math.min(1250, 380 + plain(msg.html).length * 11) + (msg.attachments ? 300 : 0);
+  const restTime   = (msg)  => 180 + Math.min(320, plain(msg.html).length * 1.6);
 
-  async function playOnce() {
-    messagesEl.innerHTML = '';
-    hideTyping();
-    await wait(250);
+  // A conversa toca inteira como no Discord: a área de mensagens ancora
+  // embaixo e corta no topo (CSS), então cada mensagem nova empurra as
+  // antigas pra cima e a área fica cheia até o fim. Na última, segura um
+  // tempo, apaga com um fade e recomeça. (Suporta mais de uma página se
+  // um dia for preciso: basta dividir o array.)
+  const pages = [dialog];
+  const HOLD_PAGE = 2600, HOLD_END = 4200, FADE = 380;
 
-    for (let i = 0; i < dialog.length; i++) {
-      const msg = dialog[i];
-      // Typing indicator before every message except the first
-      // (first msg = client opening the ticket, instant)
-      if (i > 0) {
+  // Só avança com a seção visível: fora da tela a reprodução espera.
+  let visible = true;
+  const section = document.getElementById('process');
+  if (section) {
+    new IntersectionObserver(([e]) => { visible = e.isIntersecting; }, { threshold: 0.15 }).observe(section);
+  }
+  const whenVisible = async () => { while (!visible) await wait(300); };
+
+  async function playPage(page) {
+    for (let i = 0; i < page.length; i++) {
+      const msg = page[i], prev = page[i - 1];
+      await whenVisible();
+      if (msg.divider) {            // o dia vira: pausa maior
+        await wait(600);
+        addMessage(msg);
+        await wait(250);
+        continue;
+      }
+      if (i > 0 && !msg.cont) {
+        if (prev && prev.user !== msg.user) await wait(readTime(prev));
         showTyping(msg.name);
         await wait(typingTime(msg));
         hideTyping();
-        await wait(90);
+        await wait(120);
       }
       addMessage(msg);
-      // Respiro depois de cada mensagem — maior nas longas
-      await wait(180 + Math.min(320, plain(msg.html).length * 1.6));
+      await wait(msg.cont ? 450 : restTime(msg));
     }
-    // Done — stays in final state, no loop
+  }
+
+  async function clearPage() {
+    messagesEl.classList.add('is-clearing');
+    await wait(FADE);
+    messagesEl.innerHTML = '';
+    messagesEl.classList.remove('is-clearing');
+    await wait(120);
+  }
+
+  async function playLoop() {
+    messagesEl.innerHTML = '';
+    hideTyping();
+    await wait(250);
+    for (;;) {
+      for (let p = 0; p < pages.length; p++) {
+        await playPage(pages[p]);
+        await wait(p === pages.length - 1 ? HOLD_END : HOLD_PAGE);
+        await whenVisible();
+        await clearPage();
+      }
+    }
   }
 
   if (reducedMotion) {
-    dialog.forEach((m) => {
+    // Estático: a última página, que tem o resultado final.
+    pages[pages.length - 1].forEach((m) => {
       const el = createMsg(m);
       el.classList.add('is-in');
       messagesEl.appendChild(el);
@@ -601,16 +668,11 @@ function animateCounter(el, duration = 2400) {
     return;
   }
 
-  // Trigger once when section enters viewport, then never again
-  const section = document.getElementById('process');
-  if (!section) { playOnce(); return; }
+  // Começa quando a seção entra na tela; depois o loop cuida de si.
+  if (!section) { playLoop(); return; }
   const startObs = new IntersectionObserver((entries) => {
     for (const e of entries) {
-      if (e.isIntersecting) {
-        playOnce();
-        startObs.disconnect();
-        return;
-      }
+      if (e.isIntersecting) { playLoop(); startObs.disconnect(); return; }
     }
   }, { threshold: 0.2 });
   startObs.observe(section);

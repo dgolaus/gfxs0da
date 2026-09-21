@@ -4614,3 +4614,84 @@ html.lite .hero-bg-tilt { animation: none !important; transform: none !important
 html.lite body.bg-red::before { animation: none !important; }
 /* colagem: sem blur (convolução em 130 imgs por frame) e sem 3D */
 html.lite .bg-row-track img { filter: brightness(0.45) saturate(0.85); }
+
+
+/* ====================================================================
+   TICKET MOCKUP — anexos, embed, divisor de dia, continuação (2026-09-21)
+   Renderizados por script.js a partir de `attachments` no diálogo.
+   Paleta e medidas seguem o Discord escuro que o card já imita.
+   ==================================================================== */
+/* continuação: mesmo autor logo abaixo, sem avatar nem cabeçalho */
+.chat-msg-cont { margin-top: -4px; }
+.chat-msg-cont .chat-avatar { visibility: hidden; height: 0; }
+.chat-msg-cont .chat-meta { display: none; }
+
+/* divisor de data */
+.chat-divider {
+  display: flex; align-items: center; gap: 10px;
+  margin: 6px 0 2px;
+  color: #80848E;
+  font-family: var(--t-mono, ui-monospace, monospace);
+  font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase;
+}
+.chat-divider::before, .chat-divider::after { content: ''; flex: 1; height: 1px; background: rgba(255,255,255,0.08); }
+
+/* bloco de anexos abaixo do texto */
+.chat-atts { display: flex; flex-direction: column; gap: 5px; margin-top: 5px; max-width: 340px; }
+.chat-atts-row { flex-direction: row; flex-wrap: wrap; }
+.chat-atts-row .chat-img { width: calc(50% - 3px); }
+.chat-atts-row { max-width: 360px; }
+
+/* embed de link (o cartão que o Discord monta pra um link) */
+.chat-embed {
+  display: flex; flex-direction: column; gap: 2px;
+  padding: 8px 12px 9px;
+  border-left: 3px solid #E2231A;           /* vermelho Roblox */
+  border-radius: 4px;
+  background: #2B2D31;
+  text-decoration: none; color: inherit;
+  max-width: 340px;
+}
+.chat-embed-site  { color: #B5BAC1; font-size: 11px; }
+.chat-embed-title { color: #00A8FC; font-size: 13.5px; font-weight: 600; }
+.chat-embed-desc  { color: #DBDEE1; font-size: 12.5px; line-height: 1.35; }
+
+/* arquivo anexado */
+.chat-file {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 6px;
+  background: #2B2D31;
+  max-width: 340px;
+}
+.chat-file svg { width: 26px; height: 26px; color: #B5BAC1; flex-shrink: 0; }
+.chat-file-meta { display: flex; flex-direction: column; min-width: 0; }
+.chat-file-name { color: #00A8FC; font-size: 13px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.chat-file-size { color: #80848E; font-size: 11px; }
+
+/* imagens */
+.chat-img {
+  display: block; width: 100%; height: auto;
+  border-radius: 6px;
+  background: #1E1F22;
+}
+.chat-img-big { max-width: 300px; }
+
+/* Altura do card = altura da coluna de texto ao lado (título até o
+   botão). contain:size faz o .chat-mock não contribuir pra altura da
+   linha do grid, então a linha fica com a altura da coluna de texto e o
+   card estica até ela. As mensagens ancoram embaixo como no Discord e o
+   que passar do topo é cortado. Abaixo de 1000px o grid vira uma coluna
+   e o card volta a fluir com a altura do próprio conteúdo. */
+@media (min-width: 1001px) {
+  .process-grid { align-items: stretch; }
+  .chat-mock { contain: size; }
+  .chat-card { height: 100%; display: flex; flex-direction: column; box-sizing: border-box; }
+  .chat-messages { flex: 1; min-height: 0; overflow: hidden; justify-content: flex-end; }
+}
+.chat-messages { min-height: 0; }
+
+/* troca de página do ticket: fade curto antes de limpar */
+.chat-messages { transition: opacity 0.38s var(--ease, ease); }
+.chat-messages.is-clearing { opacity: 0; }

@@ -16,7 +16,8 @@
 //                                    Copy Channel ID; needs Developer Mode
 //                                    enabled in Discord settings)
 //
-// Channel name format expected: anything containing "Slots: N/N", where
+// Channel name format expected: "closed" anywhere = closed; "open" with no
+// count = open, all slots free; otherwise anything containing "Slots: N/N", where
 // N/N is FILLED/TOTAL (NOT open/total). Examples from the actual channel:
 //   "❌ Slots: 3/3"  → 3 commissions in progress, queue full
 //   "✅ Slots: 2/3"  → 2 in progress, 1 slot open
@@ -72,6 +73,13 @@ const SLOTS_REGEX = /slots[^\d]*(\d+)[^\d]+(\d+)/i;
 // no "N/N" doesn't throw.
 const CLOSED_REGEX = /closed/i;
 
+// A channel name containing the word "open" (e.g. "✅ Commissions Open",
+// "Comms Open") with NO "N/N" means commissions are open with every slot
+// available. Lets the channel be renamed to a plain open state without
+// announcing a count. If a count is present it wins over this.
+// "closed" is checked first, so "open" never overrides it.
+const OPEN_REGEX = /\bopen\b/i;
+
 function parseSlots(name) {
   const m = name.match(SLOTS_REGEX);
   if (!m) throw new Error(`Could not parse "Slots: N/N" from channel name: "${name}"`);
@@ -100,7 +108,7 @@ async function main() {
     etaHoursMin: existing.etaHoursMin ?? 24,
     etaHoursMax: existing.etaHoursMax ?? 48,
     updatedAt:   today,
-    note:        'Auto-updated from Discord channel name by .github/workflows/update-slots.yml. Rename the channel to include "closed" to close commissions; use "Slots: N/N" to reopen. Edit etaHoursMin/etaHoursMax manually here when needed.',
+    note:        'Auto-updated from Discord channel name by .github/workflows/update-slots.yml. Rename the channel to include "closed" to close commissions, "open" to open with every slot free, or "Slots: N/N" for a specific count. Edit etaHoursMin/etaHoursMax manually here when needed.',
   };
 
   let out;
@@ -110,6 +118,11 @@ async function main() {
     const total = existing.total ?? 3;
     console.log(`Channel marked CLOSED → commissions closed (total ${total})`);
     out = { closed: true, open: 0, total, ...base };
+  } else if (!SLOTS_REGEX.test(name) && OPEN_REGEX.test(name)) {
+    // Plain "open" with no count — every slot available.
+    const total = existing.total ?? 3;
+    console.log(`Channel marked OPEN (no count) → ${total}/${total} open`);
+    out = { closed: false, open: total, total, ...base };
   } else {
     const { open, total, filled } = parseSlots(name);
     console.log(`Parsed: ${filled}/${total} filled → ${open} open`);
