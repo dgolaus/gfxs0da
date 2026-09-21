@@ -8,10 +8,37 @@
 if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
 }
-window.scrollTo(0, 0);
-// Re-enforce on load (in case something fires after) and on bfcache restore
-window.addEventListener('load',     () => window.scrollTo(0, 0));
-window.addEventListener('pageshow', (e) => { if (e.persisted) window.scrollTo(0, 0); });
+// Exceção: chegando com #secao na URL (ex.: /#pricing vindo da /slots/),
+// o reset pro topo anulava o pulo do navegador. Se o hash aponta pra um
+// elemento real, a página vai até ele em vez de voltar pra hero.
+// (#work-jogo-N não tem elemento e é da lightbox, que trata sozinha.)
+const NAV_OFFSET_LOAD = 80;
+const hashTarget = () => {
+  const h = location.hash;
+  if (!h || h === '#') return null;
+  try { return document.getElementById(decodeURIComponent(h.slice(1))); } catch (e) { return null; }
+};
+if (!hashTarget()) {
+  window.scrollTo(0, 0);
+  // Re-enforce on load (in case something fires after)
+  window.addEventListener('load', () => window.scrollTo(0, 0));
+}
+// bfcache restore
+window.addEventListener('pageshow', (e) => { if (e.persisted && !hashTarget()) window.scrollTo(0, 0); });
+// Com âncora: posiciona no load e repete pouco depois, porque fontes,
+// imagens e o Lenis (que sobe assíncrono) podem mudar a altura da página.
+window.addEventListener('load', () => {
+  const go = () => {
+    const t = hashTarget();
+    if (!t) return;
+    const y = t.getBoundingClientRect().top + window.scrollY - NAV_OFFSET_LOAD;
+    if (window.lenis) window.lenis.scrollTo(y, { immediate: true });
+    else window.scrollTo(0, y);
+  };
+  go();
+  setTimeout(go, 350);
+  setTimeout(go, 900);
+});
 
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const isTouch = matchMedia('(hover: none)').matches;
