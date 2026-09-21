@@ -778,28 +778,30 @@ function animateCounter(el, duration = 2400) {
     if (target) target.classList.add('is-active');
   }
 
-  // IntersectionObserver — picks the topmost section currently in viewport
-  const visible = new Set();
-  const obs = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) visible.add(entry.target.id);
-        else                       visible.delete(entry.target.id);
-      });
-      // Activate the topmost visible section (lowest DOM index)
-      let topIdx = Infinity;
-      let topId = null;
-      sections.forEach((sec, i) => {
-        if (visible.has(sec.id) && i < topIdx) {
-          topIdx = i;
-          topId = sec.id;
-        }
-      });
-      if (topId) activate(topId);
-    },
-    { rootMargin: '-90px 0px -65% 0px', threshold: 0 }
-  );
-  sections.forEach((sec) => obs.observe(sec));
+  // Por posição de scroll, não por IntersectionObserver: a seção ativa é a
+  // última cujo topo já passou a linha de leitura (35% da tela). Regra
+  // extra: com a página rolada até o fim, a última seção é a ativa, senão
+  // seções curtas no final nunca chegam à linha e a anterior fica presa.
+  const LINE = () => window.innerHeight * 0.35;
+  let raf = null;
+  function update() {
+    raf = null;
+    const doc = document.documentElement;
+    const atBottom = window.scrollY + window.innerHeight >= doc.scrollHeight - 2;
+    let current = sections[0].id;
+    if (atBottom) {
+      current = sections[sections.length - 1].id;
+    } else {
+      const line = LINE();
+      sections.forEach((sec) => { if (sec.getBoundingClientRect().top <= line) current = sec.id; });
+    }
+    activate(current);
+  }
+  const kick = () => { if (raf == null) raf = requestAnimationFrame(update); };
+  window.addEventListener('scroll', kick, { passive: true });
+  window.addEventListener('resize', kick, { passive: true });
+  window.addEventListener('load', kick);
+  kick();
 
   // Activate first item by default before scroll happens
   if (items[0]) items[0].classList.add('is-active');

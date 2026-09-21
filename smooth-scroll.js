@@ -41,7 +41,11 @@
       const dest = document.getElementById(href.slice(1));
       if (!dest) return;
       e.preventDefault();
-      lenis.scrollTo(dest, { offset: -NAV_OFFSET, duration: 1.2 });
+      // Alvo numérico, não o elemento: com elemento o scroll suave parava
+      // antes do destino em páginas longas (visto no /tos/). Calculado
+      // aqui e limitado ao máximo rolável.
+      const y = Math.min(lenis.limit, Math.max(0, dest.getBoundingClientRect().top + window.scrollY - NAV_OFFSET));
+      lenis.scrollTo(y, { duration: 1.2 });
       history.pushState(null, '', href);
     });
 
