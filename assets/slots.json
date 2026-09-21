@@ -4,6 +4,6 @@
   "total": 3,
   "etaHoursMin": 24,
   "etaHoursMax": 48,
-  "updatedAt": "2026-06-13",
-  "note": "Auto-updated from Discord channel name by .github/workflows/update-slots.yml. Rename the channel to include \"closed\" to close commissions; use \"Slots: N/N\" to reopen. Edit etaHoursMin/etaHoursMax manually here when needed."
+  "updatedAt": "2026-09-21",
+  "note": "Auto-updated from Discord channel name by .github/workflows/update-slots.yml. Rename the channel to include \"closed\" to close commissions, \"open\" to open with every slot free, or \"Slots: N/N\" for a specific count. Edit etaHoursMin/etaHoursMax manually here when needed."
 }
