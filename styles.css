@@ -1462,9 +1462,10 @@ section + section {
   box-shadow: 0 1px 0 rgba(255,255,255,0.10) inset;
 }
 .chat-badge-member {
-  background: rgba(88, 101, 242, 0.18);
-  color: #99A8FF;
-  border: 1px solid rgba(88, 101, 242, 0.40);
+  /* branca, pra combinar com o avatar em preto e branco do cliente */
+  background: rgba(255, 255, 255, 0.10);
+  color: #E6E7EA;
+  border: 1px solid rgba(255, 255, 255, 0.22);
 }
 .chat-time {
   color: rgba(148, 155, 164, 0.8);
@@ -4778,3 +4779,9 @@ html.lite .bg-row-track img { filter: brightness(0.45) saturate(0.85); }
 @media (prefers-reduced-motion: reduce) {
   .slots-card[data-state="paused"] { animation: none; }
 }
+
+/* avatar do cliente no ticket: foto no lugar da inicial (2026-09-22) */
+.chat-avatar-client {
+  background: url('assets/chat/client-pfp.webp') center/cover no-repeat, #E6E7EA;
+}
+.chat-avatar-client::after { content: ''; }

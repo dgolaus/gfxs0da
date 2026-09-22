@@ -585,10 +585,11 @@ function animateCounter(el, duration = 2400) {
     const el = document.createElement('div');
     el.className = 'chat-msg' + (msg.cont ? ' chat-msg-cont' : '');
     const isS0da = msg.user === 'gfxs0da';
+    const isClient = msg.user === 'client';
     const atts = (msg.attachments || []).map(renderAttachment).join('');
     const imgs = (msg.attachments || []).filter((x) => x.type === 'image').length;
     el.innerHTML = `
-      <div class="chat-avatar${isS0da ? ' chat-avatar-s0da' : ''}"
+      <div class="chat-avatar${isS0da ? ' chat-avatar-s0da' : ''}${isClient ? ' chat-avatar-client' : ''}"
            ${msg.letter ? `data-letter="${msg.letter}"` : ''}
            ${msg.color  ? `style="--c:${msg.color}"`     : ''}></div>
       <div class="chat-body">
