@@ -2459,7 +2459,7 @@ body.tos-page .tos-content {
   border-radius: 12px;
   display: flex;
   gap: 16px;
-  align-items: flex-start;
+  align-items: center; /* bandeira centrada no bloco de texto, não na 1a linha */
   font-size: 14.5px;
   line-height: 1.6;
   color: var(--text-muted);
@@ -2469,10 +2469,11 @@ body.tos-page .tos-content {
   font-weight: 600;
 }
 .tos-callout-flag {
-  font-size: 22px;
-  line-height: 1;
+  /* imagem em vez do emoji: tem PC que não renderiza bandeiras */
+  width: 26px;
+  height: auto;
+  border-radius: 3px;
   flex-shrink: 0;
-  margin-top: 1px;
 }
 
 /* End-of-document actions */
