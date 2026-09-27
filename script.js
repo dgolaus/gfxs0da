@@ -853,6 +853,28 @@ function animateCounter(el, duration = 2400) {
       });
     })
     .catch(() => { /* silent — keeps hardcoded fallback values */ });
+
+  /* Total "visits influenced" — comes from the same JSON, written by
+     scripts/fetch-visits.js as `influenced`. Rounded DOWN to one decimal
+     so the page never claims more than the games actually add up to.
+     If the fetch fails or the field is missing, the hardcoded data-value
+     in the HTML stays. */
+  fetch('assets/visits.json', { cache: 'no-cache' })
+    .then((r) => (r.ok ? r.json() : null))
+    .then((data) => {
+      if (!data || typeof data.influenced !== 'number') return;
+      const b = Math.floor((data.influenced / 1e9) * 10) / 10;
+      if (!(b > 0)) return;
+      document.querySelectorAll('.counter[data-live="visits"]').forEach((el) => {
+        el.dataset.value = String(b);
+        // Se a contagem já rodou, reescreve o resultado; senão o
+        // animateCounter pega o valor novo quando for a vez dele.
+        if (el.textContent !== '0') {
+          el.textContent = `${el.dataset.prefix || ''}${b.toFixed(1)}${el.dataset.suffix || ''}`;
+        }
+      });
+    })
+    .catch(() => {});
 })();
 
 /* 6c. Scroll-driven gradient — Rockstar VI style ------------------------- */

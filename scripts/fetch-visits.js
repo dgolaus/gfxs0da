@@ -11,14 +11,30 @@
 const fs = require('fs');
 const path = require('path');
 
+// Every game that has ever had a portfolio card. Games stay on this list
+// after they leave the grid: their visits keep counting toward the total,
+// they just stop being shown.
+//
+// baseVisits is what the game had the day it entered tracking, and `since`
+// is that day. Only growth ON TOP of baseVisits is credited, because the
+// BASELINE below already covers everything up to 2026-05-03. Without this
+// the pre-tracking visits would be counted twice.
 const GAMES = [
-  { key: 'apocalypse',  placeId: '90148635862803'  }, // Survive the Apocalypse
-  { key: 'prospecting', placeId: '129827112113663' }, // Prospecting
-  { key: 'rideapet',    placeId: '124216119978534' }, // Ride A Pet
-  { key: 'restaurant',  placeId: '77843161404023'  }, // Run a Restaurant
-  { key: 'divaz',       placeId: '88323040672117'  }, // Divaz
-  { key: 'gag2',        placeId: '97598239454123'  }, // Grow a Garden 2
+  { key: 'apocalypse',  placeId: '90148635862803'  , baseVisits: 105127114, since: '2026-05-09' }, // Survive the Apocalypse
+  { key: 'prospecting', placeId: '129827112113663' , baseVisits: 227061196, since: '2026-05-09' }, // Prospecting
+  { key: 'parkour',     placeId: '75034791252172'  , baseVisits:  47005232, since: '2026-05-09' }, // Parkour for Brainrots (off the grid)
+  { key: 'aura',        placeId: '77393318863643'  , baseVisits:  83317257, since: '2026-05-09' }, // Aura Ascension (off the grid)
+  { key: 'fishing',     placeId: '113489516847696' , baseVisits: 216116713, since: '2026-05-09' }, // My Fishing Brainrots (off the grid)
+  { key: 'restaurant',  placeId: '77843161404023'  , baseVisits:  23526525, since: '2026-06-10' }, // Run a Restaurant
+  { key: 'burgerz',     placeId: '99817148924004'  , baseVisits:  49945795, since: '2026-06-10' }, // Burgerz (off the grid)
+  { key: 'gag2',        placeId: '97598239454123'  , baseVisits:  10528225, since: '2026-06-12' }, // Grow a Garden 2
+  { key: 'divaz',       placeId: '88323040672117'  , baseVisits:  42675747, since: '2026-08-10' }, // Divaz
+  { key: 'rideapet',    placeId: '124216119978534' , baseVisits:  56029417, since: '2026-09-20' }, // Ride A Pet
 ];
+
+// Career total the user confirmed on 2026-05-03, covering every commission
+// up to that date. Growth measured since then is added on top.
+const BASELINE = 2_300_000_000;
 
 async function getUniverseId(placeId) {
   const r = await fetch(`https://apis.roblox.com/universes/v1/places/${placeId}/universe`);
@@ -44,6 +60,7 @@ async function getGameInfo(universeId) {
     games: {},
   };
 
+  let growth = 0, counted = 0;
   for (const game of GAMES) {
     try {
       const universeId = await getUniverseId(game.placeId);
@@ -58,6 +75,12 @@ async function getGameInfo(universeId) {
         creatorName: info.creator?.name || null,
         creatorVerified: !!info.creator?.hasVerifiedBadge,
       };
+      if (typeof game.baseVisits === 'number') {
+        out.games[game.key].baseVisits = game.baseVisits;
+        out.games[game.key].since = game.since;
+        growth += Math.max(0, info.visits - game.baseVisits);
+        counted++;
+      }
       const v = info.creator?.hasVerifiedBadge ? '✓' : ' ';
       console.log(
         `  ${game.key.padEnd(12)} ${info.visits.toLocaleString().padStart(14)} visits  ·  by ${info.creator?.name || '?'} ${v}`
@@ -65,6 +88,21 @@ async function getGameInfo(universeId) {
     } catch (e) {
       console.error(`  ${game.key.padEnd(12)} FAILED: ${e.message}`);
       // Don't abort — keep going so other games still update
+    }
+  }
+
+  // Only publish a new total when every game answered. A partial run would
+  // make the number drop, and a counter that goes down looks like a lie.
+  if (counted === GAMES.length) {
+    out.influenced = BASELINE + growth;
+    out.influencedParts = { baseline: BASELINE, growth };
+    console.log(`\nInfluenced: ${out.influenced.toLocaleString()} (baseline ${BASELINE.toLocaleString()} + growth ${growth.toLocaleString()})`);
+  } else {
+    const prev = (() => { try { return JSON.parse(fs.readFileSync(path.join('assets', 'visits.json'), 'utf8')); } catch (e) { return null; } })();
+    if (prev && typeof prev.influenced === 'number') {
+      out.influenced = prev.influenced;
+      out.influencedParts = prev.influencedParts;
+      console.log(`\n${GAMES.length - counted} game(s) failed — keeping the previous influenced total.`);
     }
   }
 
