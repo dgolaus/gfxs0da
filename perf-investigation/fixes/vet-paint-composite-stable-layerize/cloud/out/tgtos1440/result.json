@@ -1,0 +1,548 @@
+[
+ {
+  "name": "walk0_pause",
+  "noise": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d2": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  }
+ },
+ {
+  "name": "walk0_slow",
+  "noise": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d2": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  }
+ },
+ {
+  "name": "walk450_pause",
+  "noise": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d2": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  }
+ },
+ {
+  "name": "walk450_slow",
+  "noise": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d2": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  }
+ },
+ {
+  "name": "walk900_pause",
+  "noise": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d2": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  }
+ },
+ {
+  "name": "walk900_slow",
+  "noise": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d2": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  }
+ },
+ {
+  "name": "walk1350_pause",
+  "noise": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d2": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  }
+ },
+ {
+  "name": "walk1350_slow",
+  "noise": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d2": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  }
+ },
+ {
+  "name": "walk1800_pause",
+  "noise": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d2": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  }
+ },
+ {
+  "name": "walk1800_slow",
+  "noise": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d2": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  }
+ },
+ {
+  "name": "walk2250_pause",
+  "noise": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d2": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  }
+ },
+ {
+  "name": "walk2250_slow",
+  "noise": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d2": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  }
+ },
+ {
+  "name": "walk2700_pause",
+  "noise": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d2": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  }
+ },
+ {
+  "name": "walk2700_slow",
+  "noise": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d2": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  }
+ },
+ {
+  "name": "walk3150_pause",
+  "noise": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d2": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  }
+ },
+ {
+  "name": "walk3150_slow",
+  "noise": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d2": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  }
+ },
+ {
+  "name": "walk3600_pause",
+  "noise": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d2": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  }
+ },
+ {
+  "name": "walk3600_slow",
+  "noise": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d2": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  }
+ },
+ {
+  "name": "walk4050_pause",
+  "noise": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d2": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  }
+ },
+ {
+  "name": "walk4050_slow",
+  "noise": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d2": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  }
+ },
+ {
+  "name": "walk4500_pause",
+  "noise": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d2": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  }
+ },
+ {
+  "name": "walk4500_slow",
+  "noise": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d2": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  }
+ },
+ {
+  "name": "walk4950_pause",
+  "noise": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d2": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  }
+ },
+ {
+  "name": "walk4950_slow",
+  "noise": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d2": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  }
+ },
+ {
+  "name": "walk5187_pause",
+  "noise": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d2": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  }
+ },
+ {
+  "name": "walk5187_slow",
+  "noise": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  },
+  "d2": {
+   "px": 0,
+   "max": 0,
+   "mad": 0,
+   "bbox": null
+  }
+ }
+]

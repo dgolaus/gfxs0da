@@ -1,0 +1,350 @@
+{
+ "baseline": {
+  "/": {
+   "sy": 0,
+   "docH": 8140,
+   "lenis": false,
+   "secs": "top:0 work:745 about:2370.2 process:3137.8 trust:4111.3 pricing:5267.2 contact:7099.3",
+   "prContain": "none",
+   "errs": []
+  },
+  "/#pricing": {
+   "sy": 5187,
+   "docH": 8140,
+   "lenis": false,
+   "secs": "top:0 work:745 about:2346.2 process:3113.8 trust:4094.9 pricing:5267.2 contact:7099.3",
+   "prContain": "none",
+   "errs": []
+  },
+  "/#process": {
+   "sy": 3058,
+   "docH": 8274,
+   "lenis": false,
+   "secs": "top:0 work:745 about:2352.8 process:3137.8 trust:4244.7 pricing:5400.6 contact:7232.7",
+   "prContain": "none",
+   "errs": []
+  },
+  "/#testimonials": {
+   "sy": 4621,
+   "docH": 8140,
+   "lenis": false,
+   "secs": "top:0 work:745 about:2346.2 process:3113.8 trust:4111.3 pricing:5267.2 contact:7099.3",
+   "prContain": "none",
+   "errs": []
+  },
+  "/tos/": {
+   "sy": 0,
+   "docH": 8372,
+   "lenis": false,
+   "secs": "pricing:1184.2 rescales:2163.7 orders:2895.4 queue:3287 delivery:3692.9 responsibility:4216.2 creative:4622.2 tools:5080.8 rights:5357.3 performance:5971.7 refunds:6260.3 communication:6809.9 final:7227.8 general:7739.2",
+   "prContain": "none",
+   "errs": []
+  },
+  "/tos/#pricing": {
+   "sy": 1105,
+   "docH": 8372,
+   "lenis": false,
+   "secs": "pricing:1184.2 rescales:2163.7 orders:2895.4 queue:3287 delivery:3692.9 responsibility:4216.2 creative:4622.2 tools:5080.8 rights:5357.3 performance:5971.7 refunds:6260.3 communication:6809.9 final:7227.8 general:7739.2",
+   "prContain": "none",
+   "errs": []
+  },
+  "/tos/#refunds": {
+   "sy": 6181,
+   "docH": 8372,
+   "lenis": false,
+   "secs": "pricing:1160.2 rescales:2163.7 orders:2895.4 queue:3287 delivery:3692.9 responsibility:4216.2 creative:4622.2 tools:5080.8 rights:5357.3 performance:5971.7 refunds:6260.3 communication:6809.9 final:7227.8 general:7739.2",
+   "prContain": "none",
+   "errs": []
+  },
+  "/tos/#general": {
+   "sy": 7528,
+   "docH": 8372,
+   "lenis": false,
+   "secs": "pricing:1160.2 rescales:2163.7 orders:2895.4 queue:3287 delivery:3692.9 responsibility:4216.2 creative:4622.2 tools:5080.8 rights:5357.3 performance:5971.7 refunds:6260.3 communication:6809.9 final:7227.8 general:7739.2",
+   "prContain": "none",
+   "errs": []
+  },
+  "/slots/": {
+   "sy": 0,
+   "docH": 1033,
+   "lenis": false,
+   "secs": "slots-card:100",
+   "prContain": null,
+   "errs": []
+  },
+  "/404.html": {
+   "sy": 0,
+   "docH": 844,
+   "lenis": false,
+   "secs": "",
+   "prContain": null,
+   "errs": []
+  },
+  "tosSpy": {
+   "spy": "0:#pricing 150:#pricing 300:#pricing 450:#pricing 600:#pricing 750:#pricing 900:#pricing 1050:#pricing 1200:#pricing 1350:#pricing 1500:#pricing 1650:#pricing 1800:#pricing 1950:#pricing 2100:#rescales 2250:#rescales 2400:#rescales 2550:#rescales 2700:#orders 2850:#orders 3000:#queue 3150:#queue 3300:#queue 3450:#delivery 3600:#delivery 3750:#delivery 3900:#delivery 4050:#responsibility 4200:#responsibility 4350:#creative 4500:#creative 4650:#creative 4800:#tools 4950:#tools 5100:#rights 5250:#rights 5400:#rights 5550:#rights 5700:#performance 5850:#performance 6000:#refunds 6150:#refunds 6300:#refunds 6450:#refunds 6600:#communication 6750:#communication 6900:#communication 7050:#final 7200:#final 7350:#final 7500:#general 7528:#general",
+   "clicks": "#general->7528:#general:#general #pricing->1060:#pricing:#pricing #delivery->3593:#delivery:#delivery #rescales->2064:#rescales:#rescales",
+   "errs": []
+  }
+ },
+ "baseline#1": {
+  "/": {
+   "sy": 0,
+   "docH": 8140,
+   "lenis": false,
+   "secs": "top:0 work:745 about:2370.2 process:3137.8 trust:4111.3 pricing:5267.2 contact:7099.3",
+   "prContain": "none",
+   "errs": []
+  },
+  "/#pricing": {
+   "sy": 5187,
+   "docH": 8140,
+   "lenis": false,
+   "secs": "top:0 work:745 about:2346.2 process:3113.8 trust:4094.9 pricing:5267.2 contact:7099.3",
+   "prContain": "none",
+   "errs": []
+  },
+  "/#process": {
+   "sy": 3058,
+   "docH": 8274,
+   "lenis": false,
+   "secs": "top:0 work:745 about:2352.7 process:3137.8 trust:4244.7 pricing:5400.6 contact:7232.7",
+   "prContain": "none",
+   "errs": []
+  },
+  "/#testimonials": {
+   "sy": 4603,
+   "docH": 8140,
+   "lenis": false,
+   "secs": "top:0 work:745 about:2346.2 process:3113.8 trust:4111.3 pricing:5267.2 contact:7099.3",
+   "prContain": "none",
+   "errs": []
+  },
+  "/tos/": {
+   "sy": 0,
+   "docH": 8372,
+   "lenis": false,
+   "secs": "pricing:1184.2 rescales:2163.7 orders:2895.4 queue:3287 delivery:3692.9 responsibility:4216.2 creative:4622.2 tools:5080.8 rights:5357.3 performance:5971.7 refunds:6260.3 communication:6809.9 final:7227.8 general:7739.2",
+   "prContain": "none",
+   "errs": []
+  },
+  "/tos/#pricing": {
+   "sy": 1105,
+   "docH": 8372,
+   "lenis": false,
+   "secs": "pricing:1184.2 rescales:2163.7 orders:2895.4 queue:3287 delivery:3692.9 responsibility:4216.2 creative:4622.2 tools:5080.8 rights:5357.3 performance:5971.7 refunds:6260.3 communication:6809.9 final:7227.8 general:7739.2",
+   "prContain": "none",
+   "errs": []
+  },
+  "/tos/#refunds": {
+   "sy": 6181,
+   "docH": 8372,
+   "lenis": false,
+   "secs": "pricing:1160.2 rescales:2163.7 orders:2895.4 queue:3287 delivery:3692.9 responsibility:4216.2 creative:4622.2 tools:5080.8 rights:5357.3 performance:5971.7 refunds:6260.3 communication:6809.9 final:7227.8 general:7739.2",
+   "prContain": "none",
+   "errs": []
+  },
+  "/tos/#general": {
+   "sy": 7528,
+   "docH": 8372,
+   "lenis": false,
+   "secs": "pricing:1160.2 rescales:2163.7 orders:2895.4 queue:3287 delivery:3692.9 responsibility:4216.2 creative:4622.2 tools:5080.8 rights:5357.3 performance:5971.7 refunds:6260.3 communication:6809.9 final:7227.8 general:7739.2",
+   "prContain": "none",
+   "errs": []
+  },
+  "/slots/": {
+   "sy": 0,
+   "docH": 1033,
+   "lenis": false,
+   "secs": "slots-card:100",
+   "prContain": null,
+   "errs": []
+  },
+  "/404.html": {
+   "sy": 0,
+   "docH": 844,
+   "lenis": false,
+   "secs": "",
+   "prContain": null,
+   "errs": []
+  },
+  "tosSpy": {
+   "spy": "0:#pricing 150:#pricing 300:#pricing 450:#pricing 600:#pricing 750:#pricing 900:#pricing 1050:#pricing 1200:#pricing 1350:#pricing 1500:#pricing 1650:#pricing 1800:#pricing 1950:#rescales 2100:#rescales 2250:#rescales 2400:#rescales 2550:#rescales 2700:#orders 2850:#orders 3000:#queue 3150:#queue 3300:#queue 3450:#delivery 3600:#delivery 3750:#delivery 3900:#delivery 4050:#responsibility 4200:#responsibility 4350:#creative 4500:#creative 4650:#creative 4800:#tools 4950:#tools 5100:#rights 5250:#rights 5400:#rights 5550:#rights 5700:#performance 5850:#performance 6000:#refunds 6150:#refunds 6300:#refunds 6450:#refunds 6600:#communication 6750:#communication 6900:#communication 7050:#final 7200:#final 7350:#final 7500:#general 7528:#general",
+   "clicks": "#general->7528:#general:#general #pricing->1060:#pricing:#pricing #delivery->3593:#delivery:#delivery #rescales->2064:#rescales:#rescales",
+   "errs": []
+  }
+ },
+ "stab": {
+  "/": {
+   "sy": 0,
+   "docH": 8140,
+   "lenis": false,
+   "secs": "top:0 work:745 about:2370.2 process:3137.8 trust:4111.3 pricing:5267.2 contact:7099.3",
+   "prContain": "paint",
+   "errs": []
+  },
+  "/#pricing": {
+   "sy": 5187,
+   "docH": 8140,
+   "lenis": false,
+   "secs": "top:0 work:745 about:2346.2 process:3113.8 trust:4094.3 pricing:5267.2 contact:7099.3",
+   "prContain": "paint",
+   "errs": []
+  },
+  "/#process": {
+   "sy": 3058,
+   "docH": 8203,
+   "lenis": false,
+   "secs": "top:0 work:745 about:2353.7 process:3137.8 trust:4174 pricing:5329.9 contact:7162",
+   "prContain": "paint",
+   "errs": []
+  },
+  "/#testimonials": {
+   "sy": 4603,
+   "docH": 8140,
+   "lenis": false,
+   "secs": "top:0 work:745 about:2346.2 process:3113.8 trust:4111.3 pricing:5267.2 contact:7099.3",
+   "prContain": "paint",
+   "errs": []
+  },
+  "/tos/": {
+   "sy": 0,
+   "docH": 8372,
+   "lenis": false,
+   "secs": "pricing:1184.2 rescales:2163.7 orders:2895.4 queue:3287 delivery:3692.9 responsibility:4216.2 creative:4622.2 tools:5080.8 rights:5357.3 performance:5971.7 refunds:6260.3 communication:6809.9 final:7227.8 general:7739.2",
+   "prContain": "paint",
+   "errs": []
+  },
+  "/tos/#pricing": {
+   "sy": 1105,
+   "docH": 8372,
+   "lenis": false,
+   "secs": "pricing:1184.2 rescales:2163.7 orders:2895.4 queue:3287 delivery:3692.9 responsibility:4216.2 creative:4622.2 tools:5080.8 rights:5357.3 performance:5971.7 refunds:6260.3 communication:6809.9 final:7227.8 general:7739.2",
+   "prContain": "paint",
+   "errs": []
+  },
+  "/tos/#refunds": {
+   "sy": 6181,
+   "docH": 8372,
+   "lenis": false,
+   "secs": "pricing:1160.2 rescales:2163.7 orders:2895.4 queue:3287 delivery:3692.9 responsibility:4216.2 creative:4622.2 tools:5080.8 rights:5357.3 performance:5971.7 refunds:6260.3 communication:6809.9 final:7227.8 general:7739.2",
+   "prContain": "paint",
+   "errs": []
+  },
+  "/tos/#general": {
+   "sy": 7528,
+   "docH": 8372,
+   "lenis": false,
+   "secs": "pricing:1160.2 rescales:2163.7 orders:2895.4 queue:3287 delivery:3692.9 responsibility:4216.2 creative:4622.2 tools:5080.8 rights:5357.3 performance:5971.7 refunds:6260.3 communication:6809.9 final:7227.8 general:7739.2",
+   "prContain": "paint",
+   "errs": []
+  },
+  "/slots/": {
+   "sy": 0,
+   "docH": 1033,
+   "lenis": false,
+   "secs": "slots-card:100",
+   "prContain": null,
+   "errs": []
+  },
+  "/404.html": {
+   "sy": 0,
+   "docH": 844,
+   "lenis": false,
+   "secs": "",
+   "prContain": null,
+   "errs": []
+  },
+  "tosSpy": {
+   "spy": "0:#pricing 150:#pricing 300:#pricing 450:#pricing 600:#pricing 750:#pricing 900:#pricing 1050:#pricing 1200:#pricing 1350:#pricing 1500:#pricing 1650:#pricing 1800:#pricing 1950:#rescales 2100:#rescales 2250:#rescales 2400:#rescales 2550:#rescales 2700:#orders 2850:#orders 3000:#queue 3150:#queue 3300:#queue 3450:#delivery 3600:#delivery 3750:#delivery 3900:#delivery 4050:#responsibility 4200:#responsibility 4350:#creative 4500:#creative 4650:#creative 4800:#tools 4950:#tools 5100:#rights 5250:#rights 5400:#rights 5550:#rights 5700:#performance 5850:#performance 6000:#refunds 6150:#refunds 6300:#refunds 6450:#refunds 6600:#communication 6750:#communication 6900:#communication 7050:#final 7200:#final 7350:#final 7500:#general 7528:#general",
+   "clicks": "#general->7528:#general:#general #pricing->1060:#pricing:#pricing #delivery->3593:#delivery:#delivery #rescales->2064:#rescales:#rescales",
+   "errs": []
+  }
+ },
+ "stab#3": {
+  "/": {
+   "sy": 0,
+   "docH": 8140,
+   "lenis": false,
+   "secs": "top:0 work:745 about:2370.2 process:3137.8 trust:4111.3 pricing:5267.2 contact:7099.3",
+   "prContain": "paint",
+   "errs": []
+  },
+  "/#pricing": {
+   "sy": 5187,
+   "docH": 8140,
+   "lenis": false,
+   "secs": "top:0 work:745 about:2346.2 process:3113.8 trust:4094.2 pricing:5267.2 contact:7099.3",
+   "prContain": "paint",
+   "errs": []
+  },
+  "/#process": {
+   "sy": 3058,
+   "docH": 8274,
+   "lenis": false,
+   "secs": "top:0 work:745 about:2353.2 process:3137.8 trust:4244.7 pricing:5400.6 contact:7232.7",
+   "prContain": "paint",
+   "errs": []
+  },
+  "/#testimonials": {
+   "sy": 4621,
+   "docH": 8140,
+   "lenis": false,
+   "secs": "top:0 work:745 about:2346.2 process:3113.8 trust:4111.3 pricing:5267.2 contact:7099.3",
+   "prContain": "paint",
+   "errs": []
+  },
+  "/tos/": {
+   "sy": 0,
+   "docH": 8372,
+   "lenis": false,
+   "secs": "pricing:1184.2 rescales:2163.7 orders:2895.4 queue:3287 delivery:3692.9 responsibility:4216.2 creative:4622.2 tools:5080.8 rights:5357.3 performance:5971.7 refunds:6260.3 communication:6809.9 final:7227.8 general:7739.2",
+   "prContain": "paint",
+   "errs": []
+  },
+  "/tos/#pricing": {
+   "sy": 1105,
+   "docH": 8372,
+   "lenis": false,
+   "secs": "pricing:1184.2 rescales:2163.7 orders:2895.4 queue:3287 delivery:3692.9 responsibility:4216.2 creative:4622.2 tools:5080.8 rights:5357.3 performance:5971.7 refunds:6260.3 communication:6809.9 final:7227.8 general:7739.2",
+   "prContain": "paint",
+   "errs": []
+  },
+  "/tos/#refunds": {
+   "sy": 6181,
+   "docH": 8372,
+   "lenis": false,
+   "secs": "pricing:1160.2 rescales:2163.7 orders:2895.4 queue:3287 delivery:3692.9 responsibility:4216.2 creative:4622.2 tools:5080.8 rights:5357.3 performance:5971.7 refunds:6260.3 communication:6809.9 final:7227.8 general:7739.2",
+   "prContain": "paint",
+   "errs": []
+  },
+  "/tos/#general": {
+   "sy": 7528,
+   "docH": 8372,
+   "lenis": false,
+   "secs": "pricing:1160.2 rescales:2163.7 orders:2895.4 queue:3287 delivery:3692.9 responsibility:4216.2 creative:4622.2 tools:5080.8 rights:5357.3 performance:5971.7 refunds:6260.3 communication:6809.9 final:7227.8 general:7739.2",
+   "prContain": "paint",
+   "errs": []
+  },
+  "/slots/": {
+   "sy": 0,
+   "docH": 1033,
+   "lenis": false,
+   "secs": "slots-card:100",
+   "prContain": null,
+   "errs": []
+  },
+  "/404.html": {
+   "sy": 0,
+   "docH": 844,
+   "lenis": false,
+   "secs": "",
+   "prContain": null,
+   "errs": []
+  },
+  "tosSpy": {
+   "spy": "0:#pricing 150:#pricing 300:#pricing 450:#pricing 600:#pricing 750:#pricing 900:#pricing 1050:#pricing 1200:#pricing 1350:#pricing 1500:#pricing 1650:#pricing 1800:#pricing 1950:#rescales 2100:#rescales 2250:#rescales 2400:#rescales 2550:#rescales 2700:#orders 2850:#orders 3000:#queue 3150:#queue 3300:#queue 3450:#delivery 3600:#delivery 3750:#delivery 3900:#delivery 4050:#responsibility 4200:#responsibility 4350:#creative 4500:#creative 4650:#creative 4800:#tools 4950:#tools 5100:#rights 5250:#rights 5400:#rights 5550:#rights 5700:#performance 5850:#performance 6000:#refunds 6150:#refunds 6300:#refunds 6450:#refunds 6600:#communication 6750:#communication 6900:#communication 7050:#final 7200:#final 7350:#final 7500:#general 7528:#general",
+   "clicks": "#general->7528:#general:#general #pricing->1060:#pricing:#pricing #delivery->3593:#delivery:#delivery #rescales->2064:#rescales:#rescales",
+   "errs": []
+  }
+ }
+}

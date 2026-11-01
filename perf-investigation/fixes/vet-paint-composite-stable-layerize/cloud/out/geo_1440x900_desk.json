@@ -1,0 +1,176 @@
+{
+ "baseline": {
+  "/": {
+   "sy": 0,
+   "docH": 6264,
+   "lenis": false,
+   "secs": "top:0 work:901 about:2005 process:2561.6 trust:3420 pricing:4628.5 contact:5363.8",
+   "prContain": "none",
+   "errs": []
+  },
+  "/#pricing": {
+   "sy": 4549,
+   "docH": 6264,
+   "lenis": false,
+   "secs": "top:0 work:901 about:1981 process:2537.6 trust:3401.6 pricing:4628.5 contact:5363.8",
+   "prContain": "none",
+   "errs": []
+  },
+  "/#process": {
+   "sy": 2482,
+   "docH": 6264,
+   "lenis": false,
+   "secs": "top:0 work:901 about:1987.5 process:2561.6 trust:3420 pricing:4628.5 contact:5363.8",
+   "prContain": "none",
+   "errs": []
+  },
+  "/#testimonials": {
+   "sy": 3819,
+   "docH": 6264,
+   "lenis": false,
+   "secs": "top:0 work:901 about:1981 process:2537.6 trust:3420 pricing:4628.5 contact:5363.8",
+   "prContain": "none",
+   "errs": []
+  },
+  "/tos/": {
+   "sy": 0,
+   "docH": 6087,
+   "lenis": false,
+   "secs": "pricing:594.2 rescales:1301.2 orders:1833.2 queue:2156.7 delivery:2468.3 responsibility:2870.9 creative:3208.8 tools:3546.7 rights:3781.6 performance:4222.5 refunds:4469.4 communication:4845.6 final:5195.5 general:5559.8",
+   "prContain": "none",
+   "errs": []
+  },
+  "/tos/#pricing": {
+   "sy": 515,
+   "docH": 6087,
+   "lenis": false,
+   "secs": "pricing:594.2 rescales:1301.2 orders:1833.2 queue:2156.7 delivery:2468.3 responsibility:2870.9 creative:3208.8 tools:3546.7 rights:3781.6 performance:4222.5 refunds:4469.4 communication:4845.6 final:5195.5 general:5559.8",
+   "prContain": "none",
+   "errs": []
+  },
+  "/tos/#refunds": {
+   "sy": 4390,
+   "docH": 6087,
+   "lenis": false,
+   "secs": "pricing:570.2 rescales:1301.2 orders:1833.2 queue:2156.7 delivery:2468.3 responsibility:2870.9 creative:3208.8 tools:3546.7 rights:3781.6 performance:4222.5 refunds:4469.4 communication:4845.6 final:5195.5 general:5559.8",
+   "prContain": "none",
+   "errs": []
+  },
+  "/tos/#general": {
+   "sy": 5187,
+   "docH": 6087,
+   "lenis": false,
+   "secs": "pricing:570.2 rescales:1301.2 orders:1833.2 queue:2156.7 delivery:2468.3 responsibility:2870.9 creative:3208.8 tools:3546.7 rights:3781.6 performance:4222.5 refunds:4469.4 communication:4845.6 final:5195.5 general:5559.8",
+   "prContain": "none",
+   "errs": []
+  },
+  "/slots/": {
+   "sy": 0,
+   "docH": 900,
+   "lenis": false,
+   "secs": "slots-card:126",
+   "prContain": null,
+   "errs": []
+  },
+  "/404.html": {
+   "sy": 0,
+   "docH": 900,
+   "lenis": false,
+   "secs": "",
+   "prContain": null,
+   "errs": []
+  },
+  "tosSpy": {
+   "spy": "0:#pricing 150:#pricing 300:#pricing 450:#pricing 600:#pricing 750:#pricing 900:#pricing 1050:#rescales 1200:#rescales 1350:#rescales 1500:#rescales 1650:#orders 1800:#orders 1950:#queue 2100:#queue 2250:#delivery 2400:#delivery 2550:#delivery 2700:#responsibility 2850:#responsibility 3000:#creative 3150:#creative 3300:#tools 3450:#tools 3600:#rights 3750:#rights 3900:#rights 4050:#performance 4200:#refunds 4350:#refunds 4500:#refunds 4650:#communication 4800:#communication 4950:#final 5100:#final 5187:#general",
+   "clicks": "#general->5187:#general:#general #pricing->470:#pricing:#pricing #delivery->2368:#delivery:#delivery #rescales->1201:#rescales:#rescales",
+   "errs": []
+  }
+ },
+ "stab": {
+  "/": {
+   "sy": 0,
+   "docH": 6264,
+   "lenis": false,
+   "secs": "top:0 work:901 about:2005 process:2561.6 trust:3420 pricing:4628.5 contact:5363.8",
+   "prContain": "paint",
+   "errs": []
+  },
+  "/#pricing": {
+   "sy": 4549,
+   "docH": 6264,
+   "lenis": false,
+   "secs": "top:0 work:901 about:1981 process:2537.6 trust:3403.1 pricing:4628.5 contact:5363.8",
+   "prContain": "paint",
+   "errs": []
+  },
+  "/#process": {
+   "sy": 2482,
+   "docH": 6264,
+   "lenis": false,
+   "secs": "top:0 work:901 about:1986.9 process:2561.6 trust:3420 pricing:4628.5 contact:5363.8",
+   "prContain": "paint",
+   "errs": []
+  },
+  "/#testimonials": {
+   "sy": 3801,
+   "docH": 6264,
+   "lenis": false,
+   "secs": "top:0 work:901 about:1981 process:2537.6 trust:3420 pricing:4628.5 contact:5363.8",
+   "prContain": "paint",
+   "errs": []
+  },
+  "/tos/": {
+   "sy": 0,
+   "docH": 6087,
+   "lenis": false,
+   "secs": "pricing:594.2 rescales:1301.2 orders:1833.2 queue:2156.7 delivery:2468.3 responsibility:2870.9 creative:3208.8 tools:3546.7 rights:3781.6 performance:4222.5 refunds:4469.4 communication:4845.6 final:5195.5 general:5559.8",
+   "prContain": "paint",
+   "errs": []
+  },
+  "/tos/#pricing": {
+   "sy": 515,
+   "docH": 6087,
+   "lenis": false,
+   "secs": "pricing:594.2 rescales:1301.2 orders:1833.2 queue:2156.7 delivery:2468.3 responsibility:2870.9 creative:3208.8 tools:3546.7 rights:3781.6 performance:4222.5 refunds:4469.4 communication:4845.6 final:5195.5 general:5559.8",
+   "prContain": "paint",
+   "errs": []
+  },
+  "/tos/#refunds": {
+   "sy": 4390,
+   "docH": 6087,
+   "lenis": false,
+   "secs": "pricing:570.2 rescales:1301.2 orders:1833.2 queue:2156.7 delivery:2468.3 responsibility:2870.9 creative:3208.8 tools:3546.7 rights:3781.6 performance:4222.5 refunds:4469.4 communication:4845.6 final:5195.5 general:5559.8",
+   "prContain": "paint",
+   "errs": []
+  },
+  "/tos/#general": {
+   "sy": 5187,
+   "docH": 6087,
+   "lenis": false,
+   "secs": "pricing:570.2 rescales:1301.2 orders:1833.2 queue:2156.7 delivery:2468.3 responsibility:2870.9 creative:3208.8 tools:3546.7 rights:3781.6 performance:4222.5 refunds:4469.4 communication:4845.6 final:5195.5 general:5559.8",
+   "prContain": "paint",
+   "errs": []
+  },
+  "/slots/": {
+   "sy": 0,
+   "docH": 900,
+   "lenis": false,
+   "secs": "slots-card:126",
+   "prContain": null,
+   "errs": []
+  },
+  "/404.html": {
+   "sy": 0,
+   "docH": 900,
+   "lenis": false,
+   "secs": "",
+   "prContain": null,
+   "errs": []
+  },
+  "tosSpy": {
+   "spy": "0:#pricing 150:#pricing 300:#pricing 450:#pricing 600:#pricing 750:#pricing 900:#pricing 1050:#rescales 1200:#rescales 1350:#rescales 1500:#rescales 1650:#orders 1800:#orders 1950:#queue 2100:#queue 2250:#delivery 2400:#delivery 2550:#delivery 2700:#responsibility 2850:#responsibility 3000:#creative 3150:#creative 3300:#tools 3450:#tools 3600:#rights 3750:#rights 3900:#rights 4050:#performance 4200:#refunds 4350:#refunds 4500:#refunds 4650:#communication 4800:#communication 4950:#final 5100:#final 5187:#general",
+   "clicks": "#general->5187:#general:#general #pricing->470:#pricing:#pricing #delivery->2368:#delivery:#delivery #rescales->1201:#rescales:#rescales",
+   "errs": []
+  }
+ }
+}

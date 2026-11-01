@@ -1,0 +1,23 @@
+{
+ "baseline": {},
+ "stab": {
+  "files": {
+   "/styles.css": "fixes/paint-composite/styles.stable-layerize.css"
+  }
+ },
+ "ringonly": {
+  "files": {
+   "/styles.css": "fixes/vet-paint-composite-stable-layerize/cloud/styles.ringonly.css"
+  }
+ },
+ "containonly": {
+  "files": {
+   "/styles.css": "fixes/vet-paint-composite-stable-layerize/cloud/styles.containonly.css"
+  }
+ },
+ "c1440": {
+  "files": {
+   "/styles.css": "fixes/vet-paint-composite-stable-layerize/cloud/styles.contain-1440.css"
+  }
+ }
+}
