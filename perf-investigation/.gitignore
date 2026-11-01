@@ -1,0 +1,6 @@
+# Screenshots, heatmaps and traces produced by the vetting harness (hundreds of MB).
+# Scripts and JSON/TXT results are kept; regenerate images by rerunning the scripts.
+*.png
+*.webm
+*.mp4
+trace_*.json

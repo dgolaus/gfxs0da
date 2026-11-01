@@ -1,0 +1,90 @@
+== y=5908
+  baseline_r0~baseline_r1        mad=1.136 pct=2.784 big=1.121 bb=[36,5,351,783]
+  base_r0~baseline_r0            mad=0.763 pct=2.227 big=0.653 bb=[35,29,354,783]
+  base_r0~basejs_r0              mad=0.855 pct=2.55 big=0.705 bb=[27,6,362,784]
+  base_r0~basecss_r0             mad=0.258 pct=1.047 big=0 bb=[30,74,359,780]
+  base_r0~baseline_r1            mad=0.88 pct=2.533 big=0.685 bb=[28,5,361,784]
+  base_r0~base_r1                mad=0.311 pct=0.664 big=0 bb=[47,74,256,750]
+  base_r0~basejs_r1              mad=0.762 pct=2.227 big=0.653 bb=[35,29,354,783]
+  base_r0~basecss_r1             mad=0.306 pct=0.661 big=0 bb=[47,74,256,750]
+  basejs_r0~baseline_r0          mad=1.01 pct=2.659 big=1.026 bb=[33,5,351,783]
+  basejs_r0~baseline_r1          mad=0.144 pct=0.139 big=0 bb=[47,75,204,350]
+  basejs_r0~basejs_r1            mad=1.01 pct=2.659 big=1.026 bb=[28,5,361,783]
+  basecss_r0~baseline_r0         mad=0.883 pct=2.482 big=0.874 bb=[28,28,361,782]
+  basecss_r0~basejs_r0           mad=0.876 pct=2.67 big=0.851 bb=[27,5,362,783]
+  basecss_r0~baseline_r1         mad=0.9 pct=2.651 big=0.841 bb=[27,5,362,783]
+  basecss_r0~basejs_r1           mad=0.883 pct=2.481 big=0.874 bb=[28,28,361,782]
+  basecss_r0~basecss_r1          mad=0.249 pct=0.664 big=0.038 bb=[30,445,354,783]
+  base_r1~baseline_r0            mad=0.856 pct=1.97 big=0.79 bb=[35,28,354,783]
+  base_r1~basejs_r0              mad=1.107 pct=2.728 big=1.006 bb=[27,5,362,783]
+  base_r1~basecss_r0             mad=0.259 pct=0.664 big=0.038 bb=[29,9,354,783]
+  base_r1~baseline_r1            mad=1.13 pct=2.667 big=0.996 bb=[23,5,362,783]
+  base_r1~basejs_r1              mad=0.855 pct=1.97 big=0.79 bb=[35,28,354,783]
+  base_r1~basecss_r1             mad=0.01 pct=0 big=0 bb=[29,9,29,9]
+  basejs_r1~baseline_r0          mad=0.002 pct=0 big=0 bb=null
+  basejs_r1~baseline_r1          mad=1.136 pct=2.785 big=1.121 bb=[28,5,361,783]
+  basecss_r1~baseline_r0         mad=0.855 pct=1.968 big=0.79 bb=[35,28,354,783]
+  basecss_r1~basejs_r0           mad=1.103 pct=2.683 big=1.005 bb=[27,5,362,783]
+  basecss_r1~baseline_r1         mad=1.127 pct=2.664 big=0.996 bb=[27,5,362,783]
+  basecss_r1~basejs_r1           mad=0.855 pct=1.968 big=0.79 bb=[35,28,354,783]
+  baseline_r0  cards: 5.293|0px -4.97255px|priceFloatA:paused:5000  404.901|0px -0.89553px|priceFloatB:paused:5000  817.349|0px -1.97939px|priceFloatC:paused:5000  1211.740|0px -3.11973px|priceFloatD:paused:5000
+  base_r0      cards: 5.293|0px -4.97255px|priceFloatA:paused:5000  404.901|0px -0.89553px|priceFloatB:paused:5000  817.349|0px -1.97939px|priceFloatC:paused:5000  1211.740|0px -3.11973px|priceFloatD:paused:5000
+  basejs_r0    cards: 5.293|0px -4.97255px|priceFloatA:paused:5000  404.901|0px -0.89553px|priceFloatB:paused:5000  817.349|0px -1.97939px|priceFloatC:paused:5000  1211.740|0px -3.11973px|priceFloatD:paused:5000
+  basecss_r0   cards: 5.293|0px -4.97255px|priceFloatA:paused:5000  404.901|0px -0.89553px|priceFloatB:paused:5000  817.349|0px -1.97939px|priceFloatC:paused:5000  1211.740|0px -3.11973px|priceFloatD:paused:5000
+  baseline_r1  cards: 5.293|0px -4.97255px|priceFloatA:paused:5000  404.901|0px -0.89553px|priceFloatB:paused:5000  817.349|0px -1.97939px|priceFloatC:paused:5000  1211.740|0px -3.11973px|priceFloatD:paused:5000
+  base_r1      cards: 5.293|0px -4.97255px|priceFloatA:paused:5000  404.901|0px -0.89553px|priceFloatB:paused:5000  817.349|0px -1.97939px|priceFloatC:paused:5000  1211.740|0px -3.11973px|priceFloatD:paused:5000
+  basejs_r1    cards: 5.293|0px -4.97255px|priceFloatA:paused:5000  404.901|0px -0.89553px|priceFloatB:paused:5000  817.349|0px -1.97939px|priceFloatC:paused:5000  1211.740|0px -3.11973px|priceFloatD:paused:5000
+  basecss_r1   cards: 5.293|0px -4.97255px|priceFloatA:paused:5000  404.901|0px -0.89553px|priceFloatB:paused:5000  817.349|0px -1.97939px|priceFloatC:paused:5000  1211.740|0px -3.11973px|priceFloatD:paused:5000
+  baseline_r0  leave: about:1.000/1.000@-3561.81 process:1.000/1.000@-2794.20 trust:1.000/1.000@-1349.17 pricing:0.000/0.000@-191.67 contact:0.000/0.000@1640.39
+  base_r0      leave: about:1.000/1@-3561.81 process:1.000/1@-2794.20 trust:1.000/1@-1349.17 pricing:/0@-191.67 contact:/0@1640.39
+  basejs_r0    leave: about:1.000/1.000@-3561.81 process:1.000/1.000@-2794.20 trust:1.000/1.000@-1349.17 pricing:/0@-191.67 contact:/0@1640.39
+  basecss_r0   leave: about:1.000/1@-3561.81 process:1.000/1@-2794.20 trust:1.000/1@-1349.17 pricing:0.000/0@-191.67 contact:0.000/0@1640.39
+  baseline_r1  leave: about:1.000/1.000@-3561.81 process:1.000/1.000@-2794.20 trust:1.000/1.000@-1349.17 pricing:0.000/0.000@-191.67 contact:0.000/0.000@1640.39
+  base_r1      leave: about:1.000/1@-3561.81 process:1.000/1@-2794.20 trust:1.000/1@-1349.17 pricing:/0@-191.67 contact:/0@1640.39
+  basejs_r1    leave: about:1.000/1.000@-3561.81 process:1.000/1.000@-2794.20 trust:1.000/1.000@-1349.17 pricing:/0@-191.67 contact:/0@1640.39
+  basecss_r1   leave: about:1.000/1@-3561.81 process:1.000/1@-2794.20 trust:1.000/1@-1349.17 pricing:0.000/0@-191.67 contact:0.000/0@1640.39
+== y=6330
+  baseline_r0~baseline_r1        mad=0.626 pct=1.417 big=0.616 bb=[28,19,362,724]
+  base_r0~baseline_r0            mad=0.237 pct=0.819 big=0 bb=[35,52,354,724]
+  base_r0~basejs_r0              mad=0.539 pct=1.383 big=0.544 bb=[28,19,361,724]
+  base_r0~basecss_r0             mad=0.173 pct=0.609 big=0 bb=[30,53,359,724]
+  base_r0~baseline_r1            mad=0.602 pct=1.745 big=0.544 bb=[28,19,361,724]
+  base_r0~base_r1                mad=0.211 pct=0.223 big=0 bb=[48,53,231,724]
+  base_r0~basejs_r1              mad=0.236 pct=0.815 big=0 bb=[35,52,354,724]
+  base_r0~basecss_r1             mad=0.211 pct=0.223 big=0 bb=[48,53,231,724]
+  basejs_r0~baseline_r0          mad=0.561 pct=1.284 big=0.616 bb=[47,19,246,328]
+  basejs_r0~baseline_r1          mad=0.065 pct=0.133 big=0 bb=[28,381,362,724]
+  basejs_r0~basejs_r1            mad=0.562 pct=1.284 big=0.616 bb=[28,19,361,356]
+  basecss_r0~baseline_r0         mad=0.236 pct=0.933 big=0.084 bb=[30,19,359,360]
+  basecss_r0~basejs_r0           mad=0.368 pct=1.095 big=0.431 bb=[27,19,362,361]
+  basecss_r0~baseline_r1         mad=0.433 pct=1.228 big=0.431 bb=[27,19,362,724]
+  basecss_r0~basejs_r1           mad=0.235 pct=0.932 big=0.084 bb=[32,19,357,360]
+  basecss_r0~basecss_r1          mad=0.239 pct=0.661 big=0.037 bb=[30,23,351,361]
+  base_r1~baseline_r0            mad=0.208 pct=0.502 big=0 bb=[35,52,354,361]
+  base_r1~basejs_r0              mad=0.596 pct=1.187 big=0.585 bb=[28,19,362,361]
+  base_r1~basecss_r0             mad=0.239 pct=0.661 big=0.037 bb=[30,23,351,361]
+  base_r1~baseline_r1            mad=0.66 pct=1.32 big=0.585 bb=[28,19,362,724]
+  base_r1~basejs_r1              mad=0.208 pct=0.502 big=0 bb=[35,52,354,361]
+  base_r1~basecss_r1             mad=0 pct=0 big=0 bb=null
+  basejs_r1~baseline_r0          mad=0.001 pct=0 big=0 bb=null
+  basejs_r1~baseline_r1          mad=0.627 pct=1.417 big=0.616 bb=[28,19,362,724]
+  basecss_r1~baseline_r0         mad=0.208 pct=0.502 big=0 bb=[35,52,354,361]
+  basecss_r1~basejs_r0           mad=0.596 pct=1.187 big=0.585 bb=[28,19,362,361]
+  basecss_r1~baseline_r1         mad=0.66 pct=1.32 big=0.585 bb=[28,19,362,724]
+  basecss_r1~basejs_r1           mad=0.208 pct=0.502 big=0 bb=[35,52,354,361]
+  baseline_r0  cards: -416.707|0px -4.97255px|priceFloatA:paused:5000  -17.099|0px -0.89553px|priceFloatB:paused:5000  377.349|0px -1.97939px|priceFloatC:paused:5000  789.740|0px -3.11973px|priceFloatD:paused:5000
+  base_r0      cards: -416.707|0px -4.97255px|priceFloatA:paused:5000  -17.099|0px -0.89553px|priceFloatB:paused:5000  377.349|0px -1.97939px|priceFloatC:paused:5000  789.740|0px -3.11973px|priceFloatD:paused:5000
+  basejs_r0    cards: -416.707|0px -4.97255px|priceFloatA:paused:5000  -17.099|0px -0.89553px|priceFloatB:paused:5000  377.349|0px -1.97939px|priceFloatC:paused:5000  789.740|0px -3.11973px|priceFloatD:paused:5000
+  basecss_r0   cards: -416.707|0px -4.97255px|priceFloatA:paused:5000  -17.099|0px -0.89553px|priceFloatB:paused:5000  377.349|0px -1.97939px|priceFloatC:paused:5000  789.740|0px -3.11973px|priceFloatD:paused:5000
+  baseline_r1  cards: -416.707|0px -4.97255px|priceFloatA:paused:5000  -17.099|0px -0.89553px|priceFloatB:paused:5000  377.349|0px -1.97939px|priceFloatC:paused:5000  789.740|0px -3.11973px|priceFloatD:paused:5000
+  base_r1      cards: -416.707|0px -4.97255px|priceFloatA:paused:5000  -17.099|0px -0.89553px|priceFloatB:paused:5000  377.349|0px -1.97939px|priceFloatC:paused:5000  789.740|0px -3.11973px|priceFloatD:paused:5000
+  basejs_r1    cards: -416.707|0px -4.97255px|priceFloatA:paused:5000  -17.099|0px -0.89553px|priceFloatB:paused:5000  377.349|0px -1.97939px|priceFloatC:paused:5000  789.740|0px -3.11973px|priceFloatD:paused:5000
+  basecss_r1   cards: -416.707|0px -4.97255px|priceFloatA:paused:5000  -17.099|0px -0.89553px|priceFloatB:paused:5000  377.349|0px -1.97939px|priceFloatC:paused:5000  789.740|0px -3.11973px|priceFloatD:paused:5000
+  baseline_r0  leave: about:1.000/1.000@-3983.81 process:1.000/1.000@-3216.20 trust:1.000/1.000@-1771.17 pricing:0.000/0.000@-613.67 contact:0.000/0.000@1218.39
+  base_r0      leave: about:1.000/1@-3983.81 process:1.000/1@-3216.20 trust:1.000/1@-1771.17 pricing:/0@-613.67 contact:/0@1218.39
+  basejs_r0    leave: about:1.000/1.000@-3983.81 process:1.000/1.000@-3216.20 trust:1.000/1.000@-1771.17 pricing:/0@-613.67 contact:/0@1218.39
+  basecss_r0   leave: about:1.000/1@-3983.81 process:1.000/1@-3216.20 trust:1.000/1@-1771.17 pricing:0.000/0@-613.67 contact:0.000/0@1218.39
+  baseline_r1  leave: about:1.000/1.000@-3983.81 process:1.000/1.000@-3216.20 trust:1.000/1.000@-1771.17 pricing:0.000/0.000@-613.67 contact:0.000/0.000@1218.39
+  base_r1      leave: about:1.000/1@-3983.81 process:1.000/1@-3216.20 trust:1.000/1@-1771.17 pricing:/0@-613.67 contact:/0@1218.39
+  basejs_r1    leave: about:1.000/1.000@-3983.81 process:1.000/1.000@-3216.20 trust:1.000/1.000@-1771.17 pricing:/0@-613.67 contact:/0@1218.39
+  basecss_r1   leave: about:1.000/1@-3983.81 process:1.000/1@-3216.20 trust:1.000/1@-1771.17 pricing:0.000/0@-613.67 contact:0.000/0@1218.39

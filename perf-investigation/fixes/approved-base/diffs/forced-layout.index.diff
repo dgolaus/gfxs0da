@@ -1,0 +1,47 @@
+--- index.html	2026-11-01 16:57:44.089291768 +0000
++++ perf-investigation/fixes/forced-layout/index.html	2026-11-01 16:57:44.098753496 +0000
+@@ -515,7 +515,7 @@
+       </div>
+     </section>
+ 
+-    <section class="about" id="about">
++    <section class="about scroll-fade" id="about">
+       <div class="container about-grid">
+         <div class="about-head reveal">
+           <p class="eyebrow"><span class="dash"></span>About</p>
+@@ -541,7 +541,7 @@
+       </div>
+     </section>
+ 
+-    <section class="process" id="process">
++    <section class="process scroll-fade" id="process">
+       <div class="container process-grid">
+         <div class="process-text reveal">
+           <p class="eyebrow"><span class="dash"></span>How it works</p>
+@@ -621,7 +621,7 @@
+       </div>
+     </section>
+ 
+-    <section class="trust" id="trust">
++    <section class="trust scroll-fade" id="trust">
+       <div class="container">
+         <header class="section-head reveal">
+           <p class="eyebrow"><span class="dash"></span>Numbers &amp; Feedback</p>
+@@ -954,7 +954,7 @@
+       </div>
+     </section>
+ 
+-    <section class="pricing" id="pricing">
++    <section class="pricing scroll-fade" id="pricing">
+       <div class="container">
+         <header class="section-head reveal">
+           <p class="eyebrow"><span class="dash"></span>Pricing</p>
+@@ -1044,7 +1044,7 @@
+ 
+   </main>
+ 
+-  <div class="cfooter-clip" id="contact">
++  <div class="cfooter-clip scroll-fade" id="contact">
+   <footer class="cfooter">
+     <div class="cfooter-inner">
+       <div class="cfooter-aurora" aria-hidden="true"></div>

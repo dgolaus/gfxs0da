@@ -1,0 +1,27 @@
+--- script.js	2026-11-01 16:57:44.157291772 +0000
++++ perf-investigation/fixes/style-invalidation/script.scriptinit.js	2026-11-01 16:57:44.130083415 +0000
+@@ -1093,6 +1093,11 @@
+   const root = document.documentElement;
+   const nav  = document.getElementById('nav');
+   const END  = 360;
++  // As 3 variáveis só são lidas dentro do .nav (barra, pill, brand, CTA).
++  // Escritas no <html>, cada mudança recalculava o estilo da página inteira
++  // (~1000 elementos, ~100ms na CPU fraca, já na inicialização); no #nav,
++  // só a subárvore da nav. O :root do styles.css segue com os padrões.
++  const varHost = nav || root;
+ 
+   let ticking = false;
+   const clamp = (v) => Math.max(0, Math.min(1, v));
+@@ -1104,9 +1109,9 @@
+     const bar  = clamp(1 - p * 1.5);
+     const pill = clamp((p - 0.30) / 0.50);
+ 
+-    root.style.setProperty('--nav-pill', p.toFixed(3));
+-    root.style.setProperty('--nav-bar-vis', bar.toFixed(3));
+-    root.style.setProperty('--nav-pill-vis', pill.toFixed(3));
++    varHost.style.setProperty('--nav-pill', p.toFixed(3));
++    varHost.style.setProperty('--nav-bar-vis', bar.toFixed(3));
++    varHost.style.setProperty('--nav-pill-vis', pill.toFixed(3));
+     if (nav) nav.classList.toggle('is-pill', p > 0.85);
+ 
+     ticking = false;

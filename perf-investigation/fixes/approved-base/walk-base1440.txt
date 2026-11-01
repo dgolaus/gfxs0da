@@ -1,0 +1,14 @@
+== base1440 1440x900 /  errs: {"A":[],"B":[],"base":[]}
+y=0 noise=0/0 | base: A 0/0 B 0/0 bb=null
+y=450 noise=0/0 | base: A 0/0 B 0/0 bb=null
+y=900 noise=0/0 | base: A 0/0 B 0/0 bb=null
+y=1350 noise=0/0 | base: A 0/0 B 0/0 bb=null
+y=1800 noise=0/0 | base: A 0/0 B 0/0 bb=null
+y=2250 noise=0.004/0 | base: A 0.003/0 B 0.008/0 bb=null
+y=2700 noise=0.32/0.875 | base: A 1.609/3.88 B 1.383/4.034 bb=[742,315,1125,505] <<<
+y=3150 noise=0.053/0.078 | base: A 0.182/0.408 B 0.193/0.413 bb=[213,506,1155,588] <<<
+y=3600 noise=0/0 | base: A 0/0 B 0/0 bb=null
+y=4050 noise=0/0 | base: A 0/0 B 0/0 bb=null
+y=4500 noise=0/0 | base: A 0/0 B 0/0 bb=null
+y=4950 noise=0/0 | base: A 0/0 B 0/0 bb=null
+y=5364 noise=0/0 | base: A 0/0 B 0/0 bb=null

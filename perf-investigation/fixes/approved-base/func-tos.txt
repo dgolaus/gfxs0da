@@ -1,0 +1,32 @@
+r0 baseline  sy=0 nav=null leave=0 active=Pricing & Payment|Terms
+r0 baseline  sy=100 nav=null leave=0 active=Pricing & Payment|Terms
+r0 baseline  sy=200 nav=null leave=0 active=Pricing & Payment|Terms
+r0 baseline  sy=360 nav=null leave=0 active=Pricing & Payment|Terms
+r0 baseline  sy=1200 nav=null leave=0.786 active=Rescales, Variants &|Terms
+r0 baseline  sy=2400 nav=null leave=1 active=Delivery & Timeline|Terms
+r0 baseline  sy=5187 nav=null leave=1 active=General Terms|Terms
+   errs=[]
+r0 base      sy=0 nav=null leave=0 active=Pricing & Payment|Terms
+r0 base      sy=100 nav=null leave=0 active=Pricing & Payment|Terms
+r0 base      sy=200 nav=null leave=0 active=Pricing & Payment|Terms
+r0 base      sy=360 nav=null leave=0 active=Pricing & Payment|Terms
+r0 base      sy=1200 nav=null leave=0 active=Pricing & Payment|Terms
+r0 base      sy=2400 nav=null leave=1 active=Delivery & Timeline|Terms
+r0 base      sy=5187 nav=null leave=1 active=General Terms|Terms
+   errs=[]
+r1 baseline  sy=0 nav=null leave=0 active=Pricing & Payment|Terms
+r1 baseline  sy=100 nav=null leave=0 active=Pricing & Payment|Terms
+r1 baseline  sy=200 nav=null leave=0 active=Pricing & Payment|Terms
+r1 baseline  sy=360 nav=null leave=0 active=Pricing & Payment|Terms
+r1 baseline  sy=1200 nav=null leave=0.786 active=Rescales, Variants &|Terms
+r1 baseline  sy=2400 nav=null leave=1 active=Delivery & Timeline|Terms
+r1 baseline  sy=5187 nav=null leave=1 active=General Terms|Terms
+   errs=[]
+r1 base      sy=0 nav=null leave=0 active=Pricing & Payment|Terms
+r1 base      sy=100 nav=null leave=0 active=Pricing & Payment|Terms
+r1 base      sy=200 nav=null leave=0 active=Pricing & Payment|Terms
+r1 base      sy=360 nav=null leave=0 active=Pricing & Payment|Terms
+r1 base      sy=1200 nav=null leave=0.786 active=Rescales, Variants &|Terms
+r1 base      sy=2400 nav=null leave=1 active=Delivery & Timeline|Terms
+r1 base      sy=5187 nav=null leave=1 active=General Terms|Terms
+   errs=[]

@@ -1,0 +1,7 @@
+r0 baseline  y0: 171/153 84.35MP | y2400: 172/154 84.41MP | y3400: 172/154 84.49MP | y4550: 176/158 84.46MP | y99999: 145/139 65.03MP
+r0 base      y0: 172/154 84.36MP | y2400: 170/152 84.34MP | y3400: 171/153 84.45MP | y4550: 176/158 84.42MP | y99999: 145/139 65.03MP
+r1 baseline  y0: 171/153 84.35MP | y2400: 170/152 84.34MP | y3400: 173/155 84.49MP | y4550: 176/158 84.38MP | y99999: 145/139 64.99MP
+r1 base      y0: 171/153 84.35MP | y2400: 170/152 84.34MP | y3400: 172/154 84.48MP | y4550: 176/158 84.38MP | y99999: 145/139 65.03MP
+base r0 sigEqual: 0=false 2400=false 3400=false 4550=false 99999=false
+baseline r1 sigEqual: 0=true 2400=false 3400=false 4550=false 99999=false
+base r1 sigEqual: 0=false 2400=false 3400=false 4550=false 99999=false

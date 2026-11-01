@@ -1,0 +1,56 @@
+{
+  "__noise": {
+    "150": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "500": {
+      "meanAbsDiff": 0.412,
+      "pctChanged": 0.772,
+      "pctBigChange": 0.634
+    },
+    "900": {
+      "meanAbsDiff": 0.574,
+      "pctChanged": 0.841,
+      "pctBigChange": 0.751
+    },
+    "1400": {
+      "meanAbsDiff": 0.648,
+      "pctChanged": 0.788,
+      "pctBigChange": 0.755
+    },
+    "5000": {
+      "meanAbsDiff": 0.61,
+      "pctChanged": 0.784,
+      "pctBigChange": 0.751
+    }
+  },
+  "approved-base": {
+    "150": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "500": {
+      "meanAbsDiff": 0.412,
+      "pctChanged": 0.772,
+      "pctBigChange": 0.634
+    },
+    "900": {
+      "meanAbsDiff": 0.107,
+      "pctChanged": 0.183,
+      "pctBigChange": 0.105
+    },
+    "1400": {
+      "meanAbsDiff": 0.113,
+      "pctChanged": 0.083,
+      "pctBigChange": 0.074
+    },
+    "5000": {
+      "meanAbsDiff": 0.611,
+      "pctChanged": 0.784,
+      "pctBigChange": 0.751
+    }
+  }
+}

@@ -1,0 +1,64 @@
+r0 baseline  frames=- scrollEv=- sy=0 nav=null leave=0 active=Pricing & Payment|Terms
+r0 baseline  frames=27 scrollEv=1 sy=100 nav=null leave=0 active=Pricing & Payment|Terms
+r0 baseline  frames=24 scrollEv=1 sy=200 nav=null leave=0 active=Pricing & Payment|Terms
+r0 baseline  frames=25 scrollEv=1 sy=360 nav=null leave=0 active=Pricing & Payment|Terms
+r0 baseline  frames=27 scrollEv=1 sy=1200 nav=null leave=0.773 active=Rescales, Variants &|Terms
+r0 baseline  frames=35 scrollEv=1 sy=2400 nav=null leave=1 active=Delivery & Timeline|Terms
+r0 baseline  frames=28 scrollEv=1 sy=5187 nav=null leave=1 active=General Terms|Terms
+   errs=[]
+r0 base      frames=- scrollEv=- sy=0 nav=null leave=0 active=Pricing & Payment|Terms
+r0 base      frames=0 scrollEv=0 sy=100 nav=null leave=0 active=Pricing & Payment|Terms
+r0 base      frames=1 scrollEv=1 sy=200 nav=null leave=0 active=Pricing & Payment|Terms
+r0 base      frames=1 scrollEv=1 sy=360 nav=null leave=0 active=Pricing & Payment|Terms
+r0 base      frames=0 scrollEv=0 sy=1200 nav=null leave=0 active=Pricing & Payment|Terms
+r0 base      frames=1 scrollEv=1 sy=2400 nav=null leave=1 active=Delivery & Timeline|Terms
+r0 base      frames=1 scrollEv=1 sy=5187 nav=null leave=1 active=General Terms|Terms
+   errs=[]
+r1 baseline  frames=- scrollEv=- sy=0 nav=null leave=0 active=Pricing & Payment|Terms
+r1 baseline  frames=25 scrollEv=1 sy=100 nav=null leave=0 active=Pricing & Payment|Terms
+r1 baseline  frames=24 scrollEv=1 sy=200 nav=null leave=0 active=Pricing & Payment|Terms
+r1 baseline  frames=30 scrollEv=1 sy=360 nav=null leave=0 active=Pricing & Payment|Terms
+r1 baseline  frames=28 scrollEv=1 sy=1200 nav=null leave=0.786 active=Rescales, Variants &|Terms
+r1 baseline  frames=30 scrollEv=1 sy=2400 nav=null leave=1 active=Delivery & Timeline|Terms
+r1 baseline  frames=31 scrollEv=1 sy=5187 nav=null leave=1 active=General Terms|Terms
+   errs=[]
+r1 base      frames=- scrollEv=- sy=0 nav=null leave=0 active=Pricing & Payment|Terms
+r1 base      frames=25 scrollEv=1 sy=100 nav=null leave=0 active=Pricing & Payment|Terms
+r1 base      frames=24 scrollEv=1 sy=200 nav=null leave=0 active=Pricing & Payment|Terms
+r1 base      frames=28 scrollEv=1 sy=360 nav=null leave=0 active=Pricing & Payment|Terms
+r1 base      frames=25 scrollEv=1 sy=1200 nav=null leave=0.786 active=Rescales, Variants &|Terms
+r1 base      frames=32 scrollEv=1 sy=2400 nav=null leave=1 active=Delivery & Timeline|Terms
+r1 base      frames=30 scrollEv=1 sy=5187 nav=null leave=1 active=General Terms|Terms
+   errs=[]
+r2 baseline  frames=- scrollEv=- sy=0 nav=null leave=0 active=Pricing & Payment|Terms
+r2 baseline  frames=0 scrollEv=0 sy=100 nav=null leave=0 active=Pricing & Payment|Terms
+r2 baseline  frames=1 scrollEv=1 sy=200 nav=null leave=0 active=Pricing & Payment|Terms
+r2 baseline  frames=1 scrollEv=1 sy=360 nav=null leave=0 active=Pricing & Payment|Terms
+r2 baseline  frames=0 scrollEv=0 sy=1200 nav=null leave=0 active=Pricing & Payment|Terms
+r2 baseline  frames=1 scrollEv=1 sy=2400 nav=null leave=1 active=Delivery & Timeline|Terms
+r2 baseline  frames=1 scrollEv=1 sy=5187 nav=null leave=1 active=General Terms|Terms
+   errs=[]
+r2 base      frames=- scrollEv=- sy=0 nav=null leave=0 active=Pricing & Payment|Terms
+r2 base      frames=26 scrollEv=1 sy=100 nav=null leave=0 active=Pricing & Payment|Terms
+r2 base      frames=24 scrollEv=1 sy=200 nav=null leave=0 active=Pricing & Payment|Terms
+r2 base      frames=29 scrollEv=1 sy=360 nav=null leave=0 active=Pricing & Payment|Terms
+r2 base      frames=30 scrollEv=1 sy=1200 nav=null leave=0.792 active=Rescales, Variants &|Terms
+r2 base      frames=36 scrollEv=1 sy=2400 nav=null leave=1 active=Delivery & Timeline|Terms
+r2 base      frames=37 scrollEv=1 sy=5187 nav=null leave=1 active=General Terms|Terms
+   errs=[]
+r3 baseline  frames=- scrollEv=- sy=0 nav=null leave=0 active=Pricing & Payment|Terms
+r3 baseline  frames=27 scrollEv=1 sy=100 nav=null leave=0 active=Pricing & Payment|Terms
+r3 baseline  frames=25 scrollEv=1 sy=200 nav=null leave=0 active=Pricing & Payment|Terms
+r3 baseline  frames=29 scrollEv=1 sy=360 nav=null leave=0 active=Pricing & Payment|Terms
+r3 baseline  frames=32 scrollEv=1 sy=1200 nav=null leave=0.773 active=Rescales, Variants &|Terms
+r3 baseline  frames=34 scrollEv=1 sy=2400 nav=null leave=1 active=Delivery & Timeline|Terms
+r3 baseline  frames=32 scrollEv=1 sy=5187 nav=null leave=1 active=General Terms|Terms
+   errs=[]
+r3 base      frames=- scrollEv=- sy=0 nav=null leave=0 active=Pricing & Payment|Terms
+r3 base      frames=28 scrollEv=1 sy=100 nav=null leave=0 active=Pricing & Payment|Terms
+r3 base      frames=24 scrollEv=1 sy=200 nav=null leave=0 active=Pricing & Payment|Terms
+r3 base      frames=27 scrollEv=1 sy=360 nav=null leave=0 active=Pricing & Payment|Terms
+r3 base      frames=30 scrollEv=1 sy=1200 nav=null leave=0.786 active=Rescales, Variants &|Terms
+r3 base      frames=37 scrollEv=1 sy=2400 nav=null leave=1 active=Delivery & Timeline|Terms
+r3 base      frames=30 scrollEv=1 sy=5187 nav=null leave=1 active=General Terms|Terms
+   errs=[]

@@ -1,0 +1,12 @@
+reduced=true r0 baseline  stale=0/60  errs=0
+reduced=true r0 base      stale=0/60  errs=0
+reduced=true r1 baseline  stale=0/60  errs=0
+reduced=true r1 base      stale=0/60  errs=0
+reduced=true r2 baseline  stale=18/60 416:0/1 389:0.177/1 208:0.177/0.643 335:0.177/0.99 260:0.933/0.846 361:0.933/1 167:0.933/0.43 63:1/0.061 46:1/0.033 151:1/0.352 246:1/0.799 325:0.955/0.981 222:0.955/0.706 382:0.955/1 414:0.237/1 17:0.237/0.004 418:0.237/1 395:0.128/1 errs=0
+reduced=true r2 base      stale=0/60  errs=0
+reduced=false r0 baseline  stale=0/60  errs=0
+reduced=false r0 base      stale=0/60  errs=0
+reduced=false r1 baseline  stale=0/60  errs=0
+reduced=false r1 base      stale=0/60  errs=0
+reduced=false r2 baseline  stale=0/60  errs=0
+reduced=false r2 base      stale=0/60  errs=0

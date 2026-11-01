@@ -1,0 +1,618 @@
+[
+ {
+  "r": 0,
+  "v": "baseline",
+  "out": [
+   {
+    "sy": 0,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 95,
+    "sc": 0,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 100,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 122,
+    "sc": 1,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 200,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 146,
+    "sc": 2,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 360,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 171,
+    "sc": 3,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 1200,
+    "nav": null,
+    "leave": [
+     0.773
+    ],
+    "fc": 198,
+    "sc": 4,
+    "active": "Rescales, Variants &|Terms"
+   },
+   {
+    "sy": 2400,
+    "nav": null,
+    "leave": [
+     1
+    ],
+    "fc": 233,
+    "sc": 5,
+    "active": "Delivery & Timeline|Terms"
+   },
+   {
+    "sy": 5187,
+    "nav": null,
+    "leave": [
+     1
+    ],
+    "fc": 261,
+    "sc": 6,
+    "active": "General Terms|Terms"
+   }
+  ],
+  "errs": []
+ },
+ {
+  "r": 0,
+  "v": "base",
+  "out": [
+   {
+    "sy": 0,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 10,
+    "sc": 0,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 100,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 10,
+    "sc": 0,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 200,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 11,
+    "sc": 1,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 360,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 12,
+    "sc": 2,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 1200,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 12,
+    "sc": 2,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 2400,
+    "nav": null,
+    "leave": [
+     1
+    ],
+    "fc": 13,
+    "sc": 3,
+    "active": "Delivery & Timeline|Terms"
+   },
+   {
+    "sy": 5187,
+    "nav": null,
+    "leave": [
+     1
+    ],
+    "fc": 14,
+    "sc": 4,
+    "active": "General Terms|Terms"
+   }
+  ],
+  "errs": []
+ },
+ {
+  "r": 1,
+  "v": "baseline",
+  "out": [
+   {
+    "sy": 0,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 87,
+    "sc": 0,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 100,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 112,
+    "sc": 1,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 200,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 136,
+    "sc": 2,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 360,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 166,
+    "sc": 3,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 1200,
+    "nav": null,
+    "leave": [
+     0.786
+    ],
+    "fc": 194,
+    "sc": 4,
+    "active": "Rescales, Variants &|Terms"
+   },
+   {
+    "sy": 2400,
+    "nav": null,
+    "leave": [
+     1
+    ],
+    "fc": 224,
+    "sc": 5,
+    "active": "Delivery & Timeline|Terms"
+   },
+   {
+    "sy": 5187,
+    "nav": null,
+    "leave": [
+     1
+    ],
+    "fc": 255,
+    "sc": 6,
+    "active": "General Terms|Terms"
+   }
+  ],
+  "errs": []
+ },
+ {
+  "r": 1,
+  "v": "base",
+  "out": [
+   {
+    "sy": 0,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 82,
+    "sc": 0,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 100,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 107,
+    "sc": 1,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 200,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 131,
+    "sc": 2,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 360,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 159,
+    "sc": 3,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 1200,
+    "nav": null,
+    "leave": [
+     0.786
+    ],
+    "fc": 184,
+    "sc": 4,
+    "active": "Rescales, Variants &|Terms"
+   },
+   {
+    "sy": 2400,
+    "nav": null,
+    "leave": [
+     1
+    ],
+    "fc": 216,
+    "sc": 5,
+    "active": "Delivery & Timeline|Terms"
+   },
+   {
+    "sy": 5187,
+    "nav": null,
+    "leave": [
+     1
+    ],
+    "fc": 246,
+    "sc": 6,
+    "active": "General Terms|Terms"
+   }
+  ],
+  "errs": []
+ },
+ {
+  "r": 2,
+  "v": "baseline",
+  "out": [
+   {
+    "sy": 0,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 8,
+    "sc": 0,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 100,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 8,
+    "sc": 0,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 200,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 9,
+    "sc": 1,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 360,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 10,
+    "sc": 2,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 1200,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 10,
+    "sc": 2,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 2400,
+    "nav": null,
+    "leave": [
+     1
+    ],
+    "fc": 11,
+    "sc": 3,
+    "active": "Delivery & Timeline|Terms"
+   },
+   {
+    "sy": 5187,
+    "nav": null,
+    "leave": [
+     1
+    ],
+    "fc": 12,
+    "sc": 4,
+    "active": "General Terms|Terms"
+   }
+  ],
+  "errs": []
+ },
+ {
+  "r": 2,
+  "v": "base",
+  "out": [
+   {
+    "sy": 0,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 86,
+    "sc": 0,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 100,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 112,
+    "sc": 1,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 200,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 136,
+    "sc": 2,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 360,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 165,
+    "sc": 3,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 1200,
+    "nav": null,
+    "leave": [
+     0.792
+    ],
+    "fc": 195,
+    "sc": 4,
+    "active": "Rescales, Variants &|Terms"
+   },
+   {
+    "sy": 2400,
+    "nav": null,
+    "leave": [
+     1
+    ],
+    "fc": 231,
+    "sc": 5,
+    "active": "Delivery & Timeline|Terms"
+   },
+   {
+    "sy": 5187,
+    "nav": null,
+    "leave": [
+     1
+    ],
+    "fc": 268,
+    "sc": 6,
+    "active": "General Terms|Terms"
+   }
+  ],
+  "errs": []
+ },
+ {
+  "r": 3,
+  "v": "baseline",
+  "out": [
+   {
+    "sy": 0,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 97,
+    "sc": 0,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 100,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 124,
+    "sc": 1,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 200,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 149,
+    "sc": 2,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 360,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 178,
+    "sc": 3,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 1200,
+    "nav": null,
+    "leave": [
+     0.773
+    ],
+    "fc": 210,
+    "sc": 4,
+    "active": "Rescales, Variants &|Terms"
+   },
+   {
+    "sy": 2400,
+    "nav": null,
+    "leave": [
+     1
+    ],
+    "fc": 244,
+    "sc": 5,
+    "active": "Delivery & Timeline|Terms"
+   },
+   {
+    "sy": 5187,
+    "nav": null,
+    "leave": [
+     1
+    ],
+    "fc": 276,
+    "sc": 6,
+    "active": "General Terms|Terms"
+   }
+  ],
+  "errs": []
+ },
+ {
+  "r": 3,
+  "v": "base",
+  "out": [
+   {
+    "sy": 0,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 85,
+    "sc": 0,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 100,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 113,
+    "sc": 1,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 200,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 137,
+    "sc": 2,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 360,
+    "nav": null,
+    "leave": [
+     0
+    ],
+    "fc": 164,
+    "sc": 3,
+    "active": "Pricing & Payment|Terms"
+   },
+   {
+    "sy": 1200,
+    "nav": null,
+    "leave": [
+     0.786
+    ],
+    "fc": 194,
+    "sc": 4,
+    "active": "Rescales, Variants &|Terms"
+   },
+   {
+    "sy": 2400,
+    "nav": null,
+    "leave": [
+     1
+    ],
+    "fc": 231,
+    "sc": 5,
+    "active": "Delivery & Timeline|Terms"
+   },
+   {
+    "sy": 5187,
+    "nav": null,
+    "leave": [
+     1
+    ],
+    "fc": 261,
+    "sc": 6,
+    "active": "General Terms|Terms"
+   }
+  ],
+  "errs": []
+ }
+]

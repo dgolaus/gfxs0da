@@ -1,0 +1,173 @@
+--- script.js	2026-11-01 16:57:44.157291772 +0000
++++ perf-investigation/fixes/forced-layout/script.js	2026-11-01 16:57:44.098753496 +0000
+@@ -901,13 +901,26 @@
+   // where the gradient visibly follows the scroll instead of locking to it.
+   const LERP = 0.10;
+   const smoothed = new WeakMap();
++  // Dados fixos de cada elemento, resolvidos uma vez (antes, closest() e
++  // querySelector() rodavam em todo frame).
++  const items = Array.from(els, (el) => ({
++    el,
++    // O texto vive num filho .accent-text (o pai é a janela das orbs)
++    text: el.querySelector(':scope > .accent-text'),
++    isHero: el.classList.contains('accent') && el.closest('.hero-title') !== null,
++  }));
++  const tops = new Array(items.length);
+ 
+   function update() {
+     const vh = window.innerHeight;
+     if (vh === 0) return;
+-    for (const el of els) {
+-      const rect = el.getBoundingClientRect();
+-      const elTopVh = (rect.top / vh) * 100;
++    // Todas as leituras primeiro, depois as escritas. Intercalar (escreve o
++    // fundo de um, lê o rect do próximo) forçava um recálculo de estilo extra
++    // por frame. background-image não mexe em layout: os valores são iguais.
++    for (let i = 0; i < items.length; i++) tops[i] = items[i].el.getBoundingClientRect().top;
++    for (let i = 0; i < items.length; i++) {
++      const { el, text, isHero } = items[i];
++      const elTopVh = (tops[i] / vh) * 100;
+       const targetY = 50 - elTopVh;
+ 
+       // Init on first frame at the target (no startup snap), then lerp
+@@ -918,8 +931,6 @@
+ 
+       // "Yours" is huge — needs a tighter salmon zone so letters don't look yellow.
+       // Other accents keep wider scale for smoother fade.
+-      const isHero = el.classList.contains('accent') &&
+-                     el.closest('.hero-title') !== null;
+       const tight = isHero;
+       const grad =
+         `radial-gradient(circle at 50% ${nextY.toFixed(2)}vh,` +
+@@ -928,9 +939,7 @@
+         ` #6B0808 ${tight ? 50 : 80}vh,` +
+         ` #1F0202 ${tight ? 120 : 160}vh)`;
+       el.style.backgroundImage = grad;
+-      // O texto vive num filho .accent-text (o pai é a janela das orbs)
+-      const t = el.querySelector(':scope > .accent-text');
+-      if (t) t.style.backgroundImage = grad;
++      if (text) text.style.backgroundImage = grad;
+     }
+   }
+ 
+@@ -966,17 +975,26 @@
+ 
+   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+ 
++  // Último valor escrito por seção. Começa em '0.000' = o --leave: 0 que
++  // o CSS (.scroll-fade) já aplica, então no topo da página o init não
++  // escreve nada. Antes, cada escrita invalidava a subárvore inteira da
++  // seção (custom property herdada) e a leitura da seção seguinte forçava
++  // o recálculo: 5 recálculos (~640 elementos) no meio do script de init.
++  const lastLeave = sections.map(() => '0.000');
++  const bottoms = new Array(sections.length);
+   function update() {
+     const vh = window.innerHeight;
+     // Fade window: section's bottom traveling from 30% of vh → 0 maps to leave 0→1
+     const fadeStart = vh * 0.30;
+-    for (const s of sections) {
+-      const rect = s.getBoundingClientRect();
++    // Leituras em lote, depois escritas (nunca lê depois de escrever).
++    for (let i = 0; i < sections.length; i++) bottoms[i] = sections[i].getBoundingClientRect().bottom;
++    for (let i = 0; i < sections.length; i++) {
+       let leave = 0;
+-      if (rect.bottom < fadeStart) {
+-        leave = Math.min(1, Math.max(0, (fadeStart - rect.bottom) / fadeStart));
++      if (bottoms[i] < fadeStart) {
++        leave = Math.min(1, Math.max(0, (fadeStart - bottoms[i]) / fadeStart));
+       }
+-      s.style.setProperty('--leave', leave.toFixed(3));
++      const v = leave.toFixed(3);
++      if (v !== lastLeave[i]) { sections[i].style.setProperty('--leave', v); lastLeave[i] = v; }
+     }
+   }
+   // Idle-gated rAF: run while the page is scrolling, sleep when it's still.
+@@ -1095,6 +1113,12 @@
+   const END  = 360;
+ 
+   let ticking = false;
++  // Último valor escrito de cada variável; começa igual aos defaults do
++  // :root (styles.css: --nav-pill 0, --nav-bar-vis 1, --nav-pill-vis 0).
++  // Escrever custom property no <html> invalida o estilo do documento
++  // inteiro; no init (scroll 0) o valor é o mesmo do CSS, então não escreve.
++  const last = { '--nav-pill': '0.000', '--nav-bar-vis': '1.000', '--nav-pill-vis': '0.000' };
++  const put = (k, v) => { if (last[k] !== v) { root.style.setProperty(k, v); last[k] = v; } };
+   const clamp = (v) => Math.max(0, Math.min(1, v));
+   const easeInOut = (t) =>
+     t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+@@ -1104,9 +1128,9 @@
+     const bar  = clamp(1 - p * 1.5);
+     const pill = clamp((p - 0.30) / 0.50);
+ 
+-    root.style.setProperty('--nav-pill', p.toFixed(3));
+-    root.style.setProperty('--nav-bar-vis', bar.toFixed(3));
+-    root.style.setProperty('--nav-pill-vis', pill.toFixed(3));
++    put('--nav-pill', p.toFixed(3));
++    put('--nav-bar-vis', bar.toFixed(3));
++    put('--nav-pill-vis', pill.toFixed(3));
+     if (nav) nav.classList.toggle('is-pill', p > 0.85);
+ 
+     ticking = false;
+@@ -1227,6 +1251,7 @@
+   if (matchMedia('(prefers-reduced-motion: reduce)').matches) { footer.style.setProperty('--fp', '1'); return; }
+   const main = document.querySelector('main');
+   let raf = null;
++  let lastFp = '0.000';
+   function update() {
+     raf = null;
+     const vh = window.innerHeight;
+@@ -1236,7 +1261,10 @@
+     const start = vh * 0.85;
+     const end = Math.max(0, vh - footer.offsetHeight);
+     const p = Math.min(1, Math.max(0, (start - mb) / Math.max(1, start - end)));
+-    footer.style.setProperty('--fp', p.toFixed(3));
++    // Só escreve quando muda. Começa em '0.000' = o --fp: 0 do CSS, então
++    // no topo da página o init não invalida a subárvore do footer.
++    const v = p.toFixed(3);
++    if (v !== lastFp) { footer.style.setProperty('--fp', v); lastFp = v; }
+   }
+   const kick = () => { if (raf == null) raf = requestAnimationFrame(update); };
+   window.addEventListener('scroll', kick, { passive: true });
+@@ -1255,6 +1283,18 @@
+   if (!cols.length) return;
+   const wrap = document.querySelector('.tcols');
+   const target = (wrap ? wrap.getBoundingClientRect().height : 640) || 640;
++  // Antes: por coluna, escreve → lê → escreve, e cada leitura forçava
++  // recálculo de estilo + layout. Agora: remove os duplicados de todas as
++  // colunas, mede todas de uma vez (um layout só) e só então clona. O laço
++  // de medição continua igual para o caso raro de coluna curta ou oculta,
++  // então o número de repetições é o mesmo. Clones entram por
++  // DocumentFragment: mesma ordem, mesmo DOM final.
++  const cloneInto = (track, nodes) => {
++    const frag = document.createDocumentFragment();
++    nodes.forEach((q) => { const c = q.cloneNode(true); c.setAttribute('aria-hidden', 'true'); frag.appendChild(c); });
++    track.appendChild(frag);
++  };
++  const jobs = [];
+   cols.forEach((col) => {
+     const track = col.querySelector('.tcol-track');
+     if (!track) return;
+@@ -1262,16 +1302,18 @@
+     if (!originals.length) return;
+     // Remove duplicados atuais e reconstrói
+     track.querySelectorAll('.quote[aria-hidden]').forEach((q) => q.remove());
+-    const setHeight = () => track.getBoundingClientRect().height;
+-    let half = setHeight();
++    jobs.push({ track, originals, half: 0 });
++  });
++  jobs.forEach((j) => { j.half = j.track.getBoundingClientRect().height; });
++  jobs.forEach(({ track, originals, half }) => {
+     let reps = 1;
+     while (half < target + 40 && reps < 6) { // garante folga
+-      originals.forEach((q) => { const c = q.cloneNode(true); c.setAttribute('aria-hidden', 'true'); track.appendChild(c); });
++      cloneInto(track, originals);
+       reps++;
+-      half = setHeight();
++      half = track.getBoundingClientRect().height;
+     }
+     // Segunda metade = cópia exata da primeira
+-    Array.from(track.children).forEach((q) => { const c = q.cloneNode(true); c.setAttribute('aria-hidden', 'true'); track.appendChild(c); });
++    cloneInto(track, Array.from(track.children));
+   });
+ })();
+ 

@@ -1,0 +1,12 @@
+1440 r0 baseline  wrapH=640 paused=false cols=8/20h 1542.2px running hash562616202 ; 10/25h 2064.5px running hash-1841011277 ; 8/20h 1763.9px running hash-641975202 moving=true,true,true errs=0
+1440 r0 base      wrapH=640 paused=false cols=8/20h 1542.2px running hash562616202 ; 10/25h 2064.5px running hash-1841011277 ; 8/20h 1763.9px running hash-641975202 moving=true,true,true errs=0
+1440 r1 baseline  wrapH=640 paused=false cols=8/20h 1542.2px running hash562616202 ; 10/25h 2064.5px running hash-1841011277 ; 8/20h 1763.9px running hash-641975202 moving=true,true,true errs=0
+1440 r1 base      wrapH=640 paused=false cols=8/20h 1542.2px running hash562616202 ; 10/25h 2064.5px running hash-1841011277 ; 8/20h 1763.9px running hash-641975202 moving=true,true,true errs=0
+1440 r2 baseline  wrapH=640 paused=false cols=8/20h 1542.2px running hash562616202 ; 10/25h 2064.5px running hash-1841011277 ; 8/20h 1763.9px running hash-641975202 moving=true,true,true errs=0
+1440 r2 base      wrapH=640 paused=false cols=8/20h 1542.2px running hash562616202 ; 10/25h 2064.5px running hash-1841011277 ; 8/20h 1763.9px running hash-641975202 moving=true,true,true errs=0
+390 r0 baseline  wrapH=520 paused=false cols=8/20h 1542.2px running hash562616202 ; 60/175h 0px none hash-363801013 ; 48/140h 0px none hash1975124148 moving=true,hidden,hidden errs=0
+390 r0 base      wrapH=520 paused=false cols=8/20h 1542.2px running hash562616202 ; 60/175h 0px none hash-363801013 ; 48/140h 0px none hash1975124148 moving=true,hidden,hidden errs=0
+390 r1 baseline  wrapH=520 paused=false cols=8/20h 1542.2px running hash562616202 ; 60/175h 0px none hash-363801013 ; 48/140h 0px none hash1975124148 moving=true,hidden,hidden errs=0
+390 r1 base      wrapH=520 paused=false cols=8/20h 1542.2px running hash562616202 ; 60/175h 0px none hash-363801013 ; 48/140h 0px none hash1975124148 moving=true,hidden,hidden errs=0
+390 r2 baseline  wrapH=520 paused=false cols=8/20h 1542.2px running hash562616202 ; 60/175h 0px none hash-363801013 ; 48/140h 0px none hash1975124148 moving=false,hidden,hidden errs=0
+390 r2 base      wrapH=520 paused=false cols=8/20h 1542.2px running hash562616202 ; 60/175h 0px none hash-363801013 ; 48/140h 0px none hash1975124148 moving=false,hidden,hidden errs=0

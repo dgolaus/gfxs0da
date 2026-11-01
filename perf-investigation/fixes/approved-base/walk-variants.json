@@ -1,0 +1,6 @@
+{
+  "baseline": {},
+  "base": { "files": { "/script.js": "fixes/approved-base/script.js", "/styles.css": "fixes/approved-base/styles.css" } },
+  "basejs": { "files": { "/script.js": "fixes/approved-base/script.js" } },
+  "basecss": { "files": { "/styles.css": "fixes/approved-base/styles.css" } }
+}

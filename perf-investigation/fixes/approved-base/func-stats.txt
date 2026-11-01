@@ -1,0 +1,6 @@
+r0 baseline  counterStart=103ms starStart=1093ms final="4.7B+ 200+ ~48h" lit=5 isLit=true errs=0
+r0 base      counterStart=122ms starStart=1059ms final="4.7B+ 200+ ~48h" lit=5 isLit=true errs=0
+r1 baseline  counterStart=248ms starStart=1096ms final="4.7B+ 200+ ~48h" lit=5 isLit=true errs=0
+r1 base      counterStart=102ms starStart=1047ms final="4.7B+ 200+ ~48h" lit=5 isLit=true errs=0
+r2 baseline  counterStart=119ms starStart=1069ms final="4.7B+ 200+ ~48h" lit=5 isLit=true errs=0
+r2 base      counterStart=188ms starStart=1058ms final="4.7B+ 200+ ~48h" lit=5 isLit=true errs=0

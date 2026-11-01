@@ -1,0 +1,14 @@
+--- styles.css	2026-11-01 16:57:44.162198584 +0000
++++ perf-investigation/fixes/approved-base/styles.css	2026-11-01 17:08:28.765330090 +0000
+@@ -259,6 +259,11 @@
+    leaves the top of the viewport, --leave (0 → 1) is set by JS and
+    drives opacity + blur + slight upward translation. The CSS just
+    reads the variable, so the JS stays cheap (no class toggles per frame). */
++/* --leave só é lida pela própria .scroll-fade (opacity/filter/transform).
++   Registrada como NÃO herdada: cada escrita do JS recalcula só a seção,
++   não a subárvore inteira (custom properties comuns herdam para todos
++   os descendentes). Mesmo valor inicial (0) que a regra abaixo. */
++@property --leave { syntax: '<number>'; inherits: false; initial-value: 0; }
+ .scroll-fade {
+   --leave: 0;
+   opacity: calc(1 - var(--leave));
