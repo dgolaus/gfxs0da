@@ -1,0 +1,272 @@
+--- a/script.js
++++ b/script.js
+@@ -900,37 +900,53 @@
+   // Higher LERP = faster catchup (1 = no lag). 0.10 gives a soft delay
+   // where the gradient visibly follows the scroll instead of locking to it.
+   const LERP = 0.10;
+-  const smoothed = new WeakMap();
++
++  // Constantes por elemento, resolvidas uma vez (antes: querySelector +
++  // closest a cada frame). O gradiente só aparece no filho .accent-text:
++  // o pai tem `background-image: none !important` (styles.css, bloco
++  // GRADIENTE ANIMADO), então a escrita inline nele nunca chegava à tela
++  // e só invalidava estilo — removida.
++  // "Yours" is huge — needs a tighter salmon zone so letters don't look yellow.
++  // Other accents keep wider scale for smoother fade.
++  const items = Array.from(els, (el) => ({
++    el,
++    t: el.querySelector(':scope > .accent-text'),
++    tight: el.classList.contains('accent') && el.closest('.hero-title') !== null,
++    y: undefined,   // circleY suavizado (lerp)
++    top: 0,         // rect.top lido neste frame
++    grad: '',       // último gradiente escrito
++  }));
+ 
+   function update() {
+     const vh = window.innerHeight;
+     if (vh === 0) return;
+-    for (const el of els) {
+-      const rect = el.getBoundingClientRect();
+-      const elTopVh = (rect.top / vh) * 100;
++    // 1) Todas as leituras primeiro, 2) depois as escritas. Antes, a leitura
++    // do 2º elemento vinha depois da escrita no 1º e forçava um recálculo de
++    // estilo extra por frame. background-image não muda geometria, então os
++    // rects lidos são os mesmos.
++    for (const it of items) it.top = it.el.getBoundingClientRect().top;
++    for (const it of items) {
++      const elTopVh = (it.top / vh) * 100;
+       const targetY = 50 - elTopVh;
+ 
+       // Init on first frame at the target (no startup snap), then lerp
+-      let prevY = smoothed.get(el);
+-      if (prevY === undefined) prevY = targetY;
++      const prevY = it.y === undefined ? targetY : it.y;
+       const nextY = prevY + (targetY - prevY) * LERP;
+-      smoothed.set(el, nextY);
++      it.y = nextY;
+ 
+-      // "Yours" is huge — needs a tighter salmon zone so letters don't look yellow.
+-      // Other accents keep wider scale for smoother fade.
+-      const isHero = el.classList.contains('accent') &&
+-                     el.closest('.hero-title') !== null;
+-      const tight = isHero;
++      const tight = it.tight;
+       const grad =
+         `radial-gradient(circle at 50% ${nextY.toFixed(2)}vh,` +
+         ` #ff8b6b 0vh,` +
+         ` #ff1727 ${tight ? 12 : 30}vh,` +
+         ` #6B0808 ${tight ? 50 : 80}vh,` +
+         ` #1F0202 ${tight ? 120 : 160}vh)`;
+-      el.style.backgroundImage = grad;
+-      // O texto vive num filho .accent-text (o pai é a janela das orbs)
+-      const t = el.querySelector(':scope > .accent-text');
+-      if (t) t.style.backgroundImage = grad;
++      // Só escreve quando o valor muda (convergido, a string se repete).
++      if (grad !== it.grad) {
++        it.grad = grad;
++        // O texto vive num filho .accent-text (o pai é a janela das orbs)
++        if (it.t) it.t.style.backgroundImage = grad;
++      }
+     }
+   }
+ 
+@@ -966,17 +982,30 @@
+ 
+   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+ 
++  // Último valor escrito por seção. Começa no default do CSS
++  // (.scroll-fade { --leave: 0 }): escrever "0.000" por cima dele não muda
++  // nada na tela, mas cada escrita invalidava o estilo da seção INTEIRA
++  // (custom property herda para todos os descendentes) — no load eram 5
++  // seções, cada uma forçando um recálculo intercalado com a próxima leitura.
++  const lastLeave = sections.map(() => '0.000');
++  const bottoms = new Array(sections.length);
+   function update() {
+     const vh = window.innerHeight;
+     // Fade window: section's bottom traveling from 30% of vh → 0 maps to leave 0→1
+     const fadeStart = vh * 0.30;
+-    for (const s of sections) {
+-      const rect = s.getBoundingClientRect();
++    // Leituras antes das escritas: --leave só mexe em opacity/filter/transform
++    // da própria seção, que não alteram o rect das outras.
++    for (let i = 0; i < sections.length; i++) bottoms[i] = sections[i].getBoundingClientRect().bottom;
++    for (let i = 0; i < sections.length; i++) {
+       let leave = 0;
+-      if (rect.bottom < fadeStart) {
+-        leave = Math.min(1, Math.max(0, (fadeStart - rect.bottom) / fadeStart));
++      if (bottoms[i] < fadeStart) {
++        leave = Math.min(1, Math.max(0, (fadeStart - bottoms[i]) / fadeStart));
++      }
++      const v = leave.toFixed(3);
++      if (v !== lastLeave[i]) {
++        lastLeave[i] = v;
++        sections[i].style.setProperty('--leave', v);
+       }
+-      s.style.setProperty('--leave', leave.toFixed(3));
+     }
+   }
+   // Idle-gated rAF: run while the page is scrolling, sleep when it's still.
+@@ -1093,6 +1122,15 @@
+   const root = document.documentElement;
+   const nav  = document.getElementById('nav');
+   const END  = 360;
++  // As três variáveis só são lidas por regras dentro do .nav (styles.css,
++  // NAV PILL MORPH). Escritas no <html>, cada mudança recalculava o estilo
++  // do documento inteiro (~1000 elementos); no #nav, só o nav. Os defaults
++  // continuam no :root.
++  const host = nav || root;
++  // Últimos valores escritos — começam nos defaults do :root
++  // (--nav-pill: 0; --nav-bar-vis: 1; --nav-pill-vis: 0). No topo da página
++  // o cálculo dá exatamente isso, então nada é escrito no load.
++  let lastP = '0.000', lastBar = '1.000', lastPill = '0.000';
+ 
+   let ticking = false;
+   const clamp = (v) => Math.max(0, Math.min(1, v));
+@@ -1104,9 +1142,10 @@
+     const bar  = clamp(1 - p * 1.5);
+     const pill = clamp((p - 0.30) / 0.50);
+ 
+-    root.style.setProperty('--nav-pill', p.toFixed(3));
+-    root.style.setProperty('--nav-bar-vis', bar.toFixed(3));
+-    root.style.setProperty('--nav-pill-vis', pill.toFixed(3));
++    const vp = p.toFixed(3), vb = bar.toFixed(3), vl = pill.toFixed(3);
++    if (vp !== lastP)    { lastP = vp;    host.style.setProperty('--nav-pill', vp); }
++    if (vb !== lastBar)  { lastBar = vb;  host.style.setProperty('--nav-bar-vis', vb); }
++    if (vl !== lastPill) { lastPill = vl; host.style.setProperty('--nav-pill-vis', vl); }
+     if (nav) nav.classList.toggle('is-pill', p > 0.85);
+ 
+     ticking = false;
+@@ -1227,6 +1266,10 @@
+   if (matchMedia('(prefers-reduced-motion: reduce)').matches) { footer.style.setProperty('--fp', '1'); return; }
+   const main = document.querySelector('main');
+   let raf = null;
++  // null (não '0.000'): o 1º update() sempre escreve --fp inline, como o
++  // original. Assim o footer não depende do default do CSS e continua igual
++  // se o @media (prefers-reduced-motion) começar a valer com a página aberta.
++  let lastFp = null;
+   function update() {
+     raf = null;
+     const vh = window.innerHeight;
+@@ -1236,7 +1279,10 @@
+     const start = vh * 0.85;
+     const end = Math.max(0, vh - footer.offsetHeight);
+     const p = Math.min(1, Math.max(0, (start - mb) / Math.max(1, start - end)));
+-    footer.style.setProperty('--fp', p.toFixed(3));
++    // Só escreve quando muda (cada escrita recalcula o footer inteiro,
++    // porque --fp herda para os filhos).
++    const v = p.toFixed(3);
++    if (v !== lastFp) { lastFp = v; footer.style.setProperty('--fp', v); }
+   }
+   const kick = () => { if (raf == null) raf = requestAnimationFrame(update); };
+   window.addEventListener('scroll', kick, { passive: true });
+@@ -1255,6 +1301,18 @@
+   if (!cols.length) return;
+   const wrap = document.querySelector('.tcols');
+   const target = (wrap ? wrap.getBoundingClientRect().height : 640) || 640;
++  // Antes: por coluna, escreve → lê → escreve, e cada leitura forçava
++  // recálculo de estilo + layout. Agora: remove os duplicados de todas as
++  // colunas, mede todas de uma vez (um layout só) e só então clona. O laço
++  // de medição continua igual para o caso raro de coluna curta ou oculta,
++  // então o número de repetições é o mesmo. Clones entram por
++  // DocumentFragment: mesma ordem, mesmo DOM final.
++  const cloneInto = (track, nodes) => {
++    const frag = document.createDocumentFragment();
++    nodes.forEach((q) => { const c = q.cloneNode(true); c.setAttribute('aria-hidden', 'true'); frag.appendChild(c); });
++    track.appendChild(frag);
++  };
++  const jobs = [];
+   cols.forEach((col) => {
+     const track = col.querySelector('.tcol-track');
+     if (!track) return;
+@@ -1262,16 +1320,18 @@
+     if (!originals.length) return;
+     // Remove duplicados atuais e reconstrói
+     track.querySelectorAll('.quote[aria-hidden]').forEach((q) => q.remove());
+-    const setHeight = () => track.getBoundingClientRect().height;
+-    let half = setHeight();
++    jobs.push({ track, originals, half: 0 });
++  });
++  jobs.forEach((j) => { j.half = j.track.getBoundingClientRect().height; });
++  jobs.forEach(({ track, originals, half }) => {
+     let reps = 1;
+     while (half < target + 40 && reps < 6) { // garante folga
+-      originals.forEach((q) => { const c = q.cloneNode(true); c.setAttribute('aria-hidden', 'true'); track.appendChild(c); });
++      cloneInto(track, originals);
+       reps++;
+-      half = setHeight();
++      half = track.getBoundingClientRect().height;
+     }
+     // Segunda metade = cópia exata da primeira
+-    Array.from(track.children).forEach((q) => { const c = q.cloneNode(true); c.setAttribute('aria-hidden', 'true'); track.appendChild(c); });
++    cloneInto(track, Array.from(track.children));
+   });
+ })();
+ 
+--- a/styles.css
++++ b/styles.css
+@@ -259,6 +259,11 @@
+    leaves the top of the viewport, --leave (0 → 1) is set by JS and
+    drives opacity + blur + slight upward translation. The CSS just
+    reads the variable, so the JS stays cheap (no class toggles per frame). */
++/* --leave só é lida pela própria .scroll-fade (opacity/filter/transform).
++   Registrada como NÃO herdada: cada escrita do JS recalcula só a seção,
++   não a subárvore inteira (custom properties comuns herdam para todos
++   os descendentes). Mesmo valor inicial (0) que a regra abaixo. */
++@property --leave { syntax: '<number>'; inherits: false; initial-value: 0; }
+ .scroll-fade {
+   --leave: 0;
+   opacity: calc(1 - var(--leave));
+@@ -3162,6 +3167,11 @@
+   animation-delay: -5.7s;
+ }
+ 
++/* Paint boundary for the floating price cards: stops Chrome re-layerizing the whole page every frame.
++   Only from 1440px wide: below that the section's bottom padding (7.5vw) is shorter than the cards'
++   shadow tail and the clip would cut it. Do not add overflow-clip-margin (brings the cost back). */
++@media (min-width: 1440px) { #pricing { contain: paint; } }
++
+ /* Settle the whole row when the user interacts with any card */
+ .pricing-grid:has(.price-card:hover) .price-card {
+   animation-play-state: paused;
+@@ -3323,13 +3333,19 @@
+   position: absolute;
+   inset: 0;
+   z-index: 2;
+-  border-radius: inherit;
++  /* 999px = o raio do .btn. Valor explícito em vez de inherit: um pseudo
++     com inherit de propriedade não herdada obriga o navegador a recalcular
++     TODOS os filhos do botão a cada quadro da animação (shinyAngle). */
++  border-radius: 999px;
+   pointer-events: none;
+   background: linear-gradient(105deg,
+     transparent 38%, rgba(255, 255, 255, 0.18) 50%, transparent 62%);
+   translate: -130% 0;
+   opacity: 0;
+ }
++/* :focus-visible (seção Focus styles) troca o raio do host para 4px; o
++   inherit acompanhava isso, então o valor explícito precisa acompanhar também. */
++.btn:focus-visible::after { border-radius: 4px; }
+ .btn:hover::after { animation: btnSheen 0.9s var(--ease-out); }
+ @keyframes btnSheen {
+   0%   { translate: -130% 0; opacity: 0; }
+@@ -3537,13 +3553,19 @@
+   position: absolute;
+   inset: 0;
+   z-index: -1;
+-  border-radius: inherit;
++  /* raio explícito abaixo (o mesmo do card), não inherit: com inherit,
++     cada quadro da flutuação (quoteFloat/priceFloat) recalculava também
++     todos os filhos de cada card. */
+   pointer-events: none;
+   background: radial-gradient(340px circle at var(--mx) var(--my),
+               rgba(177, 18, 18, 0.16), transparent 60%);
+   opacity: 0;
+   transition: opacity 0.35s var(--ease-out);
+ }
++.price-card::after { border-radius: var(--radius-lg); } /* = .price-card */
++.quote::after      { border-radius: var(--radius); }    /* = .quote */
++.price-card:focus-visible::after,
++.quote:focus-visible::after { border-radius: 4px; } /* = :focus-visible */
+ .price-card:hover::after,
+ .quote:hover::after { opacity: 1; }
+ .price-cta:active { opacity: 0.7; transition-duration: 0.08s; }
