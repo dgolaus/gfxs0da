@@ -1,0 +1,356 @@
+{
+  "baseline": {
+    "reps": 7,
+    "entry": {
+      "fps": 8.4,
+      "p95": 450,
+      "worst": 766.7,
+      "jank": 23,
+      "lostMs": 2866
+    },
+    "steady": {
+      "fps": 13,
+      "p95": 133.3,
+      "jank": 54
+    },
+    "longTasks": 9,
+    "longTaskMs": 1555,
+    "layoutCount": 49,
+    "recalcCount": 209,
+    "liteEver": false,
+    "lenisAll": true,
+    "hoverNoneEver": false,
+    "raw": [
+      {
+        "entryFps": 9,
+        "entryLost": 2632,
+        "entryJank": 25
+      },
+      {
+        "entryFps": 7.9,
+        "entryLost": 2866,
+        "entryJank": 24
+      },
+      {
+        "entryFps": 8.4,
+        "entryLost": 2766,
+        "entryJank": 23
+      },
+      {
+        "entryFps": 8.4,
+        "entryLost": 2866,
+        "entryJank": 23
+      },
+      {
+        "entryFps": 9.4,
+        "entryLost": 2782,
+        "entryJank": 22
+      },
+      {
+        "entryFps": 4.8,
+        "entryLost": 2899,
+        "entryJank": 14
+      },
+      {
+        "entryFps": 5.2,
+        "entryLost": 2983,
+        "entryJank": 17
+      }
+    ]
+  },
+  "base": {
+    "reps": 7,
+    "entry": {
+      "fps": 9.9,
+      "p95": 316.6,
+      "worst": 399.9,
+      "jank": 28,
+      "lostMs": 2782
+    },
+    "steady": {
+      "fps": 13.8,
+      "p95": 133.3,
+      "jank": 54
+    },
+    "longTasks": 11,
+    "longTaskMs": 1244,
+    "layoutCount": 49,
+    "recalcCount": 173,
+    "liteEver": false,
+    "lenisAll": true,
+    "hoverNoneEver": false,
+    "raw": [
+      {
+        "entryFps": 10.5,
+        "entryLost": 2682,
+        "entryJank": 27
+      },
+      {
+        "entryFps": 9.9,
+        "entryLost": 2782,
+        "entryJank": 29
+      },
+      {
+        "entryFps": 9.3,
+        "entryLost": 2799,
+        "entryJank": 28
+      },
+      {
+        "entryFps": 10.1,
+        "entryLost": 2782,
+        "entryJank": 29
+      },
+      {
+        "entryFps": 10,
+        "entryLost": 2765,
+        "entryJank": 28
+      },
+      {
+        "entryFps": 7.7,
+        "entryLost": 2832,
+        "entryJank": 21
+      },
+      {
+        "entryFps": 9.8,
+        "entryLost": 2716,
+        "entryJank": 30
+      }
+    ]
+  },
+  "prad": {
+    "reps": 7,
+    "entry": {
+      "fps": 8.8,
+      "p95": 383.3,
+      "worst": 666.6,
+      "jank": 25,
+      "lostMs": 2799
+    },
+    "steady": {
+      "fps": 13.8,
+      "p95": 116.7,
+      "jank": 53
+    },
+    "longTasks": 7,
+    "longTaskMs": 1266,
+    "layoutCount": 51,
+    "recalcCount": 209,
+    "liteEver": false,
+    "lenisAll": true,
+    "hoverNoneEver": false,
+    "raw": [
+      {
+        "entryFps": 8.6,
+        "entryLost": 2799,
+        "entryJank": 24
+      },
+      {
+        "entryFps": 8.3,
+        "entryLost": 2799,
+        "entryJank": 19
+      },
+      {
+        "entryFps": 8.8,
+        "entryLost": 2816,
+        "entryJank": 25
+      },
+      {
+        "entryFps": 9,
+        "entryLost": 2849,
+        "entryJank": 26
+      },
+      {
+        "entryFps": 9.6,
+        "entryLost": 2799,
+        "entryJank": 25
+      },
+      {
+        "entryFps": 9.8,
+        "entryLost": 2732,
+        "entryJank": 25
+      },
+      {
+        "entryFps": 8.5,
+        "entryLost": 2816,
+        "entryJank": 25
+      }
+    ]
+  },
+  "stab1440": {
+    "reps": 7,
+    "entry": {
+      "fps": 9,
+      "p95": 350,
+      "worst": 466.6,
+      "jank": 23,
+      "lostMs": 2816
+    },
+    "steady": {
+      "fps": 14.4,
+      "p95": 116.7,
+      "jank": 54
+    },
+    "longTasks": 12,
+    "longTaskMs": 1337,
+    "layoutCount": 52,
+    "recalcCount": 218,
+    "liteEver": false,
+    "lenisAll": true,
+    "hoverNoneEver": false,
+    "raw": [
+      {
+        "entryFps": 9,
+        "entryLost": 2816,
+        "entryJank": 22
+      },
+      {
+        "entryFps": 8.5,
+        "entryLost": 2816,
+        "entryJank": 22
+      },
+      {
+        "entryFps": 10.7,
+        "entryLost": 2682,
+        "entryJank": 22
+      },
+      {
+        "entryFps": 11.6,
+        "entryLost": 2699,
+        "entryJank": 31
+      },
+      {
+        "entryFps": 9.3,
+        "entryLost": 2816,
+        "entryJank": 29
+      },
+      {
+        "entryFps": 9,
+        "entryLost": 2816,
+        "entryJank": 24
+      },
+      {
+        "entryFps": 7.7,
+        "entryLost": 2849,
+        "entryJank": 23
+      }
+    ]
+  },
+  "cvstay": {
+    "reps": 7,
+    "entry": {
+      "fps": 12.2,
+      "p95": 183.3,
+      "worst": 250,
+      "jank": 28,
+      "lostMs": 2615
+    },
+    "steady": {
+      "fps": 15.1,
+      "p95": 116.7,
+      "jank": 48
+    },
+    "longTasks": 5,
+    "longTaskMs": 549,
+    "layoutCount": 72,
+    "recalcCount": 235,
+    "liteEver": false,
+    "lenisAll": true,
+    "hoverNoneEver": false,
+    "raw": [
+      {
+        "entryFps": 13.7,
+        "entryLost": 2598,
+        "entryJank": 22
+      },
+      {
+        "entryFps": 13,
+        "entryLost": 2598,
+        "entryJank": 32
+      },
+      {
+        "entryFps": 12.2,
+        "entryLost": 2599,
+        "entryJank": 33
+      },
+      {
+        "entryFps": 12,
+        "entryLost": 2665,
+        "entryJank": 27
+      },
+      {
+        "entryFps": 13.1,
+        "entryLost": 2615,
+        "entryJank": 32
+      },
+      {
+        "entryFps": 11,
+        "entryLost": 2682,
+        "entryJank": 28
+      },
+      {
+        "entryFps": 11,
+        "entryLost": 2749,
+        "entryJank": 28
+      }
+    ]
+  },
+  "base+prad+stab": {
+    "reps": 7,
+    "entry": {
+      "fps": 9.8,
+      "p95": 316.7,
+      "worst": 400,
+      "jank": 25,
+      "lostMs": 2749
+    },
+    "steady": {
+      "fps": 15,
+      "p95": 116.7,
+      "jank": 52
+    },
+    "longTasks": 7,
+    "longTaskMs": 1183,
+    "layoutCount": 50,
+    "recalcCount": 183,
+    "liteEver": false,
+    "lenisAll": true,
+    "hoverNoneEver": false,
+    "raw": [
+      {
+        "entryFps": 9.8,
+        "entryLost": 2732,
+        "entryJank": 25
+      },
+      {
+        "entryFps": 9.6,
+        "entryLost": 2799,
+        "entryJank": 24
+      },
+      {
+        "entryFps": 10.6,
+        "entryLost": 2732,
+        "entryJank": 27
+      },
+      {
+        "entryFps": 11.4,
+        "entryLost": 2699,
+        "entryJank": 23
+      },
+      {
+        "entryFps": 10.1,
+        "entryLost": 2799,
+        "entryJank": 25
+      },
+      {
+        "entryFps": 9.7,
+        "entryLost": 2749,
+        "entryJank": 28
+      },
+      {
+        "entryFps": 8.5,
+        "entryLost": 2816,
+        "entryJank": 25
+      }
+    ]
+  }
+}
