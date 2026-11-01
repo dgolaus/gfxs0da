@@ -1,0 +1,5 @@
+[{"name":"baseline"},
+ {"name":"cvd","files":{"/styles.css":"fixes/offscreen-work/styles.css","/script.js":"fixes/offscreen-work/script.c1.js","/smooth-scroll.js":"fixes/offscreen-work/smooth-scroll.js"}},
+ {"name":"cvw","files":{"/styles.css":"fixes/offscreen-work/styles.css","/script.js":"fixes/offscreen-work/script.c2.js","/smooth-scroll.js":"fixes/offscreen-work/smooth-scroll.js"}},
+ {"name":"cvd_gh3","files":{"/styles.css":"fixes/offscreen-work/styles.css","/script.js":"fixes/vet-offscreen-work-cv-defer/cloud/script.c1gh3.js","/smooth-scroll.js":"fixes/offscreen-work/smooth-scroll.js"}},
+ {"name":"cvw_gh3","files":{"/styles.css":"fixes/offscreen-work/styles.css","/script.js":"fixes/vet-offscreen-work-cv-defer/cloud/script.c2gh3.js","/smooth-scroll.js":"fixes/offscreen-work/smooth-scroll.js"}}]

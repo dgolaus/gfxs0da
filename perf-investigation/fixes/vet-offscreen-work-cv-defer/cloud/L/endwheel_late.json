@@ -1,0 +1,554 @@
+[
+ {
+  "sz": "1366x768",
+  "v": "baseline",
+  "T0": 10000,
+  "g0": {
+   "sy": 0,
+   "docH": 5949,
+   "secs": [
+    [
+     "top",
+     0,
+     768
+    ],
+    [
+     "work",
+     769,
+     1092
+    ],
+    [
+     "about",
+     1861,
+     542
+    ],
+    [
+     "process",
+     2403,
+     850
+    ],
+    [
+     "trust",
+     3253,
+     1200
+    ],
+    [
+     "pricing",
+     4453,
+     728
+    ],
+    [
+     "contact",
+     5181,
+     768
+    ]
+   ],
+   "thumb": "height: 99px; transform: translate(-50%, 0px);",
+   "limit": 5181
+  },
+  "g1": {
+   "sy": 5181,
+   "docH": 5949,
+   "secs": [
+    [
+     "top",
+     0,
+     768
+    ],
+    [
+     "work",
+     769,
+     1092
+    ],
+    [
+     "about",
+     1861,
+     542
+    ],
+    [
+     "process",
+     2403,
+     850
+    ],
+    [
+     "trust",
+     3253,
+     1200
+    ],
+    [
+     "pricing",
+     4453,
+     728
+    ],
+    [
+     "contact",
+     5181,
+     768
+    ]
+   ],
+   "thumb": "height: 99px; transform: translate(-50%, 669px);",
+   "limit": 5181
+  },
+  "g2": {
+   "sy": 0,
+   "docH": 5949,
+   "secs": [
+    [
+     "top",
+     0,
+     768
+    ],
+    [
+     "work",
+     769,
+     1092
+    ],
+    [
+     "about",
+     1861,
+     542
+    ],
+    [
+     "process",
+     2403,
+     850
+    ],
+    [
+     "trust",
+     3253,
+     1200
+    ],
+    [
+     "pricing",
+     4453,
+     728
+    ],
+    [
+     "contact",
+     5181,
+     768
+    ]
+   ],
+   "thumb": "height: 99px; transform: translate(-50%, 0px);",
+   "limit": 5181
+  },
+  "frames": 216,
+  "shifts": [],
+  "maxDev": 0.5,
+  "errs": []
+ },
+ {
+  "sz": "1366x768",
+  "v": "cvw_gh",
+  "T0": 10000,
+  "g0": {
+   "sy": 0,
+   "docH": 5949,
+   "secs": [
+    [
+     "top",
+     0,
+     768
+    ],
+    [
+     "work",
+     769,
+     1092
+    ],
+    [
+     "about",
+     1861,
+     542
+    ],
+    [
+     "process",
+     2403,
+     850
+    ],
+    [
+     "trust",
+     3253,
+     1200
+    ],
+    [
+     "pricing",
+     4453,
+     728
+    ],
+    [
+     "contact",
+     5181,
+     768
+    ]
+   ],
+   "thumb": "height: 99px; transform: translate(-50%, 0px);",
+   "limit": 5181
+  },
+  "g1": {
+   "sy": 5181,
+   "docH": 5949,
+   "secs": [
+    [
+     "top",
+     0,
+     768
+    ],
+    [
+     "work",
+     769,
+     1092
+    ],
+    [
+     "about",
+     1861,
+     542
+    ],
+    [
+     "process",
+     2403,
+     850
+    ],
+    [
+     "trust",
+     3253,
+     1200
+    ],
+    [
+     "pricing",
+     4453,
+     728
+    ],
+    [
+     "contact",
+     5181,
+     768
+    ]
+   ],
+   "thumb": "height: 99px; transform: translate(-50%, 669px);",
+   "limit": 5181
+  },
+  "g2": {
+   "sy": 0,
+   "docH": 5949,
+   "secs": [
+    [
+     "top",
+     0,
+     768
+    ],
+    [
+     "work",
+     769,
+     1092
+    ],
+    [
+     "about",
+     1861,
+     542
+    ],
+    [
+     "process",
+     2403,
+     850
+    ],
+    [
+     "trust",
+     3253,
+     1200
+    ],
+    [
+     "pricing",
+     4453,
+     728
+    ],
+    [
+     "contact",
+     5181,
+     768
+    ]
+   ],
+   "thumb": "height: 99px; transform: translate(-50%, 0px);",
+   "limit": 5181
+  },
+  "frames": 246,
+  "shifts": [],
+  "maxDev": 0.5,
+  "errs": []
+ },
+ {
+  "sz": "1024x768",
+  "v": "baseline",
+  "T0": 10000,
+  "g0": {
+   "sy": 0,
+   "docH": 5948,
+   "secs": [
+    [
+     "top",
+     0,
+     768
+    ],
+    [
+     "work",
+     769,
+     918
+    ],
+    [
+     "about",
+     1687,
+     488
+    ],
+    [
+     "process",
+     2175,
+     792
+    ],
+    [
+     "trust",
+     2966,
+     1142
+    ],
+    [
+     "pricing",
+     4108,
+     1072
+    ],
+    [
+     "contact",
+     5180,
+     768
+    ]
+   ],
+   "thumb": "height: 99px; transform: translate(-50%, 0px);",
+   "limit": 5180
+  },
+  "g1": {
+   "sy": 5180,
+   "docH": 5948,
+   "secs": [
+    [
+     "top",
+     0,
+     768
+    ],
+    [
+     "work",
+     769,
+     918
+    ],
+    [
+     "about",
+     1687,
+     488
+    ],
+    [
+     "process",
+     2175,
+     792
+    ],
+    [
+     "trust",
+     2966,
+     1142
+    ],
+    [
+     "pricing",
+     4108,
+     1072
+    ],
+    [
+     "contact",
+     5180,
+     768
+    ]
+   ],
+   "thumb": "height: 99px; transform: translate(-50%, 669px);",
+   "limit": 5180
+  },
+  "g2": {
+   "sy": 0,
+   "docH": 5948,
+   "secs": [
+    [
+     "top",
+     0,
+     768
+    ],
+    [
+     "work",
+     769,
+     918
+    ],
+    [
+     "about",
+     1687,
+     488
+    ],
+    [
+     "process",
+     2175,
+     792
+    ],
+    [
+     "trust",
+     2966,
+     1142
+    ],
+    [
+     "pricing",
+     4108,
+     1072
+    ],
+    [
+     "contact",
+     5180,
+     768
+    ]
+   ],
+   "thumb": "height: 99px; transform: translate(-50%, 0px);",
+   "limit": 5180
+  },
+  "frames": 223,
+  "shifts": [],
+  "maxDev": 0.5,
+  "errs": []
+ },
+ {
+  "sz": "1024x768",
+  "v": "cvw_gh",
+  "T0": 10000,
+  "g0": {
+   "sy": 0,
+   "docH": 5948,
+   "secs": [
+    [
+     "top",
+     0,
+     768
+    ],
+    [
+     "work",
+     769,
+     918
+    ],
+    [
+     "about",
+     1687,
+     488
+    ],
+    [
+     "process",
+     2175,
+     792
+    ],
+    [
+     "trust",
+     2966,
+     1142
+    ],
+    [
+     "pricing",
+     4108,
+     1072
+    ],
+    [
+     "contact",
+     5180,
+     768
+    ]
+   ],
+   "thumb": "height: 99px; transform: translate(-50%, 0px);",
+   "limit": 5180
+  },
+  "g1": {
+   "sy": 5180,
+   "docH": 5948,
+   "secs": [
+    [
+     "top",
+     0,
+     768
+    ],
+    [
+     "work",
+     769,
+     918
+    ],
+    [
+     "about",
+     1687,
+     488
+    ],
+    [
+     "process",
+     2175,
+     792
+    ],
+    [
+     "trust",
+     2966,
+     1142
+    ],
+    [
+     "pricing",
+     4108,
+     1072
+    ],
+    [
+     "contact",
+     5180,
+     768
+    ]
+   ],
+   "thumb": "height: 99px; transform: translate(-50%, 669px);",
+   "limit": 5180
+  },
+  "g2": {
+   "sy": 0,
+   "docH": 5948,
+   "secs": [
+    [
+     "top",
+     0,
+     768
+    ],
+    [
+     "work",
+     769,
+     918
+    ],
+    [
+     "about",
+     1687,
+     488
+    ],
+    [
+     "process",
+     2175,
+     792
+    ],
+    [
+     "trust",
+     2966,
+     1142
+    ],
+    [
+     "pricing",
+     4108,
+     1072
+    ],
+    [
+     "contact",
+     5180,
+     768
+    ]
+   ],
+   "thumb": "height: 99px; transform: translate(-50%, 0px);",
+   "limit": 5180
+  },
+  "frames": 237,
+  "shifts": [],
+  "maxDev": 0.5,
+  "errs": []
+ }
+]

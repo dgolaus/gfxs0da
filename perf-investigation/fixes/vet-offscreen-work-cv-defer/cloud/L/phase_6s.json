@@ -1,0 +1,388 @@
+{
+ "baseline:about": [],
+ "baseline:process": [
+  {
+   "name": "accentOrbs",
+   "el": "SPAN.accent-orbs",
+   "inf": true,
+   "dur": 6000,
+   "ct": 6583,
+   "ps": "running",
+   "age": 6583
+  },
+  {
+   "name": "pulseGreen",
+   "el": "SPAN.dot.pulse",
+   "inf": true,
+   "dur": 2400,
+   "ct": 6583,
+   "ps": "running",
+   "age": 6583
+  },
+  {
+   "name": "typingBounce",
+   "el": "SPAN.",
+   "inf": true,
+   "dur": 1300,
+   "ct": 6333,
+   "ps": "running",
+   "age": 6333
+  },
+  {
+   "name": "typingBounce",
+   "el": "SPAN.",
+   "inf": true,
+   "dur": 1300,
+   "ct": 6333,
+   "ps": "running",
+   "age": 6333
+  },
+  {
+   "name": "typingBounce",
+   "el": "SPAN.",
+   "inf": true,
+   "dur": 1300,
+   "ct": 6333,
+   "ps": "running",
+   "age": 6333
+  }
+ ],
+ "baseline:trust": [
+  {
+   "name": "tcolUp",
+   "el": "DIV.tcol-track",
+   "inf": true,
+   "dur": 30000,
+   "ct": 0,
+   "ps": "running",
+   "age": null
+  },
+  {
+   "name": "tcolDown",
+   "el": "DIV.tcol-track",
+   "inf": true,
+   "dur": 36000,
+   "ct": 0,
+   "ps": "running",
+   "age": null
+  },
+  {
+   "name": "tcolUp",
+   "el": "DIV.tcol-track",
+   "inf": true,
+   "dur": 27000,
+   "ct": 0,
+   "ps": "running",
+   "age": null
+  }
+ ],
+ "baseline:pricing": [
+  {
+   "name": "priceFloatA",
+   "el": "ARTICLE.price-card.price-card-feature",
+   "inf": true,
+   "dur": 7000,
+   "ct": 6333,
+   "ps": "running",
+   "age": 6333
+  },
+  {
+   "name": "badgeShimmer",
+   "el": "SPAN.price-badge::after",
+   "inf": true,
+   "dur": 11000,
+   "ct": 6333,
+   "ps": "running",
+   "age": 6333
+  },
+  {
+   "name": "priceFloatB",
+   "el": "ARTICLE.price-card.reveal",
+   "inf": true,
+   "dur": 8200,
+   "ct": 6333,
+   "ps": "running",
+   "age": 6333
+  },
+  {
+   "name": "priceFloatC",
+   "el": "ARTICLE.price-card.reveal",
+   "inf": true,
+   "dur": 7600,
+   "ct": 6333,
+   "ps": "running",
+   "age": 6333
+  },
+  {
+   "name": "priceFloatD",
+   "el": "ARTICLE.price-card.reveal",
+   "inf": true,
+   "dur": 8600,
+   "ct": 6333,
+   "ps": "running",
+   "age": 6333
+  }
+ ],
+ "baseline:contact": [
+  {
+   "name": "cfBreathe",
+   "el": "DIV.cfooter-aurora",
+   "inf": true,
+   "dur": 8000,
+   "ct": 6066,
+   "ps": "running",
+   "age": 6066
+  },
+  {
+   "name": "cfMarquee",
+   "el": "DIV.cfooter-marquee-track",
+   "inf": true,
+   "dur": 40000,
+   "ct": 6066,
+   "ps": "running",
+   "age": 6066
+  }
+ ],
+ "cvd_gh2:about": [],
+ "cvd_gh2:process": [
+  {
+   "name": "accentOrbs",
+   "el": "SPAN.accent-orbs",
+   "inf": true,
+   "dur": 6000,
+   "ct": 6233,
+   "ps": "running",
+   "age": 6233
+  },
+  {
+   "name": "pulseGreen",
+   "el": "SPAN.dot.pulse",
+   "inf": true,
+   "dur": 2400,
+   "ct": 6233,
+   "ps": "running",
+   "age": 6233
+  },
+  {
+   "name": "typingBounce",
+   "el": "SPAN.",
+   "inf": true,
+   "dur": 1300,
+   "ct": 6233,
+   "ps": "running",
+   "age": 6233
+  },
+  {
+   "name": "typingBounce",
+   "el": "SPAN.",
+   "inf": true,
+   "dur": 1300,
+   "ct": 6233,
+   "ps": "running",
+   "age": 6233
+  },
+  {
+   "name": "typingBounce",
+   "el": "SPAN.",
+   "inf": true,
+   "dur": 1300,
+   "ct": 6233,
+   "ps": "running",
+   "age": 6233
+  }
+ ],
+ "cvd_gh2:trust": [
+  {
+   "name": "tcolUp",
+   "el": "DIV.tcol-track",
+   "inf": true,
+   "dur": 30000,
+   "ct": 0,
+   "ps": "paused",
+   "age": null
+  },
+  {
+   "name": "tcolDown",
+   "el": "DIV.tcol-track",
+   "inf": true,
+   "dur": 36000,
+   "ct": 0,
+   "ps": "paused",
+   "age": null
+  },
+  {
+   "name": "tcolUp",
+   "el": "DIV.tcol-track",
+   "inf": true,
+   "dur": 27000,
+   "ct": 0,
+   "ps": "paused",
+   "age": null
+  }
+ ],
+ "cvd_gh2:pricing": [],
+ "cvd_gh2:contact": [
+  {
+   "name": "cfBreathe",
+   "el": "DIV.cfooter-aurora",
+   "inf": true,
+   "dur": 8000,
+   "ct": 0,
+   "ps": "running",
+   "age": null
+  },
+  {
+   "name": "cfMarquee",
+   "el": "DIV.cfooter-marquee-track",
+   "inf": true,
+   "dur": 40000,
+   "ct": 0,
+   "ps": "running",
+   "age": null
+  }
+ ],
+ "cvw_gh2:about": [],
+ "cvw_gh2:process": [
+  {
+   "name": "accentOrbs",
+   "el": "SPAN.accent-orbs",
+   "inf": true,
+   "dur": 6000,
+   "ct": 6183,
+   "ps": "running",
+   "age": 6183
+  },
+  {
+   "name": "pulseGreen",
+   "el": "SPAN.dot.pulse",
+   "inf": true,
+   "dur": 2400,
+   "ct": 6183,
+   "ps": "running",
+   "age": 6183
+  },
+  {
+   "name": "typingBounce",
+   "el": "SPAN.",
+   "inf": true,
+   "dur": 1300,
+   "ct": 6183,
+   "ps": "running",
+   "age": 6183
+  },
+  {
+   "name": "typingBounce",
+   "el": "SPAN.",
+   "inf": true,
+   "dur": 1300,
+   "ct": 6183,
+   "ps": "running",
+   "age": 6183
+  },
+  {
+   "name": "typingBounce",
+   "el": "SPAN.",
+   "inf": true,
+   "dur": 1300,
+   "ct": 6183,
+   "ps": "running",
+   "age": 6183
+  }
+ ],
+ "cvw_gh2:trust": [
+  {
+   "name": "tcolUp",
+   "el": "DIV.tcol-track",
+   "inf": true,
+   "dur": 30000,
+   "ct": 0,
+   "ps": "paused",
+   "age": null
+  },
+  {
+   "name": "tcolDown",
+   "el": "DIV.tcol-track",
+   "inf": true,
+   "dur": 36000,
+   "ct": 0,
+   "ps": "paused",
+   "age": null
+  },
+  {
+   "name": "tcolUp",
+   "el": "DIV.tcol-track",
+   "inf": true,
+   "dur": 27000,
+   "ct": 0,
+   "ps": "paused",
+   "age": null
+  }
+ ],
+ "cvw_gh2:pricing": [
+  {
+   "name": "priceFloatA",
+   "el": "ARTICLE.price-card.price-card-feature",
+   "inf": true,
+   "dur": 7000,
+   "ct": 2317,
+   "ps": "running",
+   "age": 2317
+  },
+  {
+   "name": "badgeShimmer",
+   "el": "SPAN.price-badge::after",
+   "inf": true,
+   "dur": 11000,
+   "ct": 2317,
+   "ps": "running",
+   "age": 2317
+  },
+  {
+   "name": "priceFloatB",
+   "el": "ARTICLE.price-card.reveal",
+   "inf": true,
+   "dur": 8200,
+   "ct": 2317,
+   "ps": "running",
+   "age": 2317
+  },
+  {
+   "name": "priceFloatC",
+   "el": "ARTICLE.price-card.reveal",
+   "inf": true,
+   "dur": 7600,
+   "ct": 2317,
+   "ps": "running",
+   "age": 2317
+  },
+  {
+   "name": "priceFloatD",
+   "el": "ARTICLE.price-card.reveal",
+   "inf": true,
+   "dur": 8600,
+   "ct": 2317,
+   "ps": "running",
+   "age": 2317
+  }
+ ],
+ "cvw_gh2:contact": [
+  {
+   "name": "cfBreathe",
+   "el": "DIV.cfooter-aurora",
+   "inf": true,
+   "dur": 8000,
+   "ct": 2050,
+   "ps": "running",
+   "age": 2050
+  },
+  {
+   "name": "cfMarquee",
+   "el": "DIV.cfooter-marquee-track",
+   "inf": true,
+   "dur": 40000,
+   "ct": 2050,
+   "ps": "running",
+   "age": 2050
+  }
+ ]
+}

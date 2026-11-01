@@ -1,0 +1,1474 @@
+/* gfxs0da — interactions
+   Smooth scroll · reveal · lightbox · count-up · stars · particles · mouse glow
+   ========================================================================== */
+
+/* 0. Scroll restoration — always start at top on F5/refresh -------------- */
+/* Disable browser's auto-restore (which jumps you back to where you were).
+   Then force scroll to top before any other script captures position.    */
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+// Exceção: chegando com #secao na URL (ex.: /#pricing vindo da /slots/),
+// o reset pro topo anulava o pulo do navegador. Se o hash aponta pra um
+// elemento real, a página vai até ele em vez de voltar pra hero.
+// (#work-jogo-N não tem elemento e é da lightbox, que trata sozinha.)
+const NAV_OFFSET_LOAD = 80;
+const hashTarget = () => {
+  const h = location.hash;
+  if (!h || h === '#') return null;
+  try { return document.getElementById(decodeURIComponent(h.slice(1))); } catch (e) { return null; }
+};
+if (!hashTarget()) {
+  window.scrollTo(0, 0);
+  // Re-enforce on load (in case something fires after)
+  window.addEventListener('load', () => window.scrollTo(0, 0));
+}
+// bfcache restore
+window.addEventListener('pageshow', (e) => { if (e.persisted && !hashTarget()) window.scrollTo(0, 0); });
+// Com âncora: posiciona no load e repete pouco depois, porque fontes,
+// imagens e o Lenis (que sobe assíncrono) podem mudar a altura da página.
+window.addEventListener('load', () => {
+  const go = () => {
+    const t = hashTarget();
+    if (!t) return;
+    // Seções com altura reservada (content-visibility, bloco 0b) viram
+    // reais antes de medir; o limite do Lenis é recalculado junto.
+    cvSettle();
+    if (window.lenis && window.lenis.dimensions) window.lenis.dimensions.resize();
+    const y = t.getBoundingClientRect().top + window.scrollY - NAV_OFFSET_LOAD;
+    if (window.lenis) window.lenis.scrollTo(y, { immediate: true });
+    else window.scrollTo(0, y);
+  };
+  go();
+  setTimeout(go, 350);
+  setTimeout(go, 900);
+});
+
+/* 0b. Seções abaixo da dobra — content-visibility: auto (styles.css) ------ */
+/* Longe da tela, essas seções não são calculadas nem pintadas e ocupam a
+   altura reservada (--cv-h). Isso tirava da entrada o layout da página
+   inteira. Três regras para nada mudar na tela:
+   - Quem precisa MEDIR algo lá dentro espera a seção chegar perto
+     (cvWhenNear, 2 telas de folga, antes de o navegador desenhá-la a
+     1,5 tela). Medir antes forçaria o layout que estamos adiando.
+   - Pulos por âncora (#pricing no load, cliques no menu) chamam
+     cvSettle(): renderiza todas uma vez, então o destino é medido com as
+     alturas reais. O "auto" do contain-intrinsic-height guarda essas
+     alturas; depois elas voltam a ser puladas fora da tela.
+   - Sem suporte a content-visibility, tudo roda na hora, como antes. */
+const CV_SEL = '#main > section.about, #main > section.process, #main > section.trust, #main > section.pricing, #contact.cfooter-clip';
+const cvSections = Array.from(document.querySelectorAll(CV_SEL));
+const cvOn = cvSections.length > 0 && !!(window.CSS && CSS.supports && CSS.supports('content-visibility', 'auto'));
+const cvPending = [];      // inits adiadas, cada uma roda uma única vez
+let cvExactWidth = null;   // largura em que todas já renderizaram uma vez
+
+function cvRunPending() {
+  while (cvPending.length) cvPending[0]();
+}
+
+function cvSettle() {
+  if (cvOn && cvExactWidth !== window.innerWidth) {
+    cvExactWidth = window.innerWidth;
+    cvSections.forEach((s) => { s.style.contentVisibility = 'visible'; });
+    // O próximo frame registra a altura real de cada uma; depois voltam ao
+    // auto (fora da tela são puladas de novo, já com a altura certa).
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      cvSections.forEach((s) => { s.style.contentVisibility = ''; });
+    }));
+  }
+  cvRunPending();
+}
+window.__cvSettle = cvSettle;
+
+// Roda fn quando `section` estiver a até 2 telas da viewport (ou num
+// cvSettle), o que vier primeiro. Fora das seções adiadas, roda na hora.
+function cvWhenNear(section, fn) {
+  if (!cvOn || cvHash || !section || !cvSections.includes(section)) { fn(); return; }
+  let io = null;
+  const run = () => {
+    const i = cvPending.indexOf(run);
+    if (i < 0) return;
+    cvPending.splice(i, 1);
+    if (io) io.disconnect();
+    fn();
+  };
+  run.section = section;
+  cvPending.push(run);
+  io = new IntersectionObserver((entries) => {
+    if (entries.some((e) => e.isIntersecting)) run();
+  }, { rootMargin: '200% 0px 200% 0px' });
+  io.observe(section);
+}
+
+// Aquecimento: terminada a intro do hero (contagem dos números inclusa),
+// cada seção adiada é renderizada uma vez, uma por vez, em momentos
+// ociosos. A altura real fica guardada e o layout pronto antes de o
+// visitante rolar; nada disso aparece (as seções estão fora da tela).
+if (cvOn) {
+  const idle = window.requestIdleCallback
+    ? (fn) => requestIdleCallback(fn, { timeout: 1500 })
+    : (fn) => setTimeout(fn, 80);
+  const queue = cvSections.slice();
+  const step = () => {
+    if (cvExactWidth === window.innerWidth) return;   // um cvSettle já fez tudo
+    const s = queue[0];
+    if (!s) { cvExactWidth = window.innerWidth; return; }
+    // 1º passo: inits que medem dentro da seção (ex.: colunas de depoimentos)
+    const own = cvPending.filter((run) => run.section === s);
+    if (own.length) { own.forEach((run) => run()); idle(step); return; }
+    // 2º passo: um frame visível registra a altura real; depois volta ao auto
+    queue.shift();
+    s.style.contentVisibility = 'visible';
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      s.style.contentVisibility = '';
+      idle(step);
+    }));
+  };
+  const start = () => setTimeout(() => idle(step), 3000);
+  if (document.readyState === 'complete') start();
+  else window.addEventListener('load', start, { once: true });
+}
+
+// Chegando com #secao (ex.: /#pricing): renderiza tudo desde o início,
+// e as inits adiadas rodam na hora (cvWhenNear),
+// como antes, até load + 1s (depois dos reajustes do go()). Assim o
+// pulo do próprio navegador e o go() veem a mesma página e o mesmo
+// tempo de antes. Depois voltam ao auto, já com as alturas reais.
+const cvHash = cvOn && !!hashTarget();
+if (cvHash) {
+  cvExactWidth = window.innerWidth;
+  cvSections.forEach((s) => { s.style.contentVisibility = 'visible'; });
+  const back = () => setTimeout(() => requestAnimationFrame(() => {
+    if (cvExactWidth === window.innerWidth) cvSections.forEach((s) => { s.style.contentVisibility = ''; });
+  }), 1000);
+  if (document.readyState === 'complete') back();
+  else window.addEventListener('load', back, { once: true });
+}
+
+// Links internos (#pricing…) em qualquer aparelho, com ou sem Lenis: as
+// alturas ficam reais antes de o destino ser calculado.
+if (cvOn) {
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest && e.target.closest('a[href^="#"]');
+    if (a && a.getAttribute('href').length > 1) cvSettle();
+  }, true);
+}
+
+// Mudou a largura: as alturas guardadas podem não valer mais; renderiza
+// tudo de novo uma vez (o mesmo relayout que a página fazia sem isto).
+if (cvOn) {
+  let cvLastWidth = window.innerWidth, cvResizeT = null;
+  window.addEventListener('resize', () => {
+    clearTimeout(cvResizeT);
+    cvResizeT = setTimeout(() => {
+      if (window.innerWidth === cvLastWidth) return;
+      cvLastWidth = window.innerWidth;
+      cvSettle();
+    }, 200);
+  }, { passive: true });
+}
+
+const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const isTouch = matchMedia('(hover: none)').matches;
+
+/* 1. Nav scroll state ----------------------------------------------------- */
+/* Only runs if a nav exists (TOS page still has one — homepage no longer does) */
+const nav = document.getElementById('nav');
+if (nav) {
+  const setNavState = () => nav.classList.toggle('scrolled', window.scrollY > 24);
+  setNavState();
+  window.addEventListener('scroll', setNavState, { passive: true });
+}
+
+/* 2. Reveal on scroll ----------------------------------------------------- */
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    for (const entry of entries) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-in');
+        revealObserver.unobserve(entry.target);
+      }
+    }
+  },
+  { threshold: 0.12, rootMargin: '0px 0px -8% 0px' }
+);
+document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+
+/* 3. Card pointer-tracked light ------------------------------------------ */
+if (!isTouch) {
+  const cards = document.querySelectorAll('.card');
+  cards.forEach((card) => {
+    card.addEventListener('pointermove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      card.style.setProperty('--mx', `${x}%`);
+      card.style.setProperty('--my', `${y}%`);
+    });
+  });
+
+  const style = document.createElement('style');
+  style.textContent = `
+    .card .card-img::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(280px circle at var(--mx) var(--my),
+                                  rgba(177, 18, 18, 0.22), transparent 55%);
+      opacity: 0;
+      transition: opacity .35s cubic-bezier(.22,1,.36,1);
+      pointer-events: none;
+      z-index: 1;
+      mix-blend-mode: screen;
+    }
+    .card:hover .card-img::after { opacity: 1; }
+  `;
+  document.head.appendChild(style);
+}
+
+/* 4a. Card carousel — para cards multi-variantes ------------------------- */
+(() => {
+  document.querySelectorAll('.card.has-variants').forEach((card) => {
+    const variantsAttr = card.dataset.variants;
+    if (!variantsAttr) return;
+
+    const variants = variantsAttr.split(',').map((v) => v.trim());
+    const img = card.querySelector('.card-img img');
+    const counter = card.querySelector('.card-count');
+    const prevBtn = card.querySelector('.card-arrow-prev');
+    const nextBtn = card.querySelector('.card-arrow-next');
+    let idx = 0;
+
+    // Preload as variantes (WebP) quando o card entra na viewport
+    const preloadIO = new IntersectionObserver(
+      (entries, obs) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+          variants.forEach((v) => {
+            new Image().src = `assets/work/${v}`;
+          });
+          obs.unobserve(entry.target);
+        }
+      },
+      { rootMargin: '200px' }
+    );
+    preloadIO.observe(card);
+
+    // Troca de variante: decodifica a próxima e só então troca o src, num
+    // corte direto. A imagem nunca é apagada no meio do caminho — apagá-la
+    // deixava o fundo escuro do card à mostra e lia como um flash preto.
+    // As variantes já vêm pré-carregadas pelo observer acima, então o
+    // decode costuma resolver no mesmo frame do clique.
+    function setVariant(newIdx) {
+      idx = (newIdx + variants.length) % variants.length;
+      const url = `assets/work/${variants[idx]}`;
+      const label = `${idx + 1} / ${variants.length}`;
+      card.dataset.currentIdx = String(idx);
+
+      let settled = false;
+      const settle = () => {
+        if (settled) return;
+        settled = true;
+        img.src = url;
+        if (counter) counter.textContent = label;
+      };
+
+      const next = new Image();
+      next.src = url;
+      const ready = next.decode ? next.decode().catch(() => {}) : Promise.resolve();
+      // Trava de segurança: se o decode não resolver (aba em segundo plano,
+      // rede lenta), a troca acontece mesmo assim.
+      const guard = new Promise((r) => setTimeout(r, 700));
+      Promise.race([ready, guard]).then(settle);
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        setVariant(idx - 1);
+      });
+    }
+    if (nextBtn) {
+      nextBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        setVariant(idx + 1);
+      });
+    }
+  });
+})();
+
+/* 4b. Lightbox modal — variantes, zoom/pan, fullscreen, hash linking ---- */
+(() => {
+  const lightbox = document.getElementById('lightbox');
+  if (!lightbox) return;
+
+  const lightboxImg     = lightbox.querySelector('.lightbox-img');
+  const lightboxTitle   = lightbox.querySelector('.lightbox-title');
+  const lightboxCreator     = lightbox.querySelector('.lightbox-creator');
+  const lightboxCreatorName = lightbox.querySelector('.lightbox-creator-name');
+  const lightboxSub     = lightbox.querySelector('.lightbox-sub');
+  const lightboxCounter = lightbox.querySelector('.lightbox-counter');
+  const closeBtn        = lightbox.querySelector('.lightbox-close');
+  const prevBtn         = lightbox.querySelector('.lightbox-nav-prev');
+  const nextBtn         = lightbox.querySelector('.lightbox-nav-next');
+
+  let currentVariants = [];
+  let currentIdx = 0;
+  let currentTitle = '';
+  let currentSub = '';
+  let currentCreator = '';
+  let currentCreatorVerified = false;
+  let currentSlug = '';
+  let lastFocused = null;
+
+  // Zoom + pan state
+  let zoomed = false;
+  let panX = 0, panY = 0;
+  let dragStart = null;
+
+  function applyTransform() {
+    lightboxImg.style.transform = zoomed
+      ? `scale(2) translate(${panX}px, ${panY}px)`
+      : '';
+  }
+  function resetZoom() {
+    zoomed = false;
+    panX = 0;
+    panY = 0;
+    lightboxImg.classList.remove('is-zoomed');
+    applyTransform();
+  }
+
+  // Cada troca ganha um número. Se o usuário passar rápido pelas setas, um
+  // decode lento que termine atrasado não sobrescreve a imagem mais nova.
+  let swapToken = 0;
+
+  function showVariant(idx) {
+    if (currentVariants.length === 0) return;
+    resetZoom();
+    currentIdx = (idx + currentVariants.length) % currentVariants.length;
+    const url = `assets/work/${currentVariants[currentIdx]}`;
+    const alt = currentVariants.length > 1
+      ? `${currentTitle} — variant ${currentIdx + 1} of ${currentVariants.length}`
+      : currentTitle;
+
+    // Decodifica antes de trocar o src. Trocando direto, o navegador esvazia
+    // a imagem enquanto a nova carrega, e em tela cheia isso aparece como um
+    // flash preto. Aqui a imagem atual fica até a próxima estar pronta.
+    const meu = ++swapToken;
+    const next = new Image();
+    next.src = url;
+    const ready = next.decode ? next.decode().catch(() => {}) : Promise.resolve();
+    const guard = new Promise((r) => setTimeout(r, 900));
+    Promise.race([ready, guard]).then(() => {
+      if (meu !== swapToken) return;   // já tem uma troca mais nova
+      lightboxImg.src = url;
+      lightboxImg.alt = alt;
+    });
+    lightboxTitle.textContent = currentTitle;
+    lightboxSub.textContent = currentSub;
+
+    if (currentCreator) {
+      lightboxCreatorName.textContent = 'By ' + currentCreator;
+      lightboxCreator.style.display = '';
+      const existingBadge = lightboxCreator.querySelector('.verified-badge');
+      if (currentCreatorVerified && !existingBadge) {
+        const img = document.createElement('img');
+        img.className = 'verified-badge';
+        img.src = 'assets/roblox-verified.svg';
+        img.alt = 'Verified by Roblox';
+        lightboxCreator.appendChild(img);
+      } else if (!currentCreatorVerified && existingBadge) {
+        existingBadge.remove();
+      }
+    } else {
+      lightboxCreatorName.textContent = '';
+      lightboxCreator.style.display = 'none';
+    }
+
+    if (currentVariants.length > 1) {
+      lightboxCounter.textContent = `${currentIdx + 1} of ${currentVariants.length}`;
+      prevBtn.classList.remove('is-hidden');
+      nextBtn.classList.remove('is-hidden');
+    } else {
+      lightboxCounter.textContent = '';
+      prevBtn.classList.add('is-hidden');
+      nextBtn.classList.add('is-hidden');
+    }
+
+    // Update URL hash so the variant is deep-linkable.
+    if (currentSlug) {
+      const newHash = currentVariants.length > 1
+        ? `#work-${currentSlug}-${currentIdx + 1}`
+        : `#work-${currentSlug}`;
+      history.replaceState(null, '', newHash);
+    }
+  }
+
+  function open(variants, startIdx, title, sub, slug, creator, creatorVerified) {
+    lastFocused = document.activeElement;
+    currentVariants = variants;
+    currentTitle = title;
+    currentSub = sub;
+    currentCreator = creator || '';
+    currentCreatorVerified = !!creatorVerified;
+    currentSlug = slug || '';
+    showVariant(startIdx);
+
+    lightbox.setAttribute('aria-hidden', 'false');
+    requestAnimationFrame(() => lightbox.classList.add('is-open'));
+    document.body.style.overflow = 'hidden';
+    closeBtn.focus();
+  }
+
+  function close() {
+    lightbox.classList.remove('is-open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    resetZoom();
+    // Exit fullscreen if active
+    if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
+    // Clear hash from URL
+    if (location.hash.startsWith('#work-')) {
+      history.replaceState(null, '', location.pathname + location.search);
+    }
+    setTimeout(() => {
+      document.body.style.overflow = '';
+      if (lastFocused) lastFocused.focus();
+    }, 400);
+  }
+
+  function triggerFromCard(card) {
+    const variantsAttr = card.dataset.variants;
+    const variants = variantsAttr
+      ? variantsAttr.split(',').map((v) => v.trim())
+      : [card.querySelector('.card-img img')?.src.split('/').pop() || ''];
+    const startIdx = parseInt(card.dataset.currentIdx || '0', 10);
+    const title = card.querySelector('h3')?.textContent || '';
+    const sub = card.querySelector('.card-sub')?.textContent || '';
+    const slug = card.dataset.game || '';
+    const creator = card.dataset.creatorName || '';
+    const creatorVerified = card.dataset.creatorVerified === 'true';
+    open(variants, startIdx, title, sub, slug, creator, creatorVerified);
+  }
+
+  document.querySelectorAll('.card').forEach((card) => {
+    card.addEventListener('click', (e) => {
+      if (e.target.closest && e.target.closest('.card-arrow')) return;
+      triggerFromCard(card);
+    });
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        triggerFromCard(card);
+      }
+    });
+  });
+
+  closeBtn.addEventListener('click', close);
+  prevBtn.addEventListener('click', () => showVariant(currentIdx - 1));
+  nextBtn.addEventListener('click', () => showVariant(currentIdx + 1));
+
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) close();
+  });
+
+  // Zoom on click of image
+  lightboxImg.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (!zoomed) {
+      zoomed = true;
+      panX = 0; panY = 0;
+      lightboxImg.classList.add('is-zoomed');
+      applyTransform();
+    } else {
+      resetZoom();
+    }
+  });
+
+  // Pan via pointer drag when zoomed
+  lightboxImg.addEventListener('pointerdown', (e) => {
+    if (!zoomed) return;
+    e.preventDefault();
+    dragStart = { x: e.clientX, y: e.clientY, panX, panY };
+    lightboxImg.setPointerCapture(e.pointerId);
+    lightboxImg.classList.add('is-dragging');
+  });
+  lightboxImg.addEventListener('pointermove', (e) => {
+    if (!dragStart) return;
+    panX = dragStart.panX + (e.clientX - dragStart.x) / 2;
+    panY = dragStart.panY + (e.clientY - dragStart.y) / 2;
+    applyTransform();
+  });
+  function endDrag() {
+    if (!dragStart) return;
+    dragStart = null;
+    lightboxImg.classList.remove('is-dragging');
+  }
+  lightboxImg.addEventListener('pointerup', endDrag);
+  lightboxImg.addEventListener('pointercancel', endDrag);
+
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('is-open')) return;
+    if (e.key === 'Escape')     close();
+    else if (e.key === 'ArrowLeft'  && currentVariants.length > 1) showVariant(currentIdx - 1);
+    else if (e.key === 'ArrowRight' && currentVariants.length > 1) showVariant(currentIdx + 1);
+    else if (e.key === 'f' || e.key === 'F') {
+      e.preventDefault();
+      if (document.fullscreenElement) document.exitFullscreen();
+      else lightbox.requestFullscreen().catch(() => {});
+    }
+  });
+
+  // Deep-link on load — if URL has #work-<slug>[-<n>], open lightbox.
+  function openFromHash() {
+    const m = location.hash.match(/^#work-([a-z0-9-]+)(?:-(\d+))?$/i);
+    if (!m) return;
+    const [, slug, idxStr] = m;
+    const card = document.querySelector(`.card[data-game="${slug}"]`);
+    if (!card) return;
+    const targetIdx = idxStr ? parseInt(idxStr, 10) - 1 : 0;
+    card.dataset.currentIdx = String(targetIdx);
+    triggerFromCard(card);
+  }
+  window.addEventListener('load', openFromHash);
+  window.addEventListener('hashchange', () => {
+    if (!location.hash.startsWith('#work-')) return;
+    openFromHash();
+  });
+})();
+
+/* Shared counter animation — used by hero stats + trust section ---------- */
+function animateCounter(el, duration = 2400) {
+  const target = parseFloat(el.dataset.value);
+  const decimals = parseInt(el.dataset.decimals || '0', 10);
+  const prefix = el.dataset.prefix || '';
+  const suffix = el.dataset.suffix || '';
+
+  if (reducedMotion) {
+    el.textContent = `${prefix}${target.toFixed(decimals)}${suffix}`;
+    return;
+  }
+
+  const start = performance.now();
+  const tick = (now) => {
+    const t = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - t, 3);
+    const current = (eased * target).toFixed(decimals);
+    el.textContent = `${prefix}${current}${suffix}`;
+    if (t < 1) {
+      requestAnimationFrame(tick);
+    } else {
+      // Pequeno assentamento no fim da contagem (CSS: .counter.is-done)
+      el.classList.add('is-done');
+      setTimeout(() => el.classList.remove('is-done'), 700);
+    }
+  };
+  requestAnimationFrame(tick);
+}
+
+/* 5a. Hero stats — count up on page load (after stats strip fades in) ---- */
+(() => {
+  const heroCounters = document.querySelectorAll('.hero-stats-strip .counter');
+  if (!heroCounters.length) return;
+  // Leve escalonamento entre as três colunas — leitura mais natural
+  const go = () =>
+    heroCounters.forEach((c, i) => setTimeout(() => animateCounter(c, 2400), i * 110));
+  if (reducedMotion) { go(); return; }
+  // If the loading splash is present, hold the count-up until it starts
+  // leaving (body.ready) so the hero comes alive as the splash clears.
+  // Without a splash, keep the original ~700ms-after-load timing.
+  const boot = document.getElementById('boot');
+  if (!boot) { setTimeout(go, 700); return; }
+  const run = () => setTimeout(go, 180);
+  if (document.body.classList.contains('ready')) { run(); return; }
+  const obs = new MutationObserver(() => {
+    if (document.body.classList.contains('ready')) { obs.disconnect(); run(); }
+  });
+  obs.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+})();
+
+/* 5b. Trust section — count-up + star sequence --------------------------- */
+(() => {
+  const trustStats = document.getElementById('trust-stats');
+  if (!trustStats) return;
+
+  function animateStars(stars) {
+    const group = stars[0] && stars[0].parentElement;
+    if (reducedMotion) {
+      stars.forEach((s) => s.classList.add('lit'));
+      if (group) group.classList.add('is-lit');
+      return;
+    }
+    /* Atrasado pra sequência começar DEPOIS dos números aparecerem.
+       Numbers completam em ~2400ms; stars começam em 1000ms e
+       terminam em 1000 + 4*340 = 2360ms — sincronia natural. */
+    stars.forEach((star, i) => {
+      setTimeout(() => {
+        star.classList.add('lit', 'flash');
+        setTimeout(() => star.classList.remove('flash'), 900);
+        // Depois da última, o grupo passa para a flutuação contínua mínima
+        if (i === stars.length - 1 && group) {
+          setTimeout(() => group.classList.add('is-lit'), 900);
+        }
+      }, 1000 + i * 340);
+    });
+  }
+
+  const trustObserver = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        const counters = entry.target.querySelectorAll('.counter');
+        counters.forEach((c, i) => setTimeout(() => animateCounter(c), i * 110));
+        const stars = entry.target.querySelectorAll('.star');
+        animateStars(stars);
+        trustObserver.unobserve(entry.target);
+      }
+    },
+    { threshold: 0.35 }
+  );
+  trustObserver.observe(trustStats);
+})();
+
+/* 5b2. Chat card — animated dialog playback ----------------------------- */
+/* Plays a natural Discord-style ticket conversation. Plays ONCE (no loop)
+   when section enters viewport, then stays in final state.               */
+(() => {
+  const messagesEl = document.getElementById('chat-messages');
+  const typingEl   = document.getElementById('chat-typing');
+  if (!messagesEl || !typingEl) return;
+  const typingNameEl = typingEl.querySelector('.typing-name');
+
+  // Cada entrada é uma mensagem. { divider } desenha a linha de data do
+  // Discord; `cont` é continuação (mesmo autor, sem avatar/cabeçalho);
+  // `attachments` aceita embed (link), file e image, renderizados abaixo
+  // do texto como no Discord. Todo o conteúdo é fixo — sem superfície de XSS.
+  const CLIENT = { user: 'client', name: '@client', badge: 'Member', badgeClass: 'member', letter: 'C', color: '#5865F2' };
+  const S0DA   = { user: 'gfxs0da', name: '@gfxs0da', badge: 'Staff', badgeClass: 'staff' };
+  const dialog = [
+    { ...CLIENT, time: '14:23',
+      html: 'yo bro, need a new thumb for burgerz. u available?' },
+    { ...S0DA, time: '14:24',
+      html: 'yea for sure 🔥 send me the game link, the models and any ideas if u got any' },
+    { ...CLIENT, time: '14:30',
+      html: 'here u go, models are in the zip',
+      attachments: [
+        { type: 'embed', site: 'Roblox', title: 'Burgerz', desc: 'Flip, stack and serve. Play Burgerz on Roblox.', url: 'https://www.roblox.com/games/' },
+        { type: 'file', name: 'burgerz_models.rbxm', size: '2.4 MB' },
+      ] },
+    { ...S0DA, time: '14:32',
+      html: "got it. 1 thumb, <strong>$130 / 35k</strong>. i'll send a few concepts first" },
+    { ...CLIENT, time: '14:33',
+      html: 'sounds good bro 🙏' },
+    { divider: 'Tomorrow' },
+    { ...S0DA, day: 'Tomorrow', time: '11:48',
+      html: 'concepts\n\n<strong>1.</strong> first person pov of a bacon squeezing ketchup on the burger, burgerman buried in it\n<strong>2.</strong> first person pov of a bacon cooking the burgerman in a frying pan, fire underneath and a spatula',
+      attachments: [
+        { type: 'image', src: 'assets/chat/sketch-ketchup.webp', alt: 'Sketch: ketchup concept', w: 480, h: 271 },
+        { type: 'image', src: 'assets/chat/sketch-pan.webp', alt: 'Sketch: frying pan concept', w: 480, h: 271 },
+      ] },
+    { ...S0DA, day: 'Tomorrow', time: '11:48', cont: true,
+      html: 'which one?' },
+    { ...CLIENT, day: 'Tomorrow', time: '11:53',
+      html: 'the ketchup one for sure, burgerman drowning goes crazy 🤯' },
+    { ...S0DA, day: 'Tomorrow', time: '12:01',
+      html: 'bet, final later today' },
+    { ...S0DA, day: 'Tomorrow', time: '18:34',
+      html: 'final ✅',
+      attachments: [
+        { type: 'image', src: 'assets/chat/burgerz-final.webp', alt: 'Final Burgerz thumbnail', w: 720, h: 405, big: true },
+      ] },
+    { ...CLIENT, day: 'Tomorrow', time: '18:40',
+      html: 'this is clean bro, ty 🔥' },
+  ];
+
+  function renderAttachment(att) {
+    if (att.type === 'embed') {
+      return `<a class="chat-embed" href="${att.url}" target="_blank" rel="noopener" tabindex="-1">
+        <span class="chat-embed-site">${att.site}</span>
+        <span class="chat-embed-title">${att.title}</span>
+        <span class="chat-embed-desc">${att.desc}</span>
+      </a>`;
+    }
+    if (att.type === 'file') {
+      return `<span class="chat-file">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+        <span class="chat-file-meta"><span class="chat-file-name">${att.name}</span><span class="chat-file-size">${att.size}</span></span>
+      </span>`;
+    }
+    if (att.type === 'image') {
+      return `<img class="chat-img${att.big ? ' chat-img-big' : ''}" src="${att.src}" alt="${att.alt}" width="${att.w}" height="${att.h}" loading="lazy" decoding="async" />`;
+    }
+    return '';
+  }
+
+  function createDivider(label) {
+    const el = document.createElement('div');
+    el.className = 'chat-divider';
+    el.innerHTML = `<span>${label}</span>`;
+    return el;
+  }
+
+  function createMsg(msg) {
+    if (msg.divider) return createDivider(msg.divider);
+    const el = document.createElement('div');
+    el.className = 'chat-msg' + (msg.cont ? ' chat-msg-cont' : '');
+    const isS0da = msg.user === 'gfxs0da';
+    const isClient = msg.user === 'client';
+    const atts = (msg.attachments || []).map(renderAttachment).join('');
+    const imgs = (msg.attachments || []).filter((x) => x.type === 'image').length;
+    el.innerHTML = `
+      <div class="chat-avatar${isS0da ? ' chat-avatar-s0da' : ''}${isClient ? ' chat-avatar-client' : ''}"
+           ${msg.letter ? `data-letter="${msg.letter}"` : ''}
+           ${msg.color  ? `style="--c:${msg.color}"`     : ''}></div>
+      <div class="chat-body">
+        <div class="chat-meta">
+          <span class="chat-name">${msg.name}<span class="chat-badge chat-badge-${msg.badgeClass}">${msg.badge}</span></span>
+          <span class="chat-time">${msg.day || 'Today'} at ${msg.time}</span>
+        </div>
+        <p class="chat-text"></p>
+        ${atts ? `<div class="chat-atts${imgs > 1 ? ' chat-atts-row' : ''}">${atts}</div>` : ''}
+      </div>`;
+    // innerHTML: respects \n via CSS white-space: pre-line, allows <strong>, etc.
+    el.querySelector('.chat-text').innerHTML = msg.html;
+    return el;
+  }
+
+  function showTyping(name) {
+    typingNameEl.textContent = name;
+    typingEl.classList.add('is-active');
+  }
+  function hideTyping() { typingEl.classList.remove('is-active'); }
+  const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+
+  function addMessage(msg) {
+    const el = createMsg(msg);
+    messagesEl.appendChild(el);
+    requestAnimationFrame(() => el.classList.add('is-in'));
+  }
+
+  // Cadência: quem responde primeiro lê a mensagem anterior, depois digita
+  // num ritmo proporcional ao tamanho (com teto). Anexos demoram mais
+  // ("subindo" o arquivo). Tudo em ms.
+  const plain = (html) => (html || '').replace(/<[^>]+>/g, '');
+  const readTime   = (prev) => prev && prev.html ? Math.min(500, 150 + plain(prev.html).length * 3) : 0;
+  const typingTime = (msg)  => Math.min(1250, 380 + plain(msg.html).length * 11) + (msg.attachments ? 300 : 0);
+  const restTime   = (msg)  => 180 + Math.min(320, plain(msg.html).length * 1.6);
+
+  // A conversa toca inteira como no Discord: a área de mensagens ancora
+  // embaixo e corta no topo (CSS), então cada mensagem nova empurra as
+  // antigas pra cima e a área fica cheia até o fim. Na última, segura um
+  // tempo, apaga com um fade e recomeça. (Suporta mais de uma página se
+  // um dia for preciso: basta dividir o array.)
+  const pages = [dialog];
+  const HOLD_PAGE = 2600, HOLD_END = 4200, FADE = 380;
+
+  // Só avança com a seção visível: fora da tela a reprodução espera.
+  let visible = true;
+  const section = document.getElementById('process');
+  if (section) {
+    new IntersectionObserver(([e]) => { visible = e.isIntersecting; }, { threshold: 0.15 }).observe(section);
+  }
+  const whenVisible = async () => { while (!visible) await wait(300); };
+
+  async function playPage(page) {
+    for (let i = 0; i < page.length; i++) {
+      const msg = page[i], prev = page[i - 1];
+      await whenVisible();
+      if (msg.divider) {            // o dia vira: pausa maior
+        await wait(600);
+        addMessage(msg);
+        await wait(250);
+        continue;
+      }
+      if (i > 0 && !msg.cont) {
+        if (prev && prev.user !== msg.user) await wait(readTime(prev));
+        showTyping(msg.name);
+        await wait(typingTime(msg));
+        hideTyping();
+        await wait(120);
+      }
+      addMessage(msg);
+      await wait(msg.cont ? 450 : restTime(msg));
+    }
+  }
+
+  async function clearPage() {
+    messagesEl.classList.add('is-clearing');
+    await wait(FADE);
+    messagesEl.innerHTML = '';
+    messagesEl.classList.remove('is-clearing');
+    await wait(120);
+  }
+
+  async function playLoop() {
+    messagesEl.innerHTML = '';
+    hideTyping();
+    await wait(250);
+    for (;;) {
+      for (let p = 0; p < pages.length; p++) {
+        await playPage(pages[p]);
+        await wait(p === pages.length - 1 ? HOLD_END : HOLD_PAGE);
+        await whenVisible();
+        await clearPage();
+      }
+    }
+  }
+
+  if (reducedMotion) {
+    // Estático: a última página, que tem o resultado final.
+    pages[pages.length - 1].forEach((m) => {
+      const el = createMsg(m);
+      el.classList.add('is-in');
+      messagesEl.appendChild(el);
+    });
+    return;
+  }
+
+  // Começa quando a seção entra na tela; depois o loop cuida de si.
+  if (!section) { playLoop(); return; }
+  const startObs = new IntersectionObserver((entries) => {
+    for (const e of entries) {
+      if (e.isIntersecting) { playLoop(); startObs.disconnect(); return; }
+    }
+  }, { threshold: 0.2 });
+  startObs.observe(section);
+})();
+
+/* 5c. Chat card — 3D tilt + cursor-tracked glow -------------------------- */
+(() => {
+  const card = document.getElementById('chat-card');
+  if (!card || isTouch || reducedMotion) return;
+
+  const wrapper = card.parentElement; // .chat-mock — listens for mouse, applies tilt to inner card
+  let raf = null;
+  let targetRX = 0, targetRY = 0;
+  let curRX = 0, curRY = 0;
+  let mx = 50, my = 50;
+
+  function onMove(e) {
+    const rect = card.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width;
+    const y = (e.clientY - rect.top) / rect.height;
+    targetRX = (0.5 - y) * 7;   // -3.5 to 3.5 deg
+    targetRY = (x - 0.5) * 8;   // -4 to 4 deg
+    mx = x * 100;
+    my = y * 100;
+    if (!card.classList.contains('tilting')) card.classList.add('tilting');
+    if (raf == null) raf = requestAnimationFrame(loop);
+  }
+
+  function onLeave() {
+    targetRX = 0;
+    targetRY = 0;
+    if (raf == null) raf = requestAnimationFrame(loop);
+    setTimeout(() => card.classList.remove('tilting'), 400);
+  }
+
+  function loop() {
+    // Lerp toward target — buttery, not snappy
+    curRX += (targetRX - curRX) * 0.12;
+    curRY += (targetRY - curRY) * 0.12;
+    card.style.transform = `rotateX(${curRX.toFixed(2)}deg) rotateY(${curRY.toFixed(2)}deg)`;
+    card.style.setProperty('--gx', `${mx}%`);
+    card.style.setProperty('--gy', `${my}%`);
+
+    if (Math.abs(targetRX - curRX) > 0.05 || Math.abs(targetRY - curRY) > 0.05) {
+      raf = requestAnimationFrame(loop);
+    } else {
+      curRX = targetRX;
+      curRY = targetRY;
+      card.style.transform = `rotateX(${curRX}deg) rotateY(${curRY}deg)`;
+      raf = null;
+    }
+  }
+
+  wrapper.addEventListener('mousemove', onMove);
+  wrapper.addEventListener('mouseleave', onLeave);
+})();
+
+/* 5d. TOS scroll spy — highlights active section in TOC ------------------ */
+(() => {
+  if (!document.body.classList.contains('tos-page')) return;
+  const tocList = document.getElementById('toc-list');
+  if (!tocList) return;
+
+  const sections = document.querySelectorAll('.tos-section');
+  const items = tocList.querySelectorAll('li');
+  if (!sections.length || !items.length) return;
+
+  const sectionToItem = new Map();
+  sections.forEach((sec, i) => {
+    if (items[i]) sectionToItem.set(sec.id, items[i]);
+  });
+
+  function activate(id) {
+    items.forEach((it) => it.classList.remove('is-active'));
+    const target = sectionToItem.get(id);
+    if (target) target.classList.add('is-active');
+  }
+
+  // Por posição de scroll, não por IntersectionObserver: a seção ativa é a
+  // última cujo topo já passou a linha de leitura (35% da tela). Regra
+  // extra: com a página rolada até o fim, a última seção é a ativa, senão
+  // seções curtas no final nunca chegam à linha e a anterior fica presa.
+  const LINE = () => window.innerHeight * 0.35;
+  let raf = null;
+  function update() {
+    raf = null;
+    const doc = document.documentElement;
+    const atBottom = window.scrollY + window.innerHeight >= doc.scrollHeight - 2;
+    let current = sections[0].id;
+    if (atBottom) {
+      current = sections[sections.length - 1].id;
+    } else {
+      const line = LINE();
+      sections.forEach((sec) => { if (sec.getBoundingClientRect().top <= line) current = sec.id; });
+    }
+    activate(current);
+  }
+  const kick = () => { if (raf == null) raf = requestAnimationFrame(update); };
+  window.addEventListener('scroll', kick, { passive: true });
+  window.addEventListener('resize', kick, { passive: true });
+  window.addEventListener('load', kick);
+  kick();
+
+  // Activate first item by default before scroll happens
+  if (items[0]) items[0].classList.add('is-active');
+})();
+
+/* 6b. Roblox visits — live update from assets/visits.json ----------------- */
+/* JSON is regenerated hourly by the GitHub Action at
+   .github/workflows/update-visits.yml. Page falls back gracefully to the
+   hardcoded HTML values if fetch fails (offline, JSON missing, etc).      */
+(() => {
+  const cards = document.querySelectorAll('.card[data-game]');
+  if (!cards.length) return;
+
+  function fmt(n) {
+    if (n >= 1e9) return strip(n / 1e9) + 'B+';
+    if (n >= 1e6) return strip(n / 1e6) + 'M+';
+    if (n >= 1e3) return strip(n / 1e3) + 'K+';
+    return String(n);
+  }
+  function strip(v) {
+    const s = v.toFixed(1);
+    return s.endsWith('.0') ? s.slice(0, -2) : s;
+  }
+
+  fetch('assets/visits.json', { cache: 'no-cache' })
+    .then((r) => (r.ok ? r.json() : null))
+    .then((data) => {
+      if (!data || !data.games) return;
+      cards.forEach((card) => {
+        const key = card.dataset.game;
+        const game = data.games[key];
+        if (!game) return;
+
+        if (typeof game.visits === 'number') {
+          const sub = card.querySelector('.card-sub');
+          if (sub) {
+            sub.textContent = sub.textContent.replace(
+              /[\d.]+\s*[KMB]\+\s*visits/i,
+              `${fmt(game.visits)} visits`
+            );
+          }
+        }
+
+        if (game.creatorName) {
+          card.dataset.creatorName = game.creatorName;
+          card.dataset.creatorVerified = game.creatorVerified ? 'true' : 'false';
+        }
+      });
+    })
+    .catch(() => { /* silent — keeps hardcoded fallback values */ });
+
+  /* Total "visits influenced" — comes from the same JSON, written by
+     scripts/fetch-visits.js as `influenced`. Rounded DOWN to one decimal
+     so the page never claims more than the games actually add up to.
+     If the fetch fails or the field is missing, the hardcoded data-value
+     in the HTML stays. */
+  fetch('assets/visits.json', { cache: 'no-cache' })
+    .then((r) => (r.ok ? r.json() : null))
+    .then((data) => {
+      if (!data || typeof data.influenced !== 'number') return;
+      const b = Math.floor((data.influenced / 1e9) * 10) / 10;
+      if (!(b > 0)) return;
+      document.querySelectorAll('.counter[data-live="visits"]').forEach((el) => {
+        el.dataset.value = String(b);
+        // Se a contagem já rodou, reescreve o resultado; senão o
+        // animateCounter pega o valor novo quando for a vez dele.
+        if (el.textContent !== '0') {
+          el.textContent = `${el.dataset.prefix || ''}${b.toFixed(1)}${el.dataset.suffix || ''}`;
+        }
+      });
+    })
+    .catch(() => {});
+})();
+
+/* 6c. Scroll-driven gradient — Rockstar VI style ------------------------- */
+/* Each accent text gets its own radial gradient whose center tracks the
+   viewport vertical middle (50vh). As the element scrolls through the
+   viewport, the bright spot appears to "pass through" the text.
+
+   Per-element formula: circleY = 50vh - element's_top_in_vh
+   → when element is at viewport top:    circle is 50vh below element top (dimmer)
+   → when element is at viewport middle: circle is right at element top   (brightest)
+   → when element is at viewport bottom: circle is 50vh above element top (dimmer)
+
+   No transparent stop — last color is deep red so off-screen elements stay
+   visible (no invisible text) even before they pass through bright spot.
+   rAF loop instead of scroll events (scrollTo doesn't reliably fire them).*/
+(() => {
+  const els = document.querySelectorAll(
+    '.hero-title .accent, .process-text h2 .accent-soft'
+  );
+  if (!els.length) return;
+
+  // Smoothed circleY per element — lerps toward the scroll-based target.
+  // Higher LERP = faster catchup (1 = no lag). 0.10 gives a soft delay
+  // where the gradient visibly follows the scroll instead of locking to it.
+  const LERP = 0.10;
+  const smoothed = new WeakMap();
+
+  // Acento dentro de seção adiada (0b): só passa a ser medido quando a
+  // seção chega perto, no 1º scroll ou num cvSettle. Até lá ele está a mais
+  // de 1,5 tela (invisível) e medi-lo forçaria o layout da seção inteira.
+  // Parado no hero o valor suavizado já é igual ao alvo, então começar no
+  // 1º scroll (com o init "no alvo" abaixo) dá o mesmo quadro de antes.
+  const live = new Set();
+  let lastY = window.scrollY;   // scroll do último quadro desenhado
+  els.forEach((el) => {
+    const sec = cvSections.find((s) => s.contains(el));
+    if (!sec) { live.add(el); return; }
+    const on = () => {
+      if (live.has(el)) return;
+      live.add(el);
+      // Parado, o loop original já guardava o alvo da posição do último
+      // quadro: semeia esse valor, e um pulo logo em seguida (âncora no
+      // load, clique nativo no touch) varre o gradiente como antes.
+      const vh = window.innerHeight;
+      if (vh && cvOn) smoothed.set(el, 50 - ((el.getBoundingClientRect().top + window.scrollY - lastY) / vh) * 100);
+    };
+    window.addEventListener('scroll', on, { once: true, passive: true });
+    cvWhenNear(sec, on);
+  });
+
+  function update() {
+    const vh = window.innerHeight;
+    if (vh === 0) return;
+    for (const el of els) {
+      if (!live.has(el)) continue;
+      const rect = el.getBoundingClientRect();
+      const elTopVh = (rect.top / vh) * 100;
+      const targetY = 50 - elTopVh;
+
+      // Init on first frame at the target (no startup snap), then lerp
+      let prevY = smoothed.get(el);
+      if (prevY === undefined) prevY = targetY;
+      const nextY = prevY + (targetY - prevY) * LERP;
+      smoothed.set(el, nextY);
+
+      // "Yours" is huge — needs a tighter salmon zone so letters don't look yellow.
+      // Other accents keep wider scale for smoother fade.
+      const isHero = el.classList.contains('accent') &&
+                     el.closest('.hero-title') !== null;
+      const tight = isHero;
+      const grad =
+        `radial-gradient(circle at 50% ${nextY.toFixed(2)}vh,` +
+        ` #ff8b6b 0vh,` +
+        ` #ff1727 ${tight ? 12 : 30}vh,` +
+        ` #6B0808 ${tight ? 50 : 80}vh,` +
+        ` #1F0202 ${tight ? 120 : 160}vh)`;
+      el.style.backgroundImage = grad;
+      // O texto vive num filho .accent-text (o pai é a janela das orbs)
+      const t = el.querySelector(':scope > .accent-text');
+      if (t) t.style.backgroundImage = grad;
+    }
+  }
+
+  function loop() {
+    update();
+    lastY = window.scrollY;
+    requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+})();
+
+/* 6d. Section scroll fade-out ------------------------------------------- */
+/* As the user scrolls past the Portfolio section, sections below it fade
+   out as they LEAVE THE TOP of the viewport.
+
+   Trigger metric: rect.bottom (not rect.top). The fade only kicks in
+   once the section's BOTTOM enters the top 30% of viewport — meaning
+   most of the section's content is already off-screen. This prevents
+   the "still-looking-at-it-but-it's-blurred" bug that --rect.top would
+   cause for tall sections (e.g. Pricing with the Calculator at the
+   bottom: with the old formula the calc was already faded while still
+   centered in view).
+
+   Hero + Portfolio are excluded (stay crisp as anchors).
+   rAF loop only WRITES a CSS variable — no layout thrash.            */
+(() => {
+  const ids = ['about', 'process', 'trust', 'pricing', 'contact'];
+  const sections = ids
+    .map((id) => document.getElementById(id))
+    .filter((el) => el !== null);
+  if (sections.length === 0) return;
+
+  for (const s of sections) s.classList.add('scroll-fade');
+
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  function update() {
+    const vh = window.innerHeight;
+    // Fade window: section's bottom traveling from 30% of vh → 0 maps to leave 0→1
+    const fadeStart = vh * 0.30;
+    for (const s of sections) {
+      const rect = s.getBoundingClientRect();
+      let leave = 0;
+      if (rect.bottom < fadeStart) {
+        leave = Math.min(1, Math.max(0, (fadeStart - rect.bottom) / fadeStart));
+      }
+      s.style.setProperty('--leave', leave.toFixed(3));
+    }
+  }
+  // Idle-gated rAF: run while the page is scrolling, sleep when it's still.
+  // The fade only depends on scroll position, so skipping idle frames is
+  // free perf (no getBoundingClientRect thrash while you're just reading).
+  let rafId = null;
+  let lastY = -1;
+  function loop() {
+    update();
+    if (window.scrollY !== lastY) {
+      lastY = window.scrollY;
+      rafId = requestAnimationFrame(loop);
+    } else {
+      rafId = null;
+    }
+  }
+  function kick() { if (rafId == null) { lastY = -1; rafId = requestAnimationFrame(loop); } }
+  update();
+  window.addEventListener('scroll', kick, { passive: true });
+  window.addEventListener('resize', kick, { passive: true });
+})();
+
+/* 6e. Pause the hero collage animation while the hero is off-screen -------- */
+(() => {
+  const heroBg = document.querySelector('.hero-bg');
+  const hero = document.querySelector('.hero');
+  if (!heroBg || !hero) return;
+  new IntersectionObserver(
+    ([entry]) => heroBg.classList.toggle('is-paused', !entry.isIntersecting),
+    { threshold: 0 }
+  ).observe(hero);
+})();
+
+/* 7. Smooth scroll — moved to shared smooth-scroll.js (loaded on both the
+   homepage and /slots/). Keep CSS free of `scroll-behavior: smooth`. */
+
+/* Custom scrollbar rail — position, glow on scroll, drag-to-scroll -------- */
+(() => {
+  const rail = document.querySelector('.rail');
+  const thumb = document.querySelector('.rail__thumb');
+  if (!rail || !thumb) return;
+
+  const html = document.documentElement;
+  const MIN_THUMB = 48; // smallest thumb height in px
+  let scrollTimer = null;
+  const STOP_MS = 260;
+
+  function update() {
+    const docH = html.scrollHeight;
+    const winH = window.innerHeight;
+    if (docH <= winH + 1) {
+      rail.style.display = 'none';
+      return;
+    }
+    rail.style.display = '';
+    const trackH = winH;
+    const ratio = winH / docH;
+    const thumbH = Math.max(MIN_THUMB, Math.round(ratio * trackH));
+    const maxScroll = docH - winH;
+    const top = (window.scrollY / maxScroll) * (trackH - thumbH);
+    thumb.style.height = thumbH + 'px';
+    thumb.style.transform = `translate(-50%, ${top}px)`;
+  }
+
+  // Mark scrolling for the glow effect
+  window.addEventListener('scroll', () => {
+    html.classList.add('is-scrolling');
+    if (scrollTimer) clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(() => html.classList.remove('is-scrolling'), STOP_MS);
+    update();
+  }, { passive: true });
+  window.addEventListener('resize', update);
+
+  // Drag-to-scroll on the thumb
+  let dragging = false;
+  let dragStartY = 0;
+  let dragStartScroll = 0;
+  thumb.addEventListener('mousedown', (e) => {
+    dragging = true;
+    dragStartY = e.clientY;
+    dragStartScroll = window.scrollY;
+    document.body.style.userSelect = 'none';
+    e.preventDefault();
+  });
+  window.addEventListener('mousemove', (e) => {
+    if (!dragging) return;
+    const docH = html.scrollHeight;
+    const winH = window.innerHeight;
+    const thumbH = thumb.offsetHeight;
+    const trackH = winH - thumbH;
+    if (trackH <= 0) return;
+    const scrollRatio = (docH - winH) / trackH;
+    const dy = e.clientY - dragStartY;
+    window.scrollTo(0, dragStartScroll + dy * scrollRatio);
+  });
+  window.addEventListener('mouseup', () => {
+    if (!dragging) return;
+    dragging = false;
+    document.body.style.userSelect = '';
+  });
+
+  update();
+})();
+
+
+/* Nav pill morph driver — sets --nav-pill / --nav-bar-vis / --nav-pill-vis
+   per scroll position; pairs with the NAV PILL MORPH block in styles.css.
+   Bar stays present until the pill is already covering, so there is never
+   a frame where the centre is uncovered:
+     bar-vis  = clamp(1 - p * 1.5)        gone by p ≈ 0.67
+     pill-vis = clamp((p - 0.30) / 0.50)  full by p ≈ 0.80
+   Overlap 0.30–0.67 → smooth handoff, no gap. */
+(() => {
+  const root = document.documentElement;
+  const nav  = document.getElementById('nav');
+  const END  = 360;
+
+  let ticking = false;
+  const clamp = (v) => Math.max(0, Math.min(1, v));
+  const easeInOut = (t) =>
+    t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+
+  function update() {
+    const p    = easeInOut(clamp(window.scrollY / END));
+    const bar  = clamp(1 - p * 1.5);
+    const pill = clamp((p - 0.30) / 0.50);
+
+    root.style.setProperty('--nav-pill', p.toFixed(3));
+    root.style.setProperty('--nav-bar-vis', bar.toFixed(3));
+    root.style.setProperty('--nav-pill-vis', pill.toFixed(3));
+    if (nav) nav.classList.toggle('is-pill', p > 0.85);
+
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) { ticking = true; requestAnimationFrame(update); }
+  }, { passive: true });
+
+  update();
+})();
+
+/* Commission status — flip the hero + CTA "Commissions Open" badges to
+   "closed" when assets/slots.json reports closed:true. Discord-driven: the
+   slots channel name controls slots.json (see scripts/fetch-slots.js). Open
+   (or any fetch failure) keeps the hardcoded "open" default. */
+(() => {
+  const badges = document.querySelectorAll('[data-comms-badge]');
+  const ctas = document.querySelectorAll('[data-comms-cta]');
+  if (!badges.length && !ctas.length) return;
+  fetch('assets/slots.json', { cache: 'no-cache' })
+    .then((r) => (r.ok ? r.json() : null))
+    .then((data) => {
+      if (!data || !data.closed) return;
+      badges.forEach((b) => {
+        b.classList.add('is-comms-closed');
+        const label = b.querySelector('.comms-label');
+        if (label) label.textContent = 'Commissions closed';
+      });
+      ctas.forEach((c) => {
+        const label = c.querySelector('.cta-label');
+        if (label) label.textContent = 'Join the Waitlist';
+      });
+    })
+    .catch(() => { /* keep default "open" on failure */ });
+})();
+
+
+/* ====================================================================
+   MOTION LAYER — comportamentos de ponteiro/visibilidade (2026-08-10)
+   Nada aqui depende de scroll. Tudo respeita prefers-reduced-motion e
+   é desligado em telas de toque quando depende de cursor.
+   ==================================================================== */
+
+/* M1. Pausa global das animações contínuas quando a aba não está visível.
+   O CSS (html.is-hidden) pausa keyframes; os rAF abaixo já param sozinhos
+   porque o navegador não agenda frames em aba oculta.                  */
+(() => {
+  const root = document.documentElement;
+  const sync = () => root.classList.toggle('is-hidden', document.hidden);
+  document.addEventListener('visibilitychange', sync);
+  sync();
+})();
+
+/* M2. Colagem do hero — paralaxe mínimo seguindo o cursor (±14px).
+   Composta com a respiração em CSS: aqui só a propriedade translate do
+   .hero-bg, lá o scale/translate do .hero-bg-tilt.                     */
+(() => {
+  if (reducedMotion || isTouch) return;
+  const hero = document.querySelector('.hero');
+  const bg   = document.querySelector('.hero-bg');
+  if (!hero || !bg) return;
+
+  let tx = 0, ty = 0, cx = 0, cy = 0, raf = null;
+
+  function loop() {
+    cx += (tx - cx) * 0.07;
+    cy += (ty - cy) * 0.07;
+    bg.style.translate = `${cx.toFixed(2)}px ${cy.toFixed(2)}px`;
+    if (Math.abs(tx - cx) > 0.05 || Math.abs(ty - cy) > 0.05) {
+      raf = requestAnimationFrame(loop);
+    } else {
+      raf = null;
+    }
+  }
+  const kick = () => { if (raf == null) raf = requestAnimationFrame(loop); };
+
+  hero.addEventListener('pointermove', (e) => {
+    if (e.pointerType === 'touch') return;
+    const r = hero.getBoundingClientRect();
+    tx = ((e.clientX - r.left) / r.width  - 0.5) * -14;
+    ty = ((e.clientY - r.top)  / r.height - 0.5) * -8;
+    kick();
+  }, { passive: true });
+
+  hero.addEventListener('pointerleave', () => { tx = 0; ty = 0; kick(); });
+})();
+
+/* M4. Luz que segue o cursor nos cards de preço e depoimentos — mesma
+   ideia já usada nos cards do portfólio (--mx/--my), sem duplicar o
+   listener daqueles.                                                    */
+(() => {
+  if (isTouch) return;
+  const els = document.querySelectorAll('.price-card, .quote');
+  els.forEach((el) => {
+    el.addEventListener('pointermove', (e) => {
+      const r = el.getBoundingClientRect();
+      el.style.setProperty('--mx', `${((e.clientX - r.left) / r.width) * 100}%`);
+      el.style.setProperty('--my', `${((e.clientY - r.top) / r.height) * 100}%`);
+    }, { passive: true });
+  });
+})();
+
+/* Testimonials columns — pause off-screen (same pattern as the hero collage). */
+(() => {
+  const m = document.getElementById('testimonials');
+  if (!m) return;
+  new IntersectionObserver(
+    ([e]) => m.classList.toggle('is-paused', !e.isIntersecting),
+    { threshold: 0 }
+  ).observe(m);
+})();
+
+/* Cinematic footer — reveal progress (0→1) written to --fp --------------- */
+(() => {
+  const footer = document.querySelector('.cfooter');
+  if (!footer) return;
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) { footer.style.setProperty('--fp', '1'); return; }
+  const main = document.querySelector('main');
+  let raf = null;
+  function update() {
+    raf = null;
+    const vh = window.innerHeight;
+    const mb = main.getBoundingClientRect().bottom; // fundo do conteúdo em viewport
+    // 0 quando o fim do main entra a 85% da tela; 1 no fim real do scroll
+    // (o footer é sticky, então o main nunca sai da tela — mb mínimo = vh - footerHeight)
+    const start = vh * 0.85;
+    // Fim do main ainda abaixo de 85% da tela: a conta abaixo daria 0. Sai
+    // antes de medir o footer, que longe da tela não está calculado
+    // (content-visibility) e seria forçado a calcular só por esta leitura.
+    if (mb >= start) { footer.style.setProperty('--fp', '0.000'); return; }
+    const end = Math.max(0, vh - footer.offsetHeight);
+    const p = Math.min(1, Math.max(0, (start - mb) / Math.max(1, start - end)));
+    footer.style.setProperty('--fp', p.toFixed(3));
+  }
+  const kick = () => { if (raf == null) raf = requestAnimationFrame(update); };
+  window.addEventListener('scroll', kick, { passive: true });
+  window.addEventListener('resize', kick, { passive: true });
+  kick();
+})();
+
+/* Testimonial columns — fill short columns so the loop never shows a gap.
+   translateY(-50%) precisa que a metade do track seja >= altura do
+   container. Colunas com poucos cards (ex.: 3) ficam mais curtas que
+   640px e mostram vazio até a cópia chegar. Aqui, cada coluna é
+   preenchida repetindo o conjunto original (com aria-hidden) até que a
+   metade cubra o container, mantendo duas metades idênticas. */
+/* Mede o layout da seção de depoimentos: espera ela chegar perto (0b).
+   Até lá o HTML já traz as cópias estáticas, a seção tem a mesma altura
+   (.tcols tem max-height) e está longe demais para ser vista. */
+(() => {
+  const cols = document.querySelectorAll('.tcols .tcol');
+  if (!cols.length) return;
+  const wrap = document.querySelector('.tcols');
+  cvWhenNear(document.getElementById('trust'), () => fillColumns(cols, wrap));
+})();
+function fillColumns(cols, wrap) {
+  const target = (wrap ? wrap.getBoundingClientRect().height : 640) || 640;
+  cols.forEach((col) => {
+    const track = col.querySelector('.tcol-track');
+    if (!track) return;
+    const originals = Array.from(track.querySelectorAll('.quote:not([aria-hidden])'));
+    if (!originals.length) return;
+    // Remove duplicados atuais e reconstrói
+    track.querySelectorAll('.quote[aria-hidden]').forEach((q) => q.remove());
+    const setHeight = () => track.getBoundingClientRect().height;
+    let half = setHeight();
+    let reps = 1;
+    while (half < target + 40 && reps < 6) { // garante folga
+      originals.forEach((q) => { const c = q.cloneNode(true); c.setAttribute('aria-hidden', 'true'); track.appendChild(c); });
+      reps++;
+      half = setHeight();
+    }
+    // Segunda metade = cópia exata da primeira
+    Array.from(track.children).forEach((q) => { const c = q.cloneNode(true); c.setAttribute('aria-hidden', 'true'); track.appendChild(c); });
+  });
+}
+
+/* Modo leve — sonda de FPS (2026-09-20) ------------------------------
+   Complementa a checagem estática do <head>. Mede ~1.2s de frames logo
+   após o load, com o hero na tela e tudo animando. Se a mediana passar
+   de 24ms por frame (< ~42 FPS), liga html.lite e grava a decisão, para
+   que as próximas visitas já abram leves sem passar pela sonda.
+   Não roda se já estiver leve, com reduced-motion, ou com a aba oculta
+   (o navegador não agenda frames e a medição sairia falsa).         */
+(() => {
+  const root = document.documentElement;
+  if (root.classList.contains('lite')) return;
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (document.hidden) return;
+
+  const LIMITE_MS = 24, DURACAO = 1200, MIN_FRAMES = 20;
+  const start = () => {
+    const dt = [];
+    let last = performance.now();
+    const fim = last + DURACAO;
+    (function tick(now) {
+      dt.push(now - last); last = now;
+      if (now < fim) { requestAnimationFrame(tick); return; }
+      if (document.hidden || dt.length < MIN_FRAMES) return;
+      dt.sort((a, b) => a - b);
+      const mediana = dt[Math.floor(dt.length / 2)];
+      if (mediana > LIMITE_MS) {
+        root.classList.add('lite');
+        try { localStorage.setItem('s0da-lite', '1'); } catch (e) {}
+      }
+    })(last);
+  };
+  // espera o load + 600ms: passa a rajada inicial de decode/layout
+  if (document.readyState === 'complete') setTimeout(start, 600);
+  else window.addEventListener('load', () => setTimeout(start, 600), { once: true });
+})();

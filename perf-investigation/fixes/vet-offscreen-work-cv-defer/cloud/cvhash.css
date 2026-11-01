@@ -1,0 +1,12 @@
+
+/* Chegando com #secao (ex.: /#pricing): todas as seções renderizam desde o
+   primeiro layout, como antes, até o script.js marcar .cv-on (load + 1s).
+   Assim fontes, imagens e o pulo do próprio navegador acontecem na mesma
+   hora de antes. Sem :has(), o script.js faz o mesmo com estilo inline. */
+html:has(:target) #main > section.about:not(.cv-on),
+html:has(:target) #main > section.process:not(.cv-on),
+html:has(:target) #main > section.trust:not(.cv-on),
+html:has(:target) #main > section.pricing:not(.cv-on),
+html:has(:target) #contact.cfooter-clip:not(.cv-on) {
+  content-visibility: visible;
+}

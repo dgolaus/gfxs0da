@@ -1,0 +1,100 @@
+{
+ "baseline": {},
+ "cvd": {
+  "files": {
+   "/styles.css": "fixes/offscreen-work/styles.css",
+   "/script.js": "fixes/offscreen-work/script.c1.js",
+   "/smooth-scroll.js": "fixes/offscreen-work/smooth-scroll.js"
+  }
+ },
+ "cvw": {
+  "files": {
+   "/styles.css": "fixes/offscreen-work/styles.css",
+   "/script.js": "fixes/offscreen-work/script.c2.js",
+   "/smooth-scroll.js": "fixes/offscreen-work/smooth-scroll.js"
+  }
+ },
+ "stab": {
+  "files": {
+   "/styles.css": "fixes/paint-composite/styles.stable-layerize.css"
+  }
+ },
+ "prad": {
+  "files": {
+   "/styles.css": "fixes/style-invalidation/styles.pseudoradius.css"
+  }
+ },
+ "split": {
+  "files": {
+   "/styles.css": "fixes/paint-composite/styles.intro-split.css"
+  }
+ },
+ "pcomb": {
+  "files": {
+   "/styles.css": "fixes/paint-composite/styles.combined.css"
+  }
+ },
+ "base_i": {
+  "files": {
+   "/styles.css": "../styles.css",
+   "/script.js": "../script.js",
+   "/smooth-scroll.js": "../smooth-scroll.js"
+  }
+ },
+ "cvd_g": {
+  "files": {
+   "/styles.css": "fixes/offscreen-work/styles.css",
+   "/script.js": "fixes/vet-offscreen-work-cv-defer/cloud/script.c1g.js",
+   "/smooth-scroll.js": "fixes/offscreen-work/smooth-scroll.js"
+  }
+ },
+ "cvd_gh": {
+  "files": {
+   "/styles.css": "fixes/offscreen-work/styles.css",
+   "/script.js": "fixes/vet-offscreen-work-cv-defer/cloud/script.c1gh.js",
+   "/smooth-scroll.js": "fixes/offscreen-work/smooth-scroll.js"
+  }
+ },
+ "cvw_g": {
+  "files": {
+   "/styles.css": "fixes/offscreen-work/styles.css",
+   "/script.js": "fixes/vet-offscreen-work-cv-defer/cloud/script.c2g.js",
+   "/smooth-scroll.js": "fixes/offscreen-work/smooth-scroll.js"
+  }
+ },
+ "cvw_gh": {
+  "files": {
+   "/styles.css": "fixes/offscreen-work/styles.css",
+   "/script.js": "fixes/vet-offscreen-work-cv-defer/cloud/script.c2gh.js",
+   "/smooth-scroll.js": "fixes/offscreen-work/smooth-scroll.js"
+  }
+ },
+ "cvd_gh2": {
+  "files": {
+   "/styles.css": "fixes/vet-offscreen-work-cv-defer/cloud/styles.cvh.css",
+   "/script.js": "fixes/vet-offscreen-work-cv-defer/cloud/script.c1gh2.js",
+   "/smooth-scroll.js": "fixes/offscreen-work/smooth-scroll.js"
+  }
+ },
+ "cvw_gh2": {
+  "files": {
+   "/styles.css": "fixes/vet-offscreen-work-cv-defer/cloud/styles.cvh.css",
+   "/script.js": "fixes/vet-offscreen-work-cv-defer/cloud/script.c2gh2.js",
+   "/smooth-scroll.js": "fixes/offscreen-work/smooth-scroll.js"
+  }
+ },
+ "cvd_gh3": {
+  "files": {
+   "/styles.css": "fixes/offscreen-work/styles.css",
+   "/script.js": "fixes/vet-offscreen-work-cv-defer/cloud/script.c1gh3.js",
+   "/smooth-scroll.js": "fixes/offscreen-work/smooth-scroll.js"
+  }
+ },
+ "cvw_gh3": {
+  "files": {
+   "/styles.css": "fixes/offscreen-work/styles.css",
+   "/script.js": "fixes/vet-offscreen-work-cv-defer/cloud/script.c2gh3.js",
+   "/smooth-scroll.js": "fixes/offscreen-work/smooth-scroll.js"
+  }
+ }
+}

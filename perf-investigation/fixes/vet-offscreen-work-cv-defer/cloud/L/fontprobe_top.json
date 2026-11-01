@@ -1,0 +1,81 @@
+{
+ "baseline": {
+  "faces": [
+   "Inter 400 U+0-FF, U+131, loaded",
+   "Inter 500 U+0-FF, U+131, loaded",
+   "Inter 600 U+0-FF, U+131, loaded",
+   "Inter Tight 400 U+0-FF, U+131, loaded",
+   "Inter Tight 500 U+0-FF, U+131, loaded",
+   "Inter Tight 600 U+0-FF, U+131, loaded",
+   "Inter Tight 700 U+0-FF, U+131, loaded",
+   "Inter Tight 800 U+0-FF, U+131, loaded",
+   "JetBrains Mono 500 U+0-FF, U+131, loaded",
+   "JetBrains Mono 600 U+0-FF, U+131, loaded"
+  ],
+  "fl": [],
+  "jump": null,
+  "load": 1346
+ },
+ "base_i": {
+  "faces": [
+   "Inter 400 U+0-FF, U+131, loaded",
+   "Inter 500 U+0-FF, U+131, loaded",
+   "Inter 600 U+0-FF, U+131, loaded",
+   "Inter Tight 400 U+0-FF, U+131, loaded",
+   "Inter Tight 500 U+0-FF, U+131, loaded",
+   "Inter Tight 600 U+0-FF, U+131, loaded",
+   "Inter Tight 700 U+0-FF, U+131, loaded",
+   "Inter Tight 800 U+0-FF, U+131, loaded",
+   "JetBrains Mono 500 U+0-FF, U+131, loaded",
+   "JetBrains Mono 600 U+0-FF, U+131, loaded"
+  ],
+  "fl": [],
+  "jump": null,
+  "load": 820
+ },
+ "cvd": {
+  "faces": [
+   "Inter 400 U+0-FF, U+131, loaded",
+   "Inter 500 U+0-FF, U+131, loaded",
+   "Inter 600 U+0-FF, U+131, loaded",
+   "Inter Tight 400 U+0-FF, U+131, loaded",
+   "Inter Tight 600 U+0-FF, U+131, loaded",
+   "Inter Tight 700 U+0-FF, U+131, loaded",
+   "JetBrains Mono 500 U+0-FF, U+131, loaded"
+  ],
+  "fl": [],
+  "jump": null,
+  "load": 962
+ },
+ "cvd_gh": {
+  "faces": [
+   "Inter 400 U+0-FF, U+131, loaded",
+   "Inter 500 U+0-FF, U+131, loaded",
+   "Inter 600 U+0-FF, U+131, loaded",
+   "Inter Tight 400 U+0-FF, U+131, loaded",
+   "Inter Tight 600 U+0-FF, U+131, loaded",
+   "Inter Tight 700 U+0-FF, U+131, loaded",
+   "JetBrains Mono 500 U+0-FF, U+131, loaded"
+  ],
+  "fl": [],
+  "jump": null,
+  "load": 470
+ },
+ "cvw_gh": {
+  "faces": [
+   "Inter 400 U+0-FF, U+131, loaded",
+   "Inter 500 U+0-FF, U+131, loaded",
+   "Inter 600 U+0-FF, U+131, loaded",
+   "Inter Tight 400 U+0-FF, U+131, loaded",
+   "Inter Tight 500 U+0-FF, U+131, loaded",
+   "Inter Tight 600 U+0-FF, U+131, loaded",
+   "Inter Tight 700 U+0-FF, U+131, loaded",
+   "Inter Tight 800 U+0-FF, U+131, loaded",
+   "JetBrains Mono 500 U+0-FF, U+131, loaded",
+   "JetBrains Mono 600 U+0-FF, U+131, loaded"
+  ],
+  "fl": [],
+  "jump": null,
+  "load": 1026
+ }
+}

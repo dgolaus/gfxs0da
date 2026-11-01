@@ -1,0 +1,70 @@
+{
+ "baseline": {
+  "faces": [
+   "Inter 400 U+0-FF, U+131, loaded",
+   "Inter 500 U+0-FF, U+131, loaded",
+   "Inter 600 U+0-FF, U+131, loaded",
+   "Inter Tight 400 U+0-FF, U+131, loaded",
+   "Inter Tight 500 U+0-FF, U+131, loaded",
+   "Inter Tight 600 U+0-FF, U+131, loaded",
+   "Inter Tight 700 U+0-FF, U+131, loaded",
+   "Inter Tight 800 U+0-FF, U+131, loaded",
+   "JetBrains Mono 500 U+0-FF, U+131, loaded",
+   "JetBrains Mono 600 U+0-FF, U+131, loaded"
+  ],
+  "fl": [],
+  "jump": 1446,
+  "load": 1537
+ },
+ "cvd": {
+  "faces": [
+   "Inter 400 U+0-FF, U+131, loaded",
+   "Inter 500 U+0-FF, U+131, loaded",
+   "Inter 600 U+0-FF, U+131, loaded",
+   "Inter Tight 400 U+0-FF, U+131, loaded",
+   "Inter Tight 500 U+0-FF, U+131, loaded",
+   "Inter Tight 600 U+0-FF, U+131, loaded",
+   "Inter Tight 700 U+0-FF, U+131, loaded",
+   "Inter Tight 800 U+0-FF, U+131, loaded",
+   "JetBrains Mono 500 U+0-FF, U+131, loaded",
+   "JetBrains Mono 600 U+0-FF, U+131, loaded"
+  ],
+  "fl": [],
+  "jump": 924,
+  "load": 1280
+ },
+ "cvd_gh": {
+  "faces": [
+   "Inter 400 U+0-FF, U+131, loaded",
+   "Inter 500 U+0-FF, U+131, loaded",
+   "Inter 600 U+0-FF, U+131, loaded",
+   "Inter Tight 400 U+0-FF, U+131, loaded",
+   "Inter Tight 500 U+0-FF, U+131, loaded",
+   "Inter Tight 600 U+0-FF, U+131, loaded",
+   "Inter Tight 700 U+0-FF, U+131, loaded",
+   "Inter Tight 800 U+0-FF, U+131, loaded",
+   "JetBrains Mono 500 U+0-FF, U+131, loaded",
+   "JetBrains Mono 600 U+0-FF, U+131, loaded"
+  ],
+  "fl": [],
+  "jump": 1087,
+  "load": 1147
+ },
+ "cvw_gh": {
+  "faces": [
+   "Inter 400 U+0-FF, U+131, loaded",
+   "Inter 500 U+0-FF, U+131, loaded",
+   "Inter 600 U+0-FF, U+131, loaded",
+   "Inter Tight 400 U+0-FF, U+131, loaded",
+   "Inter Tight 500 U+0-FF, U+131, loaded",
+   "Inter Tight 600 U+0-FF, U+131, loaded",
+   "Inter Tight 700 U+0-FF, U+131, loaded",
+   "Inter Tight 800 U+0-FF, U+131, loaded",
+   "JetBrains Mono 500 U+0-FF, U+131, loaded",
+   "JetBrains Mono 600 U+0-FF, U+131, loaded"
+  ],
+  "fl": [],
+  "jump": 989,
+  "load": 1043
+ }
+}

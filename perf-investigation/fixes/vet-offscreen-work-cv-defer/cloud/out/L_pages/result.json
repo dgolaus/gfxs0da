@@ -1,0 +1,418 @@
+{
+ "baseline:tos": {
+  "errs": [],
+  "shotTop": "/home/user/gfxs0da/perf-investigation/fixes/vet-offscreen-work-cv-defer/cloud/out/L_pages/baseline_tos_top.png",
+  "sy0": 0,
+  "spy": [
+   [
+    0,
+    "#pricing"
+   ],
+   [
+    300,
+    "#pricing"
+   ],
+   [
+    600,
+    "#pricing"
+   ],
+   [
+    900,
+    "#pricing"
+   ],
+   [
+    1200,
+    "#rescales"
+   ],
+   [
+    1500,
+    "#rescales"
+   ],
+   [
+    1800,
+    "#orders"
+   ],
+   [
+    2100,
+    "#queue"
+   ],
+   [
+    2400,
+    "#delivery"
+   ],
+   [
+    2700,
+    "#responsibility"
+   ],
+   [
+    3000,
+    "#creative"
+   ],
+   [
+    3300,
+    "#tools"
+   ],
+   [
+    3600,
+    "#rights"
+   ],
+   [
+    3900,
+    "#rights"
+   ],
+   [
+    4200,
+    "#refunds"
+   ],
+   [
+    4500,
+    "#refunds"
+   ],
+   [
+    4800,
+    "#communication"
+   ],
+   [
+    5100,
+    "#final"
+   ]
+  ],
+  "click": [
+   4389,
+   80,
+   "#refunds"
+  ],
+  "shotClick": "/home/user/gfxs0da/perf-investigation/fixes/vet-offscreen-work-cv-defer/cloud/out/L_pages/baseline_tos_click.png"
+ },
+ "baseline:slots": {
+  "errs": [],
+  "shotTop": "/home/user/gfxs0da/perf-investigation/fixes/vet-offscreen-work-cv-defer/cloud/out/L_pages/baseline_slots_top.png",
+  "sy0": 0
+ },
+ "baseline:nf": {
+  "errs": [],
+  "shotTop": "/home/user/gfxs0da/perf-investigation/fixes/vet-offscreen-work-cv-defer/cloud/out/L_pages/baseline_nf_top.png",
+  "sy0": 0
+ },
+ "baseline:toshash": {
+  "errs": [],
+  "shotTop": "/home/user/gfxs0da/perf-investigation/fixes/vet-offscreen-work-cv-defer/cloud/out/L_pages/baseline_toshash_top.png",
+  "sy0": 4390,
+  "hash": [
+   4390,
+   91
+  ]
+ },
+ "base_i:tos": {
+  "errs": [],
+  "shotTop": "/home/user/gfxs0da/perf-investigation/fixes/vet-offscreen-work-cv-defer/cloud/out/L_pages/base_i_tos_top.png",
+  "sy0": 0,
+  "spy": [
+   [
+    0,
+    "#pricing"
+   ],
+   [
+    300,
+    "#pricing"
+   ],
+   [
+    600,
+    "#pricing"
+   ],
+   [
+    900,
+    "#pricing"
+   ],
+   [
+    1200,
+    "#rescales"
+   ],
+   [
+    1500,
+    "#rescales"
+   ],
+   [
+    1800,
+    "#orders"
+   ],
+   [
+    2100,
+    "#queue"
+   ],
+   [
+    2400,
+    "#delivery"
+   ],
+   [
+    2700,
+    "#responsibility"
+   ],
+   [
+    3000,
+    "#creative"
+   ],
+   [
+    3300,
+    "#tools"
+   ],
+   [
+    3600,
+    "#rights"
+   ],
+   [
+    3900,
+    "#rights"
+   ],
+   [
+    4200,
+    "#refunds"
+   ],
+   [
+    4500,
+    "#refunds"
+   ],
+   [
+    4800,
+    "#communication"
+   ],
+   [
+    5100,
+    "#final"
+   ]
+  ],
+  "click": [
+   4389,
+   80,
+   "#refunds"
+  ],
+  "shotClick": "/home/user/gfxs0da/perf-investigation/fixes/vet-offscreen-work-cv-defer/cloud/out/L_pages/base_i_tos_click.png"
+ },
+ "base_i:slots": {
+  "errs": [],
+  "shotTop": "/home/user/gfxs0da/perf-investigation/fixes/vet-offscreen-work-cv-defer/cloud/out/L_pages/base_i_slots_top.png",
+  "sy0": 0
+ },
+ "base_i:nf": {
+  "errs": [],
+  "shotTop": "/home/user/gfxs0da/perf-investigation/fixes/vet-offscreen-work-cv-defer/cloud/out/L_pages/base_i_nf_top.png",
+  "sy0": 0
+ },
+ "base_i:toshash": {
+  "errs": [],
+  "shotTop": "/home/user/gfxs0da/perf-investigation/fixes/vet-offscreen-work-cv-defer/cloud/out/L_pages/base_i_toshash_top.png",
+  "sy0": 4390,
+  "hash": [
+   4390,
+   91
+  ]
+ },
+ "cvd_gh2:tos": {
+  "errs": [],
+  "shotTop": "/home/user/gfxs0da/perf-investigation/fixes/vet-offscreen-work-cv-defer/cloud/out/L_pages/cvd_gh2_tos_top.png",
+  "sy0": 0,
+  "spy": [
+   [
+    0,
+    "#pricing"
+   ],
+   [
+    300,
+    "#pricing"
+   ],
+   [
+    600,
+    "#pricing"
+   ],
+   [
+    900,
+    "#pricing"
+   ],
+   [
+    1200,
+    "#rescales"
+   ],
+   [
+    1500,
+    "#rescales"
+   ],
+   [
+    1800,
+    "#orders"
+   ],
+   [
+    2100,
+    "#queue"
+   ],
+   [
+    2400,
+    "#delivery"
+   ],
+   [
+    2700,
+    "#responsibility"
+   ],
+   [
+    3000,
+    "#creative"
+   ],
+   [
+    3300,
+    "#tools"
+   ],
+   [
+    3600,
+    "#rights"
+   ],
+   [
+    3900,
+    "#rights"
+   ],
+   [
+    4200,
+    "#refunds"
+   ],
+   [
+    4500,
+    "#refunds"
+   ],
+   [
+    4800,
+    "#communication"
+   ],
+   [
+    5100,
+    "#final"
+   ]
+  ],
+  "click": [
+   4389,
+   80,
+   "#refunds"
+  ],
+  "shotClick": "/home/user/gfxs0da/perf-investigation/fixes/vet-offscreen-work-cv-defer/cloud/out/L_pages/cvd_gh2_tos_click.png"
+ },
+ "cvd_gh2:slots": {
+  "errs": [],
+  "shotTop": "/home/user/gfxs0da/perf-investigation/fixes/vet-offscreen-work-cv-defer/cloud/out/L_pages/cvd_gh2_slots_top.png",
+  "sy0": 0
+ },
+ "cvd_gh2:nf": {
+  "errs": [],
+  "shotTop": "/home/user/gfxs0da/perf-investigation/fixes/vet-offscreen-work-cv-defer/cloud/out/L_pages/cvd_gh2_nf_top.png",
+  "sy0": 0
+ },
+ "cvd_gh2:toshash": {
+  "errs": [],
+  "shotTop": "/home/user/gfxs0da/perf-investigation/fixes/vet-offscreen-work-cv-defer/cloud/out/L_pages/cvd_gh2_toshash_top.png",
+  "sy0": 4390,
+  "hash": [
+   4390,
+   91
+  ]
+ },
+ "cvw_gh2:tos": {
+  "errs": [],
+  "shotTop": "/home/user/gfxs0da/perf-investigation/fixes/vet-offscreen-work-cv-defer/cloud/out/L_pages/cvw_gh2_tos_top.png",
+  "sy0": 0,
+  "spy": [
+   [
+    0,
+    "#pricing"
+   ],
+   [
+    300,
+    "#pricing"
+   ],
+   [
+    600,
+    "#pricing"
+   ],
+   [
+    900,
+    "#pricing"
+   ],
+   [
+    1200,
+    "#rescales"
+   ],
+   [
+    1500,
+    "#rescales"
+   ],
+   [
+    1800,
+    "#orders"
+   ],
+   [
+    2100,
+    "#queue"
+   ],
+   [
+    2400,
+    "#delivery"
+   ],
+   [
+    2700,
+    "#responsibility"
+   ],
+   [
+    3000,
+    "#creative"
+   ],
+   [
+    3300,
+    "#tools"
+   ],
+   [
+    3600,
+    "#rights"
+   ],
+   [
+    3900,
+    "#rights"
+   ],
+   [
+    4200,
+    "#refunds"
+   ],
+   [
+    4500,
+    "#refunds"
+   ],
+   [
+    4800,
+    "#communication"
+   ],
+   [
+    5100,
+    "#final"
+   ]
+  ],
+  "click": [
+   4389,
+   80,
+   "#refunds"
+  ],
+  "shotClick": "/home/user/gfxs0da/perf-investigation/fixes/vet-offscreen-work-cv-defer/cloud/out/L_pages/cvw_gh2_tos_click.png"
+ },
+ "cvw_gh2:slots": {
+  "errs": [],
+  "shotTop": "/home/user/gfxs0da/perf-investigation/fixes/vet-offscreen-work-cv-defer/cloud/out/L_pages/cvw_gh2_slots_top.png",
+  "sy0": 0
+ },
+ "cvw_gh2:nf": {
+  "errs": [],
+  "shotTop": "/home/user/gfxs0da/perf-investigation/fixes/vet-offscreen-work-cv-defer/cloud/out/L_pages/cvw_gh2_nf_top.png",
+  "sy0": 0
+ },
+ "cvw_gh2:toshash": {
+  "errs": [],
+  "shotTop": "/home/user/gfxs0da/perf-investigation/fixes/vet-offscreen-work-cv-defer/cloud/out/L_pages/cvw_gh2_toshash_top.png",
+  "sy0": 4390,
+  "hash": [
+   4390,
+   91
+  ]
+ }
+}
