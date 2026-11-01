@@ -1,0 +1,8 @@
+A: 11 frames, intro anims 14
+  motion (ms-since-play:mad vs previous frame) 143:0 305:0 461:0 611:0 754:0 876:3.265 1383:3.031 1508:1.06 1630:0.001 1754:0.016
+B: 9 frames, intro anims 14
+  motion (ms-since-play:mad vs previous frame) 149:0 296:0 414:0 529:0 646:0.495 1261:2.563 1396:3.728 1521:0.006
+split: 12 frames, intro anims 28
+  motion (ms-since-play:mad vs previous frame) 142:0 291:0 458:0 592:0 721:1.975 887:1.09 1038:0.129 1223:1.348 1400:0.035 1549:0.152 1681:0.212
+pcomb: 12 frames, intro anims 28
+  motion (ms-since-play:mad vs previous frame) 155:0 304:0 462:0 619:0 741:2.318 871:0.925 1032:0.102 1210:0.744 1389:0.474 1554:0.147 1682:0.218

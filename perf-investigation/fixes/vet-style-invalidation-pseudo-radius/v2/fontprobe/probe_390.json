@@ -1,0 +1,370 @@
+{
+ "baseline": [
+  {
+   "before": {
+    "0:Work": "0.0000@0.0000 box 0.0000",
+    "1:About": "0.0000@0.0000 box 0.0000",
+    "2:Trust": "0.0000@0.0000 box 0.0000",
+    "3:Pricing": "0.0000@0.0000 box 0.0000",
+    "4:TOS": "0.0000@0.0000 box 0.0000",
+    "5:Commission →": "94.0938@258.9063 box 128.0938",
+    "6:4 billion clic": "242.5469@20.0000 box 350.0000",
+    "7:Join the Waitl": "130.6250@49.0000 box 188.6250",
+    "8:View Work": "73.3125@249.6250 box 131.3125",
+    "9:Join the Waitl": "122.4531@43.0000 box 168.4531",
+    "10:Check Slots": "75.9688@221.4531 box 121.9688",
+    "fonts": "Inter 400 normal U+0-FF, U+13 | Inter 500 normal U+0-FF, U+13 | Inter 600 normal U+0-FF, U+13 | Inter Tight 400 normal U+0-FF, U+13 | Inter Tight 500 normal U+0-FF, U+13 | Inter Tight 600 normal U+0-FF, U+13 | Inter Tight 700 normal U+0-FF, U+13 | Inter Tight 800 normal U+0-FF, U+13 | JetBrains Mono 500 normal U+0-FF, U+13 | JetBrains Mono 600 normal U+0-FF, U+13"
+   },
+   "after": {
+    "0:Work": "0.0000@0.0000 box 0.0000",
+    "1:About": "0.0000@0.0000 box 0.0000",
+    "2:Trust": "0.0000@0.0000 box 0.0000",
+    "3:Pricing": "0.0000@0.0000 box 0.0000",
+    "4:TOS": "0.0000@0.0000 box 0.0000",
+    "5:Commission →": "94.0938@258.9063 box 128.0938",
+    "6:4 billion clic": "242.5469@20.0000 box 350.0000",
+    "7:Join the Waitl": "130.6250@49.0000 box 188.6250",
+    "8:View Work": "73.3125@249.6250 box 131.3125",
+    "9:Join the Waitl": "122.4531@43.0000 box 168.4531",
+    "10:Check Slots": "75.9688@221.4531 box 121.9688",
+    "fonts": "Inter 400 normal U+0-FF, U+13 | Inter 500 normal U+0-FF, U+13 | Inter 600 normal U+0-FF, U+13 | Inter Tight 400 normal U+0-FF, U+13 | Inter Tight 500 normal U+0-FF, U+13 | Inter Tight 600 normal U+0-FF, U+13 | Inter Tight 700 normal U+0-FF, U+13 | Inter Tight 800 normal U+0-FF, U+13 | JetBrains Mono 500 normal U+0-FF, U+13 | JetBrains Mono 600 normal U+0-FF, U+13"
+   }
+  },
+  {
+   "before": {
+    "0:Work": "0.0000@0.0000 box 0.0000",
+    "1:About": "0.0000@0.0000 box 0.0000",
+    "2:Trust": "0.0000@0.0000 box 0.0000",
+    "3:Pricing": "0.0000@0.0000 box 0.0000",
+    "4:TOS": "0.0000@0.0000 box 0.0000",
+    "5:Commission →": "94.0938@258.9063 box 128.0938",
+    "6:4 billion clic": "242.5469@20.0000 box 350.0000",
+    "7:Join the Waitl": "130.6250@49.0000 box 188.6250",
+    "8:View Work": "73.3125@249.6250 box 131.3125",
+    "9:Join the Waitl": "122.4531@43.0000 box 168.4531",
+    "10:Check Slots": "75.9688@221.4531 box 121.9688",
+    "fonts": "Inter 400 normal U+0-FF, U+13 | Inter 500 normal U+0-FF, U+13 | Inter 600 normal U+0-FF, U+13 | Inter Tight 400 normal U+0-FF, U+13 | Inter Tight 500 normal U+0-FF, U+13 | Inter Tight 600 normal U+0-FF, U+13 | Inter Tight 700 normal U+0-FF, U+13 | Inter Tight 800 normal U+0-FF, U+13 | JetBrains Mono 500 normal U+0-FF, U+13 | JetBrains Mono 600 normal U+0-FF, U+13"
+   },
+   "after": {
+    "0:Work": "0.0000@0.0000 box 0.0000",
+    "1:About": "0.0000@0.0000 box 0.0000",
+    "2:Trust": "0.0000@0.0000 box 0.0000",
+    "3:Pricing": "0.0000@0.0000 box 0.0000",
+    "4:TOS": "0.0000@0.0000 box 0.0000",
+    "5:Commission →": "94.0938@258.9063 box 128.0938",
+    "6:4 billion clic": "242.5469@20.0000 box 350.0000",
+    "7:Join the Waitl": "130.6250@49.0000 box 188.6250",
+    "8:View Work": "73.3125@249.6250 box 131.3125",
+    "9:Join the Waitl": "122.4531@43.0000 box 168.4531",
+    "10:Check Slots": "75.9688@221.4531 box 121.9688",
+    "fonts": "Inter 400 normal U+0-FF, U+13 | Inter 500 normal U+0-FF, U+13 | Inter 600 normal U+0-FF, U+13 | Inter Tight 400 normal U+0-FF, U+13 | Inter Tight 500 normal U+0-FF, U+13 | Inter Tight 600 normal U+0-FF, U+13 | Inter Tight 700 normal U+0-FF, U+13 | Inter Tight 800 normal U+0-FF, U+13 | JetBrains Mono 500 normal U+0-FF, U+13 | JetBrains Mono 600 normal U+0-FF, U+13"
+   }
+  },
+  {
+   "before": {
+    "0:Work": "0.0000@0.0000 box 0.0000",
+    "1:About": "0.0000@0.0000 box 0.0000",
+    "2:Trust": "0.0000@0.0000 box 0.0000",
+    "3:Pricing": "0.0000@0.0000 box 0.0000",
+    "4:TOS": "0.0000@0.0000 box 0.0000",
+    "5:Commission →": "94.0938@258.9063 box 128.0938",
+    "6:4 billion clic": "242.5469@20.0000 box 350.0000",
+    "7:Join the Waitl": "130.6250@49.0000 box 188.6250",
+    "8:View Work": "73.3125@249.6250 box 131.3125",
+    "9:Join the Waitl": "122.4531@43.0000 box 168.4531",
+    "10:Check Slots": "75.9688@221.4531 box 121.9688",
+    "fonts": "Inter 400 normal U+0-FF, U+13 | Inter 500 normal U+0-FF, U+13 | Inter 600 normal U+0-FF, U+13 | Inter Tight 400 normal U+0-FF, U+13 | Inter Tight 500 normal U+0-FF, U+13 | Inter Tight 600 normal U+0-FF, U+13 | Inter Tight 700 normal U+0-FF, U+13 | Inter Tight 800 normal U+0-FF, U+13 | JetBrains Mono 500 normal U+0-FF, U+13 | JetBrains Mono 600 normal U+0-FF, U+13"
+   },
+   "after": {
+    "0:Work": "0.0000@0.0000 box 0.0000",
+    "1:About": "0.0000@0.0000 box 0.0000",
+    "2:Trust": "0.0000@0.0000 box 0.0000",
+    "3:Pricing": "0.0000@0.0000 box 0.0000",
+    "4:TOS": "0.0000@0.0000 box 0.0000",
+    "5:Commission →": "94.0938@258.9063 box 128.0938",
+    "6:4 billion clic": "242.5469@20.0000 box 350.0000",
+    "7:Join the Waitl": "130.6250@49.0000 box 188.6250",
+    "8:View Work": "73.3125@249.6250 box 131.3125",
+    "9:Join the Waitl": "122.4531@43.0000 box 168.4531",
+    "10:Check Slots": "75.9688@221.4531 box 121.9688",
+    "fonts": "Inter 400 normal U+0-FF, U+13 | Inter 500 normal U+0-FF, U+13 | Inter 600 normal U+0-FF, U+13 | Inter Tight 400 normal U+0-FF, U+13 | Inter Tight 500 normal U+0-FF, U+13 | Inter Tight 600 normal U+0-FF, U+13 | Inter Tight 700 normal U+0-FF, U+13 | Inter Tight 800 normal U+0-FF, U+13 | JetBrains Mono 500 normal U+0-FF, U+13 | JetBrains Mono 600 normal U+0-FF, U+13"
+   }
+  }
+ ],
+ "ctrl": [
+  {
+   "before": {
+    "0:Work": "0.0000@0.0000 box 0.0000",
+    "1:About": "0.0000@0.0000 box 0.0000",
+    "2:Trust": "0.0000@0.0000 box 0.0000",
+    "3:Pricing": "0.0000@0.0000 box 0.0000",
+    "4:TOS": "0.0000@0.0000 box 0.0000",
+    "5:Commission →": "94.0938@258.9063 box 128.0938",
+    "6:4 billion clic": "242.5469@20.0000 box 350.0000",
+    "7:Join the Waitl": "130.6250@49.0000 box 188.6250",
+    "8:View Work": "73.3125@249.6250 box 131.3125",
+    "9:Join the Waitl": "122.4531@43.0000 box 168.4531",
+    "10:Check Slots": "75.9688@221.4531 box 121.9688",
+    "fonts": "Inter 400 normal U+0-FF, U+13 | Inter 500 normal U+0-FF, U+13 | Inter 600 normal U+0-FF, U+13 | Inter Tight 400 normal U+0-FF, U+13 | Inter Tight 500 normal U+0-FF, U+13 | Inter Tight 600 normal U+0-FF, U+13 | Inter Tight 700 normal U+0-FF, U+13 | Inter Tight 800 normal U+0-FF, U+13 | JetBrains Mono 500 normal U+0-FF, U+13 | JetBrains Mono 600 normal U+0-FF, U+13"
+   },
+   "after": {
+    "0:Work": "0.0000@0.0000 box 0.0000",
+    "1:About": "0.0000@0.0000 box 0.0000",
+    "2:Trust": "0.0000@0.0000 box 0.0000",
+    "3:Pricing": "0.0000@0.0000 box 0.0000",
+    "4:TOS": "0.0000@0.0000 box 0.0000",
+    "5:Commission →": "94.0938@258.9063 box 128.0938",
+    "6:4 billion clic": "242.5469@20.0000 box 350.0000",
+    "7:Join the Waitl": "130.6250@49.0000 box 188.6250",
+    "8:View Work": "73.3125@249.6250 box 131.3125",
+    "9:Join the Waitl": "122.4531@43.0000 box 168.4531",
+    "10:Check Slots": "75.9688@221.4531 box 121.9688",
+    "fonts": "Inter 400 normal U+0-FF, U+13 | Inter 500 normal U+0-FF, U+13 | Inter 600 normal U+0-FF, U+13 | Inter Tight 400 normal U+0-FF, U+13 | Inter Tight 500 normal U+0-FF, U+13 | Inter Tight 600 normal U+0-FF, U+13 | Inter Tight 700 normal U+0-FF, U+13 | Inter Tight 800 normal U+0-FF, U+13 | JetBrains Mono 500 normal U+0-FF, U+13 | JetBrains Mono 600 normal U+0-FF, U+13"
+   }
+  },
+  {
+   "before": {
+    "0:Work": "0.0000@0.0000 box 0.0000",
+    "1:About": "0.0000@0.0000 box 0.0000",
+    "2:Trust": "0.0000@0.0000 box 0.0000",
+    "3:Pricing": "0.0000@0.0000 box 0.0000",
+    "4:TOS": "0.0000@0.0000 box 0.0000",
+    "5:Commission →": "94.0938@258.9063 box 128.0938",
+    "6:4 billion clic": "242.5469@20.0000 box 350.0000",
+    "7:Join the Waitl": "130.6250@49.0000 box 188.6250",
+    "8:View Work": "73.3125@249.6250 box 131.3125",
+    "9:Join the Waitl": "122.4531@43.0000 box 168.4531",
+    "10:Check Slots": "75.9688@221.4531 box 121.9688",
+    "fonts": "Inter 400 normal U+0-FF, U+13 | Inter 500 normal U+0-FF, U+13 | Inter 600 normal U+0-FF, U+13 | Inter Tight 400 normal U+0-FF, U+13 | Inter Tight 500 normal U+0-FF, U+13 | Inter Tight 600 normal U+0-FF, U+13 | Inter Tight 700 normal U+0-FF, U+13 | Inter Tight 800 normal U+0-FF, U+13 | JetBrains Mono 500 normal U+0-FF, U+13 | JetBrains Mono 600 normal U+0-FF, U+13"
+   },
+   "after": {
+    "0:Work": "0.0000@0.0000 box 0.0000",
+    "1:About": "0.0000@0.0000 box 0.0000",
+    "2:Trust": "0.0000@0.0000 box 0.0000",
+    "3:Pricing": "0.0000@0.0000 box 0.0000",
+    "4:TOS": "0.0000@0.0000 box 0.0000",
+    "5:Commission →": "94.0938@258.9063 box 128.0938",
+    "6:4 billion clic": "242.5469@20.0000 box 350.0000",
+    "7:Join the Waitl": "130.6250@49.0000 box 188.6250",
+    "8:View Work": "73.3125@249.6250 box 131.3125",
+    "9:Join the Waitl": "122.4531@43.0000 box 168.4531",
+    "10:Check Slots": "75.9688@221.4531 box 121.9688",
+    "fonts": "Inter 400 normal U+0-FF, U+13 | Inter 500 normal U+0-FF, U+13 | Inter 600 normal U+0-FF, U+13 | Inter Tight 400 normal U+0-FF, U+13 | Inter Tight 500 normal U+0-FF, U+13 | Inter Tight 600 normal U+0-FF, U+13 | Inter Tight 700 normal U+0-FF, U+13 | Inter Tight 800 normal U+0-FF, U+13 | JetBrains Mono 500 normal U+0-FF, U+13 | JetBrains Mono 600 normal U+0-FF, U+13"
+   }
+  },
+  {
+   "before": {
+    "0:Work": "0.0000@0.0000 box 0.0000",
+    "1:About": "0.0000@0.0000 box 0.0000",
+    "2:Trust": "0.0000@0.0000 box 0.0000",
+    "3:Pricing": "0.0000@0.0000 box 0.0000",
+    "4:TOS": "0.0000@0.0000 box 0.0000",
+    "5:Commission →": "94.0938@258.9063 box 128.0938",
+    "6:4 billion clic": "242.5469@20.0000 box 350.0000",
+    "7:Join the Waitl": "130.6250@49.0000 box 188.6250",
+    "8:View Work": "73.3125@249.6250 box 131.3125",
+    "9:Join the Waitl": "122.4531@43.0000 box 168.4531",
+    "10:Check Slots": "75.9688@221.4531 box 121.9688",
+    "fonts": "Inter 400 normal U+0-FF, U+13 | Inter 500 normal U+0-FF, U+13 | Inter 600 normal U+0-FF, U+13 | Inter Tight 400 normal U+0-FF, U+13 | Inter Tight 500 normal U+0-FF, U+13 | Inter Tight 600 normal U+0-FF, U+13 | Inter Tight 700 normal U+0-FF, U+13 | Inter Tight 800 normal U+0-FF, U+13 | JetBrains Mono 500 normal U+0-FF, U+13 | JetBrains Mono 600 normal U+0-FF, U+13"
+   },
+   "after": {
+    "0:Work": "0.0000@0.0000 box 0.0000",
+    "1:About": "0.0000@0.0000 box 0.0000",
+    "2:Trust": "0.0000@0.0000 box 0.0000",
+    "3:Pricing": "0.0000@0.0000 box 0.0000",
+    "4:TOS": "0.0000@0.0000 box 0.0000",
+    "5:Commission →": "94.0938@258.9063 box 128.0938",
+    "6:4 billion clic": "242.5469@20.0000 box 350.0000",
+    "7:Join the Waitl": "130.6250@49.0000 box 188.6250",
+    "8:View Work": "73.3125@249.6250 box 131.3125",
+    "9:Join the Waitl": "122.4531@43.0000 box 168.4531",
+    "10:Check Slots": "75.9688@221.4531 box 121.9688",
+    "fonts": "Inter 400 normal U+0-FF, U+13 | Inter 500 normal U+0-FF, U+13 | Inter 600 normal U+0-FF, U+13 | Inter Tight 400 normal U+0-FF, U+13 | Inter Tight 500 normal U+0-FF, U+13 | Inter Tight 600 normal U+0-FF, U+13 | Inter Tight 700 normal U+0-FF, U+13 | Inter Tight 800 normal U+0-FF, U+13 | JetBrains Mono 500 normal U+0-FF, U+13 | JetBrains Mono 600 normal U+0-FF, U+13"
+   }
+  }
+ ],
+ "prad": [
+  {
+   "before": {
+    "0:Work": "0.0000@0.0000 box 0.0000",
+    "1:About": "0.0000@0.0000 box 0.0000",
+    "2:Trust": "0.0000@0.0000 box 0.0000",
+    "3:Pricing": "0.0000@0.0000 box 0.0000",
+    "4:TOS": "0.0000@0.0000 box 0.0000",
+    "5:Commission →": "94.0938@258.9063 box 128.0938",
+    "6:4 billion clic": "242.5469@20.0000 box 350.0000",
+    "7:Join the Waitl": "130.6250@49.0000 box 188.6250",
+    "8:View Work": "73.3125@249.6250 box 131.3125",
+    "9:Join the Waitl": "122.4531@43.0000 box 168.4531",
+    "10:Check Slots": "75.9688@221.4531 box 121.9688",
+    "fonts": "Inter 400 normal U+0-FF, U+13 | Inter 500 normal U+0-FF, U+13 | Inter 600 normal U+0-FF, U+13 | Inter Tight 400 normal U+0-FF, U+13 | Inter Tight 500 normal U+0-FF, U+13 | Inter Tight 600 normal U+0-FF, U+13 | Inter Tight 700 normal U+0-FF, U+13 | Inter Tight 800 normal U+0-FF, U+13 | JetBrains Mono 500 normal U+0-FF, U+13 | JetBrains Mono 600 normal U+0-FF, U+13"
+   },
+   "after": {
+    "0:Work": "0.0000@0.0000 box 0.0000",
+    "1:About": "0.0000@0.0000 box 0.0000",
+    "2:Trust": "0.0000@0.0000 box 0.0000",
+    "3:Pricing": "0.0000@0.0000 box 0.0000",
+    "4:TOS": "0.0000@0.0000 box 0.0000",
+    "5:Commission →": "94.0938@258.9063 box 128.0938",
+    "6:4 billion clic": "242.5469@20.0000 box 350.0000",
+    "7:Join the Waitl": "130.6250@49.0000 box 188.6250",
+    "8:View Work": "73.3125@249.6250 box 131.3125",
+    "9:Join the Waitl": "122.4531@43.0000 box 168.4531",
+    "10:Check Slots": "75.9688@221.4531 box 121.9688",
+    "fonts": "Inter 400 normal U+0-FF, U+13 | Inter 500 normal U+0-FF, U+13 | Inter 600 normal U+0-FF, U+13 | Inter Tight 400 normal U+0-FF, U+13 | Inter Tight 500 normal U+0-FF, U+13 | Inter Tight 600 normal U+0-FF, U+13 | Inter Tight 700 normal U+0-FF, U+13 | Inter Tight 800 normal U+0-FF, U+13 | JetBrains Mono 500 normal U+0-FF, U+13 | JetBrains Mono 600 normal U+0-FF, U+13"
+   }
+  },
+  {
+   "before": {
+    "0:Work": "0.0000@0.0000 box 0.0000",
+    "1:About": "0.0000@0.0000 box 0.0000",
+    "2:Trust": "0.0000@0.0000 box 0.0000",
+    "3:Pricing": "0.0000@0.0000 box 0.0000",
+    "4:TOS": "0.0000@0.0000 box 0.0000",
+    "5:Commission →": "94.0938@258.9063 box 128.0938",
+    "6:4 billion clic": "242.5469@20.0000 box 350.0000",
+    "7:Join the Waitl": "130.6250@49.0000 box 188.6250",
+    "8:View Work": "73.3125@249.6250 box 131.3125",
+    "9:Join the Waitl": "122.4531@43.0000 box 168.4531",
+    "10:Check Slots": "75.9688@221.4531 box 121.9688",
+    "fonts": "Inter 400 normal U+0-FF, U+13 | Inter 500 normal U+0-FF, U+13 | Inter 600 normal U+0-FF, U+13 | Inter Tight 400 normal U+0-FF, U+13 | Inter Tight 500 normal U+0-FF, U+13 | Inter Tight 600 normal U+0-FF, U+13 | Inter Tight 700 normal U+0-FF, U+13 | Inter Tight 800 normal U+0-FF, U+13 | JetBrains Mono 500 normal U+0-FF, U+13 | JetBrains Mono 600 normal U+0-FF, U+13"
+   },
+   "after": {
+    "0:Work": "0.0000@0.0000 box 0.0000",
+    "1:About": "0.0000@0.0000 box 0.0000",
+    "2:Trust": "0.0000@0.0000 box 0.0000",
+    "3:Pricing": "0.0000@0.0000 box 0.0000",
+    "4:TOS": "0.0000@0.0000 box 0.0000",
+    "5:Commission →": "94.0938@258.9063 box 128.0938",
+    "6:4 billion clic": "242.5469@20.0000 box 350.0000",
+    "7:Join the Waitl": "130.6250@49.0000 box 188.6250",
+    "8:View Work": "73.3125@249.6250 box 131.3125",
+    "9:Join the Waitl": "122.4531@43.0000 box 168.4531",
+    "10:Check Slots": "75.9688@221.4531 box 121.9688",
+    "fonts": "Inter 400 normal U+0-FF, U+13 | Inter 500 normal U+0-FF, U+13 | Inter 600 normal U+0-FF, U+13 | Inter Tight 400 normal U+0-FF, U+13 | Inter Tight 500 normal U+0-FF, U+13 | Inter Tight 600 normal U+0-FF, U+13 | Inter Tight 700 normal U+0-FF, U+13 | Inter Tight 800 normal U+0-FF, U+13 | JetBrains Mono 500 normal U+0-FF, U+13 | JetBrains Mono 600 normal U+0-FF, U+13"
+   }
+  },
+  {
+   "before": {
+    "0:Work": "0.0000@0.0000 box 0.0000",
+    "1:About": "0.0000@0.0000 box 0.0000",
+    "2:Trust": "0.0000@0.0000 box 0.0000",
+    "3:Pricing": "0.0000@0.0000 box 0.0000",
+    "4:TOS": "0.0000@0.0000 box 0.0000",
+    "5:Commission →": "94.0938@258.9063 box 128.0938",
+    "6:4 billion clic": "242.5469@20.0000 box 350.0000",
+    "7:Join the Waitl": "130.6250@49.0000 box 188.6250",
+    "8:View Work": "73.3125@249.6250 box 131.3125",
+    "9:Join the Waitl": "122.4531@43.0000 box 168.4531",
+    "10:Check Slots": "75.9688@221.4531 box 121.9688",
+    "fonts": "Inter 400 normal U+0-FF, U+13 | Inter 500 normal U+0-FF, U+13 | Inter 600 normal U+0-FF, U+13 | Inter Tight 400 normal U+0-FF, U+13 | Inter Tight 500 normal U+0-FF, U+13 | Inter Tight 600 normal U+0-FF, U+13 | Inter Tight 700 normal U+0-FF, U+13 | Inter Tight 800 normal U+0-FF, U+13 | JetBrains Mono 500 normal U+0-FF, U+13 | JetBrains Mono 600 normal U+0-FF, U+13"
+   },
+   "after": {
+    "0:Work": "0.0000@0.0000 box 0.0000",
+    "1:About": "0.0000@0.0000 box 0.0000",
+    "2:Trust": "0.0000@0.0000 box 0.0000",
+    "3:Pricing": "0.0000@0.0000 box 0.0000",
+    "4:TOS": "0.0000@0.0000 box 0.0000",
+    "5:Commission →": "94.0938@258.9063 box 128.0938",
+    "6:4 billion clic": "242.5469@20.0000 box 350.0000",
+    "7:Join the Waitl": "130.6250@49.0000 box 188.6250",
+    "8:View Work": "73.3125@249.6250 box 131.3125",
+    "9:Join the Waitl": "122.4531@43.0000 box 168.4531",
+    "10:Check Slots": "75.9688@221.4531 box 121.9688",
+    "fonts": "Inter 400 normal U+0-FF, U+13 | Inter 500 normal U+0-FF, U+13 | Inter 600 normal U+0-FF, U+13 | Inter Tight 400 normal U+0-FF, U+13 | Inter Tight 500 normal U+0-FF, U+13 | Inter Tight 600 normal U+0-FF, U+13 | Inter Tight 700 normal U+0-FF, U+13 | Inter Tight 800 normal U+0-FF, U+13 | JetBrains Mono 500 normal U+0-FF, U+13 | JetBrains Mono 600 normal U+0-FF, U+13"
+   }
+  }
+ ],
+ "pradf": [
+  {
+   "before": {
+    "0:Work": "0.0000@0.0000 box 0.0000",
+    "1:About": "0.0000@0.0000 box 0.0000",
+    "2:Trust": "0.0000@0.0000 box 0.0000",
+    "3:Pricing": "0.0000@0.0000 box 0.0000",
+    "4:TOS": "0.0000@0.0000 box 0.0000",
+    "5:Commission →": "94.0938@258.9063 box 128.0938",
+    "6:4 billion clic": "242.5469@20.0000 box 350.0000",
+    "7:Join the Waitl": "130.6250@49.0000 box 188.6250",
+    "8:View Work": "73.3125@249.6250 box 131.3125",
+    "9:Join the Waitl": "122.4531@43.0000 box 168.4531",
+    "10:Check Slots": "75.9688@221.4531 box 121.9688",
+    "fonts": "Inter 400 normal U+0-FF, U+13 | Inter 500 normal U+0-FF, U+13 | Inter 600 normal U+0-FF, U+13 | Inter Tight 400 normal U+0-FF, U+13 | Inter Tight 500 normal U+0-FF, U+13 | Inter Tight 600 normal U+0-FF, U+13 | Inter Tight 700 normal U+0-FF, U+13 | Inter Tight 800 normal U+0-FF, U+13 | JetBrains Mono 500 normal U+0-FF, U+13 | JetBrains Mono 600 normal U+0-FF, U+13"
+   },
+   "after": {
+    "0:Work": "0.0000@0.0000 box 0.0000",
+    "1:About": "0.0000@0.0000 box 0.0000",
+    "2:Trust": "0.0000@0.0000 box 0.0000",
+    "3:Pricing": "0.0000@0.0000 box 0.0000",
+    "4:TOS": "0.0000@0.0000 box 0.0000",
+    "5:Commission →": "94.0938@258.9063 box 128.0938",
+    "6:4 billion clic": "242.5469@20.0000 box 350.0000",
+    "7:Join the Waitl": "130.6250@49.0000 box 188.6250",
+    "8:View Work": "73.3125@249.6250 box 131.3125",
+    "9:Join the Waitl": "122.4531@43.0000 box 168.4531",
+    "10:Check Slots": "75.9688@221.4531 box 121.9688",
+    "fonts": "Inter 400 normal U+0-FF, U+13 | Inter 500 normal U+0-FF, U+13 | Inter 600 normal U+0-FF, U+13 | Inter Tight 400 normal U+0-FF, U+13 | Inter Tight 500 normal U+0-FF, U+13 | Inter Tight 600 normal U+0-FF, U+13 | Inter Tight 700 normal U+0-FF, U+13 | Inter Tight 800 normal U+0-FF, U+13 | JetBrains Mono 500 normal U+0-FF, U+13 | JetBrains Mono 600 normal U+0-FF, U+13"
+   }
+  },
+  {
+   "before": {
+    "0:Work": "0.0000@0.0000 box 0.0000",
+    "1:About": "0.0000@0.0000 box 0.0000",
+    "2:Trust": "0.0000@0.0000 box 0.0000",
+    "3:Pricing": "0.0000@0.0000 box 0.0000",
+    "4:TOS": "0.0000@0.0000 box 0.0000",
+    "5:Commission →": "94.0938@258.9063 box 128.0938",
+    "6:4 billion clic": "242.5469@20.0000 box 350.0000",
+    "7:Join the Waitl": "130.6250@49.0000 box 188.6250",
+    "8:View Work": "73.3125@249.6250 box 131.3125",
+    "9:Join the Waitl": "122.4531@43.0000 box 168.4531",
+    "10:Check Slots": "75.9688@221.4531 box 121.9688",
+    "fonts": "Inter 400 normal U+0-FF, U+13 | Inter 500 normal U+0-FF, U+13 | Inter 600 normal U+0-FF, U+13 | Inter Tight 400 normal U+0-FF, U+13 | Inter Tight 500 normal U+0-FF, U+13 | Inter Tight 600 normal U+0-FF, U+13 | Inter Tight 700 normal U+0-FF, U+13 | Inter Tight 800 normal U+0-FF, U+13 | JetBrains Mono 500 normal U+0-FF, U+13 | JetBrains Mono 600 normal U+0-FF, U+13"
+   },
+   "after": {
+    "0:Work": "0.0000@0.0000 box 0.0000",
+    "1:About": "0.0000@0.0000 box 0.0000",
+    "2:Trust": "0.0000@0.0000 box 0.0000",
+    "3:Pricing": "0.0000@0.0000 box 0.0000",
+    "4:TOS": "0.0000@0.0000 box 0.0000",
+    "5:Commission →": "94.0938@258.9063 box 128.0938",
+    "6:4 billion clic": "242.5469@20.0000 box 350.0000",
+    "7:Join the Waitl": "130.6250@49.0000 box 188.6250",
+    "8:View Work": "73.3125@249.6250 box 131.3125",
+    "9:Join the Waitl": "122.4531@43.0000 box 168.4531",
+    "10:Check Slots": "75.9688@221.4531 box 121.9688",
+    "fonts": "Inter 400 normal U+0-FF, U+13 | Inter 500 normal U+0-FF, U+13 | Inter 600 normal U+0-FF, U+13 | Inter Tight 400 normal U+0-FF, U+13 | Inter Tight 500 normal U+0-FF, U+13 | Inter Tight 600 normal U+0-FF, U+13 | Inter Tight 700 normal U+0-FF, U+13 | Inter Tight 800 normal U+0-FF, U+13 | JetBrains Mono 500 normal U+0-FF, U+13 | JetBrains Mono 600 normal U+0-FF, U+13"
+   }
+  },
+  {
+   "before": {
+    "0:Work": "0.0000@0.0000 box 0.0000",
+    "1:About": "0.0000@0.0000 box 0.0000",
+    "2:Trust": "0.0000@0.0000 box 0.0000",
+    "3:Pricing": "0.0000@0.0000 box 0.0000",
+    "4:TOS": "0.0000@0.0000 box 0.0000",
+    "5:Commission →": "94.0938@258.9063 box 128.0938",
+    "6:4 billion clic": "242.5469@20.0000 box 350.0000",
+    "7:Join the Waitl": "130.6250@49.0000 box 188.6250",
+    "8:View Work": "73.3125@249.6250 box 131.3125",
+    "9:Join the Waitl": "122.4531@43.0000 box 168.4531",
+    "10:Check Slots": "75.9688@221.4531 box 121.9688",
+    "fonts": "Inter 400 normal U+0-FF, U+13 | Inter 500 normal U+0-FF, U+13 | Inter 600 normal U+0-FF, U+13 | Inter Tight 400 normal U+0-FF, U+13 | Inter Tight 500 normal U+0-FF, U+13 | Inter Tight 600 normal U+0-FF, U+13 | Inter Tight 700 normal U+0-FF, U+13 | Inter Tight 800 normal U+0-FF, U+13 | JetBrains Mono 500 normal U+0-FF, U+13 | JetBrains Mono 600 normal U+0-FF, U+13"
+   },
+   "after": {
+    "0:Work": "0.0000@0.0000 box 0.0000",
+    "1:About": "0.0000@0.0000 box 0.0000",
+    "2:Trust": "0.0000@0.0000 box 0.0000",
+    "3:Pricing": "0.0000@0.0000 box 0.0000",
+    "4:TOS": "0.0000@0.0000 box 0.0000",
+    "5:Commission →": "94.0938@258.9063 box 128.0938",
+    "6:4 billion clic": "242.5469@20.0000 box 350.0000",
+    "7:Join the Waitl": "130.6250@49.0000 box 188.6250",
+    "8:View Work": "73.3125@249.6250 box 131.3125",
+    "9:Join the Waitl": "122.4531@43.0000 box 168.4531",
+    "10:Check Slots": "75.9688@221.4531 box 121.9688",
+    "fonts": "Inter 400 normal U+0-FF, U+13 | Inter 500 normal U+0-FF, U+13 | Inter 600 normal U+0-FF, U+13 | Inter Tight 400 normal U+0-FF, U+13 | Inter Tight 500 normal U+0-FF, U+13 | Inter Tight 600 normal U+0-FF, U+13 | Inter Tight 700 normal U+0-FF, U+13 | Inter Tight 800 normal U+0-FF, U+13 | JetBrains Mono 500 normal U+0-FF, U+13 | JetBrains Mono 600 normal U+0-FF, U+13"
+   }
+  }
+ ]
+}

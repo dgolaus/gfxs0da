@@ -1,0 +1,8 @@
+[
+  { "name": "baseline" },
+  { "name": "base", "files": { "/script.js": "fixes/approved-base/script.js", "/styles.css": "fixes/approved-base/styles.css" } },
+  { "name": "prad", "files": { "/styles.css": "fixes/vet-style-invalidation-pseudo-radius/v2/styles.pseudoradius.amended.css" } },
+  { "name": "stab1440", "files": { "/styles.css": "fixes/vet-paint-composite-stable-layerize/cloud/styles.contain-1440.css" } },
+  { "name": "cvstay", "files": { "/styles.css": "fixes/offscreen-work/styles.css", "/script.js": "fixes/vet-offscreen-work-cv-defer/cloud/script.c2stay.js", "/smooth-scroll.js": "fixes/offscreen-work/smooth-scroll.js" } },
+  { "name": "base+prad+stab", "files": { "/script.js": "fixes/approved-base/script.js", "/styles.css": "fixes/timing/styles.base-prad-stab.css" } }
+]

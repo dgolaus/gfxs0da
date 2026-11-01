@@ -1,0 +1,132 @@
+{
+ "tally": {
+  "baseline": {
+   "7f9890f5": 1,
+   "2808570d": 1,
+   "7d1eec1c": 1,
+   "fbb59d23": 1,
+   "7ffb0806": 1
+  },
+  "prad": {
+   "b3305f04": 1,
+   "7f19f2ac": 1,
+   "37da9447": 1,
+   "df578957": 1,
+   "f9e95af4": 1
+  }
+ },
+ "firstOf": {
+  "7f9890f5": "/home/user/gfxs0da/perf-investigation/fixes/vet-style-invalidation-pseudo-radius/v2/yoursprobe2/baseline_0.png",
+  "b3305f04": "/home/user/gfxs0da/perf-investigation/fixes/vet-style-invalidation-pseudo-radius/v2/yoursprobe2/prad_0.png",
+  "2808570d": "/home/user/gfxs0da/perf-investigation/fixes/vet-style-invalidation-pseudo-radius/v2/yoursprobe2/baseline_1.png",
+  "7f19f2ac": "/home/user/gfxs0da/perf-investigation/fixes/vet-style-invalidation-pseudo-radius/v2/yoursprobe2/prad_1.png",
+  "7d1eec1c": "/home/user/gfxs0da/perf-investigation/fixes/vet-style-invalidation-pseudo-radius/v2/yoursprobe2/baseline_2.png",
+  "37da9447": "/home/user/gfxs0da/perf-investigation/fixes/vet-style-invalidation-pseudo-radius/v2/yoursprobe2/prad_2.png",
+  "fbb59d23": "/home/user/gfxs0da/perf-investigation/fixes/vet-style-invalidation-pseudo-radius/v2/yoursprobe2/baseline_3.png",
+  "df578957": "/home/user/gfxs0da/perf-investigation/fixes/vet-style-invalidation-pseudo-radius/v2/yoursprobe2/prad_3.png",
+  "7ffb0806": "/home/user/gfxs0da/perf-investigation/fixes/vet-style-invalidation-pseudo-radius/v2/yoursprobe2/baseline_4.png",
+  "f9e95af4": "/home/user/gfxs0da/perf-investigation/fixes/vet-style-invalidation-pseudo-radius/v2/yoursprobe2/prad_4.png"
+ },
+ "rows": [
+  {
+   "v": "baseline",
+   "k": 0,
+   "h": "7f9890f5",
+   "anims": [
+    "heroTitleIn@hero-title:running:1083",
+    "accentOrbs@accent-orbs:running:1083",
+    "GRAD 9.56 top=360.0"
+   ]
+  },
+  {
+   "v": "prad",
+   "k": 0,
+   "h": "b3305f04",
+   "anims": [
+    "heroTitleIn@hero-title:running:1017",
+    "accentOrbs@accent-orbs:running:1017",
+    "GRAD 9.5 top=360.0"
+   ]
+  },
+  {
+   "v": "baseline",
+   "k": 1,
+   "h": "2808570d",
+   "anims": [
+    "heroTitleIn@hero-title:running:1000",
+    "accentOrbs@accent-orbs:running:1000",
+    "GRAD 9.46 top=360.0"
+   ]
+  },
+  {
+   "v": "prad",
+   "k": 1,
+   "h": "7f19f2ac",
+   "anims": [
+    "heroTitleIn@hero-title:finished:1150",
+    "accentOrbs@accent-orbs:running:1700",
+    "GRAD 9.85 top=360.0"
+   ]
+  },
+  {
+   "v": "baseline",
+   "k": 2,
+   "h": "7d1eec1c",
+   "anims": [
+    "heroTitleIn@hero-title:finished:1150",
+    "accentOrbs@accent-orbs:running:1433",
+    "GRAD 9.59 top=360.0"
+   ]
+  },
+  {
+   "v": "prad",
+   "k": 2,
+   "h": "37da9447",
+   "anims": [
+    "heroTitleIn@hero-title:finished:1150",
+    "accentOrbs@accent-orbs:running:1600",
+    "GRAD 9.79 top=360.0"
+   ]
+  },
+  {
+   "v": "baseline",
+   "k": 3,
+   "h": "fbb59d23",
+   "anims": [
+    "heroTitleIn@hero-title:finished:1150",
+    "accentOrbs@accent-orbs:running:1533",
+    "GRAD 9.8 top=360.0"
+   ]
+  },
+  {
+   "v": "prad",
+   "k": 3,
+   "h": "df578957",
+   "anims": [
+    "heroTitleIn@hero-title:running:1050",
+    "accentOrbs@accent-orbs:running:1050",
+    "GRAD 9.55 top=360.0"
+   ]
+  },
+  {
+   "v": "baseline",
+   "k": 4,
+   "h": "7ffb0806",
+   "anims": [
+    "heroTitleIn@hero-title:running:933",
+    "accentOrbs@accent-orbs:running:933",
+    "GRAD 9.53 top=360.0"
+   ]
+  },
+  {
+   "v": "prad",
+   "k": 4,
+   "h": "f9e95af4",
+   "anims": [
+    "heroTitleIn@hero-title:running:1117",
+    "accentOrbs@accent-orbs:running:1117",
+    "GRAD 9.62 top=360.0"
+   ]
+  }
+ ]
+}

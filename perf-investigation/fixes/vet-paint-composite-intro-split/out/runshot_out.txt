@@ -1,0 +1,10 @@
+T=450 A/A {"mad":0,"pct":0,"big":0,"bbox":null}
+  split~A {"mad":0.198,"pct":0.833,"big":0.018,"bbox":[158,207,759,450]} split~B {"mad":0.198,"pct":0.833,"big":0.018,"bbox":[158,207,759,450]}
+  pcomb~A {"mad":0.565,"pct":1.572,"big":0.622,"bbox":[156,207,759,450]}
+T=700 A/A {"mad":0,"pct":0,"big":0,"bbox":null}
+  split~A {"mad":0.226,"pct":0.696,"big":0.227,"bbox":[56,25,759,545]} split~B {"mad":0.226,"pct":0.696,"big":0.227,"bbox":[56,25,759,545]}
+  pcomb~A {"mad":0.649,"pct":1.285,"big":0.867,"bbox":[56,25,759,545]}
+T=1000 A/A {"mad":0,"pct":0,"big":0,"bbox":null}
+  split~A {"mad":0.123,"pct":0.402,"big":0.059,"bbox":[156,15,1380,750]} split~B {"mad":0.123,"pct":0.402,"big":0.059,"bbox":[156,15,1380,750]}
+  pcomb~A {"mad":0.207,"pct":0.776,"big":0.11,"bbox":[156,15,1380,750]}
+states split@450: navInMove:running navInBlur:running navItemInMove:running navItemInBlur:running navItemInMove:running navItemInBlur:running navItemInMove:running navItemInBlur:running navItemInMove:running navItemInBlur:running navItemInMove:running navItemInBlur:running navItemInMove:running navItemInBlur:running navItemInMove:running navItemInBlur:running heroBadgeInMove:running heroBadgeInBlur:running heroTitleInMove:running heroTitleInBlur:running heroFadeInMove:running heroFadeInBlur:running heroFadeInMove:running heroFadeInBlur:running heroFadeInMove:running heroFadeInBlur:running heroFadeInMove:running heroFadeInBlur:running

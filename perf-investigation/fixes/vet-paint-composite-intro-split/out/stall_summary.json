@@ -1,0 +1,74 @@
+{
+ "A": {
+  "n": 11,
+  "ts": [
+   0,
+   143,
+   305,
+   461,
+   611,
+   754,
+   876,
+   1383,
+   1508,
+   1630,
+   1754
+  ],
+  "dir": "/home/user/gfxs0da/perf-investigation/fixes/vet-paint-composite-intro-split/out/stall_A",
+  "comp": 14
+ },
+ "B": {
+  "n": 9,
+  "ts": [
+   0,
+   149,
+   296,
+   414,
+   529,
+   646,
+   1261,
+   1396,
+   1521
+  ],
+  "dir": "/home/user/gfxs0da/perf-investigation/fixes/vet-paint-composite-intro-split/out/stall_B",
+  "comp": 14
+ },
+ "split": {
+  "n": 12,
+  "ts": [
+   0,
+   142,
+   291,
+   458,
+   592,
+   721,
+   887,
+   1038,
+   1223,
+   1400,
+   1549,
+   1681
+  ],
+  "dir": "/home/user/gfxs0da/perf-investigation/fixes/vet-paint-composite-intro-split/out/stall_split",
+  "comp": 28
+ },
+ "pcomb": {
+  "n": 12,
+  "ts": [
+   0,
+   155,
+   304,
+   462,
+   619,
+   741,
+   871,
+   1032,
+   1210,
+   1389,
+   1554,
+   1682
+  ],
+  "dir": "/home/user/gfxs0da/perf-investigation/fixes/vet-paint-composite-intro-split/out/stall_pcomb",
+  "comp": 28
+ }
+}

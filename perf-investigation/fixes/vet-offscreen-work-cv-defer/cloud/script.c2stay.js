@@ -128,20 +128,14 @@ if (cvOn) {
   else window.addEventListener('load', start, { once: true });
 }
 
-// Chegando com #secao (ex.: /#pricing): renderiza tudo desde o início,
-// e as inits adiadas rodam na hora (cvWhenNear),
-// como antes, até load + 1s (depois dos reajustes do go()). Assim o
-// pulo do próprio navegador e o go() veem a mesma página e o mesmo
-// tempo de antes. Depois voltam ao auto, já com as alturas reais.
+// Chegando com #secao (ex.: /#pricing): renderiza tudo desde o início e
+// as inits adiadas rodam na hora (cvWhenNear), exatamente como antes.
+// Assim o pulo do próprio navegador e o go() veem a mesma página e o
+// mesmo tempo de antes. (O aquecimento acima já as manteria renderizadas.)
 const cvHash = cvOn && !!hashTarget();
 if (cvHash) {
   cvExactWidth = window.innerWidth;
-  cvSections.forEach((s) => { s.style.contentVisibility = 'visible'; });
-  const back = () => setTimeout(() => requestAnimationFrame(() => {
-    if (cvExactWidth === window.innerWidth) cvSections.forEach((s) => { if (!cvKept.has(s)) s.style.contentVisibility = ''; });
-  }), 1000);
-  if (document.readyState === 'complete') back();
-  else window.addEventListener('load', back, { once: true });
+  cvSections.forEach((s) => { s.style.contentVisibility = 'visible'; cvKept.add(s); });
 }
 
 // Links internos (#pricing…) em qualquer aparelho, com ou sem Lenis: as

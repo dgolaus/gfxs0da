@@ -1,0 +1,269 @@
+{
+ "tally": {
+  "baseline": {
+   "659124eb": 1,
+   "a1829b11": 1,
+   "a3ea8b11": 1,
+   "7ffb0806": 1,
+   "f9e95af4": 1,
+   "7d1eec1c": 1
+  },
+  "prad": {
+   "2808570d": 3,
+   "956750e6": 1,
+   "a80ad840": 1,
+   "7ffb0806": 1
+  },
+  "ctrl": {
+   "a80ad840": 1,
+   "f9e95af4": 1,
+   "7f9890f5": 1,
+   "2ca8dddf": 1,
+   "3836c784": 1,
+   "0100ad71": 1
+  },
+  "pradf": {
+   "e466a888": 1,
+   "0e889db3": 1,
+   "2808570d": 2,
+   "659124eb": 1,
+   "37da9447": 1
+  }
+ },
+ "firstOf": {
+  "659124eb": "/home/user/gfxs0da/perf-investigation/fixes/vet-style-invalidation-pseudo-radius/v2/yoursprobe/baseline_0.png",
+  "2808570d": "/home/user/gfxs0da/perf-investigation/fixes/vet-style-invalidation-pseudo-radius/v2/yoursprobe/prad_0.png",
+  "a80ad840": "/home/user/gfxs0da/perf-investigation/fixes/vet-style-invalidation-pseudo-radius/v2/yoursprobe/ctrl_0.png",
+  "e466a888": "/home/user/gfxs0da/perf-investigation/fixes/vet-style-invalidation-pseudo-radius/v2/yoursprobe/pradf_0.png",
+  "a1829b11": "/home/user/gfxs0da/perf-investigation/fixes/vet-style-invalidation-pseudo-radius/v2/yoursprobe/baseline_1.png",
+  "f9e95af4": "/home/user/gfxs0da/perf-investigation/fixes/vet-style-invalidation-pseudo-radius/v2/yoursprobe/ctrl_1.png",
+  "0e889db3": "/home/user/gfxs0da/perf-investigation/fixes/vet-style-invalidation-pseudo-radius/v2/yoursprobe/pradf_1.png",
+  "a3ea8b11": "/home/user/gfxs0da/perf-investigation/fixes/vet-style-invalidation-pseudo-radius/v2/yoursprobe/baseline_2.png",
+  "7f9890f5": "/home/user/gfxs0da/perf-investigation/fixes/vet-style-invalidation-pseudo-radius/v2/yoursprobe/ctrl_2.png",
+  "7ffb0806": "/home/user/gfxs0da/perf-investigation/fixes/vet-style-invalidation-pseudo-radius/v2/yoursprobe/baseline_3.png",
+  "956750e6": "/home/user/gfxs0da/perf-investigation/fixes/vet-style-invalidation-pseudo-radius/v2/yoursprobe/prad_3.png",
+  "2ca8dddf": "/home/user/gfxs0da/perf-investigation/fixes/vet-style-invalidation-pseudo-radius/v2/yoursprobe/ctrl_3.png",
+  "3836c784": "/home/user/gfxs0da/perf-investigation/fixes/vet-style-invalidation-pseudo-radius/v2/yoursprobe/ctrl_4.png",
+  "7d1eec1c": "/home/user/gfxs0da/perf-investigation/fixes/vet-style-invalidation-pseudo-radius/v2/yoursprobe/baseline_5.png",
+  "0100ad71": "/home/user/gfxs0da/perf-investigation/fixes/vet-style-invalidation-pseudo-radius/v2/yoursprobe/ctrl_5.png",
+  "37da9447": "/home/user/gfxs0da/perf-investigation/fixes/vet-style-invalidation-pseudo-radius/v2/yoursprobe/pradf_5.png"
+ },
+ "rows": [
+  {
+   "v": "baseline",
+   "k": 0,
+   "h": "659124eb",
+   "anims": [
+    "heroTitleIn@hero-title:finished:1150",
+    "accentOrbs@accent-orbs:running:1517"
+   ]
+  },
+  {
+   "v": "prad",
+   "k": 0,
+   "h": "2808570d",
+   "anims": [
+    "heroTitleIn@hero-title:running:1067",
+    "accentOrbs@accent-orbs:running:1067"
+   ]
+  },
+  {
+   "v": "ctrl",
+   "k": 0,
+   "h": "a80ad840",
+   "anims": [
+    "heroTitleIn@hero-title:finished:1150",
+    "accentOrbs@accent-orbs:running:1450"
+   ]
+  },
+  {
+   "v": "pradf",
+   "k": 0,
+   "h": "e466a888",
+   "anims": [
+    "heroTitleIn@hero-title:running:1100",
+    "accentOrbs@accent-orbs:running:1100"
+   ]
+  },
+  {
+   "v": "baseline",
+   "k": 1,
+   "h": "a1829b11",
+   "anims": [
+    "heroTitleIn@hero-title:running:1117",
+    "accentOrbs@accent-orbs:running:1117"
+   ]
+  },
+  {
+   "v": "prad",
+   "k": 1,
+   "h": "2808570d",
+   "anims": [
+    "heroTitleIn@hero-title:finished:1150",
+    "accentOrbs@accent-orbs:running:1683"
+   ]
+  },
+  {
+   "v": "ctrl",
+   "k": 1,
+   "h": "f9e95af4",
+   "anims": [
+    "heroTitleIn@hero-title:finished:1150",
+    "accentOrbs@accent-orbs:running:1233"
+   ]
+  },
+  {
+   "v": "pradf",
+   "k": 1,
+   "h": "0e889db3",
+   "anims": [
+    "heroTitleIn@hero-title:running:1050",
+    "accentOrbs@accent-orbs:running:1050"
+   ]
+  },
+  {
+   "v": "baseline",
+   "k": 2,
+   "h": "a3ea8b11",
+   "anims": [
+    "heroTitleIn@hero-title:finished:1150",
+    "accentOrbs@accent-orbs:running:1700"
+   ]
+  },
+  {
+   "v": "prad",
+   "k": 2,
+   "h": "2808570d",
+   "anims": [
+    "heroTitleIn@hero-title:finished:1150",
+    "accentOrbs@accent-orbs:running:1617"
+   ]
+  },
+  {
+   "v": "ctrl",
+   "k": 2,
+   "h": "7f9890f5",
+   "anims": [
+    "heroTitleIn@hero-title:running:1133",
+    "accentOrbs@accent-orbs:running:1133"
+   ]
+  },
+  {
+   "v": "pradf",
+   "k": 2,
+   "h": "2808570d",
+   "anims": [
+    "heroTitleIn@hero-title:running:1150",
+    "accentOrbs@accent-orbs:running:1150"
+   ]
+  },
+  {
+   "v": "baseline",
+   "k": 3,
+   "h": "7ffb0806",
+   "anims": [
+    "heroTitleIn@hero-title:running:1000",
+    "accentOrbs@accent-orbs:running:1000"
+   ]
+  },
+  {
+   "v": "prad",
+   "k": 3,
+   "h": "956750e6",
+   "anims": [
+    "heroTitleIn@hero-title:running:1117",
+    "accentOrbs@accent-orbs:running:1117"
+   ]
+  },
+  {
+   "v": "ctrl",
+   "k": 3,
+   "h": "2ca8dddf",
+   "anims": [
+    "heroTitleIn@hero-title:finished:1150",
+    "accentOrbs@accent-orbs:running:1433"
+   ]
+  },
+  {
+   "v": "pradf",
+   "k": 3,
+   "h": "659124eb",
+   "anims": [
+    "heroTitleIn@hero-title:running:1083",
+    "accentOrbs@accent-orbs:running:1083"
+   ]
+  },
+  {
+   "v": "baseline",
+   "k": 4,
+   "h": "f9e95af4",
+   "anims": [
+    "heroTitleIn@hero-title:running:1150",
+    "accentOrbs@accent-orbs:running:1150"
+   ]
+  },
+  {
+   "v": "prad",
+   "k": 4,
+   "h": "a80ad840",
+   "anims": [
+    "heroTitleIn@hero-title:finished:1150",
+    "accentOrbs@accent-orbs:running:1633"
+   ]
+  },
+  {
+   "v": "ctrl",
+   "k": 4,
+   "h": "3836c784",
+   "anims": [
+    "heroTitleIn@hero-title:running:1017",
+    "accentOrbs@accent-orbs:running:1017"
+   ]
+  },
+  {
+   "v": "pradf",
+   "k": 4,
+   "h": "2808570d",
+   "anims": [
+    "heroTitleIn@hero-title:running:383",
+    "accentOrbs@accent-orbs:running:383"
+   ]
+  },
+  {
+   "v": "baseline",
+   "k": 5,
+   "h": "7d1eec1c",
+   "anims": [
+    "heroTitleIn@hero-title:running:967",
+    "accentOrbs@accent-orbs:running:967"
+   ]
+  },
+  {
+   "v": "prad",
+   "k": 5,
+   "h": "7ffb0806",
+   "anims": [
+    "heroTitleIn@hero-title:finished:1150",
+    "accentOrbs@accent-orbs:running:1417"
+   ]
+  },
+  {
+   "v": "ctrl",
+   "k": 5,
+   "h": "0100ad71",
+   "anims": [
+    "heroTitleIn@hero-title:running:1117",
+    "accentOrbs@accent-orbs:running:1117"
+   ]
+  },
+  {
+   "v": "pradf",
+   "k": 5,
+   "h": "37da9447",
+   "anims": [
+    "heroTitleIn@hero-title:finished:1150",
+    "accentOrbs@accent-orbs:running:1550"
+   ]
+  }
+ ]
+}

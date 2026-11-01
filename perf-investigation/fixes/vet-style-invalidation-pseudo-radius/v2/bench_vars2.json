@@ -1,0 +1,6 @@
+[{"name":"baseline"},
+ {"name":"prad","files":{"/styles.css":"fixes/style-invalidation/styles.pseudoradius.css"}},
+ {"name":"ctrl","files":{"/styles.css":"fixes/vet-style-invalidation-pseudo-radius/v2/styles.ctrl.css"}},
+ {"name":"prad2","files":{"/styles.css":"fixes/style-invalidation/styles.pseudoradius.css"}},
+ {"name":"pradf","files":{"/styles.css":"fixes/vet-style-invalidation-pseudo-radius/v2/styles.pseudoradius.amended.css"}},
+ {"name":"prad3","files":{"/styles.css":"fixes/style-invalidation/styles.pseudoradius.css"}}]

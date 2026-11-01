@@ -1,0 +1,5 @@
+{
+ "baseline": {},
+ "pradf": { "files": { "/styles.css": "fixes/vet-style-invalidation-pseudo-radius/v2/styles.pseudoradius.amended.css" } },
+ "prad": { "files": { "/styles.css": "fixes/style-invalidation/styles.pseudoradius.css" } }
+}

@@ -1,5 +1,5 @@
 --- ../offscreen-work/script.c2.js	2026-11-01 16:57:44.109291770 +0000
-+++ cloud/script.c2stay.js	2026-11-01 20:27:22.786875901 +0000
++++ cloud/script.c2stay.js	2026-11-01 21:26:13.470534632 +0000
 @@ -61,6 +61,7 @@
  const cvOn = cvSections.length > 0 && !!(window.CSS && CSS.supports && CSS.supports('content-visibility', 'auto'));
  const cvPending = [];      // inits adiadas, cada uma roda uma única vez
@@ -26,7 +26,7 @@
    let io = null;
    const run = () => {
      const i = cvPending.indexOf(run);
-@@ -101,34 +102,48 @@
+@@ -101,34 +102,42 @@
  }
  
  // Aquecimento: terminada a intro do hero (contagem dos números inclusa),
@@ -65,26 +65,20 @@
    else window.addEventListener('load', start, { once: true });
  }
  
-+// Chegando com #secao (ex.: /#pricing): renderiza tudo desde o início,
-+// e as inits adiadas rodam na hora (cvWhenNear),
-+// como antes, até load + 1s (depois dos reajustes do go()). Assim o
-+// pulo do próprio navegador e o go() veem a mesma página e o mesmo
-+// tempo de antes. Depois voltam ao auto, já com as alturas reais.
++// Chegando com #secao (ex.: /#pricing): renderiza tudo desde o início e
++// as inits adiadas rodam na hora (cvWhenNear), exatamente como antes.
++// Assim o pulo do próprio navegador e o go() veem a mesma página e o
++// mesmo tempo de antes. (O aquecimento acima já as manteria renderizadas.)
 +const cvHash = cvOn && !!hashTarget();
 +if (cvHash) {
 +  cvExactWidth = window.innerWidth;
-+  cvSections.forEach((s) => { s.style.contentVisibility = 'visible'; });
-+  const back = () => setTimeout(() => requestAnimationFrame(() => {
-+    if (cvExactWidth === window.innerWidth) cvSections.forEach((s) => { if (!cvKept.has(s)) s.style.contentVisibility = ''; });
-+  }), 1000);
-+  if (document.readyState === 'complete') back();
-+  else window.addEventListener('load', back, { once: true });
++  cvSections.forEach((s) => { s.style.contentVisibility = 'visible'; cvKept.add(s); });
 +}
 +
  // Links internos (#pricing…) em qualquer aparelho, com ou sem Lenis: as
  // alturas ficam reais antes de o destino ser calculado.
  if (cvOn) {
-@@ -138,6 +153,17 @@
+@@ -138,6 +147,17 @@
    }, true);
  }
  
@@ -102,7 +96,7 @@
  // Mudou a largura: as alturas guardadas podem não valer mais; renderiza
  // tudo de novo uma vez (o mesmo relayout que a página fazia sem isto).
  if (cvOn) {
-@@ -1020,10 +1046,19 @@
+@@ -1020,10 +1040,19 @@
    // Parado no hero o valor suavizado já é igual ao alvo, então começar no
    // 1º scroll (com o init "no alvo" abaixo) dá o mesmo quadro de antes.
    const live = new Set();
@@ -123,7 +117,7 @@
      window.addEventListener('scroll', on, { once: true, passive: true });
      cvWhenNear(sec, on);
    });
-@@ -1063,6 +1098,7 @@
+@@ -1063,6 +1092,7 @@
  
    function loop() {
      update();

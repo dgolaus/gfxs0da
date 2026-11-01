@@ -1,0 +1,290 @@
+{
+ "baseline:about": [],
+ "baseline:process": [
+  {
+   "name": "accentOrbs",
+   "el": "SPAN.accent-orbs",
+   "inf": true,
+   "dur": 6000,
+   "ct": 9683,
+   "ps": "running",
+   "age": 9683
+  },
+  {
+   "name": "pulseGreen",
+   "el": "SPAN.dot.pulse",
+   "inf": true,
+   "dur": 2400,
+   "ct": 9683,
+   "ps": "running",
+   "age": 9683
+  },
+  {
+   "name": "typingBounce",
+   "el": "SPAN.",
+   "inf": true,
+   "dur": 1300,
+   "ct": 9383,
+   "ps": "running",
+   "age": 9383
+  },
+  {
+   "name": "typingBounce",
+   "el": "SPAN.",
+   "inf": true,
+   "dur": 1300,
+   "ct": 9383,
+   "ps": "running",
+   "age": 9383
+  },
+  {
+   "name": "typingBounce",
+   "el": "SPAN.",
+   "inf": true,
+   "dur": 1300,
+   "ct": 9383,
+   "ps": "running",
+   "age": 9383
+  }
+ ],
+ "baseline:trust": [
+  {
+   "name": "tcolUp",
+   "el": "DIV.tcol-track",
+   "inf": true,
+   "dur": 30000,
+   "ct": 0,
+   "ps": "running",
+   "age": null
+  },
+  {
+   "name": "tcolDown",
+   "el": "DIV.tcol-track",
+   "inf": true,
+   "dur": 36000,
+   "ct": 0,
+   "ps": "running",
+   "age": null
+  },
+  {
+   "name": "tcolUp",
+   "el": "DIV.tcol-track",
+   "inf": true,
+   "dur": 27000,
+   "ct": 0,
+   "ps": "running",
+   "age": null
+  }
+ ],
+ "baseline:pricing": [
+  {
+   "name": "priceFloatA",
+   "el": "ARTICLE.price-card.price-card-feature",
+   "inf": true,
+   "dur": 7000,
+   "ct": 9216,
+   "ps": "running",
+   "age": 9216
+  },
+  {
+   "name": "badgeShimmer",
+   "el": "SPAN.price-badge::after",
+   "inf": true,
+   "dur": 11000,
+   "ct": 9216,
+   "ps": "running",
+   "age": 9216
+  },
+  {
+   "name": "priceFloatB",
+   "el": "ARTICLE.price-card.reveal",
+   "inf": true,
+   "dur": 8200,
+   "ct": 9216,
+   "ps": "running",
+   "age": 9216
+  },
+  {
+   "name": "priceFloatC",
+   "el": "ARTICLE.price-card.reveal",
+   "inf": true,
+   "dur": 7600,
+   "ct": 9216,
+   "ps": "running",
+   "age": 9216
+  },
+  {
+   "name": "priceFloatD",
+   "el": "ARTICLE.price-card.reveal",
+   "inf": true,
+   "dur": 8600,
+   "ct": 9216,
+   "ps": "running",
+   "age": 9216
+  }
+ ],
+ "baseline:contact": [
+  {
+   "name": "cfBreathe",
+   "el": "DIV.cfooter-aurora",
+   "inf": true,
+   "dur": 8000,
+   "ct": 9116,
+   "ps": "running",
+   "age": 9116
+  },
+  {
+   "name": "cfMarquee",
+   "el": "DIV.cfooter-marquee-track",
+   "inf": true,
+   "dur": 40000,
+   "ct": 9116,
+   "ps": "running",
+   "age": 9116
+  }
+ ],
+ "cvw_stay:about": [],
+ "cvw_stay:process": [
+  {
+   "name": "accentOrbs",
+   "el": "SPAN.accent-orbs",
+   "inf": true,
+   "dur": 6000,
+   "ct": 9233,
+   "ps": "running",
+   "age": 9233
+  },
+  {
+   "name": "pulseGreen",
+   "el": "SPAN.dot.pulse",
+   "inf": true,
+   "dur": 2400,
+   "ct": 9233,
+   "ps": "running",
+   "age": 9233
+  },
+  {
+   "name": "typingBounce",
+   "el": "SPAN.",
+   "inf": true,
+   "dur": 1300,
+   "ct": 9233,
+   "ps": "running",
+   "age": 9233
+  },
+  {
+   "name": "typingBounce",
+   "el": "SPAN.",
+   "inf": true,
+   "dur": 1300,
+   "ct": 9233,
+   "ps": "running",
+   "age": 9233
+  },
+  {
+   "name": "typingBounce",
+   "el": "SPAN.",
+   "inf": true,
+   "dur": 1300,
+   "ct": 9233,
+   "ps": "running",
+   "age": 9233
+  }
+ ],
+ "cvw_stay:trust": [
+  {
+   "name": "tcolUp",
+   "el": "DIV.tcol-track",
+   "inf": true,
+   "dur": 30000,
+   "ct": 0,
+   "ps": "running",
+   "age": null
+  },
+  {
+   "name": "tcolDown",
+   "el": "DIV.tcol-track",
+   "inf": true,
+   "dur": 36000,
+   "ct": 0,
+   "ps": "running",
+   "age": null
+  },
+  {
+   "name": "tcolUp",
+   "el": "DIV.tcol-track",
+   "inf": true,
+   "dur": 27000,
+   "ct": 0,
+   "ps": "running",
+   "age": null
+  }
+ ],
+ "cvw_stay:pricing": [
+  {
+   "name": "priceFloatA",
+   "el": "ARTICLE.price-card.price-card-feature",
+   "inf": true,
+   "dur": 7000,
+   "ct": 5400,
+   "ps": "running",
+   "age": 5400
+  },
+  {
+   "name": "badgeShimmer",
+   "el": "SPAN.price-badge::after",
+   "inf": true,
+   "dur": 11000,
+   "ct": 5400,
+   "ps": "running",
+   "age": 5400
+  },
+  {
+   "name": "priceFloatB",
+   "el": "ARTICLE.price-card.reveal",
+   "inf": true,
+   "dur": 8200,
+   "ct": 5400,
+   "ps": "running",
+   "age": 5400
+  },
+  {
+   "name": "priceFloatC",
+   "el": "ARTICLE.price-card.reveal",
+   "inf": true,
+   "dur": 7600,
+   "ct": 5400,
+   "ps": "running",
+   "age": 5400
+  },
+  {
+   "name": "priceFloatD",
+   "el": "ARTICLE.price-card.reveal",
+   "inf": true,
+   "dur": 8600,
+   "ct": 5400,
+   "ps": "running",
+   "age": 5400
+  }
+ ],
+ "cvw_stay:contact": [
+  {
+   "name": "cfBreathe",
+   "el": "DIV.cfooter-aurora",
+   "inf": true,
+   "dur": 8000,
+   "ct": 4900,
+   "ps": "running",
+   "age": 4900
+  },
+  {
+   "name": "cfMarquee",
+   "el": "DIV.cfooter-marquee-track",
+   "inf": true,
+   "dur": 40000,
+   "ct": 4900,
+   "ps": "running",
+   "age": 4900
+  }
+ ]
+}
