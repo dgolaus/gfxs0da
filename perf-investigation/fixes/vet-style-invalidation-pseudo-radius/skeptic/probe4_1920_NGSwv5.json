@@ -1,0 +1,16 @@
+[
+ {
+  "k": 0,
+  "v": "baseline",
+  "nav": "314.891px",
+  "ff": "Inter400:l Inter500:l Inter600:l InterTight400:e InterTight500:e InterTight600:e InterTight700:e InterTight800:e JetBrainsMono500:l JetBrainsMono600:l",
+  "navF": "Inter(web)x4",
+  "btnF": "Inter SemiBold(LOCAL)x9",
+  "accF": "Inter(LOCAL)x5",
+  "fails": [
+   "NGSwv5HMAFg6IuGlBNMj:net::ERR_FAILED"
+  ],
+  "nfin": 2,
+  "ms": 4017
+ }
+]

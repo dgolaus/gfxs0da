@@ -1,0 +1,66 @@
+[
+ {
+  "k": 0,
+  "v": "baseline",
+  "nav": "314.969px",
+  "ff": "Inter400:e Inter500:e Inter600:e InterTight400:e InterTight500:e InterTight600:e InterTight700:e InterTight800:e JetBrainsMono500:e JetBrainsMono600:e",
+  "navF": "Inter Medium(LOCAL)x4",
+  "btnF": "Inter SemiBold(LOCAL)x9",
+  "accF": "Inter(LOCAL)x5",
+  "fails": [
+   "NGSwv5HMAFg6IuGlBNMj:net::ERR_FAILED",
+   "UcC73FwrK3iLTeHuS_nV:net::ERR_FAILED",
+   "tDbv2o-flEEny0FZhsfK:net::ERR_FAILED"
+  ],
+  "nfin": 0,
+  "ms": 3830
+ },
+ {
+  "k": 0,
+  "v": "pradf",
+  "nav": "314.969px",
+  "ff": "Inter400:e Inter500:e Inter600:e InterTight400:e InterTight500:e InterTight600:e InterTight700:e InterTight800:e JetBrainsMono500:e JetBrainsMono600:e",
+  "navF": "Inter Medium(LOCAL)x4",
+  "btnF": "Inter SemiBold(LOCAL)x9",
+  "accF": "Inter(LOCAL)x5",
+  "fails": [
+   "NGSwv5HMAFg6IuGlBNMj:net::ERR_FAILED",
+   "UcC73FwrK3iLTeHuS_nV:net::ERR_FAILED",
+   "tDbv2o-flEEny0FZhsfK:net::ERR_FAILED"
+  ],
+  "nfin": 0,
+  "ms": 3935
+ },
+ {
+  "k": 1,
+  "v": "baseline",
+  "nav": "314.969px",
+  "ff": "Inter400:e Inter500:e Inter600:e InterTight400:e InterTight500:e InterTight600:e InterTight700:e InterTight800:e JetBrainsMono500:e JetBrainsMono600:e",
+  "navF": "Inter Medium(LOCAL)x4",
+  "btnF": "Inter SemiBold(LOCAL)x9",
+  "accF": "Inter(LOCAL)x5",
+  "fails": [
+   "NGSwv5HMAFg6IuGlBNMj:net::ERR_FAILED",
+   "UcC73FwrK3iLTeHuS_nV:net::ERR_FAILED",
+   "tDbv2o-flEEny0FZhsfK:net::ERR_FAILED"
+  ],
+  "nfin": 0,
+  "ms": 4104
+ },
+ {
+  "k": 1,
+  "v": "pradf",
+  "nav": "314.969px",
+  "ff": "Inter400:e Inter500:e Inter600:e InterTight400:e InterTight500:e InterTight600:e InterTight700:e InterTight800:e JetBrainsMono500:e JetBrainsMono600:e",
+  "navF": "Inter Medium(LOCAL)x4",
+  "btnF": "Inter SemiBold(LOCAL)x9",
+  "accF": "Inter(LOCAL)x5",
+  "fails": [
+   "NGSwv5HMAFg6IuGlBNMj:net::ERR_FAILED",
+   "UcC73FwrK3iLTeHuS_nV:net::ERR_FAILED",
+   "tDbv2o-flEEny0FZhsfK:net::ERR_FAILED"
+  ],
+  "nfin": 0,
+  "ms": 4110
+ }
+]

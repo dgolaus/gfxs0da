@@ -10,7 +10,7 @@ const [vp, flags = '', pg, ...vars] = process.argv.slice(2);
 const [W, H] = vp.split('x').map(Number);
 const F = new Set(flags.split(',').filter((x) => x && x !== '-'));
 const tag = `${W}${F.has('dpr2') ? 'd2' : ''}${(pg.replace(/[^a-z0-9]/g, '') || 'index')}`;
-const OUT = path.join(__dirname, 'px', tag); fs.mkdirSync(OUT, { recursive: true });
+const OUT = path.join(__dirname, process.env.PXDIR || 'px', tag); fs.mkdirSync(OUT, { recursive: true });
 const TS = [0, 60, 120, 200, 300, 400, 500, 600, 700, 800];
 
 async function run(vname, label) {
@@ -63,12 +63,17 @@ async function run(vname, label) {
     for (const t of TS) {
       await p.mouse.move(2, H - 2); await L.w8(120);
       await p.mouse.move(r.x, r.y);
-      await p.evaluate((t) => {
+      const sh = await p.evaluate((t, i) => {
+        const el = document.querySelectorAll('.btn')[i];
         document.querySelectorAll('.btn').forEach((e) => getComputedStyle(e, '::after').opacity);
+        const pre = document.getAnimations().filter((a) => a.animationName === 'btnSheen').map((a) => Math.round(a.currentTime) + (a.effect.target === el ? '*' : ''));
         for (const a of document.getAnimations()) { try { a.pause(); a.currentTime = a.animationName === 'btnSheen' ? t : (a.animationName === 'focusPop' ? 1000 : 5000); } catch (e) {} }
-      }, t);
+        return { pre: pre.join(','), hovAtPause: el.matches(':hover') };
+      }, t, i);
       await L.w8(150);
+      const post = await p.evaluate((i) => { const el = document.querySelectorAll('.btn')[i]; return document.getAnimations().filter((a) => a.animationName === 'btnSheen').map((a) => Math.round(a.currentTime) + a.playState[0] + (a.effect.target === el ? '*' : '')).join(','); }, i);
       await shoot(i, 'pin', t, 0);
+      Object.assign(shots[shots.length - 1], { sheenPre: sh.pre, hovAtPause: sh.hovAtPause, sheenPost: post });
       await L.unfreeze(p);
     }
     await p.mouse.move(2, H - 2); await p.mouse.click(2, H - 2); await L.w8(200);
@@ -78,21 +83,21 @@ async function run(vname, label) {
 }
 (async () => {
   const A = await run('baseline', 'A'); const B = await run('baseline', 'B');
-  const V = {}; for (const v of vars) V[v] = await run(v, v);
+  const V = {}; const LB = vars.map((v, j) => v + (vars.indexOf(v) === j && v !== 'baseline' ? '' : j)); for (let j = 0; j < vars.length; j++) V[LB[j]] = await run(vars[j], LB[j]);
   const rows = []; const sum = {};
   for (let k = 0; k < A.length; k++) {
     const a = A[k]; const bb = B[k];
     if (!bb || bb.i !== a.i || bb.mode !== a.mode || bb.t !== a.t) { console.log('MISALIGNED', k); continue; }
     const noise = await L.diff(a.f, bb.f);
-    const row = { i: a.i, mode: a.mode, t: a.t, k: a.k, A: `${a.afterR}/${a.hostR}${a.fv ? ' fv' : ''}${a.hov ? ' hov' : ''}`, noise };
-    for (const v of vars) {
+    const row = { i: a.i, mode: a.mode, t: a.t, k: a.k, A: `${a.afterR}/${a.hostR}${a.fv ? ' fv' : ''}${a.hov ? ' hov' : ''}${a.mode === 'pin' ? ' s[' + a.sheenPre + '>' + a.sheenPost + (a.hovAtPause ? '' : ' NOHOV') + ']' : ''}`, noise };
+    for (const v of LB) {
       const x = V[v][k]; const vsA = await L.diff(a.f, x.f, path.join(OUT, `heat_${v}_${a.i}_${a.mode}_${a.t}_${a.k}.png`)); const vsB = await L.diff(bb.f, x.f);
       const bad = Math.min(vsA.pct, vsB.pct) > noise.pct;
-      row[v] = { st: `${x.afterR}/${x.hostR}${x.fv ? ' fv' : ''}${x.hov ? ' hov' : ''}`, vsA, vsB, bad };
+      row[v] = { st: `${x.afterR}/${x.hostR}${x.fv ? ' fv' : ''}${x.hov ? ' hov' : ''}${x.mode === 'pin' ? ' s[' + x.sheenPre + '>' + x.sheenPost + (x.hovAtPause ? '' : ' NOHOV') + ']' : ''}`, vsA, vsB, bad };
       const s = (sum[v + ' ' + a.mode] = sum[v + ' ' + a.mode] || { rows: 0, flagged: 0 }); s.rows++; if (bad) s.flagged++;
     }
     rows.push(row);
-    console.log(`#${row.i} ${row.mode}@${row.t}.${row.k} A[${row.A}] noise=${noise.mad}/${noise.pct}%`, vars.map((v) => `${v}[${row[v].st}] ${row[v].vsA.mad}/${row[v].vsA.pct}% vsB ${row[v].vsB.pct}%${row[v].bad ? ' bb=' + JSON.stringify(row[v].vsA.bbox) + ' <<<' : ''}`).join(' | '));
+    console.log(`#${row.i} ${row.mode}@${row.t}.${row.k} A[${row.A}] noise=${noise.mad}/${noise.pct}%`, LB.map((v) => `${v}[${row[v].st}] ${row[v].vsA.mad}/${row[v].vsA.pct}% vsB ${row[v].vsB.pct}%${row[v].bad ? ' bb=' + JSON.stringify(row[v].vsA.bbox) + ' <<<' : ''}`).join(' | '));
   }
   fs.writeFileSync(path.join(OUT, 'result.json'), JSON.stringify(rows, null, 1));
   for (const [k, s] of Object.entries(sum)) console.log('SUMMARY', tag, k, 'rows', s.rows, 'flagged', s.flagged);

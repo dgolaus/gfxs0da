@@ -1,0 +1,461 @@
+{
+ "pre": "index_1920r",
+ "tabs": {
+  "pradf": [
+   {
+    "cls": "btn btn-ghost btn-sm",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-primary btn-lg btn-shiny",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "none"
+   },
+   {
+    "cls": "btn btn-ghost btn-lg",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-primary",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-ghost",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "\"\""
+   }
+  ],
+  "A": [
+   {
+    "cls": "btn btn-ghost btn-sm",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-primary btn-lg btn-shiny",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "none"
+   },
+   {
+    "cls": "btn btn-ghost btn-lg",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-primary",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-ghost",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "\"\""
+   }
+  ]
+ },
+ "errs": {
+  "pradf": [],
+  "A": [],
+  "B": []
+ },
+ "summary": {
+  "pradf": {
+   "rest": {
+    "noiseN": 8,
+    "vsA": 14,
+    "real": [
+     "DIV:4/STRONG:0[counter] animation-duration: 0s -> 0.6s",
+     "DIV:4/STRONG:0[counter] animation-name: none -> counterSettle",
+     "DIV:4/STRONG:0[counter] animation-timing-function: ease -> cubic-bezier(0.16, 1, 0.3, 1)",
+     "SECTION:2/DIV:0[container] margin-inline-end: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-inline-start: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-left: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-right: 0px -> 340px"
+    ],
+    "realN": 7,
+    "realProps": {
+     "animation-duration": 1,
+     "animation-name": 1,
+     "animation-timing-function": 1,
+     "margin-inline-end": 1,
+     "margin-inline-start": 1,
+     "margin-left": 1,
+     "margin-right": 1
+    },
+    "realHosts": [
+     "STRONG:0[counter]",
+     "DIV:0[container]"
+    ],
+    "radiusAny": []
+   },
+   "float0": {
+    "noiseN": 9,
+    "vsA": 17,
+    "real": [
+     "DIV:4/STRONG:0[counter] animation-duration: 0.6s -> 0s",
+     "DIV:4/STRONG:0[counter] animation-name: counterSettle -> none",
+     "DIV:4/STRONG:0[counter] animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1) -> ease",
+     "DIV:4/STRONG:0[counter] scale: 1 -> none",
+     "SECTION:2/DIV:0[container] margin-inline-end: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-inline-start: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-left: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-right: 0px -> 340px"
+    ],
+    "realN": 8,
+    "realProps": {
+     "animation-duration": 1,
+     "animation-name": 1,
+     "animation-timing-function": 1,
+     "scale": 1,
+     "margin-inline-end": 1,
+     "margin-inline-start": 1,
+     "margin-left": 1,
+     "margin-right": 1
+    },
+    "realHosts": [
+     "STRONG:0[counter]",
+     "DIV:0[container]"
+    ],
+    "radiusAny": []
+   },
+   "float1700": {
+    "noiseN": 1,
+    "vsA": 5,
+    "real": [
+     "SECTION:2/DIV:0[container] margin-inline-end: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-inline-start: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-left: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-right: 0px -> 340px"
+    ],
+    "realN": 4,
+    "realProps": {
+     "margin-inline-end": 1,
+     "margin-inline-start": 1,
+     "margin-left": 1,
+     "margin-right": 1
+    },
+    "realHosts": [
+     "DIV:0[container]"
+    ],
+    "radiusAny": []
+   },
+   "float3300": {
+    "noiseN": 1,
+    "vsA": 5,
+    "real": [
+     "SECTION:2/DIV:0[container] margin-inline-end: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-inline-start: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-left: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-right: 0px -> 340px"
+    ],
+    "realN": 4,
+    "realProps": {
+     "margin-inline-end": 1,
+     "margin-inline-start": 1,
+     "margin-left": 1,
+     "margin-right": 1
+    },
+    "realHosts": [
+     "DIV:0[container]"
+    ],
+    "radiusAny": []
+   },
+   "hover@0": {
+    "noiseN": 1,
+    "vsA": 5,
+    "real": [
+     "SECTION:2/DIV:0[container] margin-inline-end: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-inline-start: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-left: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-right: 0px -> 340px"
+    ],
+    "realN": 4,
+    "realProps": {
+     "margin-inline-end": 1,
+     "margin-inline-start": 1,
+     "margin-left": 1,
+     "margin-right": 1
+    },
+    "realHosts": [
+     "DIV:0[container]"
+    ],
+    "radiusAny": []
+   },
+   "hover@160": {
+    "noiseN": 1,
+    "vsA": 5,
+    "real": [
+     "SECTION:2/DIV:0[container] margin-inline-end: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-inline-start: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-left: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-right: 0px -> 340px"
+    ],
+    "realN": 4,
+    "realProps": {
+     "margin-inline-end": 1,
+     "margin-inline-start": 1,
+     "margin-left": 1,
+     "margin-right": 1
+    },
+    "realHosts": [
+     "DIV:0[container]"
+    ],
+    "radiusAny": []
+   },
+   "hover@450": {
+    "noiseN": 1,
+    "vsA": 4,
+    "real": [
+     "SECTION:2/DIV:0[container] margin-inline-end: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-inline-start: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-left: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-right: 0px -> 340px"
+    ],
+    "realN": 4,
+    "realProps": {
+     "margin-inline-end": 1,
+     "margin-inline-start": 1,
+     "margin-left": 1,
+     "margin-right": 1
+    },
+    "realHosts": [
+     "DIV:0[container]"
+    ],
+    "radiusAny": []
+   },
+   "hover@800": {
+    "noiseN": 1,
+    "vsA": 5,
+    "real": [
+     "SECTION:2/DIV:0[container] margin-inline-end: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-inline-start: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-left: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-right: 0px -> 340px"
+    ],
+    "realN": 4,
+    "realProps": {
+     "margin-inline-end": 1,
+     "margin-inline-start": 1,
+     "margin-left": 1,
+     "margin-right": 1
+    },
+    "realHosts": [
+     "DIV:0[container]"
+    ],
+    "radiusAny": []
+   },
+   "focus+focus-visible@0": {
+    "noiseN": 0,
+    "vsA": 4,
+    "real": [
+     "SECTION:2/DIV:0[container] margin-inline-end: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-inline-start: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-left: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-right: 0px -> 340px"
+    ],
+    "realN": 4,
+    "realProps": {
+     "margin-inline-end": 1,
+     "margin-inline-start": 1,
+     "margin-left": 1,
+     "margin-right": 1
+    },
+    "realHosts": [
+     "DIV:0[container]"
+    ],
+    "radiusAny": []
+   },
+   "hover+focus+focus-visible@0": {
+    "noiseN": 0,
+    "vsA": 4,
+    "real": [
+     "SECTION:2/DIV:0[container] margin-inline-end: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-inline-start: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-left: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-right: 0px -> 340px"
+    ],
+    "realN": 4,
+    "realProps": {
+     "margin-inline-end": 1,
+     "margin-inline-start": 1,
+     "margin-left": 1,
+     "margin-right": 1
+    },
+    "realHosts": [
+     "DIV:0[container]"
+    ],
+    "radiusAny": []
+   },
+   "hover+focus+focus-visible@160": {
+    "noiseN": 0,
+    "vsA": 4,
+    "real": [
+     "SECTION:2/DIV:0[container] margin-inline-end: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-inline-start: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-left: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-right: 0px -> 340px"
+    ],
+    "realN": 4,
+    "realProps": {
+     "margin-inline-end": 1,
+     "margin-inline-start": 1,
+     "margin-left": 1,
+     "margin-right": 1
+    },
+    "realHosts": [
+     "DIV:0[container]"
+    ],
+    "radiusAny": []
+   },
+   "hover+focus+focus-visible@450": {
+    "noiseN": 0,
+    "vsA": 4,
+    "real": [
+     "SECTION:2/DIV:0[container] margin-inline-end: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-inline-start: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-left: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-right: 0px -> 340px"
+    ],
+    "realN": 4,
+    "realProps": {
+     "margin-inline-end": 1,
+     "margin-inline-start": 1,
+     "margin-left": 1,
+     "margin-right": 1
+    },
+    "realHosts": [
+     "DIV:0[container]"
+    ],
+    "radiusAny": []
+   },
+   "hover+focus+focus-visible@800": {
+    "noiseN": 0,
+    "vsA": 4,
+    "real": [
+     "SECTION:2/DIV:0[container] margin-inline-end: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-inline-start: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-left: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-right: 0px -> 340px"
+    ],
+    "realN": 4,
+    "realProps": {
+     "margin-inline-end": 1,
+     "margin-inline-start": 1,
+     "margin-left": 1,
+     "margin-right": 1
+    },
+    "realHosts": [
+     "DIV:0[container]"
+    ],
+    "radiusAny": []
+   },
+   "active+hover@0": {
+    "noiseN": 0,
+    "vsA": 4,
+    "real": [
+     "SECTION:2/DIV:0[container] margin-inline-end: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-inline-start: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-left: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-right: 0px -> 340px"
+    ],
+    "realN": 4,
+    "realProps": {
+     "margin-inline-end": 1,
+     "margin-inline-start": 1,
+     "margin-left": 1,
+     "margin-right": 1
+    },
+    "realHosts": [
+     "DIV:0[container]"
+    ],
+    "radiusAny": []
+   },
+   "active+hover@160": {
+    "noiseN": 0,
+    "vsA": 4,
+    "real": [
+     "SECTION:2/DIV:0[container] margin-inline-end: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-inline-start: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-left: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-right: 0px -> 340px"
+    ],
+    "realN": 4,
+    "realProps": {
+     "margin-inline-end": 1,
+     "margin-inline-start": 1,
+     "margin-left": 1,
+     "margin-right": 1
+    },
+    "realHosts": [
+     "DIV:0[container]"
+    ],
+    "radiusAny": []
+   },
+   "active+hover@450": {
+    "noiseN": 0,
+    "vsA": 4,
+    "real": [
+     "SECTION:2/DIV:0[container] margin-inline-end: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-inline-start: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-left: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-right: 0px -> 340px"
+    ],
+    "realN": 4,
+    "realProps": {
+     "margin-inline-end": 1,
+     "margin-inline-start": 1,
+     "margin-left": 1,
+     "margin-right": 1
+    },
+    "realHosts": [
+     "DIV:0[container]"
+    ],
+    "radiusAny": []
+   },
+   "active+hover@800": {
+    "noiseN": 0,
+    "vsA": 4,
+    "real": [
+     "SECTION:2/DIV:0[container] margin-inline-end: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-inline-start: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-left: 0px -> 340px",
+     "SECTION:2/DIV:0[container] margin-right: 0px -> 340px"
+    ],
+    "realN": 4,
+    "realProps": {
+     "margin-inline-end": 1,
+     "margin-inline-start": 1,
+     "margin-left": 1,
+     "margin-right": 1
+    },
+    "realHosts": [
+     "DIV:0[container]"
+    ],
+    "radiusAny": []
+   }
+  }
+ }
+}

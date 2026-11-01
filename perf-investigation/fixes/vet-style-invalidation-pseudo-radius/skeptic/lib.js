@@ -48,6 +48,7 @@ async function open(browser, vname, o = {}) {
       if (fs.existsSync(f) && fs.statSync(f).isFile()) return req.respond({ status: 200, contentType: DTYPES[path.extname(f)] || 'application/octet-stream', body: fs.readFileSync(f) });
       return req.respond({ status: 404, contentType: 'text/plain', body: '' });
     }
+    if (o.block && o.block.test(req.url())) return req.abort();
     req.continue();
   });
   p.on('pageerror', (e) => { (p.__errs = p.__errs || []).push(String(e.message)); });
