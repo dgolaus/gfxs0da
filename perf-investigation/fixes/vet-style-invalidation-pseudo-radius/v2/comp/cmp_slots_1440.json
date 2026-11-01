@@ -1,0 +1,600 @@
+{
+ "pre": "slots_1440",
+ "tabs": {
+  "prad": [
+   {
+    "cls": "btn btn-primary btn-lg slots-cta",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "999px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-primary btn-lg slots-cta",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "999px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-primary btn-lg slots-cta",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "999px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-primary btn-lg slots-cta",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "999px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-primary btn-lg slots-cta",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "999px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-primary btn-lg slots-cta",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "999px",
+    "content": "\"\""
+   }
+  ],
+  "pradf": [
+   {
+    "cls": "btn btn-primary btn-lg slots-cta",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-primary btn-lg slots-cta",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-primary btn-lg slots-cta",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-primary btn-lg slots-cta",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-primary btn-lg slots-cta",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-primary btn-lg slots-cta",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "\"\""
+   }
+  ],
+  "A": [
+   {
+    "cls": "btn btn-primary btn-lg slots-cta",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-primary btn-lg slots-cta",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-primary btn-lg slots-cta",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-primary btn-lg slots-cta",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-primary btn-lg slots-cta",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-primary btn-lg slots-cta",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "\"\""
+   }
+  ]
+ },
+ "errs": {
+  "prad": [],
+  "pradf": [],
+  "A": [],
+  "B": []
+ },
+ "summary": {
+  "prad": {
+   "rest": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "float0": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "float1700": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "float3300": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "hover@0": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "hover@160": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "hover@450": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "hover@800": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "focus+focus-visible@0": {
+    "noiseN": 0,
+    "vsA": 8,
+    "real": [
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-bottom-left-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-bottom-right-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-end-end-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-end-start-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-start-end-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-start-start-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-top-left-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-top-right-radius: 4px -> 999px"
+    ],
+    "realN": 8,
+    "realProps": {
+     "border-bottom-left-radius": 1,
+     "border-bottom-right-radius": 1,
+     "border-end-end-radius": 1,
+     "border-end-start-radius": 1,
+     "border-start-end-radius": 1,
+     "border-start-start-radius": 1,
+     "border-top-left-radius": 1,
+     "border-top-right-radius": 1
+    },
+    "realHosts": [
+     "A:0[btn btn-primary btn-lg slots-cta]::after"
+    ],
+    "radiusAny": [
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-bottom-left-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-bottom-right-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-end-end-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-end-start-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-start-end-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-start-start-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-top-left-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-top-right-radius: 4px -> 999px"
+    ]
+   },
+   "hover+focus+focus-visible@0": {
+    "noiseN": 0,
+    "vsA": 8,
+    "real": [
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-bottom-left-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-bottom-right-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-end-end-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-end-start-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-start-end-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-start-start-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-top-left-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-top-right-radius: 4px -> 999px"
+    ],
+    "realN": 8,
+    "realProps": {
+     "border-bottom-left-radius": 1,
+     "border-bottom-right-radius": 1,
+     "border-end-end-radius": 1,
+     "border-end-start-radius": 1,
+     "border-start-end-radius": 1,
+     "border-start-start-radius": 1,
+     "border-top-left-radius": 1,
+     "border-top-right-radius": 1
+    },
+    "realHosts": [
+     "A:0[btn btn-primary btn-lg slots-cta]::after"
+    ],
+    "radiusAny": [
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-bottom-left-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-bottom-right-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-end-end-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-end-start-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-start-end-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-start-start-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-top-left-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-top-right-radius: 4px -> 999px"
+    ]
+   },
+   "hover+focus+focus-visible@160": {
+    "noiseN": 0,
+    "vsA": 8,
+    "real": [
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-bottom-left-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-bottom-right-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-end-end-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-end-start-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-start-end-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-start-start-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-top-left-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-top-right-radius: 4px -> 999px"
+    ],
+    "realN": 8,
+    "realProps": {
+     "border-bottom-left-radius": 1,
+     "border-bottom-right-radius": 1,
+     "border-end-end-radius": 1,
+     "border-end-start-radius": 1,
+     "border-start-end-radius": 1,
+     "border-start-start-radius": 1,
+     "border-top-left-radius": 1,
+     "border-top-right-radius": 1
+    },
+    "realHosts": [
+     "A:0[btn btn-primary btn-lg slots-cta]::after"
+    ],
+    "radiusAny": [
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-bottom-left-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-bottom-right-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-end-end-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-end-start-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-start-end-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-start-start-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-top-left-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-top-right-radius: 4px -> 999px"
+    ]
+   },
+   "hover+focus+focus-visible@450": {
+    "noiseN": 0,
+    "vsA": 8,
+    "real": [
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-bottom-left-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-bottom-right-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-end-end-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-end-start-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-start-end-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-start-start-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-top-left-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-top-right-radius: 4px -> 999px"
+    ],
+    "realN": 8,
+    "realProps": {
+     "border-bottom-left-radius": 1,
+     "border-bottom-right-radius": 1,
+     "border-end-end-radius": 1,
+     "border-end-start-radius": 1,
+     "border-start-end-radius": 1,
+     "border-start-start-radius": 1,
+     "border-top-left-radius": 1,
+     "border-top-right-radius": 1
+    },
+    "realHosts": [
+     "A:0[btn btn-primary btn-lg slots-cta]::after"
+    ],
+    "radiusAny": [
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-bottom-left-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-bottom-right-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-end-end-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-end-start-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-start-end-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-start-start-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-top-left-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-top-right-radius: 4px -> 999px"
+    ]
+   },
+   "hover+focus+focus-visible@800": {
+    "noiseN": 0,
+    "vsA": 8,
+    "real": [
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-bottom-left-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-bottom-right-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-end-end-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-end-start-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-start-end-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-start-start-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-top-left-radius: 4px -> 999px",
+     "FOOTER:2/A:0[btn btn-primary btn-lg slots-cta]::after border-top-right-radius: 4px -> 999px"
+    ],
+    "realN": 8,
+    "realProps": {
+     "border-bottom-left-radius": 1,
+     "border-bottom-right-radius": 1,
+     "border-end-end-radius": 1,
+     "border-end-start-radius": 1,
+     "border-start-end-radius": 1,
+     "border-start-start-radius": 1,
+     "border-top-left-radius": 1,
+     "border-top-right-radius": 1
+    },
+    "realHosts": [
+     "A:0[btn btn-primary btn-lg slots-cta]::after"
+    ],
+    "radiusAny": [
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-bottom-left-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-bottom-right-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-end-end-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-end-start-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-start-end-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-start-start-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-top-left-radius: 4px -> 999px",
+     "A:0[btn btn-primary btn-lg slots-cta]::after border-top-right-radius: 4px -> 999px"
+    ]
+   },
+   "active+hover@0": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "active+hover@160": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "active+hover@450": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "active+hover@800": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   }
+  },
+  "pradf": {
+   "rest": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "float0": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "float1700": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "float3300": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "hover@0": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "hover@160": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "hover@450": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "hover@800": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "focus+focus-visible@0": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "hover+focus+focus-visible@0": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "hover+focus+focus-visible@160": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "hover+focus+focus-visible@450": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "hover+focus+focus-visible@800": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "active+hover@0": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "active+hover@160": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "active+hover@450": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "active+hover@800": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   }
+  }
+ }
+}

@@ -1,0 +1,164 @@
+{
+ "baseline": [
+  {
+   "top": {
+    "recalcs": 44,
+    "sumElements": 3676,
+    "perRecalcMedian": 82,
+    "perRecalcMax": 99,
+    "elementsPerSec": 1225,
+    "hist": "82x40 99x4"
+   },
+   "testimonials": {
+    "recalcs": 142,
+    "sumElements": 3884,
+    "perRecalcMedian": 2,
+    "perRecalcMax": 77,
+    "elementsPerSec": 1295,
+    "hist": "2x94 77x48"
+   },
+   "pricing": {
+    "recalcs": 112,
+    "sumElements": 2984,
+    "perRecalcMedian": 2,
+    "perRecalcMax": 71,
+    "elementsPerSec": 995,
+    "hist": "2x72 71x40"
+   }
+  },
+  {
+   "top": {
+    "recalcs": 41,
+    "sumElements": 3396,
+    "perRecalcMedian": 82,
+    "perRecalcMax": 99,
+    "elementsPerSec": 1132,
+    "hist": "82x39 99x2"
+   },
+   "testimonials": {
+    "recalcs": 138,
+    "sumElements": 3726,
+    "perRecalcMedian": 2,
+    "perRecalcMax": 77,
+    "elementsPerSec": 1242,
+    "hist": "2x92 77x46"
+   },
+   "pricing": {
+    "recalcs": 111,
+    "sumElements": 2913,
+    "perRecalcMedian": 2,
+    "perRecalcMax": 71,
+    "elementsPerSec": 971,
+    "hist": "2x72 71x39"
+   }
+  }
+ ],
+ "prad": [
+  {
+   "top": {
+    "recalcs": 20,
+    "sumElements": 599,
+    "perRecalcMedian": 57,
+    "perRecalcMax": 66,
+    "elementsPerSec": 200,
+    "hist": "2x10 57x9 66x1"
+   },
+   "testimonials": {
+    "recalcs": 125,
+    "sumElements": 2350,
+    "perRecalcMedian": 2,
+    "perRecalcMax": 52,
+    "elementsPerSec": 783,
+    "hist": "2x83 52x42"
+   },
+   "pricing": {
+    "recalcs": 108,
+    "sumElements": 1844,
+    "perRecalcMedian": 2,
+    "perRecalcMax": 46,
+    "elementsPerSec": 615,
+    "hist": "2x71 46x37"
+   }
+  },
+  {
+   "top": {
+    "recalcs": 44,
+    "sumElements": 2535,
+    "perRecalcMedian": 57,
+    "perRecalcMax": 66,
+    "elementsPerSec": 845,
+    "hist": "57x41 66x3"
+   },
+   "testimonials": {
+    "recalcs": 132,
+    "sumElements": 2464,
+    "perRecalcMedian": 2,
+    "perRecalcMax": 52,
+    "elementsPerSec": 821,
+    "hist": "2x88 52x44"
+   },
+   "pricing": {
+    "recalcs": 112,
+    "sumElements": 1896,
+    "perRecalcMedian": 2,
+    "perRecalcMax": 46,
+    "elementsPerSec": 632,
+    "hist": "2x74 46x38"
+   }
+  }
+ ],
+ "pradf": [
+  {
+   "top": {
+    "recalcs": 38,
+    "sumElements": 2166,
+    "perRecalcMedian": 57,
+    "perRecalcMax": 57,
+    "elementsPerSec": 722,
+    "hist": "57x38"
+   },
+   "testimonials": {
+    "recalcs": 140,
+    "sumElements": 2630,
+    "perRecalcMedian": 2,
+    "perRecalcMax": 52,
+    "elementsPerSec": 877,
+    "hist": "2x93 52x47"
+   },
+   "pricing": {
+    "recalcs": 117,
+    "sumElements": 2126,
+    "perRecalcMedian": 2,
+    "perRecalcMax": 46,
+    "elementsPerSec": 709,
+    "hist": "2x74 46x43"
+   }
+  },
+  {
+   "top": {
+    "recalcs": 40,
+    "sumElements": 2307,
+    "perRecalcMedian": 57,
+    "perRecalcMax": 66,
+    "elementsPerSec": 769,
+    "hist": "57x37 66x3"
+   },
+   "testimonials": {
+    "recalcs": 141,
+    "sumElements": 2632,
+    "perRecalcMedian": 2,
+    "perRecalcMax": 52,
+    "elementsPerSec": 877,
+    "hist": "2x94 52x47"
+   },
+   "pricing": {
+    "recalcs": 112,
+    "sumElements": 1984,
+    "perRecalcMedian": 2,
+    "perRecalcMax": 46,
+    "elementsPerSec": 661,
+    "hist": "2x72 46x40"
+   }
+  }
+ ]
+}

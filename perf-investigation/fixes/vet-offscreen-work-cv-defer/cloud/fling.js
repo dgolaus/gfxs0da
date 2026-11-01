@@ -23,13 +23,24 @@ async function detail(buf) {
     const { p, c } = await L.open(b, v, { w: W, h: H, mobile, throttle: +(THR || 0) });
     await p.goto(L.BASE + '/', { waitUntil: 'load' });
     await L.settle(p, 2500);
-    if (MODE === 'flingup') { await p.evaluate(() => { window.lenis ? window.lenis.scrollTo(document.documentElement.scrollHeight, { immediate: true, force: true }) : scrollTo(0, document.documentElement.scrollHeight); }); await L.w8(1500); }
+    await L.w8(+(process.env.EXTRA || 0));
+    if (MODE === 'flingup' || MODE === 'dragup') { await p.evaluate(() => { window.lenis ? window.lenis.scrollTo(document.documentElement.scrollHeight, { immediate: true, force: true }) : scrollTo(0, document.documentElement.scrollHeight); }); await L.w8(1500); }
     const frames = [];
     c.on('Page.screencastFrame', async (f) => { frames.push({ y: f.metadata.scrollOffsetY, data: f.data }); try { await c.send('Page.screencastFrameAck', { sessionId: f.sessionId }); } catch (e) {} });
     await c.send('Page.startScreencast', { format: 'jpeg', quality: 70, everyNthFrame: 1, maxWidth: W, maxHeight: H });
     await L.w8(300);
     const n0 = frames.length;
     if (MODE === 'end') { await p.mouse.move(W / 2, H / 2); await p.keyboard.press('End'); }
+    else if (MODE === 'drag' || MODE === 'dragup') {
+      // fast finger drags (compositor-threaded touch scrolling; headless has no fling momentum)
+      const step = +SPEED, dir = MODE === 'dragup' ? -1 : 1;
+      for (let k = 0; k < 14; k++) {
+        const ys = dir > 0 ? [H - 40, 60] : [60, H - 40];
+        await c.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: W / 2, y: ys[0] }] });
+        for (let y = ys[0]; dir > 0 ? y > ys[1] : y < ys[1]; y -= dir * step) { await c.send('Input.dispatchTouchEvent', { type: 'touchMove', touchPoints: [{ x: W / 2, y }] }); await L.w8(8); }
+        await c.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+      }
+    }
     else {
       const dist = MODE === 'flingup' ? 9000 : -9000;
       c.send('Input.synthesizeScrollGesture', { x: Math.round(W / 2), y: Math.round(H / 2), yDistance: dist, speed: +SPEED, gestureSourceType: mobile ? 'touch' : 'mouse', preventFling: false }).catch(() => {});

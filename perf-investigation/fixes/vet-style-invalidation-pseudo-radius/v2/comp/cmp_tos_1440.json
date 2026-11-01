@@ -1,0 +1,643 @@
+{
+ "pre": "tos_1440",
+ "tabs": {
+  "prad": [
+   {
+    "cls": "btn btn-ghost btn-sm",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "999px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-ghost btn-sm",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "999px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-ghost btn-sm",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "999px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-ghost btn-sm",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "999px",
+    "content": "\"\""
+   }
+  ],
+  "pradf": [
+   {
+    "cls": "btn btn-ghost btn-sm",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-ghost btn-sm",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-ghost btn-sm",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-ghost btn-sm",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "\"\""
+   }
+  ],
+  "A": [
+   {
+    "cls": "btn btn-ghost btn-sm",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-ghost btn-sm",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-ghost btn-sm",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "\"\""
+   },
+   {
+    "cls": "btn btn-ghost btn-sm",
+    "fv": true,
+    "hostR": "4px",
+    "afterR": "4px",
+    "content": "\"\""
+   }
+  ]
+ },
+ "errs": {
+  "prad": [],
+  "pradf": [],
+  "A": [],
+  "B": []
+ },
+ "summary": {
+  "prad": {
+   "rest": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "float0": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "float1700": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "float3300": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "hover@0": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "hover@160": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "hover@450": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "hover@800": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "focus+focus-visible@0": {
+    "noiseN": 0,
+    "vsA": 16,
+    "real": [
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-bottom-left-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-bottom-right-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-end-end-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-end-start-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-start-end-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-start-start-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-top-left-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-top-right-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-bottom-left-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-bottom-right-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-end-end-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-end-start-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-start-end-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-start-start-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-top-left-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-top-right-radius: 4px -> 999px"
+    ],
+    "realN": 16,
+    "realProps": {
+     "border-bottom-left-radius": 2,
+     "border-bottom-right-radius": 2,
+     "border-end-end-radius": 2,
+     "border-end-start-radius": 2,
+     "border-start-end-radius": 2,
+     "border-start-start-radius": 2,
+     "border-top-left-radius": 2,
+     "border-top-right-radius": 2
+    },
+    "realHosts": [
+     "A:0[btn btn-ghost btn-sm]::after",
+     "A:1[btn btn-ghost btn-sm]::after"
+    ],
+    "radiusAny": [
+     "A:0[btn btn-ghost btn-sm]::after border-bottom-left-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-bottom-right-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-end-end-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-end-start-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-start-end-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-start-start-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-top-left-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-top-right-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-bottom-left-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-bottom-right-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-end-end-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-end-start-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-start-end-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-start-start-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-top-left-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-top-right-radius: 4px -> 999px"
+    ]
+   },
+   "hover+focus+focus-visible@0": {
+    "noiseN": 0,
+    "vsA": 16,
+    "real": [
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-bottom-left-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-bottom-right-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-end-end-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-end-start-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-start-end-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-start-start-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-top-left-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-top-right-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-bottom-left-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-bottom-right-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-end-end-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-end-start-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-start-end-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-start-start-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-top-left-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-top-right-radius: 4px -> 999px"
+    ],
+    "realN": 16,
+    "realProps": {
+     "border-bottom-left-radius": 2,
+     "border-bottom-right-radius": 2,
+     "border-end-end-radius": 2,
+     "border-end-start-radius": 2,
+     "border-start-end-radius": 2,
+     "border-start-start-radius": 2,
+     "border-top-left-radius": 2,
+     "border-top-right-radius": 2
+    },
+    "realHosts": [
+     "A:0[btn btn-ghost btn-sm]::after",
+     "A:1[btn btn-ghost btn-sm]::after"
+    ],
+    "radiusAny": [
+     "A:0[btn btn-ghost btn-sm]::after border-bottom-left-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-bottom-right-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-end-end-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-end-start-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-start-end-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-start-start-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-top-left-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-top-right-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-bottom-left-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-bottom-right-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-end-end-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-end-start-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-start-end-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-start-start-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-top-left-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-top-right-radius: 4px -> 999px"
+    ]
+   },
+   "hover+focus+focus-visible@160": {
+    "noiseN": 0,
+    "vsA": 16,
+    "real": [
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-bottom-left-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-bottom-right-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-end-end-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-end-start-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-start-end-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-start-start-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-top-left-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-top-right-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-bottom-left-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-bottom-right-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-end-end-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-end-start-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-start-end-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-start-start-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-top-left-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-top-right-radius: 4px -> 999px"
+    ],
+    "realN": 16,
+    "realProps": {
+     "border-bottom-left-radius": 2,
+     "border-bottom-right-radius": 2,
+     "border-end-end-radius": 2,
+     "border-end-start-radius": 2,
+     "border-start-end-radius": 2,
+     "border-start-start-radius": 2,
+     "border-top-left-radius": 2,
+     "border-top-right-radius": 2
+    },
+    "realHosts": [
+     "A:0[btn btn-ghost btn-sm]::after",
+     "A:1[btn btn-ghost btn-sm]::after"
+    ],
+    "radiusAny": [
+     "A:0[btn btn-ghost btn-sm]::after border-bottom-left-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-bottom-right-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-end-end-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-end-start-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-start-end-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-start-start-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-top-left-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-top-right-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-bottom-left-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-bottom-right-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-end-end-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-end-start-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-start-end-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-start-start-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-top-left-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-top-right-radius: 4px -> 999px"
+    ]
+   },
+   "hover+focus+focus-visible@450": {
+    "noiseN": 0,
+    "vsA": 16,
+    "real": [
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-bottom-left-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-bottom-right-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-end-end-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-end-start-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-start-end-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-start-start-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-top-left-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-top-right-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-bottom-left-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-bottom-right-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-end-end-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-end-start-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-start-end-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-start-start-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-top-left-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-top-right-radius: 4px -> 999px"
+    ],
+    "realN": 16,
+    "realProps": {
+     "border-bottom-left-radius": 2,
+     "border-bottom-right-radius": 2,
+     "border-end-end-radius": 2,
+     "border-end-start-radius": 2,
+     "border-start-end-radius": 2,
+     "border-start-start-radius": 2,
+     "border-top-left-radius": 2,
+     "border-top-right-radius": 2
+    },
+    "realHosts": [
+     "A:0[btn btn-ghost btn-sm]::after",
+     "A:1[btn btn-ghost btn-sm]::after"
+    ],
+    "radiusAny": [
+     "A:0[btn btn-ghost btn-sm]::after border-bottom-left-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-bottom-right-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-end-end-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-end-start-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-start-end-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-start-start-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-top-left-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-top-right-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-bottom-left-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-bottom-right-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-end-end-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-end-start-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-start-end-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-start-start-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-top-left-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-top-right-radius: 4px -> 999px"
+    ]
+   },
+   "hover+focus+focus-visible@800": {
+    "noiseN": 0,
+    "vsA": 16,
+    "real": [
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-bottom-left-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-bottom-right-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-end-end-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-end-start-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-start-end-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-start-start-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-top-left-radius: 4px -> 999px",
+     "DIV:3/A:0[btn btn-ghost btn-sm]::after border-top-right-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-bottom-left-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-bottom-right-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-end-end-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-end-start-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-start-end-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-start-start-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-top-left-radius: 4px -> 999px",
+     "DIV:3/A:1[btn btn-ghost btn-sm]::after border-top-right-radius: 4px -> 999px"
+    ],
+    "realN": 16,
+    "realProps": {
+     "border-bottom-left-radius": 2,
+     "border-bottom-right-radius": 2,
+     "border-end-end-radius": 2,
+     "border-end-start-radius": 2,
+     "border-start-end-radius": 2,
+     "border-start-start-radius": 2,
+     "border-top-left-radius": 2,
+     "border-top-right-radius": 2
+    },
+    "realHosts": [
+     "A:0[btn btn-ghost btn-sm]::after",
+     "A:1[btn btn-ghost btn-sm]::after"
+    ],
+    "radiusAny": [
+     "A:0[btn btn-ghost btn-sm]::after border-bottom-left-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-bottom-right-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-end-end-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-end-start-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-start-end-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-start-start-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-top-left-radius: 4px -> 999px",
+     "A:0[btn btn-ghost btn-sm]::after border-top-right-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-bottom-left-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-bottom-right-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-end-end-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-end-start-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-start-end-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-start-start-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-top-left-radius: 4px -> 999px",
+     "A:1[btn btn-ghost btn-sm]::after border-top-right-radius: 4px -> 999px"
+    ]
+   },
+   "active+hover@0": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "active+hover@160": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "active+hover@450": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "active+hover@800": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   }
+  },
+  "pradf": {
+   "rest": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "float0": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "float1700": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "float3300": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "hover@0": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "hover@160": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "hover@450": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "hover@800": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "focus+focus-visible@0": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "hover+focus+focus-visible@0": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "hover+focus+focus-visible@160": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "hover+focus+focus-visible@450": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "hover+focus+focus-visible@800": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "active+hover@0": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "active+hover@160": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "active+hover@450": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   },
+   "active+hover@800": {
+    "noiseN": 0,
+    "vsA": 0,
+    "real": [],
+    "realN": 0,
+    "realProps": {},
+    "realHosts": [],
+    "radiusAny": []
+   }
+  }
+ }
+}

@@ -1,0 +1,133 @@
+--- ../offscreen-work/script.c2.js	2026-11-01 16:57:44.109291770 +0000
++++ cloud/script.c2stay.js	2026-11-01 20:27:22.786875901 +0000
+@@ -61,6 +61,7 @@
+ const cvOn = cvSections.length > 0 && !!(window.CSS && CSS.supports && CSS.supports('content-visibility', 'auto'));
+ const cvPending = [];      // inits adiadas, cada uma roda uma única vez
+ let cvExactWidth = null;   // largura em que todas já renderizaram uma vez
++const cvKept = new Set();  // seções que o aquecimento deixou renderizadas de vez
+ 
+ function cvRunPending() {
+   while (cvPending.length) cvPending[0]();
+@@ -73,7 +74,7 @@
+     // O próximo frame registra a altura real de cada uma; depois voltam ao
+     // auto (fora da tela são puladas de novo, já com a altura certa).
+     requestAnimationFrame(() => requestAnimationFrame(() => {
+-      cvSections.forEach((s) => { s.style.contentVisibility = ''; });
++      cvSections.forEach((s) => { if (!cvKept.has(s)) s.style.contentVisibility = ''; });
+     }));
+   }
+   cvRunPending();
+@@ -83,7 +84,7 @@
+ // Roda fn quando `section` estiver a até 2 telas da viewport (ou num
+ // cvSettle), o que vier primeiro. Fora das seções adiadas, roda na hora.
+ function cvWhenNear(section, fn) {
+-  if (!cvOn || !section || !cvSections.includes(section)) { fn(); return; }
++  if (!cvOn || cvHash || !section || !cvSections.includes(section)) { fn(); return; }
+   let io = null;
+   const run = () => {
+     const i = cvPending.indexOf(run);
+@@ -101,34 +102,48 @@
+ }
+ 
+ // Aquecimento: terminada a intro do hero (contagem dos números inclusa),
+-// cada seção adiada é renderizada uma vez, uma por vez, em momentos
+-// ociosos. A altura real fica guardada e o layout pronto antes de o
+-// visitante rolar; nada disso aparece (as seções estão fora da tela).
++// cada seção adiada é renderizada, uma por vez, em momentos ociosos, e
++// FICA renderizada (content-visibility: visible). Daí em diante a página
++// é a mesma de antes: alturas reais, tudo pintado (um pulo com End ou um
++// arrasto rápido não mostra seção vazia), animações rodando.
+ if (cvOn) {
+   const idle = window.requestIdleCallback
+     ? (fn) => requestIdleCallback(fn, { timeout: 1500 })
+     : (fn) => setTimeout(fn, 80);
+   const queue = cvSections.slice();
+   const step = () => {
+-    if (cvExactWidth === window.innerWidth) return;   // um cvSettle já fez tudo
+     const s = queue[0];
+     if (!s) { cvExactWidth = window.innerWidth; return; }
+     // 1º passo: inits que medem dentro da seção (ex.: colunas de depoimentos)
+     const own = cvPending.filter((run) => run.section === s);
+     if (own.length) { own.forEach((run) => run()); idle(step); return; }
+-    // 2º passo: um frame visível registra a altura real; depois volta ao auto
++    // 2º passo: a seção passa a ser renderizada de vez
+     queue.shift();
+     s.style.contentVisibility = 'visible';
+-    requestAnimationFrame(() => requestAnimationFrame(() => {
+-      s.style.contentVisibility = '';
+-      idle(step);
+-    }));
++    cvKept.add(s);
++    requestAnimationFrame(() => requestAnimationFrame(() => idle(step)));
+   };
+   const start = () => setTimeout(() => idle(step), 3000);
+   if (document.readyState === 'complete') start();
+   else window.addEventListener('load', start, { once: true });
+ }
+ 
++// Chegando com #secao (ex.: /#pricing): renderiza tudo desde o início,
++// e as inits adiadas rodam na hora (cvWhenNear),
++// como antes, até load + 1s (depois dos reajustes do go()). Assim o
++// pulo do próprio navegador e o go() veem a mesma página e o mesmo
++// tempo de antes. Depois voltam ao auto, já com as alturas reais.
++const cvHash = cvOn && !!hashTarget();
++if (cvHash) {
++  cvExactWidth = window.innerWidth;
++  cvSections.forEach((s) => { s.style.contentVisibility = 'visible'; });
++  const back = () => setTimeout(() => requestAnimationFrame(() => {
++    if (cvExactWidth === window.innerWidth) cvSections.forEach((s) => { if (!cvKept.has(s)) s.style.contentVisibility = ''; });
++  }), 1000);
++  if (document.readyState === 'complete') back();
++  else window.addEventListener('load', back, { once: true });
++}
++
+ // Links internos (#pricing…) em qualquer aparelho, com ou sem Lenis: as
+ // alturas ficam reais antes de o destino ser calculado.
+ if (cvOn) {
+@@ -138,6 +153,17 @@
+   }, true);
+ }
+ 
++// Pulos longos sem âncora (tecla End/Home, arrastar o trilho): alturas
++// reais antes do pulo, para que rolar de volta sobre seções nunca
++// renderizadas não desloque o conteúdo (o Lenis ignora o scroll anchoring).
++if (cvOn) {
++  document.addEventListener('keydown', (e) => {
++    if (e.key === 'End' || e.key === 'Home') cvSettle();
++  }, true);
++  const cvThumb = document.querySelector('.rail__thumb');
++  if (cvThumb) cvThumb.addEventListener('mousedown', cvSettle, true);
++}
++
+ // Mudou a largura: as alturas guardadas podem não valer mais; renderiza
+ // tudo de novo uma vez (o mesmo relayout que a página fazia sem isto).
+ if (cvOn) {
+@@ -1020,10 +1046,19 @@
+   // Parado no hero o valor suavizado já é igual ao alvo, então começar no
+   // 1º scroll (com o init "no alvo" abaixo) dá o mesmo quadro de antes.
+   const live = new Set();
++  let lastY = window.scrollY;   // scroll do último quadro desenhado
+   els.forEach((el) => {
+     const sec = cvSections.find((s) => s.contains(el));
+     if (!sec) { live.add(el); return; }
+-    const on = () => live.add(el);
++    const on = () => {
++      if (live.has(el)) return;
++      live.add(el);
++      // Parado, o loop original já guardava o alvo da posição do último
++      // quadro: semeia esse valor, e um pulo logo em seguida (âncora no
++      // load, clique nativo no touch) varre o gradiente como antes.
++      const vh = window.innerHeight;
++      if (vh && cvOn) smoothed.set(el, 50 - ((el.getBoundingClientRect().top + window.scrollY - lastY) / vh) * 100);
++    };
+     window.addEventListener('scroll', on, { once: true, passive: true });
+     cvWhenNear(sec, on);
+   });
+@@ -1063,6 +1098,7 @@
+ 
+   function loop() {
+     update();
++    lastY = window.scrollY;
+     requestAnimationFrame(loop);
+   }
+   requestAnimationFrame(loop);

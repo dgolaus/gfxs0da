@@ -1,0 +1,2 @@
+cd /home/user/gfxs0da/perf-investigation && node -r /tmp/claude-0/-home-user-gfxs0da/0364eb59-08fc-5b06-a692-a06b7bdc7a68/scratchpad/pp-hook.js fixes/vet-style-invalidation-pseudo-radius/v2/bench_disk.js visual fixes/vet-style-invalidation-pseudo-radius/v2/bench_vars.json > fixes/vet-style-invalidation-pseudo-radius/v2/bench_visual.log 2>&1
+echo BDONE >> /home/user/gfxs0da/perf-investigation/fixes/vet-style-invalidation-pseudo-radius/v2/q5.log

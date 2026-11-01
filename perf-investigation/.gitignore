@@ -6,3 +6,5 @@
 trace_*.json
 # Raw computed-style dumps (5-10 MB each, regenerable)
 comp_*.json
+*.jpg
+*.jpeg

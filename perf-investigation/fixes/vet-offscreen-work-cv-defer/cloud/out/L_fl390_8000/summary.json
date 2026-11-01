@@ -1,0 +1,27 @@
+{
+ "baseline": {
+  "frames": 101,
+  "min": 8.49,
+  "p10": 8.55,
+  "median": 8.62,
+  "lowFrames": []
+ },
+ "cvd": {
+  "frames": 0,
+  "lowFrames": []
+ },
+ "cvd_gh3": {
+  "frames": 96,
+  "min": 8.5,
+  "p10": 8.55,
+  "median": 8.62,
+  "lowFrames": []
+ },
+ "cvw_gh3": {
+  "frames": 89,
+  "min": 8.46,
+  "p10": 8.55,
+  "median": 8.62,
+  "lowFrames": []
+ }
+}

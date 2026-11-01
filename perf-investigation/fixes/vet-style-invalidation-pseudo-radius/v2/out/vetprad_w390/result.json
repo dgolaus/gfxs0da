@@ -1,0 +1,1054 @@
+{
+ "tag": "vetprad_w390",
+ "vp": "390x844",
+ "pg": "/",
+ "flags": [
+  "mobile"
+ ],
+ "errs": {
+  "A": [],
+  "B": [],
+  "prad": [],
+  "pradf": []
+ },
+ "rows": [
+  {
+   "y": 0,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "prad": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "geo": "same",
+    "thumb": "same"
+   },
+   "pradf": {
+    "vsA": {
+     "mad": 0.126,
+     "pct": 0.185,
+     "big": 0.123,
+     "bbox": [
+      249,
+      372,
+      352,
+      427
+     ]
+    },
+    "vsB": {
+     "mad": 0.126,
+     "pct": 0.185,
+     "big": 0.123,
+     "bbox": [
+      249,
+      372,
+      352,
+      427
+     ]
+    },
+    "geo": "same",
+    "thumb": "same"
+   }
+  },
+  {
+   "y": 422,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "prad": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "geo": "same",
+    "thumb": "same"
+   },
+   "pradf": {
+    "vsA": {
+     "mad": 0.001,
+     "pct": 0.002,
+     "big": 0,
+     "bbox": [
+      329,
+      0,
+      341,
+      5
+     ]
+    },
+    "vsB": {
+     "mad": 0.001,
+     "pct": 0.002,
+     "big": 0,
+     "bbox": [
+      329,
+      0,
+      341,
+      5
+     ]
+    },
+    "geo": "same",
+    "thumb": "same"
+   }
+  },
+  {
+   "y": 844,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "prad": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "geo": "same",
+    "thumb": "same"
+   },
+   "pradf": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "geo": "same",
+    "thumb": "same"
+   }
+  },
+  {
+   "y": 1266,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "prad": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "geo": "same",
+    "thumb": "same"
+   },
+   "pradf": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "geo": "same",
+    "thumb": "same"
+   }
+  },
+  {
+   "y": 1688,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "prad": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "geo": "same",
+    "thumb": "same"
+   },
+   "pradf": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "geo": "same",
+    "thumb": "same"
+   }
+  },
+  {
+   "y": 2110,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "prad": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "geo": "same",
+    "thumb": "same"
+   },
+   "pradf": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "geo": "same",
+    "thumb": "same"
+   }
+  },
+  {
+   "y": 2532,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "prad": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "geo": "same",
+    "thumb": "same"
+   },
+   "pradf": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "geo": "same",
+    "thumb": "same"
+   }
+  },
+  {
+   "y": 2954,
+   "noise": {
+    "mad": 0.011,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "prad": {
+    "vsA": {
+     "mad": 0.019,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0.011,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "geo": {
+     "sy": [
+      2954,
+      2954
+     ],
+     "docH": [
+      8251,
+      8251
+     ],
+     "sec": [
+      "-2954 -2209 -590.6 183.8 1290.7 2424.2 4256.3",
+      "-2954 -2209 -590.7 183.8 1290.7 2424.2 4256.3"
+     ]
+    },
+    "thumb": "same"
+   },
+   "pradf": {
+    "vsA": {
+     "mad": 0.019,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0.011,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "geo": {
+     "sy": [
+      2954,
+      2954
+     ],
+     "docH": [
+      8251,
+      8251
+     ],
+     "sec": [
+      "-2954 -2209 -590.6 183.8 1290.7 2424.2 4256.3",
+      "-2954 -2209 -590.7 183.8 1290.7 2424.2 4256.3"
+     ]
+    },
+    "thumb": "same"
+   }
+  },
+  {
+   "y": 3376,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "prad": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "geo": "same",
+    "thumb": "same"
+   },
+   "pradf": {
+    "vsA": {
+     "mad": 0.04,
+     "pct": 0.118,
+     "big": 0.06,
+     "bbox": [
+      221,
+      431,
+      297,
+      442
+     ]
+    },
+    "vsB": {
+     "mad": 0.04,
+     "pct": 0.118,
+     "big": 0.06,
+     "bbox": [
+      221,
+      431,
+      297,
+      442
+     ]
+    },
+    "geo": "same",
+    "thumb": "same"
+   }
+  },
+  {
+   "y": 3798,
+   "noise": {
+    "mad": 0.148,
+    "pct": 0.22,
+    "big": 0.127,
+    "bbox": [
+     39,
+     593,
+     174,
+     608
+    ]
+   },
+   "prad": {
+    "vsA": {
+     "mad": 4.645,
+     "pct": 3.646,
+     "big": 2.409,
+     "bbox": [
+      20,
+      578,
+      369,
+      843
+     ]
+    },
+    "vsB": {
+     "mad": 4.518,
+     "pct": 3.561,
+     "big": 2.278,
+     "bbox": [
+      20,
+      578,
+      369,
+      843
+     ]
+    },
+    "geo": "same",
+    "thumb": "same"
+   },
+   "pradf": {
+    "vsA": {
+     "mad": 0.154,
+     "pct": 0.331,
+     "big": 0.178,
+     "bbox": [
+      39,
+      9,
+      296,
+      606
+     ]
+    },
+    "vsB": {
+     "mad": 0.133,
+     "pct": 0.321,
+     "big": 0.158,
+     "bbox": [
+      39,
+      9,
+      296,
+      608
+     ]
+    },
+    "geo": "same",
+    "thumb": "same"
+   }
+  },
+  {
+   "y": 4220,
+   "noise": {
+    "mad": 0.222,
+    "pct": 0.313,
+    "big": 0.229,
+    "bbox": [
+     75,
+     627,
+     251,
+     758
+    ]
+   },
+   "prad": {
+    "vsA": {
+     "mad": 0.003,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0.222,
+     "pct": 0.313,
+     "big": 0.229,
+     "bbox": [
+      75,
+      627,
+      251,
+      758
+     ]
+    },
+    "geo": "same",
+    "thumb": "same"
+   },
+   "pradf": {
+    "vsA": {
+     "mad": 0.322,
+     "pct": 0.373,
+     "big": 0.247,
+     "bbox": [
+      75,
+      627,
+      255,
+      781
+     ]
+    },
+    "vsB": {
+     "mad": 0.136,
+     "pct": 0.132,
+     "big": 0.059,
+     "bbox": [
+      216,
+      627,
+      256,
+      782
+     ]
+    },
+    "geo": "same",
+    "thumb": "same"
+   }
+  },
+  {
+   "y": 4642,
+   "noise": {
+    "mad": 0.091,
+    "pct": 0.252,
+    "big": 0,
+    "bbox": [
+     30,
+     590,
+     389,
+     829
+    ]
+   },
+   "prad": {
+    "vsA": {
+     "mad": 0.05,
+     "pct": 0.041,
+     "big": 0,
+     "bbox": [
+      30,
+      590,
+      389,
+      829
+     ]
+    },
+    "vsB": {
+     "mad": 0.044,
+     "pct": 0.083,
+     "big": 0,
+     "bbox": [
+      173,
+      591,
+      389,
+      625
+     ]
+    },
+    "geo": "same",
+    "thumb": "same"
+   },
+   "pradf": {
+    "vsA": {
+     "mad": 0.063,
+     "pct": 0.12,
+     "big": 0,
+     "bbox": [
+      30,
+      590,
+      389,
+      829
+     ]
+    },
+    "vsB": {
+     "mad": 0.031,
+     "pct": 0.07,
+     "big": 0,
+     "bbox": [
+      173,
+      593,
+      388,
+      625
+     ]
+    },
+    "geo": "same",
+    "thumb": "same"
+   }
+  },
+  {
+   "y": 5064,
+   "noise": {
+    "mad": 0.736,
+    "pct": 1.965,
+    "big": 0.708,
+    "bbox": [
+     24,
+     169,
+     385,
+     833
+    ]
+   },
+   "prad": {
+    "vsA": {
+     "mad": 0.717,
+     "pct": 1.922,
+     "big": 0.708,
+     "bbox": [
+      24,
+      453,
+      365,
+      833
+     ]
+    },
+    "vsB": {
+     "mad": 0.019,
+     "pct": 0.043,
+     "big": 0,
+     "bbox": [
+      180,
+      169,
+      385,
+      198
+     ]
+    },
+    "geo": "same",
+    "thumb": "same"
+   },
+   "pradf": {
+    "vsA": {
+     "mad": 0.717,
+     "pct": 1.922,
+     "big": 0.708,
+     "bbox": [
+      24,
+      453,
+      365,
+      833
+     ]
+    },
+    "vsB": {
+     "mad": 0.019,
+     "pct": 0.043,
+     "big": 0,
+     "bbox": [
+      180,
+      169,
+      385,
+      198
+     ]
+    },
+    "geo": "same",
+    "thumb": "same"
+   }
+  },
+  {
+   "y": 5486,
+   "noise": {
+    "mad": 0.74,
+    "pct": 2.028,
+    "big": 0.708,
+    "bbox": [
+     24,
+     34,
+     365,
+     449
+    ]
+   },
+   "prad": {
+    "vsA": {
+     "mad": 0.74,
+     "pct": 2.028,
+     "big": 0.708,
+     "bbox": [
+      24,
+      34,
+      365,
+      449
+     ]
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "geo": "same",
+    "thumb": "same"
+   },
+   "pradf": {
+    "vsA": {
+     "mad": 0.74,
+     "pct": 2.028,
+     "big": 0.708,
+     "bbox": [
+      24,
+      34,
+      365,
+      449
+     ]
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "geo": "same",
+    "thumb": "same"
+   }
+  },
+  {
+   "y": 5908,
+   "noise": {
+    "mad": 0.002,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "prad": {
+    "vsA": {
+     "mad": 0.002,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "geo": "same",
+    "thumb": "same"
+   },
+   "pradf": {
+    "vsA": {
+     "mad": 0.002,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0.003,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "geo": {
+     "sy": [
+      5908,
+      5908
+     ],
+     "docH": [
+      8887,
+      8887
+     ],
+     "sec": [
+      "-5908 -5163 -3561.8 -2794.2 -1042.1 105.7 1937.8",
+      "-5908 -5163 -3561.8 -2794.2 -1041.9 105.7 1937.8"
+     ]
+    },
+    "thumb": "same"
+   }
+  },
+  {
+   "y": 6330,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "prad": {
+    "vsA": {
+     "mad": 0.101,
+     "pct": 0.353,
+     "big": 0.046,
+     "bbox": [
+      28,
+      675,
+      361,
+      843
+     ]
+    },
+    "vsB": {
+     "mad": 0.101,
+     "pct": 0.353,
+     "big": 0.046,
+     "bbox": [
+      28,
+      675,
+      361,
+      843
+     ]
+    },
+    "geo": "same",
+    "thumb": "same"
+   },
+   "pradf": {
+    "vsA": {
+     "mad": 0.072,
+     "pct": 0.237,
+     "big": 0,
+     "bbox": [
+      48,
+      746,
+      213,
+      843
+     ]
+    },
+    "vsB": {
+     "mad": 0.072,
+     "pct": 0.237,
+     "big": 0,
+     "bbox": [
+      48,
+      746,
+      213,
+      843
+     ]
+    },
+    "geo": "same",
+    "thumb": "same"
+   }
+  },
+  {
+   "y": 6752,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "prad": {
+    "vsA": {
+     "mad": 0.236,
+     "pct": 0.931,
+     "big": 0.06,
+     "bbox": [
+      28,
+      253,
+      361,
+      793
+     ]
+    },
+    "vsB": {
+     "mad": 0.236,
+     "pct": 0.931,
+     "big": 0.06,
+     "bbox": [
+      28,
+      253,
+      361,
+      793
+     ]
+    },
+    "geo": "same",
+    "thumb": "same"
+   },
+   "pradf": {
+    "vsA": {
+     "mad": 0.144,
+     "pct": 0.563,
+     "big": 0,
+     "bbox": [
+      41,
+      324,
+      347,
+      632
+     ]
+    },
+    "vsB": {
+     "mad": 0.144,
+     "pct": 0.563,
+     "big": 0,
+     "bbox": [
+      41,
+      324,
+      347,
+      632
+     ]
+    },
+    "geo": "same",
+    "thumb": "same"
+   }
+  },
+  {
+   "y": 7174,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "prad": {
+    "vsA": {
+     "mad": 0.165,
+     "pct": 0.599,
+     "big": 0.015,
+     "bbox": [
+      40,
+      0,
+      348,
+      571
+     ]
+    },
+    "vsB": {
+     "mad": 0.165,
+     "pct": 0.599,
+     "big": 0.015,
+     "bbox": [
+      40,
+      0,
+      348,
+      571
+     ]
+    },
+    "geo": "same",
+    "thumb": "same"
+   },
+   "pradf": {
+    "vsA": {
+     "mad": 0.071,
+     "pct": 0.311,
+     "big": 0,
+     "bbox": [
+      41,
+      0,
+      348,
+      210
+     ]
+    },
+    "vsB": {
+     "mad": 0.071,
+     "pct": 0.311,
+     "big": 0,
+     "bbox": [
+      41,
+      0,
+      348,
+      210
+     ]
+    },
+    "geo": "same",
+    "thumb": "same"
+   }
+  },
+  {
+   "y": 7296,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "prad": {
+    "vsA": {
+     "mad": 0.11,
+     "pct": 0.338,
+     "big": 0.015,
+     "bbox": [
+      41,
+      0,
+      349,
+      449
+     ]
+    },
+    "vsB": {
+     "mad": 0.11,
+     "pct": 0.338,
+     "big": 0.015,
+     "bbox": [
+      41,
+      0,
+      349,
+      449
+     ]
+    },
+    "geo": "same",
+    "thumb": "same"
+   },
+   "pradf": {
+    "vsA": {
+     "mad": 0.035,
+     "pct": 0.18,
+     "big": 0,
+     "bbox": [
+      42,
+      0,
+      348,
+      88
+     ]
+    },
+    "vsB": {
+     "mad": 0.035,
+     "pct": 0.18,
+     "big": 0,
+     "bbox": [
+      42,
+      0,
+      348,
+      88
+     ]
+    },
+    "geo": "same",
+    "thumb": "same"
+   }
+  }
+ ]
+}

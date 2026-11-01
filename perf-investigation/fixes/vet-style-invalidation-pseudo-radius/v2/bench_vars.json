@@ -1,0 +1,4 @@
+[{"name":"baseline"},
+ {"name":"ctrl","files":{"/styles.css":"fixes/vet-style-invalidation-pseudo-radius/v2/styles.ctrl.css"}},
+ {"name":"prad","files":{"/styles.css":"fixes/style-invalidation/styles.pseudoradius.css"}},
+ {"name":"pradf","files":{"/styles.css":"fixes/vet-style-invalidation-pseudo-radius/v2/styles.pseudoradius.amended.css"}}]

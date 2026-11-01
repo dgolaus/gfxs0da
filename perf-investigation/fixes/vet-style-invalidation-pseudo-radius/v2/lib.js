@@ -5,6 +5,7 @@ const puppeteer = require(R + 'puppeteer');
 const sharp = require(R + 'sharp');
 const PI = '/home/user/gfxs0da/perf-investigation/';
 const BASE = 'http://localhost:5173';
+const DTYPES = {'.js':'application/javascript','.css':'text/css','.json':'application/json','.html':'text/html; charset=utf-8','.webp':'image/webp','.png':'image/png','.svg':'image/svg+xml','.jpg':'image/jpeg','.jpeg':'image/jpeg','.woff2':'font/woff2','.woff':'font/woff','.avif':'image/avif','.ico':'image/x-icon','.mp4':'video/mp4','.webm':'video/webm','.gif':'image/gif','.txt':'text/plain','.xml':'application/xml'};
 const w8 = (ms) => new Promise((r) => setTimeout(r, ms));
 const V = JSON.parse(fs.readFileSync(path.join(__dirname, 'variants.json'), 'utf8'));
 
@@ -42,6 +43,11 @@ async function open(browser, vname, o = {}) {
     let k = u.pathname; if (k === '/' || k === '') k = '/index.html';
     if (k.endsWith('/') ) k = k + 'index.html';
     if (map[k] && u.host.startsWith('localhost')) return req.respond({ status: 200, contentType: type(k), body: map[k] });
+    if (u.host === 'localhost:5173') {  // shared server went down: serve the repo from disk for EVERY variant (baseline too)
+      const f = path.join('/home/user/gfxs0da', decodeURIComponent(k));
+      if (fs.existsSync(f) && fs.statSync(f).isFile()) return req.respond({ status: 200, contentType: DTYPES[path.extname(f)] || 'application/octet-stream', body: fs.readFileSync(f) });
+      return req.respond({ status: 404, contentType: 'text/plain', body: '' });
+    }
     req.continue();
   });
   p.on('pageerror', (e) => { (p.__errs = p.__errs || []).push(String(e.message)); });
