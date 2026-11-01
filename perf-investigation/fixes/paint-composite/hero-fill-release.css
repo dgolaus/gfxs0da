@@ -1,0 +1,4 @@
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-badge, .hero-title, .hero-sub, .hero-cta, .hero-stats-strip, .scroll-indicator { animation-fill-mode: backwards; }
+}

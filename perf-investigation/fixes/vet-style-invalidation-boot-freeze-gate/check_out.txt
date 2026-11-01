@@ -1,0 +1,384 @@
+
+=== / baseOFF vs varOFF @1440x900
+ first view html: "lenis" | "lenis"  body: "bg-red ready" | "bg-red ready"  scrollY 0 0
+ events A: [["t600","","bg-red",{"p":0,"r":86,"n":86}],["before-ready","",{"p":0,"r":86,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}]]
+ events B: [["before-ready","",{"p":3,"r":83,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","lenis","bg-red ready",{"p":3,"r":73,"n":76}]]
+ visits A: visits=4.5B+ | visits=0 
+ visits B: visits=4.5B+ | visits=0
+ computed-style diffs first view: 14
+    28:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    28:SCRIPT::before :: running => undefined
+    28:SCRIPT::after :: running => undefined
+    29:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    29:LINK::before :: running => undefined
+    29:LINK::after :: running => undefined
+    229:SPAN.accent-text :: background-image: radial-gradient(circle at 50% 10.18vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh) => radial-gradient(circle at 50% 10.19vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)
+    257:DIV.container :: margin-inline-end: 100px => 0px , margin-inline-start: 100px => 0px , margin-left: 100px => 0px , margin-right: 100px => 0px
+    28:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    28:LINK::before :: undefined => running
+    28:LINK::after :: undefined => running
+    29:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+ repeat html: "lenis" | "lenis"  scrollY 0 0
+ repeat events A: [["before-ready","",{"p":0,"r":86,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","lenis","bg-red ready",{"p":3,"r":73,"n":76}]]
+ repeat events B: [["before-ready","",{"p":3,"r":83,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","lenis","bg-red ready",{"p":3,"r":73,"n":76}]]
+ computed-style diffs repeat view: 12
+    28:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    28:SCRIPT::before :: running => undefined
+    28:SCRIPT::after :: running => undefined
+    29:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    29:LINK::before :: running => undefined
+    29:LINK::after :: running => undefined
+    28:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    28:LINK::before :: undefined => running
+    28:LINK::after :: undefined => running
+    29:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    29:SCRIPT::before :: undefined => running
+    29:SCRIPT::after :: undefined => running
+
+=== / baseON vs varON @1440x900
+ first view html: "lenis" | "lenis"  body: "bg-red ready" | "bg-red ready"  scrollY 0 0
+ events A: [["t600","lenis","bg-red",{"p":75,"r":15,"n":90}],["before-ready","lenis",{"p":75,"r":5,"n":80}],["after-ready","lenis",{"p":3,"r":79,"n":82}]]
+ events B: [["t600","boot-freeze lenis","bg-red",{"p":75,"r":5,"n":80}],["before-ready","lenis",{"p":3,"r":77,"n":80}],["after-ready","lenis",{"p":3,"r":79,"n":82}]]
+ visits A: visits=4.4B+ | visits=0 
+ visits B: visits=4.4B+ | visits=0
+ computed-style diffs first view: 12
+    28:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    28:SCRIPT::before :: running => undefined
+    28:SCRIPT::after :: running => undefined
+    29:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    29:LINK::before :: running => undefined
+    29:LINK::after :: running => undefined
+    28:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    28:LINK::before :: undefined => running
+    28:LINK::after :: undefined => running
+    29:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    29:SCRIPT::before :: undefined => running
+    29:SCRIPT::after :: undefined => running
+ repeat html: "no-boot lenis" | "no-boot lenis"  scrollY 0 0
+ repeat events A: [["before-ready","no-boot",{"p":3,"r":83,"n":86}],["after-ready","no-boot",{"p":3,"r":83,"n":86}],["t600","no-boot lenis","bg-red ready",{"p":3,"r":73,"n":76}]]
+ repeat events B: [["before-ready","no-boot",{"p":3,"r":83,"n":86}],["after-ready","no-boot",{"p":3,"r":83,"n":86}],["t600","no-boot lenis","bg-red ready",{"p":3,"r":73,"n":76}]]
+ computed-style diffs repeat view: 12
+    28:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    28:SCRIPT::before :: running => undefined
+    28:SCRIPT::after :: running => undefined
+    29:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    29:LINK::before :: running => undefined
+    29:LINK::after :: running => undefined
+    28:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    28:LINK::before :: undefined => running
+    28:LINK::after :: undefined => running
+    29:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    29:SCRIPT::before :: undefined => running
+    29:SCRIPT::after :: undefined => running
+
+=== /tos/ baseOFF vs varOFF @1440x900
+ first view html: "lenis" | "lenis"  body: "tos-page ready" | "tos-page ready"  scrollY 0 0
+ events A: [["before-ready","",{"p":0,"r":15,"n":15}],["after-ready","",{"p":0,"r":15,"n":15}],["t600","lenis","tos-page ready",{"p":0,"r":10,"n":10}]]
+ events B: [["before-ready","",{"p":0,"r":15,"n":15}],["after-ready","",{"p":0,"r":15,"n":15}],["t600","lenis","tos-page ready",{"p":0,"r":10,"n":10}]]
+ visits A:  
+ visits B: 
+ computed-style diffs first view: 12
+    22:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    22:SCRIPT::before :: running => undefined
+    22:SCRIPT::after :: running => undefined
+    23:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    23:LINK::before :: running => undefined
+    23:LINK::after :: running => undefined
+    22:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    22:LINK::before :: undefined => running
+    22:LINK::after :: undefined => running
+    23:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    23:SCRIPT::before :: undefined => running
+    23:SCRIPT::after :: undefined => running
+ repeat html: "lenis" | "lenis"  scrollY 0 0
+ repeat events A: [["before-ready","",{"p":0,"r":15,"n":15}],["after-ready","",{"p":0,"r":15,"n":15}],["t600","lenis","tos-page ready",{"p":0,"r":10,"n":10}]]
+ repeat events B: [["before-ready","",{"p":0,"r":15,"n":15}],["after-ready","",{"p":0,"r":15,"n":15}],["t600","lenis","tos-page ready",{"p":0,"r":10,"n":10}]]
+ computed-style diffs repeat view: 12
+    22:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    22:SCRIPT::before :: running => undefined
+    22:SCRIPT::after :: running => undefined
+    23:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    23:LINK::before :: running => undefined
+    23:LINK::after :: running => undefined
+    22:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    22:LINK::before :: undefined => running
+    22:LINK::after :: undefined => running
+    23:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    23:SCRIPT::before :: undefined => running
+    23:SCRIPT::after :: undefined => running
+
+=== /tos/ baseON vs varON @1440x900
+ first view html: "lenis" | "lenis"  body: "tos-page ready" | "tos-page ready"  scrollY 0 0
+ events A: [["t600","lenis","tos-page",{"p":9,"r":5,"n":14}],["before-ready","lenis",{"p":9,"r":5,"n":14}],["after-ready","lenis",{"p":0,"r":16,"n":16}]]
+ events B: [["t600","boot-freeze lenis","tos-page",{"p":9,"r":5,"n":14}],["before-ready","lenis",{"p":0,"r":14,"n":14}],["after-ready","lenis",{"p":0,"r":16,"n":16}]]
+ visits A:  
+ visits B: 
+ computed-style diffs first view: 12
+    22:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    22:SCRIPT::before :: running => undefined
+    22:SCRIPT::after :: running => undefined
+    23:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    23:LINK::before :: running => undefined
+    23:LINK::after :: running => undefined
+    22:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    22:LINK::before :: undefined => running
+    22:LINK::after :: undefined => running
+    23:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    23:SCRIPT::before :: undefined => running
+    23:SCRIPT::after :: undefined => running
+ repeat html: "no-boot lenis" | "no-boot lenis"  scrollY 0 0
+ repeat events A: [["before-ready","no-boot",{"p":0,"r":15,"n":15}],["after-ready","no-boot",{"p":0,"r":15,"n":15}],["t600","no-boot lenis","tos-page ready",{"p":0,"r":10,"n":10}]]
+ repeat events B: [["before-ready","no-boot",{"p":0,"r":15,"n":15}],["after-ready","no-boot",{"p":0,"r":15,"n":15}],["t600","no-boot lenis","tos-page ready",{"p":0,"r":10,"n":10}]]
+ computed-style diffs repeat view: 12
+    22:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    22:SCRIPT::before :: running => undefined
+    22:SCRIPT::after :: running => undefined
+    23:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    23:LINK::before :: running => undefined
+    23:LINK::after :: running => undefined
+    22:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    22:LINK::before :: undefined => running
+    22:LINK::after :: undefined => running
+    23:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    23:SCRIPT::before :: undefined => running
+    23:SCRIPT::after :: undefined => running
+
+=== /slots/ baseOFF vs varOFF @1440x900
+ first view html: "lenis" | "lenis"  body: "bg-red slots-page ready" | "bg-red slots-page ready"  scrollY 0 0
+ events A: [["before-ready","",{"p":0,"r":5,"n":5}],["after-ready","",{"p":0,"r":5,"n":5}],["t600","lenis","bg-red slots-page ready",{"p":0,"r":5,"n":5}]]
+ events B: [["before-ready","",{"p":0,"r":5,"n":5}],["after-ready","",{"p":0,"r":5,"n":5}],["t600","lenis","bg-red slots-page ready",{"p":0,"r":5,"n":5}]]
+ visits A:  
+ visits B: 
+ computed-style diffs first view: 12
+    16:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    16:SCRIPT::before :: running => undefined
+    16:SCRIPT::after :: running => undefined
+    17:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    17:LINK::before :: running => undefined
+    17:LINK::after :: running => undefined
+    16:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    16:LINK::before :: undefined => running
+    16:LINK::after :: undefined => running
+    17:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    17:SCRIPT::before :: undefined => running
+    17:SCRIPT::after :: undefined => running
+ repeat html: "lenis" | "lenis"  scrollY 0 0
+ repeat events A: [["before-ready","",{"p":0,"r":5,"n":5}],["after-ready","",{"p":0,"r":5,"n":5}],["t600","lenis","bg-red slots-page ready",{"p":0,"r":5,"n":5}]]
+ repeat events B: [["before-ready","",{"p":0,"r":5,"n":5}],["after-ready","",{"p":0,"r":5,"n":5}],["t600","lenis","bg-red slots-page ready",{"p":0,"r":5,"n":5}]]
+ computed-style diffs repeat view: 12
+    16:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    16:SCRIPT::before :: running => undefined
+    16:SCRIPT::after :: running => undefined
+    17:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    17:LINK::before :: running => undefined
+    17:LINK::after :: running => undefined
+    16:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    16:LINK::before :: undefined => running
+    16:LINK::after :: undefined => running
+    17:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    17:SCRIPT::before :: undefined => running
+    17:SCRIPT::after :: undefined => running
+
+=== /slots/ baseON vs varON @1440x900
+ first view html: "lenis" | "lenis"  body: "bg-red slots-page ready" | "bg-red slots-page ready"  scrollY 0 0
+ events A: [["t600","lenis","bg-red slots-page",{"p":4,"r":5,"n":9}],["before-ready","lenis",{"p":4,"r":5,"n":9}],["after-ready","lenis",{"p":0,"r":11,"n":11}]]
+ events B: [["t600","boot-freeze lenis","bg-red slots-page",{"p":4,"r":5,"n":9}],["before-ready","lenis",{"p":0,"r":9,"n":9}],["after-ready","lenis",{"p":0,"r":11,"n":11}]]
+ visits A:  
+ visits B: 
+ computed-style diffs first view: 12
+    16:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    16:SCRIPT::before :: running => undefined
+    16:SCRIPT::after :: running => undefined
+    17:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    17:LINK::before :: running => undefined
+    17:LINK::after :: running => undefined
+    16:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    16:LINK::before :: undefined => running
+    16:LINK::after :: undefined => running
+    17:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    17:SCRIPT::before :: undefined => running
+    17:SCRIPT::after :: undefined => running
+ repeat html: "no-boot lenis" | "no-boot lenis"  scrollY 0 0
+ repeat events A: [["before-ready","no-boot",{"p":0,"r":5,"n":5}],["after-ready","no-boot",{"p":0,"r":5,"n":5}],["t600","no-boot lenis","bg-red slots-page ready",{"p":0,"r":5,"n":5}]]
+ repeat events B: [["before-ready","no-boot",{"p":0,"r":5,"n":5}],["after-ready","no-boot",{"p":0,"r":5,"n":5}],["t600","no-boot lenis","bg-red slots-page ready",{"p":0,"r":5,"n":5}]]
+ computed-style diffs repeat view: 12
+    16:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    16:SCRIPT::before :: running => undefined
+    16:SCRIPT::after :: running => undefined
+    17:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    17:LINK::before :: running => undefined
+    17:LINK::after :: running => undefined
+    16:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    16:LINK::before :: undefined => running
+    16:LINK::after :: undefined => running
+    17:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    17:SCRIPT::before :: undefined => running
+    17:SCRIPT::after :: undefined => running
+
+=== /404.html baseOFF vs varOFF @1440x900
+ first view html: "" | ""  body: "bg-red slots-page nf-page ready" | "bg-red slots-page nf-page ready"  scrollY 0 0
+ events A: [["before-ready","",{"p":0,"r":4,"n":4}],["after-ready","",{"p":0,"r":4,"n":4}],["t600","","bg-red slots-page nf-page ready",{"p":0,"r":4,"n":4}]]
+ events B: [["before-ready","",{"p":0,"r":4,"n":4}],["after-ready","",{"p":0,"r":4,"n":4}],["t600","","bg-red slots-page nf-page ready",{"p":0,"r":4,"n":4}]]
+ visits A:  
+ visits B: 
+ computed-style diffs first view: 0
+ repeat html: "" | ""  scrollY 0 0
+ repeat events A: [["before-ready","",{"p":0,"r":4,"n":4}],["after-ready","",{"p":0,"r":4,"n":4}],["t600","","bg-red slots-page nf-page ready",{"p":0,"r":4,"n":4}]]
+ repeat events B: [["before-ready","",{"p":0,"r":4,"n":4}],["after-ready","",{"p":0,"r":4,"n":4}],["t600","","bg-red slots-page nf-page ready",{"p":0,"r":4,"n":4}]]
+ computed-style diffs repeat view: 0
+
+=== /404.html baseON vs varON @1440x900
+ first view html: "" | ""  body: "bg-red slots-page nf-page ready" | "bg-red slots-page nf-page ready"  scrollY 0 0
+ events A: [["t600","","bg-red slots-page nf-page",{"p":3,"r":5,"n":8}],["before-ready","",{"p":3,"r":5,"n":8}],["after-ready","",{"p":0,"r":10,"n":10}]]
+ events B: [["t600","","bg-red slots-page nf-page",{"p":0,"r":8,"n":8}],["before-ready","",{"p":0,"r":7,"n":7}],["after-ready","",{"p":0,"r":9,"n":9}]]
+ visits A:  
+ visits B: 
+ computed-style diffs first view: 0
+ repeat html: "no-boot" | "no-boot"  scrollY 0 0
+ repeat events A: [["before-ready","no-boot",{"p":0,"r":4,"n":4}],["after-ready","no-boot",{"p":0,"r":4,"n":4}],["t600","no-boot","bg-red slots-page nf-page ready",{"p":0,"r":4,"n":4}]]
+ repeat events B: [["before-ready","no-boot",{"p":0,"r":4,"n":4}],["after-ready","no-boot",{"p":0,"r":4,"n":4}],["t600","no-boot","bg-red slots-page nf-page ready",{"p":0,"r":4,"n":4}]]
+ computed-style diffs repeat view: 0
+
+=== /#pricing baseOFF vs varOFF @1440x900
+ first view html: "lenis" | "lenis"  body: "bg-red ready" | "bg-red ready"  scrollY 4549 4549
+ events A: [["before-ready","",{"p":0,"r":86,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","is-scrolling lenis","bg-red ready",{"p":9,"r":102,"n":111}]]
+ events B: [["before-ready","",{"p":3,"r":83,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","lenis is-scrolling","bg-red ready",{"p":9,"r":102,"n":111}]]
+ visits A: visits=4.5B+ | visits=0 
+ visits B: visits=4.5B+ | visits=0
+ computed-style diffs first view: 434
+    28:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    28:SCRIPT::before :: running => undefined
+    28:SCRIPT::after :: running => undefined
+    29:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    29:LINK::before :: running => undefined
+    29:LINK::after :: running => undefined
+    422:SECTION#trust.trust.scroll-fade :: filter: blur(6.008px) => blur(5.808px) , opacity: 0.249 => 0.274 , transform: matrix(1, 0, 0, 1, 0, -18.024) => matrix(1, 0, 0, 1, 0, -17.424) , --leave: 0.751 => 0.726
+    423:DIV.container :: --leave: 0.751 => 0.726
+    424:HEADER.section-head.reveal :: --leave: 0.751 => 0.726
+    425:P.eyebrow :: --leave: 0.751 => 0.726
+    426:SPAN.dash :: --leave: 0.751 => 0.726
+    427:H2 :: --leave: 0.751 => 0.726
+ repeat html: "lenis" | "lenis"  scrollY 4629 4629
+ repeat events A: [["before-ready","",{"p":0,"r":86,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","is-scrolling lenis","bg-red ready",{"p":9,"r":102,"n":111}]]
+ repeat events B: [["before-ready","",{"p":3,"r":83,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","lenis is-scrolling","bg-red ready",{"p":9,"r":102,"n":111}]]
+ computed-style diffs repeat view: 12
+    28:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    28:SCRIPT::before :: running => undefined
+    28:SCRIPT::after :: running => undefined
+    29:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    29:LINK::before :: running => undefined
+    29:LINK::after :: running => undefined
+    28:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    28:LINK::before :: undefined => running
+    28:LINK::after :: undefined => running
+    29:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    29:SCRIPT::before :: undefined => running
+    29:SCRIPT::after :: undefined => running
+
+=== /#pricing baseON vs varON @1440x900
+ first view html: "lenis" | "lenis"  body: "bg-red ready" | "bg-red ready"  scrollY 4549 4549
+ events A: [["t600","is-scrolling lenis","bg-red",{"p":75,"r":36,"n":111}],["before-ready","lenis",{"p":75,"r":9,"n":84}],["after-ready","lenis",{"p":9,"r":77,"n":86}]]
+ events B: [["t600","boot-freeze is-scrolling lenis","bg-red",{"p":75,"r":36,"n":111}],["before-ready","lenis",{"p":9,"r":75,"n":84}],["after-ready","lenis",{"p":9,"r":77,"n":86}]]
+ visits A: visits=4.4B+ | visits=0 
+ visits B: visits=4.4B+ | visits=0
+ computed-style diffs first view: 434
+    28:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    28:SCRIPT::before :: running => undefined
+    28:SCRIPT::after :: running => undefined
+    29:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    29:LINK::before :: running => undefined
+    29:LINK::after :: running => undefined
+    422:SECTION#trust.trust.scroll-fade :: filter: blur(5.976px) => blur(5.912px) , opacity: 0.253 => 0.261 , transform: matrix(1, 0, 0, 1, 0, -17.928) => matrix(1, 0, 0, 1, 0, -17.736) , --leave: 0.747 => 0.739
+    423:DIV.container :: --leave: 0.747 => 0.739
+    424:HEADER.section-head.reveal :: --leave: 0.747 => 0.739
+    425:P.eyebrow :: --leave: 0.747 => 0.739
+    426:SPAN.dash :: --leave: 0.747 => 0.739
+    427:H2 :: --leave: 0.747 => 0.739
+ repeat html: "lenis" | "lenis"  scrollY 4629 4629
+ repeat events A: [["t600","is-scrolling lenis","bg-red",{"p":75,"r":36,"n":111}],["before-ready","lenis",{"p":75,"r":9,"n":84}],["after-ready","lenis",{"p":9,"r":77,"n":86}]]
+ repeat events B: [["t600","boot-freeze is-scrolling lenis","bg-red",{"p":75,"r":36,"n":111}],["before-ready","lenis",{"p":9,"r":75,"n":84}],["after-ready","lenis",{"p":9,"r":77,"n":86}]]
+ computed-style diffs repeat view: 12
+    28:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    28:SCRIPT::before :: running => undefined
+    28:SCRIPT::after :: running => undefined
+    29:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    29:LINK::before :: running => undefined
+    29:LINK::after :: running => undefined
+    28:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    28:LINK::before :: undefined => running
+    28:LINK::after :: undefined => running
+    29:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    29:SCRIPT::before :: undefined => running
+    29:SCRIPT::after :: undefined => running
+
+=== /#trust baseOFF vs varOFF @1440x900
+ first view html: "lenis" | "lenis"  body: "bg-red ready" | "bg-red ready"  scrollY 3340 3340
+ events A: [["before-ready","",{"p":0,"r":86,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","is-scrolling lenis","bg-red ready",{"p":6,"r":88,"n":94}]]
+ events B: [["before-ready","",{"p":3,"r":83,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","is-scrolling lenis","bg-red ready",{"p":6,"r":88,"n":94}]]
+ visits A: visits=4.5B+ | visits=4.5B+ 
+ visits B: visits=4.5B+ | visits=4.5B+
+ computed-style diffs first view: 74
+    28:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    28:SCRIPT::before :: running => undefined
+    28:SCRIPT::after :: running => undefined
+    29:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    29:LINK::before :: running => undefined
+    29:LINK::after :: running => undefined
+    362:SECTION#process.process.scroll-fade :: filter: blur(5.888px) => blur(5.856px) , opacity: 0.264 => 0.268 , transform: matrix(1, 0, 0, 1, 0, -17.664) => matrix(1, 0, 0, 1, 0, -17.568) , --leave: 0.736 => 0.732
+    363:DIV.container.process-grid :: --leave: 0.736 => 0.732
+    364:DIV.process-text.reveal :: --leave: 0.736 => 0.732
+    365:P.eyebrow :: --leave: 0.736 => 0.732
+    366:SPAN.dash :: --leave: 0.736 => 0.732
+    367:H2 :: --leave: 0.736 => 0.732
+ repeat html: "lenis" | "lenis"  scrollY 3420 3420
+ repeat events A: [["before-ready","",{"p":0,"r":86,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","is-scrolling lenis","bg-red ready",{"p":6,"r":88,"n":94}]]
+ repeat events B: [["before-ready","",{"p":3,"r":83,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","is-scrolling lenis","bg-red ready",{"p":6,"r":88,"n":94}]]
+ computed-style diffs repeat view: 12
+    28:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    28:SCRIPT::before :: running => undefined
+    28:SCRIPT::after :: running => undefined
+    29:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    29:LINK::before :: running => undefined
+    29:LINK::after :: running => undefined
+    28:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    28:LINK::before :: undefined => running
+    28:LINK::after :: undefined => running
+    29:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    29:SCRIPT::before :: undefined => running
+    29:SCRIPT::after :: undefined => running
+
+=== /#trust baseON vs varON @1440x900
+ first view html: "lenis" | "lenis"  body: "bg-red ready" | "bg-red ready"  scrollY 3340 3340
+ events A: [["t600","is-scrolling lenis","bg-red",{"p":75,"r":20,"n":95}],["before-ready","lenis",{"p":76,"r":11,"n":87}],["after-ready","lenis",{"p":6,"r":83,"n":89}]]
+ events B: [["t600","boot-freeze lenis is-scrolling","bg-red",{"p":75,"r":20,"n":95}],["before-ready","lenis",{"p":6,"r":81,"n":87}],["after-ready","lenis",{"p":6,"r":83,"n":89}]]
+ visits A: visits=4.4B+ | visits=4.5B+ 
+ visits B: visits=4.4B+ | visits=4.5B+
+ computed-style diffs first view: 74
+    28:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    28:SCRIPT::before :: running => undefined
+    28:SCRIPT::after :: running => undefined
+    29:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    29:LINK::before :: running => undefined
+    29:LINK::after :: running => undefined
+    362:SECTION#process.process.scroll-fade :: filter: blur(5.84px) => blur(5.696px) , opacity: 0.27 => 0.288 , transform: matrix(1, 0, 0, 1, 0, -17.52) => matrix(1, 0, 0, 1, 0, -17.088) , --leave: 0.730 => 0.712
+    363:DIV.container.process-grid :: --leave: 0.730 => 0.712
+    364:DIV.process-text.reveal :: --leave: 0.730 => 0.712
+    365:P.eyebrow :: --leave: 0.730 => 0.712
+    366:SPAN.dash :: --leave: 0.730 => 0.712
+    367:H2 :: --leave: 0.730 => 0.712
+ repeat html: "lenis" | "lenis"  scrollY 3420 3420
+ repeat events A: [["t600","is-scrolling lenis","bg-red",{"p":75,"r":20,"n":95}],["before-ready","lenis",{"p":76,"r":11,"n":87}],["after-ready","lenis",{"p":6,"r":83,"n":89}]]
+ repeat events B: [["t600","boot-freeze lenis is-scrolling","bg-red",{"p":75,"r":20,"n":95}],["before-ready","lenis",{"p":6,"r":81,"n":87}],["after-ready","lenis",{"p":6,"r":83,"n":89}]]
+ computed-style diffs repeat view: 12
+    28:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    28:SCRIPT::before :: running => undefined
+    28:SCRIPT::after :: running => undefined
+    29:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    29:LINK::before :: running => undefined
+    29:LINK::after :: running => undefined
+    28:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    28:LINK::before :: undefined => running
+    28:LINK::after :: undefined => running
+    29:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    29:SCRIPT::before :: undefined => running
+    29:SCRIPT::after :: undefined => running

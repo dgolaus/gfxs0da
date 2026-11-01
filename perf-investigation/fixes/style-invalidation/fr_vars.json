@@ -1,0 +1,4 @@
+[{"name":"baseline"},
+ {"name":"boot-freeze-gate","files":{"/boot.css":"fixes/style-invalidation/boot.freezegate.css","/boot.js":"fixes/style-invalidation/boot.freezegate.js","/index.html":"fixes/style-invalidation/index.freezegate.html"}},
+ {"name":"pseudo-radius","files":{"/styles.css":"fixes/style-invalidation/styles.pseudoradius.css"}},
+ {"name":"baseline-again"}]

@@ -1,0 +1,72 @@
+/* ====================================================================
+   SEÇÕES ABAIXO DA DOBRA — content-visibility: auto (2026-10)
+   Na entrada o navegador montava a página inteira (portfólio, processo,
+   depoimentos, preços, footer) num único layout de ~430ms (CPU 4x),
+   bem no meio da intro do hero. Com content-visibility: auto, cada seção
+   abaixo só é calculada/pintada quando chega a ~1,5 tela de distância;
+   até lá ela ocupa a altura reservada abaixo (--cv-h).
+   Nada muda na tela: quando a seção aparece ela já está renderizada.
+   - "auto" no contain-intrinsic-height: depois da 1ª renderização o
+     navegador guarda a altura REAL e passa a usá-la.
+   - --cv-h = altura do CONTEÚDO medida (sem o padding da seção), por
+     faixa de largura; o padding da section continua valendo.
+   - script.js (__cvSettle) força a altura real antes de qualquer pulo
+     por âncora (#pricing etc.), então o destino é exato.
+   - Seletores presos à home: /tos/ tem section#pricing.tos-section,
+     que NÃO entra aqui.
+   ==================================================================== */
+#main > section.about,
+#main > section.process,
+#main > section.trust,
+#main > section.pricing,
+#contact.cfooter-clip {
+  content-visibility: auto;
+  contain-intrinsic-height: auto var(--cv-h, 800px);
+}
+#main > section.about   { --cv-h: 448.625px; }
+#main > section.process { --cv-h: 750.453125px; }
+#main > section.trust   { --cv-h: 1100.484375px; }
+#main > section.pricing { --cv-h: 627.234375px; }
+#contact.cfooter-clip   { --cv-h: 100svh; }  /* desktop: altura explícita */
+
+@media (max-width: 1439px) {
+  #main > section.about   { --cv-h: calc(439.51875px + (100vw - 1366px) * 0.12306); }
+  #main > section.process { --cv-h: calc(747.534375px + (100vw - 1366px) * 0.03944); }
+  #main > section.trust   { --cv-h: calc(1097.378125px + (100vw - 1366px) * 0.04198); }
+  #main > section.pricing { --cv-h: calc(625.284375px + (100vw - 1366px) * 0.02635); }
+}
+@media (max-width: 1100px) {
+  #main > section.about   { --cv-h: 411px; }
+  #main > section.process { --cv-h: 719px; }
+  #main > section.trust   { --cv-h: 1068px; }
+  #main > section.pricing { --cv-h: 1000px; }
+}
+@media (max-width: 1000px) {
+  #main > section.about   { --cv-h: calc(639.8px + (100vw - 760px) * 0.187); }
+  #main > section.process { --cv-h: calc(894.2px + (100vw - 760px) * 0.111); }
+  #main > section.trust   { --cv-h: calc(1146.1px + (100vw - 760px) * 0.0696); }
+  #main > section.pricing { --cv-h: calc(980px + (100vw - 760px) * 0.053); }
+}
+@media (max-width: 760px) {
+  #contact.cfooter-clip   { --cv-h: calc(100svh + 197px); }
+}
+@media (max-width: 700px) {
+  #main > section.about   { --cv-h: 625px; }
+  #main > section.process { --cv-h: 888px; }
+  #main > section.trust   { --cv-h: 1143px; }
+  #main > section.pricing { --cv-h: 1768px; }
+}
+@media (max-width: 620px) {
+  #main > section.about   { --cv-h: calc(622.3px + (600px - 100vw) * 0.22); }
+  #main > section.trust   { --cv-h: 1023px; }
+}
+@media (max-width: 480px) {
+  #main > section.about   { --cv-h: calc(648.7px + (480px - 100vw) * 0.774); }
+  #main > section.trust   { --cv-h: calc(1023px + (480px - 100vw) * 0.8); }
+}
+@media (max-width: 400px) {
+  #main > section.process { --cv-h: calc(909.5px + (390px - 100vw) * 1.79); }
+}
+@media (max-width: 367px) {
+  #main > section.pricing { --cv-h: 1792px; }
+}

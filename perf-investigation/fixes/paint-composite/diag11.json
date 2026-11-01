@@ -1,0 +1,7 @@
+[
+ {"name":"o_pulse","css":"*:not(.dot),*::before,*::after{animation-play-state:paused!important}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"},
+ {"name":"o_orbs","css":"*:not(.accent-orbs),*::before,*::after{animation-play-state:paused!important}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"},
+ {"name":"o_shiny","css":"*:not(.btn-shiny),*::before,*::after{animation-play-state:paused!important}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"},
+ {"name":"o_jsbg","css":"*,*::before,*::after{animation-play-state:paused!important}"},
+ {"name":"o_scrollline","css":"*:not(.scroll-line),*::before,*::after{animation-play-state:paused!important}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"}
+]

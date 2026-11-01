@@ -1,0 +1,9 @@
+[
+ {"name":"i_price","css":"*:not(.price-card),*::before,*::after{animation-play-state:paused!important}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"},
+ {"name":"i_quote","css":"*:not(.quote),*::before,*::after{animation-play-state:paused!important}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"},
+ {"name":"i_price_revealed","css":"*:not(.price-card),*::before,*::after{animation-play-state:paused!important} .price-card.reveal{opacity:1!important;transform:none!important;filter:none!important}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"},
+ {"name":"i_price_nofilter","css":"*:not(.price-card),*::before,*::after{animation-play-state:paused!important} .price-card.reveal{filter:none!important}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"},
+ {"name":"i_price_noopacity0","css":"*:not(.price-card),*::before,*::after{animation-play-state:paused!important} .price-card.reveal{opacity:1!important}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"},
+ {"name":"i_price_notransform","css":"*:not(.price-card),*::before,*::after{animation-play-state:paused!important} .price-card.reveal{transform:none!important}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"},
+ {"name":"i_none","css":"*,*::before,*::after{animation-play-state:paused!important}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"}
+]

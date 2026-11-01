@@ -1,0 +1,33 @@
+[
+ {
+  "name": "baseline"
+ },
+ {
+  "name": "style-invalidation-CONTROL-pristine-via-files",
+  "files": {
+   "/script.js": "fixes/script.ORIGINAL.js",
+   "/styles.css": "fixes/style-invalidation/styles.ORIGINAL.css"
+  }
+ },
+ {
+  "name": "style-invalidation-scriptinit-scope",
+  "files": {
+   "/styles.css": "fixes/style-invalidation/styles.scriptinit.css",
+   "/script.js": "fixes/style-invalidation/script.scriptinit.js"
+  }
+ },
+ {
+  "name": "style-invalidation-pseudo-radius",
+  "files": {
+   "/styles.css": "fixes/style-invalidation/styles.pseudoradius.css"
+  }
+ },
+ {
+  "name": "style-invalidation-boot-freeze-gate",
+  "files": {
+   "/boot.css": "fixes/style-invalidation/boot.freezegate.css",
+   "/boot.js": "fixes/style-invalidation/boot.freezegate.js",
+   "/index.html": "fixes/style-invalidation/index.freezegate.html"
+  }
+ }
+]

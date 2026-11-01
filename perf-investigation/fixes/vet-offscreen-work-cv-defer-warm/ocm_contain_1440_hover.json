@@ -1,0 +1,332 @@
+[
+ {
+  "tag": "y1555",
+  "sy0": 1555,
+  "sy1": 1555,
+  "noise": 0,
+  "diff": {
+   "mean": 0,
+   "px": 0,
+   "big": 0,
+   "maxd": 0,
+   "bbox": null
+  }
+ },
+ {
+  "tag": "y1965",
+  "sy0": 1965,
+  "sy1": 1965,
+  "noise": 0,
+  "diff": {
+   "mean": 0,
+   "px": 0,
+   "big": 0,
+   "maxd": 0,
+   "bbox": null
+  }
+ },
+ {
+  "tag": "y2112",
+  "sy0": 2112,
+  "sy1": 2112,
+  "noise": 0,
+  "diff": {
+   "mean": 0,
+   "px": 0,
+   "big": 0,
+   "maxd": 0,
+   "bbox": null
+  }
+ },
+ {
+  "tag": "y2454",
+  "sy0": 2454,
+  "sy1": 2454,
+  "noise": 0,
+  "diff": {
+   "mean": 0,
+   "px": 0,
+   "big": 0,
+   "maxd": 0,
+   "bbox": null
+  }
+ },
+ {
+  "tag": "y2522",
+  "sy0": 2522,
+  "sy1": 2522,
+  "noise": 0,
+  "diff": {
+   "mean": 0,
+   "px": 0,
+   "big": 0,
+   "maxd": 0,
+   "bbox": null
+  }
+ },
+ {
+  "tag": "y2970",
+  "sy0": 2970,
+  "sy1": 2970,
+  "noise": 0,
+  "diff": {
+   "mean": 0,
+   "px": 0,
+   "big": 0,
+   "maxd": 0,
+   "bbox": null
+  }
+ },
+ {
+  "tag": "y3312",
+  "sy0": 3312,
+  "sy1": 3312,
+  "noise": 0,
+  "diff": {
+   "mean": 0,
+   "px": 0,
+   "big": 0,
+   "maxd": 0,
+   "bbox": null
+  }
+ },
+ {
+  "tag": "y3380",
+  "sy0": 3380,
+  "sy1": 3380,
+  "noise": 0,
+  "diff": {
+   "mean": 0,
+   "px": 0,
+   "big": 0,
+   "maxd": 0,
+   "bbox": null
+  }
+ },
+ {
+  "tag": "y4179",
+  "sy0": 4179,
+  "sy1": 4179,
+  "noise": 0,
+  "diff": {
+   "mean": 0,
+   "px": 0,
+   "big": 0,
+   "maxd": 0,
+   "bbox": null
+  }
+ },
+ {
+  "tag": "y4521",
+  "sy0": 4521,
+  "sy1": 4521,
+  "noise": 0,
+  "diff": {
+   "mean": 0,
+   "px": 0,
+   "big": 0,
+   "maxd": 0,
+   "bbox": null
+  }
+ },
+ {
+  "tag": "y4589",
+  "sy0": 4589,
+  "sy1": 4589,
+  "noise": 0,
+  "diff": {
+   "mean": 0,
+   "px": 0,
+   "big": 0,
+   "maxd": 0,
+   "bbox": null
+  }
+ },
+ {
+  "tag": "y4914",
+  "sy0": 4914,
+  "sy1": 4914,
+  "noise": 0,
+  "diff": {
+   "mean": 0,
+   "px": 0,
+   "big": 0,
+   "maxd": 0,
+   "bbox": null
+  }
+ },
+ {
+  "tag": "y5256",
+  "sy0": 5256,
+  "sy1": 5256,
+  "noise": 0,
+  "diff": {
+   "mean": 0,
+   "px": 0,
+   "big": 0,
+   "maxd": 0,
+   "bbox": null
+  }
+ },
+ {
+  "tag": "y5324",
+  "sy0": 5324,
+  "sy1": 5324,
+  "noise": 0,
+  "diff": {
+   "mean": 0,
+   "px": 0,
+   "big": 0,
+   "maxd": 0,
+   "bbox": null
+  }
+ },
+ {
+  "tag": "y5364",
+  "sy0": 5364,
+  "sy1": 5364,
+  "noise": 0,
+  "diff": {
+   "mean": 0,
+   "px": 0,
+   "big": 0,
+   "maxd": 0,
+   "bbox": null
+  }
+ },
+ {
+  "tag": "hover_chat",
+  "sy0": 2463,
+  "sy1": 2463,
+  "noise": 0,
+  "diff": {
+   "mean": 0,
+   "px": 0,
+   "big": 0,
+   "maxd": 0,
+   "bbox": null
+  }
+ },
+ {
+  "tag": "hover_chat_bl",
+  "sy0": 2487,
+  "sy1": 2487,
+  "noise": 0,
+  "diff": {
+   "mean": 0,
+   "px": 0,
+   "big": 0,
+   "maxd": 0,
+   "bbox": null
+  }
+ },
+ {
+  "tag": "hover_chat_br",
+  "sy0": 2487,
+  "sy1": 2487,
+  "noise": 0,
+  "diff": {
+   "mean": 0,
+   "px": 0,
+   "big": 0,
+   "maxd": 0,
+   "bbox": null
+  }
+ },
+ {
+  "tag": "hover_price0",
+  "sy0": 4606,
+  "sy1": 4606,
+  "noise": 0,
+  "diff": {
+   "mean": 0,
+   "px": 0,
+   "big": 0,
+   "maxd": 0.7,
+   "bbox": null
+  }
+ },
+ {
+  "tag": "hover_price1",
+  "sy0": 4610,
+  "sy1": 4610,
+  "noise": 0,
+  "diff": {
+   "mean": 0.0184,
+   "px": 0,
+   "big": 0,
+   "maxd": 2,
+   "bbox": null
+  }
+ },
+ {
+  "tag": "hover_price3",
+  "sy0": 4608,
+  "sy1": 4608,
+  "noise": 0,
+  "diff": {
+   "mean": 0.0731,
+   "px": 24,
+   "big": 0,
+   "maxd": 2.3,
+   "bbox": [
+    1041,
+    409,
+    1243,
+    536
+   ]
+  }
+ },
+ {
+  "tag": "hover_studio",
+  "sy0": 1952,
+  "sy1": 1952,
+  "noise": 0,
+  "diff": {
+   "mean": 0,
+   "px": 0,
+   "big": 0,
+   "maxd": 0,
+   "bbox": null
+  }
+ },
+ {
+  "tag": "hover_processbtn",
+  "sy0": 2837,
+  "sy1": 2837,
+  "noise": 0,
+  "diff": {
+   "mean": 0,
+   "px": 0,
+   "big": 0,
+   "maxd": 0,
+   "bbox": null
+  }
+ },
+ {
+  "tag": "hover_quote",
+  "sy0": 3452,
+  "sy1": 3452,
+  "noise": 0,
+  "diff": {
+   "mean": 0,
+   "px": 0,
+   "big": 0,
+   "maxd": 0,
+   "bbox": null
+  }
+ },
+ {
+  "tag": "hover_fpill",
+  "sy0": 5364,
+  "sy1": 5364,
+  "noise": 0,
+  "diff": {
+   "mean": 0,
+   "px": 0,
+   "big": 0,
+   "maxd": 0,
+   "bbox": null
+  }
+ }
+]

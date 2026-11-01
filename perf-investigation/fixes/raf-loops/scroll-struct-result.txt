@@ -1,0 +1,4 @@
+baseline                       top0-400: recalcs=599 elems=64646 recalcs>=300elems=42 endY=400 | sections: recalcs=1346 elems=28139 recalcs>=300elems=0 endY=3920
+raf-loops-noop-writes          top0-400: recalcs=616 elems=21891 recalcs>=300elems=0 endY=400 | sections: recalcs=1147 elems=29770 recalcs>=300elems=0 endY=3920
+raf-loops-leave-noinherit      top0-400: recalcs=623 elems=64732 recalcs>=300elems=44 endY=400 | sections: recalcs=1362 elems=26995 recalcs>=300elems=0 endY=3920
+raf-loops-c1+c2                top0-400: recalcs=648 elems=22860 recalcs>=300elems=0 endY=400 | sections: recalcs=1151 elems=27910 recalcs>=300elems=0 endY=3920

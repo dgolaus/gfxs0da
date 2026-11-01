@@ -1,0 +1,7 @@
+[
+ {"name":"b_tilt","css":"*:not(.hero-bg-tilt),*::before,*::after{animation-play-state:paused!important}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"},
+ {"name":"b_price","css":"*:not(.price-card),*::before,*::after{animation-play-state:paused!important}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"},
+ {"name":"b_pseudo","css":"*{animation-play-state:paused!important}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"},
+ {"name":"b_typing","css":"*:not(.typing-dots > span),*::before,*::after{animation-play-state:paused!important}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"},
+ {"name":"b_mainthread","css":"*:not(.accent-orbs):not(.btn-shiny):not(.dot):not(.scroll-line),*::before,*::after{animation-play-state:paused!important}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"}
+]

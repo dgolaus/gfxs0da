@@ -1,0 +1,5 @@
+[
+ {"name":"baseline"},
+ {"name":"f_section","css":"#pricing{contain:paint}"},
+ {"name":"f_grid_ocm","css":".pricing-grid{contain:paint;overflow-clip-margin:120px}"}
+]

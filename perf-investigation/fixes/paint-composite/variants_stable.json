@@ -1,0 +1,9 @@
+[
+ {
+  "name": "baseline"
+ },
+ {
+  "name": "paint-composite-stable-layerize",
+  "css": "/* paint-composite: keep Chrome's layerization stable frame to frame (no visual change). */\n/* 1. The 4 price cards float with a composited `translate` animation. Without a paint\n      boundary around them, their moving layers force a full re-layerization\n      (PaintArtifactCompositor::Update / \"Layerize\") on almost every frame of the page,\n      even while the section is far off-screen. contain:paint gives them a fixed clip.\n      Clip edge = padding box of the section; nothing inside paints past it. */\n#pricing { contain: paint; }\n/* 2. The status dots pulse by growing a box-shadow ring 0 -> 10px. A growing shadow\n      changes the dot's visual rect each frame, which also forces a full re-layerization.\n      A second, fully transparent ring fixed at the maximum extent keeps the visual rect\n      constant; the visible ring is exactly the original one. */\n@keyframes pulse {\n  0%, 100% { box-shadow: 0 0 0 0 rgba(177, 18, 18, 0.55), 0 0 0 10px rgba(177, 18, 18, 0); }\n  70%      { box-shadow: 0 0 0 10px rgba(177, 18, 18, 0), 0 0 0 10px rgba(177, 18, 18, 0); }\n}\n@keyframes pulseGreen {\n  0%, 100% { box-shadow: 0 0 8px #57F287, 0 0 0 0 rgba(87, 242, 135, 0.45), 0 0 0 9px rgba(87, 242, 135, 0); }\n  70%      { box-shadow: 0 0 8px #57F287, 0 0 0 9px rgba(87, 242, 135, 0), 0 0 0 9px rgba(87, 242, 135, 0); }\n}\n"
+ }
+]

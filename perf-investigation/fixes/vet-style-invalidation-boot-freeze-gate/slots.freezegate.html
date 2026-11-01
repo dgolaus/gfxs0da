@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The s0da slots page is retired. The Discord order panel now has a View Queue button, so you can check the line before ordering." />
+  <meta name="theme-color" content="#fc1f25" />
+  <meta name="robots" content="noindex" />
+  <link rel="canonical" href="https://gfxs0da.com/slots/" />
+  <title>Slots retired — s0da</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192.png" />
+  <link rel="apple-touch-icon" href="/assets/favicon-180.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/boot.css" />
+  <!-- after boot.css: arms the page-freeze (html.boot-freeze) only when the splash is on; see boot.css -->
+  <script>(function(){var d=document.documentElement,s=null;try{s=sessionStorage.getItem('s0da-booted')}catch(e){}if(s){d.classList.add('no-boot');return}try{var t=document.createElement('div');t.id='boot';d.appendChild(t);var off=getComputedStyle(t).display==='none';d.removeChild(t);if(!off)d.classList.add('boot-freeze')}catch(e){}})()</script>
+  <script defer src="/boot.js"></script>
+  <script defer src="/console-egg.js"></script>
+  <!-- Cloudflare Web Analytics — privacy-friendly, no cookies, ~1KB defer -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "c6b7dfb2fbc14a008e7624d4a8618006"}'></script>
+</head>
+<body class="bg-red slots-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Loading splash -->
+  <div id="boot" aria-hidden="true">
+    <div class="boot-inner">
+      <img class="boot-logo" src="/assets/favicon-192.png" alt="" />
+    </div>
+  </div>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="/" aria-label="s0da home">
+      <img class="brand-logo" src="/assets/s0da-mark.webp" alt="" aria-hidden="true" width="21" height="22" />
+      <span>s0da</span>
+    </a>
+    <a class="nav-back" href="/">
+      <span aria-hidden="true">←</span> Back to portfolio
+    </a>
+  </header>
+
+  <main id="main" class="slots-main">
+    <div class="container slots-container">
+
+      <!-- Sistema de slots aposentado (2026-09-21). O painel ao vivo foi trocado
+           por esta explicação, pra quem chegar por link antigo. O bot de slots continua rodando e ainda
+           controla o badge de "Commissions open/closed" na home; só o
+           contador de vagas saiu. O painel antigo está no git em
+           fae5438 (slots/index.html) caso volte. -->
+      <section class="slots-card reveal is-in" id="slots-card" data-state="paused">
+        <header class="slots-card-head">
+          <p class="eyebrow"><span class="dash"></span>Heads up</p>
+        </header>
+
+        <div class="slots-card-main slots-paused">
+          <div class="slots-summary">
+            <h1 class="slots-paused-title">The slots page is retired.</h1>
+            <p class="slots-paused-text">
+              It used to be the only way to know if I was busy before ordering.
+              Not anymore: the order panel on Discord has a <strong>View Queue</strong>
+              button, so you can check the line before you even open a ticket.
+            </p>
+            <p class="slots-paused-text">
+              The other reason is on me. Whenever the slots filled up, I took
+              too long to reopen them, and people who were ready to order ended
+              up waiting for nothing. So now it's simple: open a ticket, send
+              the brief, and you get scope and timing straight from me.
+            </p>
+          </div>
+        </div>
+
+        <footer class="slots-card-foot">
+          <a class="btn btn-primary btn-lg slots-cta" href="https://discord.gg/s0da" target="_blank" rel="noopener">
+            Open a Ticket <span aria-hidden="true">→</span>
+          </a>
+          <a class="slots-secondary" href="/#pricing">
+            See pricing <span aria-hidden="true">→</span>
+          </a>
+        </footer>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <a class="brand small" href="/">
+        <img class="brand-logo" src="/assets/s0da-mark.webp" alt="" aria-hidden="true" width="21" height="22" />
+        <span>s0da</span>
+      </a>
+      <p class="muted">© 2026 — Roblox thumbnail design</p>
+      <nav class="social" aria-label="Social">
+        <a href="/tos/">Terms</a>
+        <a href="https://discord.gg/s0da" target="_blank" rel="noopener">Discord</a>
+        <a href="https://x.com/gfxs0da" target="_blank" rel="noopener">Twitter</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="/smooth-scroll.js"></script>
+</body>
+</html>

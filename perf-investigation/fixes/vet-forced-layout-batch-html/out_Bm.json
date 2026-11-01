@@ -1,0 +1,631 @@
+{
+ "errs": {
+  "base": [],
+  "var": []
+ },
+ "steps": [
+  {
+   "name": "y0",
+   "noiseProbe": [],
+   "varProbe": [
+    {
+     "k": "secs",
+     "a": [
+      "about|about scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "process|process scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "trust|trust scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ],
+     "b": [
+      "about|about scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "process|process scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "trust|trust scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "pricing|pricing scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ]
+    },
+    {
+     "k": "fp",
+     "a": [
+      "0.000",
+      "0.000"
+     ],
+     "b": [
+      "",
+      "0.000"
+     ]
+    }
+   ],
+   "baseRootInline": "--nav-pill: 0.000; --nav-bar-vis: 1.000; --nav-pill-vis: 0.000;",
+   "varRootInline": null,
+   "baseProbe": {
+    "scrollY": 0,
+    "rootInline": "--nav-pill: 0.000; --nav-bar-vis: 1.000; --nav-pill-vis: 0.000;",
+    "rootVars": [
+     0,
+     1,
+     0
+    ],
+    "secs": [
+     "about|about scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+     "process|process scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+     "trust|trust scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+     "pricing|pricing scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+     "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+    ],
+    "fp": [
+     "0.000",
+     "0.000"
+    ],
+    "tracks": [
+     "8:4",
+     "60:55",
+     "48:44"
+    ],
+    "accentBg": [
+     "radial-gradient(circle at 50% 25.08vh, r|radial-gradient(circle at 50% 25.08vh, r",
+     "radial-gradient(circle at 50% -335.75vh,|radial-gradient(circle at 50% -335.75vh,"
+    ]
+   }
+  },
+  {
+   "name": "y200",
+   "noiseProbe": [],
+   "varProbe": [
+    {
+     "k": "secs",
+     "a": [
+      "about|about scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "process|process scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "trust|trust scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ],
+     "b": [
+      "about|about scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "process|process scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "trust|trust scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "pricing|pricing scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ]
+    },
+    {
+     "k": "fp",
+     "a": [
+      "0.000",
+      "0.000"
+     ],
+     "b": [
+      "",
+      "0.000"
+     ]
+    },
+    {
+     "k": "accentBg",
+     "a": [
+      "radial-gradient(circle at 50% 48.78vh, r|radial-gradient(circle at 50% 48.78vh, r",
+      "radial-gradient(circle at 50% -312.05vh,|radial-gradient(circle at 50% -312.05vh,"
+     ],
+     "b": [
+      "radial-gradient(circle at 50% 48.77vh, r|radial-gradient(circle at 50% 48.77vh, r",
+      "radial-gradient(circle at 50% -312.06vh,|radial-gradient(circle at 50% -312.06vh,"
+     ]
+    }
+   ],
+   "baseRootInline": "--nav-pill: 0.605; --nav-bar-vis: 0.093; --nav-pill-vis: 0.610;",
+   "varRootInline": "--nav-pill: 0.605; --nav-bar-vis: 0.093; --nav-pill-vis: 0.610;"
+  },
+  {
+   "name": "about_mid",
+   "noiseProbe": [
+    {
+     "k": "accentBg",
+     "a": [
+      "radial-gradient(circle at 50% 381.83vh, |radial-gradient(circle at 50% 381.83vh, ",
+      "radial-gradient(circle at 50% 23.14vh, r|radial-gradient(circle at 50% 23.14vh, r"
+     ],
+     "b": [
+      "radial-gradient(circle at 50% 381.83vh, |radial-gradient(circle at 50% 381.83vh, ",
+      "radial-gradient(circle at 50% 23.13vh, r|radial-gradient(circle at 50% 23.13vh, r"
+     ]
+    }
+   ],
+   "varProbe": [
+    {
+     "k": "secs",
+     "a": [
+      "about|about scroll-fade|0.499|0.499|0.501|blur(3.992px)|matrix(1, 0, 0, 1, 0, -11.976)|opacity, filter, transform",
+      "process|process scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "trust|trust scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ],
+     "b": [
+      "about|about scroll-fade|0.499|0.499|0.501|blur(3.992px)|matrix(1, 0, 0, 1, 0, -11.976)|opacity, filter, transform",
+      "process|process scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "trust|trust scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "pricing|pricing scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ]
+    },
+    {
+     "k": "fp",
+     "a": [
+      "0.000",
+      "0.000"
+     ],
+     "b": [
+      "",
+      "0.000"
+     ]
+    }
+   ],
+   "baseRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+   "varRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "max": 1
+   },
+   "diff": {
+    "mad": 0,
+    "pct": 0,
+    "max": 1
+   }
+  },
+  {
+   "name": "process_mid",
+   "noiseProbe": [
+    {
+     "k": "scrollY",
+     "a": 4003,
+     "b": 4074
+    },
+    {
+     "k": "secs",
+     "a": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|0.333|0.333|0.667|blur(2.664px)|matrix(1, 0, 0, 1, 0, -7.992)|opacity, filter, transform",
+      "trust|trust scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ],
+     "b": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|0.342|0.342|0.658|blur(2.736px)|matrix(1, 0, 0, 1, 0, -8.208)|opacity, filter, transform",
+      "trust|trust scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ]
+    },
+    {
+     "k": "accentBg",
+     "a": [
+      "radial-gradient(circle at 50% 494.62vh, |radial-gradient(circle at 50% 494.62vh, ",
+      "radial-gradient(circle at 50% 140.65vh, |radial-gradient(circle at 50% 140.65vh, "
+     ],
+     "b": [
+      "radial-gradient(circle at 50% 502.95vh, |radial-gradient(circle at 50% 502.95vh, ",
+      "radial-gradient(circle at 50% 149vh, rgb|radial-gradient(circle at 50% 149vh, rgb"
+     ]
+    }
+   ],
+   "varProbe": [
+    {
+     "k": "scrollY",
+     "a": 4003,
+     "b": 4290
+    },
+    {
+     "k": "secs",
+     "a": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|0.333|0.333|0.667|blur(2.664px)|matrix(1, 0, 0, 1, 0, -7.992)|opacity, filter, transform",
+      "trust|trust scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ],
+     "b": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|0.363|0.363|0.637|blur(2.904px)|matrix(1, 0, 0, 1, 0, -8.712)|opacity, filter, transform",
+      "trust|trust scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "pricing|pricing scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ]
+    },
+    {
+     "k": "fp",
+     "a": [
+      "0.000",
+      "0.000"
+     ],
+     "b": [
+      "",
+      "0.000"
+     ]
+    },
+    {
+     "k": "accentBg",
+     "a": [
+      "radial-gradient(circle at 50% 494.62vh, |radial-gradient(circle at 50% 494.62vh, ",
+      "radial-gradient(circle at 50% 140.65vh, |radial-gradient(circle at 50% 140.65vh, "
+     ],
+     "b": [
+      "radial-gradient(circle at 50% 527.46vh, |radial-gradient(circle at 50% 527.46vh, ",
+      "radial-gradient(circle at 50% 173.58vh, |radial-gradient(circle at 50% 173.58vh, "
+     ]
+    }
+   ],
+   "baseRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+   "varRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;"
+  },
+  {
+   "name": "trust_mid",
+   "noiseProbe": [
+    {
+     "k": "scrollY",
+     "a": 5293,
+     "b": 5509
+    },
+    {
+     "k": "accentBg",
+     "a": [
+      "radial-gradient(circle at 50% 639.64vh, |radial-gradient(circle at 50% 639.64vh, ",
+      "radial-gradient(circle at 50% 291.21vh, |radial-gradient(circle at 50% 291.21vh, "
+     ],
+     "b": [
+      "radial-gradient(circle at 50% 666.1vh, r|radial-gradient(circle at 50% 666.1vh, r",
+      "radial-gradient(circle at 50% 316.88vh, |radial-gradient(circle at 50% 316.88vh, "
+     ]
+    }
+   ],
+   "varProbe": [
+    {
+     "k": "scrollY",
+     "a": 5293,
+     "b": 5579
+    },
+    {
+     "k": "secs",
+     "a": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "trust|trust scroll-fade|0.673|0.673|0.327|blur(5.384px)|matrix(1, 0, 0, 1, 0, -16.152)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ],
+     "b": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "trust|trust scroll-fade|0.673|0.673|0.327|blur(5.384px)|matrix(1, 0, 0, 1, 0, -16.152)|opacity, filter, transform",
+      "pricing|pricing scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ]
+    },
+    {
+     "k": "fp",
+     "a": [
+      "0.000",
+      "0.000"
+     ],
+     "b": [
+      "",
+      "0.000"
+     ]
+    },
+    {
+     "k": "accentBg",
+     "a": [
+      "radial-gradient(circle at 50% 639.64vh, |radial-gradient(circle at 50% 639.64vh, ",
+      "radial-gradient(circle at 50% 291.21vh, |radial-gradient(circle at 50% 291.21vh, "
+     ],
+     "b": [
+      "radial-gradient(circle at 50% 672.8vh, r|radial-gradient(circle at 50% 672.8vh, r",
+      "radial-gradient(circle at 50% 324.37vh, |radial-gradient(circle at 50% 324.37vh, "
+     ]
+    }
+   ],
+   "baseRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+   "varRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;"
+  },
+  {
+   "name": "pricing_mid",
+   "noiseProbe": [
+    {
+     "k": "scrollY",
+     "a": 7297,
+     "b": 7368
+    },
+    {
+     "k": "secs",
+     "a": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "trust|trust scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.495|0.495|0.505|blur(3.96px)|matrix(1, 0, 0, 1, 0, -11.88)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ],
+     "b": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "trust|trust scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.497|0.497|0.503|blur(3.976px)|matrix(1, 0, 0, 1, 0, -11.928)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ]
+    },
+    {
+     "k": "accentBg",
+     "a": [
+      "radial-gradient(circle at 50% 880.79vh, |radial-gradient(circle at 50% 880.79vh, ",
+      "radial-gradient(circle at 50% 528.69vh, |radial-gradient(circle at 50% 528.69vh, "
+     ],
+     "b": [
+      "radial-gradient(circle at 50% 889.12vh, |radial-gradient(circle at 50% 889.12vh, ",
+      "radial-gradient(circle at 50% 537.02vh, |radial-gradient(circle at 50% 537.02vh, "
+     ]
+    }
+   ],
+   "varProbe": [
+    {
+     "k": "scrollY",
+     "a": 7297,
+     "b": 7419
+    },
+    {
+     "k": "secs",
+     "a": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "trust|trust scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.495|0.495|0.505|blur(3.96px)|matrix(1, 0, 0, 1, 0, -11.88)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ],
+     "b": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "trust|trust scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.494|0.494|0.506|blur(3.952px)|matrix(1, 0, 0, 1, 0, -11.856)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ]
+    },
+    {
+     "k": "accentBg",
+     "a": [
+      "radial-gradient(circle at 50% 880.79vh, |radial-gradient(circle at 50% 880.79vh, ",
+      "radial-gradient(circle at 50% 528.69vh, |radial-gradient(circle at 50% 528.69vh, "
+     ],
+     "b": [
+      "radial-gradient(circle at 50% 895.07vh, |radial-gradient(circle at 50% 895.07vh, ",
+      "radial-gradient(circle at 50% 542.97vh, |radial-gradient(circle at 50% 542.97vh, "
+     ]
+    }
+   ],
+   "baseRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+   "varRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+   "noise": {
+    "mad": 0.106,
+    "pct": 0.343,
+    "max": 59
+   },
+   "diff": {
+    "mad": 0.119,
+    "pct": 0.34,
+    "max": 92
+   },
+   "baseProbe": {
+    "scrollY": 7297,
+    "rootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+    "rootVars": [
+     1,
+     0,
+     1
+    ],
+    "secs": [
+     "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+     "process|process scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+     "trust|trust scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+     "pricing|pricing scroll-fade|0.495|0.495|0.505|blur(3.96px)|matrix(1, 0, 0, 1, 0, -11.88)|opacity, filter, transform",
+     "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+    ],
+    "fp": [
+     "0.822",
+     "0.822"
+    ],
+    "tracks": [
+     "8:4",
+     "60:55",
+     "48:44"
+    ],
+    "accentBg": [
+     "radial-gradient(circle at 50% 880.79vh, |radial-gradient(circle at 50% 880.79vh, ",
+     "radial-gradient(circle at 50% 528.69vh, |radial-gradient(circle at 50% 528.69vh, "
+    ]
+   }
+  },
+  {
+   "name": "end",
+   "noiseProbe": [
+    {
+     "k": "scrollY",
+     "a": 7614,
+     "b": 7685
+    },
+    {
+     "k": "accentBg",
+     "a": [
+      "radial-gradient(circle at 50% 917.96vh, |radial-gradient(circle at 50% 917.96vh, ",
+      "radial-gradient(circle at 50% 565.86vh, |radial-gradient(circle at 50% 565.86vh, "
+     ],
+     "b": [
+      "radial-gradient(circle at 50% 926.28vh, |radial-gradient(circle at 50% 926.28vh, ",
+      "radial-gradient(circle at 50% 574.18vh, |radial-gradient(circle at 50% 574.18vh, "
+     ]
+    }
+   ],
+   "varProbe": [
+    {
+     "k": "scrollY",
+     "a": 7614,
+     "b": 7736
+    },
+    {
+     "k": "secs",
+     "a": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "trust|trust scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ],
+     "b": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "trust|trust scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ]
+    },
+    {
+     "k": "accentBg",
+     "a": [
+      "radial-gradient(circle at 50% 917.96vh, |radial-gradient(circle at 50% 917.96vh, ",
+      "radial-gradient(circle at 50% 565.86vh, |radial-gradient(circle at 50% 565.86vh, "
+     ],
+     "b": [
+      "radial-gradient(circle at 50% 932.26vh, |radial-gradient(circle at 50% 932.26vh, ",
+      "radial-gradient(circle at 50% 580.16vh, |radial-gradient(circle at 50% 580.16vh, "
+     ]
+    }
+   ],
+   "baseRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+   "varRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+   "noise": {
+    "mad": 0.093,
+    "pct": 0.341,
+    "max": 71
+   },
+   "diff": {
+    "mad": 0.115,
+    "pct": 0.374,
+    "max": 91
+   }
+  },
+  {
+   "name": "back_trust",
+   "noiseProbe": [
+    {
+     "k": "scrollY",
+     "a": 5144,
+     "b": 5214
+    },
+    {
+     "k": "accentBg",
+     "a": [
+      "radial-gradient(circle at 50% 628.39vh, |radial-gradient(circle at 50% 628.39vh, ",
+      "radial-gradient(circle at 50% 276.29vh, |radial-gradient(circle at 50% 276.29vh, "
+     ],
+     "b": [
+      "radial-gradient(circle at 50% 636.6vh, r|radial-gradient(circle at 50% 636.6vh, r",
+      "radial-gradient(circle at 50% 284.5vh, r|radial-gradient(circle at 50% 284.5vh, r"
+     ]
+    }
+   ],
+   "varProbe": [
+    {
+     "k": "scrollY",
+     "a": 5144,
+     "b": 5266
+    },
+    {
+     "k": "secs",
+     "a": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "trust|trust scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ],
+     "b": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "trust|trust scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ]
+    },
+    {
+     "k": "accentBg",
+     "a": [
+      "radial-gradient(circle at 50% 628.39vh, |radial-gradient(circle at 50% 628.39vh, ",
+      "radial-gradient(circle at 50% 276.29vh, |radial-gradient(circle at 50% 276.29vh, "
+     ],
+     "b": [
+      "radial-gradient(circle at 50% 642.69vh, |radial-gradient(circle at 50% 642.69vh, ",
+      "radial-gradient(circle at 50% 290.59vh, |radial-gradient(circle at 50% 290.59vh, "
+     ]
+    }
+   ],
+   "baseRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+   "varRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;"
+  },
+  {
+   "name": "back_top",
+   "noiseProbe": [
+    {
+     "k": "accentBg",
+     "a": [
+      "radial-gradient(circle at 50% 27.02vh, r|radial-gradient(circle at 50% 27.02vh, r",
+      "radial-gradient(circle at 50% -327.89vh,|radial-gradient(circle at 50% -327.89vh,"
+     ],
+     "b": [
+      "radial-gradient(circle at 50% 25.6vh, rg|radial-gradient(circle at 50% 25.6vh, rg",
+      "radial-gradient(circle at 50% -329.31vh,|radial-gradient(circle at 50% -329.31vh,"
+     ]
+    }
+   ],
+   "varProbe": [
+    {
+     "k": "secs",
+     "a": [
+      "about|about scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "process|process scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "trust|trust scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ],
+     "b": [
+      "about|about scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "process|process scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "trust|trust scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ]
+    },
+    {
+     "k": "accentBg",
+     "a": [
+      "radial-gradient(circle at 50% 27.02vh, r|radial-gradient(circle at 50% 27.02vh, r",
+      "radial-gradient(circle at 50% -327.89vh,|radial-gradient(circle at 50% -327.89vh,"
+     ],
+     "b": [
+      "radial-gradient(circle at 50% 25.4vh, rg|radial-gradient(circle at 50% 25.4vh, rg",
+      "radial-gradient(circle at 50% -329.52vh,|radial-gradient(circle at 50% -329.52vh,"
+     ]
+    }
+   ],
+   "baseRootInline": "--nav-pill: 0.000; --nav-bar-vis: 1.000; --nav-pill-vis: 0.000;",
+   "varRootInline": "--nav-pill: 0.000; --nav-bar-vis: 1.000; --nav-pill-vis: 0.000;",
+   "noise": {
+    "mad": 0.001,
+    "pct": 0,
+    "max": 1
+   },
+   "diff": {
+    "mad": 0.001,
+    "pct": 0,
+    "max": 1
+   }
+  }
+ ]
+}

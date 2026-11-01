@@ -1,0 +1,46 @@
+
+== baseline rep 0: recalcN=32 recalcElems=5416 recalcMs=2171.5 layoutMs=2230.6 scriptEvalMs=3373.3
+    script.js:975:update elems=660 603.7ms @5244
+    script.js:975:update elems=23 48.5ms @5865
+    script.js:975:update elems=65 4.4ms @5921
+    script.js:975:update elems=408 124.6ms @5926
+    script.js:975:update elems=98 2.6ms @6051
+
+== leave-noinherit rep 0: recalcN=95 recalcElems=7723 recalcMs=2329.3 layoutMs=2687.9 scriptEvalMs=1127.9
+    script.js:975:update elems=40 20.2ms @3210
+    script.js:975:update elems=2 0.5ms @3238
+    script.js:975:update elems=2 0.5ms @3238
+    script.js:975:update elems=2 0.4ms @3239
+    script.js:975:update elems=2 0.4ms @3240
+
+== baseline rep 1: recalcN=97 recalcElems=10635 recalcMs=2756.1 layoutMs=1611.7 scriptEvalMs=1439.2
+    script.js:975:update elems=660 213.0ms @2827
+    script.js:975:update elems=23 6.4ms @3043
+    script.js:975:update elems=65 10.7ms @3049
+    script.js:975:update elems=408 147.2ms @3060
+    script.js:975:update elems=98 9.9ms @3208
+
+== leave-noinherit rep 1: recalcN=105 recalcElems=8271 recalcMs=1923.7 layoutMs=2521.3 scriptEvalMs=804.2
+    script.js:975:update elems=40 21.3ms @3108
+    script.js:975:update elems=2 0.5ms @3133
+    script.js:975:update elems=2 0.2ms @3134
+    script.js:975:update elems=2 0.4ms @3134
+    script.js:975:update elems=2 0.2ms @3135
+
+== baseline rep 2: recalcN=60 recalcElems=6935 recalcMs=2324.8 layoutMs=2742.7 scriptEvalMs=1153.9
+    script.js:975:update elems=660 198.0ms @3667
+    script.js:975:update elems=23 5.8ms @3871
+    script.js:975:update elems=65 17.5ms @3877
+    script.js:975:update elems=408 66.1ms @3894
+    script.js:975:update elems=98 5.5ms @3961
+
+== leave-noinherit rep 2: recalcN=74 recalcElems=6713 recalcMs=2493.9 layoutMs=3060.6 scriptEvalMs=1500.3
+    script.js:975:update elems=40 2.8ms @4807
+    script.js:975:update elems=2 0.1ms @4811
+    script.js:975:update elems=2 0.1ms @4811
+    script.js:975:update elems=2 0.1ms @4811
+    script.js:975:update elems=2 0.1ms @4811
+
+SUMMARY
+baseline {"recalcElems":6935,"recalcMs":2324.8,"layoutMs":2230.6,"scriptEvalMs":1439.2,"all":[[5416,2171.5,3373.3],[10635,2756.1,1439.2],[6935,2324.8,1153.9]]}
+leave-noinherit {"recalcElems":7723,"recalcMs":2329.3,"layoutMs":2687.9,"scriptEvalMs":1127.9,"all":[[7723,2329.3,1127.9],[8271,1923.7,804.2],[6713,2493.9,1500.3]]}

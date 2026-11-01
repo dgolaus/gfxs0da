@@ -1,0 +1,3 @@
+[{"name":"baseline"},
+ {"name":"no-universal-pseudo-DIAG","css":"*::before,*::after{box-sizing:revert}"}
+]

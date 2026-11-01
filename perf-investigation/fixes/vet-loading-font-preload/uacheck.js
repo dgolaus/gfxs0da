@@ -1,0 +1,15 @@
+const path=require('path');const fs=require('fs');
+const puppeteer=require(path.join('../node_modules/puppeteer'));
+const REPO='..';
+(async()=>{const b=await puppeteer.launch({headless:'new'});const p=await b.newPage();
+ const html=fs.readFileSync(path.join(__dirname,'index.uagated.html'));
+ await p.setRequestInterception(true);const reqs=[];
+ p.on('request',req=>{const u=new URL(req.url());if(u.host==='fonts.gstatic.com')reqs.push(Date.now()+' '+u.pathname.slice(-12)+' '+req.resourceType()+' init:'+(req.initiator()&&req.initiator().type));
+  if(!u.host.startsWith('localhost'))return req.continue();let k=decodeURIComponent(u.pathname);if(k.endsWith('/'))k+='index.html';
+  const body=k==='/index.html'?html:(fs.existsSync(path.join(REPO,k))?fs.readFileSync(path.join(REPO,k)):null);
+  if(!body)return req.respond({status:404,body:''});req.respond({status:200,contentType:k.endsWith('.html')?'text/html; charset=utf-8':k.endsWith('.css')?'text/css':k.endsWith('.js')?'application/javascript':'application/octet-stream',body});});
+ p.on('console',m=>console.log('console:',m.text().slice(0,150)));
+ await p.goto('http://localhost:5173/',{waitUntil:'networkidle2'});
+ console.log(await p.evaluate(()=>navigator.userAgent));
+ console.log(await p.evaluate(()=>[...document.querySelectorAll('link[rel=preload]')].map(l=>l.href.slice(-20)+' as='+l.as)));
+ console.log(reqs.join('\n'));await b.close();})();

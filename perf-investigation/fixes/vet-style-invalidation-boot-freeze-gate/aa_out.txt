@@ -1,0 +1,206 @@
+
+=== / baseOFF vs baseOFF2 @1440x900
+ first view html: "lenis" | "lenis"  body: "bg-red ready" | "bg-red ready"  scrollY 0 0
+ events A: [["t600","","bg-red",{"p":0,"r":86,"n":86}],["before-ready","",{"p":0,"r":86,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}]]
+ events B: [["before-ready","",{"p":0,"r":86,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","lenis","bg-red ready",{"p":3,"r":83,"n":86}]]
+ visits A: visits=4.5B+ | visits=0 
+ visits B: visits=4.5B+ | visits=0
+ computed-style diffs first view: 1
+    257:DIV.container :: margin-inline-end: 100px => 0px , margin-inline-start: 100px => 0px , margin-left: 100px => 0px , margin-right: 100px => 0px
+ repeat html: "lenis" | "lenis"  scrollY 0 0
+ repeat events A: [["before-ready","",{"p":0,"r":86,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","lenis","bg-red ready",{"p":3,"r":73,"n":76}]]
+ repeat events B: [["before-ready","",{"p":0,"r":86,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","lenis","bg-red ready",{"p":3,"r":73,"n":76}]]
+ computed-style diffs repeat view: 0
+
+=== / varOFF vs varOFF2 @1440x900
+ first view html: "lenis" | "lenis"  body: "bg-red ready" | "bg-red ready"  scrollY 0 0
+ events A: [["before-ready","",{"p":3,"r":83,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","lenis","bg-red ready",{"p":3,"r":73,"n":76}]]
+ events B: [["before-ready","",{"p":3,"r":83,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","lenis","bg-red ready",{"p":3,"r":73,"n":76}]]
+ visits A: visits=4.5B+ | visits=0 
+ visits B: visits=4.5B+ | visits=0
+ computed-style diffs first view: 0
+ repeat html: "lenis" | "lenis"  scrollY 0 0
+ repeat events A: [["before-ready","",{"p":3,"r":83,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","lenis","bg-red ready",{"p":3,"r":73,"n":76}]]
+ repeat events B: [["before-ready","",{"p":3,"r":83,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","lenis","bg-red ready",{"p":3,"r":73,"n":76}]]
+ computed-style diffs repeat view: 0
+
+=== / baseOFF vs varOFF @1440x900
+ first view html: "lenis" | "lenis"  body: "bg-red ready" | "bg-red ready"  scrollY 0 0
+ events A: [["before-ready","",{"p":0,"r":86,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","lenis","bg-red ready",{"p":3,"r":73,"n":76}]]
+ events B: [["before-ready","",{"p":3,"r":83,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","lenis","bg-red ready",{"p":3,"r":83,"n":86}]]
+ visits A: visits=4.5B+ | visits=0 
+ visits B: visits=4.5B+ | visits=0
+ computed-style diffs first view: 12
+    28:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    28:SCRIPT::before :: running => undefined
+    28:SCRIPT::after :: running => undefined
+    29:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    29:LINK::before :: running => undefined
+    29:LINK::after :: running => undefined
+    28:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    28:LINK::before :: undefined => running
+    28:LINK::after :: undefined => running
+    29:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    29:SCRIPT::before :: undefined => running
+    29:SCRIPT::after :: undefined => running
+ repeat html: "lenis" | "lenis"  scrollY 0 0
+ repeat events A: [["before-ready","",{"p":0,"r":86,"n":86}],["after-ready","",{"p":0,"r":86,"n":86}],["t600","lenis","bg-red ready",{"p":3,"r":73,"n":76}]]
+ repeat events B: [["before-ready","",{"p":3,"r":83,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","lenis","bg-red ready",{"p":3,"r":73,"n":76}]]
+ computed-style diffs repeat view: 12
+    28:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    28:SCRIPT::before :: running => undefined
+    28:SCRIPT::after :: running => undefined
+    29:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    29:LINK::before :: running => undefined
+    29:LINK::after :: running => undefined
+    28:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    28:LINK::before :: undefined => running
+    28:LINK::after :: undefined => running
+    29:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    29:SCRIPT::before :: undefined => running
+    29:SCRIPT::after :: undefined => running
+
+=== / baseOFF vs baseOFF2 @1440x900
+ first view html: "lenis" | "lenis"  body: "bg-red ready" | "bg-red ready"  scrollY 0 0
+ events A: [["t600","","bg-red",{"p":0,"r":86,"n":86}],["before-ready","",{"p":0,"r":86,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}]]
+ events B: [["before-ready","",{"p":0,"r":86,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","lenis","bg-red ready",{"p":3,"r":83,"n":86}]]
+ visits A: visits=4.5B+ | visits=0 
+ visits B: visits=4.5B+ | visits=0
+ computed-style diffs first view: 0
+ repeat html: "lenis" | "lenis"  scrollY 0 0
+ repeat events A: [["before-ready","",{"p":0,"r":86,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","lenis","bg-red ready",{"p":3,"r":73,"n":76}]]
+ repeat events B: [["before-ready","",{"p":0,"r":86,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","lenis","bg-red ready",{"p":3,"r":73,"n":76}]]
+ computed-style diffs repeat view: 0
+
+=== / varOFF vs varOFF2 @1440x900
+ first view html: "lenis" | "lenis"  body: "bg-red ready" | "bg-red ready"  scrollY 0 0
+ events A: [["before-ready","",{"p":3,"r":83,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","lenis","bg-red ready",{"p":3,"r":73,"n":76}]]
+ events B: [["before-ready","",{"p":3,"r":83,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","lenis","bg-red ready",{"p":3,"r":83,"n":86}]]
+ visits A: visits=4.5B+ | visits=0 
+ visits B: visits=4.5B+ | visits=0
+ computed-style diffs first view: 1
+    257:DIV.container :: margin-inline-end: 0px => 100px , margin-inline-start: 0px => 100px , margin-left: 0px => 100px , margin-right: 0px => 100px
+ repeat html: "lenis" | "lenis"  scrollY 0 0
+ repeat events A: [["before-ready","",{"p":3,"r":83,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","lenis","bg-red ready",{"p":3,"r":73,"n":76}]]
+ repeat events B: [["before-ready","",{"p":3,"r":83,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","lenis","bg-red ready",{"p":3,"r":73,"n":76}]]
+ computed-style diffs repeat view: 0
+
+=== / baseOFF vs varOFF @1440x900
+ first view html: "lenis" | "lenis"  body: "bg-red ready" | "bg-red ready"  scrollY 0 0
+ events A: [["before-ready","",{"p":0,"r":86,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","","bg-red ready",{"p":3,"r":83,"n":86}]]
+ events B: [["before-ready","",{"p":3,"r":83,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","","bg-red ready",{"p":3,"r":83,"n":86}]]
+ visits A: visits=4.5B+ | visits=0 
+ visits B: visits=4.5B+ | visits=0
+ computed-style diffs first view: 12
+    28:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    28:SCRIPT::before :: running => undefined
+    28:SCRIPT::after :: running => undefined
+    29:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    29:LINK::before :: running => undefined
+    29:LINK::after :: running => undefined
+    28:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    28:LINK::before :: undefined => running
+    28:LINK::after :: undefined => running
+    29:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    29:SCRIPT::before :: undefined => running
+    29:SCRIPT::after :: undefined => running
+ repeat html: "lenis" | "lenis"  scrollY 0 0
+ repeat events A: [["before-ready","",{"p":0,"r":86,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","lenis","bg-red ready",{"p":3,"r":73,"n":76}]]
+ repeat events B: [["before-ready","",{"p":3,"r":83,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","lenis","bg-red ready",{"p":3,"r":73,"n":76}]]
+ computed-style diffs repeat view: 12
+    28:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    28:SCRIPT::before :: running => undefined
+    28:SCRIPT::after :: running => undefined
+    29:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    29:LINK::before :: running => undefined
+    29:LINK::after :: running => undefined
+    28:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    28:LINK::before :: undefined => running
+    28:LINK::after :: undefined => running
+    29:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    29:SCRIPT::before :: undefined => running
+    29:SCRIPT::after :: undefined => running
+
+=== /#pricing baseOFF vs baseOFF2 @1440x900
+ first view html: "lenis" | "lenis"  body: "bg-red ready" | "bg-red ready"  scrollY 4549 4549
+ events A: [["t600","","bg-red",{"p":0,"r":86,"n":86}],["before-ready","",{"p":0,"r":86,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}]]
+ events B: [["t600","","bg-red",{"p":0,"r":86,"n":86}],["before-ready","",{"p":0,"r":86,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}]]
+ visits A: visits=4.5B+ | visits=0 
+ visits B: visits=4.5B+ | visits=0
+ computed-style diffs first view: 422
+    422:SECTION#trust.trust.scroll-fade :: filter: blur(6.048px) => blur(6.072px) , opacity: 0.244 => 0.241 , transform: matrix(1, 0, 0, 1, 0, -18.144) => matrix(1, 0, 0, 1, 0, -18.216) , --leave: 0.756 => 0.759
+    423:DIV.container :: --leave: 0.756 => 0.759
+    424:HEADER.section-head.reveal :: --leave: 0.756 => 0.759
+    425:P.eyebrow :: --leave: 0.756 => 0.759
+    426:SPAN.dash :: --leave: 0.756 => 0.759
+    427:H2 :: --leave: 0.756 => 0.759
+    428:P.section-sub :: --leave: 0.756 => 0.759
+    429:DIV#trust-stats.trust-stats.reveal :: --leave: 0.756 => 0.759
+    430:DIV.trust-stat :: --leave: 0.756 => 0.759
+    431:STRONG.counter :: --leave: 0.756 => 0.759
+    432:SPAN :: --leave: 0.756 => 0.759
+    433:DIV.trust-stat :: --leave: 0.756 => 0.759
+ repeat html: "lenis" | "lenis"  scrollY 4629 4629
+ repeat events A: [["t600","","bg-red",{"p":0,"r":86,"n":86}],["before-ready","",{"p":0,"r":86,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}]]
+ repeat events B: [["t600","","bg-red",{"p":0,"r":86,"n":86}],["before-ready","",{"p":0,"r":86,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}]]
+ computed-style diffs repeat view: 0
+
+=== /#pricing varOFF vs varOFF2 @1440x900
+ first view html: "lenis" | "lenis"  body: "bg-red ready" | "bg-red ready"  scrollY 4549 4549
+ events A: [["before-ready","",{"p":3,"r":83,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","is-scrolling","bg-red ready",{"p":9,"r":98,"n":107}]]
+ events B: [["before-ready","",{"p":3,"r":83,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","is-scrolling","bg-red ready",{"p":9,"r":102,"n":111}]]
+ visits A: visits=4.5B+ | visits=0 
+ visits B: visits=4.5B+ | visits=0
+ computed-style diffs first view: 422
+    422:SECTION#trust.trust.scroll-fade :: filter: blur(6.032px) => blur(5.944px) , opacity: 0.246 => 0.257 , transform: matrix(1, 0, 0, 1, 0, -18.096) => matrix(1, 0, 0, 1, 0, -17.832) , --leave: 0.754 => 0.743
+    423:DIV.container :: --leave: 0.754 => 0.743
+    424:HEADER.section-head.reveal :: --leave: 0.754 => 0.743
+    425:P.eyebrow :: --leave: 0.754 => 0.743
+    426:SPAN.dash :: --leave: 0.754 => 0.743
+    427:H2 :: --leave: 0.754 => 0.743
+    428:P.section-sub :: --leave: 0.754 => 0.743
+    429:DIV#trust-stats.trust-stats.reveal :: --leave: 0.754 => 0.743
+    430:DIV.trust-stat :: --leave: 0.754 => 0.743
+    431:STRONG.counter :: --leave: 0.754 => 0.743
+    432:SPAN :: --leave: 0.754 => 0.743
+    433:DIV.trust-stat :: --leave: 0.754 => 0.743
+ repeat html: "lenis" | "lenis"  scrollY 4629 4629
+ repeat events A: [["before-ready","",{"p":3,"r":83,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","is-scrolling","bg-red ready",{"p":9,"r":98,"n":107}]]
+ repeat events B: [["before-ready","",{"p":3,"r":83,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","is-scrolling","bg-red ready",{"p":9,"r":102,"n":111}]]
+ computed-style diffs repeat view: 0
+
+=== /#pricing baseOFF vs varOFF @1440x900
+ first view html: "lenis" | "lenis"  body: "bg-red ready" | "bg-red ready"  scrollY 4549 4549
+ events A: [["before-ready","",{"p":0,"r":86,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","","bg-red ready",{"p":3,"r":83,"n":86}]]
+ events B: [["before-ready","",{"p":3,"r":83,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","is-scrolling","bg-red ready",{"p":9,"r":102,"n":111}]]
+ visits A: visits=4.5B+ | visits=0 
+ visits B: visits=4.5B+ | visits=0
+ computed-style diffs first view: 434
+    28:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    28:SCRIPT::before :: running => undefined
+    28:SCRIPT::after :: running => undefined
+    29:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    29:LINK::before :: running => undefined
+    29:LINK::after :: running => undefined
+    422:SECTION#trust.trust.scroll-fade :: filter: blur(6.04px) => blur(6.064px) , opacity: 0.245 => 0.242 , transform: matrix(1, 0, 0, 1, 0, -18.12) => matrix(1, 0, 0, 1, 0, -18.192) , --leave: 0.755 => 0.758
+    423:DIV.container :: --leave: 0.755 => 0.758
+    424:HEADER.section-head.reveal :: --leave: 0.755 => 0.758
+    425:P.eyebrow :: --leave: 0.755 => 0.758
+    426:SPAN.dash :: --leave: 0.755 => 0.758
+    427:H2 :: --leave: 0.755 => 0.758
+ repeat html: "lenis" | "lenis"  scrollY 4629 4629
+ repeat events A: [["before-ready","",{"p":0,"r":86,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","","bg-red ready",{"p":3,"r":83,"n":86}]]
+ repeat events B: [["before-ready","",{"p":3,"r":83,"n":86}],["after-ready","",{"p":3,"r":83,"n":86}],["t600","is-scrolling","bg-red ready",{"p":9,"r":102,"n":111}]]
+ computed-style diffs repeat view: 12
+    28:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    28:SCRIPT::before :: running => undefined
+    28:SCRIPT::after :: running => undefined
+    29:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    29:LINK::before :: running => undefined
+    29:LINK::after :: running => undefined
+    28:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    28:LINK::before :: undefined => running
+    28:LINK::after :: undefined => running
+    29:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    29:SCRIPT::before :: undefined => running
+    29:SCRIPT::after :: undefined => running

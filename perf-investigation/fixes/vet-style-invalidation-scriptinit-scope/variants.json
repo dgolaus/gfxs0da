@@ -1,0 +1,3 @@
+[{"name":"baseline"},
+ {"name":"ctl","files":{"/styles.css":"fixes/vet-style-invalidation-scriptinit-scope/styles.ORIG.css","/script.js":"fixes/vet-style-invalidation-scriptinit-scope/script.ORIG.js"}},
+ {"name":"var","files":{"/styles.css":"fixes/vet-style-invalidation-scriptinit-scope/styles.scriptinit.css","/script.js":"fixes/vet-style-invalidation-scriptinit-scope/script.scriptinit.js"}}]

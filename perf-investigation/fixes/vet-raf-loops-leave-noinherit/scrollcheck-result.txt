@@ -1,0 +1,50 @@
+
+### desk  errs base=["console: Access to XMLHttpRequest at 'https://cloudflareinsights.com/cdn-cgi/rum' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'http://localhost' that is not equal to the supplied origin.","console: Failed to load resource: net::ERR_FAILED"] var=["console: Access to XMLHttpRequest at 'https://cloudflareinsights.com/cdn-cgi/rum' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'http://localhost' that is not equal to the supplied origin.","console: Failed to load resource: net::ERR_FAILED"]
+about@0.15       y b/b2/v=2332/2332/2332  noise={"mad":0.141,"pct":0.73} var={"mad":0.139,"pct":0.71}  computedSame=true
+about@0.5        y b/b2/v=2427/2427/2427  noise={"mad":0.004,"pct":0} var={"mad":0.003,"pct":0}  computedSame=true
+about@0.85       y b/b2/v=2521/2521/2521  noise={"mad":0.043,"pct":0.07} var={"mad":3.125,"pct":4.79}  computedSame=false
+   base: about:0.897|0.103|blur(7.176px)|matrix(1, 0, 0, 1, 0, -21.528)  process:0.000|1.000|blur(0px)|matrix(1, 0, 0, 1, 0, 0)  trust:0.000|1.000|blur(0px)|matrix(1, 0, 0, 1, 0, 0)  pricing:0.000|1.000|blur(0px)|matrix(1, 0, 0, 1, 0, 0)  contact:0.000|1.000|blur(0px)|matrix(1, 0, 0, 1, 0, 0)
+   base2: about:0.897|0.103|blur(7.176px)|matrix(1, 0, 0, 1, 0, -21.528)  process:0.000|1.000|blur(0px)|matrix(1, 0, 0, 1, 0, 0)  trust:0.000|1.000|blur(0px)|matrix(1, 0, 0, 1, 0, 0)  pricing:0.000|1.000|blur(0px)|matrix(1, 0, 0, 1, 0, 0)  contact:0.000|1.000|blur(0px)|matrix(1, 0, 0, 1, 0, 0)
+   var : about:0.895|0.105|blur(7.16px)|matrix(1, 0, 0, 1, 0, -21.48)  process:0.000|1.000|blur(0px)|matrix(1, 0, 0, 1, 0, 0)  trust:0.000|1.000|blur(0px)|matrix(1, 0, 0, 1, 0, 0)  pricing:0.000|1.000|blur(0px)|matrix(1, 0, 0, 1, 0, 0)  contact:0.000|1.000|blur(0px)|matrix(1, 0, 0, 1, 0, 0)
+about@1          y b/b2/v=2562/2562/2562  noise={"mad":0,"pct":0} var={"mad":3.446,"pct":4.94}  computedSame=true
+process@0.15     y b/b2/v=3191/3191/3191  noise={"mad":0.604,"pct":1.06} var={"mad":0.561,"pct":1.01}  computedSame=true
+process@0.5      y b/b2/v=3285/3285/3285  noise={"mad":0.447,"pct":1.08} var={"mad":0.309,"pct":0.82}  computedSame=true
+process@0.85     y b/b2/v=3380/3380/3380  noise={"mad":0.227,"pct":0.42} var={"mad":0.003,"pct":0}  computedSame=true
+process@1        y b/b2/v=3420/3420/3420  noise={"mad":0.233,"pct":0.42} var={"mad":0.009,"pct":0.01}  computedSame=true
+trust@0.15       y b/b2/v=4399/4399/4399  noise={"mad":0.001,"pct":0} var={"mad":0.001,"pct":0}  computedSame=true
+trust@0.5        y b/b2/v=4494/4494/4494  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+trust@0.85       y b/b2/v=4588/4588/4588  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+trust@1          y b/b2/v=4629/4629/4629  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+pricing@0.15     y b/b2/v=5134/5134/5134  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+pricing@0.5      y b/b2/v=5229/5229/5229  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+pricing@0.85     y b/b2/v=5323/5323/5323  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+pricing@1        y b/b2/v=5364/5364/5364  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+contact@0.15     y b/b2/v=5364/5364/5364  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+contact@0.5      y b/b2/v=5364/5364/5364  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+contact@0.85     y b/b2/v=5364/5364/5364  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+contact@1        y b/b2/v=5364/5364/5364  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+
+### rm  errs base=["console: Access to XMLHttpRequest at 'https://cloudflareinsights.com/cdn-cgi/rum' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'http://localhost' that is not equal to the supplied origin.","console: Failed to load resource: net::ERR_FAILED"] var=["console: Access to XMLHttpRequest at 'https://cloudflareinsights.com/cdn-cgi/rum' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'http://localhost' that is not equal to the supplied origin.","console: Failed to load resource: net::ERR_FAILED"]
+about@0.15       y b/b2/v=2332/2332/2332  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+about@0.5        y b/b2/v=2427/2427/2427  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+about@0.85       y b/b2/v=2521/2521/2521  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+about@1          y b/b2/v=2562/2562/2562  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+process@0.15     y b/b2/v=3191/3191/3191  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+process@0.5      y b/b2/v=3285/3285/3285  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+process@0.85     y b/b2/v=3380/3380/3380  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+process@1        y b/b2/v=3420/3420/3420  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+trust@0.15       y b/b2/v=4399/4399/4399  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+trust@0.5        y b/b2/v=4494/4494/4494  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+trust@0.85       y b/b2/v=4588/4588/4588  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+trust@1          y b/b2/v=4629/4629/4629  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+pricing@0.15     y b/b2/v=5134/5134/5134  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+pricing@0.5      y b/b2/v=5229/5229/5229  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+pricing@0.85     y b/b2/v=5323/5323/5323  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+pricing@1        y b/b2/v=5364/5364/5364  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+contact@0.15     y b/b2/v=5364/5364/5364  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+contact@0.5      y b/b2/v=5364/5364/5364  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+contact@0.85     y b/b2/v=5364/5364/5364  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+contact@1        y b/b2/v=5364/5364/5364  noise={"mad":0,"pct":0} var={"mad":0,"pct":0}  computedSame=true
+
+### hash  errs base=["console: Access to XMLHttpRequest at 'https://cloudflareinsights.com/cdn-cgi/rum' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'http://localhost' that is not equal to the supplied origin.","console: Failed to load resource: net::ERR_FAILED"] var=["console: Access to XMLHttpRequest at 'https://cloudflareinsights.com/cdn-cgi/rum' from origin 'http://localhost:5173' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'http://localhost' that is not equal to the supplied origin.","console: Failed to load resource: net::ERR_FAILED"]
+load             y b/b2/v=4549/4549/4549  noise={"mad":0.483,"pct":1.27} var={"mad":0.574,"pct":1.38}  computedSame=true

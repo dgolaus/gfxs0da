@@ -1,0 +1,4 @@
+[
+ {"name":"baseline"},
+ {"name":"rafloops","files":{"/script.js":"fixes/vet-raf-loops-noop-writes-plus-leave/script.variant.js","/styles.css":"fixes/vet-raf-loops-noop-writes-plus-leave/styles.variant.css"}}
+]

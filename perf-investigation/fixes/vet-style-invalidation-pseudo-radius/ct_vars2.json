@@ -1,0 +1,3 @@
+[{"name":"baseline"},
+ {"name":"pseudoradius","files":{"/styles.css":"fixes/style-invalidation/styles.pseudoradius.css"}},
+ {"name":"focusfix","files":{"/styles.css":"fixes/vet-style-invalidation-pseudo-radius/styles.pseudoradius.focus.css"}}]

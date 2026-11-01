@@ -1,0 +1,5 @@
+[{"name":"baseline"},
+ {"name":"no-universal-pseudo-DIAG","files":{"/styles.css":"fixes/style-invalidation/styles.nouniversalpseudo.DIAG.css"}},
+ {"name":"nofreeze-UPPERBOUND","files":{"/boot.css":"fixes/style-invalidation/boot.nofreeze.UPPERBOUND.css"}},
+ {"name":"baseline-again"}
+]

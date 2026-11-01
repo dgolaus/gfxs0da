@@ -1,0 +1,6 @@
+[{"name":"baseline"},
+ {"name":"baseline-AA"},
+ {"name":"pseudoradius","files":{"/styles.css":"fixes/style-invalidation/styles.pseudoradius.css"}},
+ {"name":"leaveprop","files":{"/styles.css":"fixes/style-invalidation/styles.leaveprop.css"}},
+ {"name":"navvars","files":{"/script.js":"fixes/style-invalidation/script.navvars.js"}}
+]

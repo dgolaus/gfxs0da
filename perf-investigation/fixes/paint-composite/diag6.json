@@ -1,0 +1,5 @@
+[
+ {"name":"baseline"},
+ {"name":"x_noprice","css":".pricing-grid .price-card{animation-play-state:paused!important}"},
+ {"name":"b1_wc","css":".pricing-grid .price-card{will-change:translate,opacity,transform,filter}"}
+]

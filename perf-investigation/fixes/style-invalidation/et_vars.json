@@ -1,0 +1,5 @@
+[{"name":"baseline"},
+ {"name":"navvars","files":{"/script.js":"fixes/style-invalidation/script.navvars.js"}},
+ {"name":"leave-prop","css":"@property --leave { syntax: '<number>'; inherits: false; initial-value: 0; }"},
+ {"name":"nofreeze-UPPERBOUND","files":{"/boot.css":"fixes/style-invalidation/boot.nofreeze.UPPERBOUND.css"}}
+]

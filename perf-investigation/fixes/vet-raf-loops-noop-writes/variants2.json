@@ -1,0 +1,5 @@
+[
+ {"name":"baseline"},
+ {"name":"aa","files":{"/script.js":"fixes/script.ORIGINAL.js"}},
+ {"name":"rlnw","files":{"/script.js":"fixes/vet-raf-loops-noop-writes/script.variant.js"}}
+]

@@ -1,0 +1,56 @@
+{
+  "__noise": {
+    "150": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "500": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "900": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "1400": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "5000": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    }
+  },
+  "raf-loops-noop-writes-plus-leave": {
+    "150": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "500": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "900": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "1400": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "5000": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    }
+  }
+}

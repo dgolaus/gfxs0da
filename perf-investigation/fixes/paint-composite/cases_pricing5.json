@@ -1,0 +1,5 @@
+[
+ {"tag":"pbottom","w":1440,"h":900,"sel":"#contact","off":-450,"t":5000,"settle":2500},
+ {"tag":"pbottom_hover","w":1440,"h":900,"sel":"#contact","off":-450,"t":5000,"settle":2500,"hover":".pricing-grid .price-card:nth-child(3)"},
+ {"tag":"pbottom_mobile","w":390,"h":844,"sel":"#contact","off":-420,"t":5000,"settle":2500}
+]

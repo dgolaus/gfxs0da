@@ -1,0 +1,110 @@
+{
+  "__noise": {
+    "150": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "500": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "900": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "1400": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "5000": {
+      "meanAbsDiff": 0.011,
+      "pctChanged": 0.028,
+      "pctBigChange": 0.016
+    }
+  },
+  "style-invalidation-scriptinit-scope": {
+    "150": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "500": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "900": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "1400": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "5000": {
+      "meanAbsDiff": 0.001,
+      "pctChanged": 0.003,
+      "pctBigChange": 0
+    }
+  },
+  "style-invalidation-pseudo-radius": {
+    "150": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "500": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "900": {
+      "meanAbsDiff": 0.062,
+      "pctChanged": 0.166,
+      "pctBigChange": 0.069
+    },
+    "1400": {
+      "meanAbsDiff": 0.024,
+      "pctChanged": 0.071,
+      "pctBigChange": 0.031
+    },
+    "5000": {
+      "meanAbsDiff": 0.146,
+      "pctChanged": 0.13,
+      "pctBigChange": 0.104
+    }
+  },
+  "style-invalidation-boot-freeze-gate": {
+    "150": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "500": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "900": {
+      "meanAbsDiff": 0.091,
+      "pctChanged": 0.202,
+      "pctBigChange": 0.096
+    },
+    "1400": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "5000": {
+      "meanAbsDiff": 0.121,
+      "pctChanged": 0.164,
+      "pctBigChange": 0.11
+    }
+  }
+}

@@ -1,0 +1,35 @@
+MODE reduced positions {"y0":0,"y30":30,"y90":90,"y150":150,"y200":200,"y270":270,"y330":330,"y360":360,"y500":500,"about_0.28":2310,"about_0.2":2382,"about_0.1":2472,"about_0.02":2544,"about_-0.05":2607,"process_0.28":3168,"process_0.2":3240,"process_0.1":3330,"process_0.02":3402,"process_-0.05":3465,"trust_0.28":4377,"trust_0.2":4449,"trust_0.1":4539,"trust_0.02":4611,"trust_-0.05":4674,"pricing_0.28":5112,"pricing_0.2":5184,"pricing_0.1":5274,"pricing_0.02":5346,"pricing_-0.05":5409,"fmid":5064,"fend":5364,"back0":0}
+baseline errs []
+rafloops errs []
+y0               y=0/0 noiseDiffs=0 variantDiffs=0 variantOnly=0
+y30              y=30/30 noiseDiffs=0 variantDiffs=0 variantOnly=0
+y90              y=90/90 noiseDiffs=0 variantDiffs=0 variantOnly=0
+y150             y=150/150 noiseDiffs=0 variantDiffs=0 variantOnly=0
+y200             y=200/200 noiseDiffs=0 variantDiffs=0 variantOnly=0
+y270             y=270/270 noiseDiffs=0 variantDiffs=0 variantOnly=0
+y330             y=330/330 noiseDiffs=0 variantDiffs=0 variantOnly=0
+y360             y=360/360 noiseDiffs=0 variantDiffs=0 variantOnly=0
+y500             y=500/500 noiseDiffs=0 variantDiffs=0 variantOnly=0
+about_0.28       y=2310/2310 noiseDiffs=0 variantDiffs=0 variantOnly=0
+about_0.2        y=2382/2382 noiseDiffs=0 variantDiffs=0 variantOnly=0
+about_0.1        y=2472/2472 noiseDiffs=0 variantDiffs=0 variantOnly=0
+about_0.02       y=2544/2544 noiseDiffs=0 variantDiffs=0 variantOnly=0
+about_-0.05      y=2607/2607 noiseDiffs=0 variantDiffs=0 variantOnly=0
+process_0.28     y=3168/3168 noiseDiffs=0 variantDiffs=0 variantOnly=0
+process_0.2      y=3240/3240 noiseDiffs=0 variantDiffs=0 variantOnly=0
+process_0.1      y=3330/3330 noiseDiffs=0 variantDiffs=0 variantOnly=0
+process_0.02     y=3402/3402 noiseDiffs=0 variantDiffs=0 variantOnly=0
+process_-0.05    y=3465/3465 noiseDiffs=0 variantDiffs=0 variantOnly=0
+trust_0.28       y=4377/4377 noiseDiffs=0 variantDiffs=0 variantOnly=0
+trust_0.2        y=4449/4449 noiseDiffs=0 variantDiffs=0 variantOnly=0
+trust_0.1        y=4539/4539 noiseDiffs=0 variantDiffs=0 variantOnly=0
+trust_0.02       y=4611/4611 noiseDiffs=0 variantDiffs=0 variantOnly=0
+trust_-0.05      y=4674/4674 noiseDiffs=0 variantDiffs=0 variantOnly=0
+pricing_0.28     y=5112/5112 noiseDiffs=0 variantDiffs=0 variantOnly=0
+pricing_0.2      y=5184/5184 noiseDiffs=0 variantDiffs=0 variantOnly=0
+pricing_0.1      y=5274/5274 noiseDiffs=0 variantDiffs=0 variantOnly=0
+pricing_0.02     y=5346/5346 noiseDiffs=0 variantDiffs=0 variantOnly=0
+pricing_-0.05    y=5364/5364 noiseDiffs=0 variantDiffs=0 variantOnly=0
+fmid             y=5064/5064 noiseDiffs=0 variantDiffs=0 variantOnly=0
+fend             y=5364/5364 noiseDiffs=0 variantDiffs=0 variantOnly=0
+back0            y=0/0 noiseDiffs=0 variantDiffs=0 variantOnly=0

@@ -1,0 +1,10 @@
+[
+ {"name":"baseline"},
+ {"name":"d_orbs","css":".accent-orbs{animation:none!important}"},
+ {"name":"d_shiny","css":".btn-shiny{animation:none!important}"},
+ {"name":"d_pulse","css":".dot.pulse{animation:none!important}"},
+ {"name":"d_scrollline","css":".scroll-line{animation:none!important}"},
+ {"name":"d_allrepaint","css":".accent-orbs,.btn-shiny,.dot.pulse,.scroll-line,.fheart,.cfooter-center *{animation:none!important}"},
+ {"name":"d_js_bg","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"},
+ {"name":"d_all","css":".accent-orbs,.btn-shiny,.dot.pulse,.scroll-line,.fheart,.cfooter-center *{animation:none!important}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"}
+]

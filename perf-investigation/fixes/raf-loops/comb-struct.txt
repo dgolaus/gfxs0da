@@ -1,0 +1,19 @@
+raf-loops-noop-writes-plus-leave ENTRY 0-3500 {"frames":0,"recalcN":29,"recalcMs":599,"recalcElems":3965,"forcedRecalcN":18,"forcedRecalcMs":392,"layoutN":17,"layoutMs":1041,"forcedLayoutN":9,"paintN":367,"paintMs":601,"fafMs":313,"bmfMs":0}
+raf-loops-noop-writes-plus-leave LATE 3500-4500 {"frames":0,"recalcN":35,"recalcMs":349,"recalcElems":2937,"forcedRecalcN":17,"forcedRecalcMs":332,"layoutN":18,"layoutMs":48,"forcedLayoutN":0,"paintN":126,"paintMs":140,"fafMs":373,"bmfMs":0}
+   699   156.5 UpdateLayoutTree  elems=911 FORCED script.js:51 setNavState < script.js:52   
+   856   733.5 Layout            elems=- FORCED script.js:51 setNavState < script.js:52  roots=#document dirty=1293/1300
+  1606     8.9 UpdateLayoutTree  elems=40 FORCED script.js:999 update < script.js:1027  < script.js:1030   
+  1615     1.6 Layout            elems=- FORCED script.js:999 update < script.js:1027  < script.js:1030  roots=#document dirty=35/1312
+  1620     1.4 UpdateLayoutTree  elems=1 FORCED script.js:1142 update < script.js:1159  < script.js:1160   
+  1621     1.0 Layout            elems=- FORCED script.js:1142 update < script.js:1159  < script.js:1160  roots=#document dirty=3/1312
+  1629    12.7 UpdateLayoutTree  elems=61 FORCED script.js:1310 setHeight < script.js:1311  < script.js:1303   
+  1641     1.0 Layout            elems=- FORCED script.js:1310 setHeight < script.js:1311  < script.js:1303  roots=#document dirty=9/1257
+  1650    20.1 UpdateLayoutTree  elems=110 FORCED script.js:1310 setHeight < script.js:1311  < script.js:1303   
+  1670     6.5 Layout            elems=- FORCED script.js:1310 setHeight < script.js:1311  < script.js:1303  roots=#document dirty=86/1257
+  1684    24.6 UpdateLayoutTree  elems=129 FORCED script.js:1310 setHeight < script.js:1311  < script.js:1303   
+  1709     8.6 Layout            elems=- FORCED script.js:1310 setHeight < script.js:1311  < script.js:1303  roots=#document dirty=106/1293
+  1731    23.4 UpdateLayoutTree  elems=131 FORCED script.js:928 update < script.js:955 loop  
+  1754     5.9 Layout            elems=- FORCED script.js:928 update < script.js:955 loop roots=#document dirty=88/1372
+  1764     0.6 UpdateLayoutTree  elems=2 FORCED script.js:1274 update  
+  1976     8.2 UpdateLayoutTree  elems=53 FORCED script.js:928 update < script.js:955 loop  
+  1984   116.9 Layout            elems=- FORCED script.js:928 update < script.js:955 loop roots=#document dirty=1300/1372

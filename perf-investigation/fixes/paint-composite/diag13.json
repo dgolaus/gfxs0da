@@ -1,0 +1,4 @@
+[
+ {"name":"baseline"},
+ {"name":"k_both","css":"#pricing{contain:paint} @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(177,18,18,.55),0 0 0 10px rgba(177,18,18,0)}70%{box-shadow:0 0 0 10px rgba(177,18,18,0),0 0 0 10px rgba(177,18,18,0)}} @keyframes pulseGreen{0%,100%{box-shadow:0 0 8px #57F287,0 0 0 0 rgba(87,242,135,.45),0 0 0 9px rgba(87,242,135,0)}70%{box-shadow:0 0 8px #57F287,0 0 0 9px rgba(87,242,135,0),0 0 0 9px rgba(87,242,135,0)}}"}
+]

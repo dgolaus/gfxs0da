@@ -1,0 +1,21 @@
+[
+ {
+  "name": "baseline"
+ },
+ {
+  "name": "offscreen-work-cv-defer-warm",
+  "files": {
+   "/styles.css": "fixes/offscreen-work/styles.css",
+   "/script.js": "fixes/offscreen-work/script.c2.js",
+   "/smooth-scroll.js": "fixes/offscreen-work/smooth-scroll.js"
+  }
+ },
+ {
+  "name": "offscreen-work-cv-defer",
+  "files": {
+   "/styles.css": "fixes/offscreen-work/styles.css",
+   "/script.js": "fixes/offscreen-work/script.c1.js",
+   "/smooth-scroll.js": "fixes/offscreen-work/smooth-scroll.js"
+  }
+ }
+]

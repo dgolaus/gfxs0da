@@ -1,0 +1,6 @@
+[{"name":"baseline"},
+ {"name":"navvars","files":{"/script.js":"fixes/style-invalidation/script.navvars.js"}},
+ {"name":"leaveprop","files":{"/styles.css":"fixes/style-invalidation/styles.leaveprop.css"}},
+ {"name":"pseudoradius","files":{"/styles.css":"fixes/style-invalidation/styles.pseudoradius.css"}},
+ {"name":"freezegate","files":{"/boot.css":"fixes/style-invalidation/boot.freezegate.css","/boot.js":"fixes/style-invalidation/boot.freezegate.js","/index.html":"fixes/style-invalidation/index.freezegate.html"}}
+]

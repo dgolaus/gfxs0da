@@ -1,0 +1,507 @@
+{
+ "errs": {
+  "base": [],
+  "var": []
+ },
+ "steps": [
+  {
+   "name": "y0",
+   "noiseProbe": [],
+   "varProbe": [
+    {
+     "k": "secs",
+     "a": [
+      "about|about scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "process|process scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "trust|trust scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ],
+     "b": [
+      "about|about scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "process|process scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "trust|trust scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "pricing|pricing scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ]
+    },
+    {
+     "k": "fp",
+     "a": [
+      "0.000",
+      "0.000"
+     ],
+     "b": [
+      "",
+      "0.000"
+     ]
+    }
+   ],
+   "baseRootInline": "--nav-pill: 0.000; --nav-bar-vis: 1.000; --nav-pill-vis: 0.000;",
+   "varRootInline": null,
+   "baseProbe": {
+    "scrollY": 0,
+    "rootInline": "--nav-pill: 0.000; --nav-bar-vis: 1.000; --nav-pill-vis: 0.000;",
+    "rootVars": [
+     0,
+     1,
+     0
+    ],
+    "secs": [
+     "about|about scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+     "process|process scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+     "trust|trust scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+     "pricing|pricing scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+     "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+    ],
+    "fp": [
+     "0.000",
+     "0.000"
+    ],
+    "tracks": [
+     "8:4",
+     "10:5",
+     "8:4"
+    ],
+    "accentBg": [
+     "radial-gradient(circle at 50% 10.19vh, r|radial-gradient(circle at 50% 10.19vh, r",
+     "radial-gradient(circle at 50% -250.99vh,|radial-gradient(circle at 50% -250.99vh,"
+    ]
+   }
+  },
+  {
+   "name": "y200",
+   "noiseProbe": [],
+   "varProbe": [
+    {
+     "k": "secs",
+     "a": [
+      "about|about scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "process|process scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "trust|trust scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ],
+     "b": [
+      "about|about scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "process|process scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "trust|trust scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "pricing|pricing scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ]
+    },
+    {
+     "k": "fp",
+     "a": [
+      "0.000",
+      "0.000"
+     ],
+     "b": [
+      "",
+      "0.000"
+     ]
+    }
+   ],
+   "baseRootInline": "--nav-pill: 0.605; --nav-bar-vis: 0.093; --nav-pill-vis: 0.610;",
+   "varRootInline": "--nav-pill: 0.605; --nav-bar-vis: 0.093; --nav-pill-vis: 0.610;"
+  },
+  {
+   "name": "about_mid",
+   "noiseProbe": [
+    {
+     "k": "accentBg",
+     "a": [
+      "radial-gradient(circle at 50% 279.86vh, |radial-gradient(circle at 50% 279.86vh, ",
+      "radial-gradient(circle at 50% 20.68vh, r|radial-gradient(circle at 50% 20.68vh, r"
+     ],
+     "b": [
+      "radial-gradient(circle at 50% 279.85vh, |radial-gradient(circle at 50% 279.85vh, ",
+      "radial-gradient(circle at 50% 20.67vh, r|radial-gradient(circle at 50% 20.67vh, r"
+     ]
+    }
+   ],
+   "varProbe": [
+    {
+     "k": "secs",
+     "a": [
+      "about|about scroll-fade|0.502|0.502|0.498|blur(4.016px)|matrix(1, 0, 0, 1, 0, -12.048)|opacity, filter, transform",
+      "process|process scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "trust|trust scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ],
+     "b": [
+      "about|about scroll-fade|0.502|0.502|0.498|blur(4.016px)|matrix(1, 0, 0, 1, 0, -12.048)|opacity, filter, transform",
+      "process|process scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "trust|trust scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "pricing|pricing scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ]
+    },
+    {
+     "k": "fp",
+     "a": [
+      "0.000",
+      "0.000"
+     ],
+     "b": [
+      "",
+      "0.000"
+     ]
+    }
+   ],
+   "baseRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+   "varRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+   "noise": {
+    "mad": 0.458,
+    "pct": 0.741,
+    "max": 224
+   },
+   "diff": {
+    "mad": 3.06,
+    "pct": 4.822,
+    "max": 243
+   }
+  },
+  {
+   "name": "process_mid",
+   "noiseProbe": [
+    {
+     "k": "secs",
+     "a": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|0.340|0.340|0.66|blur(2.72px)|matrix(1, 0, 0, 1, 0, -8.16)|opacity, filter, transform",
+      "trust|trust scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ],
+     "b": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|0.347|0.347|0.653|blur(2.776px)|matrix(1, 0, 0, 1, 0, -8.328)|opacity, filter, transform",
+      "trust|trust scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ]
+    },
+    {
+     "k": "accentBg",
+     "a": [
+      "radial-gradient(circle at 50% 370.18vh, |radial-gradient(circle at 50% 370.18vh, ",
+      "radial-gradient(circle at 50% 111.91vh, |radial-gradient(circle at 50% 111.91vh, "
+     ],
+     "b": [
+      "radial-gradient(circle at 50% 370.16vh, |radial-gradient(circle at 50% 370.16vh, ",
+      "radial-gradient(circle at 50% 111.9vh, r|radial-gradient(circle at 50% 111.9vh, r"
+     ]
+    }
+   ],
+   "varProbe": [
+    {
+     "k": "secs",
+     "a": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|0.340|0.340|0.66|blur(2.72px)|matrix(1, 0, 0, 1, 0, -8.16)|opacity, filter, transform",
+      "trust|trust scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ],
+     "b": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|0.336|0.336|0.664|blur(2.688px)|matrix(1, 0, 0, 1, 0, -8.064)|opacity, filter, transform",
+      "trust|trust scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "pricing|pricing scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ]
+    },
+    {
+     "k": "fp",
+     "a": [
+      "0.000",
+      "0.000"
+     ],
+     "b": [
+      "",
+      "0.000"
+     ]
+    },
+    {
+     "k": "accentBg",
+     "a": [
+      "radial-gradient(circle at 50% 370.18vh, |radial-gradient(circle at 50% 370.18vh, ",
+      "radial-gradient(circle at 50% 111.91vh, |radial-gradient(circle at 50% 111.91vh, "
+     ],
+     "b": [
+      "radial-gradient(circle at 50% 370.16vh, |radial-gradient(circle at 50% 370.16vh, ",
+      "radial-gradient(circle at 50% 111.88vh, |radial-gradient(circle at 50% 111.88vh, "
+     ]
+    }
+   ],
+   "baseRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+   "varRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;"
+  },
+  {
+   "name": "trust_mid",
+   "noiseProbe": [
+    {
+     "k": "secs",
+     "a": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "trust|trust scroll-fade|0.696|0.696|0.304|blur(5.568px)|matrix(1, 0, 0, 1, 0, -16.704)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ],
+     "b": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "trust|trust scroll-fade|0.677|0.677|0.323|blur(5.416px)|matrix(1, 0, 0, 1, 0, -16.248)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ]
+    },
+    {
+     "k": "accentBg",
+     "a": [
+      "radial-gradient(circle at 50% 514.52vh, |radial-gradient(circle at 50% 514.52vh, ",
+      "radial-gradient(circle at 50% 258.01vh, |radial-gradient(circle at 50% 258.01vh, "
+     ],
+     "b": [
+      "radial-gradient(circle at 50% 514.51vh, |radial-gradient(circle at 50% 514.51vh, ",
+      "radial-gradient(circle at 50% 258vh, rgb|radial-gradient(circle at 50% 258vh, rgb"
+     ]
+    }
+   ],
+   "varProbe": [
+    {
+     "k": "secs",
+     "a": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "trust|trust scroll-fade|0.696|0.696|0.304|blur(5.568px)|matrix(1, 0, 0, 1, 0, -16.704)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ],
+     "b": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "trust|trust scroll-fade|0.682|0.682|0.318|blur(5.456px)|matrix(1, 0, 0, 1, 0, -16.368)|opacity, filter, transform",
+      "pricing|pricing scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ]
+    },
+    {
+     "k": "fp",
+     "a": [
+      "0.000",
+      "0.000"
+     ],
+     "b": [
+      "",
+      "0.000"
+     ]
+    }
+   ],
+   "baseRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+   "varRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;"
+  },
+  {
+   "name": "pricing_mid",
+   "noiseProbe": [
+    {
+     "k": "secs",
+     "a": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "trust|trust scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.515|0.515|0.485|blur(4.12px)|matrix(1, 0, 0, 1, 0, -12.36)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ],
+     "b": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "trust|trust scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.507|0.507|0.493|blur(4.056px)|matrix(1, 0, 0, 1, 0, -12.168)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ]
+    }
+   ],
+   "varProbe": [
+    {
+     "k": "secs",
+     "a": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "trust|trust scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.515|0.515|0.485|blur(4.12px)|matrix(1, 0, 0, 1, 0, -12.36)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ],
+     "b": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "trust|trust scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.511|0.511|0.489|blur(4.088px)|matrix(1, 0, 0, 1, 0, -12.264)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ]
+    }
+   ],
+   "baseRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+   "varRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+   "noise": {
+    "mad": 0.003,
+    "pct": 0,
+    "max": 2
+   },
+   "diff": {
+    "mad": 0.002,
+    "pct": 0,
+    "max": 1
+   },
+   "baseProbe": {
+    "scrollY": 5229,
+    "rootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+    "rootVars": [
+     1,
+     0,
+     1
+    ],
+    "secs": [
+     "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+     "process|process scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+     "trust|trust scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+     "pricing|pricing scroll-fade|0.515|0.515|0.485|blur(4.12px)|matrix(1, 0, 0, 1, 0, -12.36)|opacity, filter, transform",
+     "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+    ],
+    "fp": [
+     "0.824",
+     "0.824"
+    ],
+    "tracks": [
+     "8:4",
+     "10:5",
+     "8:4"
+    ],
+    "accentBg": [
+     "radial-gradient(circle at 50% 591.19vh, |radial-gradient(circle at 50% 591.19vh, ",
+     "radial-gradient(circle at 50% 334.68vh, |radial-gradient(circle at 50% 334.68vh, "
+    ]
+   }
+  },
+  {
+   "name": "end",
+   "noiseProbe": [],
+   "varProbe": [
+    {
+     "k": "secs",
+     "a": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "trust|trust scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ],
+     "b": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "trust|trust scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ]
+    }
+   ],
+   "baseRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+   "varRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "max": 1
+   },
+   "diff": {
+    "mad": 0,
+    "pct": 0,
+    "max": 1
+   }
+  },
+  {
+   "name": "back_trust",
+   "noiseProbe": [],
+   "varProbe": [
+    {
+     "k": "secs",
+     "a": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "trust|trust scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ],
+     "b": [
+      "about|about scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "process|process scroll-fade|1.000|1.000|0|blur(8px)|matrix(1, 0, 0, 1, 0, -24)|opacity, filter, transform",
+      "trust|trust scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ]
+    },
+    {
+     "k": "accentBg",
+     "a": [
+      "radial-gradient(circle at 50% 471.86vh, |radial-gradient(circle at 50% 471.86vh, ",
+      "radial-gradient(circle at 50% 215.35vh, |radial-gradient(circle at 50% 215.35vh, "
+     ],
+     "b": [
+      "radial-gradient(circle at 50% 471.86vh, |radial-gradient(circle at 50% 471.86vh, ",
+      "radial-gradient(circle at 50% 215.34vh, |radial-gradient(circle at 50% 215.34vh, "
+     ]
+    }
+   ],
+   "baseRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+   "varRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;"
+  },
+  {
+   "name": "back_top",
+   "noiseProbe": [],
+   "varProbe": [
+    {
+     "k": "secs",
+     "a": [
+      "about|about scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "process|process scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "trust|trust scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ],
+     "b": [
+      "about|about scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "process|process scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "trust|trust scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "pricing|pricing scroll-fade|0.000|0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform",
+      "contact|cfooter-clip scroll-fade||0.000|1|blur(0px)|matrix(1, 0, 0, 1, 0, 0)|opacity, filter, transform"
+     ]
+    },
+    {
+     "k": "accentBg",
+     "a": [
+      "radial-gradient(circle at 50% 10.2vh, rg|radial-gradient(circle at 50% 10.2vh, rg",
+      "radial-gradient(circle at 50% -248.98vh,|radial-gradient(circle at 50% -248.98vh,"
+     ],
+     "b": [
+      "radial-gradient(circle at 50% 10.26vh, r|radial-gradient(circle at 50% 10.26vh, r",
+      "radial-gradient(circle at 50% -248.91vh,|radial-gradient(circle at 50% -248.91vh,"
+     ]
+    }
+   ],
+   "baseRootInline": "--nav-pill: 0.000; --nav-bar-vis: 1.000; --nav-pill-vis: 0.000;",
+   "varRootInline": "--nav-pill: 0.000; --nav-bar-vis: 1.000; --nav-pill-vis: 0.000;",
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "max": 1
+   },
+   "diff": {
+    "mad": 0,
+    "pct": 0,
+    "max": 1
+   }
+  }
+ ]
+}

@@ -1,0 +1,5 @@
+[
+  {"name":"baseline"},
+  {"name":"font-preload-only","files":{"/index.html":"fixes/loading/index.fontpreload.html"}},
+  {"name":"early-ready-only","files":{"/index.html":"fixes/loading/index.earlyready.html","/boot.js":"fixes/loading/boot.js","/script.js":"fixes/loading/script.earlyready.js"}}
+]

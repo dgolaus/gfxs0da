@@ -1,0 +1,7 @@
+[{"name":"baseline"},
+ {"name":"no-quote-anim","css":".testimonials .quote{animation:none!important}"},
+ {"name":"no-price-anim","css":".pricing-grid .price-card{animation:none!important}"},
+ {"name":"no-particle-anim","css":".particle{animation:none!important}"},
+ {"name":"no-bgtrack-anim","css":".bg-row-track{animation:none!important}"},
+ {"name":"no-sitebg-anim","css":".site-bg>i,.site-bg::after{animation:none!important}"}
+]

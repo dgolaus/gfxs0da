@@ -1,0 +1,30 @@
+const { openPage } = require('../../bench.js');
+const puppeteer = require('../node_modules/puppeteer');
+const w8 = (ms) => new Promise((r) => setTimeout(r, ms));
+const F = 'fixes/offscreen-work/';
+const V = process.argv[3] === 'base' ? { name: 'base' } : { name: 'cv', files: { '/styles.css': F + 'styles.css', '/script.js': F + 'script.c2.js', '/smooth-scroll.js': F + 'smooth-scroll.js' } };
+const [W, H] = (process.argv[2] || '1280x800').split('x').map(Number);
+(async () => {
+  const b = await puppeteer.launch({ headless: 'new' });
+  const { p } = await openPage(b, V, { throttle: 1 });
+  await p.setViewport({ width: W, height: H });
+  await p.goto('http://localhost:5173/', { waitUntil: 'networkidle2' });
+  await w8(1500);
+  const total = await p.evaluate(() => document.documentElement.scrollHeight - innerHeight);
+  for (let y = 0; y < total; y += 150) { await p.evaluate((y) => window.scrollTo(0, y), y); await w8(30); }
+  await p.evaluate(() => { const s = document.getElementById('pricing'); window.scrollTo(0, s.getBoundingClientRect().top + scrollY - 100); });
+  await w8(1500);
+  const st = () => p.evaluate(() => [...document.querySelectorAll('.price-card')].map((c) => { const a = c.getAnimations()[0]; return `${getComputedStyle(c).translate}|${a && a.playState}|${a && Math.round(a.currentTime)}|top${c.getBoundingClientRect().top.toFixed(2)}`; }).join('  '));
+  await p.evaluate(() => { for (const a of document.getAnimations()) { a.pause(); a.currentTime = 5000; } });
+  await w8(200);
+  console.log('A paused ', await st());
+  console.log('scroll', await p.evaluate(() => scrollY), await p.evaluate(() => ['about','process','trust','pricing','contact'].map(id=>Math.round(document.getElementById(id).getBoundingClientRect().height)).join(',')));
+  await p.evaluate(() => { const s = document.createElement('style'); s.id = '__nocv'; s.textContent = '#main > section, #contact { content-visibility: visible !important; contain-intrinsic-size: none !important; }'; document.head.appendChild(s); });
+  await w8(200);
+  console.log('B before ', await st());
+  console.log('scroll', await p.evaluate(() => scrollY), await p.evaluate(() => ['about','process','trust','pricing','contact'].map(id=>Math.round(document.getElementById(id).getBoundingClientRect().height)).join(',')));
+  await p.evaluate(() => { for (const a of document.getAnimations()) { a.pause(); a.currentTime = 5000; } });
+  await w8(200);
+  console.log('B paused ', await st());
+  await b.close();
+})();

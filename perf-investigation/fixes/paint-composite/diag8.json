@@ -1,0 +1,6 @@
+[
+ {"name":"s1_grid_wc","css":"*:not(.price-card),*::before,*::after{animation-play-state:paused!important} .pricing-grid{will-change:transform}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"},
+ {"name":"s2_card_wc","css":"*:not(.price-card),*::before,*::after{animation-play-state:paused!important} .pricing-grid .price-card{will-change:transform,translate}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"},
+ {"name":"s3_section_contain","css":"*:not(.price-card),*::before,*::after{animation-play-state:paused!important} #pricing{contain:paint}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"},
+ {"name":"s4_grid_contain","css":"*:not(.price-card),*::before,*::after{animation-play-state:paused!important} .pricing-grid{contain:paint}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"}
+]

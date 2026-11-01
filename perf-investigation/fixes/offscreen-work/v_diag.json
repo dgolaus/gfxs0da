@@ -1,0 +1,6 @@
+[{"name":"baseline"},
+ {"name":"d-nobg","css":".hero-bg{display:none!important}"},
+ {"name":"d-nowork","css":"#work{display:none!important}"},
+ {"name":"d-below","css":"#about,#process,#trust,#pricing,#contact{display:none!important}"},
+ {"name":"d-onlyhero","css":"#work,#about,#process,#trust,#pricing,#contact,.lightbox{display:none!important}"}
+]

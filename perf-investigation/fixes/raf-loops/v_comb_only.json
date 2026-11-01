@@ -1,0 +1,9 @@
+[
+ {
+  "name": "raf-loops-noop-writes-plus-leave",
+  "files": {
+   "/script.js": "fixes/raf-loops/script.raf-loops.js",
+   "/styles.css": "fixes/raf-loops/styles.raf-loops.css"
+  }
+ }
+]

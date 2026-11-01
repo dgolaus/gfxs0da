@@ -1,0 +1,5 @@
+[
+ {"name":"baseline"},
+ {"name":"d_nointro","css":".hero-badge,.hero-title,.hero-sub,.hero-cta,.hero-stats-strip,.scroll-indicator,.nav,.nav .brand,.nav .nav-links > a,.nav > .btn{animation:none!important}"},
+ {"name":"c_filternone","css":"@keyframes heroBadgeIn{from{opacity:0;transform:translateY(-12px);filter:blur(5px)}to{opacity:1;transform:none;filter:none}} @keyframes heroTitleIn{from{opacity:0;transform:translateY(20px);filter:blur(12px)}to{opacity:1;transform:none;filter:none}} @keyframes heroFadeIn{from{opacity:0;transform:translateY(12px);filter:blur(8px)}to{opacity:1;transform:none;filter:none}} @keyframes navIn{from{opacity:0;translate:0 -14px;filter:blur(10px)}to{opacity:1;translate:0 0;filter:none}} @keyframes navItemIn{from{opacity:0;translate:0 -6px;filter:blur(6px)}to{opacity:1;translate:0 0;filter:none}}"}
+]

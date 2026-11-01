@@ -1,0 +1,8 @@
+[
+ {"name":"p_revealed","css":"*:not(.price-card),*::before,*::after{animation-play-state:paused!important} .price-card.reveal{opacity:1!important;transform:none!important;filter:none!important}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"},
+ {"name":"p_nofilter","css":"*:not(.price-card),*::before,*::after{animation-play-state:paused!important} .price-card.reveal{filter:none!important}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"},
+ {"name":"p_noopacity","css":"*:not(.price-card),*::before,*::after{animation-play-state:paused!important} .price-card.reveal{opacity:1!important}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"},
+ {"name":"p_wc","css":"*:not(.price-card),*::before,*::after{animation-play-state:paused!important} .pricing-grid .price-card{will-change:translate,opacity,transform,filter}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"},
+ {"name":"p_feature_only","css":"*:not(.price-card-feature),*::before,*::after{animation-play-state:paused!important}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"},
+ {"name":"p_nth2_only","css":"*:not(.price-card:nth-child(2)),*::before,*::after{animation-play-state:paused!important}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"}
+]

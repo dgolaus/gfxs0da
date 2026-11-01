@@ -1,0 +1,107 @@
+MODE desktop positions {"y0":0,"y30":30,"y90":90,"y150":150,"y200":200,"y270":270,"y330":330,"y360":360,"y500":500,"about_0.28":2310,"about_0.2":2382,"about_0.1":2472,"about_0.02":2544,"about_-0.05":2607,"process_0.28":3168,"process_0.2":3240,"process_0.1":3330,"process_0.02":3402,"process_-0.05":3465,"trust_0.28":4377,"trust_0.2":4449,"trust_0.1":4539,"trust_0.02":4611,"trust_-0.05":4674,"pricing_0.28":5112,"pricing_0.2":5184,"pricing_0.1":5274,"pricing_0.02":5346,"pricing_-0.05":5409,"fmid":5064,"fend":5364,"back0":0}
+baseline errs []
+rafloops errs []
+y0               y=0/0 noiseDiffs=33 variantDiffs=33 variantOnly=0
+y30              y=30/30 noiseDiffs=0 variantDiffs=0 variantOnly=0
+y90              y=90/90 noiseDiffs=0 variantDiffs=0 variantOnly=0
+y150             y=150/150 noiseDiffs=0 variantDiffs=0 variantOnly=0
+y200             y=200/200 noiseDiffs=0 variantDiffs=0 variantOnly=0
+y270             y=270/270 noiseDiffs=0 variantDiffs=0 variantOnly=0
+y330             y=330/330 noiseDiffs=0 variantDiffs=0 variantOnly=0
+y360             y=360/360 noiseDiffs=0 variantDiffs=0 variantOnly=0
+y500             y=500/500 noiseDiffs=0 variantDiffs=0 variantOnly=0
+about_0.28       y=2310/2310 noiseDiffs=0 variantDiffs=0 variantOnly=0
+about_0.2        y=2382/2382 noiseDiffs=0 variantDiffs=0 variantOnly=0
+about_0.1        y=2472/2472 noiseDiffs=0 variantDiffs=946 variantOnly=946
+     426:DIV.chat-footer 
+       base: 1|none|none|none|12px|0px|none|visible|none|742.44,748.03,522.55,77.00 
+       var : undefined
+     427:P#chat-typing.chat-typing 
+       base: 0|none|matrix(1, 0, 0, 1, 0, 5)|none|0px|0px|none|visible|none|742.44,766.03,522.55,14.00 
+       var : undefined
+     428:SPAN.typing-dots 
+       base: 1|none|none|none|0px|0px|none|visible|none|742.44,770.53,21.00,5.00 
+       var : undefined
+     429:SPAN 
+       base: 0.28|none|none|0px|0px|0px|none|visible|none|742.69,770.78,4.50,4.50 
+       var : 0.294953|none|none|0px -0.0830712px|0px|0px|none|visible|none|758.68,770.69,4.52,4.52
+     430:SPAN 
+       base: 0.28|none|none|0px|0px|0px|none|visible|none|750.69,770.78,4.50,4.50 
+       var : 1|none|none|none|0px|0px|none|visible|none|773.44,763.84,105.50,18.39
+     431:SPAN 
+       base: 0.294953|none|none|0px -0.0830712px|0px|0px|none|visible|none|758.68,770.69,4.52,4.52 
+       var : undefined
+     432:SPAN 
+       base: 1|none|none|none|0px|0px|none|visible|none|773.44,763.84,105.50,18.39 
+       var : undefined
+     433:STRONG.typing-name 
+       base: 1|none|none|none|0px|0px|none|visible|none|773.44,765.84,42.11,14.00 
+       var : undefined
+about_0.02       y=2544/2544 noiseDiffs=0 variantDiffs=0 variantOnly=0
+about_-0.05      y=2607/2607 noiseDiffs=8 variantDiffs=8 variantOnly=0
+process_0.28     y=3168/3168 noiseDiffs=0 variantDiffs=958 variantOnly=958
+     481:DIV.chat-footer 
+       base: 1|none|none|none|12px|0px|none|visible|none|742.44,50.42,522.55,77.00 
+       var : undefined
+     482:P#chat-typing.chat-typing 
+       base: 0|none|matrix(1, 0, 0, 1, 0, 5)|none|0px|0px|none|visible|none|742.44,68.42,522.55,14.00 
+       var : undefined
+     483:SPAN.typing-dots 
+       base: 1|none|none|none|0px|0px|none|visible|none|742.44,72.92,21.00,5.00 
+       var : undefined
+     484:SPAN 
+       base: 0.28|none|none|0px|0px|0px|none|visible|none|742.69,73.17,4.50,4.50 
+       var : undefined
+     485:SPAN 
+       base: 0.28|none|none|0px|0px|0px|none|visible|none|750.69,73.17,4.50,4.50 
+       var : undefined
+     486:SPAN 
+       base: 0.294953|none|none|0px -0.0830712px|0px|0px|none|visible|none|758.68,73.08,4.52,4.52 
+       var : undefined
+     487:SPAN 
+       base: 1|none|none|none|0px|0px|none|visible|none|773.44,66.24,105.50,18.39 
+       var : undefined
+     488:STRONG.typing-name 
+       base: 1|none|none|none|0px|0px|none|visible|none|773.44,68.24,42.11,14.00 
+       var : undefined
+process_0.2      y=3240/3240 noiseDiffs=0 variantDiffs=0 variantOnly=0
+process_0.1      y=3330/3330 noiseDiffs=0 variantDiffs=0 variantOnly=0
+process_0.02     y=3402/3402 noiseDiffs=0 variantDiffs=59 variantOnly=59
+     325:SECTION#process.process.scroll-fade 
+       base: 0.005|blur(7.96px)|matrix(1, 0, 0, 1, 0, -23.88)|none|0px|0px|none|visible|none|0.00,-864.30,1440.00,858.45 
+       var : 0.002|blur(7.984px)|matrix(1, 0, 0, 1, 0, -23.952)|none|0px|0px|none|visible|none|0.00,-864.37,1440.00,858.45
+     326:DIV.container.process-grid 
+       base: 1|none|none|none|0px|56px|none|visible|none|100.00,-864.30,1240.00,750.45 
+       var : 1|none|none|none|0px|56px|none|visible|none|100.00,-864.37,1240.00,750.45
+     327:DIV.process-text.reveal 
+       base: 1|blur(0px)|none|none|8px|0px|none|visible|none|156.00,-864.30,487.44,750.45 
+       var : 1|blur(0px)|none|none|8px|0px|none|visible|none|156.00,-864.37,487.44,750.45
+     328:P.eyebrow 
+       base: 1|none|none|none|0px|0px|none|visible|none|156.00,-847.99,143.64,18.39 
+       var : 1|none|none|none|0px|0px|none|visible|none|156.00,-848.06,143.64,18.39
+     329:SPAN.dash 
+       base: 1|none|none|none|0px|0px|none|visible|none|156.00,-839.30,24.00,1.00 
+       var : 1|none|none|none|0px|0px|none|visible|none|156.00,-839.37,24.00,1.00
+     330:H2 
+       base: 1|none|none|none|0px|0px|none|visible|none|156.00,-801.60,487.44,140.05 
+       var : 1|none|none|none|0px|0px|none|visible|none|156.00,-801.67,487.44,140.05
+     331:BR 
+       base: 1|none|none|none|0px|0px|none|visible|none|473.70,-809.60,0.00,82.00 
+       var : 1|none|none|none|0px|0px|none|visible|none|473.70,-809.67,0.00,82.00
+     332:SPAN.accent-soft 
+       base: 1|drop-shadow(rgba(252, 31, 37, 0.35) 0px 0px 16px)|none|none|0px|0px|none|visible|none|156.00,-734.97,377.77,73.42 
+       var : 1|drop-shadow(rgba(252, 31, 37, 0.35) 0px 0px 16px)|none|none|0px|0px|none|visible|none|156.00,-735.05,377.77,73.42
+process_-0.05    y=3465/3465 noiseDiffs=0 variantDiffs=0 variantOnly=0
+trust_0.28       y=4377/4377 noiseDiffs=0 variantDiffs=0 variantOnly=0
+trust_0.2        y=4449/4449 noiseDiffs=0 variantDiffs=0 variantOnly=0
+trust_0.1        y=4539/4539 noiseDiffs=0 variantDiffs=0 variantOnly=0
+trust_0.02       y=4611/4611 noiseDiffs=0 variantDiffs=0 variantOnly=0
+trust_-0.05      y=4674/4674 noiseDiffs=0 variantDiffs=0 variantOnly=0
+pricing_0.28     y=5112/5112 noiseDiffs=0 variantDiffs=0 variantOnly=0
+pricing_0.2      y=5184/5184 noiseDiffs=0 variantDiffs=0 variantOnly=0
+pricing_0.1      y=5274/5274 noiseDiffs=0 variantDiffs=0 variantOnly=0
+pricing_0.02     y=5346/5346 noiseDiffs=0 variantDiffs=0 variantOnly=0
+pricing_-0.05    y=5364/5364 noiseDiffs=0 variantDiffs=0 variantOnly=0
+fmid             y=5064/5064 noiseDiffs=0 variantDiffs=0 variantOnly=0
+fend             y=5364/5364 noiseDiffs=0 variantDiffs=0 variantOnly=0
+back0            y=0/0 noiseDiffs=0 variantDiffs=0 variantOnly=0

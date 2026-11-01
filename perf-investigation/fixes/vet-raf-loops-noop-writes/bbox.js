@@ -1,0 +1,2 @@
+const sharp=require('../node_modules/sharp');
+(async()=>{for(const f of process.argv.slice(2)){const {data,info}=await sharp(f).raw().toBuffer({resolveWithObject:true});let x0=1e9,y0=1e9,x1=-1,y1=-1,n=0;for(let y=0;y<info.height;y++)for(let x=0;x<info.width;x++){const v=data[(y*info.width+x)*info.channels];if(v>32){n++;if(x<x0)x0=x;if(y<y0)y0=y;if(x>x1)x1=x;if(y>y1)y1=y;}}console.log(f,n,'bbox',x0,y0,x1,y1);}})();

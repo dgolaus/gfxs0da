@@ -1,0 +1,31 @@
+== baseline rep 0: recalcN=98 recalcElems=9317 recalcMs=1209.6 layoutMs=1202.2 scriptEvalMs=573.1
+    script.js:51:setNavState elems=129 26.8ms @1536
+    script.js:975:update elems=660 96.4ms @1666
+    script.js:975:update elems=23 3.9ms @1766
+    script.js:975:update elems=65 8.4ms @1771
+    script.js:975:update elems=408 50.3ms @1779
+    script.js:975:update elems=98 10.9ms @1830
+    script.js:1029:update elems=47 6.9ms @1843
+    script.js:1104:update elems=1 1.4ms @1851
+    script.js:1258: elems=1035 144.5ms @1858
+    script.js:1266:setHeight elems=61 17.6ms @2006
+    script.js:1266:setHeight elems=110 19.9ms @2033
+    script.js:1266:setHeight elems=129 21.9ms @2068
+    script.js:1234:update elems=2 0.4ms @2178
+== leave-noinherit rep 0: recalcN=139 recalcElems=11796 recalcMs=1445.4 layoutMs=958.8 scriptEvalMs=282.4
+    script.js:51:setNavState elems=1 6.5ms @1683
+    script.js:975:update elems=40 10.5ms @1703
+    script.js:975:update elems=2 0.1ms @1716
+    script.js:975:update elems=2 0.0ms @1716
+    script.js:975:update elems=2 0.1ms @1716
+    script.js:975:update elems=2 0.4ms @1716
+    script.js:1029:update elems=3 1.6ms @1719
+    script.js:1104:update elems=1 0.8ms @1721
+    script.js:1258: elems=1039 144.9ms @1728
+    script.js:1266:setHeight elems=61 13.1ms @1876
+    script.js:1266:setHeight elems=110 18.2ms @1898
+    script.js:1266:setHeight elems=129 18.7ms @1931
+    script.js:1234:update elems=2 0.6ms @2039
+SUMMARY
+baseline {"recalcElems":9317,"recalcMs":1209.6,"layoutMs":1202.2,"scriptEvalMs":573.1,"all":[[9317,1209.6,573.1]]}
+leave-noinherit {"recalcElems":11796,"recalcMs":1445.4,"layoutMs":958.8,"scriptEvalMs":282.4,"all":[[11796,1445.4,282.4]]}

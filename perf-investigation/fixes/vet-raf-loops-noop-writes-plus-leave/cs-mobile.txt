@@ -1,0 +1,59 @@
+MODE mobile positions {"y0":0,"y30":30,"y90":90,"y150":150,"y200":200,"y270":270,"y330":330,"y360":360,"y500":500,"about_0.28":2901,"about_0.2":2969,"about_0.1":3053,"about_0.02":3121,"about_-0.05":3180,"process_0.28":3875,"process_0.2":3942,"process_0.1":4027,"process_0.02":4094,"process_-0.05":4153,"trust_0.28":5031,"trust_0.2":5098,"trust_0.1":5183,"trust_0.02":5250,"trust_-0.05":5309,"pricing_0.28":6863,"pricing_0.2":6930,"pricing_0.1":7015,"pricing_0.02":7082,"pricing_-0.05":7141,"fmid":6996,"fend":7296,"back0":0}
+baseline errs []
+rafloops errs []
+y0               y=0/0 noiseDiffs=0 variantDiffs=0 variantOnly=0
+y30              y=30/30 noiseDiffs=0 variantDiffs=0 variantOnly=0
+y90              y=90/90 noiseDiffs=0 variantDiffs=0 variantOnly=0
+y150             y=150/150 noiseDiffs=0 variantDiffs=0 variantOnly=0
+y200             y=200/200 noiseDiffs=0 variantDiffs=0 variantOnly=0
+y270             y=270/270 noiseDiffs=0 variantDiffs=0 variantOnly=0
+y330             y=330/330 noiseDiffs=0 variantDiffs=0 variantOnly=0
+y360             y=360/360 noiseDiffs=0 variantDiffs=0 variantOnly=0
+y500             y=500/500 noiseDiffs=0 variantDiffs=0 variantOnly=0
+about_0.28       y=2901/2901 noiseDiffs=0 variantDiffs=0 variantOnly=0
+about_0.2        y=2969/2969 noiseDiffs=0 variantDiffs=0 variantOnly=0
+about_0.1        y=3053/3053 noiseDiffs=0 variantDiffs=0 variantOnly=0
+about_0.02       y=3121/3121 noiseDiffs=0 variantDiffs=0 variantOnly=0
+about_-0.05      y=3180/3180 noiseDiffs=242 variantDiffs=242 variantOnly=0
+process_0.28     y=3875/3875 noiseDiffs=0 variantDiffs=0 variantOnly=0
+process_0.2      y=3942/3942 noiseDiffs=0 variantDiffs=0 variantOnly=0
+process_0.1      y=4027/4027 noiseDiffs=4 variantDiffs=9 variantOnly=9
+     192:SPAN.accent-text 
+       base: 1|none|none|none|0px|0px|radial-gradient(circle at 50% 497.44vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)|visible|none|20.00,-3816.67,100.16,44.80 
+       var : 1|none|none|none|0px|0px|radial-gradient(circle at 50% 497.43vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)|visible|none|20.00,-3816.67,100.16,44.80
+     381:SPAN.star.lit 
+       base: 1|drop-shadow(rgb(177, 18, 18) 0px 0px 8px) drop-shadow(rgba(177, 18, 18, 0.6) 0px 0px 20px) drop-shadow(rgba(177, 18, 18, 0.3) 0px 0px 36px)|matrix(1.14, 0, 0, 1.14, 0, 0)|0px|0px|0px|none|visible|none|167.37,432.22,45.60,45.60 
+       var : undefined
+     382:svg 
+       base: 1|drop-shadow(rgba(255, 255, 255, 0.18) 0px 1px 0px) drop-shadow(rgba(177, 18, 18, 0.45) 0px 4px 10px)|none|none|0px|0px|none|visible|none|167.37,432.22,45.60,45.60 
+       var : 1|none|none|none|0px|0px|none|visible|none|173.77,438.62,32.80,32.80
+     383:path 
+       base: 1|none|none|none|0px|0px|none|visible|none|170.11,434.59,40.13,38.15 
+       var : 1|none|none|none|0px|0px|none|visible|none|175.74,440.32,28.86,27.44
+     384:SPAN.star.lit 
+       base: 1|drop-shadow(rgb(177, 18, 18) 0px 0px 8px) drop-shadow(rgba(177, 18, 18, 0.6) 0px 0px 20px) drop-shadow(rgba(177, 18, 18, 0.3) 0px 0px 36px)|matrix(1.14, 0, 0, 1.14, 0, 0)|0px|0px|0px|none|visible|none|213.37,432.22,45.60,45.60 
+       var : undefined
+     385:svg 
+       base: 1|drop-shadow(rgba(255, 255, 255, 0.18) 0px 1px 0px) drop-shadow(rgba(177, 18, 18, 0.45) 0px 4px 10px)|none|none|0px|0px|none|visible|none|213.37,432.22,45.60,45.60 
+       var : 1|none|none|none|0px|0px|none|visible|none|219.77,438.62,32.80,32.80
+     386:path 
+       base: 1|none|none|none|0px|0px|none|visible|none|216.11,434.59,40.13,38.15 
+       var : 1|none|none|none|0px|0px|none|visible|none|221.74,440.32,28.86,27.44
+     381:SPAN.star 
+       base: undefined 
+       var : 1|drop-shadow(rgba(0, 0, 0, 0) 0px 0px 0px)|matrix(0.82, 0, 0, 0.82, 0, 0)|none|0px|0px|none|visible|none|173.77,438.62,32.80,32.80
+process_0.02     y=4094/4094 noiseDiffs=0 variantDiffs=0 variantOnly=0
+process_-0.05    y=4153/4153 noiseDiffs=0 variantDiffs=0 variantOnly=0
+trust_0.28       y=5031/5031 noiseDiffs=0 variantDiffs=0 variantOnly=0
+trust_0.2        y=5098/5098 noiseDiffs=134 variantDiffs=0 variantOnly=0
+trust_0.1        y=5183/5183 noiseDiffs=149 variantDiffs=131 variantOnly=0
+trust_0.02       y=5250/5250 noiseDiffs=149 variantDiffs=0 variantOnly=0
+trust_-0.05      y=5309/5309 noiseDiffs=149 variantDiffs=0 variantOnly=0
+pricing_0.28     y=6863/6863 noiseDiffs=17 variantDiffs=0 variantOnly=0
+pricing_0.2      y=6930/6930 noiseDiffs=15 variantDiffs=0 variantOnly=0
+pricing_0.1      y=7015/7015 noiseDiffs=15 variantDiffs=0 variantOnly=0
+pricing_0.02     y=7082/7082 noiseDiffs=15 variantDiffs=0 variantOnly=0
+pricing_-0.05    y=7141/7141 noiseDiffs=15 variantDiffs=0 variantOnly=0
+fmid             y=6996/6996 noiseDiffs=15 variantDiffs=0 variantOnly=0
+fend             y=7265/7265 noiseDiffs=15 variantDiffs=0 variantOnly=0
+back0            y=0/0 noiseDiffs=15 variantDiffs=0 variantOnly=0

@@ -1,0 +1,8 @@
+[
+ {"tag":"chat_t600","w":1440,"h":900,"sel":"#chat-card","off":-150,"t":600,"settle":2500},
+ {"tag":"chat_t1200","w":1440,"h":900,"sel":"#chat-card","off":-150,"t":1200,"settle":2500},
+ {"tag":"chat_t1680","w":1440,"h":900,"sel":"#chat-card","off":-150,"t":1680,"settle":2500},
+ {"tag":"foot_t900","w":1440,"h":900,"sel":"#contact","off":-135,"t":900,"settle":2000},
+ {"tag":"foot_t1500","w":1440,"h":900,"sel":"#contact","off":-135,"t":1500,"settle":2000},
+ {"tag":"pricing_final2","w":1440,"h":900,"sel":"#pricing","off":-120,"t":5000,"settle":2500}
+]

@@ -1,0 +1,29 @@
+[
+ {
+  "name": "baseline"
+ },
+ {
+  "name": "d-below",
+  "files": {
+   "/styles.css": "fixes/offscreen-work/styles.d-below.css"
+  }
+ },
+ {
+  "name": "d-onlyhero",
+  "files": {
+   "/styles.css": "fixes/offscreen-work/styles.d-onlyhero.css"
+  }
+ },
+ {
+  "name": "d-nobg",
+  "files": {
+   "/styles.css": "fixes/offscreen-work/styles.d-nobg.css"
+  }
+ },
+ {
+  "name": "cv0",
+  "files": {
+   "/styles.css": "fixes/offscreen-work/styles.cv0.css"
+  }
+ }
+]

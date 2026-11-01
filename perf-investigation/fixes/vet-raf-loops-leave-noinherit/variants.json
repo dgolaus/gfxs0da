@@ -1,0 +1,4 @@
+[
+ {"name":"baseline"},
+ {"name":"leave-noinherit","files":{"/styles.css":"fixes/vet-raf-loops-leave-noinherit/styles.variant.css"}}
+]

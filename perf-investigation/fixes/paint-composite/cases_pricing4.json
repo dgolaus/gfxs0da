@@ -1,0 +1,6 @@
+[
+ {"tag":"pmid2_t0","w":1440,"h":900,"sel":"#pricing","off":-300,"t":0,"settle":1,"waitSel":"#pricing .section-head.is-in"},
+ {"tag":"pmid2_t150","w":1440,"h":900,"sel":"#pricing","off":-300,"t":150,"settle":1,"waitSel":"#pricing .section-head.is-in"},
+ {"tag":"pmid2_t350","w":1440,"h":900,"sel":"#pricing","off":-300,"t":350,"settle":1,"waitSel":"#pricing .section-head.is-in"},
+ {"tag":"pmid2_t600","w":1440,"h":900,"sel":"#pricing","off":-300,"t":600,"settle":1,"waitSel":"#pricing .section-head.is-in"}
+]

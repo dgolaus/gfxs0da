@@ -1,0 +1,210 @@
+{
+  "__noise": {
+    "150": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "300": {
+      "meanAbsDiff": 0.001,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "500": {
+      "meanAbsDiff": 0.009,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "700": {
+      "meanAbsDiff": 0.447,
+      "pctChanged": 0.681,
+      "pctBigChange": 0.652
+    },
+    "900": {
+      "meanAbsDiff": 0.003,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "1100": {
+      "meanAbsDiff": 0.002,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "1400": {
+      "meanAbsDiff": 0.006,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "1700": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "2100": {
+      "meanAbsDiff": 0.001,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "5000": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    }
+  },
+  "paint-composite-stable-layerize": {
+    "150": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "300": {
+      "meanAbsDiff": 0.001,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "500": {
+      "meanAbsDiff": 0.009,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "700": {
+      "meanAbsDiff": 0.447,
+      "pctChanged": 0.681,
+      "pctBigChange": 0.652
+    },
+    "900": {
+      "meanAbsDiff": 0.003,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "1100": {
+      "meanAbsDiff": 0.001,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "1400": {
+      "meanAbsDiff": 0.006,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "1700": {
+      "meanAbsDiff": 0.001,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "2100": {
+      "meanAbsDiff": 0.001,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "5000": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    }
+  },
+  "paint-composite-intro-split": {
+    "150": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "300": {
+      "meanAbsDiff": 0.001,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "500": {
+      "meanAbsDiff": 0.009,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "700": {
+      "meanAbsDiff": 0.448,
+      "pctChanged": 0.681,
+      "pctBigChange": 0.652
+    },
+    "900": {
+      "meanAbsDiff": 0.003,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "1100": {
+      "meanAbsDiff": 0.002,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "1400": {
+      "meanAbsDiff": 0.006,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "1700": {
+      "meanAbsDiff": 0.001,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "2100": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "5000": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    }
+  },
+  "paint-composite-combined": {
+    "150": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "300": {
+      "meanAbsDiff": 0.001,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "500": {
+      "meanAbsDiff": 0.009,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "700": {
+      "meanAbsDiff": 0.447,
+      "pctChanged": 0.681,
+      "pctBigChange": 0.652
+    },
+    "900": {
+      "meanAbsDiff": 0.003,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "1100": {
+      "meanAbsDiff": 0.002,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "1400": {
+      "meanAbsDiff": 0.006,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "1700": {
+      "meanAbsDiff": 0.001,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "2100": {
+      "meanAbsDiff": 0.001,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    },
+    "5000": {
+      "meanAbsDiff": 0,
+      "pctChanged": 0,
+      "pctBigChange": 0
+    }
+  }
+}

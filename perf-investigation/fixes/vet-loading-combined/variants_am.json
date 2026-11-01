@@ -1,0 +1,13 @@
+[
+ {
+  "name": "baseline"
+ },
+ {
+  "name": "amended",
+  "files": {
+   "/index.html": "fixes/vet-loading-combined/index.amended.html",
+   "/boot.js": "fixes/loading/boot.js",
+   "/script.js": "fixes/vet-loading-combined/script.amended.js"
+  }
+ }
+]

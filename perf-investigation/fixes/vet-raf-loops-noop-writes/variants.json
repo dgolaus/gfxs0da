@@ -1,0 +1,4 @@
+[
+ {"name":"baseline"},
+ {"name":"rlnw","files":{"/script.js":"fixes/vet-raf-loops-noop-writes/script.variant.js"}}
+]

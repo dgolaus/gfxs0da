@@ -1,0 +1,14 @@
+[
+ {
+  "name": "baseline_p",
+  "files": {
+   "/styles.css": "fixes/paint-composite/diag.styles.base.paused.css"
+  }
+ },
+ {
+  "name": "split_p",
+  "files": {
+   "/styles.css": "fixes/paint-composite/diag.styles.split.paused.css"
+  }
+ }
+]

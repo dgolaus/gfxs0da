@@ -1,0 +1,20 @@
+[
+ {
+  "name": "baseline",
+  "js": "(function(){var t0=performance.now();function f(){try{document.getAnimations().forEach(function(a){if(a.playState!==\"paused\")a.pause();});}catch(e){} if(performance.now()-t0<15000) requestAnimationFrame(f);} requestAnimationFrame(f);})();"
+ },
+ {
+  "name": "paint-composite-intro-split",
+  "files": {
+   "/styles.css": "fixes/paint-composite/styles.intro-split.css"
+  },
+  "js": "(function(){var t0=performance.now();function f(){try{document.getAnimations().forEach(function(a){if(a.playState!==\"paused\")a.pause();});}catch(e){} if(performance.now()-t0<15000) requestAnimationFrame(f);} requestAnimationFrame(f);})();"
+ },
+ {
+  "name": "paint-composite-intro-split-release",
+  "files": {
+   "/styles.css": "fixes/paint-composite/styles.intro-split-release.css"
+  },
+  "js": "(function(){var t0=performance.now();function f(){try{document.getAnimations().forEach(function(a){if(a.playState!==\"paused\")a.pause();});}catch(e){} if(performance.now()-t0<15000) requestAnimationFrame(f);} requestAnimationFrame(f);})();"
+ }
+]

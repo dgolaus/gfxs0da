@@ -1,0 +1,1462 @@
+{
+ "total": 230,
+ "nonZero": 99,
+ "bad": [
+  {
+   "key": "/_1440_0_0",
+   "cls": "btn btn-ghost btn-sm",
+   "st": "hover",
+   "noise": {
+    "mean": 0.025,
+    "changedPx": 481,
+    "maxd": 1
+   },
+   "d": {
+    "mean": 0.025,
+    "changedPx": 481,
+    "maxd": 1
+   }
+  },
+  {
+   "key": "/_1440_5_0",
+   "cls": "quote",
+   "st": "hover",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.0004,
+    "changedPx": 75,
+    "maxd": 1
+   }
+  },
+  {
+   "key": "/_1440_5_2",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.0012,
+    "changedPx": 68,
+    "maxd": 2.7
+   }
+  },
+  {
+   "key": "/_1440_5_3",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.0043,
+    "changedPx": 62,
+    "maxd": 9
+   }
+  },
+  {
+   "key": "/_1440_5_4",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.0005,
+    "changedPx": 85,
+    "maxd": 1.3
+   }
+  },
+  {
+   "key": "/_1440_6_2",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.0356,
+    "changedPx": 5177,
+    "maxd": 8
+   }
+  },
+  {
+   "key": "/_1440_6_3",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.0049,
+    "changedPx": 104,
+    "maxd": 8.7
+   }
+  },
+  {
+   "key": "/_1440_6_4",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.0008,
+    "changedPx": 143,
+    "maxd": 1.3
+   }
+  },
+  {
+   "key": "/_1440_7_0",
+   "cls": "quote",
+   "st": "hover",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.3706,
+    "changedPx": 5459,
+    "maxd": 28
+   }
+  },
+  {
+   "key": "/_1440_7_2",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.0074,
+    "changedPx": 179,
+    "maxd": 8.7
+   }
+  },
+  {
+   "key": "/_1440_7_3",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.0079,
+    "changedPx": 115,
+    "maxd": 9
+   }
+  },
+  {
+   "key": "/_1440_7_4",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.0027,
+    "changedPx": 208,
+    "maxd": 1.7
+   }
+  },
+  {
+   "key": "/_1440_13_0",
+   "cls": "quote",
+   "st": "hover",
+   "noise": {
+    "mean": 11.7644,
+    "changedPx": 26916,
+    "maxd": 166
+   },
+   "d": {
+    "mean": 0,
+    "changedPx": 4,
+    "maxd": 0.3
+   }
+  },
+  {
+   "key": "/_1440_13_1",
+   "cls": "quote",
+   "st": "hover",
+   "noise": {
+    "mean": 0,
+    "changedPx": 1,
+    "maxd": 0.7
+   },
+   "d": {
+    "mean": 0,
+    "changedPx": 1,
+    "maxd": 0.7
+   }
+  },
+  {
+   "key": "/_1440_13_3",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 12.912,
+    "changedPx": 16419,
+    "maxd": 231.3
+   },
+   "d": {
+    "mean": 12.3992,
+    "changedPx": 21299,
+    "maxd": 229
+   }
+  },
+  {
+   "key": "/_1440_13_4",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 4,
+    "maxd": 0.3
+   },
+   "d": {
+    "mean": 0.0001,
+    "changedPx": 19,
+    "maxd": 0.3
+   }
+  },
+  {
+   "key": "/_1440_14_0",
+   "cls": "quote quote-rubicon",
+   "st": "hover",
+   "noise": {
+    "mean": 8.3671,
+    "changedPx": 27184,
+    "maxd": 95.3
+   },
+   "d": {
+    "mean": 0.0134,
+    "changedPx": 1200,
+    "maxd": 3.7
+   }
+  },
+  {
+   "key": "/_1440_14_1",
+   "cls": "quote quote-rubicon",
+   "st": "hover",
+   "noise": {
+    "mean": 14.6328,
+    "changedPx": 20466,
+    "maxd": 228.7
+   },
+   "d": {
+    "mean": 12.6759,
+    "changedPx": 19361,
+    "maxd": 206.7
+   }
+  },
+  {
+   "key": "/_1440_14_2",
+   "cls": "quote quote-rubicon",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 9.6052,
+    "changedPx": 21385,
+    "maxd": 194.7
+   },
+   "d": {
+    "mean": 0.6068,
+    "changedPx": 1913,
+    "maxd": 114
+   }
+  },
+  {
+   "key": "/_1440_14_3",
+   "cls": "quote quote-rubicon",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 13.4902,
+    "changedPx": 18255,
+    "maxd": 231.3
+   },
+   "d": {
+    "mean": 12.8274,
+    "changedPx": 17626,
+    "maxd": 231.3
+   }
+  },
+  {
+   "key": "/_1440_23_0",
+   "cls": "quote",
+   "st": "hover",
+   "noise": {
+    "mean": 1.91,
+    "changedPx": 40094,
+    "maxd": 71.7
+   },
+   "d": {
+    "mean": 2.3765,
+    "changedPx": 40816,
+    "maxd": 94.3
+   }
+  },
+  {
+   "key": "/_1440_23_1",
+   "cls": "quote",
+   "st": "hover",
+   "noise": {
+    "mean": 0.6519,
+    "changedPx": 7987,
+    "maxd": 40
+   },
+   "d": {
+    "mean": 0.6457,
+    "changedPx": 7987,
+    "maxd": 40
+   }
+  },
+  {
+   "key": "/_1440_23_2",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0.009,
+    "changedPx": 1768,
+    "maxd": 1.3
+   },
+   "d": {
+    "mean": 0.0006,
+    "changedPx": 77,
+    "maxd": 1.7
+   }
+  },
+  {
+   "key": "/_1440_23_3",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0.6342,
+    "changedPx": 7904,
+    "maxd": 39
+   },
+   "d": {
+    "mean": 0.0142,
+    "changedPx": 1544,
+    "maxd": 9
+   }
+  },
+  {
+   "key": "/_1440_23_4",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0.0103,
+    "changedPx": 1873,
+    "maxd": 1.3
+   },
+   "d": {
+    "mean": 0.6307,
+    "changedPx": 7478,
+    "maxd": 39.7
+   }
+  },
+  {
+   "key": "/_1440_24_0",
+   "cls": "quote",
+   "st": "hover",
+   "noise": {
+    "mean": 0.0142,
+    "changedPx": 3002,
+    "maxd": 1.3
+   },
+   "d": {
+    "mean": 0.0148,
+    "changedPx": 3162,
+    "maxd": 1.3
+   }
+  },
+  {
+   "key": "/_1440_24_1",
+   "cls": "quote",
+   "st": "hover",
+   "noise": {
+    "mean": 0.0245,
+    "changedPx": 4132,
+    "maxd": 1.3
+   },
+   "d": {
+    "mean": 0.02,
+    "changedPx": 2987,
+    "maxd": 1.3
+   }
+  },
+  {
+   "key": "/_1440_24_2",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0.0203,
+    "changedPx": 4166,
+    "maxd": 1.3
+   },
+   "d": {
+    "mean": 0.0033,
+    "changedPx": 99,
+    "maxd": 8
+   }
+  },
+  {
+   "key": "/_1440_24_3",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 1.6501,
+    "changedPx": 26393,
+    "maxd": 57.3
+   },
+   "d": {
+    "mean": 0.0269,
+    "changedPx": 4380,
+    "maxd": 9
+   }
+  },
+  {
+   "key": "/_1440_24_4",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0,
+    "changedPx": 2,
+    "maxd": 0.3
+   }
+  },
+  {
+   "key": "/_1440_25_0",
+   "cls": "quote",
+   "st": "hover",
+   "noise": {
+    "mean": 0.0106,
+    "changedPx": 1871,
+    "maxd": 1.3
+   },
+   "d": {
+    "mean": 0.7879,
+    "changedPx": 38235,
+    "maxd": 53.7
+   }
+  },
+  {
+   "key": "/_1440_25_1",
+   "cls": "quote",
+   "st": "hover",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.6352,
+    "changedPx": 11067,
+    "maxd": 63
+   }
+  },
+  {
+   "key": "/_1440_25_2",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0.4881,
+    "changedPx": 11647,
+    "maxd": 32.3
+   },
+   "d": {
+    "mean": 0.5938,
+    "changedPx": 17036,
+    "maxd": 42
+   }
+  },
+  {
+   "key": "/_1440_25_3",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0.003,
+    "changedPx": 349,
+    "maxd": 1
+   },
+   "d": {
+    "mean": 0.002,
+    "changedPx": 97,
+    "maxd": 2.7
+   }
+  },
+  {
+   "key": "/_1440_25_4",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0.5646,
+    "changedPx": 8916,
+    "maxd": 43.7
+   },
+   "d": {
+    "mean": 1.154,
+    "changedPx": 10422,
+    "maxd": 86
+   }
+  },
+  {
+   "key": "/_1440_31_2",
+   "cls": "price-card price-card-feature reveal",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0.0001,
+    "changedPx": 31,
+    "maxd": 0.7
+   },
+   "d": {
+    "mean": 0.0058,
+    "changedPx": 158,
+    "maxd": 8.3
+   }
+  },
+  {
+   "key": "/_1440_31_3",
+   "cls": "price-card price-card-feature reveal",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0.0001,
+    "changedPx": 23,
+    "maxd": 0.7
+   },
+   "d": {
+    "mean": 0.0072,
+    "changedPx": 141,
+    "maxd": 9.3
+   }
+  },
+  {
+   "key": "/_1440_31_4",
+   "cls": "price-card price-card-feature reveal",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0.0001,
+    "changedPx": 28,
+    "maxd": 0.7
+   },
+   "d": {
+    "mean": 0,
+    "changedPx": 6,
+    "maxd": 0.7
+   }
+  },
+  {
+   "key": "/_1440_32_2",
+   "cls": "price-card reveal is-in",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 13,
+    "maxd": 0.7
+   },
+   "d": {
+    "mean": 0.0069,
+    "changedPx": 162,
+    "maxd": 9
+   }
+  },
+  {
+   "key": "/_1440_32_3",
+   "cls": "price-card reveal is-in",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0.0001,
+    "changedPx": 19,
+    "maxd": 0.7
+   },
+   "d": {
+    "mean": 0.0071,
+    "changedPx": 136,
+    "maxd": 9.7
+   }
+  },
+  {
+   "key": "/_1440_33_0",
+   "cls": "price-card reveal is-in",
+   "st": "hover",
+   "noise": {
+    "mean": 0.0001,
+    "changedPx": 20,
+    "maxd": 0.7
+   },
+   "d": {
+    "mean": 0.0002,
+    "changedPx": 34,
+    "maxd": 1
+   }
+  },
+  {
+   "key": "/_1440_33_2",
+   "cls": "price-card reveal is-in",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 14,
+    "maxd": 0.3
+   },
+   "d": {
+    "mean": 0.0065,
+    "changedPx": 156,
+    "maxd": 9.3
+   }
+  },
+  {
+   "key": "/_1440_33_3",
+   "cls": "price-card reveal is-in",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0.0001,
+    "changedPx": 19,
+    "maxd": 0.7
+   },
+   "d": {
+    "mean": 0.0071,
+    "changedPx": 143,
+    "maxd": 9.7
+   }
+  },
+  {
+   "key": "/_1440_33_4",
+   "cls": "price-card reveal is-in",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 8,
+    "maxd": 0.3
+   },
+   "d": {
+    "mean": 0,
+    "changedPx": 1,
+    "maxd": 0.3
+   }
+  },
+  {
+   "key": "/_1440_34_0",
+   "cls": "price-card reveal is-in",
+   "st": "hover",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.0002,
+    "changedPx": 24,
+    "maxd": 1
+   }
+  },
+  {
+   "key": "/_1440_34_2",
+   "cls": "price-card reveal is-in",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.007,
+    "changedPx": 154,
+    "maxd": 9
+   }
+  },
+  {
+   "key": "/_1440_34_3",
+   "cls": "price-card reveal is-in",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.0072,
+    "changedPx": 134,
+    "maxd": 9.3
+   }
+  },
+  {
+   "key": "/_1440_34_4",
+   "cls": "price-card reveal is-in",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0,
+    "changedPx": 3,
+    "maxd": 0.3
+   }
+  },
+  {
+   "key": "/_375_3_2",
+   "cls": "btn btn-primary",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.0038,
+    "changedPx": 145,
+    "maxd": 0.7
+   }
+  },
+  {
+   "key": "/_375_5_0",
+   "cls": "quote",
+   "st": "hover",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "sizeMismatch": "359x195 vs 359x196"
+   }
+  },
+  {
+   "key": "/_375_5_1",
+   "cls": "quote",
+   "st": "hover",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.0001,
+    "changedPx": 6,
+    "maxd": 1.3
+   }
+  },
+  {
+   "key": "/_375_5_2",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 1,
+    "maxd": 0.3
+   },
+   "d": {
+    "mean": 0.0015,
+    "changedPx": 87,
+    "maxd": 3.7
+   }
+  },
+  {
+   "key": "/_375_5_3",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.005,
+    "changedPx": 69,
+    "maxd": 9
+   }
+  },
+  {
+   "key": "/_375_5_4",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "sizeMismatch": "359x196 vs 359x195"
+   }
+  },
+  {
+   "key": "/_375_6_0",
+   "cls": "quote",
+   "st": "hover",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.0003,
+    "changedPx": 12,
+    "maxd": 7
+   }
+  },
+  {
+   "key": "/_375_6_1",
+   "cls": "quote",
+   "st": "hover",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.0001,
+    "changedPx": 5,
+    "maxd": 1
+   }
+  },
+  {
+   "key": "/_375_6_2",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.0056,
+    "changedPx": 166,
+    "maxd": 8
+   }
+  },
+  {
+   "key": "/_375_6_3",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.0056,
+    "changedPx": 111,
+    "maxd": 9
+   }
+  },
+  {
+   "key": "/_375_6_4",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 1,
+    "maxd": 0.3
+   },
+   "d": {
+    "mean": 0.0023,
+    "changedPx": 190,
+    "maxd": 2
+   }
+  },
+  {
+   "key": "/_375_7_0",
+   "cls": "quote",
+   "st": "hover",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.1535,
+    "changedPx": 13877,
+    "maxd": 11.7
+   }
+  },
+  {
+   "key": "/_375_7_1",
+   "cls": "quote",
+   "st": "hover",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "sizeMismatch": "359x151 vs 359x152"
+   }
+  },
+  {
+   "key": "/_375_7_2",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0.0005,
+    "changedPx": 73,
+    "maxd": 1
+   },
+   "d": {
+    "sizeMismatch": "359x152 vs 359x151"
+   }
+  },
+  {
+   "key": "/_375_7_3",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0.0006,
+    "changedPx": 73,
+    "maxd": 1.3
+   },
+   "d": {
+    "sizeMismatch": "359x151 vs 359x152"
+   }
+  },
+  {
+   "key": "/_375_7_4",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "sizeMismatch": "359x152 vs 359x151"
+   }
+  },
+  {
+   "key": "/_375_13_1",
+   "cls": "quote",
+   "st": "hover",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.1406,
+    "changedPx": 90,
+    "maxd": 2
+   }
+  },
+  {
+   "key": "/_375_13_2",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 7.647,
+    "changedPx": 424,
+    "maxd": 59.3
+   }
+  },
+  {
+   "key": "/_375_13_3",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 3.4034,
+    "changedPx": 29,
+    "maxd": 129
+   }
+  },
+  {
+   "key": "/_375_13_4",
+   "cls": "quote",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0.0532,
+    "changedPx": 42,
+    "maxd": 1.3
+   },
+   "d": {
+    "mean": 2.3588,
+    "changedPx": 61,
+    "maxd": 56
+   }
+  },
+  {
+   "key": "/_375_14_0",
+   "cls": "quote quote-rubicon",
+   "st": "hover",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 20.9711,
+    "changedPx": 120,
+    "maxd": 200.7
+   }
+  },
+  {
+   "key": "/_375_14_1",
+   "cls": "quote quote-rubicon",
+   "st": "hover",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 1.9005,
+    "changedPx": 108,
+    "maxd": 25.3
+   }
+  },
+  {
+   "key": "/_375_14_2",
+   "cls": "quote quote-rubicon",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 1.9323,
+    "changedPx": 96,
+    "maxd": 92.3
+   }
+  },
+  {
+   "key": "/_375_14_3",
+   "cls": "quote quote-rubicon",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 5.4329,
+    "changedPx": 83,
+    "maxd": 53.7
+   }
+  },
+  {
+   "key": "/_375_14_4",
+   "cls": "quote quote-rubicon",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 1.6238,
+    "changedPx": 570,
+    "maxd": 4.7
+   }
+  },
+  {
+   "key": "/_375_15_0",
+   "cls": "quote",
+   "st": "hover",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 4.3385,
+    "changedPx": 576,
+    "maxd": 12.3
+   }
+  },
+  {
+   "key": "/_375_121_0",
+   "cls": "price-card price-card-feature reveal",
+   "st": "hover",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.0001,
+    "changedPx": 13,
+    "maxd": 5.3
+   }
+  },
+  {
+   "key": "/_375_121_1",
+   "cls": "price-card price-card-feature reveal",
+   "st": "hover",
+   "noise": {
+    "mean": 0.0005,
+    "changedPx": 184,
+    "maxd": 0.7
+   },
+   "d": {
+    "mean": 0.0005,
+    "changedPx": 190,
+    "maxd": 0.7
+   }
+  },
+  {
+   "key": "/_375_121_2",
+   "cls": "price-card price-card-feature reveal",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0.0004,
+    "changedPx": 175,
+    "maxd": 0.7
+   },
+   "d": {
+    "mean": 0.0436,
+    "changedPx": 13987,
+    "maxd": 8.3
+   }
+  },
+  {
+   "key": "/_375_121_3",
+   "cls": "price-card price-card-feature reveal",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0.0004,
+    "changedPx": 171,
+    "maxd": 0.7
+   },
+   "d": {
+    "mean": 0.0067,
+    "changedPx": 309,
+    "maxd": 9.3
+   }
+  },
+  {
+   "key": "/_375_121_4",
+   "cls": "price-card price-card-feature reveal",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0.0009,
+    "changedPx": 305,
+    "maxd": 1
+   },
+   "d": {
+    "sizeMismatch": "363x408 vs 363x407"
+   }
+  },
+  {
+   "key": "/_375_122_0",
+   "cls": "price-card reveal is-in",
+   "st": "hover",
+   "noise": {
+    "mean": 0.0001,
+    "changedPx": 43,
+    "maxd": 1
+   },
+   "d": {
+    "mean": 0.0278,
+    "changedPx": 8483,
+    "maxd": 8
+   }
+  },
+  {
+   "key": "/_375_122_1",
+   "cls": "price-card reveal is-in",
+   "st": "hover",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "sizeMismatch": "363x407 vs 363x408"
+   }
+  },
+  {
+   "key": "/_375_122_2",
+   "cls": "price-card reveal is-in",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "sizeMismatch": "363x408 vs 363x407"
+   }
+  },
+  {
+   "key": "/_375_122_3",
+   "cls": "price-card reveal is-in",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "sizeMismatch": "363x407 vs 363x408"
+   }
+  },
+  {
+   "key": "/_375_122_4",
+   "cls": "price-card reveal is-in",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.0315,
+    "changedPx": 10748,
+    "maxd": 5.7
+   }
+  },
+  {
+   "key": "/_375_123_0",
+   "cls": "price-card reveal is-in",
+   "st": "hover",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "sizeMismatch": "363x407 vs 363x408"
+   }
+  },
+  {
+   "key": "/_375_123_1",
+   "cls": "price-card reveal is-in",
+   "st": "hover",
+   "noise": {
+    "mean": 1.7172,
+    "changedPx": 95068,
+    "maxd": 172
+   },
+   "d": {
+    "mean": 1.7172,
+    "changedPx": 95068,
+    "maxd": 172
+   }
+  },
+  {
+   "key": "/_375_123_2",
+   "cls": "price-card reveal is-in",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 1.6925,
+    "changedPx": 92470,
+    "maxd": 141.3
+   },
+   "d": {
+    "sizeMismatch": "363x407 vs 363x408"
+   }
+  },
+  {
+   "key": "/_375_123_3",
+   "cls": "price-card reveal is-in",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 1.9413,
+    "changedPx": 97877,
+    "maxd": 172
+   },
+   "d": {
+    "mean": 1.9466,
+    "changedPx": 97898,
+    "maxd": 172
+   }
+  },
+  {
+   "key": "/_375_123_4",
+   "cls": "price-card reveal is-in",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 2.1105,
+    "changedPx": 119451,
+    "maxd": 157
+   },
+   "d": {
+    "mean": 2.1105,
+    "changedPx": 119451,
+    "maxd": 157
+   }
+  },
+  {
+   "key": "/_375_124_1",
+   "cls": "price-card reveal is-in",
+   "st": "hover",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "sizeMismatch": "363x408 vs 363x407"
+   }
+  },
+  {
+   "key": "/_375_124_2",
+   "cls": "price-card reveal is-in",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "sizeMismatch": "363x407 vs 363x408"
+   }
+  },
+  {
+   "key": "/_375_124_3",
+   "cls": "price-card reveal is-in",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "sizeMismatch": "363x408 vs 363x407"
+   }
+  },
+  {
+   "key": "/_375_124_4",
+   "cls": "price-card reveal is-in",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.0319,
+    "changedPx": 11018,
+    "maxd": 4.3
+   }
+  },
+  {
+   "key": "/tos/_1440_1_4",
+   "cls": "btn btn-ghost btn-sm",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.0193,
+    "changedPx": 416,
+    "maxd": 1
+   }
+  },
+  {
+   "key": "/tos/_375_0_1",
+   "cls": "btn btn-ghost btn-sm",
+   "st": "hover",
+   "noise": {
+    "mean": 0.0563,
+    "changedPx": 927,
+    "maxd": 2
+   },
+   "d": {
+    "mean": 0.0563,
+    "changedPx": 927,
+    "maxd": 2
+   }
+  },
+  {
+   "key": "/tos/_375_1_2",
+   "cls": "btn btn-ghost btn-sm",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.0507,
+    "changedPx": 1091,
+    "maxd": 1
+   }
+  },
+  {
+   "key": "/tos/_375_1_4",
+   "cls": "btn btn-ghost btn-sm",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 1.5652,
+    "changedPx": 11050,
+    "maxd": 3
+   },
+   "d": {
+    "mean": 1.5652,
+    "changedPx": 11050,
+    "maxd": 3
+   }
+  },
+  {
+   "key": "/slots/_1440_0_3",
+   "cls": "btn btn-primary btn-lg slots-cta",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0.2967,
+    "changedPx": 7420,
+    "maxd": 6.3
+   },
+   "d": {
+    "mean": 0.2967,
+    "changedPx": 7420,
+    "maxd": 6.3
+   }
+  },
+  {
+   "key": "/slots/_1440_0_4",
+   "cls": "btn btn-primary btn-lg slots-cta",
+   "st": "hover+focus+focus-visible",
+   "noise": {
+    "mean": 0,
+    "changedPx": 0,
+    "maxd": 0
+   },
+   "d": {
+    "mean": 0.0001,
+    "changedPx": 7,
+    "maxd": 0.3
+   }
+  }
+ ],
+ "noiseNonZero": 58
+}

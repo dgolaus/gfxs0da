@@ -1,0 +1,33 @@
+[
+ {
+  "name": "baseline"
+ },
+ {
+  "name": "ctlA",
+  "files": {
+   "/script.js": "fixes/script.ORIGINAL.js",
+   "/styles.css": "fixes/style-invalidation/styles.ORIGINAL.css"
+  }
+ },
+ {
+  "name": "scriptinitA",
+  "files": {
+   "/styles.css": "fixes/style-invalidation/styles.scriptinit.css",
+   "/script.js": "fixes/style-invalidation/script.scriptinit.js"
+  }
+ },
+ {
+  "name": "ctlB",
+  "files": {
+   "/script.js": "fixes/script.ORIGINAL.js",
+   "/styles.css": "fixes/style-invalidation/styles.ORIGINAL.css"
+  }
+ },
+ {
+  "name": "scriptinitB",
+  "files": {
+   "/styles.css": "fixes/style-invalidation/styles.scriptinit.css",
+   "/script.js": "fixes/style-invalidation/script.scriptinit.js"
+  }
+ }
+]

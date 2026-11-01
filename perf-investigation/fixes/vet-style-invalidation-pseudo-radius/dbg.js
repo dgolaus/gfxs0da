@@ -1,0 +1,13 @@
+const fs=require('fs'),path=require('path');
+const puppeteer=require('../node_modules/puppeteer');
+const REPO='..';
+const TYPES={'.js':'application/javascript','.css':'text/css','.json':'application/json','.html':'text/html; charset=utf-8','.webp':'image/webp','.png':'image/png','.svg':'image/svg+xml','.jpg':'image/jpeg','.woff2':'font/woff2'};
+(async()=>{const b=await puppeteer.launch({headless:'new'});const p=await b.newPage();await p.setViewport({width:1440,height:900});
+await p.setRequestInterception(true);
+p.on('request',req=>{const u=new URL(req.url());if(u.host!=='localhost:5173')return req.respond({status:404,body:''});let k=decodeURIComponent(u.pathname);if(k.endsWith('/'))k+='index.html';const f=path.join(REPO,k);if(fs.existsSync(f)&&fs.statSync(f).isFile())return req.respond({status:200,contentType:TYPES[path.extname(k)]||'application/octet-stream',body:fs.readFileSync(f)});return req.respond({status:404,body:''});});
+await p.goto('http://localhost:5173/',{waitUntil:'load'});await new Promise(r=>setTimeout(r,1500));
+const info=await p.evaluate(async()=>{const el=document.querySelectorAll('.btn, .quote, .price-card')[31];const r0=el.getBoundingClientRect();const y=r0.top+scrollY-(innerHeight-r0.height)/2;
+ if(window.lenis)window.lenis.scrollTo(y,{immediate:true,force:true});window.scrollTo({top:y,behavior:'instant'});await new Promise(r=>setTimeout(r,500));
+ const r=el.getBoundingClientRect();const top=document.elementFromPoint(r.left+r.width/2,r.top+r.height/2);
+ return {cls:el.className,y,scrollY,r:[r.left,r.top,r.width,r.height],top:top&&(top.className||top.tagName),html:document.documentElement.className,bodyH:document.body.scrollHeight};});
+console.log(JSON.stringify(info));await p.screenshot({path:'dbg.png'});await b.close();})();

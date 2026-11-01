@@ -1,0 +1,6 @@
+[
+ {"name":"baseline"},
+ {"name":"paint-composite-stable-layerize","files":{"/styles.css":"fixes/paint-composite/styles.stable-layerize.css"}},
+ {"name":"paint-composite-intro-split","files":{"/styles.css":"fixes/paint-composite/styles.intro-split.css"}},
+ {"name":"paint-composite-combined","files":{"/styles.css":"fixes/paint-composite/styles.combined.css"}}
+]

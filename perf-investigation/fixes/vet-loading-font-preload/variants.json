@@ -1,0 +1,3 @@
+[{"name":"baseline"},
+ {"name":"loading-font-preload","files":{"/index.html":"fixes/loading/index.fontpreload.html"}},
+ {"name":"uagated","files":{"/index.html":"fixes/vet-loading-font-preload/index.uagated.html"}}]

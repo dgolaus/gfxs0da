@@ -1,0 +1,216 @@
+
+=== / baseOFF vs varOFF @390x844
+ first view html: "" | ""  body: "bg-red ready" | "bg-red ready"  scrollY 0 0
+ events A: [["t600","","bg-red",{"p":0,"r":71,"n":71}],["before-ready","",{"p":0,"r":71,"n":71}],["after-ready","",{"p":1,"r":70,"n":71}]]
+ events B: [["before-ready","",{"p":1,"r":70,"n":71}],["after-ready","",{"p":1,"r":70,"n":71}],["t600","","bg-red ready",{"p":1,"r":60,"n":61}]]
+ visits A: visits=4.5B+ | visits=0 
+ visits B: visits=4.5B+ | visits=0
+ computed-style diffs first view: 12
+    28:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    28:SCRIPT::before :: running => undefined
+    28:SCRIPT::after :: running => undefined
+    29:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    29:LINK::before :: running => undefined
+    29:LINK::after :: running => undefined
+    28:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    28:LINK::before :: undefined => running
+    28:LINK::after :: undefined => running
+    29:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    29:SCRIPT::before :: undefined => running
+    29:SCRIPT::after :: undefined => running
+ repeat html: "" | ""  scrollY 0 0
+ repeat events A: [["before-ready","",{"p":0,"r":71,"n":71}],["after-ready","",{"p":1,"r":70,"n":71}],["t600","","bg-red ready",{"p":1,"r":60,"n":61}]]
+ repeat events B: [["before-ready","",{"p":1,"r":70,"n":71}],["after-ready","",{"p":1,"r":70,"n":71}],["t600","","bg-red ready",{"p":1,"r":60,"n":61}]]
+ computed-style diffs repeat view: 13
+    28:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    28:SCRIPT::before :: running => undefined
+    28:SCRIPT::after :: running => undefined
+    29:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    29:LINK::before :: running => undefined
+    29:LINK::after :: running => undefined
+    227:SPAN.accent-text :: background-image: radial-gradient(circle at 50% 25.03vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh) => radial-gradient(circle at 50% 25.08vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)
+    28:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    28:LINK::before :: undefined => running
+    28:LINK::after :: undefined => running
+    29:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    29:SCRIPT::before :: undefined => running
+
+=== / baseON vs varON @390x844
+ first view html: "" | ""  body: "bg-red ready" | "bg-red ready"  scrollY 0 0
+ events A: [["t600","","bg-red",{"p":56,"r":9,"n":65}],["before-ready","",{"p":56,"r":6,"n":62}],["after-ready","",{"p":1,"r":63,"n":64}]]
+ events B: [["t600","boot-freeze","bg-red",{"p":56,"r":9,"n":65}],["before-ready","",{"p":1,"r":61,"n":62}],["after-ready","",{"p":1,"r":63,"n":64}]]
+ visits A: visits=4.4B+ | visits=0 
+ visits B: visits=4.3B+ | visits=0
+ computed-style diffs first view: 12
+    28:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    28:SCRIPT::before :: running => undefined
+    28:SCRIPT::after :: running => undefined
+    29:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    29:LINK::before :: running => undefined
+    29:LINK::after :: running => undefined
+    28:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    28:LINK::before :: undefined => running
+    28:LINK::after :: undefined => running
+    29:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    29:SCRIPT::before :: undefined => running
+    29:SCRIPT::after :: undefined => running
+ repeat html: "no-boot" | "no-boot"  scrollY 0 0
+ repeat events A: [["before-ready","no-boot",{"p":1,"r":70,"n":71}],["after-ready","no-boot",{"p":1,"r":70,"n":71}],["t600","no-boot","bg-red ready",{"p":1,"r":60,"n":61}]]
+ repeat events B: [["before-ready","no-boot",{"p":1,"r":70,"n":71}],["after-ready","no-boot",{"p":1,"r":70,"n":71}],["t600","no-boot","bg-red ready",{"p":1,"r":60,"n":61}]]
+ computed-style diffs repeat view: 12
+    28:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    28:SCRIPT::before :: running => undefined
+    28:SCRIPT::after :: running => undefined
+    29:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    29:LINK::before :: running => undefined
+    29:LINK::after :: running => undefined
+    28:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    28:LINK::before :: undefined => running
+    28:LINK::after :: undefined => running
+    29:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    29:SCRIPT::before :: undefined => running
+    29:SCRIPT::after :: undefined => running
+
+=== /#pricing baseOFF vs varOFF @390x844
+ first view html: "" | ""  body: "bg-red ready" | "bg-red ready"  scrollY 5187 5187
+ events A: [["before-ready","",{"p":0,"r":71,"n":71}],["after-ready","",{"p":1,"r":70,"n":71}],["t600","is-scrolling","bg-red ready",{"p":6,"r":78,"n":84}]]
+ events B: [["before-ready","",{"p":1,"r":70,"n":71}],["after-ready","",{"p":1,"r":70,"n":71}],["t600","is-scrolling","bg-red ready",{"p":6,"r":67,"n":73}]]
+ visits A: visits=4.5B+ | visits=0 
+ visits B: visits=4.5B+ | visits=0
+ computed-style diffs first view: 1744
+    28:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    28:SCRIPT::before :: running => undefined
+    28:SCRIPT::after :: running => undefined
+    29:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    29:LINK::before :: running => undefined
+    29:LINK::after :: running => undefined
+    420:SECTION#trust.trust.scroll-fade :: filter: blur(5.752px) => blur(5.608px) , opacity: 0.281 => 0.299 , transform: matrix(1, 0, 0, 1, 0, -17.256) => matrix(1, 0, 0, 1, 0, -16.824) , --leave: 0.719 => 0.701
+    421:DIV.container :: --leave: 0.719 => 0.701
+    422:HEADER.section-head.reveal :: --leave: 0.719 => 0.701
+    423:P.eyebrow :: --leave: 0.719 => 0.701
+    424:SPAN.dash :: --leave: 0.719 => 0.701
+    425:H2 :: --leave: 0.719 => 0.701
+ repeat html: "" | ""  scrollY 5267 5267
+ repeat events A: [["before-ready","",{"p":0,"r":71,"n":71}],["after-ready","",{"p":1,"r":70,"n":71}],["t600","is-scrolling","bg-red ready",{"p":6,"r":78,"n":84}]]
+ repeat events B: [["before-ready","",{"p":1,"r":70,"n":71}],["after-ready","",{"p":1,"r":70,"n":71}],["t600","is-scrolling","bg-red ready",{"p":6,"r":67,"n":73}]]
+ computed-style diffs repeat view: 12
+    28:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    28:SCRIPT::before :: running => undefined
+    28:SCRIPT::after :: running => undefined
+    29:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    29:LINK::before :: running => undefined
+    29:LINK::after :: running => undefined
+    28:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    28:LINK::before :: undefined => running
+    28:LINK::after :: undefined => running
+    29:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    29:SCRIPT::before :: undefined => running
+    29:SCRIPT::after :: undefined => running
+
+=== /#pricing baseON vs varON @390x844
+ first view html: "" | ""  body: "bg-red ready" | "bg-red ready"  scrollY 5187 5187
+ events A: [["t600","is-scrolling","bg-red",{"p":56,"r":22,"n":78}],["before-ready","",{"p":56,"r":10,"n":66}],["after-ready","",{"p":6,"r":62,"n":68}]]
+ events B: [["t600","boot-freeze is-scrolling","bg-red",{"p":56,"r":32,"n":88}],["before-ready","",{"p":6,"r":60,"n":66}],["after-ready","",{"p":6,"r":62,"n":68}]]
+ visits A: visits=4.4B+ | visits=0 
+ visits B: visits=4.4B+ | visits=0
+ computed-style diffs first view: 1744
+    28:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    28:SCRIPT::before :: running => undefined
+    28:SCRIPT::after :: running => undefined
+    29:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    29:LINK::before :: running => undefined
+    29:LINK::after :: running => undefined
+    420:SECTION#trust.trust.scroll-fade :: filter: blur(5.752px) => blur(5.776px) , opacity: 0.281 => 0.278 , transform: matrix(1, 0, 0, 1, 0, -17.256) => matrix(1, 0, 0, 1, 0, -17.328) , --leave: 0.719 => 0.722
+    421:DIV.container :: --leave: 0.719 => 0.722
+    422:HEADER.section-head.reveal :: --leave: 0.719 => 0.722
+    423:P.eyebrow :: --leave: 0.719 => 0.722
+    424:SPAN.dash :: --leave: 0.719 => 0.722
+    425:H2 :: --leave: 0.719 => 0.722
+ repeat html: "" | ""  scrollY 5267 5267
+ repeat events A: [["t600","is-scrolling","bg-red",{"p":56,"r":22,"n":78}],["before-ready","",{"p":56,"r":10,"n":66}],["after-ready","",{"p":6,"r":62,"n":68}]]
+ repeat events B: [["t600","boot-freeze is-scrolling","bg-red",{"p":56,"r":32,"n":88}],["before-ready","",{"p":6,"r":60,"n":66}],["after-ready","",{"p":6,"r":62,"n":68}]]
+ computed-style diffs repeat view: 12
+    28:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    28:SCRIPT::before :: running => undefined
+    28:SCRIPT::after :: running => undefined
+    29:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    29:LINK::before :: running => undefined
+    29:LINK::after :: running => undefined
+    28:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    28:LINK::before :: undefined => running
+    28:LINK::after :: undefined => running
+    29:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    29:SCRIPT::before :: undefined => running
+    29:SCRIPT::after :: undefined => running
+
+=== /tos/ baseOFF vs varOFF @390x844
+ first view html: "" | ""  body: "tos-page ready" | "tos-page ready"  scrollY 0 0
+ events A: [["before-ready","",{"p":0,"r":15,"n":15}],["after-ready","",{"p":0,"r":15,"n":15}],["t600","","tos-page ready",{"p":0,"r":10,"n":10}]]
+ events B: [["before-ready","",{"p":0,"r":15,"n":15}],["after-ready","",{"p":0,"r":15,"n":15}],["t600","","tos-page ready",{"p":0,"r":10,"n":10}]]
+ visits A:  
+ visits B: 
+ computed-style diffs first view: 12
+    22:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    22:SCRIPT::before :: running => undefined
+    22:SCRIPT::after :: running => undefined
+    23:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    23:LINK::before :: running => undefined
+    23:LINK::after :: running => undefined
+    22:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    22:LINK::before :: undefined => running
+    22:LINK::after :: undefined => running
+    23:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    23:SCRIPT::before :: undefined => running
+    23:SCRIPT::after :: undefined => running
+ repeat html: "" | ""  scrollY 0 0
+ repeat events A: [["before-ready","",{"p":0,"r":15,"n":15}],["after-ready","",{"p":0,"r":15,"n":15}],["t600","","tos-page ready",{"p":0,"r":10,"n":10}]]
+ repeat events B: [["before-ready","",{"p":0,"r":15,"n":15}],["after-ready","",{"p":0,"r":15,"n":15}],["t600","","tos-page ready",{"p":0,"r":10,"n":10}]]
+ computed-style diffs repeat view: 12
+    22:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    22:SCRIPT::before :: running => undefined
+    22:SCRIPT::after :: running => undefined
+    23:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    23:LINK::before :: running => undefined
+    23:LINK::after :: running => undefined
+    22:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    22:LINK::before :: undefined => running
+    22:LINK::after :: undefined => running
+    23:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    23:SCRIPT::before :: undefined => running
+    23:SCRIPT::after :: undefined => running
+
+=== /tos/ baseON vs varON @390x844
+ first view html: "" | ""  body: "tos-page ready" | "tos-page ready"  scrollY 0 0
+ events A: [["t600","","tos-page",{"p":9,"r":5,"n":14}],["before-ready","",{"p":9,"r":5,"n":14}],["after-ready","",{"p":0,"r":16,"n":16}]]
+ events B: [["t600","boot-freeze","tos-page",{"p":9,"r":5,"n":14}],["before-ready","",{"p":0,"r":14,"n":14}],["after-ready","",{"p":0,"r":16,"n":16}]]
+ visits A:  
+ visits B: 
+ computed-style diffs first view: 12
+    22:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    22:SCRIPT::before :: running => undefined
+    22:SCRIPT::after :: running => undefined
+    23:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    23:LINK::before :: running => undefined
+    23:LINK::after :: running => undefined
+    22:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    22:LINK::before :: undefined => running
+    22:LINK::after :: undefined => running
+    23:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    23:SCRIPT::before :: undefined => running
+    23:SCRIPT::after :: undefined => running
+ repeat html: "no-boot" | "no-boot"  scrollY 0 0
+ repeat events A: [["before-ready","no-boot",{"p":0,"r":15,"n":15}],["after-ready","no-boot",{"p":0,"r":15,"n":15}],["t600","no-boot","tos-page ready",{"p":0,"r":10,"n":10}]]
+ repeat events B: [["before-ready","no-boot",{"p":0,"r":15,"n":15}],["after-ready","no-boot",{"p":0,"r":15,"n":15}],["t600","no-boot","tos-page ready",{"p":0,"r":10,"n":10}]]
+ computed-style diffs repeat view: 12
+    22:SCRIPT :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    22:SCRIPT::before :: running => undefined
+    22:SCRIPT::after :: running => undefined
+    23:LINK :: accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm => undefined
+    23:LINK::before :: running => undefined
+    23:LINK::after :: running => undefined
+    22:LINK :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    22:LINK::before :: undefined => running
+    22:LINK::after :: undefined => running
+    23:SCRIPT :: undefined => accent-color:auto;align-content:normal;align-items:normal;align-self:auto;alignm
+    23:SCRIPT::before :: undefined => running
+    23:SCRIPT::after :: undefined => running

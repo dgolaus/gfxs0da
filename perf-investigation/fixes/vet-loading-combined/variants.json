@@ -1,0 +1,7 @@
+[
+  {"name":"baseline"},
+  {"name":"loading-combined","files":{
+    "/index.html":"fixes/loading/index.combined.html",
+    "/boot.js":"fixes/loading/boot.js",
+    "/script.js":"fixes/loading/script.combined.js"}}
+]

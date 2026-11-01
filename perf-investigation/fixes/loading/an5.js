@@ -1,0 +1,15 @@
+const fs=require('fs');
+const file=process.argv[2]; const want=+process.argv[3];
+const raw=JSON.parse(fs.readFileSync(file,'utf8'));
+const ev=raw.traceEvents||raw;
+const meta=ev.filter(e=>e.ph==='M'&&e.name==='thread_name');
+const mains=meta.filter(m=>m.args&&m.args.name==='CrRendererMain').map(m=>m.pid+':'+m.tid);
+const cnt={};ev.forEach(e=>{const k=e.pid+':'+e.tid;if(mains.includes(k)&&e.name==='Layout')cnt[k]=(cnt[k]||0)+1});
+const main=Object.entries(cnt).sort((a,b)=>b[1]-a[1])[0][0];
+const isMain=e=>(e.pid+':'+e.tid)===main;
+const t0=Math.min(...ev.filter(e=>isMain(e)&&e.ts).map(e=>e.ts));
+const M=ev.filter(e=>isMain(e)&&e.ts).sort((a,b)=>a.ts-b.ts);
+const t=M.filter(e=>e.name==='RunTask'&&e.ph==='X'&&e.dur>5000).sort((a,b)=>Math.abs((a.ts-t0)/1000-want)-Math.abs((b.ts-t0)/1000-want))[0];
+console.log('task',((t.ts-t0)/1000).toFixed(0),(t.dur/1000).toFixed(1));
+const kids=M.filter(e=>e.ts>=t.ts&&e.ts<=t.ts+t.dur&&e!==t&&e.ph==='X'&&(e.dur||0)>500);
+for(const k of kids.slice(0,60)) console.log(((k.ts-t0)/1000).toFixed(1),(k.dur/1000).toFixed(1),k.name,JSON.stringify(k.args).slice(0,200));

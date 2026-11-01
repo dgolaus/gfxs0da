@@ -1,0 +1,169 @@
+{
+ "errs": {
+  "base": [],
+  "var": []
+ },
+ "steps": [
+  {
+   "name": "y0",
+   "noiseProbe": [],
+   "varProbe": [],
+   "baseRootInline": "--nav-pill: 0.000; --nav-bar-vis: 1.000; --nav-pill-vis: 0.000;",
+   "varRootInline": null,
+   "baseProbe": {
+    "scrollY": 0,
+    "rootInline": "--nav-pill: 0.000; --nav-bar-vis: 1.000; --nav-pill-vis: 0.000;",
+    "rootVars": [
+     0,
+     1,
+     0
+    ],
+    "secs": [
+     "about|about scroll-fade||0.000|1|none|none|opacity, filter, transform",
+     "process|process scroll-fade||0.000|1|none|none|opacity, filter, transform",
+     "trust|trust scroll-fade||0.000|1|none|none|opacity, filter, transform",
+     "pricing|pricing scroll-fade||0.000|1|none|none|opacity, filter, transform",
+     "contact|cfooter-clip scroll-fade||0.000|1|none|none|opacity, filter, transform"
+    ],
+    "fp": [
+     "1",
+     "1.000"
+    ],
+    "tracks": [
+     "8:4",
+     "10:5",
+     "8:4"
+    ],
+    "accentBg": [
+     "radial-gradient(circle at 50% 10.19vh, r|radial-gradient(circle at 50% 10.19vh, r",
+     "radial-gradient(circle at 50% -248.99vh,|radial-gradient(circle at 50% -248.99vh,"
+    ]
+   }
+  },
+  {
+   "name": "y200",
+   "noiseProbe": [],
+   "varProbe": [],
+   "baseRootInline": "--nav-pill: 0.605; --nav-bar-vis: 0.093; --nav-pill-vis: 0.610;",
+   "varRootInline": "--nav-pill: 0.605; --nav-bar-vis: 0.093; --nav-pill-vis: 0.610;"
+  },
+  {
+   "name": "about_mid",
+   "noiseProbe": [],
+   "varProbe": [],
+   "baseRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+   "varRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "max": 1
+   },
+   "diff": {
+    "mad": 0,
+    "pct": 0,
+    "max": 0
+   }
+  },
+  {
+   "name": "process_mid",
+   "noiseProbe": [],
+   "varProbe": [],
+   "baseRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+   "varRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;"
+  },
+  {
+   "name": "trust_mid",
+   "noiseProbe": [],
+   "varProbe": [],
+   "baseRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+   "varRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;"
+  },
+  {
+   "name": "pricing_mid",
+   "noiseProbe": [],
+   "varProbe": [],
+   "baseRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+   "varRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "max": 0
+   },
+   "diff": {
+    "mad": 0,
+    "pct": 0,
+    "max": 0
+   },
+   "baseProbe": {
+    "scrollY": 5229,
+    "rootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+    "rootVars": [
+     1,
+     0,
+     1
+    ],
+    "secs": [
+     "about|about scroll-fade||0.000|1|none|none|opacity, filter, transform",
+     "process|process scroll-fade||0.000|1|none|none|opacity, filter, transform",
+     "trust|trust scroll-fade||0.000|1|none|none|opacity, filter, transform",
+     "pricing|pricing scroll-fade||0.000|1|none|none|opacity, filter, transform",
+     "contact|cfooter-clip scroll-fade||0.000|1|none|none|opacity, filter, transform"
+    ],
+    "fp": [
+     "1",
+     "1.000"
+    ],
+    "tracks": [
+     "8:4",
+     "10:5",
+     "8:4"
+    ],
+    "accentBg": [
+     "radial-gradient(circle at 50% 591.19vh, |radial-gradient(circle at 50% 591.19vh, ",
+     "radial-gradient(circle at 50% 332.01vh, |radial-gradient(circle at 50% 332.01vh, "
+    ]
+   }
+  },
+  {
+   "name": "end",
+   "noiseProbe": [],
+   "varProbe": [],
+   "baseRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+   "varRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "max": 0
+   },
+   "diff": {
+    "mad": 0,
+    "pct": 0,
+    "max": 0
+   }
+  },
+  {
+   "name": "back_trust",
+   "noiseProbe": [],
+   "varProbe": [],
+   "baseRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;",
+   "varRootInline": "--nav-pill: 1.000; --nav-bar-vis: 0.000; --nav-pill-vis: 1.000;"
+  },
+  {
+   "name": "back_top",
+   "noiseProbe": [],
+   "varProbe": [],
+   "baseRootInline": "--nav-pill: 0.000; --nav-bar-vis: 1.000; --nav-pill-vis: 0.000;",
+   "varRootInline": "--nav-pill: 0.000; --nav-bar-vis: 1.000; --nav-pill-vis: 0.000;",
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "max": 0
+   },
+   "diff": {
+    "mad": 0,
+    "pct": 0,
+    "max": 0
+   }
+  }
+ ]
+}

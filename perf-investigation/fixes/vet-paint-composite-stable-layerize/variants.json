@@ -1,0 +1,4 @@
+[
+ {"name":"baseline"},
+ {"name":"stable","files":{"/styles.css":"fixes/paint-composite/styles.stable-layerize.css"}}
+]

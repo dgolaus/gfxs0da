@@ -1,0 +1,7 @@
+[
+ {"name":"b_none","css":"*,*::before,*::after{animation-play-state:paused!important}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"},
+ {"name":"b_particles","css":"*:not(.particle),*::before,*::after{animation-play-state:paused!important}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"},
+ {"name":"b_quotes","css":"*:not(.quote),*::before,*::after{animation-play-state:paused!important}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"},
+ {"name":"b_rows","css":"*:not(.bg-row-track),*::before,*::after{animation-play-state:paused!important}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"},
+ {"name":"b_beams","css":"*:not(.site-bg > i),*::before,*::after{animation-play-state:paused!important}","js":"Object.defineProperty(CSSStyleDeclaration.prototype,'backgroundImage',{set(){},get(){return ''},configurable:true});"}
+]

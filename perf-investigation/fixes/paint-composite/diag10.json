@@ -1,0 +1,7 @@
+[
+ {"name":"baseline"},
+ {"name":"f_section","css":"#pricing{contain:paint}"},
+ {"name":"f_grid","css":".pricing-grid{contain:paint}"},
+ {"name":"f_section_ocm","css":"#pricing{contain:paint;overflow-clip-margin:60px}"},
+ {"name":"x_noprice","css":".pricing-grid .price-card{animation-play-state:paused!important}"}
+]

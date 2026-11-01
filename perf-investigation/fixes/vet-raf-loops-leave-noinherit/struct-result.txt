@@ -1,0 +1,31 @@
+
+== baseline rep 0: recalcN=5 recalcElems=640 recalcMs=268.3 layoutMs=1780.7 scriptEvalMs=0
+
+== leave-noinherit rep 0: recalcN=5 recalcElems=1032 recalcMs=551.8 layoutMs=2681.1 scriptEvalMs=0
+
+== baseline rep 1: recalcN=16 recalcElems=3667 recalcMs=1141.9 layoutMs=1703.9 scriptEvalMs=668.4
+    script.js:975:update elems=660 211.7ms @2778
+    script.js:975:update elems=23 1.4ms @2991
+    script.js:975:update elems=65 4.0ms @2992
+    script.js:975:update elems=408 112.7ms @3002
+    script.js:975:update elems=98 2.8ms @3115
+
+== leave-noinherit rep 1: recalcN=14 recalcElems=2143 recalcMs=950.6 layoutMs=2005 scriptEvalMs=1787.9
+    script.js:975:update elems=40 1.9ms @3434
+    script.js:975:update elems=2 0.1ms @3436
+    script.js:975:update elems=2 0.1ms @3436
+    script.js:975:update elems=2 0.0ms @3436
+    script.js:975:update elems=2 0.0ms @3437
+
+== baseline rep 2: recalcN=22 recalcElems=3894 recalcMs=961.7 layoutMs=1186.9 scriptEvalMs=1775.1
+    script.js:975:update elems=660 195.6ms @2636
+    script.js:975:update elems=23 5.5ms @2832
+    script.js:975:update elems=65 12.9ms @2840
+    script.js:975:update elems=408 67.9ms @2854
+    script.js:975:update elems=98 59.2ms @2922
+
+== leave-noinherit rep 2: recalcN=8 recalcElems=1072 recalcMs=354.5 layoutMs=2099.1 scriptEvalMs=0
+
+SUMMARY
+baseline {"recalcElems":3667,"recalcMs":961.7,"layoutMs":1703.9,"scriptEvalMs":668.4,"all":[[640,268.3,0],[3667,1141.9,668.4],[3894,961.7,1775.1]]}
+leave-noinherit {"recalcElems":1072,"recalcMs":551.8,"layoutMs":2099.1,"scriptEvalMs":0,"all":[[1032,551.8,0],[2143,950.6,1787.9],[1072,354.5,0]]}

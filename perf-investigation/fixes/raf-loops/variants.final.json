@@ -1,0 +1,24 @@
+[
+ {
+  "name": "baseline"
+ },
+ {
+  "name": "raf-loops-noop-writes-plus-leave",
+  "files": {
+   "/script.js": "fixes/raf-loops/script.raf-loops.js",
+   "/styles.css": "fixes/raf-loops/styles.raf-loops.css"
+  }
+ },
+ {
+  "name": "raf-loops-noop-writes",
+  "files": {
+   "/script.js": "fixes/raf-loops/script.raf-loops.js"
+  }
+ },
+ {
+  "name": "raf-loops-leave-noinherit",
+  "files": {
+   "/styles.css": "fixes/raf-loops/styles.raf-loops.css"
+  }
+ }
+]

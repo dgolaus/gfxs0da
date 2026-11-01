@@ -1,0 +1,3 @@
+[{"name":"baseline"},
+ {"name":"cv-all","css":"#main > section.about, #main > section.process, #main > section.trust, #main > section.pricing { content-visibility: auto; contain-intrinsic-size: auto 1440px auto 700px; } #contact { content-visibility: auto; contain-intrinsic-size: auto 1440px auto 900px; }"}
+]

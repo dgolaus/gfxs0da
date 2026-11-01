@@ -1,0 +1,8 @@
+[
+ {"tag":"pricing_top_t0","w":1440,"h":900,"sel":"#pricing","off":-300,"t":0,"settle":400},
+ {"tag":"pricing_top_t150","w":1440,"h":900,"sel":"#pricing","off":-300,"t":150,"settle":400},
+ {"tag":"pricing_top_t400","w":1440,"h":900,"sel":"#pricing","off":-300,"t":400,"settle":400},
+ {"tag":"pricing_final","w":1440,"h":900,"sel":"#pricing","off":-120,"t":null,"settle":2500},
+ {"tag":"pricing_hover","w":1440,"h":900,"sel":"#pricing","off":-120,"t":null,"settle":2500,"hover":".pricing-grid .price-card:nth-child(2)"},
+ {"tag":"pricing_mobile","w":390,"h":844,"sel":"#pricing","off":-60,"t":null,"settle":2500}
+]
