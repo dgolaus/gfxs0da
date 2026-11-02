@@ -4,7 +4,7 @@ const fs = require('fs'); const path = require('path');
 const { L, withPage, compare, out } = require('./dv');
 const [vp, ...vars] = process.argv.slice(2);
 const [W, H] = vp.split('x').map(Number);
-const OUT = out(`pricing_${vp}`);
+const OUT = out(`pricing_${vp}${process.env.TAG || ''}`);
 const PHASES = [0, 1100, 2200, 3300, 4400, 5500, 6600, 7700];
 const LEAVES = [0, 0.05, 0.15, 0.3, 0.5, 0.7, 0.85, 1];
 
@@ -30,7 +30,7 @@ async function run(v, label) {
     await p.mouse.move(W - 3, 3);
     const g = await p.evaluate(() => { const r = document.getElementById('pricing').getBoundingClientRect(); return { top: r.top + scrollY, bottom: r.bottom + scrollY, max: document.documentElement.scrollHeight - innerHeight }; });
     const shots = [];
-    const shoot = async (key, clip, meta) => { if (meta && meta.__contain !== undefined) { shots.contain = meta.__contain; delete meta.__contain; } const f = path.join(OUT, `${label}_${key}.png`); await p.screenshot(clip ? { path: f, clip } : { path: f }); shots.push({ key, f, meta }); };
+    const shoot = async (key, clip, meta) => { if (meta && meta.__contain !== undefined) { shots.contain = meta.__contain; delete meta.__contain; } const f = path.join(OUT, `${label}_${key}.png`); const so = await p.evaluate(() => [scrollX, scrollY]); await p.screenshot(clip ? { path: f, clip: { ...clip, x: clip.x + so[0], y: clip.y + so[1] }, captureBeyondViewport: false } : { path: f }); /* v2: clip is document-relative in CDP */ shots.push({ key, f, meta }); };
     // top band: section top at 45% of viewport
     await scrollTo(p, Math.round(g.top - H * 0.45));
     for (const ph of PHASES) { const m = await freeze(p, ph); await L.w8(150); await shoot(`top_ph${ph}`, band(m.top, H), m); await thaw(p); }

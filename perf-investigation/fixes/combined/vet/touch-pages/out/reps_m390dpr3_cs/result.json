@@ -1,0 +1,88 @@
+{
+ "log": [
+  {
+   "r": [
+    198.453125,
+    404.109375,
+    121.96875,
+    50.390625
+   ],
+   "v": "baseline",
+   "h": "c358cd4a",
+   "lenis": false,
+   "rect": "198.453,404.109,121.969,50.391"
+  },
+  {
+   "r": [
+    198.453125,
+    404.109375,
+    121.96875,
+    50.390625
+   ],
+   "v": "combined",
+   "h": "b9c1de05",
+   "lenis": false,
+   "rect": "198.453,404.109,121.969,50.391"
+  },
+  {
+   "r": [
+    198.453125,
+    404.109375,
+    121.96875,
+    50.390625
+   ],
+   "v": "baseline",
+   "h": "c358cd4a",
+   "lenis": false,
+   "rect": "198.453,404.109,121.969,50.391"
+  },
+  {
+   "r": [
+    198.453125,
+    404.109375,
+    121.96875,
+    50.390625
+   ],
+   "v": "combined",
+   "h": "b9c1de05",
+   "lenis": false,
+   "rect": "198.453,404.109,121.969,50.391"
+  },
+  {
+   "r": [
+    198.453125,
+    404.109375,
+    121.96875,
+    50.390625
+   ],
+   "v": "baseline",
+   "h": "c358cd4a",
+   "lenis": false,
+   "rect": "198.453,404.109,121.969,50.391"
+  },
+  {
+   "r": [
+    198.453125,
+    404.109375,
+    121.96875,
+    50.390625
+   ],
+   "v": "combined",
+   "h": "b9c1de05",
+   "lenis": false,
+   "rect": "198.453,404.109,121.969,50.391"
+  }
+ ],
+ "sum": {
+  "baseline": {
+   "c358cd4a": 3
+  },
+  "combined": {
+   "b9c1de05": 3
+  }
+ },
+ "hashes": {
+  "c358cd4a": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/touch-pages/out/reps_m390dpr3_cs/state_c358cd4a.png",
+  "b9c1de05": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/touch-pages/out/reps_m390dpr3_cs/state_b9c1de05.png"
+ }
+}

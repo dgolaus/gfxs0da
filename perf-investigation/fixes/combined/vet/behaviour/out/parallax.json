@@ -1,0 +1,248 @@
+[
+ {
+  "v": "baseline",
+  "env": {
+   "lenis": true,
+   "hoverNone": false,
+   "reduced": false,
+   "iw": 1440,
+   "ih": 900
+  },
+  "out": [
+   {
+    "x": 100,
+    "y": 100,
+    "mid": [
+     "1.2px 0.63px",
+     "1.54px 0.8px",
+     "1.85px 0.96px",
+     "2.42px 1.25px",
+     "2.67px 1.38px",
+     "2.91px 1.51px"
+    ],
+    "fin": "5.3px 2.74px"
+   },
+   {
+    "x": 1340,
+    "y": 800,
+    "mid": [
+     "1.1px 0.57px",
+     "0.61px 0.31px",
+     "0.61px 0.31px",
+     "0.14px 0.07px",
+     "-0.29px -0.15px",
+     "-0.69px -0.36px"
+    ],
+    "fin": "-4.68px -2.42px"
+   },
+   {
+    "x": 720,
+    "y": 450,
+    "mid": [
+     "-3.4px -1.76px",
+     "-3.4px -1.76px",
+     "-3.16px -1.63px",
+     "-2.94px -1.52px",
+     "-2.74px -1.41px",
+     "-2.54px -1.31px"
+    ],
+    "fin": "-0.69px -0.36px"
+   },
+   {
+    "x": 200,
+    "y": 700,
+    "mid": [
+     "1.26px -0.9px",
+     "1.77px -1.07px",
+     "2px -1.16px",
+     "2.41px -1.3px",
+     "2.6px -1.36px",
+     "2.77px -1.42px"
+    ],
+    "fin": "4.48px -2.02px"
+   },
+   {
+    "x": 1200,
+    "y": 150,
+    "mid": [
+     "1.65px -0.55px",
+     "0.79px -0.12px",
+     "0.41px 0.08px",
+     "-0.27px 0.43px",
+     "-0.58px 0.58px",
+     "-0.87px 0.73px"
+    ],
+    "fin": "-3.95px 2.3px"
+   }
+  ],
+  "afterLeave": "-0.6px 0.3px",
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+ },
+ {
+  "v": "baseline",
+  "env": {
+   "lenis": true,
+   "hoverNone": false,
+   "reduced": false,
+   "iw": 1440,
+   "ih": 900
+  },
+  "out": [
+   {
+    "x": 100,
+    "y": 100,
+    "mid": [
+     "1.54px 0.8px",
+     "1.85px 0.96px",
+     "2.67px 1.38px",
+     "2.91px 1.51px",
+     "3.12px 1.62px",
+     "3.33px 1.72px"
+    ],
+    "fin": "5.35px 2.76px"
+   },
+   {
+    "x": 1340,
+    "y": 800,
+    "mid": [
+     "1.27px 0.66px",
+     "1.27px 0.66px",
+     "0.28px 0.15px",
+     "0.28px 0.15px",
+     "-0.16px -0.08px",
+     "-0.95px -0.49px"
+    ],
+    "fin": "-4.65px -2.4px"
+   },
+   {
+    "x": 720,
+    "y": 450,
+    "mid": [
+     "-3.38px -1.75px",
+     "-2.93px -1.51px",
+     "-2.72px -1.41px",
+     "-2.53px -1.31px",
+     "-2.35px -1.22px",
+     "-2.04px -1.05px"
+    ],
+    "fin": "-0.41px -0.21px"
+   },
+   {
+    "x": 200,
+    "y": 700,
+    "mid": [
+     "1.4px -0.82px",
+     "1.9px -1.01px",
+     "2.12px -1.1px",
+     "2.32px -1.17px",
+     "2.69px -1.32px",
+     "2.86px -1.38px"
+    ],
+    "fin": "4.58px -2.04px"
+   },
+   {
+    "x": 1200,
+    "y": 150,
+    "mid": [
+     "1.7px -0.56px",
+     "0.84px -0.13px",
+     "0.45px 0.07px",
+     "-0.55px 0.58px",
+     "-0.84px 0.72px",
+     "-1.11px 0.86px"
+    ],
+    "fin": "-3.77px 2.21px"
+   }
+  ],
+  "afterLeave": "-0.43px 0.22px",
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+ },
+ {
+  "v": "combined",
+  "env": {
+   "lenis": true,
+   "hoverNone": false,
+   "reduced": false,
+   "iw": 1440,
+   "ih": 900
+  },
+  "out": [
+   {
+    "x": 100,
+    "y": 100,
+    "mid": [
+     "1.85px 0.96px",
+     "2.42px 1.25px",
+     "2.67px 1.38px",
+     "2.91px 1.51px",
+     "3.12px 1.62px",
+     "3.33px 1.72px"
+    ],
+    "fin": "5.3px 2.74px"
+   },
+   {
+    "x": 1340,
+    "y": 800,
+    "mid": [
+     "1.79px 0.93px",
+     "1.24px 0.64px",
+     "-0.18px -0.09px",
+     "-0.18px -0.09px",
+     "-0.59px -0.3px",
+     "-0.97px -0.5px"
+    ],
+    "fin": "-5px -2.58px"
+   },
+   {
+    "x": 720,
+    "y": 450,
+    "mid": [
+     "-3.57px -1.84px",
+     "-3.32px -1.71px",
+     "-2.87px -1.48px",
+     "-2.48px -1.28px",
+     "-2.31px -1.19px",
+     "-2px -1.03px"
+    ],
+    "fin": "-0.58px -0.3px"
+   },
+   {
+    "x": 200,
+    "y": 700,
+    "mid": [
+     "1.31px -0.87px",
+     "1.58px -0.96px",
+     "1.58px -0.96px",
+     "1.82px -1.05px",
+     "2.05px -1.13px",
+     "2.45px -1.28px"
+    ],
+    "fin": "4.53px -2.03px"
+   },
+   {
+    "x": 1200,
+    "y": 150,
+    "mid": [
+     "1.67px -0.56px",
+     "0.82px -0.12px",
+     "0.08px 0.25px",
+     "-0.26px 0.42px",
+     "-0.85px 0.73px",
+     "-1.12px 0.86px"
+    ],
+    "fin": "-3.89px 2.27px"
+   }
+  ],
+  "afterLeave": "-0.44px 0.22px",
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+ }
+]

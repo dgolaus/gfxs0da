@@ -1,0 +1,2011 @@
+{
+ "runs": [
+  {
+   "v": "baseline",
+   "rep": 0,
+   "initial": {
+    "html": [
+     "0.000",
+     "1.000",
+     "0.000"
+    ],
+    "nav": [
+     "",
+     "",
+     ""
+    ]
+   },
+   "clicks": [
+    {
+     "href": "#work",
+     "finSy": 821,
+     "expect": 821,
+     "durMs": 1325,
+     "frames": 39,
+     "clickErr": null,
+     "hash": "#work",
+     "htmlInline": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "navInline": [
+      "",
+      "",
+      ""
+     ],
+     "navMismatchFrames": "1/39",
+     "accentLerpViolations": "0/76",
+     "accentMaxResidualVh": 0.089,
+     "parentInline": [
+      "set"
+     ],
+     "parentComputed": [
+      "none"
+     ],
+     "childComputedNone": 0,
+     "finalNav": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "finalLook": [
+      "10px",
+      "0",
+      "1",
+      "24px 11px",
+      "1 matrix(1, 0, 0, 1, -24, 0)",
+      "1 matrix(1, 0, 0, 1, 24, 0)",
+      true
+     ],
+     "finalAcc": [
+      "radial-gradient(circle at 50% 98.65vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "radial-gradient(circle at 50% -162.53vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)"
+     ],
+     "distinctNavStates": 9,
+     "linkVis": [
+      "1",
+      "visible",
+      "auto",
+      35.53125
+     ]
+    },
+    {
+     "href": "#about",
+     "finSy": 1925,
+     "expect": 1924.953125,
+     "durMs": 1266,
+     "frames": 32,
+     "clickErr": null,
+     "hash": "#about",
+     "htmlInline": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "navInline": [
+      "",
+      "",
+      ""
+     ],
+     "navMismatchFrames": "0/32",
+     "accentLerpViolations": "5/62",
+     "accentMaxResidualVh": 0.736,
+     "parentInline": [
+      "set"
+     ],
+     "parentComputed": [
+      "none"
+     ],
+     "childComputedNone": 0,
+     "finalNav": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "finalLook": [
+      "10px",
+      "0",
+      "1",
+      "24px 11px",
+      "1 matrix(1, 0, 0, 1, -24, 0)",
+      "1 matrix(1, 0, 0, 1, 24, 0)",
+      true
+     ],
+     "finalAcc": [
+      "radial-gradient(circle at 50% 216.78vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "radial-gradient(circle at 50% -42.56vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)"
+     ],
+     "distinctNavStates": 10,
+     "linkVis": [
+      "0",
+      "visible",
+      "auto",
+      40.578125
+     ]
+    },
+    {
+     "href": "#trust",
+     "finSy": 3340,
+     "expect": 3340.03125,
+     "durMs": 1279,
+     "frames": 23,
+     "clickErr": null,
+     "hash": "#trust",
+     "htmlInline": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "navInline": [
+      "",
+      "",
+      ""
+     ],
+     "navMismatchFrames": "0/23",
+     "accentLerpViolations": "7/44",
+     "accentMaxResidualVh": 0.953,
+     "parentInline": [
+      "set"
+     ],
+     "parentComputed": [
+      "none"
+     ],
+     "childComputedNone": 0,
+     "finalNav": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "finalLook": [
+      "10px",
+      "0",
+      "1",
+      "24px 11px",
+      "1 matrix(1, 0, 0, 1, -24, 0)",
+      "1 matrix(1, 0, 0, 1, 24, 0)",
+      true
+     ],
+     "finalAcc": [
+      "radial-gradient(circle at 50% 360.91vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "radial-gradient(circle at 50% 103.48vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)"
+     ],
+     "distinctNavStates": 11,
+     "linkVis": [
+      "0",
+      "visible",
+      "auto",
+      34.84375
+     ]
+    },
+    {
+     "href": "#pricing",
+     "finSy": 4549,
+     "expect": 4548.515625,
+     "durMs": 1322,
+     "frames": 28,
+     "clickErr": null,
+     "hash": "#pricing",
+     "htmlInline": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "navInline": [
+      "",
+      "",
+      ""
+     ],
+     "navMismatchFrames": "0/28",
+     "accentLerpViolations": "5/54",
+     "accentMaxResidualVh": 0.885,
+     "parentInline": [
+      "set"
+     ],
+     "parentComputed": [
+      "none"
+     ],
+     "childComputedNone": 0,
+     "finalNav": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "finalLook": [
+      "10px",
+      "0",
+      "1",
+      "24px 11px",
+      "1 matrix(1, 0, 0, 1, -24, 0)",
+      "1 matrix(1, 0, 0, 1, 24, 0)",
+      true
+     ],
+     "finalAcc": [
+      "radial-gradient(circle at 50% 1141.68vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "radial-gradient(circle at 50% 247.67vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)"
+     ],
+     "distinctNavStates": 11,
+     "linkVis": [
+      "0",
+      "visible",
+      "auto",
+      47.234375
+     ]
+    },
+    {
+     "href": "#about",
+     "finSy": 1901,
+     "expect": 1900.953125,
+     "durMs": 1324,
+     "frames": 33,
+     "clickErr": null,
+     "hash": "#about",
+     "htmlInline": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "navInline": [
+      "",
+      "",
+      ""
+     ],
+     "navMismatchFrames": "0/33",
+     "accentLerpViolations": "7/64",
+     "accentMaxResidualVh": 1.721,
+     "parentInline": [
+      "set"
+     ],
+     "parentComputed": [
+      "none"
+     ],
+     "childComputedNone": 0,
+     "finalNav": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "finalLook": [
+      "10px",
+      "0",
+      "1",
+      "24px 11px",
+      "1 matrix(1, 0, 0, 1, -24, 0)",
+      "1 matrix(1, 0, 0, 1, 24, 0)",
+      true
+     ],
+     "finalAcc": [
+      "radial-gradient(circle at 50% 240.63vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "radial-gradient(circle at 50% -22.39vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)"
+     ],
+     "distinctNavStates": 12,
+     "linkVis": [
+      "0",
+      "visible",
+      "auto",
+      40.578125
+     ]
+    },
+    {
+     "href": "#work",
+     "finSy": 821,
+     "expect": 821,
+     "durMs": 1355,
+     "frames": 37,
+     "clickErr": null,
+     "hash": "#work",
+     "htmlInline": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "navInline": [
+      "",
+      "",
+      ""
+     ],
+     "navMismatchFrames": "0/37",
+     "accentLerpViolations": "3/72",
+     "accentMaxResidualVh": 1.47,
+     "parentInline": [
+      "set"
+     ],
+     "parentComputed": [
+      "none"
+     ],
+     "childComputedNone": 0,
+     "finalNav": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "finalLook": [
+      "10px",
+      "0",
+      "1",
+      "24px 11px",
+      "1 matrix(1, 0, 0, 1, -24, 0)",
+      "1 matrix(1, 0, 0, 1, 24, 0)",
+      true
+     ],
+     "finalAcc": [
+      "radial-gradient(circle at 50% 105.09vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "radial-gradient(circle at 50% -154.08vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)"
+     ],
+     "distinctNavStates": 15,
+     "linkVis": [
+      "0",
+      "visible",
+      "auto",
+      35.53125
+     ]
+    },
+    {
+     "href": "#top",
+     "finSy": 821,
+     "expect": 0,
+     "durMs": 0,
+     "frames": 55,
+     "clickErr": null,
+     "hash": "#work",
+     "htmlInline": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "navInline": [
+      "",
+      "",
+      ""
+     ],
+     "navMismatchFrames": "0/55",
+     "accentLerpViolations": "0/108",
+     "accentMaxResidualVh": 0.093,
+     "parentInline": [
+      "set"
+     ],
+     "parentComputed": [
+      "none"
+     ],
+     "childComputedNone": 0,
+     "finalNav": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "finalLook": [
+      "10px",
+      "0",
+      "1",
+      "24px 11px",
+      "1 matrix(1, 0, 0, 1, -24, 0)",
+      "1 matrix(1, 0, 0, 1, 24, 0)",
+      true
+     ],
+     "finalAcc": [
+      "radial-gradient(circle at 50% 101.4vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "radial-gradient(circle at 50% -157.77vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)"
+     ],
+     "distinctNavStates": 24,
+     "linkVis": [
+      "0",
+      "visible",
+      "none",
+      67.078125
+     ]
+    }
+   ]
+  },
+  {
+   "v": "combined",
+   "rep": 0,
+   "initial": {
+    "html": [
+     "",
+     "",
+     ""
+    ],
+    "nav": [
+     "",
+     "",
+     ""
+    ]
+   },
+   "clicks": [
+    {
+     "href": "#work",
+     "finSy": 821,
+     "expect": 821,
+     "durMs": 1218,
+     "frames": 39,
+     "clickErr": null,
+     "hash": "#work",
+     "htmlInline": [
+      "",
+      "",
+      ""
+     ],
+     "navInline": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "navMismatchFrames": "3/39",
+     "accentLerpViolations": "0/76",
+     "accentMaxResidualVh": 0.077,
+     "parentInline": [
+      "empty"
+     ],
+     "parentComputed": [
+      "none"
+     ],
+     "childComputedNone": 0,
+     "finalNav": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "finalLook": [
+      "10px",
+      "0",
+      "1",
+      "24px 11px",
+      "1 matrix(1, 0, 0, 1, -24, 0)",
+      "1 matrix(1, 0, 0, 1, 24, 0)",
+      true
+     ],
+     "finalAcc": [
+      "radial-gradient(circle at 50% 99.05vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "radial-gradient(circle at 50% -162.12vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)"
+     ],
+     "distinctNavStates": 7,
+     "linkVis": [
+      "1",
+      "visible",
+      "auto",
+      35.53125
+     ]
+    },
+    {
+     "href": "#about",
+     "finSy": 1925,
+     "expect": 1924.953125,
+     "durMs": 1210,
+     "frames": 34,
+     "clickErr": null,
+     "hash": "#about",
+     "htmlInline": [
+      "",
+      "",
+      ""
+     ],
+     "navInline": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "navMismatchFrames": "0/34",
+     "accentLerpViolations": "5/66",
+     "accentMaxResidualVh": 0.692,
+     "parentInline": [
+      "empty"
+     ],
+     "parentComputed": [
+      "none"
+     ],
+     "childComputedNone": 0,
+     "finalNav": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "finalLook": [
+      "10px",
+      "0",
+      "1",
+      "24px 11px",
+      "1 matrix(1, 0, 0, 1, -24, 0)",
+      "1 matrix(1, 0, 0, 1, 24, 0)",
+      true
+     ],
+     "finalAcc": [
+      "radial-gradient(circle at 50% 218.95vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "radial-gradient(circle at 50% -40.35vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)"
+     ],
+     "distinctNavStates": 13,
+     "linkVis": [
+      "0",
+      "visible",
+      "auto",
+      40.578125
+     ]
+    },
+    {
+     "href": "#trust",
+     "finSy": 3340,
+     "expect": 3340.03125,
+     "durMs": 1333,
+     "frames": 23,
+     "clickErr": null,
+     "hash": "#trust",
+     "htmlInline": [
+      "",
+      "",
+      ""
+     ],
+     "navInline": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "navMismatchFrames": "0/23",
+     "accentLerpViolations": "5/44",
+     "accentMaxResidualVh": 1.211,
+     "parentInline": [
+      "empty"
+     ],
+     "parentComputed": [
+      "none"
+     ],
+     "childComputedNone": 0,
+     "finalNav": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "finalLook": [
+      "10px",
+      "0",
+      "1",
+      "24px 11px",
+      "1 matrix(1, 0, 0, 1, -24, 0)",
+      "1 matrix(1, 0, 0, 1, 24, 0)",
+      true
+     ],
+     "finalAcc": [
+      "radial-gradient(circle at 50% 359.87vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "radial-gradient(circle at 50% 102.45vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)"
+     ],
+     "distinctNavStates": 11,
+     "linkVis": [
+      "0",
+      "visible",
+      "auto",
+      34.84375
+     ]
+    },
+    {
+     "href": "#pricing",
+     "finSy": 4549,
+     "expect": 4548.515625,
+     "durMs": 1350,
+     "frames": 27,
+     "clickErr": null,
+     "hash": "#pricing",
+     "htmlInline": [
+      "",
+      "",
+      ""
+     ],
+     "navInline": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "navMismatchFrames": "0/27",
+     "accentLerpViolations": "6/52",
+     "accentMaxResidualVh": 0.909,
+     "parentInline": [
+      "empty"
+     ],
+     "parentComputed": [
+      "none"
+     ],
+     "childComputedNone": 0,
+     "finalNav": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "finalLook": [
+      "10px",
+      "0",
+      "1",
+      "24px 11px",
+      "1 matrix(1, 0, 0, 1, -24, 0)",
+      "1 matrix(1, 0, 0, 1, 24, 0)",
+      true
+     ],
+     "finalAcc": [
+      "radial-gradient(circle at 50% 503.97vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "radial-gradient(circle at 50% 247.46vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)"
+     ],
+     "distinctNavStates": 12,
+     "linkVis": [
+      "0",
+      "visible",
+      "auto",
+      47.234375
+     ]
+    },
+    {
+     "href": "#about",
+     "finSy": 1901,
+     "expect": 1900.953125,
+     "durMs": 1342,
+     "frames": 29,
+     "clickErr": null,
+     "hash": "#about",
+     "htmlInline": [
+      "",
+      "",
+      ""
+     ],
+     "navInline": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "navMismatchFrames": "0/29",
+     "accentLerpViolations": "5/56",
+     "accentMaxResidualVh": 1.738,
+     "parentInline": [
+      "empty"
+     ],
+     "parentComputed": [
+      "none"
+     ],
+     "childComputedNone": 0,
+     "finalNav": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "finalLook": [
+      "10px",
+      "0",
+      "1",
+      "24px 11px",
+      "1 matrix(1, 0, 0, 1, -24, 0)",
+      "1 matrix(1, 0, 0, 1, 24, 0)",
+      true
+     ],
+     "finalAcc": [
+      "radial-gradient(circle at 50% 242.74vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "radial-gradient(circle at 50% -16.09vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)"
+     ],
+     "distinctNavStates": 10,
+     "linkVis": [
+      "0",
+      "visible",
+      "auto",
+      40.578125
+     ]
+    },
+    {
+     "href": "#work",
+     "finSy": 821,
+     "expect": 821,
+     "durMs": 1267,
+     "frames": 35,
+     "clickErr": null,
+     "hash": "#work",
+     "htmlInline": [
+      "",
+      "",
+      ""
+     ],
+     "navInline": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "navMismatchFrames": "0/35",
+     "accentLerpViolations": "3/68",
+     "accentMaxResidualVh": 0.957,
+     "parentInline": [
+      "empty"
+     ],
+     "parentComputed": [
+      "none"
+     ],
+     "childComputedNone": 0,
+     "finalNav": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "finalLook": [
+      "10px",
+      "0",
+      "1",
+      "24px 11px",
+      "1 matrix(1, 0, 0, 1, -24, 0)",
+      "1 matrix(1, 0, 0, 1, 24, 0)",
+      true
+     ],
+     "finalAcc": [
+      "radial-gradient(circle at 50% 106.08vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "radial-gradient(circle at 50% -153.05vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)"
+     ],
+     "distinctNavStates": 13,
+     "linkVis": [
+      "0",
+      "visible",
+      "auto",
+      35.53125
+     ]
+    },
+    {
+     "href": "#top",
+     "finSy": 821,
+     "expect": 0,
+     "durMs": 0,
+     "frames": 56,
+     "clickErr": null,
+     "hash": "#work",
+     "htmlInline": [
+      "",
+      "",
+      ""
+     ],
+     "navInline": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "navMismatchFrames": "0/56",
+     "accentLerpViolations": "0/110",
+     "accentMaxResidualVh": 0.089,
+     "parentInline": [
+      "empty"
+     ],
+     "parentComputed": [
+      "none"
+     ],
+     "childComputedNone": 0,
+     "finalNav": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "finalLook": [
+      "10px",
+      "0",
+      "1",
+      "24px 11px",
+      "1 matrix(1, 0, 0, 1, -24, 0)",
+      "1 matrix(1, 0, 0, 1, 24, 0)",
+      true
+     ],
+     "finalAcc": [
+      "radial-gradient(circle at 50% 101.41vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "radial-gradient(circle at 50% -157.76vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)"
+     ],
+     "distinctNavStates": 25,
+     "linkVis": [
+      "0",
+      "visible",
+      "none",
+      67.078125
+     ]
+    }
+   ]
+  },
+  {
+   "v": "baseline",
+   "rep": 1,
+   "initial": {
+    "html": [
+     "0.000",
+     "1.000",
+     "0.000"
+    ],
+    "nav": [
+     "",
+     "",
+     ""
+    ]
+   },
+   "clicks": [
+    {
+     "href": "#work",
+     "finSy": 821,
+     "expect": 821,
+     "durMs": 1209,
+     "frames": 38,
+     "clickErr": null,
+     "hash": "#work",
+     "htmlInline": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "navInline": [
+      "",
+      "",
+      ""
+     ],
+     "navMismatchFrames": "1/38",
+     "accentLerpViolations": "0/74",
+     "accentMaxResidualVh": 0.067,
+     "parentInline": [
+      "set"
+     ],
+     "parentComputed": [
+      "none"
+     ],
+     "childComputedNone": 0,
+     "finalNav": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "finalLook": [
+      "10px",
+      "0",
+      "1",
+      "24px 11px",
+      "1 matrix(1, 0, 0, 1, -24, 0)",
+      "1 matrix(1, 0, 0, 1, 24, 0)",
+      true
+     ],
+     "finalAcc": [
+      "radial-gradient(circle at 50% 98.88vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "radial-gradient(circle at 50% -162.3vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)"
+     ],
+     "distinctNavStates": 7,
+     "linkVis": [
+      "1",
+      "visible",
+      "auto",
+      35.53125
+     ]
+    },
+    {
+     "href": "#about",
+     "finSy": 1925,
+     "expect": 1924.953125,
+     "durMs": 1409,
+     "frames": 30,
+     "clickErr": null,
+     "hash": "#about",
+     "htmlInline": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "navInline": [
+      "",
+      "",
+      ""
+     ],
+     "navMismatchFrames": "0/30",
+     "accentLerpViolations": "5/58",
+     "accentMaxResidualVh": 0.908,
+     "parentInline": [
+      "set"
+     ],
+     "parentComputed": [
+      "none"
+     ],
+     "childComputedNone": 0,
+     "finalNav": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "finalLook": [
+      "10px",
+      "0",
+      "1",
+      "24px 11px",
+      "1 matrix(1, 0, 0, 1, -24, 0)",
+      "1 matrix(1, 0, 0, 1, 24, 0)",
+      true
+     ],
+     "finalAcc": [
+      "radial-gradient(circle at 50% 215.19vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "radial-gradient(circle at 50% -44.14vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)"
+     ],
+     "distinctNavStates": 10,
+     "linkVis": [
+      "0",
+      "visible",
+      "auto",
+      40.578125
+     ]
+    },
+    {
+     "href": "#trust",
+     "finSy": 3340,
+     "expect": 3340.03125,
+     "durMs": 1406,
+     "frames": 23,
+     "clickErr": null,
+     "hash": "#trust",
+     "htmlInline": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "navInline": [
+      "",
+      "",
+      ""
+     ],
+     "navMismatchFrames": "0/23",
+     "accentLerpViolations": "6/44",
+     "accentMaxResidualVh": 1.599,
+     "parentInline": [
+      "set"
+     ],
+     "parentComputed": [
+      "none"
+     ],
+     "childComputedNone": 0,
+     "finalNav": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "finalLook": [
+      "10px",
+      "0",
+      "1",
+      "24px 11px",
+      "1 matrix(1, 0, 0, 1, -24, 0)",
+      "1 matrix(1, 0, 0, 1, 24, 0)",
+      true
+     ],
+     "finalAcc": [
+      "radial-gradient(circle at 50% 359.65vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "radial-gradient(circle at 50% 102.24vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)"
+     ],
+     "distinctNavStates": 10,
+     "linkVis": [
+      "0",
+      "visible",
+      "auto",
+      34.84375
+     ]
+    },
+    {
+     "href": "#pricing",
+     "finSy": 4549,
+     "expect": 4548.515625,
+     "durMs": 1427,
+     "frames": 28,
+     "clickErr": null,
+     "hash": "#pricing",
+     "htmlInline": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "navInline": [
+      "",
+      "",
+      ""
+     ],
+     "navMismatchFrames": "0/28",
+     "accentLerpViolations": "6/54",
+     "accentMaxResidualVh": 0.836,
+     "parentInline": [
+      "set"
+     ],
+     "parentComputed": [
+      "none"
+     ],
+     "childComputedNone": 0,
+     "finalNav": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "finalLook": [
+      "10px",
+      "0",
+      "1",
+      "24px 11px",
+      "1 matrix(1, 0, 0, 1, -24, 0)",
+      "1 matrix(1, 0, 0, 1, 24, 0)",
+      true
+     ],
+     "finalAcc": [
+      "radial-gradient(circle at 50% 504.13vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "radial-gradient(circle at 50% 247.62vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)"
+     ],
+     "distinctNavStates": 9,
+     "linkVis": [
+      "0",
+      "visible",
+      "auto",
+      47.234375
+     ]
+    },
+    {
+     "href": "#about",
+     "finSy": 1901,
+     "expect": 1900.953125,
+     "durMs": 1472,
+     "frames": 27,
+     "clickErr": null,
+     "hash": "#about",
+     "htmlInline": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "navInline": [
+      "",
+      "",
+      ""
+     ],
+     "navMismatchFrames": "0/27",
+     "accentLerpViolations": "6/52",
+     "accentMaxResidualVh": 1.477,
+     "parentInline": [
+      "set"
+     ],
+     "parentComputed": [
+      "none"
+     ],
+     "childComputedNone": 0,
+     "finalNav": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "finalLook": [
+      "10px",
+      "0",
+      "1",
+      "24px 11px",
+      "1 matrix(1, 0, 0, 1, -24, 0)",
+      "1 matrix(1, 0, 0, 1, 24, 0)",
+      true
+     ],
+     "finalAcc": [
+      "radial-gradient(circle at 50% 247.94vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "radial-gradient(circle at 50% -10.82vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)"
+     ],
+     "distinctNavStates": 8,
+     "linkVis": [
+      "0",
+      "visible",
+      "auto",
+      40.578125
+     ]
+    },
+    {
+     "href": "#work",
+     "finSy": 821,
+     "expect": 821,
+     "durMs": 1247,
+     "frames": 38,
+     "clickErr": null,
+     "hash": "#work",
+     "htmlInline": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "navInline": [
+      "",
+      "",
+      ""
+     ],
+     "navMismatchFrames": "0/38",
+     "accentLerpViolations": "3/74",
+     "accentMaxResidualVh": 0.85,
+     "parentInline": [
+      "set"
+     ],
+     "parentComputed": [
+      "none"
+     ],
+     "childComputedNone": 0,
+     "finalNav": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "finalLook": [
+      "10px",
+      "0",
+      "1",
+      "24px 11px",
+      "1 matrix(1, 0, 0, 1, -24, 0)",
+      "1 matrix(1, 0, 0, 1, 24, 0)",
+      true
+     ],
+     "finalAcc": [
+      "radial-gradient(circle at 50% 104.85vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "radial-gradient(circle at 50% -154.29vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)"
+     ],
+     "distinctNavStates": 15,
+     "linkVis": [
+      "0",
+      "visible",
+      "auto",
+      35.53125
+     ]
+    },
+    {
+     "href": "#top",
+     "finSy": 821,
+     "expect": 0,
+     "durMs": 0,
+     "frames": 51,
+     "clickErr": null,
+     "hash": "#work",
+     "htmlInline": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "navInline": [
+      "",
+      "",
+      ""
+     ],
+     "navMismatchFrames": "0/51",
+     "accentLerpViolations": "0/100",
+     "accentMaxResidualVh": 0.083,
+     "parentInline": [
+      "set"
+     ],
+     "parentComputed": [
+      "none"
+     ],
+     "childComputedNone": 0,
+     "finalNav": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "finalLook": [
+      "10px",
+      "0",
+      "1",
+      "24px 11px",
+      "1 matrix(1, 0, 0, 1, -24, 0)",
+      "1 matrix(1, 0, 0, 1, 24, 0)",
+      true
+     ],
+     "finalAcc": [
+      "radial-gradient(circle at 50% 101.4vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "radial-gradient(circle at 50% -157.76vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)"
+     ],
+     "distinctNavStates": 23,
+     "linkVis": [
+      "0",
+      "visible",
+      "none",
+      67.078125
+     ]
+    }
+   ]
+  },
+  {
+   "v": "combined",
+   "rep": 1,
+   "initial": {
+    "html": [
+     "",
+     "",
+     ""
+    ],
+    "nav": [
+     "",
+     "",
+     ""
+    ]
+   },
+   "clicks": [
+    {
+     "href": "#work",
+     "finSy": 821,
+     "expect": 821,
+     "durMs": 1227,
+     "frames": 35,
+     "clickErr": null,
+     "hash": "#work",
+     "htmlInline": [
+      "",
+      "",
+      ""
+     ],
+     "navInline": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "navMismatchFrames": "3/35",
+     "accentLerpViolations": "0/68",
+     "accentMaxResidualVh": 0.069,
+     "parentInline": [
+      "empty"
+     ],
+     "parentComputed": [
+      "none"
+     ],
+     "childComputedNone": 0,
+     "finalNav": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "finalLook": [
+      "10px",
+      "0",
+      "1",
+      "24px 11px",
+      "1 matrix(1, 0, 0, 1, -24, 0)",
+      "1 matrix(1, 0, 0, 1, 24, 0)",
+      true
+     ],
+     "finalAcc": [
+      "radial-gradient(circle at 50% 98.22vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "radial-gradient(circle at 50% -162.95vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)"
+     ],
+     "distinctNavStates": 7,
+     "linkVis": [
+      "1",
+      "visible",
+      "auto",
+      35.53125
+     ]
+    },
+    {
+     "href": "#about",
+     "finSy": 1925,
+     "expect": 1924.953125,
+     "durMs": 1377,
+     "frames": 33,
+     "clickErr": null,
+     "hash": "#about",
+     "htmlInline": [
+      "",
+      "",
+      ""
+     ],
+     "navInline": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "navMismatchFrames": "0/33",
+     "accentLerpViolations": "7/64",
+     "accentMaxResidualVh": 0.927,
+     "parentInline": [
+      "empty"
+     ],
+     "parentComputed": [
+      "none"
+     ],
+     "childComputedNone": 0,
+     "finalNav": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "finalLook": [
+      "10px",
+      "0",
+      "1",
+      "24px 11px",
+      "1 matrix(1, 0, 0, 1, -24, 0)",
+      "1 matrix(1, 0, 0, 1, 24, 0)",
+      true
+     ],
+     "finalAcc": [
+      "radial-gradient(circle at 50% 217.67vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "radial-gradient(circle at 50% -41.66vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)"
+     ],
+     "distinctNavStates": 13,
+     "linkVis": [
+      "0",
+      "visible",
+      "auto",
+      40.578125
+     ]
+    },
+    {
+     "href": "#trust",
+     "finSy": 3340,
+     "expect": 3340.03125,
+     "durMs": 1278,
+     "frames": 22,
+     "clickErr": null,
+     "hash": "#trust",
+     "htmlInline": [
+      "",
+      "",
+      ""
+     ],
+     "navInline": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "navMismatchFrames": "0/22",
+     "accentLerpViolations": "5/42",
+     "accentMaxResidualVh": 1.671,
+     "parentInline": [
+      "empty"
+     ],
+     "parentComputed": [
+      "none"
+     ],
+     "childComputedNone": 0,
+     "finalNav": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "finalLook": [
+      "10px",
+      "0",
+      "1",
+      "24px 11px",
+      "1 matrix(1, 0, 0, 1, -24, 0)",
+      "1 matrix(1, 0, 0, 1, 24, 0)",
+      true
+     ],
+     "finalAcc": [
+      "radial-gradient(circle at 50% 357.57vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "radial-gradient(circle at 50% 100.13vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)"
+     ],
+     "distinctNavStates": 11,
+     "linkVis": [
+      "0",
+      "visible",
+      "auto",
+      34.84375
+     ]
+    },
+    {
+     "href": "#pricing",
+     "finSy": 4549,
+     "expect": 4548.515625,
+     "durMs": 1375,
+     "frames": 25,
+     "clickErr": null,
+     "hash": "#pricing",
+     "htmlInline": [
+      "",
+      "",
+      ""
+     ],
+     "navInline": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "navMismatchFrames": "0/25",
+     "accentLerpViolations": "4/48",
+     "accentMaxResidualVh": 1.482,
+     "parentInline": [
+      "empty"
+     ],
+     "parentComputed": [
+      "none"
+     ],
+     "childComputedNone": 0,
+     "finalNav": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "finalLook": [
+      "10px",
+      "0",
+      "1",
+      "24px 11px",
+      "1 matrix(1, 0, 0, 1, -24, 0)",
+      "1 matrix(1, 0, 0, 1, 24, 0)",
+      true
+     ],
+     "finalAcc": [
+      "radial-gradient(circle at 50% 501.82vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "radial-gradient(circle at 50% 245.3vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)"
+     ],
+     "distinctNavStates": 10,
+     "linkVis": [
+      "0",
+      "visible",
+      "auto",
+      47.234375
+     ]
+    },
+    {
+     "href": "#about",
+     "finSy": 1901,
+     "expect": 1900.953125,
+     "durMs": 1329,
+     "frames": 31,
+     "clickErr": null,
+     "hash": "#about",
+     "htmlInline": [
+      "",
+      "",
+      ""
+     ],
+     "navInline": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "navMismatchFrames": "0/31",
+     "accentLerpViolations": "6/60",
+     "accentMaxResidualVh": 1.73,
+     "parentInline": [
+      "empty"
+     ],
+     "parentComputed": [
+      "none"
+     ],
+     "childComputedNone": 0,
+     "finalNav": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "finalLook": [
+      "10px",
+      "0",
+      "1",
+      "24px 11px",
+      "1 matrix(1, 0, 0, 1, -24, 0)",
+      "1 matrix(1, 0, 0, 1, 24, 0)",
+      true
+     ],
+     "finalAcc": [
+      "radial-gradient(circle at 50% 240.62vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "radial-gradient(circle at 50% -18.28vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)"
+     ],
+     "distinctNavStates": 11,
+     "linkVis": [
+      "0",
+      "visible",
+      "auto",
+      40.578125
+     ]
+    },
+    {
+     "href": "#work",
+     "finSy": 821,
+     "expect": 821,
+     "durMs": 1412,
+     "frames": 38,
+     "clickErr": null,
+     "hash": "#work",
+     "htmlInline": [
+      "",
+      "",
+      ""
+     ],
+     "navInline": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "navMismatchFrames": "0/38",
+     "accentLerpViolations": "4/74",
+     "accentMaxResidualVh": 0.634,
+     "parentInline": [
+      "empty"
+     ],
+     "parentComputed": [
+      "none"
+     ],
+     "childComputedNone": 0,
+     "finalNav": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "finalLook": [
+      "10px",
+      "0",
+      "1",
+      "24px 11px",
+      "1 matrix(1, 0, 0, 1, -24, 0)",
+      "1 matrix(1, 0, 0, 1, 24, 0)",
+      true
+     ],
+     "finalAcc": [
+      "radial-gradient(circle at 50% 105.09vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "radial-gradient(circle at 50% -154.05vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)"
+     ],
+     "distinctNavStates": 14,
+     "linkVis": [
+      "0",
+      "visible",
+      "auto",
+      35.53125
+     ]
+    },
+    {
+     "href": "#top",
+     "finSy": 821,
+     "expect": 0,
+     "durMs": 0,
+     "frames": 48,
+     "clickErr": null,
+     "hash": "#work",
+     "htmlInline": [
+      "",
+      "",
+      ""
+     ],
+     "navInline": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "navMismatchFrames": "0/48",
+     "accentLerpViolations": "0/94",
+     "accentMaxResidualVh": 0.083,
+     "parentInline": [
+      "empty"
+     ],
+     "parentComputed": [
+      "none"
+     ],
+     "childComputedNone": 0,
+     "finalNav": [
+      "1.000",
+      "0.000",
+      "1.000"
+     ],
+     "finalLook": [
+      "10px",
+      "0",
+      "1",
+      "24px 11px",
+      "1 matrix(1, 0, 0, 1, -24, 0)",
+      "1 matrix(1, 0, 0, 1, 24, 0)",
+      true
+     ],
+     "finalAcc": [
+      "radial-gradient(circle at 50% 101.39vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "radial-gradient(circle at 50% -157.76vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)"
+     ],
+     "distinctNavStates": 25,
+     "linkVis": [
+      "0",
+      "visible",
+      "none",
+      67.078125
+     ]
+    }
+   ]
+  }
+ ],
+ "shots": [],
+ "compare": [
+  {
+   "k": 0,
+   "href": "#work",
+   "rep0": {
+    "sy": [
+     821,
+     821
+    ],
+    "navEq": true,
+    "lookEq": true,
+    "accEq": false,
+    "dur": [
+     1325,
+     1218
+    ]
+   },
+   "rep1": {
+    "sy": [
+     821,
+     821
+    ],
+    "navEq": true,
+    "lookEq": true,
+    "accEq": false,
+    "dur": [
+     1209,
+     1227
+    ]
+   },
+   "shotNoiseBB": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "shotNoiseCC": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "shotB0C0": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "shotB1C1": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "shotB0C1": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   }
+  },
+  {
+   "k": 1,
+   "href": "#about",
+   "rep0": {
+    "sy": [
+     1925,
+     1925
+    ],
+    "navEq": true,
+    "lookEq": true,
+    "accEq": false,
+    "dur": [
+     1266,
+     1210
+    ]
+   },
+   "rep1": {
+    "sy": [
+     1925,
+     1925
+    ],
+    "navEq": true,
+    "lookEq": true,
+    "accEq": false,
+    "dur": [
+     1409,
+     1377
+    ]
+   },
+   "shotNoiseBB": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "shotNoiseCC": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "shotB0C0": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "shotB1C1": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "shotB0C1": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   }
+  },
+  {
+   "k": 2,
+   "href": "#trust",
+   "rep0": {
+    "sy": [
+     3340,
+     3340
+    ],
+    "navEq": true,
+    "lookEq": true,
+    "accEq": false,
+    "dur": [
+     1279,
+     1333
+    ]
+   },
+   "rep1": {
+    "sy": [
+     3340,
+     3340
+    ],
+    "navEq": true,
+    "lookEq": true,
+    "accEq": false,
+    "dur": [
+     1406,
+     1278
+    ]
+   },
+   "shotNoiseBB": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "shotNoiseCC": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "shotB0C0": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "shotB1C1": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "shotB0C1": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   }
+  },
+  {
+   "k": 3,
+   "href": "#pricing",
+   "rep0": {
+    "sy": [
+     4549,
+     4549
+    ],
+    "navEq": true,
+    "lookEq": true,
+    "accEq": false,
+    "dur": [
+     1322,
+     1350
+    ]
+   },
+   "rep1": {
+    "sy": [
+     4549,
+     4549
+    ],
+    "navEq": true,
+    "lookEq": true,
+    "accEq": false,
+    "dur": [
+     1427,
+     1375
+    ]
+   },
+   "shotNoiseBB": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "shotNoiseCC": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "shotB0C0": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "shotB1C1": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "shotB0C1": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   }
+  },
+  {
+   "k": 4,
+   "href": "#about",
+   "rep0": {
+    "sy": [
+     1901,
+     1901
+    ],
+    "navEq": true,
+    "lookEq": true,
+    "accEq": false,
+    "dur": [
+     1324,
+     1342
+    ]
+   },
+   "rep1": {
+    "sy": [
+     1901,
+     1901
+    ],
+    "navEq": true,
+    "lookEq": true,
+    "accEq": false,
+    "dur": [
+     1472,
+     1329
+    ]
+   },
+   "shotNoiseBB": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "shotNoiseCC": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "shotB0C0": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "shotB1C1": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "shotB0C1": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   }
+  },
+  {
+   "k": 5,
+   "href": "#work",
+   "rep0": {
+    "sy": [
+     821,
+     821
+    ],
+    "navEq": true,
+    "lookEq": true,
+    "accEq": false,
+    "dur": [
+     1355,
+     1267
+    ]
+   },
+   "rep1": {
+    "sy": [
+     821,
+     821
+    ],
+    "navEq": true,
+    "lookEq": true,
+    "accEq": false,
+    "dur": [
+     1247,
+     1412
+    ]
+   },
+   "shotNoiseBB": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "shotNoiseCC": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "shotB0C0": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "shotB1C1": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "shotB0C1": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   }
+  },
+  {
+   "k": 6,
+   "href": "#top",
+   "rep0": {
+    "sy": [
+     821,
+     821
+    ],
+    "navEq": true,
+    "lookEq": true,
+    "accEq": false,
+    "dur": [
+     0,
+     0
+    ]
+   },
+   "rep1": {
+    "sy": [
+     821,
+     821
+    ],
+    "navEq": true,
+    "lookEq": true,
+    "accEq": false,
+    "dur": [
+     0,
+     0
+    ]
+   },
+   "shotNoiseBB": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "shotNoiseCC": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "shotB0C0": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "shotB1C1": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "shotB0C1": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   }
+  }
+ ]
+}

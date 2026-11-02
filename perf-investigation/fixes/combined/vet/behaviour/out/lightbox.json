@@ -1,0 +1,878 @@
+[
+ {
+  "vpn": "desk",
+  "v": "baseline",
+  "env": {
+   "lenis": true,
+   "hoverNone": false,
+   "reduced": false,
+   "iw": 1440,
+   "ih": 900
+  },
+  "steps": [
+   [
+    "card0",
+    [
+     "killioz_zombie_178.webp",
+     "1 / 4"
+    ]
+   ],
+   [
+    "cardNext",
+    [
+     "killioz_zombie_181.webp",
+     "2 / 4"
+    ],
+    {
+     "open": false,
+     "aria": "true",
+     "hash": "",
+     "overflow": "",
+     "lenisStopped": false,
+     "img": "",
+     "title": "",
+     "counter": "",
+     "sy": 901
+    }
+   ],
+   [
+    "cardPrev",
+    [
+     "killioz_zombie_178.webp",
+     "1 / 4"
+    ],
+    {
+     "open": false,
+     "aria": "true",
+     "hash": "",
+     "overflow": "",
+     "lenisStopped": false,
+     "img": "",
+     "title": "",
+     "counter": "",
+     "sy": 901
+    }
+   ],
+   [
+    "open",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-apocalypse-1",
+     "overflow": "hidden",
+     "lenisStopped": true,
+     "img": "killioz_zombie_178.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "1 of 4",
+     "sy": 901
+    }
+   ],
+   [
+    "wheelWhileOpen",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-apocalypse-1",
+     "overflow": "hidden",
+     "lenisStopped": true,
+     "img": "killioz_zombie_178.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "1 of 4",
+     "sy": 901
+    }
+   ],
+   [
+    "kRight",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-apocalypse-2",
+     "overflow": "hidden",
+     "lenisStopped": true,
+     "img": "killioz_zombie_181.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "2 of 4",
+     "sy": 901
+    }
+   ],
+   [
+    "kRight2",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-apocalypse-3",
+     "overflow": "hidden",
+     "lenisStopped": true,
+     "img": "killioz_zombie_219.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "3 of 4",
+     "sy": 901
+    }
+   ],
+   [
+    "kLeft",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-apocalypse-2",
+     "overflow": "hidden",
+     "lenisStopped": true,
+     "img": "killioz_zombie_181.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "2 of 4",
+     "sy": 901
+    }
+   ],
+   [
+    "btnNext",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-apocalypse-3",
+     "overflow": "hidden",
+     "lenisStopped": true,
+     "img": "killioz_zombie_219.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "3 of 4",
+     "sy": 901
+    }
+   ],
+   [
+    "btnPrev",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-apocalypse-2",
+     "overflow": "hidden",
+     "lenisStopped": true,
+     "img": "killioz_zombie_181.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "2 of 4",
+     "sy": 901
+    }
+   ],
+   [
+    "esc",
+    {
+     "open": false,
+     "aria": "true",
+     "hash": "",
+     "overflow": "",
+     "lenisStopped": false,
+     "img": "killioz_zombie_181.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "2 of 4",
+     "sy": 901
+    }
+   ],
+   [
+    "wheelAfterClose",
+    {
+     "open": false,
+     "aria": "true",
+     "hash": "",
+     "overflow": "",
+     "lenisStopped": false,
+     "img": "killioz_zombie_181.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "2 of 4",
+     "sy": 1200
+    }
+   ],
+   [
+    "enterOpen",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-prospecting-1",
+     "overflow": "hidden",
+     "lenisStopped": true,
+     "img": "killioz_prospecting_25.webp",
+     "title": "Prospecting!",
+     "counter": "1 of 4",
+     "sy": 1200
+    }
+   ],
+   [
+    "closeBtn",
+    {
+     "open": false,
+     "aria": "true",
+     "hash": "",
+     "overflow": "",
+     "lenisStopped": false,
+     "img": "killioz_prospecting_25.webp",
+     "title": "Prospecting!",
+     "counter": "1 of 4",
+     "sy": 1200
+    }
+   ]
+  ],
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ],
+  "deepLink": {
+   "slug": "apocalypse",
+   "st": {
+    "open": false,
+    "aria": "true",
+    "hash": "#work-apocalypse-2",
+    "overflow": "",
+    "lenisStopped": false,
+    "img": "",
+    "title": "",
+    "counter": "",
+    "sy": 0
+   },
+   "pageErrors": [],
+   "consoleErrors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ]
+  }
+ },
+ {
+  "vpn": "desk",
+  "v": "combined",
+  "env": {
+   "lenis": true,
+   "hoverNone": false,
+   "reduced": false,
+   "iw": 1440,
+   "ih": 900
+  },
+  "steps": [
+   [
+    "card0",
+    [
+     "killioz_zombie_178.webp",
+     "1 / 4"
+    ]
+   ],
+   [
+    "cardNext",
+    [
+     "killioz_zombie_181.webp",
+     "2 / 4"
+    ],
+    {
+     "open": false,
+     "aria": "true",
+     "hash": "",
+     "overflow": "",
+     "lenisStopped": false,
+     "img": "",
+     "title": "",
+     "counter": "",
+     "sy": 901
+    }
+   ],
+   [
+    "cardPrev",
+    [
+     "killioz_zombie_178.webp",
+     "1 / 4"
+    ],
+    {
+     "open": false,
+     "aria": "true",
+     "hash": "",
+     "overflow": "",
+     "lenisStopped": false,
+     "img": "",
+     "title": "",
+     "counter": "",
+     "sy": 901
+    }
+   ],
+   [
+    "open",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-apocalypse-1",
+     "overflow": "hidden",
+     "lenisStopped": true,
+     "img": "killioz_zombie_178.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "1 of 4",
+     "sy": 901
+    }
+   ],
+   [
+    "wheelWhileOpen",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-apocalypse-1",
+     "overflow": "hidden",
+     "lenisStopped": true,
+     "img": "killioz_zombie_178.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "1 of 4",
+     "sy": 901
+    }
+   ],
+   [
+    "kRight",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-apocalypse-2",
+     "overflow": "hidden",
+     "lenisStopped": true,
+     "img": "killioz_zombie_181.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "2 of 4",
+     "sy": 901
+    }
+   ],
+   [
+    "kRight2",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-apocalypse-3",
+     "overflow": "hidden",
+     "lenisStopped": true,
+     "img": "killioz_zombie_219.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "3 of 4",
+     "sy": 901
+    }
+   ],
+   [
+    "kLeft",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-apocalypse-2",
+     "overflow": "hidden",
+     "lenisStopped": true,
+     "img": "killioz_zombie_181.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "2 of 4",
+     "sy": 901
+    }
+   ],
+   [
+    "btnNext",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-apocalypse-3",
+     "overflow": "hidden",
+     "lenisStopped": true,
+     "img": "killioz_zombie_219.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "3 of 4",
+     "sy": 901
+    }
+   ],
+   [
+    "btnPrev",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-apocalypse-2",
+     "overflow": "hidden",
+     "lenisStopped": true,
+     "img": "killioz_zombie_181.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "2 of 4",
+     "sy": 901
+    }
+   ],
+   [
+    "esc",
+    {
+     "open": false,
+     "aria": "true",
+     "hash": "",
+     "overflow": "",
+     "lenisStopped": false,
+     "img": "killioz_zombie_181.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "2 of 4",
+     "sy": 901
+    }
+   ],
+   [
+    "wheelAfterClose",
+    {
+     "open": false,
+     "aria": "true",
+     "hash": "",
+     "overflow": "",
+     "lenisStopped": false,
+     "img": "killioz_zombie_181.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "2 of 4",
+     "sy": 1200
+    }
+   ],
+   [
+    "enterOpen",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-prospecting-1",
+     "overflow": "hidden",
+     "lenisStopped": true,
+     "img": "killioz_prospecting_25.webp",
+     "title": "Prospecting!",
+     "counter": "1 of 4",
+     "sy": 1200
+    }
+   ],
+   [
+    "closeBtn",
+    {
+     "open": false,
+     "aria": "true",
+     "hash": "",
+     "overflow": "",
+     "lenisStopped": false,
+     "img": "killioz_prospecting_25.webp",
+     "title": "Prospecting!",
+     "counter": "1 of 4",
+     "sy": 1200
+    }
+   ]
+  ],
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ],
+  "deepLink": {
+   "slug": "apocalypse",
+   "st": {
+    "open": false,
+    "aria": "true",
+    "hash": "#work-apocalypse-2",
+    "overflow": "",
+    "lenisStopped": false,
+    "img": "",
+    "title": "",
+    "counter": "",
+    "sy": 0
+   },
+   "pageErrors": [],
+   "consoleErrors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ]
+  }
+ },
+ {
+  "vpn": "mob",
+  "v": "baseline",
+  "env": {
+   "lenis": false,
+   "hoverNone": true,
+   "reduced": false,
+   "iw": 390,
+   "ih": 844
+  },
+  "steps": [
+   [
+    "card0",
+    [
+     "killioz_zombie_178.webp",
+     "1 / 4"
+    ]
+   ],
+   [
+    "cardNext",
+    [
+     "killioz_zombie_181.webp",
+     "2 / 4"
+    ],
+    {
+     "open": false,
+     "aria": "true",
+     "hash": "",
+     "overflow": "",
+     "lenisStopped": null,
+     "img": "",
+     "title": "",
+     "counter": "",
+     "sy": 745
+    }
+   ],
+   [
+    "cardPrev",
+    [
+     "killioz_zombie_178.webp",
+     "1 / 4"
+    ],
+    {
+     "open": false,
+     "aria": "true",
+     "hash": "",
+     "overflow": "",
+     "lenisStopped": null,
+     "img": "",
+     "title": "",
+     "counter": "",
+     "sy": 745
+    }
+   ],
+   [
+    "open",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-apocalypse-1",
+     "overflow": "hidden",
+     "lenisStopped": null,
+     "img": "killioz_zombie_178.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "1 of 4",
+     "sy": 745
+    }
+   ],
+   [
+    "kRight",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-apocalypse-2",
+     "overflow": "hidden",
+     "lenisStopped": null,
+     "img": "killioz_zombie_181.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "2 of 4",
+     "sy": 745
+    }
+   ],
+   [
+    "kRight2",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-apocalypse-3",
+     "overflow": "hidden",
+     "lenisStopped": null,
+     "img": "killioz_zombie_219.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "3 of 4",
+     "sy": 745
+    }
+   ],
+   [
+    "kLeft",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-apocalypse-2",
+     "overflow": "hidden",
+     "lenisStopped": null,
+     "img": "killioz_zombie_181.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "2 of 4",
+     "sy": 745
+    }
+   ],
+   [
+    "btnNext",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-apocalypse-3",
+     "overflow": "hidden",
+     "lenisStopped": null,
+     "img": "killioz_zombie_219.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "3 of 4",
+     "sy": 745
+    }
+   ],
+   [
+    "btnPrev",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-apocalypse-2",
+     "overflow": "hidden",
+     "lenisStopped": null,
+     "img": "killioz_zombie_181.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "2 of 4",
+     "sy": 745
+    }
+   ],
+   [
+    "esc",
+    {
+     "open": false,
+     "aria": "true",
+     "hash": "",
+     "overflow": "",
+     "lenisStopped": null,
+     "img": "killioz_zombie_181.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "2 of 4",
+     "sy": 745
+    }
+   ],
+   [
+    "enterOpen",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-prospecting-1",
+     "overflow": "hidden",
+     "lenisStopped": null,
+     "img": "killioz_prospecting_25.webp",
+     "title": "Prospecting!",
+     "counter": "1 of 4",
+     "sy": 745
+    }
+   ],
+   [
+    "closeBtn",
+    {
+     "open": false,
+     "aria": "true",
+     "hash": "",
+     "overflow": "",
+     "lenisStopped": null,
+     "img": "killioz_prospecting_25.webp",
+     "title": "Prospecting!",
+     "counter": "1 of 4",
+     "sy": 745
+    }
+   ]
+  ],
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ],
+  "deepLink": {
+   "slug": "apocalypse",
+   "st": {
+    "open": false,
+    "aria": "true",
+    "hash": "#work-apocalypse-2",
+    "overflow": "",
+    "lenisStopped": null,
+    "img": "",
+    "title": "",
+    "counter": "",
+    "sy": 0
+   },
+   "pageErrors": [],
+   "consoleErrors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ]
+  }
+ },
+ {
+  "vpn": "mob",
+  "v": "combined",
+  "env": {
+   "lenis": false,
+   "hoverNone": true,
+   "reduced": false,
+   "iw": 390,
+   "ih": 844
+  },
+  "steps": [
+   [
+    "card0",
+    [
+     "killioz_zombie_178.webp",
+     "1 / 4"
+    ]
+   ],
+   [
+    "cardNext",
+    [
+     "killioz_zombie_181.webp",
+     "2 / 4"
+    ],
+    {
+     "open": false,
+     "aria": "true",
+     "hash": "",
+     "overflow": "",
+     "lenisStopped": null,
+     "img": "",
+     "title": "",
+     "counter": "",
+     "sy": 745
+    }
+   ],
+   [
+    "cardPrev",
+    [
+     "killioz_zombie_178.webp",
+     "1 / 4"
+    ],
+    {
+     "open": false,
+     "aria": "true",
+     "hash": "",
+     "overflow": "",
+     "lenisStopped": null,
+     "img": "",
+     "title": "",
+     "counter": "",
+     "sy": 745
+    }
+   ],
+   [
+    "open",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-apocalypse-1",
+     "overflow": "hidden",
+     "lenisStopped": null,
+     "img": "killioz_zombie_178.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "1 of 4",
+     "sy": 745
+    }
+   ],
+   [
+    "kRight",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-apocalypse-2",
+     "overflow": "hidden",
+     "lenisStopped": null,
+     "img": "killioz_zombie_181.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "2 of 4",
+     "sy": 745
+    }
+   ],
+   [
+    "kRight2",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-apocalypse-3",
+     "overflow": "hidden",
+     "lenisStopped": null,
+     "img": "killioz_zombie_219.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "3 of 4",
+     "sy": 745
+    }
+   ],
+   [
+    "kLeft",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-apocalypse-2",
+     "overflow": "hidden",
+     "lenisStopped": null,
+     "img": "killioz_zombie_181.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "2 of 4",
+     "sy": 745
+    }
+   ],
+   [
+    "btnNext",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-apocalypse-3",
+     "overflow": "hidden",
+     "lenisStopped": null,
+     "img": "killioz_zombie_219.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "3 of 4",
+     "sy": 745
+    }
+   ],
+   [
+    "btnPrev",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-apocalypse-2",
+     "overflow": "hidden",
+     "lenisStopped": null,
+     "img": "killioz_zombie_181.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "2 of 4",
+     "sy": 745
+    }
+   ],
+   [
+    "esc",
+    {
+     "open": false,
+     "aria": "true",
+     "hash": "",
+     "overflow": "",
+     "lenisStopped": null,
+     "img": "killioz_zombie_181.webp",
+     "title": "Survive the Apocalypse",
+     "counter": "2 of 4",
+     "sy": 745
+    }
+   ],
+   [
+    "enterOpen",
+    {
+     "open": true,
+     "aria": "false",
+     "hash": "#work-prospecting-1",
+     "overflow": "hidden",
+     "lenisStopped": null,
+     "img": "killioz_prospecting_25.webp",
+     "title": "Prospecting!",
+     "counter": "1 of 4",
+     "sy": 745
+    }
+   ],
+   [
+    "closeBtn",
+    {
+     "open": false,
+     "aria": "true",
+     "hash": "",
+     "overflow": "",
+     "lenisStopped": null,
+     "img": "killioz_prospecting_25.webp",
+     "title": "Prospecting!",
+     "counter": "1 of 4",
+     "sy": 745
+    }
+   ]
+  ],
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ],
+  "deepLink": {
+   "slug": "apocalypse",
+   "st": {
+    "open": false,
+    "aria": "true",
+    "hash": "#work-apocalypse-2",
+    "overflow": "",
+    "lenisStopped": null,
+    "img": "",
+    "title": "",
+    "counter": "",
+    "sy": 0
+   },
+   "pageErrors": [],
+   "consoleErrors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ]
+  }
+ }
+]

@@ -1,0 +1,566 @@
+[
+ {
+  "vpn": "desk",
+  "i": 0,
+  "v": "baseline",
+  "expectB": 4.7,
+  "hero": [
+   [
+    "4.7B+",
+    "4.7"
+   ],
+   [
+    "0",
+    "4.7"
+   ]
+  ],
+  "after": {
+   "live": [
+    [
+     "4.7B+",
+     "4.7"
+    ],
+    [
+     "4.7B+",
+     "4.7"
+    ]
+   ],
+   "all": [
+    "4.7B+",
+    "200+",
+    "5y",
+    "4.7B+",
+    "200+",
+    "~48h"
+   ],
+   "fetches": [
+    "assets/visits.json",
+    "assets/visits.json",
+    "assets/slots.json"
+   ]
+  },
+  "visitsReq": 2,
+  "slotsReq": 1,
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+ },
+ {
+  "vpn": "desk",
+  "i": 0,
+  "v": "combined",
+  "expectB": 4.7,
+  "hero": [
+   [
+    "4.7B+",
+    "4.7"
+   ],
+   [
+    "0",
+    "4.7"
+   ]
+  ],
+  "after": {
+   "live": [
+    [
+     "4.7B+",
+     "4.7"
+    ],
+    [
+     "4.7B+",
+     "4.7"
+    ]
+   ],
+   "all": [
+    "4.7B+",
+    "200+",
+    "5y",
+    "4.7B+",
+    "200+",
+    "~48h"
+   ],
+   "fetches": [
+    "assets/visits.json",
+    "assets/visits.json",
+    "assets/slots.json"
+   ]
+  },
+  "visitsReq": 2,
+  "slotsReq": 1,
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+ },
+ {
+  "vpn": "desk",
+  "i": 1,
+  "v": "baseline",
+  "expectB": 4.7,
+  "hero": [
+   [
+    "4.7B+",
+    "4.7"
+   ],
+   [
+    "0",
+    "4.7"
+   ]
+  ],
+  "after": {
+   "live": [
+    [
+     "4.7B+",
+     "4.7"
+    ],
+    [
+     "4.7B+",
+     "4.7"
+    ]
+   ],
+   "all": [
+    "4.7B+",
+    "200+",
+    "5y",
+    "4.7B+",
+    "200+",
+    "~48h"
+   ],
+   "fetches": [
+    "assets/visits.json",
+    "assets/visits.json",
+    "assets/slots.json"
+   ]
+  },
+  "visitsReq": 2,
+  "slotsReq": 1,
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+ },
+ {
+  "vpn": "desk",
+  "i": 1,
+  "v": "combined",
+  "expectB": 4.7,
+  "hero": [
+   [
+    "4.7B+",
+    "4.7"
+   ],
+   [
+    "0",
+    "4.7"
+   ]
+  ],
+  "after": {
+   "live": [
+    [
+     "4.7B+",
+     "4.7"
+    ],
+    [
+     "4.7B+",
+     "4.7"
+    ]
+   ],
+   "all": [
+    "4.7B+",
+    "200+",
+    "5y",
+    "4.7B+",
+    "200+",
+    "~48h"
+   ],
+   "fetches": [
+    "assets/visits.json",
+    "assets/visits.json",
+    "assets/slots.json"
+   ]
+  },
+  "visitsReq": 2,
+  "slotsReq": 1,
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+ },
+ {
+  "vpn": "mob",
+  "i": 0,
+  "v": "baseline",
+  "expectB": 4.7,
+  "hero": [
+   [
+    "4.7B+",
+    "4.7"
+   ],
+   [
+    "0",
+    "4.7"
+   ]
+  ],
+  "after": {
+   "live": [
+    [
+     "4.7B+",
+     "4.7"
+    ],
+    [
+     "4.7B+",
+     "4.7"
+    ]
+   ],
+   "all": [
+    "4.7B+",
+    "200+",
+    "5y",
+    "4.7B+",
+    "200+",
+    "~48h"
+   ],
+   "fetches": [
+    "assets/visits.json",
+    "assets/visits.json",
+    "assets/slots.json"
+   ]
+  },
+  "visitsReq": 2,
+  "slotsReq": 1,
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+ },
+ {
+  "vpn": "mob",
+  "i": 0,
+  "v": "combined",
+  "expectB": 4.7,
+  "hero": [
+   [
+    "4.7B+",
+    "4.7"
+   ],
+   [
+    "0",
+    "4.7"
+   ]
+  ],
+  "after": {
+   "live": [
+    [
+     "4.7B+",
+     "4.7"
+    ],
+    [
+     "4.7B+",
+     "4.7"
+    ]
+   ],
+   "all": [
+    "4.7B+",
+    "200+",
+    "5y",
+    "4.7B+",
+    "200+",
+    "~48h"
+   ],
+   "fetches": [
+    "assets/visits.json",
+    "assets/visits.json",
+    "assets/slots.json"
+   ]
+  },
+  "visitsReq": 2,
+  "slotsReq": 1,
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+ },
+ {
+  "vpn": "mob",
+  "i": 1,
+  "v": "baseline",
+  "expectB": 4.7,
+  "hero": [
+   [
+    "4.7B+",
+    "4.7"
+   ],
+   [
+    "0",
+    "4.7"
+   ]
+  ],
+  "after": {
+   "live": [
+    [
+     "4.7B+",
+     "4.7"
+    ],
+    [
+     "4.7B+",
+     "4.7"
+    ]
+   ],
+   "all": [
+    "4.7B+",
+    "200+",
+    "5y",
+    "4.7B+",
+    "200+",
+    "~48h"
+   ],
+   "fetches": [
+    "assets/visits.json",
+    "assets/visits.json",
+    "assets/slots.json"
+   ]
+  },
+  "visitsReq": 2,
+  "slotsReq": 1,
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+ },
+ {
+  "vpn": "mob",
+  "i": 1,
+  "v": "combined",
+  "expectB": 4.7,
+  "hero": [
+   [
+    "4.7B+",
+    "4.7"
+   ],
+   [
+    "0",
+    "4.7"
+   ]
+  ],
+  "after": {
+   "live": [
+    [
+     "4.7B+",
+     "4.7"
+    ],
+    [
+     "4.7B+",
+     "4.7"
+    ]
+   ],
+   "all": [
+    "4.7B+",
+    "200+",
+    "5y",
+    "4.7B+",
+    "200+",
+    "~48h"
+   ],
+   "fetches": [
+    "assets/visits.json",
+    "assets/visits.json",
+    "assets/slots.json"
+   ]
+  },
+  "visitsReq": 2,
+  "slotsReq": 1,
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+ },
+ {
+  "vpn": "deskRM",
+  "i": 0,
+  "v": "baseline",
+  "expectB": 4.7,
+  "hero": [
+   [
+    "4.7B+",
+    "4.7"
+   ],
+   [
+    "0",
+    "4.7"
+   ]
+  ],
+  "after": {
+   "live": [
+    [
+     "4.7B+",
+     "4.7"
+    ],
+    [
+     "4.7B+",
+     "4.7"
+    ]
+   ],
+   "all": [
+    "4.7B+",
+    "200+",
+    "5y",
+    "4.7B+",
+    "200+",
+    "~48h"
+   ],
+   "fetches": [
+    "assets/visits.json",
+    "assets/visits.json",
+    "assets/slots.json"
+   ]
+  },
+  "visitsReq": 2,
+  "slotsReq": 1,
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+ },
+ {
+  "vpn": "deskRM",
+  "i": 0,
+  "v": "combined",
+  "expectB": 4.7,
+  "hero": [
+   [
+    "4.7B+",
+    "4.7"
+   ],
+   [
+    "0",
+    "4.7"
+   ]
+  ],
+  "after": {
+   "live": [
+    [
+     "4.7B+",
+     "4.7"
+    ],
+    [
+     "4.7B+",
+     "4.7"
+    ]
+   ],
+   "all": [
+    "4.7B+",
+    "200+",
+    "5y",
+    "4.7B+",
+    "200+",
+    "~48h"
+   ],
+   "fetches": [
+    "assets/visits.json",
+    "assets/visits.json",
+    "assets/slots.json"
+   ]
+  },
+  "visitsReq": 2,
+  "slotsReq": 1,
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+ },
+ {
+  "vpn": "deskRM",
+  "i": 1,
+  "v": "baseline",
+  "expectB": 4.7,
+  "hero": [
+   [
+    "4.7B+",
+    "4.7"
+   ],
+   [
+    "0",
+    "4.7"
+   ]
+  ],
+  "after": {
+   "live": [
+    [
+     "4.7B+",
+     "4.7"
+    ],
+    [
+     "4.7B+",
+     "4.7"
+    ]
+   ],
+   "all": [
+    "4.7B+",
+    "200+",
+    "5y",
+    "4.7B+",
+    "200+",
+    "~48h"
+   ],
+   "fetches": [
+    "assets/visits.json",
+    "assets/visits.json",
+    "assets/slots.json"
+   ]
+  },
+  "visitsReq": 2,
+  "slotsReq": 1,
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+ },
+ {
+  "vpn": "deskRM",
+  "i": 1,
+  "v": "combined",
+  "expectB": 4.7,
+  "hero": [
+   [
+    "4.7B+",
+    "4.7"
+   ],
+   [
+    "0",
+    "4.7"
+   ]
+  ],
+  "after": {
+   "live": [
+    [
+     "4.7B+",
+     "4.7"
+    ],
+    [
+     "4.7B+",
+     "4.7"
+    ]
+   ],
+   "all": [
+    "4.7B+",
+    "200+",
+    "5y",
+    "4.7B+",
+    "200+",
+    "~48h"
+   ],
+   "fetches": [
+    "assets/visits.json",
+    "assets/visits.json",
+    "assets/slots.json"
+   ]
+  },
+  "visitsReq": 2,
+  "slotsReq": 1,
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+ }
+]

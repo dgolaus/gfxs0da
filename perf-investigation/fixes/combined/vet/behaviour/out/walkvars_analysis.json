@@ -1,0 +1,1163 @@
+[
+ {
+  "vpn": "desk",
+  "AA": {
+   "n": 182,
+   "lenA": 182,
+   "lenX": 182,
+   "syDiff": 0,
+   "fpDiff": 2,
+   "fpElsDiff": 182,
+   "leaveNumDiff": 29,
+   "leaveVisualDiff": 44,
+   "thumbDiff": 28,
+   "firstDiffs": [
+    {
+     "i": 0,
+     "k": "fpElsDiff",
+     "sy": [
+      0,
+      0
+     ],
+     "a": "0.000",
+     "x": "0.000"
+    },
+    {
+     "i": 1,
+     "k": "fpElsDiff",
+     "sy": [
+      60,
+      60
+     ],
+     "a": "0.000",
+     "x": "0.000"
+    },
+    {
+     "i": 1,
+     "k": "thumbDiff",
+     "sy": [
+      60,
+      60
+     ],
+     "a": "height: 129px; transform: translate(-50%, 8.62416px);",
+     "x": "height: 129px; transform: translate(-50%, 0px);"
+    },
+    {
+     "i": 2,
+     "k": "fpElsDiff",
+     "sy": [
+      120,
+      120
+     ],
+     "a": "0.000",
+     "x": "0.000"
+    },
+    {
+     "i": 2,
+     "k": "thumbDiff",
+     "sy": [
+      120,
+      120
+     ],
+     "a": "height: 129px; transform: translate(-50%, 17.2483px);",
+     "x": "height: 129px; transform: translate(-50%, 0px);"
+    },
+    {
+     "i": 3,
+     "k": "fpElsDiff",
+     "sy": [
+      180,
+      180
+     ],
+     "a": "0.000",
+     "x": "0.000"
+    },
+    {
+     "i": 3,
+     "k": "thumbDiff",
+     "sy": [
+      180,
+      180
+     ],
+     "a": "height: 129px; transform: translate(-50%, 25.8725px);",
+     "x": "height: 129px; transform: translate(-50%, 0px);"
+    },
+    {
+     "i": 4,
+     "k": "fpElsDiff",
+     "sy": [
+      240,
+      240
+     ],
+     "a": "0.000",
+     "x": "0.000"
+    }
+   ],
+   "bottom": {
+    "limit": 5364,
+    "max": 5364,
+    "sh": 6264,
+    "ih": 900,
+    "sy": 5364,
+    "lenisScroll": 5364,
+    "transitions": [
+     "opacity, filter, transform",
+     "opacity, filter, transform",
+     "opacity, filter, transform",
+     "opacity, filter, transform",
+     "opacity, filter, transform"
+    ],
+    "childLeave": [
+     "1.000",
+     "1.000",
+     "1.000",
+     "1.000",
+     "0.000"
+    ]
+   },
+   "wheel": {
+    "sy": 5364,
+    "limit": 5364,
+    "max": 5364,
+    "fp": "1.000"
+   },
+   "env": {
+    "lenis": true,
+    "hoverNone": false,
+    "reduced": false,
+    "iw": 1440,
+    "ih": 900
+   },
+   "errs": []
+  },
+  "combined": {
+   "n": 182,
+   "lenA": 182,
+   "lenX": 182,
+   "syDiff": 0,
+   "fpDiff": 2,
+   "fpElsDiff": 181,
+   "leaveNumDiff": 27,
+   "leaveVisualDiff": 43,
+   "thumbDiff": 18,
+   "firstDiffs": [
+    {
+     "i": 0,
+     "k": "fpElsDiff",
+     "sy": [
+      0,
+      0
+     ],
+     "a": "0.000",
+     "x": "0.000"
+    },
+    {
+     "i": 1,
+     "k": "fpElsDiff",
+     "sy": [
+      60,
+      60
+     ],
+     "a": "0.000",
+     "x": "0.000"
+    },
+    {
+     "i": 2,
+     "k": "fpElsDiff",
+     "sy": [
+      120,
+      120
+     ],
+     "a": "0.000",
+     "x": "0.000"
+    },
+    {
+     "i": 3,
+     "k": "fpElsDiff",
+     "sy": [
+      180,
+      180
+     ],
+     "a": "0.000",
+     "x": "0.000"
+    },
+    {
+     "i": 4,
+     "k": "fpElsDiff",
+     "sy": [
+      240,
+      240
+     ],
+     "a": "0.000",
+     "x": "0.000"
+    },
+    {
+     "i": 5,
+     "k": "fpElsDiff",
+     "sy": [
+      300,
+      300
+     ],
+     "a": "0.000",
+     "x": "0.000"
+    },
+    {
+     "i": 6,
+     "k": "fpElsDiff",
+     "sy": [
+      360,
+      360
+     ],
+     "a": "0.000",
+     "x": "0.000"
+    },
+    {
+     "i": 7,
+     "k": "fpElsDiff",
+     "sy": [
+      420,
+      420
+     ],
+     "a": "0.000",
+     "x": "0.000"
+    }
+   ],
+   "bottom": {
+    "limit": 5364,
+    "max": 5364,
+    "sh": 6264,
+    "ih": 900,
+    "sy": 5364,
+    "lenisScroll": 5364,
+    "transitions": [
+     "opacity, filter, transform",
+     "opacity, filter, transform",
+     "opacity, filter, transform",
+     "opacity, filter, transform",
+     "opacity, filter, transform"
+    ],
+    "childLeave": [
+     "0",
+     "0",
+     "0",
+     "0",
+     "0"
+    ]
+   },
+   "wheel": {
+    "sy": 5364,
+    "limit": 5364,
+    "max": 5364,
+    "fp": "1.000"
+   },
+   "env": {
+    "lenis": true,
+    "hoverNone": false,
+    "reduced": false,
+    "iw": 1440,
+    "ih": 900
+   },
+   "errs": []
+  },
+  "curves": {
+   "A": {
+    "fpNonMonotonicSteps": 0,
+    "leaveFormulaViolations": 3,
+    "upVsDownMismatch": 18,
+    "fpCurveSample": [
+     [
+      0,
+      "0.000"
+     ],
+     [
+      600,
+      "0.000"
+     ],
+     [
+      1200,
+      "0.000"
+     ],
+     [
+      1800,
+      "0.000"
+     ],
+     [
+      2400,
+      "0.000"
+     ],
+     [
+      3000,
+      "0.000"
+     ],
+     [
+      3600,
+      "0.000"
+     ],
+     [
+      4200,
+      "0.000"
+     ],
+     [
+      4620,
+      "0.028"
+     ],
+     [
+      4680,
+      "0.106"
+     ],
+     [
+      4740,
+      "0.185"
+     ],
+     [
+      4800,
+      "0.263"
+     ],
+     [
+      4860,
+      "0.342"
+     ],
+     [
+      4920,
+      "0.420"
+     ],
+     [
+      4980,
+      "0.498"
+     ],
+     [
+      5040,
+      "0.577"
+     ],
+     [
+      5100,
+      "0.655"
+     ],
+     [
+      5160,
+      "0.734"
+     ],
+     [
+      5220,
+      "0.812"
+     ],
+     [
+      5280,
+      "0.891"
+     ],
+     [
+      5340,
+      "0.891"
+     ],
+     [
+      5364,
+      "1.000"
+     ]
+    ],
+    "inline": {
+     "fpInlineEmptyRows": 0,
+     "leaveInlineEmptyRows": 0
+    }
+   },
+   "B": {
+    "fpNonMonotonicSteps": 0,
+    "leaveFormulaViolations": 1,
+    "upVsDownMismatch": 18,
+    "fpCurveSample": [
+     [
+      0,
+      "0.000"
+     ],
+     [
+      600,
+      "0.000"
+     ],
+     [
+      1200,
+      "0.000"
+     ],
+     [
+      1800,
+      "0.000"
+     ],
+     [
+      2400,
+      "0.000"
+     ],
+     [
+      3000,
+      "0.000"
+     ],
+     [
+      3600,
+      "0.000"
+     ],
+     [
+      4200,
+      "0.000"
+     ],
+     [
+      4620,
+      "0.028"
+     ],
+     [
+      4680,
+      "0.106"
+     ],
+     [
+      4740,
+      "0.185"
+     ],
+     [
+      4800,
+      "0.263"
+     ],
+     [
+      4860,
+      "0.263"
+     ],
+     [
+      4920,
+      "0.420"
+     ],
+     [
+      4980,
+      "0.498"
+     ],
+     [
+      5040,
+      "0.577"
+     ],
+     [
+      5100,
+      "0.655"
+     ],
+     [
+      5160,
+      "0.734"
+     ],
+     [
+      5220,
+      "0.812"
+     ],
+     [
+      5280,
+      "0.891"
+     ],
+     [
+      5340,
+      "0.969"
+     ],
+     [
+      5364,
+      "1.000"
+     ]
+    ],
+    "inline": {
+     "fpInlineEmptyRows": 0,
+     "leaveInlineEmptyRows": 0
+    }
+   },
+   "combined": {
+    "fpNonMonotonicSteps": 0,
+    "leaveFormulaViolations": 6,
+    "upVsDownMismatch": 18,
+    "fpCurveSample": [
+     [
+      0,
+      "0.000"
+     ],
+     [
+      600,
+      "0.000"
+     ],
+     [
+      1200,
+      "0.000"
+     ],
+     [
+      1800,
+      "0.000"
+     ],
+     [
+      2400,
+      "0.000"
+     ],
+     [
+      3000,
+      "0.000"
+     ],
+     [
+      3600,
+      "0.000"
+     ],
+     [
+      4200,
+      "0.000"
+     ],
+     [
+      4620,
+      "0.028"
+     ],
+     [
+      4680,
+      "0.106"
+     ],
+     [
+      4740,
+      "0.185"
+     ],
+     [
+      4800,
+      "0.263"
+     ],
+     [
+      4860,
+      "0.342"
+     ],
+     [
+      4920,
+      "0.420"
+     ],
+     [
+      4980,
+      "0.498"
+     ],
+     [
+      5040,
+      "0.577"
+     ],
+     [
+      5100,
+      "0.655"
+     ],
+     [
+      5160,
+      "0.655"
+     ],
+     [
+      5220,
+      "0.812"
+     ],
+     [
+      5280,
+      "0.891"
+     ],
+     [
+      5340,
+      "0.969"
+     ],
+     [
+      5364,
+      "1.000"
+     ]
+    ],
+    "inline": {
+     "fpInlineEmptyRows": 0,
+     "leaveInlineEmptyRows": 182
+    }
+   }
+  },
+  "bottomA": {
+   "limit": 5364,
+   "max": 5364,
+   "sh": 6264,
+   "ih": 900,
+   "sy": 5364,
+   "lenisScroll": 5364,
+   "transitions": [
+    "opacity, filter, transform",
+    "opacity, filter, transform",
+    "opacity, filter, transform",
+    "opacity, filter, transform",
+    "opacity, filter, transform"
+   ],
+   "childLeave": [
+    "1.000",
+    "1.000",
+    "1.000",
+    "1.000",
+    "0.000"
+   ]
+  },
+  "wheelA": {
+   "sy": 5364,
+   "limit": 5364,
+   "max": 5364,
+   "fp": "1.000"
+  }
+ },
+ {
+  "vpn": "mob",
+  "AA": {
+   "n": 246,
+   "lenA": 246,
+   "lenX": 246,
+   "syDiff": 2,
+   "fpDiff": 20,
+   "fpElsDiff": 246,
+   "leaveNumDiff": 24,
+   "leaveVisualDiff": 86,
+   "thumbDiff": 151,
+   "firstDiffs": [
+    {
+     "i": 0,
+     "k": "fpElsDiff",
+     "sy": [
+      0,
+      0
+     ],
+     "a": "0.000",
+     "x": "0.000"
+    },
+    {
+     "i": 1,
+     "k": "fpElsDiff",
+     "sy": [
+      60,
+      60
+     ],
+     "a": "0.000",
+     "x": "0.000"
+    },
+    {
+     "i": 1,
+     "k": "thumbDiff",
+     "sy": [
+      60,
+      60
+     ],
+     "a": "height: 88px; transform: translate(-50%, 6.21711px);",
+     "x": "height: 87px; transform: translate(-50%, 0px);"
+    },
+    {
+     "i": 2,
+     "k": "fpElsDiff",
+     "sy": [
+      120,
+      120
+     ],
+     "a": "0.000",
+     "x": "0.000"
+    },
+    {
+     "i": 2,
+     "k": "thumbDiff",
+     "sy": [
+      120,
+      120
+     ],
+     "a": "height: 88px; transform: translate(-50%, 12.4342px);",
+     "x": "height: 87px; transform: translate(-50%, 0px);"
+    },
+    {
+     "i": 3,
+     "k": "fpElsDiff",
+     "sy": [
+      180,
+      180
+     ],
+     "a": "0.000",
+     "x": "0.000"
+    },
+    {
+     "i": 3,
+     "k": "thumbDiff",
+     "sy": [
+      180,
+      180
+     ],
+     "a": "height: 88px; transform: translate(-50%, 18.6513px);",
+     "x": "height: 87px; transform: translate(-50%, 0px);"
+    },
+    {
+     "i": 4,
+     "k": "fpElsDiff",
+     "sy": [
+      240,
+      240
+     ],
+     "a": "0.000",
+     "x": "0.000"
+    }
+   ],
+   "bottom": {
+    "limit": null,
+    "max": 8057,
+    "sh": 8910,
+    "ih": 853,
+    "sy": 8057,
+    "lenisScroll": null,
+    "transitions": [
+     "opacity, filter, transform",
+     "opacity, filter, transform",
+     "opacity, filter, transform",
+     "opacity, filter, transform",
+     "opacity, filter, transform"
+    ],
+    "childLeave": [
+     "1.000",
+     "1.000",
+     "1.000",
+     "1.000",
+     "0.000"
+    ]
+   },
+   "wheel": null,
+   "env": {
+    "lenis": false,
+    "hoverNone": true,
+    "reduced": false,
+    "iw": 390,
+    "ih": 844
+   },
+   "errs": []
+  },
+  "combined": {
+   "n": 246,
+   "lenA": 246,
+   "lenX": 246,
+   "syDiff": 2,
+   "fpDiff": 9,
+   "fpElsDiff": 246,
+   "leaveNumDiff": 20,
+   "leaveVisualDiff": 88,
+   "thumbDiff": 102,
+   "firstDiffs": [
+    {
+     "i": 0,
+     "k": "fpElsDiff",
+     "sy": [
+      0,
+      0
+     ],
+     "a": "0.000",
+     "x": "0.000"
+    },
+    {
+     "i": 1,
+     "k": "fpElsDiff",
+     "sy": [
+      60,
+      60
+     ],
+     "a": "0.000",
+     "x": "0.000"
+    },
+    {
+     "i": 2,
+     "k": "fpElsDiff",
+     "sy": [
+      120,
+      120
+     ],
+     "a": "0.000",
+     "x": "0.000"
+    },
+    {
+     "i": 3,
+     "k": "fpElsDiff",
+     "sy": [
+      180,
+      180
+     ],
+     "a": "0.000",
+     "x": "0.000"
+    },
+    {
+     "i": 4,
+     "k": "fpElsDiff",
+     "sy": [
+      240,
+      240
+     ],
+     "a": "0.000",
+     "x": "0.000"
+    },
+    {
+     "i": 5,
+     "k": "fpElsDiff",
+     "sy": [
+      300,
+      300
+     ],
+     "a": "0.000",
+     "x": "0.000"
+    },
+    {
+     "i": 6,
+     "k": "fpElsDiff",
+     "sy": [
+      360,
+      360
+     ],
+     "a": "0.000",
+     "x": "0.000"
+    },
+    {
+     "i": 7,
+     "k": "fpElsDiff",
+     "sy": [
+      420,
+      420
+     ],
+     "a": "0.000",
+     "x": "0.000"
+    }
+   ],
+   "bottom": {
+    "limit": null,
+    "max": 8057,
+    "sh": 8910,
+    "ih": 853,
+    "sy": 8057,
+    "lenisScroll": null,
+    "transitions": [
+     "opacity, filter, transform",
+     "opacity, filter, transform",
+     "opacity, filter, transform",
+     "opacity, filter, transform",
+     "opacity, filter, transform"
+    ],
+    "childLeave": [
+     "0",
+     "0",
+     "0",
+     "0",
+     "0"
+    ]
+   },
+   "wheel": null,
+   "env": {
+    "lenis": false,
+    "hoverNone": true,
+    "reduced": false,
+    "iw": 390,
+    "ih": 844
+   },
+   "errs": []
+  },
+  "curves": {
+   "A": {
+    "fpNonMonotonicSteps": 0,
+    "leaveFormulaViolations": 13,
+    "upVsDownMismatch": 25,
+    "fpCurveSample": [
+     [
+      0,
+      "0.000"
+     ],
+     [
+      600,
+      "0.000"
+     ],
+     [
+      1200,
+      "0.000"
+     ],
+     [
+      1800,
+      "0.000"
+     ],
+     [
+      2400,
+      "0.000"
+     ],
+     [
+      3000,
+      "0.000"
+     ],
+     [
+      3600,
+      "0.000"
+     ],
+     [
+      4200,
+      "0.000"
+     ],
+     [
+      4871,
+      "0.000"
+     ],
+     [
+      5400,
+      "0.000"
+     ],
+     [
+      6000,
+      "0.000"
+     ],
+     [
+      6600,
+      "0.000"
+     ],
+     [
+      6780,
+      "0.022"
+     ],
+     [
+      6840,
+      "0.104"
+     ],
+     [
+      6900,
+      "0.185"
+     ],
+     [
+      6960,
+      "0.267"
+     ],
+     [
+      7020,
+      "0.349"
+     ],
+     [
+      7080,
+      "0.431"
+     ],
+     [
+      7140,
+      "0.513"
+     ],
+     [
+      7200,
+      "0.595"
+     ],
+     [
+      7260,
+      "0.677"
+     ],
+     [
+      7296,
+      "0.726"
+     ]
+    ],
+    "inline": {
+     "fpInlineEmptyRows": 0,
+     "leaveInlineEmptyRows": 0
+    }
+   },
+   "B": {
+    "fpNonMonotonicSteps": 0,
+    "leaveFormulaViolations": 19,
+    "upVsDownMismatch": 18,
+    "fpCurveSample": [
+     [
+      0,
+      "0.000"
+     ],
+     [
+      600,
+      "0.000"
+     ],
+     [
+      1200,
+      "0.000"
+     ],
+     [
+      1800,
+      "0.000"
+     ],
+     [
+      2400,
+      "0.000"
+     ],
+     [
+      3000,
+      "0.000"
+     ],
+     [
+      3600,
+      "0.000"
+     ],
+     [
+      4200,
+      "0.000"
+     ],
+     [
+      4800,
+      "0.000"
+     ],
+     [
+      5400,
+      "0.000"
+     ],
+     [
+      6000,
+      "0.000"
+     ],
+     [
+      6600,
+      "0.000"
+     ],
+     [
+      6780,
+      "0.024"
+     ],
+     [
+      6840,
+      "0.106"
+     ],
+     [
+      6900,
+      "0.187"
+     ],
+     [
+      6960,
+      "0.269"
+     ],
+     [
+      7020,
+      "0.351"
+     ],
+     [
+      7080,
+      "0.432"
+     ],
+     [
+      7140,
+      "0.514"
+     ],
+     [
+      7200,
+      "0.596"
+     ],
+     [
+      7260,
+      "0.678"
+     ],
+     [
+      7296,
+      "0.727"
+     ]
+    ],
+    "inline": {
+     "fpInlineEmptyRows": 0,
+     "leaveInlineEmptyRows": 0
+    }
+   },
+   "combined": {
+    "fpNonMonotonicSteps": 0,
+    "leaveFormulaViolations": 17,
+    "upVsDownMismatch": 17,
+    "fpCurveSample": [
+     [
+      0,
+      "0.000"
+     ],
+     [
+      600,
+      "0.000"
+     ],
+     [
+      1200,
+      "0.000"
+     ],
+     [
+      1800,
+      "0.000"
+     ],
+     [
+      2400,
+      "0.000"
+     ],
+     [
+      3000,
+      "0.000"
+     ],
+     [
+      3600,
+      "0.000"
+     ],
+     [
+      4200,
+      "0.000"
+     ],
+     [
+      4800,
+      "0.000"
+     ],
+     [
+      5400,
+      "0.000"
+     ],
+     [
+      6000,
+      "0.000"
+     ],
+     [
+      6600,
+      "0.000"
+     ],
+     [
+      6780,
+      "0.022"
+     ],
+     [
+      6840,
+      "0.104"
+     ],
+     [
+      6900,
+      "0.185"
+     ],
+     [
+      6960,
+      "0.267"
+     ],
+     [
+      7020,
+      "0.349"
+     ],
+     [
+      7080,
+      "0.431"
+     ],
+     [
+      7140,
+      "0.513"
+     ],
+     [
+      7200,
+      "0.595"
+     ],
+     [
+      7260,
+      "0.677"
+     ],
+     [
+      7296,
+      "0.726"
+     ]
+    ],
+    "inline": {
+     "fpInlineEmptyRows": 0,
+     "leaveInlineEmptyRows": 246
+    }
+   }
+  },
+  "bottomA": {
+   "limit": null,
+   "max": 8034,
+   "sh": 8887,
+   "ih": 853,
+   "sy": 8034,
+   "lenisScroll": null,
+   "transitions": [
+    "opacity, filter, transform",
+    "opacity, filter, transform",
+    "opacity, filter, transform",
+    "opacity, filter, transform",
+    "opacity, filter, transform"
+   ],
+   "childLeave": [
+    "1.000",
+    "1.000",
+    "1.000",
+    "1.000",
+    "0.000"
+   ]
+  },
+  "wheelA": null
+ }
+]

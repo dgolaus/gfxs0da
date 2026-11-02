@@ -1,0 +1,3380 @@
+{
+ "vp": "1920x1080",
+ "pg": "/",
+ "errs": {
+  "A": [],
+  "B": [],
+  "combined": []
+ },
+ "lens": {
+  "A": 65,
+  "B": 65,
+  "combined": 65
+ },
+ "rows": [
+  {
+   "key": 0,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "A.skip-link|#main",
+    "fv": true,
+    "r": [
+     16,
+     8,
+     147.7,
+     47.6
+    ],
+    "sy": 0,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.02,
+     "pct": 0.028,
+     "big": 0.02,
+     "bbox": [
+      625,
+      671,
+      728,
+      721
+     ]
+    },
+    "vsB": {
+     "mad": 0.02,
+     "pct": 0.028,
+     "big": 0.02,
+     "bbox": [
+      625,
+      671,
+      728,
+      721
+     ]
+    },
+    "metaSame": true,
+    "metaSameB": true,
+    "flag": true
+   }
+  },
+  {
+   "key": 1,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "A.brand|#top",
+    "fv": true,
+    "r": [
+     56,
+     18.4,
+     67.1,
+     25.6
+    ],
+    "sy": 0,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.02,
+     "pct": 0.028,
+     "big": 0.02,
+     "bbox": [
+      625,
+      671,
+      728,
+      721
+     ]
+    },
+    "vsB": {
+     "mad": 0.02,
+     "pct": 0.028,
+     "big": 0.02,
+     "bbox": [
+      625,
+      671,
+      728,
+      721
+     ]
+    },
+    "metaSame": false,
+    "metaSameB": false,
+    "meta": {
+     "id": "A.brand|#top",
+     "fv": true,
+     "r": [
+      56,
+      15.9,
+      67.1,
+      25.6
+     ],
+     "sy": 0,
+     "lenis": true
+    },
+    "flag": true
+   }
+  },
+  {
+   "key": 2,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "A.|#work",
+    "fv": true,
+    "r": [
+     772,
+     16.3,
+     35.5,
+     22.4
+    ],
+    "sy": 0,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.021,
+     "pct": 0.028,
+     "big": 0.02,
+     "bbox": [
+      625,
+      671,
+      728,
+      721
+     ]
+    },
+    "vsB": {
+     "mad": 0.021,
+     "pct": 0.028,
+     "big": 0.02,
+     "bbox": [
+      625,
+      671,
+      728,
+      721
+     ]
+    },
+    "metaSame": false,
+    "metaSameB": false,
+    "meta": {
+     "id": "A.|#work",
+     "fv": true,
+     "r": [
+      772,
+      16,
+      35.5,
+      22.4
+     ],
+     "sy": 0,
+     "lenis": true
+    },
+    "flag": true
+   }
+  },
+  {
+   "key": 3,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "A.|#about",
+    "fv": true,
+    "r": [
+     839.6,
+     16.3,
+     40.6,
+     22.4
+    ],
+    "sy": 0,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.02,
+     "pct": 0.028,
+     "big": 0.02,
+     "bbox": [
+      625,
+      671,
+      728,
+      721
+     ]
+    },
+    "vsB": {
+     "mad": 0.02,
+     "pct": 0.028,
+     "big": 0.02,
+     "bbox": [
+      625,
+      671,
+      728,
+      721
+     ]
+    },
+    "metaSame": false,
+    "metaSameB": false,
+    "meta": {
+     "id": "A.|#about",
+     "fv": true,
+     "r": [
+      839.6,
+      13.7,
+      40.6,
+      22.4
+     ],
+     "sy": 0,
+     "lenis": true
+    },
+    "flag": true
+   }
+  },
+  {
+   "key": 4,
+   "noise": {
+    "mad": 0.001,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "A.|#trust",
+    "fv": true,
+    "r": [
+     912.2,
+     14.8,
+     34.8,
+     22.4
+    ],
+    "sy": 0,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.021,
+     "pct": 0.028,
+     "big": 0.02,
+     "bbox": [
+      625,
+      671,
+      728,
+      721
+     ]
+    },
+    "vsB": {
+     "mad": 0.021,
+     "pct": 0.028,
+     "big": 0.02,
+     "bbox": [
+      625,
+      671,
+      728,
+      721
+     ]
+    },
+    "metaSame": false,
+    "metaSameB": false,
+    "meta": {
+     "id": "A.|#trust",
+     "fv": true,
+     "r": [
+      912.2,
+      6.5,
+      34.8,
+      22.4
+     ],
+     "sy": 0,
+     "lenis": true
+    },
+    "flag": true
+   }
+  },
+  {
+   "key": 5,
+   "noise": {
+    "mad": 0.003,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "A.|#pricing",
+    "fv": true,
+    "r": [
+     979,
+     13.7,
+     47.2,
+     22.4
+    ],
+    "sy": 0,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.021,
+     "pct": 0.028,
+     "big": 0.02,
+     "bbox": [
+      625,
+      671,
+      728,
+      721
+     ]
+    },
+    "vsB": {
+     "mad": 0.021,
+     "pct": 0.028,
+     "big": 0.02,
+     "bbox": [
+      625,
+      671,
+      728,
+      721
+     ]
+    },
+    "metaSame": false,
+    "metaSameB": false,
+    "meta": {
+     "id": "A.|#pricing",
+     "fv": true,
+     "r": [
+      979,
+      15.3,
+      47.2,
+      22.4
+     ],
+     "sy": 0,
+     "lenis": true
+    },
+    "flag": true
+   }
+  },
+  {
+   "key": 6,
+   "noise": {
+    "mad": 0.001,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "A.|/tos/",
+    "fv": true,
+    "r": [
+     1058.2,
+     13.7,
+     28.7,
+     22.4
+    ],
+    "sy": 0,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.02,
+     "pct": 0.028,
+     "big": 0.02,
+     "bbox": [
+      625,
+      671,
+      728,
+      721
+     ]
+    },
+    "vsB": {
+     "mad": 0.02,
+     "pct": 0.028,
+     "big": 0.02,
+     "bbox": [
+      625,
+      671,
+      728,
+      721
+     ]
+    },
+    "metaSame": false,
+    "metaSameB": false,
+    "meta": {
+     "id": "A.|/tos/",
+     "fv": true,
+     "r": [
+      1058.2,
+      14.8,
+      28.7,
+      22.4
+     ],
+     "sy": 0,
+     "lenis": true
+    },
+    "flag": true
+   }
+  },
+  {
+   "key": 7,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "A.btn btn-ghost btn-sm|https://discord.gg/s0da",
+    "fv": true,
+    "r": [
+     1735.9,
+     3.9,
+     128.1,
+     40.8
+    ],
+    "sy": 0,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.02,
+     "pct": 0.028,
+     "big": 0.02,
+     "bbox": [
+      625,
+      671,
+      728,
+      721
+     ]
+    },
+    "vsB": {
+     "mad": 0.02,
+     "pct": 0.028,
+     "big": 0.02,
+     "bbox": [
+      625,
+      671,
+      728,
+      721
+     ]
+    },
+    "metaSame": false,
+    "metaSameB": false,
+    "meta": {
+     "id": "A.btn btn-ghost btn-sm|https://discord.gg/s0da",
+     "fv": true,
+     "r": [
+      1735.9,
+      7.1,
+      128.1,
+      40.8
+     ],
+     "sy": 0,
+     "lenis": true
+    },
+    "flag": true
+   }
+  },
+  {
+   "key": 8,
+   "noise": {
+    "mad": 0.002,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "A.btn btn-primary btn-lg btn-shiny|https://discord.gg/s0da",
+    "fv": true,
+    "r": [
+     396,
+     679.9,
+     188.6,
+     58
+    ],
+    "sy": 0,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.02,
+     "pct": 0.028,
+     "big": 0.02,
+     "bbox": [
+      625,
+      671,
+      728,
+      721
+     ]
+    },
+    "vsB": {
+     "mad": 0.021,
+     "pct": 0.028,
+     "big": 0.02,
+     "bbox": [
+      625,
+      671,
+      728,
+      721
+     ]
+    },
+    "metaSame": true,
+    "metaSameB": false,
+    "flag": true
+   }
+  },
+  {
+   "key": 9,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "A.btn btn-ghost btn-lg|#work",
+    "fv": true,
+    "r": [
+     596.6,
+     680.7,
+     131.3,
+     58
+    ],
+    "sy": 0,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": true,
+    "metaSameB": true,
+    "flag": false
+   }
+  },
+  {
+   "key": 10,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "ARTICLE.card has-variants reveal is-in|1 / 4\n            \n ",
+    "fv": true,
+    "r": [
+     390.5,
+     305.8,
+     757.1,
+     433.8
+    ],
+    "sy": 1120,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": false,
+    "metaSameB": false,
+    "meta": {
+     "id": "ARTICLE.card has-variants reveal is-in|1 / 4\n            \n ",
+     "fv": true,
+     "r": [
+      390.7,
+      306.8,
+      756.5,
+      433.5
+     ],
+     "sy": 1120,
+     "lenis": true
+    },
+    "flag": false
+   }
+  },
+  {
+   "key": 11,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "BUTTON.card-arrow card-arrow-prev|",
+    "fv": true,
+    "r": [
+     399,
+     502.5,
+     40,
+     40
+    ],
+    "sy": 1120,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": true,
+    "metaSameB": true,
+    "flag": false
+   }
+  },
+  {
+   "key": 12,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "BUTTON.card-arrow card-arrow-next|",
+    "fv": true,
+    "r": [
+     1099,
+     502.5,
+     40,
+     40
+    ],
+    "sy": 1120,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": true,
+    "metaSameB": true,
+    "flag": false
+   }
+  },
+  {
+   "key": 13,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "ARTICLE.card has-variants reveal is-in|1 / 4\n            \n ",
+    "fv": true,
+    "r": [
+     1157.3,
+     307.2,
+     369.4,
+     207.8
+    ],
+    "sy": 1120,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": false,
+    "metaSameB": true,
+    "meta": {
+     "id": "ARTICLE.card has-variants reveal is-in|1 / 4\n            \n ",
+     "fv": true,
+     "r": [
+      1157.3,
+      307.2,
+      369.5,
+      207.8
+     ],
+     "sy": 1120,
+     "lenis": true
+    },
+    "flag": false
+   }
+  },
+  {
+   "key": 14,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "BUTTON.card-arrow card-arrow-prev|",
+    "fv": true,
+    "r": [
+     1163,
+     391.1,
+     40,
+     40
+    ],
+    "sy": 1120,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": true,
+    "metaSameB": true,
+    "flag": false
+   }
+  },
+  {
+   "key": 15,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "BUTTON.card-arrow card-arrow-next|",
+    "fv": true,
+    "r": [
+     1481,
+     391.1,
+     40,
+     40
+    ],
+    "sy": 1120,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": true,
+    "metaSameB": true,
+    "flag": false
+   }
+  },
+  {
+   "key": 16,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "ARTICLE.card has-variants reveal is-in|1 / 4\n            \n ",
+    "fv": true,
+    "r": [
+     1157.3,
+     529.9,
+     369.4,
+     207.8
+    ],
+    "sy": 1120,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": false,
+    "metaSameB": true,
+    "meta": {
+     "id": "ARTICLE.card has-variants reveal is-in|1 / 4\n            \n ",
+     "fv": true,
+     "r": [
+      1157.3,
+      529.9,
+      369.5,
+      207.8
+     ],
+     "sy": 1120,
+     "lenis": true
+    },
+    "flag": false
+   }
+  },
+  {
+   "key": 17,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "BUTTON.card-arrow card-arrow-prev|",
+    "fv": true,
+    "r": [
+     1163,
+     613.8,
+     40,
+     40
+    ],
+    "sy": 1120,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": true,
+    "metaSameB": true,
+    "flag": false
+   }
+  },
+  {
+   "key": 18,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "BUTTON.card-arrow card-arrow-next|",
+    "fv": true,
+    "r": [
+     1481,
+     613.8,
+     40,
+     40
+    ],
+    "sy": 1120,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": true,
+    "metaSameB": true,
+    "flag": false
+   }
+  },
+  {
+   "key": 19,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "ARTICLE.card reveal is-in|Grow a Garden 2\n    ",
+    "fv": true,
+    "r": [
+     393.3,
+     752.7,
+     369.5,
+     207.8
+    ],
+    "sy": 1120,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": false,
+    "metaSameB": false,
+    "meta": {
+     "id": "ARTICLE.card reveal is-in|Grow a Garden 2\n    ",
+     "fv": true,
+     "r": [
+      393.3,
+      752.7,
+      369.4,
+      207.8
+     ],
+     "sy": 1120,
+     "lenis": true
+    },
+    "flag": false
+   }
+  },
+  {
+   "key": 20,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "ARTICLE.card has-variants reveal is-in|1 / 4\n            \n ",
+    "fv": true,
+    "r": [
+     775.3,
+     752.7,
+     369.5,
+     207.8
+    ],
+    "sy": 1120,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": false,
+    "metaSameB": false,
+    "meta": {
+     "id": "ARTICLE.card has-variants reveal is-in|1 / 4\n            \n ",
+     "fv": true,
+     "r": [
+      775.3,
+      752.7,
+      369.4,
+      207.8
+     ],
+     "sy": 1120,
+     "lenis": true
+    },
+    "flag": false
+   }
+  },
+  {
+   "key": 21,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "BUTTON.card-arrow card-arrow-prev|",
+    "fv": true,
+    "r": [
+     781,
+     836.6,
+     40,
+     40
+    ],
+    "sy": 1120,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": true,
+    "metaSameB": true,
+    "flag": false
+   }
+  },
+  {
+   "key": 22,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "BUTTON.card-arrow card-arrow-next|",
+    "fv": true,
+    "r": [
+     1099,
+     836.6,
+     40,
+     40
+    ],
+    "sy": 1120,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": true,
+    "metaSameB": true,
+    "flag": false
+   }
+  },
+  {
+   "key": 23,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "ARTICLE.card has-variants reveal is-in|1 / 4\n            \n ",
+    "fv": true,
+    "r": [
+     1157.3,
+     752.7,
+     369.5,
+     207.8
+    ],
+    "sy": 1120,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": false,
+    "metaSameB": true,
+    "meta": {
+     "id": "ARTICLE.card has-variants reveal is-in|1 / 4\n            \n ",
+     "fv": true,
+     "r": [
+      1157.3,
+      752.7,
+      369.4,
+      207.8
+     ],
+     "sy": 1120,
+     "lenis": true
+    },
+    "flag": false
+   }
+  },
+  {
+   "key": 24,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "BUTTON.card-arrow card-arrow-prev|",
+    "fv": true,
+    "r": [
+     1163,
+     836.6,
+     40,
+     40
+    ],
+    "sy": 1120,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": true,
+    "metaSameB": true,
+    "flag": false
+   }
+  },
+  {
+   "key": 25,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "BUTTON.card-arrow card-arrow-next|",
+    "fv": true,
+    "r": [
+     1481,
+     836.6,
+     40,
+     40
+    ],
+    "sy": 1120,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": true,
+    "metaSameB": true,
+    "flag": false
+   }
+  },
+  {
+   "key": 26,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "A.studio-chip|https://rubiconstudios.io/",
+    "fv": true,
+    "r": [
+     924.3,
+     507.1,
+     195.4,
+     56
+    ],
+    "sy": 2088,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": false,
+    "metaSameB": false,
+    "meta": {
+     "id": "A.studio-chip|https://rubiconstudios.io/",
+     "fv": true,
+     "r": [
+      924.3,
+      500.4,
+      195.4,
+      56
+     ],
+     "sy": 2088,
+     "lenis": true
+    },
+    "flag": false
+   }
+  },
+  {
+   "key": 27,
+   "noise": {
+    "mad": 0.111,
+    "pct": 0.225,
+    "big": 0.093,
+    "bbox": [
+     452,
+     398,
+     1488,
+     968
+    ]
+   },
+   "metaA": {
+    "id": "A.btn btn-primary|https://discord.gg/s0da",
+    "fv": true,
+    "r": [
+     396,
+     514.6,
+     168.5,
+     50.4
+    ],
+    "sy": 2933,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.107,
+     "pct": 0.144,
+     "big": 0.113,
+     "bbox": [
+      454,
+      534,
+      1069,
+      968
+     ]
+    },
+    "vsB": {
+     "mad": 0.162,
+     "pct": 0.306,
+     "big": 0.149,
+     "bbox": [
+      452,
+      398,
+      1488,
+      968
+     ]
+    },
+    "metaSame": true,
+    "metaSameB": true,
+    "flag": false
+   }
+  },
+  {
+   "key": 28,
+   "noise": {
+    "mad": 0.37,
+    "pct": 0.687,
+    "big": 0.289,
+    "bbox": [
+     394,
+     269,
+     1521,
+     976
+    ]
+   },
+   "metaA": {
+    "id": "A.btn btn-ghost|/slots/",
+    "fv": true,
+    "r": [
+     574.5,
+     514.6,
+     122,
+     50.4
+    ],
+    "sy": 2933,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.607,
+     "pct": 0.953,
+     "big": 0.432,
+     "bbox": [
+      395,
+      268,
+      1530,
+      980
+     ]
+    },
+    "vsB": {
+     "mad": 0.338,
+     "pct": 0.723,
+     "big": 0.251,
+     "bbox": [
+      394,
+      268,
+      1529,
+      980
+     ]
+    },
+    "metaSame": true,
+    "metaSameB": true,
+    "flag": true
+   }
+  },
+  {
+   "key": 29,
+   "noise": {
+    "mad": 0.001,
+    "pct": 0.001,
+    "big": 0,
+    "bbox": [
+     1413,
+     926,
+     1460,
+     964
+    ]
+   },
+   "metaA": {
+    "id": "A.quote-social|https://discord.gg/s0da",
+    "fv": true,
+    "r": [
+     711,
+     1039.4,
+     28,
+     28
+    ],
+    "sy": 2933,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.023,
+     "pct": 0.029,
+     "big": 0.021,
+     "bbox": [
+      982,
+      488,
+      1460,
+      964
+     ]
+    },
+    "vsB": {
+     "mad": 0.022,
+     "pct": 0.028,
+     "big": 0.021,
+     "bbox": [
+      982,
+      488,
+      1117,
+      499
+     ]
+    },
+    "metaSame": false,
+    "metaSameB": true,
+    "meta": {
+     "id": "A.quote-social|https://discord.gg/s0da",
+     "fv": true,
+     "r": [
+      711,
+      1039.9,
+      28,
+      28
+     ],
+     "sy": 2933,
+     "lenis": true
+    },
+    "flag": true
+   }
+  },
+  {
+   "key": 30,
+   "noise": {
+    "mad": 0.001,
+    "pct": 0.001,
+    "big": 0,
+    "bbox": [
+     1413,
+     219,
+     1460,
+     257
+    ]
+   },
+   "metaA": {
+    "id": "A.quote-social quote-social-cube|https://cubegraphics.org",
+    "fv": true,
+    "r": [
+     711,
+     506.4,
+     28,
+     28
+    ],
+    "sy": 3640,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.001,
+     "pct": 0.001,
+     "big": 0,
+     "bbox": [
+      1413,
+      219,
+      1460,
+      257
+     ]
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": false,
+    "metaSameB": false,
+    "meta": {
+     "id": "A.quote-social quote-social-cube|https://cubegraphics.org",
+     "fv": true,
+     "r": [
+      711,
+      526.4,
+      28,
+      28
+     ],
+     "sy": 3640,
+     "lenis": true
+    },
+    "flag": false
+   }
+  },
+  {
+   "key": 31,
+   "noise": {
+    "mad": 0.001,
+    "pct": 0.001,
+    "big": 0,
+    "bbox": [
+     1413,
+     219,
+     1460,
+     257
+    ]
+   },
+   "metaA": {
+    "id": "A.quote-social|https://discord.gg/s0da",
+    "fv": true,
+    "r": [
+     711,
+     694,
+     28,
+     28
+    ],
+    "sy": 3640,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.001,
+     "pct": 0.001,
+     "big": 0,
+     "bbox": [
+      1413,
+      219,
+      1460,
+      257
+     ]
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": false,
+    "metaSameB": false,
+    "meta": {
+     "id": "A.quote-social|https://discord.gg/s0da",
+     "fv": true,
+     "r": [
+      711,
+      695.3,
+      28,
+      28
+     ],
+     "sy": 3640,
+     "lenis": true
+    },
+    "flag": false
+   }
+  },
+  {
+   "key": 32,
+   "noise": {
+    "mad": 0.001,
+    "pct": 0.001,
+    "big": 0,
+    "bbox": [
+     1413,
+     219,
+     1460,
+     257
+    ]
+   },
+   "metaA": {
+    "id": "A.quote-social|https://discord.gg/s0da",
+    "fv": true,
+    "r": [
+     711,
+     842,
+     28,
+     28
+    ],
+    "sy": 3640,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.001,
+     "pct": 0.001,
+     "big": 0,
+     "bbox": [
+      1413,
+      219,
+      1460,
+      257
+     ]
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": false,
+    "metaSameB": true,
+    "meta": {
+     "id": "A.quote-social|https://discord.gg/s0da",
+     "fv": true,
+     "r": [
+      711,
+      840.7,
+      28,
+      28
+     ],
+     "sy": 3640,
+     "lenis": true
+    },
+    "flag": false
+   }
+  },
+  {
+   "key": 33,
+   "noise": {
+    "mad": 0.001,
+    "pct": 0.001,
+    "big": 0,
+    "bbox": [
+     1413,
+     219,
+     1460,
+     257
+    ]
+   },
+   "metaA": {
+    "id": "A.quote-social|https://discord.gg/s0da",
+    "fv": true,
+    "r": [
+     711,
+     724.7,
+     28,
+     28
+    ],
+    "sy": 3640,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.001,
+     "pct": 0.001,
+     "big": 0,
+     "bbox": [
+      1413,
+      219,
+      1460,
+      257
+     ]
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": true,
+    "metaSameB": false,
+    "flag": false
+   }
+  },
+  {
+   "key": 34,
+   "noise": {
+    "mad": 0.001,
+    "pct": 0.001,
+    "big": 0,
+    "bbox": [
+     1413,
+     219,
+     1460,
+     257
+    ]
+   },
+   "metaA": {
+    "id": "A.quote-social quote-social-cube|https://cubegraphics.org",
+    "fv": true,
+    "r": [
+     711,
+     916.1,
+     28,
+     28
+    ],
+    "sy": 3640,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.001,
+     "pct": 0.001,
+     "big": 0,
+     "bbox": [
+      1413,
+      219,
+      1460,
+      257
+     ]
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": true,
+    "metaSameB": false,
+    "flag": false
+   }
+  },
+  {
+   "key": 35,
+   "noise": {
+    "mad": 0.001,
+    "pct": 0.001,
+    "big": 0,
+    "bbox": [
+     1413,
+     219,
+     1460,
+     257
+    ]
+   },
+   "metaA": {
+    "id": "A.quote-social|https://discord.gg/s0da",
+    "fv": true,
+    "r": [
+     711,
+     726.1,
+     28,
+     28
+    ],
+    "sy": 3640,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.001,
+     "pct": 0.001,
+     "big": 0,
+     "bbox": [
+      1413,
+      219,
+      1460,
+      257
+     ]
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": false,
+    "metaSameB": true,
+    "meta": {
+     "id": "A.quote-social|https://discord.gg/s0da",
+     "fv": true,
+     "r": [
+      711,
+      727.4,
+      28,
+      28
+     ],
+     "sy": 3640,
+     "lenis": true
+    },
+    "flag": false
+   }
+  },
+  {
+   "key": 36,
+   "noise": {
+    "mad": 0.001,
+    "pct": 0.001,
+    "big": 0,
+    "bbox": [
+     1413,
+     219,
+     1460,
+     257
+    ]
+   },
+   "metaA": {
+    "id": "A.quote-social|https://discord.gg/s0da",
+    "fv": true,
+    "r": [
+     711,
+     872.4,
+     28,
+     28
+    ],
+    "sy": 3640,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.001,
+     "pct": 0.001,
+     "big": 0,
+     "bbox": [
+      1413,
+      219,
+      1460,
+      257
+     ]
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": false,
+    "metaSameB": false,
+    "meta": {
+     "id": "A.quote-social|https://discord.gg/s0da",
+     "fv": true,
+     "r": [
+      711,
+      873.7,
+      28,
+      28
+     ],
+     "sy": 3640,
+     "lenis": true
+    },
+    "flag": false
+   }
+  },
+  {
+   "key": 37,
+   "noise": {
+    "mad": 0.01,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "A.quote-social|https://discord.gg/s0da",
+    "fv": true,
+    "r": [
+     1095,
+     531.8,
+     28,
+     28
+    ],
+    "sy": 2671,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0.01,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": false,
+    "metaSameB": false,
+    "meta": {
+     "id": "A.quote-social|https://discord.gg/s0da",
+     "fv": true,
+     "r": [
+      1095,
+      536.6,
+      28,
+      28
+     ],
+     "sy": 2671,
+     "lenis": true
+    },
+    "flag": false
+   }
+  },
+  {
+   "key": 38,
+   "noise": {
+    "mad": 0.001,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "A.quote-social quote-social-rubicon|https://rubiconstudios.io/",
+    "fv": true,
+    "r": [
+     1095,
+     719.9,
+     28,
+     28
+    ],
+    "sy": 2671,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.027,
+     "pct": 0.053,
+     "big": 0.022,
+     "bbox": [
+      1023,
+      703,
+      1100,
+      719
+     ]
+    },
+    "vsB": {
+     "mad": 0.028,
+     "pct": 0.053,
+     "big": 0.022,
+     "bbox": [
+      1023,
+      703,
+      1100,
+      719
+     ]
+    },
+    "metaSame": true,
+    "metaSameB": false,
+    "flag": true
+   }
+  },
+  {
+   "key": 39,
+   "noise": {
+    "mad": 0.012,
+    "pct": 0.031,
+    "big": 0.014,
+    "bbox": [
+     982,
+     750,
+     1132,
+     762
+    ]
+   },
+   "metaA": {
+    "id": "A.quote-social|https://discord.gg/s0da",
+    "fv": true,
+    "r": [
+     1095,
+     957.4,
+     28,
+     28
+    ],
+    "sy": 2671,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.042,
+     "pct": 0.111,
+     "big": 0.027,
+     "bbox": [
+      982,
+      679,
+      1412,
+      762
+     ]
+    },
+    "vsB": {
+     "mad": 0.046,
+     "pct": 0.106,
+     "big": 0.025,
+     "bbox": [
+      982,
+      679,
+      1412,
+      761
+     ]
+    },
+    "metaSame": false,
+    "metaSameB": true,
+    "meta": {
+     "id": "A.quote-social|https://discord.gg/s0da",
+     "fv": true,
+     "r": [
+      1095,
+      960.2,
+      28,
+      28
+     ],
+     "sy": 2671,
+     "lenis": true
+    },
+    "flag": true
+   }
+  },
+  {
+   "key": 40,
+   "noise": {
+    "mad": 2.205,
+    "pct": 1.744,
+    "big": 1.603,
+    "bbox": [
+     1026,
+     0,
+     1460,
+     626
+    ]
+   },
+   "metaA": {
+    "id": "A.quote-social|https://discord.gg/s0da",
+    "fv": true,
+    "r": [
+     1095,
+     525.7,
+     28,
+     28
+    ],
+    "sy": 3271,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.329,
+     "pct": 0.382,
+     "big": 0.303,
+     "bbox": [
+      982,
+      2,
+      1460,
+      626
+     ]
+    },
+    "vsB": {
+     "mad": 2.201,
+     "pct": 1.87,
+     "big": 1.681,
+     "bbox": [
+      982,
+      0,
+      1416,
+      161
+     ]
+    },
+    "metaSame": false,
+    "metaSameB": false,
+    "meta": {
+     "id": "A.quote-social|https://discord.gg/s0da",
+     "fv": true,
+     "r": [
+      1095,
+      532,
+      28,
+      28
+     ],
+     "sy": 3271,
+     "lenis": true
+    },
+    "flag": false
+   }
+  },
+  {
+   "key": 41,
+   "noise": {
+    "mad": 0.001,
+    "pct": 0.001,
+    "big": 0,
+    "bbox": [
+     1413,
+     588,
+     1460,
+     626
+    ]
+   },
+   "metaA": {
+    "id": "A.quote-social|https://discord.gg/s0da",
+    "fv": true,
+    "r": [
+     1095,
+     703.9,
+     28,
+     28
+    ],
+    "sy": 3271,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.011,
+     "pct": 0.041,
+     "big": 0,
+     "bbox": [
+      982,
+      79,
+      1460,
+      626
+     ]
+    },
+    "vsB": {
+     "mad": 0.01,
+     "pct": 0.039,
+     "big": 0,
+     "bbox": [
+      982,
+      79,
+      1242,
+      118
+     ]
+    },
+    "metaSame": false,
+    "metaSameB": false,
+    "meta": {
+     "id": "A.quote-social|https://discord.gg/s0da",
+     "fv": true,
+     "r": [
+      1095,
+      704.4,
+      28,
+      28
+     ],
+     "sy": 3271,
+     "lenis": true
+    },
+    "flag": true
+   }
+  },
+  {
+   "key": 42,
+   "noise": {
+    "mad": 0.001,
+    "pct": 0.001,
+    "big": 0,
+    "bbox": [
+     1413,
+     588,
+     1460,
+     626
+    ]
+   },
+   "metaA": {
+    "id": "A.quote-social|https://discord.gg/s0da",
+    "fv": true,
+    "r": [
+     1095,
+     967.6,
+     28,
+     28
+    ],
+    "sy": 3271,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.001,
+     "pct": 0.001,
+     "big": 0,
+     "bbox": [
+      1413,
+      588,
+      1460,
+      626
+     ]
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": false,
+    "metaSameB": true,
+    "meta": {
+     "id": "A.quote-social|https://discord.gg/s0da",
+     "fv": true,
+     "r": [
+      1095,
+      968.1,
+      28,
+      28
+     ],
+     "sy": 3271,
+     "lenis": true
+    },
+    "flag": false
+   }
+  },
+  {
+   "key": 43,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": [
+     1444,
+     3,
+     1444,
+     3
+    ]
+   },
+   "metaA": {
+    "id": "A.quote-social quote-social-rubicon|https://rubiconstudios.io/",
+    "fv": true,
+    "r": [
+     1095,
+     534,
+     28,
+     28
+    ],
+    "sy": 3894,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": [
+      1444,
+      3,
+      1444,
+      3
+     ]
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": false,
+    "metaSameB": true,
+    "meta": {
+     "id": "A.quote-social quote-social-rubicon|https://rubiconstudios.io/",
+     "fv": true,
+     "r": [
+      1095,
+      535.9,
+      28,
+      28
+     ],
+     "sy": 3894,
+     "lenis": true
+    },
+    "flag": false
+   }
+  },
+  {
+   "key": 44,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": [
+     1444,
+     3,
+     1444,
+     3
+    ]
+   },
+   "metaA": {
+    "id": "A.quote-social|https://discord.gg/s0da",
+    "fv": true,
+    "r": [
+     1095,
+     773.3,
+     28,
+     28
+    ],
+    "sy": 3894,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": [
+      1444,
+      3,
+      1444,
+      3
+     ]
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": false,
+    "metaSameB": false,
+    "meta": {
+     "id": "A.quote-social|https://discord.gg/s0da",
+     "fv": true,
+     "r": [
+      1095,
+      773.8,
+      28,
+      28
+     ],
+     "sy": 3894,
+     "lenis": true
+    },
+    "flag": false
+   }
+  },
+  {
+   "key": 45,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": [
+     1444,
+     3,
+     1444,
+     3
+    ]
+   },
+   "metaA": {
+    "id": "A.quote-social|https://discord.gg/s0da",
+    "fv": true,
+    "r": [
+     1095,
+     490.1,
+     28,
+     28
+    ],
+    "sy": 3894,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": [
+      1444,
+      3,
+      1444,
+      3
+     ]
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": false,
+    "metaSameB": false,
+    "meta": {
+     "id": "A.quote-social|https://discord.gg/s0da",
+     "fv": true,
+     "r": [
+      1095,
+      490.6,
+      28,
+      28
+     ],
+     "sy": 3894,
+     "lenis": true
+    },
+    "flag": false
+   }
+  },
+  {
+   "key": 46,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": [
+     1444,
+     3,
+     1444,
+     3
+    ]
+   },
+   "metaA": {
+    "id": "A.quote-social|https://discord.gg/s0da",
+    "fv": true,
+    "r": [
+     1095,
+     662.4,
+     28,
+     28
+    ],
+    "sy": 3894,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": [
+      1444,
+      3,
+      1444,
+      3
+     ]
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": true,
+    "metaSameB": false,
+    "flag": false
+   }
+  },
+  {
+   "key": 47,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": [
+     1444,
+     3,
+     1444,
+     3
+    ]
+   },
+   "metaA": {
+    "id": "A.quote-social|https://discord.gg/s0da",
+    "fv": true,
+    "r": [
+     1479,
+     16.2,
+     28,
+     28
+    ],
+    "sy": 3894,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": [
+      1444,
+      3,
+      1444,
+      3
+     ]
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": false,
+    "metaSameB": false,
+    "meta": {
+     "id": "A.quote-social|https://discord.gg/s0da",
+     "fv": true,
+     "r": [
+      1479,
+      15.7,
+      28,
+      28
+     ],
+     "sy": 3894,
+     "lenis": true
+    },
+    "flag": false
+   }
+  },
+  {
+   "key": 48,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": [
+     1444,
+     3,
+     1444,
+     3
+    ]
+   },
+   "metaA": {
+    "id": "A.quote-social quote-social-cube|https://cubegraphics.org",
+    "fv": true,
+    "r": [
+     1479,
+     231.4,
+     28,
+     28
+    ],
+    "sy": 3894,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": [
+      1444,
+      3,
+      1444,
+      3
+     ]
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": true,
+    "metaSameB": false,
+    "flag": false
+   }
+  },
+  {
+   "key": 49,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": [
+     1444,
+     3,
+     1444,
+     3
+    ]
+   },
+   "metaA": {
+    "id": "A.quote-social|https://discord.gg/s0da",
+    "fv": true,
+    "r": [
+     1479,
+     470.4,
+     28,
+     28
+    ],
+    "sy": 3894,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": [
+      1444,
+      3,
+      1444,
+      3
+     ]
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": false,
+    "metaSameB": false,
+    "meta": {
+     "id": "A.quote-social|https://discord.gg/s0da",
+     "fv": true,
+     "r": [
+      1479,
+      469.9,
+      28,
+      28
+     ],
+     "sy": 3894,
+     "lenis": true
+    },
+    "flag": false
+   }
+  },
+  {
+   "key": 50,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": [
+     1444,
+     3,
+     1444,
+     3
+    ]
+   },
+   "metaA": {
+    "id": "A.quote-social|https://discord.gg/s0da",
+    "fv": true,
+    "r": [
+     1479,
+     663.5,
+     28,
+     28
+    ],
+    "sy": 3894,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": [
+      1444,
+      3,
+      1444,
+      3
+     ]
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": false,
+    "metaSameB": false,
+    "meta": {
+     "id": "A.quote-social|https://discord.gg/s0da",
+     "fv": true,
+     "r": [
+      1479,
+      658.6,
+      28,
+      28
+     ],
+     "sy": 3894,
+     "lenis": true
+    },
+    "flag": false
+   }
+  },
+  {
+   "key": 51,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": [
+     1444,
+     3,
+     1444,
+     3
+    ]
+   },
+   "metaA": {
+    "id": "A.quote-social|https://discord.gg/s0da",
+    "fv": true,
+    "r": [
+     1479,
+     469.2,
+     28,
+     28
+    ],
+    "sy": 3894,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": [
+      1444,
+      3,
+      1444,
+      3
+     ]
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": true,
+    "metaSameB": false,
+    "flag": false
+   }
+  },
+  {
+   "key": 52,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": [
+     1444,
+     3,
+     1444,
+     3
+    ]
+   },
+   "metaA": {
+    "id": "A.quote-social quote-social-cube|https://cubegraphics.org",
+    "fv": true,
+    "r": [
+     1479,
+     684.7,
+     28,
+     28
+    ],
+    "sy": 3894,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": [
+      1444,
+      3,
+      1444,
+      3
+     ]
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": false,
+    "metaSameB": false,
+    "meta": {
+     "id": "A.quote-social quote-social-cube|https://cubegraphics.org",
+     "fv": true,
+     "r": [
+      1479,
+      683.1,
+      28,
+      28
+     ],
+     "sy": 3894,
+     "lenis": true
+    },
+    "flag": false
+   }
+  },
+  {
+   "key": 53,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": [
+     1444,
+     3,
+     1444,
+     3
+    ]
+   },
+   "metaA": {
+    "id": "A.quote-social|https://discord.gg/s0da",
+    "fv": true,
+    "r": [
+     1479,
+     468.8,
+     28,
+     28
+    ],
+    "sy": 3894,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": [
+      1444,
+      3,
+      1444,
+      3
+     ]
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": false,
+    "metaSameB": false,
+    "meta": {
+     "id": "A.quote-social|https://discord.gg/s0da",
+     "fv": true,
+     "r": [
+      1479,
+      471.5,
+      28,
+      28
+     ],
+     "sy": 3894,
+     "lenis": true
+    },
+    "flag": false
+   }
+  },
+  {
+   "key": 54,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": [
+     1444,
+     3,
+     1444,
+     3
+    ]
+   },
+   "metaA": {
+    "id": "A.quote-social|https://discord.gg/s0da",
+    "fv": true,
+    "r": [
+     1479,
+     658,
+     28,
+     28
+    ],
+    "sy": 3894,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": [
+      1444,
+      3,
+      1444,
+      3
+     ]
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": false,
+    "metaSameB": true,
+    "meta": {
+     "id": "A.quote-social|https://discord.gg/s0da",
+     "fv": true,
+     "r": [
+      1479,
+      659.1,
+      28,
+      28
+     ],
+     "sy": 3894,
+     "lenis": true
+    },
+    "flag": false
+   }
+  },
+  {
+   "key": 55,
+   "noise": {
+    "mad": 0.264,
+    "pct": 0.811,
+    "big": 0.166,
+    "bbox": [
+     412,
+     183,
+     1504,
+     574
+    ]
+   },
+   "metaA": {
+    "id": "A.price-cta|https://discord.gg/s0da",
+    "fv": true,
+    "r": [
+     423,
+     503.6,
+     216,
+     40.4
+    ],
+    "sy": 4870,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0.264,
+     "pct": 0.811,
+     "big": 0.166,
+     "bbox": [
+      412,
+      183,
+      1504,
+      574
+     ]
+    },
+    "metaSame": false,
+    "metaSameB": false,
+    "meta": {
+     "id": "A.price-cta|https://discord.gg/s0da",
+     "fv": true,
+     "r": [
+      423,
+      520.2,
+      216,
+      40.4
+     ],
+     "sy": 4870,
+     "lenis": true
+    },
+    "flag": false
+   }
+  },
+  {
+   "key": 56,
+   "noise": {
+    "mad": 0.259,
+    "pct": 0.771,
+    "big": 0.166,
+    "bbox": [
+     412,
+     183,
+     1504,
+     574
+    ]
+   },
+   "metaA": {
+    "id": "A.price-cta|https://discord.gg/s0da",
+    "fv": true,
+    "r": [
+     709,
+     506,
+     216,
+     40.4
+    ],
+    "sy": 4870,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0.259,
+     "pct": 0.771,
+     "big": 0.166,
+     "bbox": [
+      412,
+      183,
+      1504,
+      574
+     ]
+    },
+    "metaSame": true,
+    "metaSameB": true,
+    "flag": false
+   }
+  },
+  {
+   "key": 57,
+   "noise": {
+    "mad": 0.261,
+    "pct": 0.811,
+    "big": 0.166,
+    "bbox": [
+     412,
+     183,
+     1504,
+     574
+    ]
+   },
+   "metaA": {
+    "id": "A.price-cta|https://discord.gg/s0da",
+    "fv": true,
+    "r": [
+     995,
+     503.2,
+     216,
+     40.4
+    ],
+    "sy": 4870,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0.261,
+     "pct": 0.811,
+     "big": 0.166,
+     "bbox": [
+      412,
+      183,
+      1504,
+      574
+     ]
+    },
+    "metaSame": false,
+    "metaSameB": false,
+    "meta": {
+     "id": "A.price-cta|https://discord.gg/s0da",
+     "fv": true,
+     "r": [
+      995,
+      503.3,
+      216,
+      40.4
+     ],
+     "sy": 4870,
+     "lenis": true
+    },
+    "flag": false
+   }
+  },
+  {
+   "key": 58,
+   "noise": {
+    "mad": 0.264,
+    "pct": 0.811,
+    "big": 0.166,
+    "bbox": [
+     412,
+     183,
+     1504,
+     574
+    ]
+   },
+   "metaA": {
+    "id": "A.price-cta|https://discord.gg/s0da",
+    "fv": true,
+    "r": [
+     1281,
+     502.6,
+     216,
+     40.4
+    ],
+    "sy": 4870,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0.264,
+     "pct": 0.811,
+     "big": 0.166,
+     "bbox": [
+      412,
+      183,
+      1504,
+      574
+     ]
+    },
+    "metaSame": false,
+    "metaSameB": false,
+    "meta": {
+     "id": "A.price-cta|https://discord.gg/s0da",
+     "fv": true,
+     "r": [
+      1281,
+      502.3,
+      216,
+      40.4
+     ],
+     "sy": 4870,
+     "lenis": true
+    },
+    "flag": false
+   }
+  },
+  {
+   "key": 59,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "A.fpill fpill-lg fpill-primary|https://discord.gg/s0da",
+    "fv": true,
+    "r": [
+     753.5,
+     686.1,
+     208.9,
+     66
+    ],
+    "sy": 5556,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": true,
+    "metaSameB": true,
+    "flag": false
+   }
+  },
+  {
+   "key": 60,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "A.fpill fpill-lg|https://x.com/gfxs0da",
+    "fv": true,
+    "r": [
+     974.4,
+     686.1,
+     192.2,
+     66
+    ],
+    "sy": 5556,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": true,
+    "metaSameB": true,
+    "flag": false
+   }
+  },
+  {
+   "key": 61,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "A.fpill|/tos/",
+    "fv": true,
+    "r": [
+     826,
+     784.1,
+     146.1,
+     46.8
+    ],
+    "sy": 5556,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": true,
+    "metaSameB": true,
+    "flag": false
+   }
+  },
+  {
+   "key": 62,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "A.fpill|#work",
+    "fv": true,
+    "r": [
+     996,
+     784.1,
+     98,
+     46.8
+    ],
+    "sy": 5556,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": true,
+    "metaSameB": true,
+    "flag": false
+   }
+  },
+  {
+   "key": 63,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "BODY.bg-red ready|Skip to content\n\n  \n",
+    "fv": false,
+    "r": [
+     0,
+     -5556,
+     1920,
+     6635.8
+    ],
+    "sy": 5556,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": true,
+    "metaSameB": true,
+    "flag": false
+   }
+  },
+  {
+   "key": 64,
+   "noise": {
+    "mad": 0.01,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "metaA": {
+    "id": "A.skip-link|#main",
+    "fv": true,
+    "r": [
+     16,
+     8,
+     147.7,
+     47.6
+    ],
+    "sy": 0,
+    "lenis": true
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.01,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "metaSame": true,
+    "metaSameB": true,
+    "flag": false
+   }
+  }
+ ],
+ "flagged": [
+  "0:combined",
+  "1:combined",
+  "2:combined",
+  "3:combined",
+  "4:combined",
+  "5:combined",
+  "6:combined",
+  "7:combined",
+  "8:combined",
+  "19:combined",
+  "20:combined",
+  "28:combined",
+  "29:combined",
+  "38:combined",
+  "39:combined",
+  "41:combined",
+  "47:combined",
+  "57:combined"
+ ]
+}

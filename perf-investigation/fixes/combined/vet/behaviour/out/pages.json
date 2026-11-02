@@ -1,0 +1,2133 @@
+{
+ "res": [
+  {
+   "vpn": "desk",
+   "v": "baseline",
+   "tosEnv": {
+    "lenis": true,
+    "hoverNone": false,
+    "reduced": false,
+    "iw": 1440,
+    "ih": 900
+   },
+   "spy": [
+    [
+     0,
+     "Pricing & Payment",
+     1,
+     "0.000,0.000,false"
+    ],
+    [
+     150,
+     "Pricing & Payment",
+     1,
+     "0.347,0.094,false"
+    ],
+    [
+     300,
+     "Pricing & Payment",
+     1,
+     "0.944,1.000,true"
+    ],
+    [
+     450,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     600,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     750,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     900,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1050,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1200,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1350,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1500,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1650,
+     "Orders & Contact",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1800,
+     "Orders & Contact",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1950,
+     "Queue & Priority",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2100,
+     "Queue & Priority",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2250,
+     "Delivery & Timeline",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2400,
+     "Delivery & Timeline",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2550,
+     "Delivery & Timeline",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2700,
+     "Client Responsibilit",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2850,
+     "Client Responsibilit",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3000,
+     "Creative Direction",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3150,
+     "Creative Direction",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3300,
+     "Tools & Process",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3450,
+     "Tools & Process",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3600,
+     "Usage Rights",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3750,
+     "Usage Rights",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3900,
+     "Usage Rights",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4050,
+     "Performance Disclaim",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4200,
+     "Cancellations & Refu",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4350,
+     "Cancellations & Refu",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4500,
+     "Cancellations & Refu",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4650,
+     "Communication & Cond",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4800,
+     "Communication & Cond",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4950,
+     "Final Delivery",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     5100,
+     "Final Delivery",
+     1,
+     "1.000,1.000,true"
+    ]
+   ],
+   "tocClick": {
+    "h": "#queue",
+    "sy": 2077,
+    "top": 80,
+    "active": "Queue & Priority"
+   },
+   "shots": {
+    "tos": {
+     "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/pages/desk_baseline_tos_culv.png",
+     "env": {
+      "lenis": true,
+      "hoverNone": false,
+      "reduced": false,
+      "iw": 1440,
+      "ih": 900
+     },
+     "title": "Terms of Service — s0da",
+     "h": 6087
+    },
+    "slots": {
+     "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/pages/desk_baseline_slots_xyxu.png",
+     "env": {
+      "lenis": true,
+      "hoverNone": false,
+      "reduced": false,
+      "iw": 1440,
+      "ih": 900
+     },
+     "title": "Slots retired — s0da",
+     "h": 900
+    },
+    "thisdoesnotexist": {
+     "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/pages/desk_baseline_thisdoesnotexist_3ens.png",
+     "env": {
+      "lenis": false,
+      "hoverNone": false,
+      "reduced": false,
+      "iw": 1440,
+      "ih": 900
+     },
+     "title": "Page not found — s0da",
+     "h": 900
+    }
+   },
+   "pageErrors": [],
+   "consoleErrors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ]
+  },
+  {
+   "vpn": "desk",
+   "v": "baseline",
+   "tosEnv": {
+    "lenis": true,
+    "hoverNone": false,
+    "reduced": false,
+    "iw": 1440,
+    "ih": 900
+   },
+   "spy": [
+    [
+     0,
+     "Pricing & Payment",
+     1,
+     "0.000,0.000,false"
+    ],
+    [
+     150,
+     "Pricing & Payment",
+     1,
+     "0.347,0.094,false"
+    ],
+    [
+     300,
+     "Pricing & Payment",
+     1,
+     "0.944,1.000,true"
+    ],
+    [
+     450,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     600,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     750,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     900,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1050,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1200,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1350,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1500,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1650,
+     "Orders & Contact",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1800,
+     "Orders & Contact",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1950,
+     "Queue & Priority",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2100,
+     "Queue & Priority",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2250,
+     "Delivery & Timeline",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2400,
+     "Delivery & Timeline",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2550,
+     "Delivery & Timeline",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2700,
+     "Client Responsibilit",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2850,
+     "Client Responsibilit",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3000,
+     "Creative Direction",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3150,
+     "Creative Direction",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3300,
+     "Tools & Process",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3450,
+     "Tools & Process",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3600,
+     "Usage Rights",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3750,
+     "Usage Rights",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3900,
+     "Usage Rights",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4050,
+     "Performance Disclaim",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4200,
+     "Cancellations & Refu",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4350,
+     "Cancellations & Refu",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4500,
+     "Cancellations & Refu",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4650,
+     "Communication & Cond",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4800,
+     "Communication & Cond",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4950,
+     "Final Delivery",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     5100,
+     "Final Delivery",
+     1,
+     "1.000,1.000,true"
+    ]
+   ],
+   "tocClick": {
+    "h": "#queue",
+    "sy": 2077,
+    "top": 80,
+    "active": "Queue & Priority"
+   },
+   "shots": {
+    "tos": {
+     "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/pages/desk_baseline_tos_ygrb.png",
+     "env": {
+      "lenis": true,
+      "hoverNone": false,
+      "reduced": false,
+      "iw": 1440,
+      "ih": 900
+     },
+     "title": "Terms of Service — s0da",
+     "h": 6087
+    },
+    "slots": {
+     "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/pages/desk_baseline_slots_95x4.png",
+     "env": {
+      "lenis": true,
+      "hoverNone": false,
+      "reduced": false,
+      "iw": 1440,
+      "ih": 900
+     },
+     "title": "Slots retired — s0da",
+     "h": 900
+    },
+    "thisdoesnotexist": {
+     "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/pages/desk_baseline_thisdoesnotexist_eyp8.png",
+     "env": {
+      "lenis": false,
+      "hoverNone": false,
+      "reduced": false,
+      "iw": 1440,
+      "ih": 900
+     },
+     "title": "Page not found — s0da",
+     "h": 900
+    }
+   },
+   "pageErrors": [],
+   "consoleErrors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ]
+  },
+  {
+   "vpn": "desk",
+   "v": "combined",
+   "tosEnv": {
+    "lenis": true,
+    "hoverNone": false,
+    "reduced": false,
+    "iw": 1440,
+    "ih": 900
+   },
+   "spy": [
+    [
+     0,
+     "Pricing & Payment",
+     1,
+     "0,0,false"
+    ],
+    [
+     150,
+     "Pricing & Payment",
+     1,
+     "0.347,0.094,false"
+    ],
+    [
+     300,
+     "Pricing & Payment",
+     1,
+     "0.944,1.000,true"
+    ],
+    [
+     450,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     600,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     750,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     900,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1050,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1200,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1350,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1500,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1650,
+     "Orders & Contact",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1800,
+     "Orders & Contact",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1950,
+     "Queue & Priority",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2100,
+     "Queue & Priority",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2250,
+     "Delivery & Timeline",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2400,
+     "Delivery & Timeline",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2550,
+     "Delivery & Timeline",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2700,
+     "Client Responsibilit",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2850,
+     "Client Responsibilit",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3000,
+     "Creative Direction",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3150,
+     "Creative Direction",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3300,
+     "Tools & Process",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3450,
+     "Tools & Process",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3600,
+     "Usage Rights",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3750,
+     "Usage Rights",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3900,
+     "Usage Rights",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4050,
+     "Performance Disclaim",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4200,
+     "Cancellations & Refu",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4350,
+     "Cancellations & Refu",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4500,
+     "Cancellations & Refu",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4650,
+     "Communication & Cond",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4800,
+     "Communication & Cond",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4950,
+     "Final Delivery",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     5100,
+     "Final Delivery",
+     1,
+     "1.000,1.000,true"
+    ]
+   ],
+   "tocClick": {
+    "h": "#queue",
+    "sy": 2077,
+    "top": 80,
+    "active": "Queue & Priority"
+   },
+   "shots": {
+    "tos": {
+     "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/pages/desk_combined_tos_43yg.png",
+     "env": {
+      "lenis": true,
+      "hoverNone": false,
+      "reduced": false,
+      "iw": 1440,
+      "ih": 900
+     },
+     "title": "Terms of Service — s0da",
+     "h": 6087
+    },
+    "slots": {
+     "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/pages/desk_combined_slots_oeb9.png",
+     "env": {
+      "lenis": true,
+      "hoverNone": false,
+      "reduced": false,
+      "iw": 1440,
+      "ih": 900
+     },
+     "title": "Slots retired — s0da",
+     "h": 900
+    },
+    "thisdoesnotexist": {
+     "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/pages/desk_combined_thisdoesnotexist_8t2v.png",
+     "env": {
+      "lenis": false,
+      "hoverNone": false,
+      "reduced": false,
+      "iw": 1440,
+      "ih": 900
+     },
+     "title": "Page not found — s0da",
+     "h": 900
+    }
+   },
+   "pageErrors": [],
+   "consoleErrors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ]
+  },
+  {
+   "vpn": "mob",
+   "v": "baseline",
+   "tosEnv": {
+    "lenis": false,
+    "hoverNone": true,
+    "reduced": false,
+    "iw": 390,
+    "ih": 844
+   },
+   "spy": [
+    [
+     0,
+     "Pricing & Payment",
+     1,
+     "0.000,0.000,false"
+    ],
+    [
+     150,
+     "Pricing & Payment",
+     1,
+     "0.347,0.094,false"
+    ],
+    [
+     300,
+     "Pricing & Payment",
+     1,
+     "0.944,1.000,true"
+    ],
+    [
+     450,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     600,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     750,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     900,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1050,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1200,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1350,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1500,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1650,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1800,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1950,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2100,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2250,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2400,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2550,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2700,
+     "Orders & Contact",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2850,
+     "Orders & Contact",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3000,
+     "Queue & Priority",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3150,
+     "Queue & Priority",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3300,
+     "Queue & Priority",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3450,
+     "Delivery & Timeline",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3600,
+     "Delivery & Timeline",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3750,
+     "Delivery & Timeline",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3900,
+     "Delivery & Timeline",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4050,
+     "Client Responsibilit",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4200,
+     "Client Responsibilit",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4350,
+     "Creative Direction",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4500,
+     "Creative Direction",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4650,
+     "Creative Direction",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4800,
+     "Tools & Process",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4950,
+     "Tools & Process",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     5100,
+     "Usage Rights",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     5250,
+     "Usage Rights",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     5400,
+     "Usage Rights",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     5550,
+     "Usage Rights",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     5700,
+     "Performance Disclaim",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     5850,
+     "Performance Disclaim",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     6000,
+     "Cancellations & Refu",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     6150,
+     "Cancellations & Refu",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     6300,
+     "Cancellations & Refu",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     6450,
+     "Cancellations & Refu",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     6600,
+     "Communication & Cond",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     6750,
+     "Communication & Cond",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     6900,
+     "Communication & Cond",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     7050,
+     "Final Delivery",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     7200,
+     "Final Delivery",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     7350,
+     "Final Delivery",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     7500,
+     "General Terms",
+     1,
+     "1.000,1.000,true"
+    ]
+   ],
+   "tocClick": {
+    "h": "#queue",
+    "sy": 3187,
+    "top": 100,
+    "active": "Queue & Priority"
+   },
+   "shots": {
+    "tos": {
+     "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/pages/mob_baseline_tos_drtm.png",
+     "env": {
+      "lenis": false,
+      "hoverNone": true,
+      "reduced": false,
+      "iw": 390,
+      "ih": 844
+     },
+     "title": "Terms of Service — s0da",
+     "h": 8372
+    },
+    "slots": {
+     "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/pages/mob_baseline_slots_08oz.png",
+     "env": {
+      "lenis": false,
+      "hoverNone": true,
+      "reduced": false,
+      "iw": 390,
+      "ih": 844
+     },
+     "title": "Slots retired — s0da",
+     "h": 1033
+    },
+    "thisdoesnotexist": {
+     "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/pages/mob_baseline_thisdoesnotexist_ptn7.png",
+     "env": {
+      "lenis": false,
+      "hoverNone": true,
+      "reduced": false,
+      "iw": 390,
+      "ih": 844
+     },
+     "title": "Page not found — s0da",
+     "h": 844
+    }
+   },
+   "pageErrors": [],
+   "consoleErrors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ]
+  },
+  {
+   "vpn": "mob",
+   "v": "baseline",
+   "tosEnv": {
+    "lenis": false,
+    "hoverNone": true,
+    "reduced": false,
+    "iw": 390,
+    "ih": 844
+   },
+   "spy": [
+    [
+     0,
+     "Pricing & Payment",
+     1,
+     "0.000,0.000,false"
+    ],
+    [
+     150,
+     "Pricing & Payment",
+     1,
+     "0.347,0.094,false"
+    ],
+    [
+     300,
+     "Pricing & Payment",
+     1,
+     "0.944,1.000,true"
+    ],
+    [
+     450,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     600,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     750,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     900,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1050,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1200,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1350,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1500,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1650,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1800,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1950,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2100,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2250,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2400,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2550,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2700,
+     "Orders & Contact",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2850,
+     "Orders & Contact",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3000,
+     "Queue & Priority",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3150,
+     "Queue & Priority",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3300,
+     "Queue & Priority",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3450,
+     "Delivery & Timeline",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3600,
+     "Delivery & Timeline",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3750,
+     "Delivery & Timeline",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3900,
+     "Delivery & Timeline",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4050,
+     "Client Responsibilit",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4200,
+     "Client Responsibilit",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4350,
+     "Creative Direction",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4500,
+     "Creative Direction",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4650,
+     "Creative Direction",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4800,
+     "Tools & Process",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4950,
+     "Tools & Process",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     5100,
+     "Usage Rights",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     5250,
+     "Usage Rights",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     5400,
+     "Usage Rights",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     5550,
+     "Usage Rights",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     5700,
+     "Performance Disclaim",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     5850,
+     "Performance Disclaim",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     6000,
+     "Cancellations & Refu",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     6150,
+     "Cancellations & Refu",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     6300,
+     "Cancellations & Refu",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     6450,
+     "Cancellations & Refu",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     6600,
+     "Communication & Cond",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     6750,
+     "Communication & Cond",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     6900,
+     "Communication & Cond",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     7050,
+     "Final Delivery",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     7200,
+     "Final Delivery",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     7350,
+     "Final Delivery",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     7500,
+     "General Terms",
+     1,
+     "1.000,1.000,true"
+    ]
+   ],
+   "tocClick": {
+    "h": "#queue",
+    "sy": 3187,
+    "top": 100,
+    "active": "Queue & Priority"
+   },
+   "shots": {
+    "tos": {
+     "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/pages/mob_baseline_tos_j0er.png",
+     "env": {
+      "lenis": false,
+      "hoverNone": true,
+      "reduced": false,
+      "iw": 390,
+      "ih": 844
+     },
+     "title": "Terms of Service — s0da",
+     "h": 8372
+    },
+    "slots": {
+     "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/pages/mob_baseline_slots_qkhn.png",
+     "env": {
+      "lenis": false,
+      "hoverNone": true,
+      "reduced": false,
+      "iw": 390,
+      "ih": 844
+     },
+     "title": "Slots retired — s0da",
+     "h": 1033
+    },
+    "thisdoesnotexist": {
+     "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/pages/mob_baseline_thisdoesnotexist_hbli.png",
+     "env": {
+      "lenis": false,
+      "hoverNone": true,
+      "reduced": false,
+      "iw": 390,
+      "ih": 844
+     },
+     "title": "Page not found — s0da",
+     "h": 844
+    }
+   },
+   "pageErrors": [],
+   "consoleErrors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ]
+  },
+  {
+   "vpn": "mob",
+   "v": "combined",
+   "tosEnv": {
+    "lenis": false,
+    "hoverNone": true,
+    "reduced": false,
+    "iw": 390,
+    "ih": 844
+   },
+   "spy": [
+    [
+     0,
+     "Pricing & Payment",
+     1,
+     "0,0,false"
+    ],
+    [
+     150,
+     "Pricing & Payment",
+     1,
+     "0,0,false"
+    ],
+    [
+     300,
+     "Pricing & Payment",
+     1,
+     "0,0,false"
+    ],
+    [
+     450,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     600,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     750,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     900,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1050,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1200,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1350,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1500,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1650,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1800,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     1950,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2100,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2250,
+     "Pricing & Payment",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2400,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2550,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2700,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     2850,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3000,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3150,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3300,
+     "Rescales, Variants &",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3450,
+     "Delivery & Timeline",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3600,
+     "Delivery & Timeline",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3750,
+     "Delivery & Timeline",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     3900,
+     "Delivery & Timeline",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4050,
+     "Delivery & Timeline",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4200,
+     "Delivery & Timeline",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4350,
+     "Creative Direction",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4500,
+     "Creative Direction",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4650,
+     "Creative Direction",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4800,
+     "Creative Direction",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     4950,
+     "Creative Direction",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     5100,
+     "Creative Direction",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     5250,
+     "Creative Direction",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     5400,
+     "Usage Rights",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     5550,
+     "Usage Rights",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     5700,
+     "Usage Rights",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     5850,
+     "Usage Rights",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     6000,
+     "Usage Rights",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     6150,
+     "Usage Rights",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     6300,
+     "Cancellations & Refu",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     6450,
+     "Cancellations & Refu",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     6600,
+     "Cancellations & Refu",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     6750,
+     "Communication & Cond",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     6900,
+     "Communication & Cond",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     7050,
+     "Final Delivery",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     7200,
+     "Final Delivery",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     7350,
+     "Final Delivery",
+     1,
+     "1.000,1.000,true"
+    ],
+    [
+     7500,
+     "General Terms",
+     1,
+     "1.000,1.000,true"
+    ]
+   ],
+   "tocClick": {
+    "h": "#queue",
+    "sy": 3187,
+    "top": 100,
+    "active": "Queue & Priority"
+   },
+   "shots": {
+    "tos": {
+     "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/pages/mob_combined_tos_3fup.png",
+     "env": {
+      "lenis": false,
+      "hoverNone": true,
+      "reduced": false,
+      "iw": 390,
+      "ih": 844
+     },
+     "title": "Terms of Service — s0da",
+     "h": 8372
+    },
+    "slots": {
+     "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/pages/mob_combined_slots_m6kr.png",
+     "env": {
+      "lenis": false,
+      "hoverNone": true,
+      "reduced": false,
+      "iw": 390,
+      "ih": 844
+     },
+     "title": "Slots retired — s0da",
+     "h": 1033
+    },
+    "thisdoesnotexist": {
+     "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/pages/mob_combined_thisdoesnotexist_31np.png",
+     "env": {
+      "lenis": false,
+      "hoverNone": true,
+      "reduced": false,
+      "iw": 390,
+      "ih": 844
+     },
+     "title": "Page not found — s0da",
+     "h": 844
+    }
+   },
+   "pageErrors": [],
+   "consoleErrors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ]
+  }
+ ],
+ "diffs": [
+  {
+   "vpn": "desk",
+   "k": "tos",
+   "noise": {
+    "mad": 0.316,
+    "pct": 1.26,
+    "big": 0.272,
+    "bbox": [
+     218,
+     227,
+     1182,
+     899
+    ]
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.316,
+     "pct": 1.26,
+     "big": 0.272,
+     "bbox": [
+      218,
+      227,
+      1182,
+      899
+     ]
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    }
+   }
+  },
+  {
+   "vpn": "desk",
+   "k": "slots",
+   "noise": {
+    "mad": 0.557,
+    "pct": 1.771,
+    "big": 0.452,
+    "bbox": [
+     275,
+     175,
+     1163,
+     826
+    ]
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.556,
+     "pct": 1.77,
+     "big": 0.452,
+     "bbox": [
+      275,
+      175,
+      1163,
+      826
+     ]
+    },
+    "vsB": {
+     "mad": 0.003,
+     "pct": 0.013,
+     "big": 0,
+     "bbox": [
+      336,
+      240,
+      1111,
+      623
+     ]
+    }
+   }
+  },
+  {
+   "vpn": "desk",
+   "k": "thisdoesnotexist",
+   "noise": {
+    "mad": 0.018,
+    "pct": 0.037,
+    "big": 0.025,
+    "bbox": [
+     506,
+     377,
+     975,
+     765
+    ]
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.018,
+     "pct": 0.037,
+     "big": 0.025,
+     "bbox": [
+      506,
+      377,
+      975,
+      765
+     ]
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    }
+   }
+  },
+  {
+   "vpn": "mob",
+   "k": "tos",
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    }
+   }
+  },
+  {
+   "vpn": "mob",
+   "k": "slots",
+   "noise": {
+    "mad": 0.001,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "combined": {
+    "vsA": {
+     "mad": 1.88,
+     "pct": 6.193,
+     "big": 1.542,
+     "bbox": [
+      36,
+      133,
+      354,
+      791
+     ]
+    },
+    "vsB": {
+     "mad": 1.88,
+     "pct": 6.192,
+     "big": 1.541,
+     "bbox": [
+      36,
+      133,
+      354,
+      791
+     ]
+    }
+   }
+  },
+  {
+   "vpn": "mob",
+   "k": "thisdoesnotexist",
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    }
+   }
+  }
+ ]
+}

@@ -5,7 +5,7 @@ const fs = require('fs'); const path = require('path');
 const { L, withPage, compare, out } = require('./dv');
 const [vp, pg, ...vars] = process.argv.slice(2);
 const [W, H] = vp.split('x').map(Number);
-const OUT = out(`hover_${vp}_${pg.replace(/\W+/g, '_') || 'root'}`);
+const OUT = out(`hover_${vp}_${pg.replace(/\W+/g, '_') || 'root'}${process.env.TAG || ''}`);
 const BTN_TS = [0, 80, 160, 250, 350, 450, 600, 750, 899];
 const CARD_TS = [60, 150, 250, 5000];
 
@@ -50,6 +50,9 @@ async function run(v, label) {
         // pause the hover-started animations immediately so they cannot finish and drop out
         await p.evaluate(() => { for (const a of document.getAnimations()) { try { a.pause(); } catch (e) {} } });
         await L.w8(1200);  // pointer parallax / tilt loops converge (identical in all variants)
+        // v3: the pointer-parallax loop stops within 0.05px of its target, and that residual depends on how many frames
+        // ran between the synthetic pointer moves (wall clock) -> pin it like walk.js/bench.js do.
+        await p.evaluate(() => { const bg = document.querySelector('.hero-bg'); if (bg) bg.style.translate = '0px 0px'; }); await L.w8(150);
         const box2 = await p.evaluate(({ sel, i }) => { const e = document.querySelectorAll(sel)[i]; const r = e.getBoundingClientRect(); return { x: r.x, y: r.y, w: r.width, h: r.height, fv: e.matches(':focus-visible'), hv: e.matches(':hover') }; }, tg);
         const pad = 48; const clip = { x: Math.max(0, Math.floor(box.x - pad)), y: Math.max(0, Math.floor(box.y - pad)) };
         clip.width = Math.min(W - clip.x, Math.ceil(box.w + 2 * pad)); clip.height = Math.min(H - clip.y, Math.ceil(box.h + 2 * pad));
@@ -57,7 +60,10 @@ async function run(v, label) {
           const names = await p.evaluate((ts) => { const n = []; for (const a of document.getAnimations()) { try { a.pause(); const isT = !!a.transitionProperty; const hov = isT || a.animationName === 'btnSheen' || a.animationName === 'focusPop'; a.currentTime = hov ? ts : 5000; if (hov) n.push(a.animationName || 'T:' + a.transitionProperty + (a.effect && a.effect.pseudoElement || '')); } catch (e) {} } return n.sort(); }, ts);
           await L.w8(120);
           const f = path.join(OUT, `${label}_${key.replace(/[^\w]+/g, '_')}_${ts}.png`);
-          await p.screenshot({ path: f, clip });
+          // v3: CDP clip is in DOCUMENT coordinates (puppeteer captureBeyondViewport defaults to true) -> add scroll offset,
+          // and capture from the viewport surface only.
+          const so = await p.evaluate(() => [scrollX, scrollY]);
+          await p.screenshot({ path: f, clip: { ...clip, x: clip.x + so[0], y: clip.y + so[1] }, captureBeyondViewport: false });
           shots.push({ key: `${key}@${ts}`, f, meta: { box: box2, names, sy: await p.evaluate(() => scrollY) } });
         }
       }

@@ -1,0 +1,302 @@
+[
+ {
+  "v": "baseline",
+  "env": {
+   "lenis": true,
+   "hoverNone": false,
+   "reduced": false,
+   "iw": 1440,
+   "ih": 900
+  },
+  "out": [
+   {
+    "start": 0,
+    "dy": 200,
+    "box": {
+     "x": 1432,
+     "y": 64.5,
+     "w": 4,
+     "h": 129
+    },
+    "tr": [
+     139,
+     278,
+     417,
+     557,
+     696,
+     835,
+     974,
+     1113,
+     1252,
+     1391
+    ],
+    "fin": {
+     "sy": 1391,
+     "thumb": "height: 129px; transform: translate(-50%, 199.937px);",
+     "us": "",
+     "lenisScroll": 1391
+    }
+   },
+   {
+    "start": 3000,
+    "dy": 150,
+    "box": {
+     "x": 1432,
+     "y": 495.70806884765625,
+     "w": 4.34375,
+     "h": 129
+    },
+    "tr": [
+     3104,
+     3209,
+     3313,
+     3417,
+     3522,
+     3626,
+     3731,
+     3835,
+     3939,
+     4044
+    ],
+    "fin": {
+     "sy": 4044,
+     "thumb": "height: 129px; transform: translate(-50%, 581.268px);",
+     "us": "",
+     "lenisScroll": 4044
+    }
+   },
+   {
+    "start": 0,
+    "dy": 2000,
+    "box": {
+     "x": 1432,
+     "y": 64.5,
+     "w": 4.265625,
+     "h": 129
+    },
+    "tr": [
+     1391,
+     2783,
+     4174,
+     5364,
+     5364,
+     5364,
+     5364,
+     5364,
+     5364,
+     5364
+    ],
+    "fin": {
+     "sy": 5364,
+     "thumb": "height: 129px; transform: translate(-50%, 771px);",
+     "us": "",
+     "lenisScroll": 5364
+    }
+   }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+ },
+ {
+  "v": "baseline",
+  "env": {
+   "lenis": true,
+   "hoverNone": false,
+   "reduced": false,
+   "iw": 1440,
+   "ih": 900
+  },
+  "out": [
+   {
+    "start": 0,
+    "dy": 200,
+    "box": {
+     "x": 1432,
+     "y": 64.5,
+     "w": 4,
+     "h": 129
+    },
+    "tr": [
+     139,
+     278,
+     417,
+     557,
+     696,
+     835,
+     974,
+     1113,
+     1252,
+     1391
+    ],
+    "fin": {
+     "sy": 1391,
+     "thumb": "height: 129px; transform: translate(-50%, 199.937px);",
+     "us": "",
+     "lenisScroll": 1391
+    }
+   },
+   {
+    "start": 3000,
+    "dy": 150,
+    "box": {
+     "x": 1432,
+     "y": 495.70806884765625,
+     "w": 4.578125,
+     "h": 129
+    },
+    "tr": [
+     3104,
+     3209,
+     3313,
+     3417,
+     3522,
+     3626,
+     3731,
+     3835,
+     3939,
+     4044
+    ],
+    "fin": {
+     "sy": 4044,
+     "thumb": "height: 129px; transform: translate(-50%, 581.268px);",
+     "us": "",
+     "lenisScroll": 4044
+    }
+   },
+   {
+    "start": 0,
+    "dy": 2000,
+    "box": {
+     "x": 1432,
+     "y": 64.5,
+     "w": 5.34375,
+     "h": 129
+    },
+    "tr": [
+     1391,
+     2783,
+     4174,
+     5364,
+     5364,
+     5364,
+     5364,
+     5364,
+     5364,
+     5364
+    ],
+    "fin": {
+     "sy": 5364,
+     "thumb": "height: 129px; transform: translate(-50%, 771px);",
+     "us": "",
+     "lenisScroll": 5364
+    }
+   }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+ },
+ {
+  "v": "combined",
+  "env": {
+   "lenis": true,
+   "hoverNone": false,
+   "reduced": false,
+   "iw": 1440,
+   "ih": 900
+  },
+  "out": [
+   {
+    "start": 0,
+    "dy": 200,
+    "box": {
+     "x": 1432,
+     "y": 64.5,
+     "w": 4,
+     "h": 129
+    },
+    "tr": [
+     139,
+     278,
+     417,
+     557,
+     696,
+     835,
+     974,
+     1113,
+     1252,
+     1391
+    ],
+    "fin": {
+     "sy": 1391,
+     "thumb": "height: 129px; transform: translate(-50%, 199.937px);",
+     "us": "",
+     "lenisScroll": 1391
+    }
+   },
+   {
+    "start": 3000,
+    "dy": 150,
+    "box": {
+     "x": 1432,
+     "y": 495.70806884765625,
+     "w": 4.109375,
+     "h": 129
+    },
+    "tr": [
+     3104,
+     3209,
+     3313,
+     3417,
+     3522,
+     3626,
+     3731,
+     3835,
+     3939,
+     4044
+    ],
+    "fin": {
+     "sy": 4044,
+     "thumb": "height: 129px; transform: translate(-50%, 581.268px);",
+     "us": "",
+     "lenisScroll": 4044
+    }
+   },
+   {
+    "start": 0,
+    "dy": 2000,
+    "box": {
+     "x": 1432,
+     "y": 64.5,
+     "w": 5.34375,
+     "h": 129
+    },
+    "tr": [
+     1391,
+     2783,
+     4174,
+     5364,
+     5364,
+     5364,
+     5364,
+     5364,
+     5364,
+     5364
+    ],
+    "fin": {
+     "sy": 5364,
+     "thumb": "height: 129px; transform: translate(-50%, 771px);",
+     "us": "",
+     "lenisScroll": 5364
+    }
+   }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+ }
+]

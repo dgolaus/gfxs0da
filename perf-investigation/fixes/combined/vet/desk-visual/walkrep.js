@@ -6,6 +6,7 @@ const { L, withPage, out } = require('./dv');
 const [tag, vp, nS, stopsS, ...vars] = process.argv.slice(2);
 const [W, H] = vp.split('x').map(Number); const N = +nS; const DPR = +(process.env.DPR || 1);
 const OUT = out(`walkrep_${tag}`);
+const LATE = +(process.env.LATE || 0);  // optional second shot of the SAME frozen frame after LATE ms (raster latency test)
 (async () => {
   const runs = []; let stops = null; const keep = stopsS === 'all' ? null : new Set(stopsS.split(',').map(Number));
   for (let k = 0; k < N; k++) for (const v of vars) {
@@ -16,7 +17,8 @@ const OUT = out(`walkrep_${tag}`);
       for (const y of stops) {
         await p.evaluate((y) => { if (window.lenis) window.lenis.scrollTo(y, { immediate: true, force: true }); else window.scrollTo(0, y); }, y);
         await L.w8(1300); await L.freeze(p);
-        if (!keep || keep.has(y)) { const f = path.join(OUT, `${v}_${k}_${y}.png`); await p.screenshot({ path: f }); shots[y] = f; }
+        if (!keep || keep.has(y)) { const f = path.join(OUT, `${v}_${k}_${y}.png`); await p.screenshot({ path: f }); shots[y] = f;
+          if (LATE) { await L.w8(LATE); const f2 = path.join(OUT, `${v}_${k}_${y}_late.png`); await p.screenshot({ path: f2 }); shots[y + '_late'] = f2; } }
         await L.unfreeze(p);
       }
       return { shots, lenis: await p.evaluate(() => !!window.lenis) };

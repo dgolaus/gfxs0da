@@ -1,0 +1,788 @@
+[
+ {
+  "vpn": "desk",
+  "v": "baseline",
+  "env": {
+   "lenis": true,
+   "hoverNone": false,
+   "reduced": false,
+   "iw": 1440,
+   "ih": 900
+  },
+  "rows": [
+   {
+    "sy": 0,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 10.19vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 10.19vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "radial-gradient(circle at 50% 10.19vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% -250.99vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% -250.99vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "radial-gradient(circle at 50% -250.99vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 150,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 26.85vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 26.85vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "radial-gradient(circle at 50% 26.85vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% -234.33vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% -234.33vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "radial-gradient(circle at 50% -234.33vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 1989,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 231.18vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 231.18vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "radial-gradient(circle at 50% 231.18vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% -28vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% -28vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "radial-gradient(circle at 50% -28vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 2259,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 261.19vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 261.19vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "radial-gradient(circle at 50% 261.19vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% 2.01vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% 2.01vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "radial-gradient(circle at 50% 2.01vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 2529,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 291.18vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 291.18vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "radial-gradient(circle at 50% 291.18vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% 32vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% 32vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "radial-gradient(circle at 50% 32vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 0,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 10.2vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 10.2vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "radial-gradient(circle at 50% 10.2vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% -248.98vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% -248.98vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "radial-gradient(circle at 50% -248.98vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+ },
+ {
+  "vpn": "desk",
+  "v": "baseline",
+  "env": {
+   "lenis": true,
+   "hoverNone": false,
+   "reduced": false,
+   "iw": 1440,
+   "ih": 900
+  },
+  "rows": [
+   {
+    "sy": 0,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 10.19vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 10.19vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "radial-gradient(circle at 50% 10.19vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% -250.99vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% -250.99vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "radial-gradient(circle at 50% -250.99vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 150,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 26.86vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 26.86vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "radial-gradient(circle at 50% 26.86vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% -234.32vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% -234.32vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "radial-gradient(circle at 50% -234.32vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 1989,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 231.18vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 231.18vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "radial-gradient(circle at 50% 231.18vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% -27.99vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% -27.99vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "radial-gradient(circle at 50% -27.99vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 2259,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 261.19vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 261.19vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "radial-gradient(circle at 50% 261.19vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% 2.01vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% 2.01vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "radial-gradient(circle at 50% 2.01vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 2529,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 291.18vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 291.18vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "radial-gradient(circle at 50% 291.18vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% 32vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% 32vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "radial-gradient(circle at 50% 32vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 0,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 10.2vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 10.2vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "radial-gradient(circle at 50% 10.2vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% -248.98vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% -248.98vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "radial-gradient(circle at 50% -248.98vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+ },
+ {
+  "vpn": "desk",
+  "v": "combined",
+  "env": {
+   "lenis": true,
+   "hoverNone": false,
+   "reduced": false,
+   "iw": 1440,
+   "ih": 900
+  },
+  "rows": [
+   {
+    "sy": 0,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 10.19vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 10.19vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% -250.99vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% -250.99vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 150,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 26.86vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 26.86vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% -234.32vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% -234.32vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 1989,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 231.19vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 231.19vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% -27.99vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% -27.99vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 2259,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 261.19vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 261.19vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% 2.01vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% 2.01vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 2529,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 291.18vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 291.18vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% 32vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% 32vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 0,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 10.21vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 10.21vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% -248.97vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% -248.97vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+ },
+ {
+  "vpn": "mob",
+  "v": "baseline",
+  "env": {
+   "lenis": false,
+   "hoverNone": true,
+   "reduced": false,
+   "iw": 390,
+   "ih": 844
+  },
+  "rows": [
+   {
+    "sy": 0,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 24.08vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 24.08vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "radial-gradient(circle at 50% 24.08vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% -335.75vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% -335.75vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "radial-gradient(circle at 50% -335.75vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 150,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 42.85vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 42.85vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "radial-gradient(circle at 50% 42.85vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% -317.98vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% -317.98vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "radial-gradient(circle at 50% -317.98vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 2581,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 330.89vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 330.89vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "radial-gradient(circle at 50% 330.89vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% -27.81vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% -27.81vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "radial-gradient(circle at 50% -27.81vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 2834,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 360.86vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 360.86vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "radial-gradient(circle at 50% 360.86vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% 2.16vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% 2.16vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "radial-gradient(circle at 50% 2.16vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 3087,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 390.84vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 390.84vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "radial-gradient(circle at 50% 390.84vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% 32.14vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% 32.14vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "radial-gradient(circle at 50% 32.14vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 0,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 25.08vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 25.08vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "radial-gradient(circle at 50% 25.08vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% -333.62vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% -333.62vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "radial-gradient(circle at 50% -333.62vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+ },
+ {
+  "vpn": "mob",
+  "v": "baseline",
+  "env": {
+   "lenis": false,
+   "hoverNone": true,
+   "reduced": false,
+   "iw": 390,
+   "ih": 844
+  },
+  "rows": [
+   {
+    "sy": 0,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 25.08vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 25.08vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "radial-gradient(circle at 50% 25.08vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% -335.75vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% -335.75vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "radial-gradient(circle at 50% -335.75vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 150,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 42.85vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 42.85vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "radial-gradient(circle at 50% 42.85vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% -317.98vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% -317.98vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "radial-gradient(circle at 50% -317.98vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 2581,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 330.89vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 330.89vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "radial-gradient(circle at 50% 330.89vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% -27.81vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% -27.81vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "radial-gradient(circle at 50% -27.81vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 2834,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 360.86vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 360.86vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "radial-gradient(circle at 50% 360.86vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% 2.16vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% 2.16vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "radial-gradient(circle at 50% 2.16vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 3087,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 390.84vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 390.84vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "radial-gradient(circle at 50% 390.84vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% 32.14vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% 32.14vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "radial-gradient(circle at 50% 32.14vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 0,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 25.08vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 25.08vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "radial-gradient(circle at 50% 25.08vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% -333.62vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% -333.62vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "radial-gradient(circle at 50% -333.62vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+ },
+ {
+  "vpn": "mob",
+  "v": "combined",
+  "env": {
+   "lenis": false,
+   "hoverNone": true,
+   "reduced": false,
+   "iw": 390,
+   "ih": 844
+  },
+  "rows": [
+   {
+    "sy": 0,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 25.08vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 25.08vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% -335.75vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% -335.75vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 150,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 42.85vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 42.85vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% -317.98vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% -317.98vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 2581,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 330.89vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 330.89vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% -27.81vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% -27.81vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 2834,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 360.86vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 360.86vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% 2.16vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% 2.16vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 3087,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 390.84vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 390.84vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% 32.14vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% 32.14vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   },
+   {
+    "sy": 0,
+    "acc": [
+     {
+      "child": "radial-gradient(circle at 50% 25.08vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "childComputed": "radial-gradient(circle at 50% 25.08vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)",
+      "parentInline": "",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     },
+     {
+      "child": "radial-gradient(circle at 50% -333.62vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "childComputed": "radial-gradient(circle at 50% -333.62vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 30vh, rgb(107, 8, 8) 80vh, rgb(31, 2, 2) 160vh)",
+      "parentInline": "",
+      "parentComputed": "none",
+      "orbs": "radial-gradient(closest-side, rgba(255, "
+     }
+    ]
+   }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+ }
+]
