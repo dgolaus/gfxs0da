@@ -1,0 +1,150 @@
+{
+  "baseline": {
+    "reps": 10,
+    "entry": {
+      "fps": 8.1,
+      "p95": 433.3,
+      "worst": 699.9,
+      "jank": 23,
+      "lostMs": 2849
+    },
+    "steady": {
+      "fps": 14,
+      "p95": 133.2,
+      "jank": 57
+    },
+    "longTasks": 11,
+    "longTaskMs": 1624,
+    "layoutCount": 50,
+    "recalcCount": 213,
+    "liteEver": false,
+    "lenisAll": true,
+    "hoverNoneEver": false,
+    "raw": [
+      {
+        "entryFps": 7.8,
+        "entryLost": 2666,
+        "entryJank": 22
+      },
+      {
+        "entryFps": 8.1,
+        "entryLost": 2882,
+        "entryJank": 22
+      },
+      {
+        "entryFps": 8,
+        "entryLost": 2832,
+        "entryJank": 23
+      },
+      {
+        "entryFps": 7.9,
+        "entryLost": 2849,
+        "entryJank": 24
+      },
+      {
+        "entryFps": 7.3,
+        "entryLost": 2866,
+        "entryJank": 22
+      },
+      {
+        "entryFps": 8.5,
+        "entryLost": 2832,
+        "entryJank": 23
+      },
+      {
+        "entryFps": 8.4,
+        "entryLost": 2766,
+        "entryJank": 23
+      },
+      {
+        "entryFps": 8.4,
+        "entryLost": 2866,
+        "entryJank": 22
+      },
+      {
+        "entryFps": 7.9,
+        "entryLost": 2749,
+        "entryJank": 19
+      },
+      {
+        "entryFps": 8.2,
+        "entryLost": 2849,
+        "entryJank": 27
+      }
+    ]
+  },
+  "final": {
+    "reps": 10,
+    "entry": {
+      "fps": 9.8,
+      "p95": 316.7,
+      "worst": 433.4,
+      "jank": 27,
+      "lostMs": 2799
+    },
+    "steady": {
+      "fps": 13.6,
+      "p95": 133.3,
+      "jank": 53
+    },
+    "longTasks": 10,
+    "longTaskMs": 1181,
+    "layoutCount": 50,
+    "recalcCount": 178,
+    "liteEver": false,
+    "lenisAll": true,
+    "hoverNoneEver": false,
+    "raw": [
+      {
+        "entryFps": 9.8,
+        "entryLost": 2815,
+        "entryJank": 31
+      },
+      {
+        "entryFps": 9,
+        "entryLost": 2732,
+        "entryJank": 26
+      },
+      {
+        "entryFps": 8.7,
+        "entryLost": 2832,
+        "entryJank": 24
+      },
+      {
+        "entryFps": 9.6,
+        "entryLost": 2799,
+        "entryJank": 27
+      },
+      {
+        "entryFps": 8,
+        "entryLost": 2832,
+        "entryJank": 22
+      },
+      {
+        "entryFps": 8.8,
+        "entryLost": 2799,
+        "entryJank": 28
+      },
+      {
+        "entryFps": 10.7,
+        "entryLost": 2699,
+        "entryJank": 28
+      },
+      {
+        "entryFps": 10.1,
+        "entryLost": 2782,
+        "entryJank": 25
+      },
+      {
+        "entryFps": 11,
+        "entryLost": 2732,
+        "entryJank": 27
+      },
+      {
+        "entryFps": 10.2,
+        "entryLost": 2765,
+        "entryJank": 27
+      }
+    ]
+  }
+}
