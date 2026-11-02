@@ -1,0 +1,55 @@
+{
+ "baseline": {},
+ "combined": {
+  "files": {
+   "/script.js": "fixes/combined/script.js",
+   "/styles.css": "fixes/combined/styles.css"
+  }
+ },
+ "base": {
+  "files": {
+   "/script.js": "fixes/approved-base/script.js",
+   "/styles.css": "fixes/approved-base/styles.css"
+  }
+ },
+ "prad": {
+  "files": {
+   "/styles.css": "fixes/vet-style-invalidation-pseudo-radius/v2/styles.pseudoradius.amended.css"
+  }
+ },
+ "stab1440": {
+  "files": {
+   "/styles.css": "fixes/vet-paint-composite-stable-layerize/cloud/styles.contain-1440.css"
+  }
+ },
+ "btnonly": {
+  "files": {
+   "/styles.css": "fixes/combined/vet/touch-pages/variants/btnonly.css"
+  }
+ },
+ "cardsonly": {
+  "files": {
+   "/styles.css": "fixes/combined/vet/touch-pages/variants/cardsonly.css"
+  }
+ },
+ "btnrad0": {
+  "files": {
+   "/styles.css": "fixes/combined/vet/touch-pages/variants/btnrad0.css"
+  }
+ },
+ "commentonly": {
+  "files": {
+   "/styles.css": "fixes/combined/vet/touch-pages/variants/commentonly.css"
+  }
+ },
+ "basecss": {
+  "files": {
+   "/styles.css": "fixes/approved-base/styles.css"
+  }
+ },
+ "basejs": {
+  "files": {
+   "/script.js": "fixes/approved-base/script.js"
+  }
+ }
+}

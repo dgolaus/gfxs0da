@@ -1,0 +1,41 @@
+{
+ "tag": "viewwork_1280",
+ "vp": "1280x720",
+ "Y": 0,
+ "clip": "260,470,160,50",
+ "N": 5,
+ "summary": {
+  "baseline": {
+   "98f2ebe2": 2,
+   "e6024a05": 3
+  },
+  "combined": {
+   "98f2ebe2": 5
+  },
+  "prad": {
+   "e6024a05": 1,
+   "98f2ebe2": 4
+  }
+ },
+ "clusters": {
+  "98f2ebe2": [
+   "baseline_0",
+   "combined_0",
+   "baseline_1",
+   "combined_1",
+   "prad_1",
+   "combined_2",
+   "prad_2",
+   "combined_3",
+   "prad_3",
+   "combined_4",
+   "prad_4"
+  ],
+  "e6024a05": [
+   "prad_0",
+   "baseline_2",
+   "baseline_3",
+   "baseline_4"
+  ]
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "tag": "nf390",
+ "vp": "390x844",
+ "pg": "/this-page-does-not-exist",
+ "flags": [
+  "mobile"
+ ],
+ "errs": {
+  "A": [],
+  "B": [],
+  "combined": []
+ },
+ "rows": [
+  {
+   "y": 0,
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "combined": {
+    "st": [],
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "geo": "same",
+    "thumb": "same",
+    "toc": "same",
+    "nav": "same",
+    "navAB": "same",
+    "tocA": null,
+    "fontsA": 4,
+    "fontsV": 4
+   }
+  }
+ ]
+}

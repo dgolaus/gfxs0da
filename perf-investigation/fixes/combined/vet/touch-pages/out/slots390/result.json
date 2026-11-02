@@ -1,0 +1,109 @@
+{
+ "tag": "slots390",
+ "vp": "390x844",
+ "pg": "/slots/",
+ "flags": [
+  "mobile"
+ ],
+ "errs": {
+  "A": [],
+  "B": [],
+  "combined": []
+ },
+ "rows": [
+  {
+   "y": 0,
+   "noise": {
+    "mad": 1.995,
+    "pct": 6.479,
+    "big": 1.71,
+    "bbox": [
+     20,
+     104,
+     369,
+     791
+    ]
+   },
+   "combined": {
+    "st": [],
+    "vsA": {
+     "mad": 1.947,
+     "pct": 6.587,
+     "big": 1.667,
+     "bbox": [
+      20,
+      101,
+      369,
+      791
+     ]
+    },
+    "vsB": {
+     "mad": 1.879,
+     "pct": 6.204,
+     "big": 1.542,
+     "bbox": [
+      36,
+      133,
+      354,
+      790
+     ]
+    },
+    "geo": "same",
+    "thumb": "same",
+    "toc": "same",
+    "nav": "same",
+    "navAB": "same",
+    "tocA": null,
+    "fontsA": 5,
+    "fontsV": 5
+   }
+  },
+  {
+   "y": 189,
+   "noise": {
+    "mad": 1.763,
+    "pct": 5.814,
+    "big": 1.531,
+    "bbox": [
+     30,
+     0,
+     369,
+     602
+    ]
+   },
+   "combined": {
+    "st": [],
+    "vsA": {
+     "mad": 1.714,
+     "pct": 5.695,
+     "big": 1.5,
+     "bbox": [
+      20,
+      0,
+      369,
+      602
+     ]
+    },
+    "vsB": {
+     "mad": 1.673,
+     "pct": 5.537,
+     "big": 1.367,
+     "bbox": [
+      35,
+      0,
+      354,
+      601
+     ]
+    },
+    "geo": "same",
+    "thumb": "same",
+    "toc": "same",
+    "nav": "same",
+    "navAB": "same",
+    "tocA": null,
+    "fontsA": 5,
+    "fontsV": 5
+   }
+  }
+ ]
+}

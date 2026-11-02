@@ -1,0 +1,55 @@
+{
+ "tag": "slots1440",
+ "vp": "1440x900",
+ "pg": "/slots/",
+ "flags": [],
+ "errs": {
+  "A": [],
+  "B": [],
+  "combined": []
+ },
+ "rows": [
+  {
+   "y": 0,
+   "noise": {
+    "mad": 0.528,
+    "pct": 1.659,
+    "big": 0.364,
+    "bbox": [
+     278,
+     127,
+     1183,
+     649
+    ]
+   },
+   "combined": {
+    "st": [],
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0.528,
+     "pct": 1.659,
+     "big": 0.364,
+     "bbox": [
+      278,
+      127,
+      1183,
+      649
+     ]
+    },
+    "geo": "same",
+    "thumb": "same",
+    "toc": "same",
+    "nav": "same",
+    "navAB": "same",
+    "tocA": null,
+    "fontsA": 5,
+    "fontsV": 5
+   }
+  }
+ ]
+}

@@ -1,0 +1,341 @@
+[
+ {
+  "y": "0",
+  "nrects": 9,
+  "noise": {
+   "mad": 0.032,
+   "pct": 0.044,
+   "big": 0.031,
+   "bbox": [
+    385,
+    576,
+    488,
+    631
+   ]
+  },
+  "vsA": {
+   "mad": 0.032,
+   "pct": 0.044,
+   "big": 0.031,
+   "bbox": [
+    385,
+    576,
+    488,
+    631
+   ]
+  },
+  "vsB": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "flag": false
+ },
+ {
+  "y": "450",
+  "nrects": 9,
+  "noise": {
+   "mad": 0.032,
+   "pct": 0.044,
+   "big": 0.031,
+   "bbox": [
+    385,
+    126,
+    488,
+    181
+   ]
+  },
+  "vsA": {
+   "mad": 0.032,
+   "pct": 0.044,
+   "big": 0.031,
+   "bbox": [
+    385,
+    126,
+    488,
+    181
+   ]
+  },
+  "vsB": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "flag": false
+ },
+ {
+  "y": "900",
+  "nrects": 0,
+  "noise": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsA": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsB": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "flag": false
+ },
+ {
+  "y": "1350",
+  "nrects": 0,
+  "noise": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsA": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsB": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "flag": false
+ },
+ {
+  "y": "1800",
+  "nrects": 3,
+  "noise": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsA": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsB": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "flag": false
+ },
+ {
+  "y": "2250",
+  "nrects": 3,
+  "noise": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsA": {
+   "mad": 0.006,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsB": {
+   "mad": 0.006,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "flag": false
+ },
+ {
+  "y": "2700",
+  "nrects": 9,
+  "noise": {
+   "mad": 0.013,
+   "pct": 0.03,
+   "big": 0.015,
+   "bbox": [
+    357,
+    581,
+    433,
+    592
+   ]
+  },
+  "vsA": {
+   "mad": 0.016,
+   "pct": 0.03,
+   "big": 0.015,
+   "bbox": [
+    357,
+    581,
+    433,
+    592
+   ]
+  },
+  "vsB": {
+   "mad": 0.002,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "flag": false
+ },
+ {
+  "y": "3150",
+  "nrects": 33,
+  "noise": {
+   "mad": 0.011,
+   "pct": 0.03,
+   "big": 0.015,
+   "bbox": [
+    357,
+    131,
+    433,
+    142
+   ]
+  },
+  "vsA": {
+   "mad": 0.012,
+   "pct": 0.03,
+   "big": 0.015,
+   "bbox": [
+    357,
+    131,
+    433,
+    142
+   ]
+  },
+  "vsB": {
+   "mad": 0.002,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "flag": false
+ },
+ {
+  "y": "3600",
+  "nrects": 24,
+  "noise": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsA": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsB": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "flag": false
+ },
+ {
+  "y": "4050",
+  "nrects": 0,
+  "noise": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsA": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsB": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "flag": false
+ },
+ {
+  "y": "4500",
+  "nrects": 0,
+  "noise": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsA": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsB": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "flag": false
+ },
+ {
+  "y": "4950",
+  "nrects": 0,
+  "noise": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsA": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsB": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "flag": false
+ },
+ {
+  "y": "5364",
+  "nrects": 0,
+  "noise": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsA": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsB": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "flag": false
+ }
+]

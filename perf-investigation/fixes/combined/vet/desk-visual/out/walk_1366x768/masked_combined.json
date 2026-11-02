@@ -1,0 +1,347 @@
+[
+ {
+  "y": "0",
+  "nrects": 9,
+  "noise": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsA": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsB": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "flag": false
+ },
+ {
+  "y": "384",
+  "nrects": 9,
+  "noise": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsA": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsB": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "flag": false
+ },
+ {
+  "y": "768",
+  "nrects": 0,
+  "noise": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsA": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsB": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "flag": false
+ },
+ {
+  "y": "1152",
+  "nrects": 0,
+  "noise": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsA": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsB": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "flag": false
+ },
+ {
+  "y": "1536",
+  "nrects": 0,
+  "noise": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsA": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsB": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "flag": false
+ },
+ {
+  "y": "1920",
+  "nrects": 3,
+  "noise": {
+   "mad": 0.007,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsA": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsB": {
+   "mad": 0.007,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "flag": false
+ },
+ {
+  "y": "2304",
+  "nrects": 6,
+  "noise": {
+   "mad": 0.004,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsA": {
+   "mad": 0.004,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsB": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "flag": false
+ },
+ {
+  "y": "2688",
+  "nrects": 9,
+  "noise": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsA": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsB": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "flag": false
+ },
+ {
+  "y": "3072",
+  "nrects": 30,
+  "noise": {
+   "mad": 0.002,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsA": {
+   "mad": 0.005,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsB": {
+   "mad": 0.005,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "flag": false
+ },
+ {
+  "y": "3456",
+  "nrects": 24,
+  "noise": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsA": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsB": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "flag": false
+ },
+ {
+  "y": "3840",
+  "nrects": 0,
+  "noise": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsA": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsB": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "flag": false
+ },
+ {
+  "y": "4224",
+  "nrects": 0,
+  "noise": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsA": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsB": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "flag": false
+ },
+ {
+  "y": "4608",
+  "nrects": 0,
+  "noise": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsA": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsB": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "flag": false
+ },
+ {
+  "y": "4992",
+  "nrects": 0,
+  "noise": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsA": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsB": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "flag": false
+ },
+ {
+  "y": "5181",
+  "nrects": 0,
+  "noise": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsA": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "vsB": {
+   "mad": 0,
+   "pct": 0,
+   "big": 0,
+   "bbox": null
+  },
+  "flag": false
+ }
+]

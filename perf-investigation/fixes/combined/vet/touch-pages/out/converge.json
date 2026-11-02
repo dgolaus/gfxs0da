@@ -1,0 +1,170 @@
+{
+ "desk_baseline": [
+  {
+   "acc": "41.57",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 41.57vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  },
+  {
+   "acc": "43.44",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.44vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  },
+  {
+   "acc": "43.52",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.52vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  },
+  {
+   "acc": "43.52",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.52vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  },
+  {
+   "acc": "43.52",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.52vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  },
+  {
+   "acc": "43.52",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.52vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  },
+  {
+   "acc": "43.52",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.52vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  },
+  {
+   "acc": "43.52",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.52vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  }
+ ],
+ "desk_combined": [
+  {
+   "acc": "41.94",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 41.94vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  },
+  {
+   "acc": "43.46",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.46vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  },
+  {
+   "acc": "43.52",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.52vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  },
+  {
+   "acc": "43.52",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.52vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  },
+  {
+   "acc": "43.52",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.52vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  },
+  {
+   "acc": "43.52",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.52vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  },
+  {
+   "acc": "43.52",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.52vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  },
+  {
+   "acc": "43.52",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.52vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  }
+ ],
+ "reduced_baseline": [
+  {
+   "acc": "43.23",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.23vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  },
+  {
+   "acc": "43.52",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.52vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  },
+  {
+   "acc": "43.52",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.52vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  },
+  {
+   "acc": "43.52",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.52vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  },
+  {
+   "acc": "43.52",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.52vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  },
+  {
+   "acc": "43.52",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.52vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  },
+  {
+   "acc": "43.52",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.52vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  },
+  {
+   "acc": "43.52",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.52vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  }
+ ],
+ "reduced_combined": [
+  {
+   "acc": "43.26",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.26vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  },
+  {
+   "acc": "43.52",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.52vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  },
+  {
+   "acc": "43.52",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.52vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  },
+  {
+   "acc": "43.52",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.52vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  },
+  {
+   "acc": "43.52",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.52vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  },
+  {
+   "acc": "43.52",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.52vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  },
+  {
+   "acc": "43.52",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.52vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  },
+  {
+   "acc": "43.52",
+   "target": "43.52",
+   "full": "radial-gradient(circle at 50% 43.52vh, rgb(255, 139, 107) 0vh, rgb(255, 23, 39) 12vh, rgb(107, 8, 8) 50vh, rgb(31, 2, 2) 120vh)"
+  }
+ ]
+}

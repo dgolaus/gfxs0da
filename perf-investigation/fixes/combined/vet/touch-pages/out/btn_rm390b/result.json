@@ -1,0 +1,352 @@
+[
+ {
+  "i": 0,
+  "text": "Commission →",
+  "cls": "btn btn-ghost btn-sm",
+  "rA": "245.906,16,128.094,40.797",
+  "rad": "999px",
+  "B": {
+   "px": 0,
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    0,
+    0
+   ]
+  },
+  "btnonly": {
+   "px": "17px max2",
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    0,
+    0
+   ]
+  },
+  "cardsonly": {
+   "px": 0,
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    0,
+    0
+   ]
+  },
+  "btnrad0": {
+   "px": "17px max2",
+   "r": "same",
+   "rad": "0px",
+   "sy": [
+    0,
+    0
+   ]
+  },
+  "commentonly": {
+   "px": 0,
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    0,
+    0
+   ]
+  },
+  "basecss": {
+   "px": 0,
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    0,
+    0
+   ]
+  },
+  "basejs": {
+   "px": 0,
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "i": 1,
+  "text": "Join the Waitlist →",
+  "cls": "btn btn-primary btn-lg btn-shiny",
+  "rA": "20,371.469,188.625,58",
+  "rad": "999px",
+  "B": {
+   "px": 0,
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    0,
+    0
+   ]
+  },
+  "btnonly": {
+   "px": 0,
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    0,
+    0
+   ]
+  },
+  "cardsonly": {
+   "px": 0,
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    0,
+    0
+   ]
+  },
+  "btnrad0": {
+   "px": 0,
+   "r": "same",
+   "rad": "0px",
+   "sy": [
+    0,
+    0
+   ]
+  },
+  "commentonly": {
+   "px": 0,
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    0,
+    0
+   ]
+  },
+  "basecss": {
+   "px": 0,
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    0,
+    0
+   ]
+  },
+  "basejs": {
+   "px": 0,
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "i": 2,
+  "text": "View Work",
+  "cls": "btn btn-ghost btn-lg",
+  "rA": "220.625,371.469,131.313,58",
+  "rad": "999px",
+  "B": {
+   "px": 0,
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    0,
+    0
+   ]
+  },
+  "btnonly": {
+   "px": "783px max164",
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    0,
+    0
+   ]
+  },
+  "cardsonly": {
+   "px": 0,
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    0,
+    0
+   ]
+  },
+  "btnrad0": {
+   "px": "783px max164",
+   "r": "same",
+   "rad": "0px",
+   "sy": [
+    0,
+    0
+   ]
+  },
+  "commentonly": {
+   "px": 0,
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    0,
+    0
+   ]
+  },
+  "basecss": {
+   "px": "783px max164",
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    0,
+    0
+   ]
+  },
+  "basejs": {
+   "px": "783px max164",
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    0,
+    0
+   ]
+  }
+ },
+ {
+  "i": 3,
+  "text": "Join the Waitlist →",
+  "cls": "btn btn-primary",
+  "rA": "20,426.109,168.453,50.391",
+  "rad": "999px",
+  "B": {
+   "px": 0,
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    3362,
+    3362
+   ]
+  },
+  "btnonly": {
+   "px": 0,
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    3362,
+    3362
+   ]
+  },
+  "cardsonly": {
+   "px": 0,
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    3362,
+    3362
+   ]
+  },
+  "btnrad0": {
+   "px": 0,
+   "r": "same",
+   "rad": "0px",
+   "sy": [
+    3362,
+    3362
+   ]
+  },
+  "commentonly": {
+   "px": 0,
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    3362,
+    3362
+   ]
+  },
+  "basecss": {
+   "px": 0,
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    3362,
+    3362
+   ]
+  },
+  "basejs": {
+   "px": 0,
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    3362,
+    3362
+   ]
+  }
+ },
+ {
+  "i": 4,
+  "text": "Check Slots",
+  "cls": "btn btn-ghost",
+  "rA": "198.453,426.109,121.969,50.391",
+  "rad": "999px",
+  "B": {
+   "px": 0,
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    3362,
+    3362
+   ]
+  },
+  "btnonly": {
+   "px": 0,
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    3362,
+    3362
+   ]
+  },
+  "cardsonly": {
+   "px": 0,
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    3362,
+    3362
+   ]
+  },
+  "btnrad0": {
+   "px": 0,
+   "r": "same",
+   "rad": "0px",
+   "sy": [
+    3362,
+    3362
+   ]
+  },
+  "commentonly": {
+   "px": 0,
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    3362,
+    3362
+   ]
+  },
+  "basecss": {
+   "px": 0,
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    3362,
+    3362
+   ]
+  },
+  "basejs": {
+   "px": 0,
+   "r": "same",
+   "rad": "999px",
+   "sy": [
+    3362,
+    3362
+   ]
+  }
+ }
+]
