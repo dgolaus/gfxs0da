@@ -1,0 +1,277 @@
+{
+ "log": [
+  {
+   "r": 0,
+   "v": "baseline",
+   "e2_before": "066ab899",
+   "e2_hover": true,
+   "e2_after": "a2ad7a79",
+   "e2_hover2": false,
+   "e2_cleared": "066ab899",
+   "e2_rescrolled": "066ab899",
+   "e4_before": "a4d81bf9",
+   "e4_hover": true,
+   "e4_after": "a67e45de",
+   "e4_hover2": false,
+   "e4_cleared": "85f0071a",
+   "e4_rescrolled": "27347429"
+  },
+  {
+   "r": 0,
+   "v": "final",
+   "e2_before": "066ab899",
+   "e2_hover": true,
+   "e2_after": "a2ad7a79",
+   "e2_hover2": false,
+   "e2_cleared": "066ab899",
+   "e2_rescrolled": "066ab899",
+   "e4_before": "a4d81bf9",
+   "e4_hover": true,
+   "e4_after": "d1e390c8",
+   "e4_hover2": false,
+   "e4_cleared": "85f0071a",
+   "e4_rescrolled": "27347429"
+  },
+  {
+   "r": 0,
+   "v": "combined",
+   "e2_before": "3068866b",
+   "e2_hover": true,
+   "e2_after": "3fcd2724",
+   "e2_hover2": false,
+   "e2_cleared": "490ee1ec",
+   "e2_rescrolled": "490ee1ec",
+   "e4_before": "37a5fac2",
+   "e4_hover": true,
+   "e4_after": "7308eab0",
+   "e4_hover2": false,
+   "e4_cleared": "2c22420f",
+   "e4_rescrolled": "5c3b91df"
+  },
+  {
+   "r": 1,
+   "v": "baseline",
+   "e2_before": "066ab899",
+   "e2_hover": true,
+   "e2_after": "a2ad7a79",
+   "e2_hover2": false,
+   "e2_cleared": "066ab899",
+   "e2_rescrolled": "066ab899",
+   "e4_before": "a4d81bf9",
+   "e4_hover": true,
+   "e4_after": "a67e45de",
+   "e4_hover2": false,
+   "e4_cleared": "85f0071a",
+   "e4_rescrolled": "27347429"
+  },
+  {
+   "r": 1,
+   "v": "final",
+   "e2_before": "066ab899",
+   "e2_hover": true,
+   "e2_after": "a2ad7a79",
+   "e2_hover2": false,
+   "e2_cleared": "066ab899",
+   "e2_rescrolled": "066ab899",
+   "e4_before": "a4d81bf9",
+   "e4_hover": true,
+   "e4_after": "d1e390c8",
+   "e4_hover2": false,
+   "e4_cleared": "85f0071a",
+   "e4_rescrolled": "27347429"
+  },
+  {
+   "r": 1,
+   "v": "combined",
+   "e2_before": "3068866b",
+   "e2_hover": true,
+   "e2_after": "3fcd2724",
+   "e2_hover2": false,
+   "e2_cleared": "490ee1ec",
+   "e2_rescrolled": "490ee1ec",
+   "e4_before": "37a5fac2",
+   "e4_hover": true,
+   "e4_after": "7308eab0",
+   "e4_hover2": false,
+   "e4_cleared": "2c22420f",
+   "e4_rescrolled": "5c3b91df"
+  },
+  {
+   "r": 2,
+   "v": "baseline",
+   "e2_before": "066ab899",
+   "e2_hover": true,
+   "e2_after": "3fcd2724",
+   "e2_hover2": false,
+   "e2_cleared": "066ab899",
+   "e2_rescrolled": "066ab899",
+   "e4_before": "a4d81bf9",
+   "e4_hover": true,
+   "e4_after": "a67e45de",
+   "e4_hover2": false,
+   "e4_cleared": "85f0071a",
+   "e4_rescrolled": "27347429"
+  },
+  {
+   "r": 2,
+   "v": "final",
+   "e2_before": "066ab899",
+   "e2_hover": true,
+   "e2_after": "a2ad7a79",
+   "e2_hover2": false,
+   "e2_cleared": "066ab899",
+   "e2_rescrolled": "066ab899",
+   "e4_before": "a4d81bf9",
+   "e4_hover": true,
+   "e4_after": "d1e390c8",
+   "e4_hover2": false,
+   "e4_cleared": "85f0071a",
+   "e4_rescrolled": "27347429"
+  },
+  {
+   "r": 2,
+   "v": "combined",
+   "e2_before": "066ab899",
+   "e2_hover": true,
+   "e2_after": "3fcd2724",
+   "e2_hover2": false,
+   "e2_cleared": "490ee1ec",
+   "e2_rescrolled": "490ee1ec",
+   "e4_before": "a4d81bf9",
+   "e4_hover": true,
+   "e4_after": "7308eab0",
+   "e4_hover2": false,
+   "e4_cleared": "2c22420f",
+   "e4_rescrolled": "5c3b91df"
+  },
+  {
+   "r": 3,
+   "v": "baseline",
+   "e2_before": "066ab899",
+   "e2_hover": true,
+   "e2_after": "a2ad7a79",
+   "e2_hover2": false,
+   "e2_cleared": "066ab899",
+   "e2_rescrolled": "066ab899",
+   "e4_before": "a4d81bf9",
+   "e4_hover": true,
+   "e4_after": "d1e390c8",
+   "e4_hover2": false,
+   "e4_cleared": "85f0071a",
+   "e4_rescrolled": "27347429"
+  },
+  {
+   "r": 3,
+   "v": "final",
+   "e2_before": "3068866b",
+   "e2_hover": true,
+   "e2_after": "3fcd2724",
+   "e2_hover2": false,
+   "e2_cleared": "066ab899",
+   "e2_rescrolled": "066ab899",
+   "e4_before": "37a5fac2",
+   "e4_hover": true,
+   "e4_after": "d1e390c8",
+   "e4_hover2": false,
+   "e4_cleared": "85f0071a",
+   "e4_rescrolled": "27347429"
+  },
+  {
+   "r": 3,
+   "v": "combined",
+   "e2_before": "066ab899",
+   "e2_hover": true,
+   "e2_after": "3fcd2724",
+   "e2_hover2": false,
+   "e2_cleared": "490ee1ec",
+   "e2_rescrolled": "490ee1ec",
+   "e4_before": "a4d81bf9",
+   "e4_hover": true,
+   "e4_after": "7308eab0",
+   "e4_hover2": false,
+   "e4_cleared": "2c22420f",
+   "e4_rescrolled": "5c3b91df"
+  }
+ ],
+ "sum": {
+  "e2_before baseline": {
+   "066ab899": 4
+  },
+  "e2_after baseline": {
+   "a2ad7a79": 3,
+   "3fcd2724": 1
+  },
+  "e2_cleared baseline": {
+   "066ab899": 4
+  },
+  "e2_rescrolled baseline": {
+   "066ab899": 4
+  },
+  "e4_before baseline": {
+   "a4d81bf9": 4
+  },
+  "e4_after baseline": {
+   "a67e45de": 3,
+   "d1e390c8": 1
+  },
+  "e4_cleared baseline": {
+   "85f0071a": 4
+  },
+  "e4_rescrolled baseline": {
+   "27347429": 4
+  },
+  "e2_before final": {
+   "066ab899": 3,
+   "3068866b": 1
+  },
+  "e2_after final": {
+   "a2ad7a79": 3,
+   "3fcd2724": 1
+  },
+  "e2_cleared final": {
+   "066ab899": 4
+  },
+  "e2_rescrolled final": {
+   "066ab899": 4
+  },
+  "e4_before final": {
+   "a4d81bf9": 3,
+   "37a5fac2": 1
+  },
+  "e4_after final": {
+   "d1e390c8": 4
+  },
+  "e4_cleared final": {
+   "85f0071a": 4
+  },
+  "e4_rescrolled final": {
+   "27347429": 4
+  },
+  "e2_before combined": {
+   "3068866b": 2,
+   "066ab899": 2
+  },
+  "e2_after combined": {
+   "3fcd2724": 4
+  },
+  "e2_cleared combined": {
+   "490ee1ec": 4
+  },
+  "e2_rescrolled combined": {
+   "490ee1ec": 4
+  },
+  "e4_before combined": {
+   "37a5fac2": 2,
+   "a4d81bf9": 2
+  },
+  "e4_after combined": {
+   "7308eab0": 4
+  },
+  "e4_cleared combined": {
+   "2c22420f": 4
+  },
+  "e4_rescrolled combined": {
+   "5c3b91df": 4
+  }
+ }
+}
