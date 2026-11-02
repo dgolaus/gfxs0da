@@ -1,0 +1,290 @@
+[
+ {
+  "v": "baseline",
+  "k": 0,
+  "label": "Check Slots",
+  "rest": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/baseline_0_rest.png",
+   "h": "e5bb6557",
+   "cx": 68.94
+  },
+  "hov": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/baseline_0_hover.png",
+   "h": "52ab003e",
+   "cx": 68.947
+  },
+  "after": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/baseline_0_after.png",
+   "h": "1e98fceb",
+   "cx": 68.941
+  },
+  "lay": {
+   "anims": [],
+   "hov": true
+  }
+ },
+ {
+  "v": "prad",
+  "k": 0,
+  "label": "Check Slots",
+  "rest": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/prad_0_rest.png",
+   "h": "1ac7f2a9",
+   "cx": 68.941
+  },
+  "hov": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/prad_0_hover.png",
+   "h": "0d619e3f",
+   "cx": 68.947
+  },
+  "after": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/prad_0_after.png",
+   "h": "0d020683",
+   "cx": 68.941
+  },
+  "lay": {
+   "anims": [],
+   "hov": true
+  }
+ },
+ {
+  "v": "base",
+  "k": 0,
+  "label": "Check Slots",
+  "rest": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/base_0_rest.png",
+   "h": "cc90d6ec",
+   "cx": 68.941
+  },
+  "hov": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/base_0_hover.png",
+   "h": "5ec20678",
+   "cx": 68.947
+  },
+  "after": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/base_0_after.png",
+   "h": "7eeb2f28",
+   "cx": 68.939
+  },
+  "lay": {
+   "anims": [],
+   "hov": true
+  }
+ },
+ {
+  "v": "baseline",
+  "k": 1,
+  "label": "Check Slots",
+  "rest": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/baseline_1_rest.png",
+   "h": "d3194163",
+   "cx": 68.94
+  },
+  "hov": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/baseline_1_hover.png",
+   "h": "fc9e6bbd",
+   "cx": 68.947
+  },
+  "after": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/baseline_1_after.png",
+   "h": "7485f7fb",
+   "cx": 68.939
+  },
+  "lay": {
+   "anims": [],
+   "hov": true
+  }
+ },
+ {
+  "v": "prad",
+  "k": 1,
+  "label": "Check Slots",
+  "rest": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/prad_1_rest.png",
+   "h": "1e95aea5",
+   "cx": 68.741
+  },
+  "hov": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/prad_1_hover.png",
+   "h": "187efed0",
+   "cx": 68.796
+  },
+  "after": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/prad_1_after.png",
+   "h": "341038a1",
+   "cx": 68.74
+  },
+  "lay": {
+   "anims": [],
+   "hov": true
+  }
+ },
+ {
+  "v": "base",
+  "k": 1,
+  "label": "Check Slots",
+  "rest": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/base_1_rest.png",
+   "h": "f0b05b53",
+   "cx": 68.741
+  },
+  "hov": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/base_1_hover.png",
+   "h": "534c7810",
+   "cx": 68.947
+  },
+  "after": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/base_1_after.png",
+   "h": "1f9279aa",
+   "cx": 68.939
+  },
+  "lay": {
+   "anims": [],
+   "hov": true
+  }
+ },
+ {
+  "v": "baseline",
+  "k": 2,
+  "label": "Check Slots",
+  "rest": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/baseline_2_rest.png",
+   "h": "83858df1",
+   "cx": 68.941
+  },
+  "hov": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/baseline_2_hover.png",
+   "h": "b815b23e",
+   "cx": 68.947
+  },
+  "after": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/baseline_2_after.png",
+   "h": "72164451",
+   "cx": 68.941
+  },
+  "lay": {
+   "anims": [],
+   "hov": true
+  }
+ },
+ {
+  "v": "prad",
+  "k": 2,
+  "label": "Check Slots",
+  "rest": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/prad_2_rest.png",
+   "h": "9c6d4a7d",
+   "cx": 68.94
+  },
+  "hov": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/prad_2_hover.png",
+   "h": "059f49db",
+   "cx": 68.947
+  },
+  "after": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/prad_2_after.png",
+   "h": "99bb34a8",
+   "cx": 68.939
+  },
+  "lay": {
+   "anims": [],
+   "hov": true
+  }
+ },
+ {
+  "v": "base",
+  "k": 2,
+  "label": "Check Slots",
+  "rest": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/base_2_rest.png",
+   "h": "cc90d6ec",
+   "cx": 68.941
+  },
+  "hov": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/base_2_hover.png",
+   "h": "b999920d",
+   "cx": 68.947
+  },
+  "after": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/base_2_after.png",
+   "h": "39a25126",
+   "cx": 68.939
+  },
+  "lay": {
+   "anims": [],
+   "hov": true
+  }
+ },
+ {
+  "v": "baseline",
+  "k": 3,
+  "label": "Check Slots",
+  "rest": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/baseline_3_rest.png",
+   "h": "efc6730a",
+   "cx": 68.741
+  },
+  "hov": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/baseline_3_hover.png",
+   "h": "8ae99eeb",
+   "cx": 68.947
+  },
+  "after": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/baseline_3_after.png",
+   "h": "1f548ab8",
+   "cx": 68.942
+  },
+  "lay": {
+   "anims": [],
+   "hov": true
+  }
+ },
+ {
+  "v": "prad",
+  "k": 3,
+  "label": "Check Slots",
+  "rest": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/prad_3_rest.png",
+   "h": "dd964688",
+   "cx": 68.741
+  },
+  "hov": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/prad_3_hover.png",
+   "h": "f4dd9173",
+   "cx": 68.795
+  },
+  "after": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/prad_3_after.png",
+   "h": "3959a895",
+   "cx": 68.741
+  },
+  "lay": {
+   "anims": [],
+   "hov": true
+  }
+ },
+ {
+  "v": "base",
+  "k": 3,
+  "label": "Check Slots",
+  "rest": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/base_3_rest.png",
+   "h": "76a210c4",
+   "cx": 68.737
+  },
+  "hov": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/base_3_hover.png",
+   "h": "4c746b62",
+   "cx": 68.941
+  },
+  "after": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4_more/base_3_after.png",
+   "h": "30f2e328",
+   "cx": 68.939
+  },
+  "lay": {
+   "anims": [],
+   "hov": true
+  }
+ }
+]

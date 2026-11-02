@@ -1,0 +1,103 @@
+{
+ "tag": "slots390",
+ "vp": "390x844",
+ "pg": "/slots/",
+ "mode": "touch",
+ "lenis": false,
+ "errs": {
+  "A": [],
+  "B": [],
+  "combined": []
+ },
+ "rows": [
+  {
+   "i": 0,
+   "cls": "btn btn-primary btn-lg slots-cta",
+   "hovA": {
+    "hover": true,
+    "afterR": "999px",
+    "hostR": "999px",
+    "anims": "btnSheen"
+   },
+   "focA": {
+    "fv": true,
+    "afterR": "4px",
+    "hostR": "4px"
+   },
+   "fh_noise": {
+    "mad": 0.007,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "fh_combined": {
+    "vsA": {
+     "mad": 0.008,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0.001,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     189,
+     189,
+     189
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   },
+   "fff_noise": {
+    "mad": 0.018,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "fff_combined": {
+    "vsA": {
+     "mad": 0.019,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0.001,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     189,
+     189,
+     189
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   }
+  }
+ ]
+}

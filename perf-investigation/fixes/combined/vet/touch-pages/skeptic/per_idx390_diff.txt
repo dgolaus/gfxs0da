@@ -1,0 +1,9 @@
+e0 cleared baseline vs combined {"mad":0.256,"pct":0.803,"big":0.428,"bbox":[73,21,82,31]}
+e2 cleared baseline vs combined {"mad":1.706,"pct":3.76,"big":2.609,"bbox":[35,28,109,40]}
+e4 cleared baseline vs combined {"mad":3.166,"pct":5.307,"big":3.601,"bbox":[29,25,105,36]}
+e2 before-states A/A {"mad":4.104,"pct":6.032,"big":4.028,"bbox":[35,7,138,62]}
+e2 combined cleared vs before alt 3068866b {"mad":2.527,"pct":5.337,"big":2.857,"bbox":[36,7,138,62]}
+e4 before-states A/A {"mad":1.581,"pct":4.608,"big":2.322,"bbox":[29,25,105,36]}
+e4 combined cleared vs before a4d81bf9 {"mad":3.468,"pct":5.307,"big":3.601,"bbox":[29,25,105,36]}
+e4 combined cleared vs before 37a5fac2 {"mad":1.891,"pct":4.549,"big":2.369,"bbox":[29,25,104,36]}
+e4 baseline cleared vs before a4d81bf9 {"mad":0.303,"pct":0,"big":0,"bbox":null}

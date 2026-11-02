@@ -1,0 +1,232 @@
+{
+ "sc": "anchor1440",
+ "errs": {
+  "A": [],
+  "B": [],
+  "combined": []
+ },
+ "rows": [
+  {
+   "k": "pricing",
+   "noise": {
+    "mad": 0.41,
+    "pct": 1.071,
+    "big": 0.363,
+    "bbox": [
+     183,
+     316,
+     1274,
+     705
+    ]
+   },
+   "stA": {
+    "sy": 4549,
+    "docH": 6264,
+    "lenis": true,
+    "iw": 1440,
+    "op#about": "0",
+    "op#process": "0",
+    "op#trust": "0.248",
+    "op#pricing": "1",
+    "op#contact": "1",
+    "navv": "1,0,1",
+    "pill": true,
+    "contain": "none",
+    "tracks": "8,10,8"
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.242,
+     "pct": 0.759,
+     "big": 0.144,
+     "bbox": [
+      183,
+      316,
+      1276,
+      703
+     ]
+    },
+    "vsB": {
+     "mad": 0.348,
+     "pct": 0.948,
+     "big": 0.322,
+     "bbox": [
+      177,
+      314,
+      1174,
+      705
+     ]
+    },
+    "sd": [
+     "op#trust:0.248>0.295(A/B too)",
+     "contain:none>paint"
+    ]
+   }
+  },
+  {
+   "k": "trust",
+   "noise": {
+    "mad": 0.256,
+    "pct": 0.809,
+    "big": 0.246,
+    "bbox": [
+     167,
+     614,
+     1270,
+     899
+    ]
+   },
+   "stA": {
+    "sy": 3340,
+    "docH": 6264,
+    "lenis": true,
+    "iw": 1440,
+    "op#about": "0",
+    "op#process": "0.241",
+    "op#trust": "1",
+    "op#pricing": "1",
+    "op#contact": "1",
+    "navv": "1,0,1",
+    "pill": true,
+    "contain": "none",
+    "tracks": "8,10,8"
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.172,
+     "pct": 0.688,
+     "big": 0.012,
+     "bbox": [
+      179,
+      558,
+      1260,
+      899
+     ]
+    },
+    "vsB": {
+     "mad": 0.403,
+     "pct": 1.134,
+     "big": 0.397,
+     "bbox": [
+      167,
+      557,
+      1272,
+      899
+     ]
+    },
+    "sd": [
+     "op#process:0.241>0.222(A/B too)",
+     "contain:none>paint"
+    ]
+   }
+  },
+  {
+   "k": "contact",
+   "noise": {
+    "mad": 0.197,
+    "pct": 0.784,
+    "big": 0.1,
+    "bbox": [
+     379,
+     339,
+     1066,
+     825
+    ]
+   },
+   "stA": {
+    "sy": 5284,
+    "docH": 6264,
+    "lenis": true,
+    "iw": 1440,
+    "op#about": "0",
+    "op#process": "0",
+    "op#trust": "0",
+    "op#pricing": "0.261",
+    "op#contact": "1",
+    "navv": "1,0,1",
+    "pill": true,
+    "contain": "none",
+    "tracks": "8,10,8"
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0.197,
+     "pct": 0.784,
+     "big": 0.1,
+     "bbox": [
+      379,
+      339,
+      1066,
+      825
+     ]
+    },
+    "sd": [
+     "op#pricing:0.261>0.272(A/B too)",
+     "contain:none>paint"
+    ]
+   }
+  },
+  {
+   "k": "process",
+   "noise": {
+    "mad": 2.727,
+    "pct": 4.763,
+    "big": 2.167,
+    "bbox": [
+     742,
+     411,
+     1249,
+     766
+    ]
+   },
+   "stA": {
+    "sy": 2482,
+    "docH": 6264,
+    "lenis": true,
+    "iw": 1440,
+    "op#about": "0.206",
+    "op#process": "1",
+    "op#trust": "1",
+    "op#pricing": "1",
+    "op#contact": "1",
+    "navv": "1,0,1",
+    "pill": true,
+    "contain": "none",
+    "tracks": "8,10,8"
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.029,
+     "pct": 0.048,
+     "big": 0.032,
+     "bbox": [
+      742,
+      754,
+      877,
+      766
+     ]
+    },
+    "vsB": {
+     "mad": 2.705,
+     "pct": 4.715,
+     "big": 2.135,
+     "bbox": [
+      742,
+      411,
+      1249,
+      723
+     ]
+    },
+    "sd": [
+     "contain:none>paint"
+    ]
+   }
+  }
+ ]
+}

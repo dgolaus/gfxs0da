@@ -1,0 +1,1272 @@
+{
+ "tag": "tos390bis",
+ "vp": "390x844",
+ "pg": "/tos/",
+ "mode": "touch",
+ "lenis": false,
+ "errs": {
+  "A": [],
+  "B": [],
+  "combined": [],
+  "base": [],
+  "prad": [],
+  "stab1440": [],
+  "btnonly": [],
+  "btnrad0": [],
+  "basejs": [],
+  "basecss": [],
+  "commentonly": []
+ },
+ "rows": [
+  {
+   "i": 0,
+   "cls": "btn btn-ghost btn-sm",
+   "hovA": {
+    "hover": true,
+    "afterR": "999px",
+    "hostR": "999px",
+    "anims": "btnSheen"
+   },
+   "focA": {
+    "fv": true,
+    "afterR": "4px",
+    "hostR": "4px"
+   },
+   "fh_noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "fh_combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   },
+   "fh_base": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   },
+   "fh_prad": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   },
+   "fh_stab1440": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   },
+   "fh_btnonly": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "999px",
+     "hostR": "4px"
+    }
+   },
+   "fh_btnrad0": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "0px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "0px",
+     "hostR": "4px"
+    }
+   },
+   "fh_basejs": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   },
+   "fh_basecss": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   },
+   "fh_commentonly": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   },
+   "fff_noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "fff_combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   },
+   "fff_base": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   },
+   "fff_prad": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   },
+   "fff_stab1440": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   },
+   "fff_btnonly": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "999px",
+     "hostR": "4px"
+    }
+   },
+   "fff_btnrad0": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "0px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "0px",
+     "hostR": "4px"
+    }
+   },
+   "fff_basejs": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   },
+   "fff_basecss": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   },
+   "fff_commentonly": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   }
+  },
+  {
+   "i": 1,
+   "cls": "btn btn-ghost btn-sm",
+   "hovA": {
+    "hover": true,
+    "afterR": "999px",
+    "hostR": "999px",
+    "anims": "btnSheen"
+   },
+   "focA": {
+    "fv": true,
+    "afterR": "4px",
+    "hostR": "4px"
+   },
+   "fh_noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "fh_combined": {
+    "vsA": {
+     "mad": 1.301,
+     "pct": 3.888,
+     "big": 1.997,
+     "bbox": [
+      34,
+      32,
+      144,
+      44
+     ]
+    },
+    "vsB": {
+     "mad": 1.301,
+     "pct": 3.888,
+     "big": 1.997,
+     "bbox": [
+      34,
+      32,
+      144,
+      44
+     ]
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   },
+   "fh_base": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   },
+   "fh_prad": {
+    "vsA": {
+     "mad": 1.301,
+     "pct": 3.888,
+     "big": 1.997,
+     "bbox": [
+      34,
+      32,
+      144,
+      44
+     ]
+    },
+    "vsB": {
+     "mad": 1.301,
+     "pct": 3.888,
+     "big": 1.997,
+     "bbox": [
+      34,
+      32,
+      144,
+      44
+     ]
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   },
+   "fh_stab1440": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   },
+   "fh_btnonly": {
+    "vsA": {
+     "mad": 1.301,
+     "pct": 3.888,
+     "big": 1.997,
+     "bbox": [
+      34,
+      32,
+      144,
+      44
+     ]
+    },
+    "vsB": {
+     "mad": 1.301,
+     "pct": 3.888,
+     "big": 1.997,
+     "bbox": [
+      34,
+      32,
+      144,
+      44
+     ]
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "999px",
+     "hostR": "4px"
+    }
+   },
+   "fh_btnrad0": {
+    "vsA": {
+     "mad": 1.301,
+     "pct": 3.888,
+     "big": 1.997,
+     "bbox": [
+      34,
+      32,
+      144,
+      44
+     ]
+    },
+    "vsB": {
+     "mad": 1.301,
+     "pct": 3.888,
+     "big": 1.997,
+     "bbox": [
+      34,
+      32,
+      144,
+      44
+     ]
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "0px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "0px",
+     "hostR": "4px"
+    }
+   },
+   "fh_basejs": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   },
+   "fh_basecss": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   },
+   "fh_commentonly": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   },
+   "fff_noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "fff_combined": {
+    "vsA": {
+     "mad": 1.301,
+     "pct": 3.888,
+     "big": 1.997,
+     "bbox": [
+      34,
+      32,
+      144,
+      44
+     ]
+    },
+    "vsB": {
+     "mad": 1.301,
+     "pct": 3.888,
+     "big": 1.997,
+     "bbox": [
+      34,
+      32,
+      144,
+      44
+     ]
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   },
+   "fff_base": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   },
+   "fff_prad": {
+    "vsA": {
+     "mad": 1.301,
+     "pct": 3.888,
+     "big": 1.997,
+     "bbox": [
+      34,
+      32,
+      144,
+      44
+     ]
+    },
+    "vsB": {
+     "mad": 1.301,
+     "pct": 3.888,
+     "big": 1.997,
+     "bbox": [
+      34,
+      32,
+      144,
+      44
+     ]
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   },
+   "fff_stab1440": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   },
+   "fff_btnonly": {
+    "vsA": {
+     "mad": 1.301,
+     "pct": 3.888,
+     "big": 1.997,
+     "bbox": [
+      34,
+      32,
+      144,
+      44
+     ]
+    },
+    "vsB": {
+     "mad": 1.301,
+     "pct": 3.888,
+     "big": 1.997,
+     "bbox": [
+      34,
+      32,
+      144,
+      44
+     ]
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "999px",
+     "hostR": "4px"
+    }
+   },
+   "fff_btnrad0": {
+    "vsA": {
+     "mad": 1.301,
+     "pct": 3.888,
+     "big": 1.997,
+     "bbox": [
+      34,
+      32,
+      144,
+      44
+     ]
+    },
+    "vsB": {
+     "mad": 1.301,
+     "pct": 3.888,
+     "big": 1.997,
+     "bbox": [
+      34,
+      32,
+      144,
+      44
+     ]
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "0px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "0px",
+     "hostR": "4px"
+    }
+   },
+   "fff_basejs": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   },
+   "fff_basecss": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   },
+   "fff_commentonly": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "rect": "same",
+    "sy": [
+     7528,
+     7528,
+     7528
+    ],
+    "hov": {
+     "hover": true,
+     "afterR": "999px",
+     "hostR": "999px",
+     "anims": "btnSheen"
+    },
+    "foc": {
+     "fv": true,
+     "afterR": "4px",
+     "hostR": "4px"
+    }
+   }
+  }
+ ]
+}

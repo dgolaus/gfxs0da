@@ -1,0 +1,1763 @@
+{
+ "tag": "navclicks768touch",
+ "o": {
+  "w": 768,
+  "h": 1024,
+  "mobile": true
+ },
+ "runs": {
+  "A": {
+   "env": {
+    "lenis": false,
+    "hoverNone": true
+   },
+   "pageErrors": [],
+   "steps": [
+    {
+     "h": "#work",
+     "dur": 1171,
+     "s": {
+      "sy": 1025,
+      "docH": 7334,
+      "iw": 768,
+      "lenis": false,
+      "limitOk": null,
+      "navVars": [
+       "1",
+       "0",
+       "1"
+      ],
+      "navLook": [
+       "10px",
+       "0",
+       "1",
+       "11px 24px",
+       "1 matrix(1, 0, 0, 1, -24, 0)",
+       "1 matrix(1, 0, 0, 1, 24, 0)",
+       true,
+       true
+      ],
+      "sec": [
+       [
+        "about",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        1365.7,
+        "none"
+       ],
+       [
+        "process",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        2071,
+        "none"
+       ],
+       [
+        "trust",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        3030,
+        "none"
+       ],
+       [
+        "pricing",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        4240.5,
+        "none"
+       ],
+       [
+        "contact",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        5284.9,
+        "none"
+       ]
+      ],
+      "fp": "0",
+      "tcols": [
+       "8:20",
+       "10:25",
+       "48:140"
+      ],
+      "focus": "BODY.bg-red ready ",
+      "spy": [],
+      "hash": "#work",
+      "overflow": "|"
+     }
+    },
+    {
+     "h": "#about",
+     "dur": 1109,
+     "s": {
+      "sy": 2391,
+      "docH": 7377,
+      "iw": 768,
+      "lenis": false,
+      "limitOk": null,
+      "navVars": [
+       "1",
+       "0",
+       "1"
+      ],
+      "navLook": [
+       "10px",
+       "0",
+       "1",
+       "11px 24px",
+       "0.999728 matrix(1, 0, 0, 1, -24, 0)",
+       "0.948285 matrix(1, 0, 0, 1, 24, 0)",
+       true,
+       true
+      ],
+      "sec": [
+       [
+        "about",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        -0.3,
+        "none"
+       ],
+       [
+        "process",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        705,
+        "none"
+       ],
+       [
+        "trust",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        1707.6,
+        "none"
+       ],
+       [
+        "pricing",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        2918.1,
+        "none"
+       ],
+       [
+        "contact",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        3962.5,
+        "none"
+       ]
+      ],
+      "fp": "0",
+      "tcols": [
+       "8:20",
+       "10:25",
+       "48:140"
+      ],
+      "focus": "BODY.bg-red ready ",
+      "spy": [
+       "P:@gfxs0da is typing.."
+      ],
+      "hash": "#about",
+      "overflow": "|"
+     }
+    },
+    {
+     "h": "#trust",
+     "dur": 1174,
+     "s": {
+      "sy": 4099,
+      "docH": 7429,
+      "iw": 768,
+      "lenis": false,
+      "limitOk": null,
+      "navVars": [
+       "1",
+       "0",
+       "1"
+      ],
+      "navLook": [
+       "10px",
+       "0",
+       "1",
+       "11px 24px",
+       "0.999998 matrix(1, 0, 0, 1, -24, 0)",
+       "0.976943 matrix(1, 0, 0, 1, 24, 0)",
+       true,
+       true
+      ],
+      "sec": [
+       [
+        "about",
+        "0",
+        "blur(8px)",
+        "matrix(1, 0, 0, 1, 0, -24)",
+        -1732.3,
+        "none"
+       ],
+       [
+        "process",
+        "0",
+        "blur(8px)",
+        "matrix(1, 0, 0, 1, 0, -24)",
+        -1027,
+        "none"
+       ],
+       [
+        "trust",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        51.1,
+        "none"
+       ],
+       [
+        "pricing",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        1261.6,
+        "none"
+       ],
+       [
+        "contact",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        2306,
+        "none"
+       ]
+      ],
+      "fp": "0",
+      "tcols": [
+       "8:20",
+       "10:25",
+       "48:140"
+      ],
+      "focus": "BODY.bg-red ready ",
+      "spy": [],
+      "hash": "#trust",
+      "overflow": "|"
+     }
+    },
+    {
+     "h": "#pricing",
+     "dur": 1216,
+     "s": {
+      "sy": 5361,
+      "docH": 7429,
+      "iw": 768,
+      "lenis": false,
+      "limitOk": null,
+      "navVars": [
+       "1",
+       "0",
+       "1"
+      ],
+      "navLook": [
+       "10px",
+       "0",
+       "1",
+       "11px 24px",
+       "0.999843 matrix(1, 0, 0, 1, -24, 0)",
+       "0.955688 matrix(1, 0, 0, 1, 24, 0)",
+       true,
+       true
+      ],
+      "sec": [
+       [
+        "about",
+        "0",
+        "blur(8px)",
+        "matrix(1, 0, 0, 1, 0, -24)",
+        -2994.3,
+        "none"
+       ],
+       [
+        "process",
+        "0",
+        "blur(8px)",
+        "matrix(1, 0, 0, 1, 0, -24)",
+        -2289,
+        "none"
+       ],
+       [
+        "trust",
+        "0",
+        "blur(8px)",
+        "matrix(1, 0, 0, 1, 0, -24)",
+        -1234.9,
+        "none"
+       ],
+       [
+        "pricing",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        -0.4,
+        "none"
+       ],
+       [
+        "contact",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        1044,
+        "none"
+       ]
+      ],
+      "fp": "0",
+      "tcols": [
+       "8:20",
+       "10:25",
+       "48:140"
+      ],
+      "focus": "BODY.bg-red ready ",
+      "spy": [],
+      "hash": "#pricing",
+      "overflow": "|"
+     }
+    },
+    {
+     "h": "#contact"
+    },
+    {
+     "h": "#process"
+    },
+    {
+     "h": "#about",
+     "dur": 1142,
+     "s": {
+      "sy": 2367,
+      "docH": 7429,
+      "iw": 768,
+      "lenis": false,
+      "limitOk": null,
+      "navVars": [
+       "1",
+       "0",
+       "1"
+      ],
+      "navLook": [
+       "10px",
+       "0",
+       "1",
+       "11px 24px",
+       "1 matrix(1, 0, 0, 1, -24, 0)",
+       "0.983765 matrix(1, 0, 0, 1, 24, 0)",
+       true,
+       true
+      ],
+      "sec": [
+       [
+        "about",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        23.7,
+        "none"
+       ],
+       [
+        "process",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        729,
+        "none"
+       ],
+       [
+        "trust",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        1783.1,
+        "none"
+       ],
+       [
+        "pricing",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        2993.6,
+        "none"
+       ],
+       [
+        "contact",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        4038,
+        "none"
+       ]
+      ],
+      "fp": "0",
+      "tcols": [
+       "8:20",
+       "10:25",
+       "48:140"
+      ],
+      "focus": "BODY.bg-red ready ",
+      "spy": [
+       "P:@client is typing..."
+      ],
+      "hash": "#about",
+      "overflow": "|"
+     }
+    },
+    {
+     "h": "#work",
+     "dur": 1110,
+     "s": {
+      "sy": 1025,
+      "docH": 7628,
+      "iw": 768,
+      "lenis": false,
+      "limitOk": null,
+      "navVars": [
+       "1",
+       "0",
+       "1"
+      ],
+      "navLook": [
+       "10px",
+       "0",
+       "1",
+       "11px 24px",
+       "0.99992 matrix(1, 0, 0, 1, -24, 0)",
+       "0.962199 matrix(1, 0, 0, 1, 24, 0)",
+       true,
+       true
+      ],
+      "sec": [
+       [
+        "about",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        1365.7,
+        "none"
+       ],
+       [
+        "process",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        2071,
+        "none"
+       ],
+       [
+        "trust",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        3324.1,
+        "none"
+       ],
+       [
+        "pricing",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        4534.6,
+        "none"
+       ],
+       [
+        "contact",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        5579,
+        "none"
+       ]
+      ],
+      "fp": "0",
+      "tcols": [
+       "8:20",
+       "10:25",
+       "48:140"
+      ],
+      "focus": "BODY.bg-red ready ",
+      "spy": [],
+      "hash": "#work",
+      "overflow": "|"
+     }
+    }
+   ]
+  },
+  "B": {
+   "env": {
+    "lenis": false,
+    "hoverNone": true
+   },
+   "pageErrors": [],
+   "steps": [
+    {
+     "h": "#work",
+     "dur": 1189,
+     "s": {
+      "sy": 1025,
+      "docH": 7334,
+      "iw": 768,
+      "lenis": false,
+      "limitOk": null,
+      "navVars": [
+       "1",
+       "0",
+       "1"
+      ],
+      "navLook": [
+       "10px",
+       "0",
+       "1",
+       "11px 24px",
+       "1 matrix(1, 0, 0, 1, -24, 0)",
+       "1 matrix(1, 0, 0, 1, 24, 0)",
+       true,
+       true
+      ],
+      "sec": [
+       [
+        "about",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        1365.7,
+        "none"
+       ],
+       [
+        "process",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        2071,
+        "none"
+       ],
+       [
+        "trust",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        3030,
+        "none"
+       ],
+       [
+        "pricing",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        4240.5,
+        "none"
+       ],
+       [
+        "contact",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        5284.9,
+        "none"
+       ]
+      ],
+      "fp": "0",
+      "tcols": [
+       "8:20",
+       "10:25",
+       "48:140"
+      ],
+      "focus": "BODY.bg-red ready ",
+      "spy": [],
+      "hash": "#work",
+      "overflow": "|"
+     }
+    },
+    {
+     "h": "#about",
+     "dur": 1104,
+     "s": {
+      "sy": 2391,
+      "docH": 7377,
+      "iw": 768,
+      "lenis": false,
+      "limitOk": null,
+      "navVars": [
+       "1",
+       "0",
+       "1"
+      ],
+      "navLook": [
+       "10px",
+       "0",
+       "1",
+       "11px 24px",
+       "0.999965 matrix(1, 0, 0, 1, -24, 0)",
+       "0.967809 matrix(1, 0, 0, 1, 24, 0)",
+       true,
+       true
+      ],
+      "sec": [
+       [
+        "about",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        -0.3,
+        "none"
+       ],
+       [
+        "process",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        705,
+        "none"
+       ],
+       [
+        "trust",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        1707.6,
+        "none"
+       ],
+       [
+        "pricing",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        2918.1,
+        "none"
+       ],
+       [
+        "contact",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        3962.5,
+        "none"
+       ]
+      ],
+      "fp": "0",
+      "tcols": [
+       "8:20",
+       "10:25",
+       "48:140"
+      ],
+      "focus": "BODY.bg-red ready ",
+      "spy": [
+       "P:@gfxs0da is typing.."
+      ],
+      "hash": "#about",
+      "overflow": "|"
+     }
+    },
+    {
+     "h": "#trust",
+     "dur": 1143,
+     "s": {
+      "sy": 4099,
+      "docH": 7429,
+      "iw": 768,
+      "lenis": false,
+      "limitOk": null,
+      "navVars": [
+       "1",
+       "0",
+       "1"
+      ],
+      "navLook": [
+       "10px",
+       "0",
+       "1",
+       "11px 24px",
+       "0.999989 matrix(1, 0, 0, 1, -24, 0)",
+       "0.972706 matrix(1, 0, 0, 1, 24, 0)",
+       true,
+       true
+      ],
+      "sec": [
+       [
+        "about",
+        "0",
+        "blur(8px)",
+        "matrix(1, 0, 0, 1, 0, -24)",
+        -1732.3,
+        "none"
+       ],
+       [
+        "process",
+        "0",
+        "blur(8px)",
+        "matrix(1, 0, 0, 1, 0, -24)",
+        -1027,
+        "none"
+       ],
+       [
+        "trust",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        51.1,
+        "none"
+       ],
+       [
+        "pricing",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        1261.6,
+        "none"
+       ],
+       [
+        "contact",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        2306,
+        "none"
+       ]
+      ],
+      "fp": "0",
+      "tcols": [
+       "8:20",
+       "10:25",
+       "48:140"
+      ],
+      "focus": "BODY.bg-red ready ",
+      "spy": [],
+      "hash": "#trust",
+      "overflow": "|"
+     }
+    },
+    {
+     "h": "#pricing",
+     "dur": 1168,
+     "s": {
+      "sy": 5361,
+      "docH": 7429,
+      "iw": 768,
+      "lenis": false,
+      "limitOk": null,
+      "navVars": [
+       "1",
+       "0",
+       "1"
+      ],
+      "navLook": [
+       "10px",
+       "0",
+       "1",
+       "11px 24px",
+       "0.999337 matrix(1, 0, 0, 1, -24, 0)",
+       "0.929986 matrix(1, 0, 0, 1, 24, 0)",
+       true,
+       true
+      ],
+      "sec": [
+       [
+        "about",
+        "0",
+        "blur(8px)",
+        "matrix(1, 0, 0, 1, 0, -24)",
+        -2994.3,
+        "none"
+       ],
+       [
+        "process",
+        "0",
+        "blur(8px)",
+        "matrix(1, 0, 0, 1, 0, -24)",
+        -2289,
+        "none"
+       ],
+       [
+        "trust",
+        "0",
+        "blur(8px)",
+        "matrix(1, 0, 0, 1, 0, -24)",
+        -1234.9,
+        "none"
+       ],
+       [
+        "pricing",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        -0.4,
+        "none"
+       ],
+       [
+        "contact",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        1044,
+        "none"
+       ]
+      ],
+      "fp": "0",
+      "tcols": [
+       "8:20",
+       "10:25",
+       "48:140"
+      ],
+      "focus": "BODY.bg-red ready ",
+      "spy": [],
+      "hash": "#pricing",
+      "overflow": "|"
+     }
+    },
+    {
+     "h": "#contact"
+    },
+    {
+     "h": "#process"
+    },
+    {
+     "h": "#about",
+     "dur": 1131,
+     "s": {
+      "sy": 2367,
+      "docH": 7429,
+      "iw": 768,
+      "lenis": false,
+      "limitOk": null,
+      "navVars": [
+       "1",
+       "0",
+       "1"
+      ],
+      "navLook": [
+       "10px",
+       "0",
+       "1",
+       "11px 24px",
+       "0.999989 matrix(1, 0, 0, 1, -24, 0)",
+       "0.972692 matrix(1, 0, 0, 1, 24, 0)",
+       true,
+       true
+      ],
+      "sec": [
+       [
+        "about",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        23.7,
+        "none"
+       ],
+       [
+        "process",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        729,
+        "none"
+       ],
+       [
+        "trust",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        1783.1,
+        "none"
+       ],
+       [
+        "pricing",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        2993.6,
+        "none"
+       ],
+       [
+        "contact",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        4038,
+        "none"
+       ]
+      ],
+      "fp": "0",
+      "tcols": [
+       "8:20",
+       "10:25",
+       "48:140"
+      ],
+      "focus": "BODY.bg-red ready ",
+      "spy": [
+       "P:@client is typing..."
+      ],
+      "hash": "#about",
+      "overflow": "|"
+     }
+    },
+    {
+     "h": "#work",
+     "dur": 1108,
+     "s": {
+      "sy": 1025,
+      "docH": 7628,
+      "iw": 768,
+      "lenis": false,
+      "limitOk": null,
+      "navVars": [
+       "1",
+       "0",
+       "1"
+      ],
+      "navLook": [
+       "10px",
+       "0",
+       "1",
+       "11px 24px",
+       "0.999989 matrix(1, 0, 0, 1, -24, 0)",
+       "0.972694 matrix(1, 0, 0, 1, 24, 0)",
+       true,
+       true
+      ],
+      "sec": [
+       [
+        "about",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        1365.7,
+        "none"
+       ],
+       [
+        "process",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        2071,
+        "none"
+       ],
+       [
+        "trust",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        3324.1,
+        "none"
+       ],
+       [
+        "pricing",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        4534.6,
+        "none"
+       ],
+       [
+        "contact",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        5579,
+        "none"
+       ]
+      ],
+      "fp": "0",
+      "tcols": [
+       "8:20",
+       "10:25",
+       "48:140"
+      ],
+      "focus": "BODY.bg-red ready ",
+      "spy": [],
+      "hash": "#work",
+      "overflow": "|"
+     }
+    }
+   ]
+  },
+  "C": {
+   "env": {
+    "lenis": false,
+    "hoverNone": true
+   },
+   "pageErrors": [],
+   "steps": [
+    {
+     "h": "#work",
+     "dur": 1258,
+     "s": {
+      "sy": 1025,
+      "docH": 7334,
+      "iw": 768,
+      "lenis": false,
+      "limitOk": null,
+      "navVars": [
+       "1",
+       "0",
+       "1"
+      ],
+      "navLook": [
+       "10px",
+       "0",
+       "1",
+       "11px 24px",
+       "1 matrix(1, 0, 0, 1, -24, 0)",
+       "1 matrix(1, 0, 0, 1, 24, 0)",
+       true,
+       true
+      ],
+      "sec": [
+       [
+        "about",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        1365.7,
+        "none"
+       ],
+       [
+        "process",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        2071,
+        "none"
+       ],
+       [
+        "trust",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        3030,
+        "none"
+       ],
+       [
+        "pricing",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        4240.5,
+        "none"
+       ],
+       [
+        "contact",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        5284.9,
+        "none"
+       ]
+      ],
+      "fp": "0",
+      "tcols": [
+       "8:20",
+       "10:25",
+       "48:140"
+      ],
+      "focus": "BODY.bg-red ready ",
+      "spy": [],
+      "hash": "#work",
+      "overflow": "|"
+     }
+    },
+    {
+     "h": "#about",
+     "dur": 1138,
+     "s": {
+      "sy": 2391,
+      "docH": 7377,
+      "iw": 768,
+      "lenis": false,
+      "limitOk": null,
+      "navVars": [
+       "1",
+       "0",
+       "1"
+      ],
+      "navLook": [
+       "10px",
+       "0",
+       "1",
+       "11px 24px",
+       "0.999965 matrix(1, 0, 0, 1, -24, 0)",
+       "0.967818 matrix(1, 0, 0, 1, 24, 0)",
+       true,
+       true
+      ],
+      "sec": [
+       [
+        "about",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        -0.3,
+        "none"
+       ],
+       [
+        "process",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        705,
+        "none"
+       ],
+       [
+        "trust",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        1707.6,
+        "none"
+       ],
+       [
+        "pricing",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        2918.1,
+        "none"
+       ],
+       [
+        "contact",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        3962.5,
+        "none"
+       ]
+      ],
+      "fp": "0",
+      "tcols": [
+       "8:20",
+       "10:25",
+       "48:140"
+      ],
+      "focus": "BODY.bg-red ready ",
+      "spy": [
+       "P:@gfxs0da is typing.."
+      ],
+      "hash": "#about",
+      "overflow": "|"
+     }
+    },
+    {
+     "h": "#trust",
+     "dur": 1094,
+     "s": {
+      "sy": 4099,
+      "docH": 7429,
+      "iw": 768,
+      "lenis": false,
+      "limitOk": null,
+      "navVars": [
+       "1",
+       "0",
+       "1"
+      ],
+      "navLook": [
+       "10px",
+       "0",
+       "1",
+       "11px 24px",
+       "0.999728 matrix(1, 0, 0, 1, -24, 0)",
+       "0.948301 matrix(1, 0, 0, 1, 24, 0)",
+       true,
+       true
+      ],
+      "sec": [
+       [
+        "about",
+        "0",
+        "blur(8px)",
+        "matrix(1, 0, 0, 1, 0, -24)",
+        -1732.3,
+        "none"
+       ],
+       [
+        "process",
+        "0",
+        "blur(8px)",
+        "matrix(1, 0, 0, 1, 0, -24)",
+        -1027,
+        "none"
+       ],
+       [
+        "trust",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        51.1,
+        "none"
+       ],
+       [
+        "pricing",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        1261.6,
+        "none"
+       ],
+       [
+        "contact",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        2306,
+        "none"
+       ]
+      ],
+      "fp": "0",
+      "tcols": [
+       "8:20",
+       "10:25",
+       "48:140"
+      ],
+      "focus": "BODY.bg-red ready ",
+      "spy": [],
+      "hash": "#trust",
+      "overflow": "|"
+     }
+    },
+    {
+     "h": "#pricing",
+     "dur": 1124,
+     "s": {
+      "sy": 5361,
+      "docH": 7429,
+      "iw": 768,
+      "lenis": false,
+      "limitOk": null,
+      "navVars": [
+       "1",
+       "0",
+       "1"
+      ],
+      "navLook": [
+       "10px",
+       "0",
+       "1",
+       "11px 24px",
+       "0.999562 matrix(1, 0, 0, 1, -24, 0)",
+       "0.939756 matrix(1, 0, 0, 1, 24, 0)",
+       true,
+       true
+      ],
+      "sec": [
+       [
+        "about",
+        "0",
+        "blur(8px)",
+        "matrix(1, 0, 0, 1, 0, -24)",
+        -2994.3,
+        "none"
+       ],
+       [
+        "process",
+        "0",
+        "blur(8px)",
+        "matrix(1, 0, 0, 1, 0, -24)",
+        -2289,
+        "none"
+       ],
+       [
+        "trust",
+        "0",
+        "blur(8px)",
+        "matrix(1, 0, 0, 1, 0, -24)",
+        -1234.9,
+        "none"
+       ],
+       [
+        "pricing",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        -0.4,
+        "none"
+       ],
+       [
+        "contact",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        1044,
+        "none"
+       ]
+      ],
+      "fp": "0",
+      "tcols": [
+       "8:20",
+       "10:25",
+       "48:140"
+      ],
+      "focus": "BODY.bg-red ready ",
+      "spy": [],
+      "hash": "#pricing",
+      "overflow": "|"
+     }
+    },
+    {
+     "h": "#contact"
+    },
+    {
+     "h": "#process"
+    },
+    {
+     "h": "#about",
+     "dur": 1102,
+     "s": {
+      "sy": 2367,
+      "docH": 7429,
+      "iw": 768,
+      "lenis": false,
+      "limitOk": null,
+      "navVars": [
+       "1",
+       "0",
+       "1"
+      ],
+      "navLook": [
+       "10px",
+       "0",
+       "1",
+       "11px 24px",
+       "0.999965 matrix(1, 0, 0, 1, -24, 0)",
+       "0.967796 matrix(1, 0, 0, 1, 24, 0)",
+       true,
+       true
+      ],
+      "sec": [
+       [
+        "about",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        23.7,
+        "none"
+       ],
+       [
+        "process",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        729,
+        "none"
+       ],
+       [
+        "trust",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        1783.1,
+        "none"
+       ],
+       [
+        "pricing",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        2993.6,
+        "none"
+       ],
+       [
+        "contact",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        4038,
+        "none"
+       ]
+      ],
+      "fp": "0",
+      "tcols": [
+       "8:20",
+       "10:25",
+       "48:140"
+      ],
+      "focus": "BODY.bg-red ready ",
+      "spy": [
+       "P:@client is typing..."
+      ],
+      "hash": "#about",
+      "overflow": "|"
+     }
+    },
+    {
+     "h": "#work",
+     "dur": 1154,
+     "s": {
+      "sy": 1025,
+      "docH": 7628,
+      "iw": 768,
+      "lenis": false,
+      "limitOk": null,
+      "navVars": [
+       "1",
+       "0",
+       "1"
+      ],
+      "navLook": [
+       "10px",
+       "0",
+       "1",
+       "11px 24px",
+       "1 matrix(1, 0, 0, 1, -24, 0)",
+       "0.98377 matrix(1, 0, 0, 1, 24, 0)",
+       true,
+       true
+      ],
+      "sec": [
+       [
+        "about",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        1365.7,
+        "none"
+       ],
+       [
+        "process",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        2071,
+        "none"
+       ],
+       [
+        "trust",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        3324.1,
+        "none"
+       ],
+       [
+        "pricing",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        4534.6,
+        "none"
+       ],
+       [
+        "contact",
+        "1",
+        "blur(0px)",
+        "matrix(1, 0, 0, 1, 0, 0)",
+        5579,
+        "none"
+       ]
+      ],
+      "fp": "0",
+      "tcols": [
+       "8:20",
+       "10:25",
+       "48:140"
+      ],
+      "focus": "BODY.bg-red ready ",
+      "spy": [],
+      "hash": "#work",
+      "overflow": "|"
+     }
+    }
+   ]
+  }
+ },
+ "cmp": [
+  {
+   "i": 0,
+   "h": "#work",
+   "AB": [],
+   "AC": [],
+   "CnotAB": []
+  },
+  {
+   "i": 1,
+   "h": "#about",
+   "AB": [
+    ".navLook.4 A=\"0.999728 matrix(1, 0, 0, 1, -24, 0)\" B=\"0.999965 matrix(1, 0, 0, 1, -24, 0)\"",
+    ".navLook.5 A=\"0.948285 matrix(1, 0, 0, 1, 24, 0)\" B=\"0.967809 matrix(1, 0, 0, 1, 24, 0)\""
+   ],
+   "AC": [
+    ".navLook.4 A=\"0.999728 matrix(1, 0, 0, 1, -24, 0)\" C=\"0.999965 matrix(1, 0, 0, 1, -24, 0)\"",
+    ".navLook.5 A=\"0.948285 matrix(1, 0, 0, 1, 24, 0)\" C=\"0.967818 matrix(1, 0, 0, 1, 24, 0)\""
+   ],
+   "CnotAB": [
+    ".navLook.5 A=\"0.948285 matrix(1, 0, 0, 1, 24, 0)\" B=\"0.967809 matrix(1, 0, 0, 1, 24, 0)\" C=\"0.967818 matrix(1, 0, 0, 1, 24, 0)\""
+   ]
+  },
+  {
+   "i": 2,
+   "h": "#trust",
+   "AB": [
+    ".navLook.4 A=\"0.999998 matrix(1, 0, 0, 1, -24, 0)\" B=\"0.999989 matrix(1, 0, 0, 1, -24, 0)\"",
+    ".navLook.5 A=\"0.976943 matrix(1, 0, 0, 1, 24, 0)\" B=\"0.972706 matrix(1, 0, 0, 1, 24, 0)\""
+   ],
+   "AC": [
+    ".navLook.4 A=\"0.999998 matrix(1, 0, 0, 1, -24, 0)\" C=\"0.999728 matrix(1, 0, 0, 1, -24, 0)\"",
+    ".navLook.5 A=\"0.976943 matrix(1, 0, 0, 1, 24, 0)\" C=\"0.948301 matrix(1, 0, 0, 1, 24, 0)\""
+   ],
+   "CnotAB": [
+    ".navLook.4 A=\"0.999998 matrix(1, 0, 0, 1, -24, 0)\" B=\"0.999989 matrix(1, 0, 0, 1, -24, 0)\" C=\"0.999728 matrix(1, 0, 0, 1, -24, 0)\"",
+    ".navLook.5 A=\"0.976943 matrix(1, 0, 0, 1, 24, 0)\" B=\"0.972706 matrix(1, 0, 0, 1, 24, 0)\" C=\"0.948301 matrix(1, 0, 0, 1, 24, 0)\""
+   ]
+  },
+  {
+   "i": 3,
+   "h": "#pricing",
+   "AB": [
+    ".navLook.4 A=\"0.999843 matrix(1, 0, 0, 1, -24, 0)\" B=\"0.999337 matrix(1, 0, 0, 1, -24, 0)\"",
+    ".navLook.5 A=\"0.955688 matrix(1, 0, 0, 1, 24, 0)\" B=\"0.929986 matrix(1, 0, 0, 1, 24, 0)\""
+   ],
+   "AC": [
+    ".navLook.4 A=\"0.999843 matrix(1, 0, 0, 1, -24, 0)\" C=\"0.999562 matrix(1, 0, 0, 1, -24, 0)\"",
+    ".navLook.5 A=\"0.955688 matrix(1, 0, 0, 1, 24, 0)\" C=\"0.939756 matrix(1, 0, 0, 1, 24, 0)\""
+   ],
+   "CnotAB": [
+    ".navLook.4 A=\"0.999843 matrix(1, 0, 0, 1, -24, 0)\" B=\"0.999337 matrix(1, 0, 0, 1, -24, 0)\" C=\"0.999562 matrix(1, 0, 0, 1, -24, 0)\"",
+    ".navLook.5 A=\"0.955688 matrix(1, 0, 0, 1, 24, 0)\" B=\"0.929986 matrix(1, 0, 0, 1, 24, 0)\" C=\"0.939756 matrix(1, 0, 0, 1, 24, 0)\""
+   ]
+  },
+  {
+   "i": 6,
+   "h": "#about",
+   "AB": [
+    ".navLook.4 A=\"1 matrix(1, 0, 0, 1, -24, 0)\" B=\"0.999989 matrix(1, 0, 0, 1, -24, 0)\"",
+    ".navLook.5 A=\"0.983765 matrix(1, 0, 0, 1, 24, 0)\" B=\"0.972692 matrix(1, 0, 0, 1, 24, 0)\""
+   ],
+   "AC": [
+    ".navLook.4 A=\"1 matrix(1, 0, 0, 1, -24, 0)\" C=\"0.999965 matrix(1, 0, 0, 1, -24, 0)\"",
+    ".navLook.5 A=\"0.983765 matrix(1, 0, 0, 1, 24, 0)\" C=\"0.967796 matrix(1, 0, 0, 1, 24, 0)\""
+   ],
+   "CnotAB": [
+    ".navLook.4 A=\"1 matrix(1, 0, 0, 1, -24, 0)\" B=\"0.999989 matrix(1, 0, 0, 1, -24, 0)\" C=\"0.999965 matrix(1, 0, 0, 1, -24, 0)\"",
+    ".navLook.5 A=\"0.983765 matrix(1, 0, 0, 1, 24, 0)\" B=\"0.972692 matrix(1, 0, 0, 1, 24, 0)\" C=\"0.967796 matrix(1, 0, 0, 1, 24, 0)\""
+   ]
+  },
+  {
+   "i": 7,
+   "h": "#work",
+   "AB": [
+    ".navLook.4 A=\"0.99992 matrix(1, 0, 0, 1, -24, 0)\" B=\"0.999989 matrix(1, 0, 0, 1, -24, 0)\"",
+    ".navLook.5 A=\"0.962199 matrix(1, 0, 0, 1, 24, 0)\" B=\"0.972694 matrix(1, 0, 0, 1, 24, 0)\""
+   ],
+   "AC": [
+    ".navLook.4 A=\"0.99992 matrix(1, 0, 0, 1, -24, 0)\" C=\"1 matrix(1, 0, 0, 1, -24, 0)\"",
+    ".navLook.5 A=\"0.962199 matrix(1, 0, 0, 1, 24, 0)\" C=\"0.98377 matrix(1, 0, 0, 1, 24, 0)\""
+   ],
+   "CnotAB": [
+    ".navLook.4 A=\"0.99992 matrix(1, 0, 0, 1, -24, 0)\" B=\"0.999989 matrix(1, 0, 0, 1, -24, 0)\" C=\"1 matrix(1, 0, 0, 1, -24, 0)\"",
+    ".navLook.5 A=\"0.962199 matrix(1, 0, 0, 1, 24, 0)\" B=\"0.972694 matrix(1, 0, 0, 1, 24, 0)\" C=\"0.98377 matrix(1, 0, 0, 1, 24, 0)\""
+   ]
+  }
+ ],
+ "shots": [
+  {
+   "i": 0,
+   "h": "#work",
+   "AB": {
+    "mad": 0.01,
+    "pct": 0.025,
+    "big": 0.015,
+    "bbox": [
+     77,
+     27,
+     705,
+     912
+    ]
+   },
+   "AC": {
+    "mad": 0.01,
+    "pct": 0.025,
+    "big": 0.015,
+    "bbox": [
+     77,
+     27,
+     705,
+     912
+    ]
+   },
+   "BC": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   }
+  },
+  {
+   "i": 1,
+   "h": "#about",
+   "AB": {
+    "mad": 0.046,
+    "pct": 0.105,
+    "big": 0.061,
+    "bbox": [
+     97,
+     27,
+     705,
+     1006
+    ]
+   },
+   "AC": {
+    "mad": 0.051,
+    "pct": 0.105,
+    "big": 0.061,
+    "bbox": [
+     97,
+     27,
+     705,
+     1006
+    ]
+   },
+   "BC": {
+    "mad": 0.006,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   }
+  },
+  {
+   "i": 2,
+   "h": "#trust",
+   "AB": {
+    "mad": 0.126,
+    "pct": 0.277,
+    "big": 0.14,
+    "bbox": [
+     82,
+     27,
+     705,
+     1016
+    ]
+   },
+   "AC": {
+    "mad": 0.888,
+    "pct": 2.234,
+    "big": 0.876,
+    "bbox": [
+     44,
+     27,
+     732,
+     1023
+    ]
+   },
+   "BC": {
+    "mad": 0.861,
+    "pct": 2.205,
+    "big": 0.845,
+    "bbox": [
+     44,
+     261,
+     732,
+     1023
+    ]
+   }
+  },
+  {
+   "i": 3,
+   "h": "#pricing",
+   "AB": {
+    "mad": 0.093,
+    "pct": 0.181,
+    "big": 0.02,
+    "bbox": [
+     58,
+     13,
+     721,
+     943
+    ]
+   },
+   "AC": {
+    "mad": 0.015,
+    "pct": 0.027,
+    "big": 0.02,
+    "bbox": [
+     72,
+     13,
+     705,
+     735
+    ]
+   },
+   "BC": {
+    "mad": 0.08,
+    "pct": 0.153,
+    "big": 0,
+    "bbox": [
+     58,
+     269,
+     721,
+     943
+    ]
+   }
+  },
+  {
+   "i": 6,
+   "h": "#about",
+   "AB": {
+    "mad": 0.049,
+    "pct": 0.105,
+    "big": 0.061,
+    "bbox": [
+     97,
+     27,
+     705,
+     1023
+    ]
+   },
+   "AC": {
+    "mad": 0.049,
+    "pct": 0.105,
+    "big": 0.061,
+    "bbox": [
+     97,
+     27,
+     705,
+     1023
+    ]
+   },
+   "BC": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   }
+  },
+  {
+   "i": 7,
+   "h": "#work",
+   "AB": {
+    "mad": 0.01,
+    "pct": 0.025,
+    "big": 0.015,
+    "bbox": [
+     77,
+     27,
+     705,
+     912
+    ]
+   },
+   "AC": {
+    "mad": 0.01,
+    "pct": 0.025,
+    "big": 0.015,
+    "bbox": [
+     77,
+     27,
+     705,
+     912
+    ]
+   },
+   "BC": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   }
+  }
+ ]
+}

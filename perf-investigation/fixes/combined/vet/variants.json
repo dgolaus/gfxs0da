@@ -1,7 +1,31 @@
 {
-  "baseline": {},
-  "combined": { "files": { "/script.js": "fixes/combined/script.js", "/styles.css": "fixes/combined/styles.css" } },
-  "base": { "files": { "/script.js": "fixes/approved-base/script.js", "/styles.css": "fixes/approved-base/styles.css" } },
-  "prad": { "files": { "/styles.css": "fixes/vet-style-invalidation-pseudo-radius/v2/styles.pseudoradius.amended.css" } },
-  "stab1440": { "files": { "/styles.css": "fixes/vet-paint-composite-stable-layerize/cloud/styles.contain-1440.css" } }
+ "baseline": {},
+ "combined": {
+  "files": {
+   "/script.js": "fixes/combined/script.js",
+   "/styles.css": "fixes/combined/styles.css"
+  }
+ },
+ "base": {
+  "files": {
+   "/script.js": "fixes/approved-base/script.js",
+   "/styles.css": "fixes/approved-base/styles.css"
+  }
+ },
+ "prad": {
+  "files": {
+   "/styles.css": "fixes/vet-style-invalidation-pseudo-radius/v2/styles.pseudoradius.amended.css"
+  }
+ },
+ "stab1440": {
+  "files": {
+   "/styles.css": "fixes/vet-paint-composite-stable-layerize/cloud/styles.contain-1440.css"
+  }
+ },
+ "final": {
+  "files": {
+   "/script.js": "fixes/final/script.js",
+   "/styles.css": "fixes/final/styles.css"
+  }
+ }
 }

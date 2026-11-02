@@ -1,0 +1,289 @@
+{
+ "sc": "rot390",
+ "errs": {
+  "A": [],
+  "B": [],
+  "combined": []
+ },
+ "rows": [
+  {
+   "k": "land_0",
+   "noise": {
+    "mad": 0.146,
+    "pct": 0.589,
+    "big": 0.116,
+    "bbox": [
+     50,
+     233,
+     183,
+     266
+    ]
+   },
+   "stA": {
+    "sy": 0,
+    "docH": 6649,
+    "lenis": false,
+    "iw": 844,
+    "op#about": "1",
+    "op#process": "1",
+    "op#trust": "1",
+    "op#pricing": "1",
+    "op#contact": "1",
+    "navv": "0,1,0",
+    "pill": false,
+    "contain": "none",
+    "tracks": "8,60,48"
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.148,
+     "pct": 0.601,
+     "big": 0.116,
+     "bbox": [
+      50,
+      233,
+      364,
+      389
+     ]
+    },
+    "vsB": {
+     "mad": 0.002,
+     "pct": 0.012,
+     "big": 0,
+     "bbox": [
+      347,
+      371,
+      364,
+      389
+     ]
+    },
+    "sd": []
+   }
+  },
+  {
+   "k": "port_0",
+   "noise": {
+    "mad": 0.011,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "stA": {
+    "sy": 0,
+    "docH": 8118,
+    "lenis": false,
+    "iw": 394,
+    "op#about": "1",
+    "op#process": "1",
+    "op#trust": "1",
+    "op#pricing": "1",
+    "op#contact": "1",
+    "navv": "0,1,0",
+    "pill": false,
+    "contain": "none",
+    "tracks": "8,60,48"
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.13,
+     "pct": 0.187,
+     "big": 0.117,
+     "bbox": [
+      247,
+      368,
+      348,
+      421
+     ]
+    },
+    "vsB": {
+     "mad": 0.141,
+     "pct": 0.186,
+     "big": 0.117,
+     "bbox": [
+      247,
+      368,
+      348,
+      421
+     ]
+    },
+    "sd": []
+   }
+  },
+  {
+   "k": "land_3000",
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "stA": {
+    "sy": 3000,
+    "docH": 6744,
+    "lenis": false,
+    "iw": 844,
+    "op#about": "0",
+    "op#process": "1",
+    "op#trust": "1",
+    "op#pricing": "1",
+    "op#contact": "1",
+    "navv": "1,0,1",
+    "pill": true,
+    "contain": "none",
+    "tracks": "8,60,48"
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "sd": []
+   }
+  },
+  {
+   "k": "port_3000",
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "stA": {
+    "sy": 3000,
+    "docH": 8467,
+    "lenis": false,
+    "iw": 394,
+    "op#about": "0.445",
+    "op#process": "1",
+    "op#trust": "1",
+    "op#pricing": "1",
+    "op#contact": "1",
+    "navv": "1,0,1",
+    "pill": true,
+    "contain": "none",
+    "tracks": "8,60,48"
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.04,
+     "pct": 0.124,
+     "big": 0.05,
+     "bbox": [
+      219,
+      798,
+      293,
+      809
+     ]
+    },
+    "vsB": {
+     "mad": 0.04,
+     "pct": 0.124,
+     "big": 0.05,
+     "bbox": [
+      219,
+      798,
+      293,
+      809
+     ]
+    },
+    "sd": []
+   }
+  },
+  {
+   "k": "land_6500",
+   "noise": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "stA": {
+    "sy": 6500,
+    "docH": 6994,
+    "lenis": false,
+    "iw": 844,
+    "op#about": "0",
+    "op#process": "0",
+    "op#trust": "0",
+    "op#pricing": "0",
+    "op#contact": "1",
+    "navv": "1,0,1",
+    "pill": true,
+    "contain": "none",
+    "tracks": "8,60,48"
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "sd": []
+   }
+  },
+  {
+   "k": "port_6500",
+   "noise": {
+    "mad": 0.052,
+    "pct": 0.059,
+    "big": 0,
+    "bbox": [
+     48,
+     224,
+     151,
+     835
+    ]
+   },
+   "stA": {
+    "sy": 6500,
+    "docH": 8538,
+    "lenis": false,
+    "iw": 394,
+    "op#about": "0",
+    "op#process": "0",
+    "op#trust": "0",
+    "op#pricing": "1",
+    "op#contact": "1",
+    "navv": "1,0,1",
+    "pill": true,
+    "contain": "none",
+    "tracks": "8,60,48"
+   },
+   "combined": {
+    "vsA": {
+     "mad": 0.052,
+     "pct": 0.059,
+     "big": 0,
+     "bbox": [
+      48,
+      224,
+      151,
+      835
+     ]
+    },
+    "vsB": {
+     "mad": 0,
+     "pct": 0,
+     "big": 0,
+     "bbox": null
+    },
+    "sd": []
+   }
+  }
+ ]
+}

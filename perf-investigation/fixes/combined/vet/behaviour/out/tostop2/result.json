@@ -1,0 +1,568 @@
+{
+ "shots": [
+  {
+   "v": "baseline",
+   "i": 0,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/tostop2/baseline_0.png",
+   "h": "37c73b84",
+   "info": {
+    "contain": "none",
+    "r": [
+     716,
+     636,
+     720,
+     667
+    ],
+    "lenis": true,
+    "reveal": "tos-section scroll-fade",
+    "tf": "matrix(1, 0, 0, 1, 0, 0)",
+    "op": "1"
+   },
+   "errs": []
+  },
+  {
+   "v": "combined",
+   "i": 0,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/tostop2/combined_0.png",
+   "h": "37c73b84",
+   "info": {
+    "contain": "paint",
+    "r": [
+     716,
+     636,
+     720,
+     667
+    ],
+    "lenis": true,
+    "reveal": "tos-section scroll-fade",
+    "tf": "matrix(1, 0, 0, 1, 0, 0)",
+    "op": "1"
+   },
+   "errs": []
+  },
+  {
+   "v": "baseline",
+   "i": 1,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/tostop2/baseline_1.png",
+   "h": "19b5b1f6",
+   "info": {
+    "contain": "none",
+    "r": [
+     716,
+     636,
+     720,
+     667
+    ],
+    "lenis": true,
+    "reveal": "tos-section scroll-fade",
+    "tf": "matrix(1, 0, 0, 1, 0, 0)",
+    "op": "1"
+   },
+   "errs": []
+  },
+  {
+   "v": "combined",
+   "i": 1,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/tostop2/combined_1.png",
+   "h": "bd00586c",
+   "info": {
+    "contain": "paint",
+    "r": [
+     716,
+     636,
+     720,
+     667
+    ],
+    "lenis": true,
+    "reveal": "tos-section scroll-fade",
+    "tf": "matrix(1, 0, 0, 1, 0, 0)",
+    "op": "1"
+   },
+   "errs": []
+  },
+  {
+   "v": "baseline",
+   "i": 2,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/tostop2/baseline_2.png",
+   "h": "9197f004",
+   "info": {
+    "contain": "none",
+    "r": [
+     716,
+     636,
+     720,
+     667
+    ],
+    "lenis": true,
+    "reveal": "tos-section scroll-fade",
+    "tf": "matrix(1, 0, 0, 1, 0, 0)",
+    "op": "1"
+   },
+   "errs": []
+  },
+  {
+   "v": "combined",
+   "i": 2,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/tostop2/combined_2.png",
+   "h": "6901cf1a",
+   "info": {
+    "contain": "paint",
+    "r": [
+     716,
+     636,
+     720,
+     667
+    ],
+    "lenis": true,
+    "reveal": "tos-section scroll-fade",
+    "tf": "matrix(1, 0, 0, 1, 0, 0)",
+    "op": "1"
+   },
+   "errs": []
+  },
+  {
+   "v": "baseline",
+   "i": 3,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/tostop2/baseline_3.png",
+   "h": "d03aee25",
+   "info": {
+    "contain": "none",
+    "r": [
+     716,
+     636,
+     720,
+     667
+    ],
+    "lenis": true,
+    "reveal": "tos-section scroll-fade",
+    "tf": "matrix(1, 0, 0, 1, 0, 0)",
+    "op": "1"
+   },
+   "errs": []
+  },
+  {
+   "v": "combined",
+   "i": 3,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/tostop2/combined_3.png",
+   "h": "37c73b84",
+   "info": {
+    "contain": "paint",
+    "r": [
+     716,
+     636,
+     720,
+     667
+    ],
+    "lenis": true,
+    "reveal": "tos-section scroll-fade",
+    "tf": "matrix(1, 0, 0, 1, 0, 0)",
+    "op": "1"
+   },
+   "errs": []
+  },
+  {
+   "v": "baseline",
+   "i": 4,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/tostop2/baseline_4.png",
+   "h": "bd00586c",
+   "info": {
+    "contain": "none",
+    "r": [
+     716,
+     636,
+     720,
+     667
+    ],
+    "lenis": true,
+    "reveal": "tos-section scroll-fade",
+    "tf": "matrix(1, 0, 0, 1, 0, 0)",
+    "op": "1"
+   },
+   "errs": []
+  },
+  {
+   "v": "combined",
+   "i": 4,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/tostop2/combined_4.png",
+   "h": "37c73b84",
+   "info": {
+    "contain": "paint",
+    "r": [
+     716,
+     636,
+     720,
+     667
+    ],
+    "lenis": true,
+    "reveal": "tos-section scroll-fade",
+    "tf": "matrix(1, 0, 0, 1, 0, 0)",
+    "op": "1"
+   },
+   "errs": []
+  },
+  {
+   "v": "baseline",
+   "i": 5,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/tostop2/baseline_5.png",
+   "h": "bd00586c",
+   "info": {
+    "contain": "none",
+    "r": [
+     716,
+     636,
+     720,
+     667
+    ],
+    "lenis": true,
+    "reveal": "tos-section scroll-fade",
+    "tf": "matrix(1, 0, 0, 1, 0, 0)",
+    "op": "1"
+   },
+   "errs": []
+  },
+  {
+   "v": "combined",
+   "i": 5,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/tostop2/combined_5.png",
+   "h": "bd00586c",
+   "info": {
+    "contain": "paint",
+    "r": [
+     716,
+     636,
+     720,
+     667
+    ],
+    "lenis": true,
+    "reveal": "tos-section scroll-fade",
+    "tf": "matrix(1, 0, 0, 1, 0, 0)",
+    "op": "1"
+   },
+   "errs": []
+  },
+  {
+   "v": "baseline",
+   "i": 6,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/tostop2/baseline_6.png",
+   "h": "9bab3651",
+   "info": {
+    "contain": "none",
+    "r": [
+     716,
+     636,
+     720,
+     667
+    ],
+    "lenis": true,
+    "reveal": "tos-section scroll-fade",
+    "tf": "matrix(1, 0, 0, 1, 0, 0)",
+    "op": "1"
+   },
+   "errs": []
+  },
+  {
+   "v": "combined",
+   "i": 6,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/tostop2/combined_6.png",
+   "h": "bd00586c",
+   "info": {
+    "contain": "paint",
+    "r": [
+     716,
+     636,
+     720,
+     667
+    ],
+    "lenis": true,
+    "reveal": "tos-section scroll-fade",
+    "tf": "matrix(1, 0, 0, 1, 0, 0)",
+    "op": "1"
+   },
+   "errs": []
+  },
+  {
+   "v": "baseline",
+   "i": 7,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/tostop2/baseline_7.png",
+   "h": "d03aee25",
+   "info": {
+    "contain": "none",
+    "r": [
+     716,
+     636,
+     720,
+     667
+    ],
+    "lenis": true,
+    "reveal": "tos-section scroll-fade",
+    "tf": "matrix(1, 0, 0, 1, 0, 0)",
+    "op": "1"
+   },
+   "errs": []
+  },
+  {
+   "v": "combined",
+   "i": 7,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/tostop2/combined_7.png",
+   "h": "9bab3651",
+   "info": {
+    "contain": "paint",
+    "r": [
+     716,
+     636,
+     720,
+     667
+    ],
+    "lenis": true,
+    "reveal": "tos-section scroll-fade",
+    "tf": "matrix(1, 0, 0, 1, 0, 0)",
+    "op": "1"
+   },
+   "errs": []
+  }
+ ],
+ "clusters": {
+  "37c73b84": [
+   "baseline0",
+   "combined0",
+   "combined3",
+   "combined4"
+  ],
+  "19b5b1f6": [
+   "baseline1"
+  ],
+  "bd00586c": [
+   "combined1",
+   "baseline4",
+   "baseline5",
+   "combined5",
+   "combined6"
+  ],
+  "9197f004": [
+   "baseline2"
+  ],
+  "6901cf1a": [
+   "combined2"
+  ],
+  "d03aee25": [
+   "baseline3",
+   "baseline7"
+  ],
+  "9bab3651": [
+   "baseline6",
+   "combined7"
+  ]
+ },
+ "diffs": [
+  {
+   "a": "baseline0",
+   "b": "combined0",
+   "d": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   }
+  },
+  {
+   "a": "baseline0",
+   "b": "baseline1",
+   "d": {
+    "mad": 0.086,
+    "pct": 0.407,
+    "big": 0,
+    "bbox": [
+     718,
+     670,
+     1421,
+     1074
+    ]
+   }
+  },
+  {
+   "a": "baseline0",
+   "b": "combined1",
+   "d": {
+    "mad": 0.346,
+    "pct": 1.212,
+    "big": 0.42,
+    "bbox": [
+     717,
+     640,
+     1422,
+     1075
+    ]
+   }
+  },
+  {
+   "a": "baseline0",
+   "b": "baseline2",
+   "d": {
+    "mad": 0.259,
+    "pct": 1.091,
+    "big": 0.204,
+    "bbox": [
+     717,
+     640,
+     1422,
+     1075
+    ]
+   }
+  },
+  {
+   "a": "baseline0",
+   "b": "combined2",
+   "d": {
+    "mad": 1.02,
+    "pct": 1.749,
+    "big": 1.262,
+    "bbox": [
+     717,
+     639,
+     1422,
+     1075
+    ]
+   }
+  },
+  {
+   "a": "baseline0",
+   "b": "baseline3",
+   "d": {
+    "mad": 0.346,
+    "pct": 1.212,
+    "big": 0.42,
+    "bbox": [
+     717,
+     640,
+     1422,
+     1075
+    ]
+   }
+  },
+  {
+   "a": "baseline0",
+   "b": "combined3",
+   "d": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   }
+  },
+  {
+   "a": "baseline0",
+   "b": "baseline4",
+   "d": {
+    "mad": 0.346,
+    "pct": 1.212,
+    "big": 0.42,
+    "bbox": [
+     717,
+     640,
+     1422,
+     1075
+    ]
+   }
+  },
+  {
+   "a": "baseline0",
+   "b": "combined4",
+   "d": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   }
+  },
+  {
+   "a": "baseline0",
+   "b": "baseline5",
+   "d": {
+    "mad": 0.346,
+    "pct": 1.212,
+    "big": 0.42,
+    "bbox": [
+     717,
+     640,
+     1422,
+     1075
+    ]
+   }
+  },
+  {
+   "a": "baseline0",
+   "b": "combined5",
+   "d": {
+    "mad": 0.346,
+    "pct": 1.212,
+    "big": 0.42,
+    "bbox": [
+     717,
+     640,
+     1422,
+     1075
+    ]
+   }
+  },
+  {
+   "a": "baseline0",
+   "b": "baseline6",
+   "d": {
+    "mad": 0.346,
+    "pct": 1.212,
+    "big": 0.42,
+    "bbox": [
+     717,
+     640,
+     1422,
+     1075
+    ]
+   }
+  },
+  {
+   "a": "baseline0",
+   "b": "combined6",
+   "d": {
+    "mad": 0.346,
+    "pct": 1.212,
+    "big": 0.42,
+    "bbox": [
+     717,
+     640,
+     1422,
+     1075
+    ]
+   }
+  },
+  {
+   "a": "baseline0",
+   "b": "baseline7",
+   "d": {
+    "mad": 0.346,
+    "pct": 1.212,
+    "big": 0.42,
+    "bbox": [
+     717,
+     640,
+     1422,
+     1075
+    ]
+   }
+  },
+  {
+   "a": "baseline0",
+   "b": "combined7",
+   "d": {
+    "mad": 0.346,
+    "pct": 1.212,
+    "big": 0.42,
+    "bbox": [
+     717,
+     640,
+     1422,
+     1075
+    ]
+   }
+  }
+ ]
+}

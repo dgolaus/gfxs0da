@@ -1,0 +1,245 @@
+{
+ "census": {
+  "baseline": {
+   "f4e5d7bf": 1,
+   "d859eef3": 1,
+   "0172403d": 1
+  },
+  "combined": {
+   "0172403d": 1,
+   "43ef5579": 1,
+   "2b5a67d3": 1
+  }
+ },
+ "within": {
+  "baseline": [
+   2.202,
+   3.25,
+   3.606
+  ],
+  "combined": [
+   3.634,
+   2.148,
+   2.901
+  ]
+ },
+ "cross": {
+  "baseline|combined": [
+   3.25,
+   2.072,
+   2.858,
+   3.606,
+   0,
+   2.965,
+   3.133,
+   3.634,
+   2.148
+  ]
+ },
+ "shots": [
+  {
+   "v": "baseline",
+   "k": 0,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/anchorrep_trust_1600x900_dpr1/baseline_0.png",
+   "hr": "f4e5d7bf",
+   "hf": "5371c7e7",
+   "sy": 3348,
+   "reg": {
+    "left": 216,
+    "top": 520,
+    "width": 1168,
+    "height": 380
+   },
+   "leave": [
+    "1.000/1.000",
+    "0.738/0.738",
+    "0.000/0.000",
+    "0.000/0.000",
+    "0.000/0.000"
+   ],
+   "xf": [
+    "matrix(1, 0, 0, 1, 0, -24) 0",
+    "matrix(1, 0, 0, 1, 0, -17.712) 0.262",
+    "matrix(1, 0, 0, 1, 0, 0) 1",
+    "matrix(1, 0, 0, 1, 0, 0) 1",
+    "matrix(1, 0, 0, 1, 0, 0) 1"
+   ],
+   "cards": [
+    "236,1541.246",
+    "522,1545.323",
+    "808,1544.239",
+    "1094,1543.099"
+   ]
+  },
+  {
+   "v": "combined",
+   "k": 0,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/anchorrep_trust_1600x900_dpr1/combined_0.png",
+   "hr": "0172403d",
+   "hf": "d891121d",
+   "sy": 3348,
+   "reg": {
+    "left": 216,
+    "top": 520,
+    "width": 1168,
+    "height": 380
+   },
+   "leave": [
+    "1.000/1",
+    "0.744/0.744",
+    "/0",
+    "/0",
+    "/0"
+   ],
+   "xf": [
+    "matrix(1, 0, 0, 1, 0, -24) 0",
+    "matrix(1, 0, 0, 1, 0, -17.856) 0.256",
+    "matrix(1, 0, 0, 1, 0, 0) 1",
+    "matrix(1, 0, 0, 1, 0, 0) 1",
+    "matrix(1, 0, 0, 1, 0, 0) 1"
+   ],
+   "cards": [
+    "236,1541.246",
+    "522,1545.323",
+    "808,1544.239",
+    "1094,1543.099"
+   ]
+  },
+  {
+   "v": "baseline",
+   "k": 1,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/anchorrep_trust_1600x900_dpr1/baseline_1.png",
+   "hr": "d859eef3",
+   "hf": "e818a36e",
+   "sy": 3348,
+   "reg": {
+    "left": 216,
+    "top": 520,
+    "width": 1168,
+    "height": 380
+   },
+   "leave": [
+    "1.000/1.000",
+    "0.715/0.715",
+    "0.000/0.000",
+    "0.000/0.000",
+    "0.000/0.000"
+   ],
+   "xf": [
+    "matrix(1, 0, 0, 1, 0, -24) 0",
+    "matrix(1, 0, 0, 1, 0, -17.16) 0.285",
+    "matrix(1, 0, 0, 1, 0, 0) 1",
+    "matrix(1, 0, 0, 1, 0, 0) 1",
+    "matrix(1, 0, 0, 1, 0, 0) 1"
+   ],
+   "cards": [
+    "236,1541.246",
+    "522,1545.323",
+    "808,1544.239",
+    "1094,1543.099"
+   ]
+  },
+  {
+   "v": "combined",
+   "k": 1,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/anchorrep_trust_1600x900_dpr1/combined_1.png",
+   "hr": "43ef5579",
+   "hf": "7b7a04c2",
+   "sy": 3348,
+   "reg": {
+    "left": 216,
+    "top": 520,
+    "width": 1168,
+    "height": 380
+   },
+   "leave": [
+    "1.000/1",
+    "0.738/0.738",
+    "/0",
+    "/0",
+    "/0"
+   ],
+   "xf": [
+    "matrix(1, 0, 0, 1, 0, -24) 0",
+    "matrix(1, 0, 0, 1, 0, -17.712) 0.262",
+    "matrix(1, 0, 0, 1, 0, 0) 1",
+    "matrix(1, 0, 0, 1, 0, 0) 1",
+    "matrix(1, 0, 0, 1, 0, 0) 1"
+   ],
+   "cards": [
+    "236,1541.246",
+    "522,1545.323",
+    "808,1544.239",
+    "1094,1543.099"
+   ]
+  },
+  {
+   "v": "baseline",
+   "k": 2,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/anchorrep_trust_1600x900_dpr1/baseline_2.png",
+   "hr": "0172403d",
+   "hf": "d891121d",
+   "sy": 3348,
+   "reg": {
+    "left": 216,
+    "top": 520,
+    "width": 1168,
+    "height": 380
+   },
+   "leave": [
+    "1.000/1.000",
+    "0.738/0.738",
+    "0.000/0.000",
+    "0.000/0.000",
+    "0.000/0.000"
+   ],
+   "xf": [
+    "matrix(1, 0, 0, 1, 0, -24) 0",
+    "matrix(1, 0, 0, 1, 0, -17.712) 0.262",
+    "matrix(1, 0, 0, 1, 0, 0) 1",
+    "matrix(1, 0, 0, 1, 0, 0) 1",
+    "matrix(1, 0, 0, 1, 0, 0) 1"
+   ],
+   "cards": [
+    "236,1541.246",
+    "522,1545.323",
+    "808,1544.239",
+    "1094,1543.099"
+   ]
+  },
+  {
+   "v": "combined",
+   "k": 2,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/anchorrep_trust_1600x900_dpr1/combined_2.png",
+   "hr": "2b5a67d3",
+   "hf": "fbc568e8",
+   "sy": 3348,
+   "reg": {
+    "left": 216,
+    "top": 520,
+    "width": 1168,
+    "height": 380
+   },
+   "leave": [
+    "1.000/1",
+    "0.721/0.721",
+    "/0",
+    "/0",
+    "/0"
+   ],
+   "xf": [
+    "matrix(1, 0, 0, 1, 0, -24) 0",
+    "matrix(1, 0, 0, 1, 0, -17.304) 0.279",
+    "matrix(1, 0, 0, 1, 0, 0) 1",
+    "matrix(1, 0, 0, 1, 0, 0) 1",
+    "matrix(1, 0, 0, 1, 0, 0) 1"
+   ],
+   "cards": [
+    "236,1541.246",
+    "522,1545.323",
+    "808,1544.239",
+    "1094,1543.099"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,129 @@
+{
+ "rows": [
+  {
+   "v": "baseline",
+   "r": 0,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/skeptic/out/rasterY_4300_hist_baseline_0.png",
+   "md5": "6d6f1fc4",
+   "sy": 4300,
+   "errs": []
+  },
+  {
+   "v": "combined",
+   "r": 0,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/skeptic/out/rasterY_4300_hist_combined_0.png",
+   "md5": "379689af",
+   "sy": 4300,
+   "errs": []
+  },
+  {
+   "v": "baseline",
+   "r": 1,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/skeptic/out/rasterY_4300_hist_baseline_1.png",
+   "md5": "cf1ecab0",
+   "sy": 4300,
+   "errs": []
+  },
+  {
+   "v": "combined",
+   "r": 1,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/skeptic/out/rasterY_4300_hist_combined_1.png",
+   "md5": "e9db4cac",
+   "sy": 4300,
+   "errs": []
+  },
+  {
+   "v": "baseline",
+   "r": 2,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/skeptic/out/rasterY_4300_hist_baseline_2.png",
+   "md5": "73cb80b2",
+   "sy": 4300,
+   "errs": []
+  },
+  {
+   "v": "combined",
+   "r": 2,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/skeptic/out/rasterY_4300_hist_combined_2.png",
+   "md5": "42c2fcfc",
+   "sy": 4300,
+   "errs": []
+  }
+ ],
+ "pair": [
+  [
+   "b0",
+   "c0",
+   1.721
+  ],
+  [
+   "b0",
+   "b1",
+   1.224
+  ],
+  [
+   "b0",
+   "c1",
+   1.254
+  ],
+  [
+   "b0",
+   "b2",
+   1.271
+  ],
+  [
+   "b0",
+   "c2",
+   1.364
+  ],
+  [
+   "c0",
+   "b1",
+   1.196
+  ],
+  [
+   "c0",
+   "c1",
+   1.194
+  ],
+  [
+   "c0",
+   "b2",
+   1.245
+  ],
+  [
+   "c0",
+   "c2",
+   1.222
+  ],
+  [
+   "b1",
+   "c1",
+   0.545
+  ],
+  [
+   "b1",
+   "b2",
+   0.048
+  ],
+  [
+   "b1",
+   "c2",
+   0.725
+  ],
+  [
+   "c1",
+   "b2",
+   0.593
+  ],
+  [
+   "c1",
+   "c2",
+   0.113
+  ],
+  [
+   "b2",
+   "c2",
+   0.773
+  ]
+ ]
+}

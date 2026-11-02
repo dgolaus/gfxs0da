@@ -1,0 +1,170 @@
+{
+ "census": {
+  "baseline": {
+   "8f0d822f": 1,
+   "a86257e5": 1,
+   "98d256da": 1,
+   "1fce4de1": 1
+  },
+  "combined": {
+   "bc0812db": 1,
+   "61526be5": 1,
+   "52a1869c": 1,
+   "b338929b": 1
+  }
+ },
+ "fpc": {
+  "baseline": {
+   "1.000": 4
+  },
+  "combined": {
+   "1.000": 4
+  }
+ },
+ "shots": [
+  {
+   "v": "baseline",
+   "k": 0,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/footrep_wheel_1440x900/baseline_0.png",
+   "hr": "8f0d822f",
+   "reg": {
+    "left": 254,
+    "top": 586,
+    "width": 932,
+    "height": 165
+   },
+   "fp": "1.000",
+   "cfp": "1.000",
+   "center": "matrix(1, 0, 0, 1, 0, 0)",
+   "sy": 5364,
+   "max": 5364,
+   "sec": "585.953,694.125 756.016,694.125"
+  },
+  {
+   "v": "combined",
+   "k": 0,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/footrep_wheel_1440x900/combined_0.png",
+   "hr": "bc0812db",
+   "reg": {
+    "left": 254,
+    "top": 586,
+    "width": 932,
+    "height": 165
+   },
+   "fp": "1.000",
+   "cfp": "1.000",
+   "center": "matrix(1, 0, 0, 1, 0, 0)",
+   "sy": 5364,
+   "max": 5364,
+   "sec": "585.953,694.125 756.016,694.125"
+  },
+  {
+   "v": "baseline",
+   "k": 1,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/footrep_wheel_1440x900/baseline_1.png",
+   "hr": "a86257e5",
+   "reg": {
+    "left": 254,
+    "top": 586,
+    "width": 932,
+    "height": 165
+   },
+   "fp": "1.000",
+   "cfp": "1.000",
+   "center": "matrix(1, 0, 0, 1, 0, 0)",
+   "sy": 5364,
+   "max": 5364,
+   "sec": "585.953,694.125 756.016,694.125"
+  },
+  {
+   "v": "combined",
+   "k": 1,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/footrep_wheel_1440x900/combined_1.png",
+   "hr": "61526be5",
+   "reg": {
+    "left": 254,
+    "top": 586,
+    "width": 932,
+    "height": 165
+   },
+   "fp": "1.000",
+   "cfp": "1.000",
+   "center": "matrix(1, 0, 0, 1, 0, 0)",
+   "sy": 5364,
+   "max": 5364,
+   "sec": "585.953,694.125 756.016,694.125"
+  },
+  {
+   "v": "baseline",
+   "k": 2,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/footrep_wheel_1440x900/baseline_2.png",
+   "hr": "98d256da",
+   "reg": {
+    "left": 254,
+    "top": 586,
+    "width": 932,
+    "height": 165
+   },
+   "fp": "1.000",
+   "cfp": "1.000",
+   "center": "matrix(1, 0, 0, 1, 0, 0)",
+   "sy": 5364,
+   "max": 5364,
+   "sec": "585.953,694.125 756.016,694.125"
+  },
+  {
+   "v": "combined",
+   "k": 2,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/footrep_wheel_1440x900/combined_2.png",
+   "hr": "52a1869c",
+   "reg": {
+    "left": 254,
+    "top": 586,
+    "width": 932,
+    "height": 165
+   },
+   "fp": "1.000",
+   "cfp": "1.000",
+   "center": "matrix(1, 0, 0, 1, 0, 0)",
+   "sy": 5364,
+   "max": 5364,
+   "sec": "585.953,694.125 756.016,694.125"
+  },
+  {
+   "v": "baseline",
+   "k": 3,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/footrep_wheel_1440x900/baseline_3.png",
+   "hr": "1fce4de1",
+   "reg": {
+    "left": 254,
+    "top": 586,
+    "width": 932,
+    "height": 165
+   },
+   "fp": "1.000",
+   "cfp": "1.000",
+   "center": "matrix(1, 0, 0, 1, 0, 0)",
+   "sy": 5364,
+   "max": 5364,
+   "sec": "585.953,694.125 756.016,694.125"
+  },
+  {
+   "v": "combined",
+   "k": 3,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/footrep_wheel_1440x900/combined_3.png",
+   "hr": "b338929b",
+   "reg": {
+    "left": 254,
+    "top": 586,
+    "width": 932,
+    "height": 165
+   },
+   "fp": "1.000",
+   "cfp": "1.000",
+   "center": "matrix(1, 0, 0, 1, 0, 0)",
+   "sy": 5364,
+   "max": 5364,
+   "sec": "585.953,694.125 756.016,694.125"
+  }
+ ]
+}

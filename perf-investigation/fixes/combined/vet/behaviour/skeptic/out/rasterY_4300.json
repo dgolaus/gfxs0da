@@ -1,0 +1,210 @@
+{
+ "rows": [
+  {
+   "v": "baseline",
+   "r": 0,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/skeptic/out/rasterY_4300_baseline_0.png",
+   "md5": "99a1eed8",
+   "sy": 4300,
+   "errs": []
+  },
+  {
+   "v": "combined",
+   "r": 0,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/skeptic/out/rasterY_4300_combined_0.png",
+   "md5": "ee3a6057",
+   "sy": 4300,
+   "errs": []
+  },
+  {
+   "v": "baseline",
+   "r": 1,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/skeptic/out/rasterY_4300_baseline_1.png",
+   "md5": "7b7a2a0f",
+   "sy": 4300,
+   "errs": []
+  },
+  {
+   "v": "combined",
+   "r": 1,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/skeptic/out/rasterY_4300_combined_1.png",
+   "md5": "18e6bf86",
+   "sy": 4300,
+   "errs": []
+  },
+  {
+   "v": "baseline",
+   "r": 2,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/skeptic/out/rasterY_4300_baseline_2.png",
+   "md5": "1578bce6",
+   "sy": 4300,
+   "errs": []
+  },
+  {
+   "v": "combined",
+   "r": 2,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/skeptic/out/rasterY_4300_combined_2.png",
+   "md5": "a507ba40",
+   "sy": 4300,
+   "errs": []
+  },
+  {
+   "v": "baseline",
+   "r": 3,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/skeptic/out/rasterY_4300_baseline_3.png",
+   "md5": "0c6b0e6f",
+   "sy": 4300,
+   "errs": []
+  },
+  {
+   "v": "combined",
+   "r": 3,
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/skeptic/out/rasterY_4300_combined_3.png",
+   "md5": "a019ca81",
+   "sy": 4300,
+   "errs": []
+  }
+ ],
+ "pair": [
+  [
+   "b0",
+   "c0",
+   1.443
+  ],
+  [
+   "b0",
+   "b1",
+   1.676
+  ],
+  [
+   "b0",
+   "c1",
+   1.409
+  ],
+  [
+   "b0",
+   "b2",
+   1.266
+  ],
+  [
+   "b0",
+   "c2",
+   1.382
+  ],
+  [
+   "b0",
+   "b3",
+   1.701
+  ],
+  [
+   "b0",
+   "c3",
+   1.422
+  ],
+  [
+   "c0",
+   "b1",
+   1.179
+  ],
+  [
+   "c0",
+   "c1",
+   1.477
+  ],
+  [
+   "c0",
+   "b2",
+   1.171
+  ],
+  [
+   "c0",
+   "c2",
+   1.541
+  ],
+  [
+   "c0",
+   "b3",
+   0.898
+  ],
+  [
+   "c0",
+   "c3",
+   1.434
+  ],
+  [
+   "b1",
+   "c1",
+   0.741
+  ],
+  [
+   "b1",
+   "b2",
+   1.137
+  ],
+  [
+   "b1",
+   "c2",
+   0.951
+  ],
+  [
+   "b1",
+   "b3",
+   0.46
+  ],
+  [
+   "b1",
+   "c3",
+   0.958
+  ],
+  [
+   "c1",
+   "b2",
+   1.307
+  ],
+  [
+   "c1",
+   "c2",
+   0.128
+  ],
+  [
+   "c1",
+   "b3",
+   1.157
+  ],
+  [
+   "c1",
+   "c3",
+   1.366
+  ],
+  [
+   "b2",
+   "c2",
+   1.258
+  ],
+  [
+   "b2",
+   "b3",
+   1.033
+  ],
+  [
+   "b2",
+   "c3",
+   0.823
+  ],
+  [
+   "c2",
+   "b3",
+   1.232
+  ],
+  [
+   "c2",
+   "c3",
+   1.385
+  ],
+  [
+   "b3",
+   "c3",
+   0.736
+  ]
+ ]
+}

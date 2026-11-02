@@ -1,0 +1,308 @@
+[
+ {
+  "v": "baseline",
+  "env": {
+   "lenis": true,
+   "hoverNone": false,
+   "reduced": false,
+   "iw": 1440,
+   "ih": 900
+  },
+  "out": [
+   {
+    "x": 100,
+    "y": 100,
+    "mid": [
+     "1.54px 0.8px",
+     "1.85px 0.96px",
+     "2.15px 1.11px",
+     "2.42px 1.25px",
+     "3.12px 1.62px",
+     "3.33px 1.72px"
+    ],
+    "fin": "5.98px 3.09px",
+    "target": [
+     6.028,
+     3.111
+    ]
+   },
+   {
+    "x": 1340,
+    "y": 800,
+    "mid": [
+     "2.15px 1.11px",
+     "1.57px 0.81px",
+     "1.04px 0.54px",
+     "0.09px 0.04px",
+     "-0.34px -0.18px",
+     "-1.11px -0.57px"
+    ],
+    "fin": "-5.98px -3.09px",
+    "target": [
+     -6.028,
+     -3.111
+    ]
+   },
+   {
+    "x": 720,
+    "y": 450,
+    "mid": [
+     "-4.29px -2.21px",
+     "-3.71px -1.91px",
+     "-3.45px -1.78px",
+     "-2.98px -1.54px",
+     "-2.77px -1.43px",
+     "-2.58px -1.33px"
+    ],
+    "fin": "-0.05px -0.02px",
+    "target": [
+     0,
+     0
+    ]
+   },
+   {
+    "x": 200,
+    "y": 700,
+    "mid": [
+     "1.83px -0.83px",
+     "2.06px -0.93px",
+     "2.27px -1.02px",
+     "2.65px -1.18px",
+     "2.81px -1.25px",
+     "2.97px -1.32px"
+    ],
+    "fin": "5.01px -2.2px",
+    "target": [
+     5.056,
+     -2.222
+    ]
+   },
+   {
+    "x": 1200,
+    "y": 150,
+    "mid": [
+     "1.46px -0.42px",
+     "1.03px -0.2px",
+     "0.63px",
+     "-0.08px 0.36px",
+     "-0.4px 0.52px",
+     "-0.98px 0.81px"
+    ],
+    "fin": "-4.62px 2.64px",
+    "target": [
+     -4.667,
+     2.667
+    ]
+   }
+  ],
+  "afterLeave": "-0.05px 0.02px",
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+ },
+ {
+  "v": "baseline",
+  "env": {
+   "lenis": true,
+   "hoverNone": false,
+   "reduced": false,
+   "iw": 1440,
+   "ih": 900
+  },
+  "out": [
+   {
+    "x": 100,
+    "y": 100,
+    "mid": [
+     "1.54px 0.8px",
+     "1.85px 0.96px",
+     "2.42px 1.25px",
+     "2.67px 1.38px",
+     "2.91px 1.51px",
+     "3.12px 1.62px"
+    ],
+    "fin": "5.98px 3.09px",
+    "target": [
+     6.028,
+     3.111
+    ]
+   },
+   {
+    "x": 1340,
+    "y": 800,
+    "mid": [
+     "1.57px 0.81px",
+     "1.04px 0.54px",
+     "0.55px 0.28px",
+     "0.09px 0.04px",
+     "-0.34px -0.18px",
+     "-1.11px -0.57px"
+    ],
+    "fin": "-5.98px -3.09px",
+    "target": [
+     -6.028,
+     -3.111
+    ]
+   },
+   {
+    "x": 720,
+    "y": 450,
+    "mid": [
+     "-4.08px -2.1px",
+     "-3.79px -1.96px",
+     "-3.28px -1.69px",
+     "-2.84px -1.46px",
+     "-2.64px -1.36px",
+     "-2.45px -1.27px"
+    ],
+    "fin": "-0.05px -0.03px",
+    "target": [
+     0,
+     0
+    ]
+   },
+   {
+    "x": 200,
+    "y": 700,
+    "mid": [
+     "1.59px -0.72px",
+     "1.83px -0.83px",
+     "2.06px -0.93px",
+     "2.46px -1.1px",
+     "2.65px -1.18px",
+     "2.97px -1.32px"
+    ],
+    "fin": "5.01px -2.2px",
+    "target": [
+     5.056,
+     -2.222
+    ]
+   },
+   {
+    "x": 1200,
+    "y": 150,
+    "mid": [
+     "1.46px -0.42px",
+     "1.46px -0.42px",
+     "0.63px",
+     "0.63px",
+     "-0.08px 0.36px",
+     "-0.4px 0.52px"
+    ],
+    "fin": "-4.62px 2.64px",
+    "target": [
+     -4.667,
+     2.667
+    ]
+   }
+  ],
+  "afterLeave": "-0.05px 0.02px",
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+ },
+ {
+  "v": "combined",
+  "env": {
+   "lenis": true,
+   "hoverNone": false,
+   "reduced": false,
+   "iw": 1440,
+   "ih": 900
+  },
+  "out": [
+   {
+    "x": 100,
+    "y": 100,
+    "mid": [
+     "1.85px 0.96px",
+     "2.15px 1.11px",
+     "2.15px 1.11px",
+     "2.67px 1.38px",
+     "2.91px 1.51px",
+     "3.33px 1.72px"
+    ],
+    "fin": "5.98px 3.09px",
+    "target": [
+     6.028,
+     3.111
+    ]
+   },
+   {
+    "x": 1340,
+    "y": 800,
+    "mid": [
+     "1.57px 0.81px",
+     "0.55px 0.28px",
+     "0.09px 0.04px",
+     "-0.34px -0.18px",
+     "-0.74px -0.38px",
+     "-1.45px -0.75px"
+    ],
+    "fin": "-5.98px -3.09px",
+    "target": [
+     -6.028,
+     -3.111
+    ]
+   },
+   {
+    "x": 720,
+    "y": 450,
+    "mid": [
+     "-4.08px -2.1px",
+     "-4.08px -2.1px",
+     "-3.52px -1.82px",
+     "-3.28px -1.69px",
+     "-2.84px -1.46px",
+     "-2.45px -1.27px"
+    ],
+    "fin": "-0.05px -0.03px",
+    "target": [
+     0,
+     0
+    ]
+   },
+   {
+    "x": 200,
+    "y": 700,
+    "mid": [
+     "1.83px -0.83px",
+     "2.27px -1.02px",
+     "2.46px -1.1px",
+     "2.81px -1.25px",
+     "2.97px -1.32px",
+     "3.12px -1.38px"
+    ],
+    "fin": "5.01px -2.2px",
+    "target": [
+     5.056,
+     -2.222
+    ]
+   },
+   {
+    "x": 1200,
+    "y": 150,
+    "mid": [
+     "1.92px -0.65px",
+     "1.46px -0.42px",
+     "0.63px",
+     "-0.08px 0.36px",
+     "-0.4px 0.52px",
+     "-0.4px 0.52px"
+    ],
+    "fin": "-4.62px 2.64px",
+    "target": [
+     -4.667,
+     2.667
+    ]
+   }
+  ],
+  "afterLeave": "-0.05px 0.02px",
+  "pageErrors": [],
+  "consoleErrors": [
+   "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+  ]
+ }
+]

@@ -1,0 +1,842 @@
+{
+ "res": [
+  {
+   "vpn": "mob",
+   "i": 0,
+   "v": "baseline",
+   "geo": {
+    "fonts": "Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:loaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded",
+    "h": 1033,
+    "rects": [
+     "DIV.container slot@100.00,692.45",
+     "SECTION.slots-card rev@100.00,692.45",
+     "HEADER.slots-card-hea@129.00,18.39",
+     "P.eyebrow@129.00,18.39",
+     "SPAN.dash@137.69,1.00",
+     "DIV.slots-card-mai@171.39,438.67",
+     "DIV.slots-summary@171.39,438.67",
+     "H1.slots-paused-t@171.39,60.47",
+     "P.slots-paused-t@253.86,144.09",
+     "STRONG.@327.91,19.00",
+     "P.slots-paused-t@423.95,168.11",
+     "FOOTER.slots-card-foo@642.06,121.39",
+     "A.btn btn-primar@671.06,58.00",
+     "SPAN.@688.06,24.00",
+     "A.slots-secondar@745.06,18.39",
+     "SPAN.@745.06,18.39"
+    ],
+    "anims": [
+     "bgFloat:running:3117",
+     "navIn:finished:1150",
+     "navItemIn:finished:1120",
+     "heroBlockIn:finished:1500"
+    ]
+   },
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/slots/mob_baseline_0.png",
+   "pageErrors": [],
+   "consoleErrors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ]
+  },
+  {
+   "vpn": "mob",
+   "i": 0,
+   "v": "combined",
+   "geo": {
+    "fonts": "Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:loaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded",
+    "h": 1033,
+    "rects": [
+     "DIV.container slot@100.00,692.45",
+     "SECTION.slots-card rev@100.00,692.45",
+     "HEADER.slots-card-hea@129.00,18.39",
+     "P.eyebrow@129.00,18.39",
+     "SPAN.dash@137.69,1.00",
+     "DIV.slots-card-mai@171.39,438.67",
+     "DIV.slots-summary@171.39,438.67",
+     "H1.slots-paused-t@171.39,60.47",
+     "P.slots-paused-t@253.86,144.09",
+     "STRONG.@327.91,19.00",
+     "P.slots-paused-t@423.95,168.11",
+     "FOOTER.slots-card-foo@642.06,121.39",
+     "A.btn btn-primar@671.06,58.00",
+     "SPAN.@688.06,24.00",
+     "A.slots-secondar@745.06,18.39",
+     "SPAN.@745.06,18.39"
+    ],
+    "anims": [
+     "bgFloat:running:3117",
+     "navIn:finished:1150",
+     "navItemIn:finished:1120",
+     "heroBlockIn:finished:1500"
+    ]
+   },
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/slots/mob_combined_0.png",
+   "pageErrors": [],
+   "consoleErrors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ]
+  },
+  {
+   "vpn": "mob",
+   "i": 1,
+   "v": "baseline",
+   "geo": {
+    "fonts": "Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:loaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded",
+    "h": 1033,
+    "rects": [
+     "DIV.container slot@100.00,692.45",
+     "SECTION.slots-card rev@100.00,692.45",
+     "HEADER.slots-card-hea@129.00,18.39",
+     "P.eyebrow@129.00,18.39",
+     "SPAN.dash@137.69,1.00",
+     "DIV.slots-card-mai@171.39,438.67",
+     "DIV.slots-summary@171.39,438.67",
+     "H1.slots-paused-t@171.39,60.47",
+     "P.slots-paused-t@253.86,144.09",
+     "STRONG.@327.91,19.00",
+     "P.slots-paused-t@423.95,168.11",
+     "FOOTER.slots-card-foo@642.06,121.39",
+     "A.btn btn-primar@671.06,58.00",
+     "SPAN.@688.06,24.00",
+     "A.slots-secondar@745.06,18.39",
+     "SPAN.@745.06,18.39"
+    ],
+    "anims": [
+     "bgFloat:running:3100",
+     "navIn:finished:1150",
+     "navItemIn:finished:1120",
+     "heroBlockIn:finished:1500"
+    ]
+   },
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/slots/mob_baseline_1.png",
+   "pageErrors": [],
+   "consoleErrors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ]
+  },
+  {
+   "vpn": "mob",
+   "i": 1,
+   "v": "combined",
+   "geo": {
+    "fonts": "Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:loaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded",
+    "h": 1033,
+    "rects": [
+     "DIV.container slot@100.00,692.45",
+     "SECTION.slots-card rev@100.00,692.45",
+     "HEADER.slots-card-hea@129.00,18.39",
+     "P.eyebrow@129.00,18.39",
+     "SPAN.dash@137.69,1.00",
+     "DIV.slots-card-mai@171.39,438.67",
+     "DIV.slots-summary@171.39,438.67",
+     "H1.slots-paused-t@171.39,60.47",
+     "P.slots-paused-t@253.86,144.09",
+     "STRONG.@327.91,19.00",
+     "P.slots-paused-t@423.95,168.11",
+     "FOOTER.slots-card-foo@642.06,121.39",
+     "A.btn btn-primar@671.06,58.00",
+     "SPAN.@688.06,24.00",
+     "A.slots-secondar@745.06,18.39",
+     "SPAN.@745.06,18.39"
+    ],
+    "anims": [
+     "bgFloat:running:3083",
+     "navIn:finished:1150",
+     "navItemIn:finished:1120",
+     "heroBlockIn:finished:1500"
+    ]
+   },
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/slots/mob_combined_1.png",
+   "pageErrors": [],
+   "consoleErrors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ]
+  },
+  {
+   "vpn": "mob",
+   "i": 2,
+   "v": "baseline",
+   "geo": {
+    "fonts": "Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:loaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded",
+    "h": 1033,
+    "rects": [
+     "DIV.container slot@100.00,692.45",
+     "SECTION.slots-card rev@100.00,692.45",
+     "HEADER.slots-card-hea@129.00,18.39",
+     "P.eyebrow@129.00,18.39",
+     "SPAN.dash@137.69,1.00",
+     "DIV.slots-card-mai@171.39,438.67",
+     "DIV.slots-summary@171.39,438.67",
+     "H1.slots-paused-t@171.39,60.47",
+     "P.slots-paused-t@253.86,144.09",
+     "STRONG.@327.91,19.00",
+     "P.slots-paused-t@423.95,168.11",
+     "FOOTER.slots-card-foo@642.06,121.39",
+     "A.btn btn-primar@671.06,58.00",
+     "SPAN.@688.06,24.00",
+     "A.slots-secondar@745.06,18.39",
+     "SPAN.@745.06,18.39"
+    ],
+    "anims": [
+     "bgFloat:running:3133",
+     "navIn:finished:1150",
+     "navItemIn:finished:1120",
+     "heroBlockIn:finished:1500"
+    ]
+   },
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/slots/mob_baseline_2.png",
+   "pageErrors": [],
+   "consoleErrors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ]
+  },
+  {
+   "vpn": "mob",
+   "i": 2,
+   "v": "combined",
+   "geo": {
+    "fonts": "Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:loaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded",
+    "h": 1033,
+    "rects": [
+     "DIV.container slot@100.00,692.45",
+     "SECTION.slots-card rev@100.00,692.45",
+     "HEADER.slots-card-hea@129.00,18.39",
+     "P.eyebrow@129.00,18.39",
+     "SPAN.dash@137.69,1.00",
+     "DIV.slots-card-mai@171.39,438.67",
+     "DIV.slots-summary@171.39,438.67",
+     "H1.slots-paused-t@171.39,60.47",
+     "P.slots-paused-t@253.86,144.09",
+     "STRONG.@327.91,19.00",
+     "P.slots-paused-t@423.95,168.11",
+     "FOOTER.slots-card-foo@642.06,121.39",
+     "A.btn btn-primar@671.06,58.00",
+     "SPAN.@688.06,24.00",
+     "A.slots-secondar@745.06,18.39",
+     "SPAN.@745.06,18.39"
+    ],
+    "anims": [
+     "bgFloat:running:3117",
+     "navIn:finished:1150",
+     "navItemIn:finished:1120",
+     "heroBlockIn:finished:1500"
+    ]
+   },
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/slots/mob_combined_2.png",
+   "pageErrors": [],
+   "consoleErrors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ]
+  },
+  {
+   "vpn": "mob",
+   "i": 3,
+   "v": "baseline",
+   "geo": {
+    "fonts": "Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:loaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded",
+    "h": 1033,
+    "rects": [
+     "DIV.container slot@100.00,692.45",
+     "SECTION.slots-card rev@100.00,692.45",
+     "HEADER.slots-card-hea@129.00,18.39",
+     "P.eyebrow@129.00,18.39",
+     "SPAN.dash@137.69,1.00",
+     "DIV.slots-card-mai@171.39,438.67",
+     "DIV.slots-summary@171.39,438.67",
+     "H1.slots-paused-t@171.39,60.47",
+     "P.slots-paused-t@253.86,144.09",
+     "STRONG.@327.91,19.00",
+     "P.slots-paused-t@423.95,168.11",
+     "FOOTER.slots-card-foo@642.06,121.39",
+     "A.btn btn-primar@671.06,58.00",
+     "SPAN.@688.06,24.00",
+     "A.slots-secondar@745.06,18.39",
+     "SPAN.@745.06,18.39"
+    ],
+    "anims": [
+     "bgFloat:running:3117",
+     "navIn:finished:1150",
+     "navItemIn:finished:1120",
+     "heroBlockIn:finished:1500"
+    ]
+   },
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/slots/mob_baseline_3.png",
+   "pageErrors": [],
+   "consoleErrors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ]
+  },
+  {
+   "vpn": "mob",
+   "i": 3,
+   "v": "combined",
+   "geo": {
+    "fonts": "Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:loaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded",
+    "h": 1033,
+    "rects": [
+     "DIV.container slot@100.00,692.45",
+     "SECTION.slots-card rev@100.00,692.45",
+     "HEADER.slots-card-hea@129.00,18.39",
+     "P.eyebrow@129.00,18.39",
+     "SPAN.dash@137.69,1.00",
+     "DIV.slots-card-mai@171.39,438.67",
+     "DIV.slots-summary@171.39,438.67",
+     "H1.slots-paused-t@171.39,60.47",
+     "P.slots-paused-t@253.86,144.09",
+     "STRONG.@327.91,19.00",
+     "P.slots-paused-t@423.95,168.11",
+     "FOOTER.slots-card-foo@642.06,121.39",
+     "A.btn btn-primar@671.06,58.00",
+     "SPAN.@688.06,24.00",
+     "A.slots-secondar@745.06,18.39",
+     "SPAN.@745.06,18.39"
+    ],
+    "anims": [
+     "bgFloat:running:3100",
+     "navIn:finished:1150",
+     "navItemIn:finished:1120",
+     "heroBlockIn:finished:1500"
+    ]
+   },
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/slots/mob_combined_3.png",
+   "pageErrors": [],
+   "consoleErrors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ]
+  },
+  {
+   "vpn": "desk",
+   "i": 0,
+   "v": "baseline",
+   "geo": {
+    "fonts": "Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:loaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded",
+    "h": 900,
+    "rects": [
+     "DIV.container slot@126.00,568.69",
+     "SECTION.slots-card rev@126.00,568.69",
+     "HEADER.slots-card-hea@171.00,18.39",
+     "P.eyebrow@171.00,18.39",
+     "SPAN.dash@179.69,1.00",
+     "DIV.slots-card-mai@225.39,277.30",
+     "DIV.slots-summary@225.39,277.30",
+     "H1.slots-paused-t@225.39,43.19",
+     "P.slots-paused-t@290.58,72.05",
+     "STRONG.@316.59,19.00",
+     "P.slots-paused-t@388.63,96.06",
+     "FOOTER.slots-card-foo@546.69,103.00",
+     "A.btn btn-primar@591.69,58.00",
+     "SPAN.@608.69,24.00",
+     "A.slots-secondar@611.48,18.39",
+     "SPAN.@611.48,18.39"
+    ],
+    "anims": [
+     "bgFloat:running:3067",
+     "navIn:finished:1150",
+     "navItemIn:finished:1120",
+     "heroBlockIn:finished:1500"
+    ]
+   },
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/slots/desk_baseline_0.png",
+   "pageErrors": [],
+   "consoleErrors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ]
+  },
+  {
+   "vpn": "desk",
+   "i": 0,
+   "v": "combined",
+   "geo": {
+    "fonts": "Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:loaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded",
+    "h": 900,
+    "rects": [
+     "DIV.container slot@126.00,568.69",
+     "SECTION.slots-card rev@126.00,568.69",
+     "HEADER.slots-card-hea@171.00,18.39",
+     "P.eyebrow@171.00,18.39",
+     "SPAN.dash@179.69,1.00",
+     "DIV.slots-card-mai@225.39,277.30",
+     "DIV.slots-summary@225.39,277.30",
+     "H1.slots-paused-t@225.39,43.19",
+     "P.slots-paused-t@290.58,72.05",
+     "STRONG.@316.59,19.00",
+     "P.slots-paused-t@388.63,96.06",
+     "FOOTER.slots-card-foo@546.69,103.00",
+     "A.btn btn-primar@591.69,58.00",
+     "SPAN.@608.69,24.00",
+     "A.slots-secondar@611.48,18.39",
+     "SPAN.@611.48,18.39"
+    ],
+    "anims": [
+     "bgFloat:running:3066",
+     "navIn:finished:1150",
+     "navItemIn:finished:1120",
+     "heroBlockIn:finished:1500"
+    ]
+   },
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/slots/desk_combined_0.png",
+   "pageErrors": [],
+   "consoleErrors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ]
+  },
+  {
+   "vpn": "desk",
+   "i": 1,
+   "v": "baseline",
+   "geo": {
+    "fonts": "Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:loaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded",
+    "h": 900,
+    "rects": [
+     "DIV.container slot@126.00,568.69",
+     "SECTION.slots-card rev@126.00,568.69",
+     "HEADER.slots-card-hea@171.00,18.39",
+     "P.eyebrow@171.00,18.39",
+     "SPAN.dash@179.69,1.00",
+     "DIV.slots-card-mai@225.39,277.30",
+     "DIV.slots-summary@225.39,277.30",
+     "H1.slots-paused-t@225.39,43.19",
+     "P.slots-paused-t@290.58,72.05",
+     "STRONG.@316.59,19.00",
+     "P.slots-paused-t@388.63,96.06",
+     "FOOTER.slots-card-foo@546.69,103.00",
+     "A.btn btn-primar@591.69,58.00",
+     "SPAN.@608.69,24.00",
+     "A.slots-secondar@611.48,18.39",
+     "SPAN.@611.48,18.39"
+    ],
+    "anims": [
+     "bgFloat:running:3100",
+     "navIn:finished:1150",
+     "navItemIn:finished:1120",
+     "heroBlockIn:finished:1500"
+    ]
+   },
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/slots/desk_baseline_1.png",
+   "pageErrors": [],
+   "consoleErrors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ]
+  },
+  {
+   "vpn": "desk",
+   "i": 1,
+   "v": "combined",
+   "geo": {
+    "fonts": "Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:loaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded",
+    "h": 900,
+    "rects": [
+     "DIV.container slot@126.00,568.69",
+     "SECTION.slots-card rev@126.00,568.69",
+     "HEADER.slots-card-hea@171.00,18.39",
+     "P.eyebrow@171.00,18.39",
+     "SPAN.dash@179.69,1.00",
+     "DIV.slots-card-mai@225.39,277.30",
+     "DIV.slots-summary@225.39,277.30",
+     "H1.slots-paused-t@225.39,43.19",
+     "P.slots-paused-t@290.58,72.05",
+     "STRONG.@316.59,19.00",
+     "P.slots-paused-t@388.63,96.06",
+     "FOOTER.slots-card-foo@546.69,103.00",
+     "A.btn btn-primar@591.69,58.00",
+     "SPAN.@608.69,24.00",
+     "A.slots-secondar@611.48,18.39",
+     "SPAN.@611.48,18.39"
+    ],
+    "anims": [
+     "bgFloat:running:3083",
+     "navIn:finished:1150",
+     "navItemIn:finished:1120",
+     "heroBlockIn:finished:1500"
+    ]
+   },
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/slots/desk_combined_1.png",
+   "pageErrors": [],
+   "consoleErrors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ]
+  },
+  {
+   "vpn": "desk",
+   "i": 2,
+   "v": "baseline",
+   "geo": {
+    "fonts": "Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:loaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded",
+    "h": 900,
+    "rects": [
+     "DIV.container slot@126.00,568.69",
+     "SECTION.slots-card rev@126.00,568.69",
+     "HEADER.slots-card-hea@171.00,18.39",
+     "P.eyebrow@171.00,18.39",
+     "SPAN.dash@179.69,1.00",
+     "DIV.slots-card-mai@225.39,277.30",
+     "DIV.slots-summary@225.39,277.30",
+     "H1.slots-paused-t@225.39,43.19",
+     "P.slots-paused-t@290.58,72.05",
+     "STRONG.@316.59,19.00",
+     "P.slots-paused-t@388.63,96.06",
+     "FOOTER.slots-card-foo@546.69,103.00",
+     "A.btn btn-primar@591.69,58.00",
+     "SPAN.@608.69,24.00",
+     "A.slots-secondar@611.48,18.39",
+     "SPAN.@611.48,18.39"
+    ],
+    "anims": [
+     "bgFloat:running:3133",
+     "navIn:finished:1150",
+     "navItemIn:finished:1120",
+     "heroBlockIn:finished:1500"
+    ]
+   },
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/slots/desk_baseline_2.png",
+   "pageErrors": [],
+   "consoleErrors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ]
+  },
+  {
+   "vpn": "desk",
+   "i": 2,
+   "v": "combined",
+   "geo": {
+    "fonts": "Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:loaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded",
+    "h": 900,
+    "rects": [
+     "DIV.container slot@126.00,568.69",
+     "SECTION.slots-card rev@126.00,568.69",
+     "HEADER.slots-card-hea@171.00,18.39",
+     "P.eyebrow@171.00,18.39",
+     "SPAN.dash@179.69,1.00",
+     "DIV.slots-card-mai@225.39,277.30",
+     "DIV.slots-summary@225.39,277.30",
+     "H1.slots-paused-t@225.39,43.19",
+     "P.slots-paused-t@290.58,72.05",
+     "STRONG.@316.59,19.00",
+     "P.slots-paused-t@388.63,96.06",
+     "FOOTER.slots-card-foo@546.69,103.00",
+     "A.btn btn-primar@591.69,58.00",
+     "SPAN.@608.69,24.00",
+     "A.slots-secondar@611.48,18.39",
+     "SPAN.@611.48,18.39"
+    ],
+    "anims": [
+     "bgFloat:running:3083",
+     "navIn:finished:1150",
+     "navItemIn:finished:1120",
+     "heroBlockIn:finished:1500"
+    ]
+   },
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/slots/desk_combined_2.png",
+   "pageErrors": [],
+   "consoleErrors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ]
+  },
+  {
+   "vpn": "desk",
+   "i": 3,
+   "v": "baseline",
+   "geo": {
+    "fonts": "Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:loaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded",
+    "h": 900,
+    "rects": [
+     "DIV.container slot@126.00,568.69",
+     "SECTION.slots-card rev@126.00,568.69",
+     "HEADER.slots-card-hea@171.00,18.39",
+     "P.eyebrow@171.00,18.39",
+     "SPAN.dash@179.69,1.00",
+     "DIV.slots-card-mai@225.39,277.30",
+     "DIV.slots-summary@225.39,277.30",
+     "H1.slots-paused-t@225.39,43.19",
+     "P.slots-paused-t@290.58,72.05",
+     "STRONG.@316.59,19.00",
+     "P.slots-paused-t@388.63,96.06",
+     "FOOTER.slots-card-foo@546.69,103.00",
+     "A.btn btn-primar@591.69,58.00",
+     "SPAN.@608.69,24.00",
+     "A.slots-secondar@611.48,18.39",
+     "SPAN.@611.48,18.39"
+    ],
+    "anims": [
+     "bgFloat:running:3100",
+     "navIn:finished:1150",
+     "navItemIn:finished:1120",
+     "heroBlockIn:finished:1500"
+    ]
+   },
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/slots/desk_baseline_3.png",
+   "pageErrors": [],
+   "consoleErrors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ]
+  },
+  {
+   "vpn": "desk",
+   "i": 3,
+   "v": "combined",
+   "geo": {
+    "fonts": "Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:unloaded,Inter:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:loaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,Inter Tight:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:loaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded,JetBrains Mono:unloaded",
+    "h": 900,
+    "rects": [
+     "DIV.container slot@126.00,568.69",
+     "SECTION.slots-card rev@126.00,568.69",
+     "HEADER.slots-card-hea@171.00,18.39",
+     "P.eyebrow@171.00,18.39",
+     "SPAN.dash@179.69,1.00",
+     "DIV.slots-card-mai@225.39,277.30",
+     "DIV.slots-summary@225.39,277.30",
+     "H1.slots-paused-t@225.39,43.19",
+     "P.slots-paused-t@290.58,72.05",
+     "STRONG.@316.59,19.00",
+     "P.slots-paused-t@388.63,96.06",
+     "FOOTER.slots-card-foo@546.69,103.00",
+     "A.btn btn-primar@591.69,58.00",
+     "SPAN.@608.69,24.00",
+     "A.slots-secondar@611.48,18.39",
+     "SPAN.@611.48,18.39"
+    ],
+    "anims": [
+     "bgFloat:running:3117",
+     "navIn:finished:1150",
+     "navItemIn:finished:1120",
+     "heroBlockIn:finished:1500"
+    ]
+   },
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/behaviour/out/slots/desk_combined_3.png",
+   "pageErrors": [],
+   "consoleErrors": [
+    "Failed to load resource: net::ERR_TUNNEL_CONNECTION_FAILED"
+   ]
+  }
+ ],
+ "diffs": [
+  {
+   "vpn": "mob",
+   "ref": "baseline0",
+   "x": "combined0",
+   "d": {
+    "mad": 0.005,
+    "pct": 0.019,
+    "big": 0.001,
+    "bbox": [
+     90,
+     190,
+     292,
+     514
+    ]
+   },
+   "geoEq": true
+  },
+  {
+   "vpn": "mob",
+   "ref": "baseline0",
+   "x": "baseline1",
+   "d": {
+    "mad": 1.879,
+    "pct": 6.205,
+    "big": 1.541,
+    "bbox": [
+     36,
+     133,
+     354,
+     790
+    ]
+   },
+   "geoEq": true
+  },
+  {
+   "vpn": "mob",
+   "ref": "baseline0",
+   "x": "combined1",
+   "d": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "geoEq": true
+  },
+  {
+   "vpn": "mob",
+   "ref": "baseline0",
+   "x": "baseline2",
+   "d": {
+    "mad": 0.005,
+    "pct": 0.017,
+    "big": 0,
+    "bbox": [
+     155,
+     334,
+     163,
+     342
+    ]
+   },
+   "geoEq": true
+  },
+  {
+   "vpn": "mob",
+   "ref": "baseline0",
+   "x": "combined2",
+   "d": {
+    "mad": 1.947,
+    "pct": 6.587,
+    "big": 1.667,
+    "bbox": [
+     20,
+     101,
+     369,
+     791
+    ]
+   },
+   "geoEq": true
+  },
+  {
+   "vpn": "mob",
+   "ref": "baseline0",
+   "x": "baseline3",
+   "d": {
+    "mad": 1.877,
+    "pct": 6.206,
+    "big": 1.537,
+    "bbox": [
+     36,
+     133,
+     340,
+     790
+    ]
+   },
+   "geoEq": true
+  },
+  {
+   "vpn": "mob",
+   "ref": "baseline0",
+   "x": "combined3",
+   "d": {
+    "mad": 1.877,
+    "pct": 6.194,
+    "big": 1.532,
+    "bbox": [
+     36,
+     133,
+     354,
+     791
+    ]
+   },
+   "geoEq": true
+  },
+  {
+   "vpn": "desk",
+   "ref": "baseline0",
+   "x": "combined0",
+   "d": {
+    "mad": 0.558,
+    "pct": 1.704,
+    "big": 0.442,
+    "bbox": [
+     276,
+     175,
+     1163,
+     694
+    ]
+   },
+   "geoEq": true
+  },
+  {
+   "vpn": "desk",
+   "ref": "baseline0",
+   "x": "baseline1",
+   "d": {
+    "mad": 0.014,
+    "pct": 0.025,
+    "big": 0.002,
+    "bbox": [
+     309,
+     232,
+     841,
+     622
+    ]
+   },
+   "geoEq": true
+  },
+  {
+   "vpn": "desk",
+   "ref": "baseline0",
+   "x": "combined1",
+   "d": {
+    "mad": 0.001,
+    "pct": 0.003,
+    "big": 0,
+    "bbox": [
+     489,
+     446,
+     497,
+     453
+    ]
+   },
+   "geoEq": true
+  },
+  {
+   "vpn": "desk",
+   "ref": "baseline0",
+   "x": "baseline2",
+   "d": {
+    "mad": 0.011,
+    "pct": 0.022,
+    "big": 0.002,
+    "bbox": [
+     333,
+     232,
+     841,
+     622
+    ]
+   },
+   "geoEq": true
+  },
+  {
+   "vpn": "desk",
+   "ref": "baseline0",
+   "x": "combined2",
+   "d": {
+    "mad": 0,
+    "pct": 0,
+    "big": 0,
+    "bbox": null
+   },
+   "geoEq": true
+  },
+  {
+   "vpn": "desk",
+   "ref": "baseline0",
+   "x": "baseline3",
+   "d": {
+    "mad": 0.6,
+    "pct": 1.788,
+    "big": 0.449,
+    "bbox": [
+     275,
+     127,
+     1183,
+     694
+    ]
+   },
+   "geoEq": true
+  },
+  {
+   "vpn": "desk",
+   "ref": "baseline0",
+   "x": "combined3",
+   "d": {
+    "mad": 0.001,
+    "pct": 0.003,
+    "big": 0,
+    "bbox": [
+     489,
+     446,
+     497,
+     453
+    ]
+   },
+   "geoEq": true
+  }
+ ]
+}

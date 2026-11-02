@@ -1,0 +1,278 @@
+{
+ "log": [
+  {
+   "r": 0,
+   "v": "baseline",
+   "e0_before": "9e7a9b8e",
+   "e0_hover": true,
+   "e0_after": "18460965",
+   "e0_hover2": false,
+   "e0_cleared": "9e7a9b8e",
+   "e2_before": "066ab899",
+   "e2_hover": true,
+   "e2_after": "3fcd2724",
+   "e2_hover2": false,
+   "e2_cleared": "066ab899",
+   "e4_before": "a4d81bf9",
+   "e4_hover": true,
+   "e4_after": "d1e390c8",
+   "e4_hover2": false,
+   "e4_cleared": "85f0071a"
+  },
+  {
+   "r": 0,
+   "v": "combined",
+   "e0_before": "9e7a9b8e",
+   "e0_hover": true,
+   "e0_after": "916b438c",
+   "e0_hover2": false,
+   "e0_cleared": "ea9ffd83",
+   "e2_before": "066ab899",
+   "e2_hover": true,
+   "e2_after": "3fcd2724",
+   "e2_hover2": false,
+   "e2_cleared": "490ee1ec",
+   "e4_before": "a4d81bf9",
+   "e4_hover": true,
+   "e4_after": "7308eab0",
+   "e4_hover2": false,
+   "e4_cleared": "2c22420f"
+  },
+  {
+   "r": 0,
+   "v": "btnonly",
+   "e0_before": "9e7a9b8e",
+   "e0_hover": true,
+   "e0_after": "916b438c",
+   "e0_hover2": false,
+   "e0_cleared": "ea9ffd83",
+   "e2_before": "066ab899",
+   "e2_hover": true,
+   "e2_after": "3fcd2724",
+   "e2_hover2": false,
+   "e2_cleared": "490ee1ec",
+   "e4_before": "a4d81bf9",
+   "e4_hover": true,
+   "e4_after": "7308eab0",
+   "e4_hover2": false,
+   "e4_cleared": "2c22420f"
+  },
+  {
+   "r": 0,
+   "v": "commentonly",
+   "e0_before": "9e7a9b8e",
+   "e0_hover": true,
+   "e0_after": "916b438c",
+   "e0_hover2": false,
+   "e0_cleared": "9e7a9b8e",
+   "e2_before": "3068866b",
+   "e2_hover": true,
+   "e2_after": "a2ad7a79",
+   "e2_hover2": false,
+   "e2_cleared": "066ab899",
+   "e4_before": "37a5fac2",
+   "e4_hover": true,
+   "e4_after": "a67e45de",
+   "e4_hover2": false,
+   "e4_cleared": "85f0071a"
+  },
+  {
+   "r": 1,
+   "v": "baseline",
+   "e0_before": "9e7a9b8e",
+   "e0_hover": true,
+   "e0_after": "916b438c",
+   "e0_hover2": false,
+   "e0_cleared": "9e7a9b8e",
+   "e2_before": "3068866b",
+   "e2_hover": true,
+   "e2_after": "a2ad7a79",
+   "e2_hover2": false,
+   "e2_cleared": "066ab899",
+   "e4_before": "37a5fac2",
+   "e4_hover": true,
+   "e4_after": "a67e45de",
+   "e4_hover2": false,
+   "e4_cleared": "85f0071a"
+  },
+  {
+   "r": 1,
+   "v": "combined",
+   "e0_before": "9e7a9b8e",
+   "e0_hover": true,
+   "e0_after": "916b438c",
+   "e0_hover2": false,
+   "e0_cleared": "ea9ffd83",
+   "e2_before": "066ab899",
+   "e2_hover": true,
+   "e2_after": "3fcd2724",
+   "e2_hover2": false,
+   "e2_cleared": "490ee1ec",
+   "e4_before": "a4d81bf9",
+   "e4_hover": true,
+   "e4_after": "7308eab0",
+   "e4_hover2": false,
+   "e4_cleared": "2c22420f"
+  },
+  {
+   "r": 1,
+   "v": "btnonly",
+   "e0_before": "9e7a9b8e",
+   "e0_hover": true,
+   "e0_after": "916b438c",
+   "e0_hover2": false,
+   "e0_cleared": "ea9ffd83",
+   "e2_before": "3068866b",
+   "e2_hover": true,
+   "e2_after": "3fcd2724",
+   "e2_hover2": false,
+   "e2_cleared": "490ee1ec",
+   "e4_before": "37a5fac2",
+   "e4_hover": true,
+   "e4_after": "a67e45de",
+   "e4_hover2": false,
+   "e4_cleared": "2c22420f"
+  },
+  {
+   "r": 1,
+   "v": "commentonly",
+   "e0_before": "9e7a9b8e",
+   "e0_hover": true,
+   "e0_after": "18460965",
+   "e0_hover2": false,
+   "e0_cleared": "9e7a9b8e",
+   "e2_before": "066ab899",
+   "e2_hover": true,
+   "e2_after": "3fcd2724",
+   "e2_hover2": false,
+   "e2_cleared": "066ab899",
+   "e4_before": "a4d81bf9",
+   "e4_hover": true,
+   "e4_after": "a67e45de",
+   "e4_hover2": false,
+   "e4_cleared": "85f0071a"
+  }
+ ],
+ "sum": {
+  "e0_before baseline": {
+   "9e7a9b8e": 2
+  },
+  "e0_after baseline": {
+   "18460965": 1,
+   "916b438c": 1
+  },
+  "e0_cleared baseline": {
+   "9e7a9b8e": 2
+  },
+  "e2_before baseline": {
+   "066ab899": 1,
+   "3068866b": 1
+  },
+  "e2_after baseline": {
+   "3fcd2724": 1,
+   "a2ad7a79": 1
+  },
+  "e2_cleared baseline": {
+   "066ab899": 2
+  },
+  "e4_before baseline": {
+   "a4d81bf9": 1,
+   "37a5fac2": 1
+  },
+  "e4_after baseline": {
+   "d1e390c8": 1,
+   "a67e45de": 1
+  },
+  "e4_cleared baseline": {
+   "85f0071a": 2
+  },
+  "e0_before combined": {
+   "9e7a9b8e": 2
+  },
+  "e0_after combined": {
+   "916b438c": 2
+  },
+  "e0_cleared combined": {
+   "ea9ffd83": 2
+  },
+  "e2_before combined": {
+   "066ab899": 2
+  },
+  "e2_after combined": {
+   "3fcd2724": 2
+  },
+  "e2_cleared combined": {
+   "490ee1ec": 2
+  },
+  "e4_before combined": {
+   "a4d81bf9": 2
+  },
+  "e4_after combined": {
+   "7308eab0": 2
+  },
+  "e4_cleared combined": {
+   "2c22420f": 2
+  },
+  "e0_before btnonly": {
+   "9e7a9b8e": 2
+  },
+  "e0_after btnonly": {
+   "916b438c": 2
+  },
+  "e0_cleared btnonly": {
+   "ea9ffd83": 2
+  },
+  "e2_before btnonly": {
+   "066ab899": 1,
+   "3068866b": 1
+  },
+  "e2_after btnonly": {
+   "3fcd2724": 2
+  },
+  "e2_cleared btnonly": {
+   "490ee1ec": 2
+  },
+  "e4_before btnonly": {
+   "a4d81bf9": 1,
+   "37a5fac2": 1
+  },
+  "e4_after btnonly": {
+   "7308eab0": 1,
+   "a67e45de": 1
+  },
+  "e4_cleared btnonly": {
+   "2c22420f": 2
+  },
+  "e0_before commentonly": {
+   "9e7a9b8e": 2
+  },
+  "e0_after commentonly": {
+   "18460965": 1,
+   "916b438c": 1
+  },
+  "e0_cleared commentonly": {
+   "9e7a9b8e": 2
+  },
+  "e2_before commentonly": {
+   "3068866b": 1,
+   "066ab899": 1
+  },
+  "e2_after commentonly": {
+   "a2ad7a79": 1,
+   "3fcd2724": 1
+  },
+  "e2_cleared commentonly": {
+   "066ab899": 2
+  },
+  "e4_before commentonly": {
+   "37a5fac2": 1,
+   "a4d81bf9": 1
+  },
+  "e4_after commentonly": {
+   "a67e45de": 2
+  },
+  "e4_cleared commentonly": {
+   "85f0071a": 2
+  }
+ }
+}

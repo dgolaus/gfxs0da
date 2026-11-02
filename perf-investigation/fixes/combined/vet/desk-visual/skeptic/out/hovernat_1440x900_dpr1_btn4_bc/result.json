@@ -1,0 +1,242 @@
+[
+ {
+  "v": "baseline",
+  "k": 0,
+  "label": "Check Slots",
+  "rest": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/baseline_0_rest.png",
+   "h": "e22667f0",
+   "cx": 68.942
+  },
+  "hov": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/baseline_0_hover.png",
+   "h": "98fed76a",
+   "cx": 68.947
+  },
+  "after": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/baseline_0_after.png",
+   "h": "777b8e07",
+   "cx": 68.943
+  },
+  "lay": {
+   "anims": [],
+   "hov": true
+  }
+ },
+ {
+  "v": "combined",
+  "k": 0,
+  "label": "Check Slots",
+  "rest": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/combined_0_rest.png",
+   "h": "fbe17d35",
+   "cx": 68.74
+  },
+  "hov": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/combined_0_hover.png",
+   "h": "b954ed51",
+   "cx": 68.796
+  },
+  "after": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/combined_0_after.png",
+   "h": "265879d6",
+   "cx": 68.743
+  },
+  "lay": {
+   "anims": [],
+   "hov": true
+  }
+ },
+ {
+  "v": "baseline",
+  "k": 1,
+  "label": "Check Slots",
+  "rest": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/baseline_1_rest.png",
+   "h": "0c14c94b",
+   "cx": 68.941
+  },
+  "hov": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/baseline_1_hover.png",
+   "h": "2e97b78f",
+   "cx": 68.947
+  },
+  "after": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/baseline_1_after.png",
+   "h": "e65abfb9",
+   "cx": 68.941
+  },
+  "lay": {
+   "anims": [],
+   "hov": true
+  }
+ },
+ {
+  "v": "combined",
+  "k": 1,
+  "label": "Check Slots",
+  "rest": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/combined_1_rest.png",
+   "h": "4c9b85fb",
+   "cx": 68.74
+  },
+  "hov": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/combined_1_hover.png",
+   "h": "93aa948f",
+   "cx": 68.796
+  },
+  "after": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/combined_1_after.png",
+   "h": "35d79d94",
+   "cx": 68.744
+  },
+  "lay": {
+   "anims": [],
+   "hov": true
+  }
+ },
+ {
+  "v": "baseline",
+  "k": 2,
+  "label": "Check Slots",
+  "rest": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/baseline_2_rest.png",
+   "h": "00635dc9",
+   "cx": 68.74
+  },
+  "hov": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/baseline_2_hover.png",
+   "h": "af1afc5c",
+   "cx": 68.946
+  },
+  "after": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/baseline_2_after.png",
+   "h": "8e218c90",
+   "cx": 68.941
+  },
+  "lay": {
+   "anims": [],
+   "hov": true
+  }
+ },
+ {
+  "v": "combined",
+  "k": 2,
+  "label": "Check Slots",
+  "rest": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/combined_2_rest.png",
+   "h": "dd281314",
+   "cx": 68.74
+  },
+  "hov": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/combined_2_hover.png",
+   "h": "e3edb9b9",
+   "cx": 68.796
+  },
+  "after": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/combined_2_after.png",
+   "h": "3f929496",
+   "cx": 68.743
+  },
+  "lay": {
+   "anims": [],
+   "hov": true
+  }
+ },
+ {
+  "v": "baseline",
+  "k": 3,
+  "label": "Check Slots",
+  "rest": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/baseline_3_rest.png",
+   "h": "3eeaa870",
+   "cx": 68.941
+  },
+  "hov": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/baseline_3_hover.png",
+   "h": "61a82304",
+   "cx": 68.946
+  },
+  "after": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/baseline_3_after.png",
+   "h": "5c010902",
+   "cx": 68.942
+  },
+  "lay": {
+   "anims": [],
+   "hov": true
+  }
+ },
+ {
+  "v": "combined",
+  "k": 3,
+  "label": "Check Slots",
+  "rest": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/combined_3_rest.png",
+   "h": "008ecb71",
+   "cx": 68.74
+  },
+  "hov": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/combined_3_hover.png",
+   "h": "748cb1ac",
+   "cx": 68.796
+  },
+  "after": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/combined_3_after.png",
+   "h": "a06d1ebd",
+   "cx": 68.744
+  },
+  "lay": {
+   "anims": [],
+   "hov": true
+  }
+ },
+ {
+  "v": "baseline",
+  "k": 4,
+  "label": "Check Slots",
+  "rest": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/baseline_4_rest.png",
+   "h": "1960fa62",
+   "cx": 68.941
+  },
+  "hov": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/baseline_4_hover.png",
+   "h": "b6b804f6",
+   "cx": 68.946
+  },
+  "after": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/baseline_4_after.png",
+   "h": "60f5c413",
+   "cx": 68.943
+  },
+  "lay": {
+   "anims": [],
+   "hov": true
+  }
+ },
+ {
+  "v": "combined",
+  "k": 4,
+  "label": "Check Slots",
+  "rest": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/combined_4_rest.png",
+   "h": "dafa88ef",
+   "cx": 68.74
+  },
+  "hov": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/combined_4_hover.png",
+   "h": "09d3d4a8",
+   "cx": 68.796
+  },
+  "after": {
+   "f": "/home/user/gfxs0da/perf-investigation/fixes/combined/vet/desk-visual/skeptic/out/hovernat_1440x900_dpr1_btn4/combined_4_after.png",
+   "h": "f554c743",
+   "cx": 68.744
+  },
+  "lay": {
+   "anims": [],
+   "hov": true
+  }
+ }
+]

@@ -1,0 +1,498 @@
+{
+ "baseline": [
+  {
+   "samples": [
+    {
+     "t": 500,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 1500,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 3000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 5000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 8000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 12000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 16000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    }
+   ],
+   "pageErrors": []
+  },
+  {
+   "samples": [
+    {
+     "t": 500,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 1500,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 3000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 5000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 8000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 12000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 16000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    }
+   ],
+   "pageErrors": []
+  },
+  {
+   "samples": [
+    {
+     "t": 500,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 1500,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 3000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 5000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 8000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 12000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 16000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    }
+   ],
+   "pageErrors": []
+  }
+ ],
+ "combined": [
+  {
+   "samples": [
+    {
+     "t": 500,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 1500,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 3000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 5000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 8000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 12000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 16000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    }
+   ],
+   "pageErrors": []
+  },
+  {
+   "samples": [
+    {
+     "t": 500,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 1500,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 3000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 5000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 8000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 12000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 16000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    }
+   ],
+   "pageErrors": []
+  },
+  {
+   "samples": [
+    {
+     "t": 500,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 1500,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 3000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 5000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 8000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 12000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    },
+    {
+     "t": 16000,
+     "docH": 8140,
+     "process": 974,
+     "trust": 1156,
+     "pricing": 1832,
+     "testimonials": 520,
+     "chatH": 169,
+     "chatCls": "chat-mock reveal",
+     "msgs": 0
+    }
+   ],
+   "pageErrors": []
+  }
+ ]
+}

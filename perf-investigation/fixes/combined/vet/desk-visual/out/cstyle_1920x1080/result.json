@@ -1,0 +1,154 @@
+{
+ "all": {
+  "baseline": {
+   "rest": [
+    ".btn#0 host:999px/999px after:\"\"|999px/999px/999px/999px|0|-130%|absolute",
+    ".btn#1 host:999px/999px after:none|999px/999px/999px/999px|0.35|-50% -50%|absolute",
+    ".btn#2 host:999px/999px after:\"\"|999px/999px/999px/999px|0|-130%|absolute",
+    ".btn#3 host:999px/999px after:\"\"|999px/999px/999px/999px|0|-130%|absolute",
+    ".btn#4 host:999px/999px after:\"\"|999px/999px/999px/999px|0|-130%|absolute",
+    ".price-card#0 host:22px/22px after:\"\"|22px/22px/22px/22px|0|none|absolute",
+    ".price-card#1 host:22px/22px after:\"\"|22px/22px/22px/22px|0|none|absolute",
+    ".price-card#2 host:22px/22px after:\"\"|22px/22px/22px/22px|0|none|absolute",
+    ".price-card#3 host:22px/22px after:\"\"|22px/22px/22px/22px|0|none|absolute",
+    ".quote#0 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#1 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#2 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#3 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#4 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#5 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#6 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#7 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#8 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#9 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#10 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#11 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#12 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#13 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#14 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#15 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#16 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#17 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#18 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#19 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#20 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#21 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#22 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#23 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#24 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#25 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute"
+   ],
+   "focus": [
+    ".btn#0 fv=true host:4px after:4px/4px",
+    ".btn#1 fv=true host:4px after:4px/4px",
+    ".btn#2 fv=true host:4px after:4px/4px",
+    ".btn#3 fv=true host:4px after:4px/4px",
+    ".btn#4 fv=true host:4px after:4px/4px"
+   ],
+   "misc": {
+    "pricing": "contain=none opacity=1 filter=blur(0px) transform=matrix(1, 0, 0, 1, 0, 0) overflow=visible isolation=auto z-index=auto",
+    "sections": [
+     "about:opacity=1 filter=blur(0px) transform=matrix(1, 0, 0, 1, 0, 0) leave=0",
+     "process:opacity=1 filter=blur(0px) transform=matrix(1, 0, 0, 1, 0, 0) leave=0",
+     "trust:opacity=1 filter=blur(0px) transform=matrix(1, 0, 0, 1, 0, 0) leave=0",
+     "pricing:opacity=1 filter=blur(0px) transform=matrix(1, 0, 0, 1, 0, 0) leave=0",
+     "contact:opacity=1 filter=blur(0px) transform=matrix(1, 0, 0, 1, 0, 0) leave=0"
+    ],
+    "nav": "--nav-pill=0 --nav-bar-vis=1 --nav-pill-vis=0",
+    "navLinksBefore": "0 1",
+    "accentParentBg": [
+     "none",
+     "none"
+    ],
+    "fp": 0,
+    "tcols": [
+     "8:4",
+     "10:5",
+     "8:4"
+    ]
+   }
+  },
+  "combined": {
+   "rest": [
+    ".btn#0 host:999px/999px after:\"\"|999px/999px/999px/999px|0|-130%|absolute",
+    ".btn#1 host:999px/999px after:none|999px/999px/999px/999px|0.35|-50% -50%|absolute",
+    ".btn#2 host:999px/999px after:\"\"|999px/999px/999px/999px|0|-130%|absolute",
+    ".btn#3 host:999px/999px after:\"\"|999px/999px/999px/999px|0|-130%|absolute",
+    ".btn#4 host:999px/999px after:\"\"|999px/999px/999px/999px|0|-130%|absolute",
+    ".price-card#0 host:22px/22px after:\"\"|22px/22px/22px/22px|0|none|absolute",
+    ".price-card#1 host:22px/22px after:\"\"|22px/22px/22px/22px|0|none|absolute",
+    ".price-card#2 host:22px/22px after:\"\"|22px/22px/22px/22px|0|none|absolute",
+    ".price-card#3 host:22px/22px after:\"\"|22px/22px/22px/22px|0|none|absolute",
+    ".quote#0 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#1 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#2 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#3 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#4 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#5 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#6 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#7 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#8 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#9 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#10 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#11 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#12 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#13 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#14 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#15 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#16 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#17 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#18 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#19 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#20 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#21 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#22 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#23 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#24 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute",
+    ".quote#25 host:14px/14px after:\"\"|14px/14px/14px/14px|0|none|absolute"
+   ],
+   "focus": [
+    ".btn#0 fv=true host:4px after:4px/4px",
+    ".btn#1 fv=true host:4px after:4px/4px",
+    ".btn#2 fv=true host:4px after:4px/4px",
+    ".btn#3 fv=true host:4px after:4px/4px",
+    ".btn#4 fv=true host:4px after:4px/4px"
+   ],
+   "misc": {
+    "pricing": "contain=paint opacity=1 filter=blur(0px) transform=matrix(1, 0, 0, 1, 0, 0) overflow=visible isolation=auto z-index=auto",
+    "sections": [
+     "about:opacity=1 filter=blur(0px) transform=matrix(1, 0, 0, 1, 0, 0) leave=0",
+     "process:opacity=1 filter=blur(0px) transform=matrix(1, 0, 0, 1, 0, 0) leave=0",
+     "trust:opacity=1 filter=blur(0px) transform=matrix(1, 0, 0, 1, 0, 0) leave=0",
+     "pricing:opacity=1 filter=blur(0px) transform=matrix(1, 0, 0, 1, 0, 0) leave=0",
+     "contact:opacity=1 filter=blur(0px) transform=matrix(1, 0, 0, 1, 0, 0) leave=0"
+    ],
+    "nav": "--nav-pill=0 --nav-bar-vis=1 --nav-pill-vis=0",
+    "navLinksBefore": "0 1",
+    "accentParentBg": [
+     "none",
+     "none"
+    ],
+    "fp": 0,
+    "tcols": [
+     "8:4",
+     "10:5",
+     "8:4"
+    ]
+   }
+  }
+ },
+ "res": {
+  "combined": {
+   "restDiff": [],
+   "restN": 35,
+   "focusDiff": [],
+   "miscDiff": [
+    [
+     "pricing",
+     "contain=none opacity=1 filter=blur(0px) transform=matrix(1, 0, 0, 1, 0, 0) overflow=visible isolation=auto z-index=auto",
+     "contain=paint opacity=1 filter=blur(0px) transform=matrix(1, 0, 0, 1, 0, 0) overflow=visible isolation=auto z-index=auto"
+    ]
+   ]
+  }
+ }
+}

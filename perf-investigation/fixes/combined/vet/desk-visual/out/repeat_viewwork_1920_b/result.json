@@ -1,0 +1,71 @@
+{
+ "tag": "viewwork_1920_b",
+ "vp": "1920x1080",
+ "Y": 0,
+ "clip": "600,650,160,100",
+ "N": 8,
+ "summary": {
+  "baseline": {
+   "f26b46a5": 6,
+   "1d71b1cf": 2
+  },
+  "combined": {
+   "f26b46a5": 3,
+   "a19570da": 3,
+   "1d71b1cf": 2
+  },
+  "base": {
+   "f26b46a5": 2,
+   "a19570da": 4,
+   "5c567d14": 1,
+   "1d71b1cf": 1
+  },
+  "stab1440": {
+   "a19570da": 5,
+   "5c567d14": 1,
+   "f26b46a5": 2
+  }
+ },
+ "clusters": {
+  "f26b46a5": [
+   "baseline_0",
+   "combined_0",
+   "base_0",
+   "baseline_1",
+   "baseline_2",
+   "combined_2",
+   "baseline_3",
+   "combined_3",
+   "base_4",
+   "stab1440_4",
+   "baseline_5",
+   "stab1440_6",
+   "baseline_7"
+  ],
+  "a19570da": [
+   "stab1440_0",
+   "combined_1",
+   "base_1",
+   "stab1440_1",
+   "base_2",
+   "stab1440_2",
+   "base_3",
+   "combined_4",
+   "combined_5",
+   "stab1440_5",
+   "base_6",
+   "stab1440_7"
+  ],
+  "5c567d14": [
+   "stab1440_3",
+   "base_5"
+  ],
+  "1d71b1cf": [
+   "baseline_4",
+   "baseline_6",
+   "combined_6",
+   "combined_7",
+   "base_7"
+  ]
+ }
+}
