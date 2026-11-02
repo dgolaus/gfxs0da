@@ -259,6 +259,11 @@ button { font: inherit; color: inherit; }
    leaves the top of the viewport, --leave (0 → 1) is set by JS and
    drives opacity + blur + slight upward translation. The CSS just
    reads the variable, so the JS stays cheap (no class toggles per frame). */
+/* --leave só é lida pela própria .scroll-fade (opacity/filter/transform).
+   Registrada como NÃO herdada: cada escrita do JS recalcula só a seção,
+   não a subárvore inteira (custom properties comuns herdam para todos
+   os descendentes). Mesmo valor inicial (0) que a regra abaixo. */
+@property --leave { syntax: '<number>'; inherits: false; initial-value: 0; }
 .scroll-fade {
   --leave: 0;
   opacity: calc(1 - var(--leave));
@@ -3161,6 +3166,11 @@ body.slots-page .nav {
   animation-duration: 8.6s;
   animation-delay: -5.7s;
 }
+
+/* Paint boundary for the floating price cards: stops Chrome re-layerizing the whole page every frame.
+   Only from 1440px wide: below that the section's bottom padding (7.5vw) is shorter than the cards'
+   shadow tail and the clip would cut it. Do not add overflow-clip-margin (brings the cost back). */
+@media (min-width: 1440px) { #main > #pricing { contain: paint; } }  /* home only: /tos/ also has an #pricing */
 
 /* Settle the whole row when the user interacts with any card */
 .pricing-grid:has(.price-card:hover) .price-card {
