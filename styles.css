@@ -513,7 +513,8 @@ button { font: inherit; color: inherit; }
   aspect-ratio: 16 / 9;
   object-fit: cover;
   display: block;
-  filter: brightness(0.45) saturate(0.85) blur(2px);
+  /* desfoque e escurecimento já vêm gravados nas imagens (assets/work/bg-soft,
+     scripts/build-hero-bg.js): igual em qualquer máquina, sem custo por frame */
   border-radius: 6px;
   flex-shrink: 0;
 }
@@ -4625,8 +4626,8 @@ html.lite .site-bg::after { animation: none !important; }
 html.lite .accent-orbs { display: none !important; }
 html.lite .hero-bg-tilt { animation: none !important; transform: none !important; }
 html.lite body.bg-red::before { animation: none !important; }
-/* colagem: sem blur (convolução em 130 imgs por frame) e sem 3D */
-html.lite .bg-row-track img { filter: brightness(0.45) saturate(0.85); }
+/* colagem: o desfoque vem gravado nas imagens (bg-soft), então o modo leve
+   não precisa mexer nelas */
 
 
 /* ====================================================================
